@@ -12,7 +12,7 @@ KitPickInit =
 
     private "_idx";
 
-    _idx = COMBO lbAdd "Dowódca odziału"; COMBO lbSetData [_idx, "ftl"];
+    _idx = COMBO lbAdd "Dowódca oddziału"; COMBO lbSetData [_idx, "ftl"];
     _idx = COMBO lbAdd "Mechanik"; COMBO lbSetData [_idx, "eng"];
     COMBO lbAdd "----";
 
