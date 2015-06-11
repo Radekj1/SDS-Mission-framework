@@ -18,7 +18,10 @@ if(isServer) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} els
 // DAC_Settings	 |
 //===============|=============================================================================================|
 
-	if(isNil "DAC_STRPlayers")		then {		DAC_STRPlayers		= ["s1","s2","s3","s4","s5","s6","s7","s8","s9","s10"]};
+	if(isNil "DAC_STRPlayers")		then {		DAC_STRPlayers		= [
+	"UnitNATO_ASL_SL","UnitNATO_A1_FTL","UnitNATO_A2_FTL","UnitNATO_BSL_SL","UnitNATO_B1_FTL","UnitNATO_B2_FTL","UnitNATO_TNK1_C","UnitNATO_IFV1_C","UnitNATO_TH1_P",
+	"UnitCSAT_ASL_SL","UnitCSAT_A1_FTL","UnitCSAT_A2_FTL","UnitCSAT_BSL_SL","UnitCSAT_B1_FTL","UnitCSAT_B2_FTL","UnitCSAT_TNK1_C","UnitCSAT_IFV1_C","UnitCSAT_TH1_P",
+	"UnitAAF_ASL_SL","UnitAAF_A1_FTL","UnitAAF_A2_FTL","UnitAAF_BSL_SL","UnitAAF_B1_FTL","UnitAAF_B2_FTL","UnitAAF_TNK1_C","UnitAAF_IFV1_C","UnitAAF_TH1_P"]};
 	if(isNil "DAC_AI_Count_Level")	then {		DAC_AI_Count_Level  = [[2,4],[3,6],[4,8],[8,14],[1,0]]			};
 	if(isNil "DAC_Dyn_Weather") 	then {		DAC_Dyn_Weather		= [0,0,0,[0, 0, 0],0]						};
 	if(isNil "DAC_Reduce_Value") 	then {		DAC_Reduce_Value	= [1000,1050,0.3]								};
