@@ -50,7 +50,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
-// Russians MSV (A3)
+// Russians MSV (OPFOR)
   case 4:
   {
     _Unit_Pool_S = ["rhs_msv_armoredcrew","rhs_pilot","rhs_msv_grenadier","rhs_msv_rifleman","rhs_msv_at","rhs_msv_strelok_rpg_assist","rhs_msv_machinegunner","rhs_msv_machinegunner_assistant","rhs_msv_marksman","rhs_msv_medic","rhs_msv_LAT","rhs_msv_RShG2"];
@@ -59,7 +59,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
-// USMC (A3)
+// USMC (BLUFOR)
   case 5:
   {
     _Unit_Pool_S = ["rhsusf_usmc_marpat_wd_combatcrewman","rhsusf_usmc_marpat_wd_helipilot","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_riflemanat","rhsusf_usmc_marpat_wd_rifleman","rhsusf_usmc_marpat_wd_marksman","rhsusf_usmc_marpat_wd_machinegunner_ass","rhsusf_usmc_marpat_wd_machinegunner","rhsusf_usmc_marpat_wd_autorifleman_m249","rhsusf_usmc_marpat_wd_autorifleman_m249_ass","rhsusf_usmc_marpat_wd_stinger"];
@@ -68,7 +68,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["RHS_AH1Z_wd","RHS_UH1Y_FFAR","RHS_UH1Y","B_Heli_Light_01_armed_F"];
   };
 //-------------------------------------------------------------------------------------------------
-// CDF (A3)
+// CDF (BLUFOR)
   case 6:
   {
     _Unit_Pool_S = ["B_CDF_A3_Soldier_Crew","B_CDF_A3_Soldier_Pilot","B_CDF_A3_Soldier_GL","B_CDF_A3_Soldier_MG","B_CDF_A3_Soldier_AR","B_CDF_A3_Soldier_Medic","B_CDF_A3_Soldier_RPG","LOP_CDF_Infantry_Marksman"];
@@ -78,7 +78,7 @@ switch (_TypNumber) do
   };
 
 //-------------------------------------------------------------------------------------------------
-// TK (A3)
+// TK (OPFOR)
   case 7:
   {
     _Unit_Pool_S = ["B_TKA_A3_Soldier_Crew","B_TKA_A3_Soldier_Pilot","B_TKA_A3_Soldier_SL","B_TKA_A3_Soldier_MG","B_TKA_A3_Soldier_AMG","B_TKA_A3_Soldier_AR","B_TKA_A3_Soldier_LAT","B_TKA_A3_Soldier_AT","B_TKA_A3_Soldier_AAT"];
@@ -87,7 +87,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["TKA_A3_Mi17","TKA_A3_Mi17_rockets"];
   };
 //-------------------------------------------------------------------------------------------------
-// ChDKZ (A3)
+// ChDKZ (OPFOR)
   case 8:
   {
     _Unit_Pool_S = ["LOP_ChDKZ_Infantry_Crewman","LOP_ChDKZ_Infantry_Pilot","LOP_ChDKZ_Infantry_TL","LOP_ChDKZ_Infantry_MG","LOP_ChDKZ_Infantry_SL","LOP_ChDKZ_Infantry_Rifleman","LOP_ChDKZ_Infantry_Marksman","LOP_ChDKZ_Infantry_GL","LOP_ChDKZ_Infantry_Engineer","LOP_ChDKZ_Infantry_Corpsman"];
@@ -96,7 +96,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["LOP_ChDKZ_Mi8MTV3_FAB","LOP_ChDKZ_Mi8MTV3_UPK23"];
   };
   //-------------------------------------------------------------------------------------------------
-  // Talibian (A3)
+  // Talibian (INDFOR)
   case 9:
   {
     _Unit_Pool_S = ["LOP_AM_Infantry_Engineer","LOP_AM_Infantry_Engineer","LOP_AM_Infantry_TL","LOP_AM_Infantry_SL","LOP_AM_Soldier","LOP_AM_Infantry_Marksman","LOP_AM_Infantry_Engineer","LOP_AM_Infantry_GL","LOP_AM_Infantry_Corpsman","LOP_AM_Infantry_AR","LOP_AM_Infantry_AT"];
@@ -105,13 +105,22 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
   //-------------------------------------------------------------------------------------------------
-  // Russians VDV (A3)
+  // Russians VDV (OPFOR)
   case 10:
   {
     _Unit_Pool_S = ["rhs_vdv_combatcrew","rhs_pilot","rhs_vdv_sergeant","rhs_vdv_RShG2","rhs_vdv_LAT","rhs_vdv_rifleman","rhs_vdv_medic","rhs_vdv_marksman","rhs_vdv_machinegunner","rhs_vdv_machinegunner_assistant","rhs_vdv_at","rhs_vdv_strelok_rpg_assist","rhs_vdv_grenadier","rhs_vdv_engineer","rhs_vdv_aa"];
     _Unit_Pool_V = ["rhs_tigr_ffv_vdv","RHS_Ural_Open_VDV_01","RHS_Ural_VDV_01","rhs_btr80_vdv","rhs_btr80a_vdv"];
     _Unit_Pool_T = ["rhs_bmd1p","rhs_bmd2m","rhs_bmd4m_vdv","rhs_bmd4ma_vdv","rhs_bmp1p_vdv","rhs_bmp2k_vdv","rhs_sprut_vdv"];
     _Unit_Pool_A = ["RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_UPK23_vdv","RHS_Mi24V_UPK23_vdv"];
+  };
+//-------------------------------------------------------------------------------------------------
+  // SLA (OPFOR)
+  case 11:
+  {
+    _Unit_Pool_S = ["LOP_SLA_Infantry_Crewman","LOP_SLA_Infantry_Pilot","LOP_SLA_Infantry_GL","LOP_SLA_Infantry_AT","LOP_SLA_Infantry_AT_Asst","LOP_SLA_Infantry_MG","LOP_SLA_Infantry_MG_Asst","LOP_SLA_Infantry_Corpsman","LOP_SLA_Infantry_Engineer","LOP_SLA_Infantry_Marksman","LOP_SLA_Infantry_Rifleman","LOP_SLA_Infantry_AA"];
+    _Unit_Pool_V = ["LOP_SLA_BTR60","LOP_SLA_BTR70","LOP_SLA_Ural_open"];
+    _Unit_Pool_T = ["LOP_SLA_BMP1D","LOP_SLA_BMP2D","LOP_SLA_T72BB","LOP_SLA_T72BA"];
+    _Unit_Pool_A = ["LOP_SLA_Mi8MTV3_UPK23","LOP_SLA_Mi8MT_Cargo"];
   };
 //-------------------------------------------------------------------------------------------------
   Default
