@@ -139,7 +139,14 @@ _grenade = "rhs_mag_rgd5";
 _smokegrenade = "rhs_mag_rdg2_white";
 _smokegrenadegreen = "rhs_mag_rdg2_black";
 
-// misc medical items.
+// Sprzet medyczny itp.
+_bandage = "ACE_fieldDressing";
+_epinephrine = "ACE_epinephrine";
+_morphine = "ACE_morphine";
+_blood = "ACE_bloodIV_500";
+_earplugs = "ACE_EarPlugs";
+_bodybag = "ACE_bodyBag";
+
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -319,16 +326,18 @@ if (_isMan) then {
 
 	// ====================================================================================
 
-	// ADD UNIVERSAL ITEMS
-	// Add items universal to all units of this faction
+	// Przedmioty uniwersalne dla klas
+	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-	//_unit linkItem _nvg;			// Add and equip the faction's nvg
-	_unit addItem _firstaid;		// Add a single first aid kit (FAK)
-	_unit linkItem "ItemMap";		// Add and equip the map
-	_unit linkItem "ItemCompass";	// Add and equip a compass
-	_unit linkItem "ItemRadio";		// Add and equip A3's default radio
-	_unit linkItem "ItemWatch";		// Add and equip a watch
-	//_unit linkItem "ItemGPS"; 	// Add and equip a GPS
+	_unit linkItem _nvg;			// Dodanie noktowizji
+	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
+	_unit addItem [_bandage,6];		// Dodanie 6 sztuk bandaży
+	_unit addItem [_morphine,2];		// Dodanie 2 sztuk morfiny
+	_unit linkItem "ItemMap";		// Dodanie mapy
+	_unit linkItem "ItemCompass";		// Dodanie kompsu
+	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
+	_unit linkItem "ItemWatch";		// Dodanie zegarka
+	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
 
@@ -402,7 +411,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		{_unit addItem _firstaid} forEach [1,2,3,4];
+		//{_unit addItem _firstaid} forEach [1,2,3,4];
+		//_unit addItem [_bandage,30];
+		//_unit addItem [_morphine,15];
+		//_unit addItem [_epinephrine,15];
 		_unit linkItem "ItemGPS";
 		["m"] call _backpack;
 	};
