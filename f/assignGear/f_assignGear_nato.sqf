@@ -140,7 +140,14 @@ _grenade = "rhs_mag_m67";
 _smokegrenade = "rhs_mag_an_m8hc";
 _smokegrenadegreen = "rhs_mag_m18_green";
 
-// misc medical items.
+// misc medical items etc.
+_bandage = "ACE_fieldDressing";
+_epinephrine = "ACE_epinephrine";
+_morphine = "ACE_morphine";
+_blood = "ACE_bloodIV_500";
+_earplugs = "ACE_EarPlugs";
+_bodybag = "ACE_bodyBag";
+
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -176,27 +183,18 @@ _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "rhs_weap_m249_pip";
-_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
-_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
+_AR = "rhs_weap_m249_pip_L";
+_ARmag = "rhs_200rnd_556x45_M_SAW";
+_ARmag_tr = "rhs_200rnd_556x45_M_SAW";
 
 // Medium MG
-_MMG = "rhs_weap_m240B";
-_MMGmag = "rhsusf_100Rnd_762x51";
-_MMGmag_tr = "rhsusf_100Rnd_762x51";
-
-// NON-DLC ALTERNATIVE:
-// _MMG = "LMG_Zafir_F";
-// _MMGmag = ""150Rnd_762x54_Box"";
-// _MMGmag_tr = ""150Rnd_762x54_Box"_Tracer";
+_MMG = "hlc_lmg_M60E4";
+_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
+_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
 
 // Marksman rifle
 _DMrifle = "rhs_weap_m14ebrri";
 _DMriflemag = "rhsusf_20Rnd_762x51_m118_special_Mag";
-
-// MAR-10
-//_DMrifle = "srifle_DMR_02_F";
-//_DMriflemag = "10Rnd_338_Mag";
 
 // Rifleman AT
 _RAT = "rhs_weap_M136";
@@ -317,7 +315,7 @@ if (_isMan) then {
 	// Add items universal to all units of this faction
 
 	_unit linkItem _nvg;			// Add and equip the faction's nvg
-	_unit addItem _firstaid;		// Add a single first aid kit (FAK)
+	_unit addItem _earplugs;		// Add a ear plugs
 	_unit linkItem "ItemMap";		// Add and equip the map
 	_unit linkItem "ItemCompass";	// Add and equip a compass
 	_unit linkItem "ItemRadio";		// Add and equip A3's default radio
