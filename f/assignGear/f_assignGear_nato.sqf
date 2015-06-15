@@ -294,7 +294,7 @@ _isMan = _unit isKindOf "CAManBase";	// We check if we're dealing with a soldier
 // This block needs only to be run on an infantry unit
 if (_isMan) then {
 
-		// PREPARE UNIT FOR GEAR ADDITION
+	// PREPARE UNIT FOR GEAR ADDITION
 	// The following code removes all existing weapons, items, magazines and backpacks
 
 	removeBackpack _unit;
@@ -311,16 +311,18 @@ if (_isMan) then {
 
 	// ====================================================================================
 
-	// ADD UNIVERSAL ITEMS
-	// Add items universal to all units of this faction
+	// Przedmioty uniwersalne dla klas
+	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-	_unit linkItem _nvg;			// Add and equip the faction's nvg
-	_unit addItem _earplugs;		// Add a ear plugs
-	_unit linkItem "ItemMap";		// Add and equip the map
-	_unit linkItem "ItemCompass";	// Add and equip a compass
-	_unit linkItem "ItemRadio";		// Add and equip A3's default radio
-	_unit linkItem "ItemWatch";		// Add and equip a watch
-	//_unit linkItem "ItemGPS"; 	// Add and equip a GPS
+	_unit linkItem _nvg;			// Dodanie noktowizji
+	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
+	_unit addItem [_bandage,6];		// Dodanie 6 sztuk bandaży
+	_unit addItem [_morphine,2];		// Dodanie 2 sztuk morfiny
+	_unit linkItem "ItemMap";		// Dodanie mapy
+	_unit linkItem "ItemCompass";		// Dodanie kompsu
+	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
+	_unit linkItem "ItemWatch";		// Dodanie zegarka
+	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
 
@@ -395,7 +397,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		{_unit addItem _firstaid} forEach [1,2,3,4];
+		//{_unit addItem _firstaid} forEach [1,2,3,4];
+		//_unit addItem [_bandage,30];
+		//_unit addItem [_morphine,15];
+		//_unit addItem [_epinephrine,15];
 		_unit linkItem "ItemGPS";
 		["m"] call _backpack;
 	};
