@@ -140,7 +140,14 @@ _grenade = "rhs_mag_m67";
 _smokegrenade = "rhs_mag_an_m8hc";
 _smokegrenadegreen = "rhs_mag_m18_green";
 
-// misc medical items.
+// misc medical items etc.
+_bandage = "ACE_fieldDressing";
+_epinephrine = "ACE_epinephrine";
+_morphine = "ACE_morphine";
+_blood = "ACE_bloodIV_500";
+_earplugs = "ACE_EarPlugs";
+_bodybag = "ACE_bodyBag";
+
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -176,27 +183,18 @@ _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "rhs_weap_m249_pip";
-_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
-_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
+_AR = "rhs_weap_m249_pip_L";
+_ARmag = "rhs_200rnd_556x45_M_SAW";
+_ARmag_tr = "rhs_200rnd_556x45_M_SAW";
 
 // Medium MG
-_MMG = "rhs_weap_m240B";
-_MMGmag = "rhsusf_100Rnd_762x51";
-_MMGmag_tr = "rhsusf_100Rnd_762x51";
-
-// NON-DLC ALTERNATIVE:
-// _MMG = "LMG_Zafir_F";
-// _MMGmag = ""150Rnd_762x54_Box"";
-// _MMGmag_tr = ""150Rnd_762x54_Box"_Tracer";
+_MMG = "hlc_lmg_M60E4";
+_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
+_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
 
 // Marksman rifle
 _DMrifle = "rhs_weap_m14ebrri";
 _DMriflemag = "rhsusf_20Rnd_762x51_m118_special_Mag";
-
-// MAR-10
-//_DMrifle = "srifle_DMR_02_F";
-//_DMriflemag = "10Rnd_338_Mag";
 
 // Rifleman AT
 _RAT = "rhs_weap_M136";
@@ -296,7 +294,7 @@ _isMan = _unit isKindOf "CAManBase";	// We check if we're dealing with a soldier
 // This block needs only to be run on an infantry unit
 if (_isMan) then {
 
-		// PREPARE UNIT FOR GEAR ADDITION
+	// PREPARE UNIT FOR GEAR ADDITION
 	// The following code removes all existing weapons, items, magazines and backpacks
 
 	removeBackpack _unit;
@@ -313,16 +311,18 @@ if (_isMan) then {
 
 	// ====================================================================================
 
-	// ADD UNIVERSAL ITEMS
-	// Add items universal to all units of this faction
+	// Przedmioty uniwersalne dla klas
+	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-	_unit linkItem _nvg;			// Add and equip the faction's nvg
-	_unit addItem _firstaid;		// Add a single first aid kit (FAK)
-	_unit linkItem "ItemMap";		// Add and equip the map
-	_unit linkItem "ItemCompass";	// Add and equip a compass
-	_unit linkItem "ItemRadio";		// Add and equip A3's default radio
-	_unit linkItem "ItemWatch";		// Add and equip a watch
-	//_unit linkItem "ItemGPS"; 	// Add and equip a GPS
+	_unit linkItem _nvg;			// Dodanie noktowizji
+	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
+	_unit addItem [_bandage,6];		// Dodanie 6 sztuk bandaży
+	_unit addItem [_morphine,2];		// Dodanie 2 sztuk morfiny
+	_unit linkItem "ItemMap";		// Dodanie mapy
+	_unit linkItem "ItemCompass";		// Dodanie kompsu
+	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
+	_unit linkItem "ItemWatch";		// Dodanie zegarka
+	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
 
@@ -397,7 +397,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		{_unit addItem _firstaid} forEach [1,2,3,4];
+		//{_unit addItem _firstaid} forEach [1,2,3,4];
+		//_unit addItem [_bandage,30];
+		//_unit addItem [_morphine,15];
+		//_unit addItem [_epinephrine,15];
 		_unit linkItem "ItemGPS";
 		["m"] call _backpack;
 	};

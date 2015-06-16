@@ -8,22 +8,27 @@ case "m":
 	// LOADOUT: LIGHT
 	if (_loadout == 0) then {
 	_unit addBackpack _bagsmall;
+		_unit addItem [_bandage,30];
+		_unit addItem [_morphine,15];
+		_unit addItem [_epinephrine,15];
 	};
 	// LOADOUT: MEDIUM
 	if (_loadout == 1) then {
 		_unit addBackpack _bagmedium;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage, 30];
+		(unitBackpack _unit) addItemCargoGlobal [_morphine, 15];
+		(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 15];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-		(unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
 	};
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
 		_unit addBackpack _baglarge;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage, 30];
+		(unitBackpack _unit) addItemCargoGlobal [_morphine, 15];
+		(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 15];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_firstaid, 12];
 	};
 };
 
