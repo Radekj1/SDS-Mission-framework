@@ -60,12 +60,12 @@
 
 // ATTACHMENTS - PRIMARY
 _attach1 = "RH_peq2";	// IR Laser
-_attach2 = "RH_SFM952V";	// Flashlight
+_attach2 = "RH_SFM952V_tan";	// Flashlight
 
 _silencer1 = "rhsusf_acc_rotex5_grey";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "rhsusf_acc_eotech_552";	// Holosight
+_scope1 = "RH_eotech553_tan";	// Holosight
 _scope2 = "RH_ta31rmr";			// MRCO Scope - 1x - 6x
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";			// SOS Scope - 18x - 75x
 
@@ -95,7 +95,7 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_m16a4_carryhandle_grip_pmag";
+_rifle = "rhs_weap_m16a4_carryhandle";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -115,7 +115,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "rhs_weap_m4a1_carryhandle_m203S";
+_glrifle = "rhs_weap_m16a4_carryhandle_M203";
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
@@ -241,14 +241,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_cu_ocp"];
-_baseHelmet = ["rhsusf_ach_helmet_ocp","rhsusf_ach_bare_tan_headset_ess","rhsusf_ach_helmet_ESS_ocp","rhsusf_ach_helmet_headset_ocp","rhsusf_ach_helmet_headset_ess_ocp"];
+_baseUniform = ["rhs_uniform_FROG01_d"];
+_baseHelmet = ["rhsusf_mich_helmet_marpatd","rhsusf_lwh_helmet_marpatd"];
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"];
-_mediumRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"];
+_lightRig = ["rhsusf_spc"];
+_mediumRig = ["rhsusf_spc"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_spc"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
