@@ -9,73 +9,40 @@
 // NOTES: CREDITS
 // The code below creates the administration sub-section of notes.
 
-_cre = player createDiaryRecord ["diary", ["Credits","
+_cre = player createDiaryRecord ["diary", ["Autorzy misji","
 <br/>
-*** Insert mission credits here. ***
+<font size='18'> Tu wpisz autorów misji </font>
 <br/><br/>
-Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
 
 // ====================================================================================
 
-// NOTES: ADMINISTRATION
-// The code below creates the administration sub-section of notes.
-
-_adm = player createDiaryRecord ["diary", ["Administration","
-<br/>
-*** Insert information on administration and logistics here. ***
-"]];
-
-// ====================================================================================
-
-// NOTES: EXECUTION
-// The code below creates the execution sub-section of notes.
-
-_exe = player createDiaryRecord ["diary", ["Execution","
-<br/>
-<font size='18'>COMMANDER'S INTENT</font>
-<br/>
-*** Insert very short summary of plan here. ***
-<br/><br/>
-<font size='18'>MOVEMENT PLAN</font>
-<br/>
-*** Insert movement instructions here. ***
-<br/><br/>
-<font size='18'>FIRE SUPPORT PLAN</font>
-<br/>
-*** Insert fire support instructions here. ***
-<br/><br/>
-<font size='18'>SPECIAL TASKS</font>
-<br/>
-*** Insert instructions for specific units here. ***
-"]];
-
-// ====================================================================================
-
-// NOTES: MISSION
+// NOTES: Misja
 // The code below creates the mission sub-section of notes.
 
-_mis = player createDiaryRecord ["diary", ["Mission","
+_mis = player createDiaryRecord ["diary", ["Misja","
 <br/>
-*** Insert the mission here. ***
+Tu wpisz inf. dotyczące misji
+<br/>
 "]];
 
 // ====================================================================================
 
-// NOTES: SITUATION
+// NOTES: Sytuacja
 // The code below creates the situation sub-section of notes.
 
-_sit = player createDiaryRecord ["diary", ["Situation","
+_sit = player createDiaryRecord ["diary", ["Sytuacja","
 <br/>
-*** Insert general information about the situation here.***
+Tu wpisz Daną Sytuacje panującą na mapie
 <br/><br/>
-<font size='18'>ENEMY FORCES</font>
+<font size='18'>Wrogie siły</font>
 <br/>
-*** Insert information about enemy forces here.***
+Tu możesz podać inf. na temat Wrogich jednostek na mapie
 <br/><br/>
-<font size='18'>FRIENDLY FORCES</font>
+<font size='18'>Sojusznicze Jednostki</font>
 <br/>
-*** Insert information about friendly forces here.***
+Tu możesz podać inf. na temat Sojuszniczych jednostek na mapie
+<br/>
 "]];
 
 // ====================================================================================
