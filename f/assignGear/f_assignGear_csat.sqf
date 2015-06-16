@@ -331,8 +331,14 @@ if (_isMan) then {
 
 	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
-	_unit addItem [_bandage,6];		// Dodanie 6 sztuk bandaży
-	_unit addItem [_morphine,2];		// Dodanie 2 sztuk morfiny
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;	// Dodanie 6 sztuk bandaży
+	_unit addItem _morphine;
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
