@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Autorzy misji","
 <br/>
-<font size='18'> tu wpisz autorów misji</font>
+<font size='18'> Tu wpisz autorów misji</font>
 <br/><br/>
 "]];
 
@@ -19,7 +19,7 @@ _cre = player createDiaryRecord ["diary", ["Autorzy misji","
 
 _mis = player createDiaryRecord ["diary", ["Misja","
 <br/>
-tu wpisz inf. dotyczące misji
+Tu wpisz inf. dotyczące misji
 <br/>
 "]];
 
@@ -40,7 +40,6 @@ Tu możesz podać inf. na temat Wrogich jednostek na mapie
 <br/>
 Tu możesz podać inf. na temat Sojuszniczych jednostek na mapie
 <br/>
-
 "]];
 
 // ====================================================================================
