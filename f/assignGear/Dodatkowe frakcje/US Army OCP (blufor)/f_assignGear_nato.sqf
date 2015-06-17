@@ -59,24 +59,24 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "RH_peq2";	// IR Laser
-_attach2 = "RH_SFM952V";	// Flashlight
+_attach1 = "rhsusf_acc_anpeq15A";		// IR Laser
+_attach2 = "acc_flashlight";			// Flashlight
 
-_silencer1 = "rhsusf_acc_rotex5_grey";	// 5.56 suppressor
-_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
+_silencer1 = "rhsusf_acc_nt4_black";		// 5.56 suppressor
+_silencer2 = "muzzle_snds_H";			// 6.5 suppressor
 
-_scope1 = "rhsusf_acc_eotech_552";	// Holosight
-_scope2 = "RH_ta31rmr";			// MRCO Scope - 1x - 6x
-_scope3 = "rhsusf_acc_LEUPOLDMK4_2";			// SOS Scope - 18x - 75x
+_scope1 = "rhsusf_acc_eotech_552";		// Holosight
+_scope2 = "RH_ta31rmr";				// MRCO Scope - 1x - 6x
+_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// SOS Scope - 18x - 75x
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// Default bipod
-_bipod2 = "bipod_02_F_blk";		// Black bipod
+_bipod2 = "bipod_02_F_blk";			// Black bipod
 
 // Default setup
 _attachments = [_attach2,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
+// [_attach1,_scope1,_silencer1] = remove all, add items assigned in _attach1, _scope1 and _silencer1
 // [_scope2] = add _scope2, remove rest
 // false = keep attachments as they are
 
