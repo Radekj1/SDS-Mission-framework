@@ -50,9 +50,11 @@
 //		v_tr		- truck
 //		v_ifv		- ifv
 //
-//		crate_small	- small ammocrate
-//		crate_med	- medium ammocrate
-//		crate_large	- large ammocrate
+//		crate_small	- Mała skrzynka z amunicją (dla teamu)
+//		crate_med	- średnia skrzynka z amunicją (dla sekcji)
+//		crate_large	- Duża skrzynka z amunicją (dla plutonu)
+//      crate_smallmedical - Mała skrzynka z medykamentami
+//      crate_bigmedical - Duża skrzynka z medykamentami
 //
 // ====================================================================================
 
@@ -138,7 +140,9 @@ _pistolmag = "rhsusf_mag_7x45acp_MHP";
 // Grenades
 _grenade = "rhs_mag_m67";
 _smokegrenade = "rhs_mag_an_m8hc";
-_smokegrenadegreen = "rhs_mag_m18_green";
+_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenadeblue = "SmokeShellBlue";
+_smokegrenadered = "SmokeShellRed";
 
 // misc medical items etc.
 _bandage = "ACE_fieldDressing";
@@ -365,13 +369,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glsmokewhite,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadegreen,2];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -383,13 +387,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glsmokewhite,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadegreen,2];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -418,13 +422,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
 		_unit addmagazines [_glsmokewhite,2];
-		_unit addmagazines [_glsmokered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadegreen,1];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -943,7 +946,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid,6];
 	};
 
-// CRATE: Small, ammo for 1 fireteam
+// CRATE: Mała skrzynka, amunicja dla jednego teamu
 	case "crate_small":
 {
 		clearWeaponCargoGlobal _unit;
@@ -964,7 +967,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid, 6];
 };
 
-// CRATE: Medium, ammo for 1 squad
+// CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
 	case "crate_med":
 {
 		clearWeaponCargoGlobal _unit;
@@ -985,7 +988,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid, 25];
 };
 
-// CRATE: Large, ammo for 1 platoon
+// CRATE: Duża skrzynka, amunicja dla 1 plutonu
 	case "crate_large":
 {
 		clearWeaponCargoGlobal _unit;
@@ -1004,6 +1007,32 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
+};
+
+// CRATE: Mała skrzynka, zasoby medyczne
+	case "crate_smallmedical":
+{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+        _unit addItemCargoGlobal ["ACE_fieldDressing",400];
+        _unit addItemCargoGlobal ["ACE_morphine",300];
+        _unit addItemCargoGlobal ["ACE_epinephrine",100];
+        _unit addItemCargoGlobal ["ACE_bloodIV_500",75];
+};
+
+// CRATE: Duża skrzynka, zasoby medyczne
+	case "crate_bigmedical":
+{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+        _unit addItemCargoGlobal ["ACE_fieldDressing",1000];
+        _unit addItemCargoGlobal ["ACE_morphine",800];
+        _unit addItemCargoGlobal ["ACE_epinephrine",400];
+        _unit addItemCargoGlobal ["ACE_bloodIV_500",200];
 };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
