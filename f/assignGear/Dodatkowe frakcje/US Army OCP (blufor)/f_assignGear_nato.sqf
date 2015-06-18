@@ -60,7 +60,7 @@
 
 // ATTACHMENTS - PRIMARY
 _attach1 = "rhsusf_acc_anpeq15A";		// IR Laser
-_attach2 = "acc_flashlight";			// Flashlight
+_attach2 = "rhsusf_acc_anpeq15_light";		// Flashlight
 
 _silencer1 = "rhsusf_acc_nt4_black";		// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";			// 6.5 suppressor
