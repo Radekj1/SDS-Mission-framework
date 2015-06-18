@@ -50,33 +50,35 @@
 //		v_tr		- truck
 //		v_ifv		- ifv
 //
-//		crate_small	- small ammocrate
-//		crate_med	- medium ammocrate
-//		crate_large	- large ammocrate
+//		crate_small	- Mała skrzynka z amunicją (dla teamu)
+//		crate_med	- średnia skrzynka z amunicją (dla sekcji)
+//		crate_large	- Duża skrzynka z amunicją (dla plutonu)
+//      crate_smallmedical - Mała skrzynka z medykamentami
+//      crate_bigmedical - Duża skrzynka z medykamentami
 //
 // ====================================================================================
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "RH_peq2";	// IR Laser
-_attach2 = "RH_SFM952V_tan";	// Flashlight
+_attach1 = "rhsusf_acc_anpeq15A";		// IR Laser
+_attach2 = "rhsusf_acc_anpeq15_light";		// Flashlight
 
-_silencer1 = "rhsusf_acc_rotex5_grey";	// 5.56 suppressor
-_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
+_silencer1 = "rhsusf_acc_nt4_black";		// 5.56 suppressor
+_silencer2 = "muzzle_snds_H";			// 6.5 suppressor
 
-_scope1 = "RH_eotech553_tan";	// Holosight
-_scope2 = "RH_ta31rmr";			// MRCO Scope - 1x - 6x
-_scope3 = "rhsusf_acc_LEUPOLDMK4_2";			// SOS Scope - 18x - 75x
+_scope1 = "rhsusf_acc_eotech_552";		// Holosight
+_scope2 = "RH_ta31rmr";				// MRCO Scope - 1x - 6x
+_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// SOS Scope - 18x - 75x
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// Default bipod
-_bipod2 = "bipod_02_F_blk";		// Black bipod
+_bipod2 = "bipod_02_F_blk";			// Black bipod
 
 // Default setup
-_attachments = [_attach2,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
+_attachments = [_attach2,_scope1]; 		// The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
+// [_attach1,_scope1,_silencer1] = remove all, add items assigned in _attach1, _scope1 and _silencer1
 // [_scope2] = add _scope2, remove rest
 // false = keep attachments as they are
 
@@ -138,7 +140,9 @@ _pistolmag = "rhsusf_mag_7x45acp_MHP";
 // Grenades
 _grenade = "rhs_mag_m67";
 _smokegrenade = "rhs_mag_an_m8hc";
-_smokegrenadegreen = "rhs_mag_m18_green";
+_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenadeblue = "SmokeShellBlue";
+_smokegrenadered = "SmokeShellRed";
 
 // misc medical items etc.
 _bandage = "ACE_fieldDressing";
@@ -304,20 +308,19 @@ if (_isMan) then {
 
 	// ====================================================================================
 
-	// HANDLE CLOTHES
-	// Handle clothes and helmets and such using the include file called next.
-
-	#include "f_assignGear_clothes.sqf";
-
-	// ====================================================================================
-
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
 
 	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
-	_unit addItem [_bandage,6];		// Dodanie 6 sztuk bandaży
-	_unit addItem [_morphine,2];		// Dodanie 2 sztuk morfiny
+	_unit addItem _bandage;		// Dodanie 6 sztuk bandaży
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _morphine;
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -359,13 +362,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glsmokewhite,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadegreen,2];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -377,13 +380,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glsmokewhite,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadegreen,2];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -412,13 +415,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
 		_unit addmagazines [_glsmokewhite,2];
-		_unit addmagazines [_glsmokered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadegreen,1];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -937,7 +939,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid,6];
 	};
 
-// CRATE: Small, ammo for 1 fireteam
+// CRATE: Mała skrzynka, amunicja dla jednego teamu
 	case "crate_small":
 {
 		clearWeaponCargoGlobal _unit;
@@ -958,7 +960,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid, 6];
 };
 
-// CRATE: Medium, ammo for 1 squad
+// CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
 	case "crate_med":
 {
 		clearWeaponCargoGlobal _unit;
@@ -979,7 +981,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid, 25];
 };
 
-// CRATE: Large, ammo for 1 platoon
+// CRATE: Duża skrzynka, amunicja dla 1 plutonu
 	case "crate_large":
 {
 		clearWeaponCargoGlobal _unit;
@@ -998,6 +1000,32 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
+};
+
+// CRATE: Mała skrzynka, zasoby medyczne
+	case "crate_smallmedical":
+{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+        _unit addItemCargoGlobal ["ACE_fieldDressing",400];
+        _unit addItemCargoGlobal ["ACE_morphine",300];
+        _unit addItemCargoGlobal ["ACE_epinephrine",100];
+        _unit addItemCargoGlobal ["ACE_bloodIV_500",75];
+};
+
+// CRATE: Duża skrzynka, zasoby medyczne
+	case "crate_bigmedical":
+{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+        _unit addItemCargoGlobal ["ACE_fieldDressing",1000];
+        _unit addItemCargoGlobal ["ACE_morphine",800];
+        _unit addItemCargoGlobal ["ACE_epinephrine",400];
+        _unit addItemCargoGlobal ["ACE_bloodIV_500",200];
 };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
