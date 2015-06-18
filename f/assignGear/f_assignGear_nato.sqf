@@ -246,14 +246,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_FROG01_d"];
-_baseHelmet = ["rhsusf_mich_helmet_marpatd","rhsusf_lwh_helmet_marpatd"];
+_baseUniform = ["rhs_uniform_cu_ocp"];
+_baseHelmet = ["rhsusf_ach_helmet_ocp","rhsusf_ach_bare_tan_headset_ess","rhsusf_ach_helmet_ESS_ocp","rhsusf_ach_helmet_headset_ocp","rhsusf_ach_helmet_headset_ess_ocp"];
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["rhsusf_spc"];
-_mediumRig = ["rhsusf_spc"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_spc"];
+_lightRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"];
+_mediumRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -307,6 +307,11 @@ if (_isMan) then {
 	removeAllItemsWithMagazines _unit;
 	removeAllAssignedItems _unit;
 
+	// ====================================================================================
+
+	// HANDLE CLOTHES
+	// Handle clothes and helmets and such using the include file called next.
+
 	#include "f_assignGear_clothes.sqf";
 
 	// ====================================================================================
@@ -316,14 +321,14 @@ if (_isMan) then {
 
 	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
-	_unit addItem _bandage;		// Dodanie 6 sztuk bandaży
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;	
 	_unit addItem _bandage;
 	_unit addItem _bandage;
-	_unit addItem _bandage;
-	_unit addItem _bandage;
-	_unit addItem _bandage;
-	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _bandage;	// Dodanie 6 sztuk bandaży
 	_unit addItem _morphine;
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -365,7 +370,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -383,7 +388,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -418,12 +423,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
 		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadeblue,1];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -892,7 +898,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 1];
 		_unit addMagazineCargoGlobal [_grenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenade, 4];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addMagazineCargoGlobal [_glmag, 4];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addItemCargoGlobal [_firstaid,4];
@@ -914,7 +920,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 12];
 		_unit addmagazineCargoGlobal [_mgrenade,12];
 		_unit addMagazineCargoGlobal [_smokegrenade, 12];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 4];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 4];
 		_unit addMagazineCargoGlobal [_glmag, 12];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
 		_unit addItemCargoGlobal [_firstaid,8];
@@ -936,7 +942,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addmagazineCargoGlobal [_mgrenade,8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addMagazineCargoGlobal [_glmag, 8];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addItemCargoGlobal [_firstaid,6];
@@ -959,7 +965,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 2];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_firstaid, 6];
 };
 
@@ -980,7 +986,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 6];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_firstaid, 25];
 };
 
@@ -1001,7 +1007,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
 };
 
@@ -1076,8 +1082,3 @@ if !(_isMan) exitWith {};
 // ENSURE UNIT HAS CORRECT WEAPON SELECTED ON SPAWNING
 
 _unit selectweapon primaryweapon _unit;
-
-    Status API Training Shop Blog About Help 
-
-    © 2015 GitHub, Inc. Terms Privacy Security Contact 
-
