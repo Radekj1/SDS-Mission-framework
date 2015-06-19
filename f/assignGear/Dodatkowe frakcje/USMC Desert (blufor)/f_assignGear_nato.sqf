@@ -306,7 +306,16 @@ if (_isMan) then {
 	removeAllItemsWithMagazines _unit;
 	removeAllAssignedItems _unit;
 
-		// ====================================================================================
+
+
+// ====================================================================================
+
+// HANDLE CLOTHES
+// Handle clothes and helmets and such using the include file called next.
+
+	#include "f_assignGear_clothes.sqf";
+
+// ====================================================================================
 
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
