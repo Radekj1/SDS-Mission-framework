@@ -509,31 +509,6 @@ case "engm":
 	};
 };
 
-// BACKPACK: ENGINEER (MINES)
-case "engm":
-{
-	// LOADOUT: LIGHT
-	if (_loadout == 0) then {
-		_unit addBackpack _bagmedium;
-		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
-	};
-	// LOADOUT: MEDIUM
-	if (_loadout == 1) then {
-		_unit addBackpack _baglarge;
-		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
-		(unitBackpack _unit) addMagazineCargoGlobal [_ATmine,1];
-	};
-	// LOADOUT: HEAVY
-	if (_loadout == 2) then {
-		_unit addBackpack _baglarge;
-		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
-		(unitBackpack _unit) addMagazineCargoGlobal [_ATmine,2];
-	};
-};
-
 // BACKPACK: SUBMACHINEGUNNER (SMG)
 case "smg":
 {
@@ -549,18 +524,18 @@ case "smg":
 		_unit addBackpack _bagmedium;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
 	};
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
 		_unit addBackpack _bagmedium;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 8];
-		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
 	};
 };
 
@@ -588,6 +563,9 @@ case "div":
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
 	};
 };
+
+// BACKPACK: UAV
+case "uav":
 {
 	_unit addBackpack _baguav;
 };

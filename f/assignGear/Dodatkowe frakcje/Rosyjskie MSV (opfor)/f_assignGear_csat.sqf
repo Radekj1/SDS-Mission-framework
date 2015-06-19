@@ -150,14 +150,6 @@ _blood = "ACE_bloodIV_500";
 _earplugs = "ACE_EarPlugs";
 _bodybag = "ACE_bodyBag";
 
-// Sprzet medyczny itp.
-_bandage = "ACE_fieldDressing";
-_epinephrine = "ACE_epinephrine";
-_morphine = "ACE_morphine";
-_blood = "ACE_bloodIV_500";
-_earplugs = "ACE_EarPlugs";
-_bodybag = "ACE_bodyBag";
-
 // misc medical items.
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
@@ -336,7 +328,7 @@ if (_isMan) then {
 
 	#include "f_assignGear_clothes.sqf";
 
-	// ====================================================================================
+		// ====================================================================================
 
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
@@ -344,18 +336,27 @@ if (_isMan) then {
 	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
+    _unit addItem _bandage;
 	_unit addItem _bandage;
 	_unit addItem _bandage;	
 	_unit addItem _bandage;
 	_unit addItem _bandage;
-	_unit addItem _bandage;	// Dodanie 6 sztuk bandaży
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;	// Dodanie 12 sztuk bandaży
 	_unit addItem _morphine;
-	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _morphine;
+	_unit addItem _morphine;
+	_unit addItem _morphine;		// Dodanie 4 sztuk morfiny
+	_unit addItem _epinephrine;	
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
-	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczon
+	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
 
