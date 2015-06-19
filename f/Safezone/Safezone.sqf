@@ -7,8 +7,8 @@ waitUntil {!isNull player};
 player addEventHandler ["Fired", {
     if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
     {
+    	player allowDamage false;
         deleteVehicle (_this select 6);
         titleText [MESSAGE, "PLAIN", 3];
-		player allowDamage false;
     };
-}]; 
+}];
