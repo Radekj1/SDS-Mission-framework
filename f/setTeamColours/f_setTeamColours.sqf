@@ -26,9 +26,9 @@ _leaders = ["_FTL"];
 // Set suffixes for each color
 _white = ["_FTL"];
 _red = ["_AR","_AAR"];
-_blue = ["_AT","_R"];
+_blue = ["_AT","_M"];
 _yellow = [];
-_green = ["_M"];
+_green = [];
 
 // ====================================================================================
 
