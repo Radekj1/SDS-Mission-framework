@@ -1,14 +1,25 @@
-#define SAFETY_ZONES    [["respawn_west", 300],["respawn_guerrila",300],["respawn_east",300]] // Syntax: [["marker1", radius1], ["marker2", radius2], ...]
 #define MESSAGE "Strzelanie/rzucanie granatow zabronione!"
 
 if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
-player addEventHandler ["Fired", {
-    if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
-    {
-    	player allowDamage false;
-        deleteVehicle (_this select 6);
-        titleText [MESSAGE, "PLAIN", 3];
-    };
-}];
+if (isNil "inSafezone") then {inSafezone = false;};
+while {true}
+do 
+{
+    private["_safeZoneDamageEH", "_safeZoneFiredEH"];	
+    waitUntil{inSafeZone};
+    player allowDamage false;	
+	
+	_safeZoneDamageEH = player addEventhandler["HandleDamage",{false}];
+    _safeZoneFiredEH = player addEventHandler ["Fired",	
+	
+	{ deleteVehicle (_this select 6);
+	titleText [MESSAGE, "PLAIN", 3];
+    }];
+	
+    waitUntil {!inSafeZone};
+    player allowDamage true;
+    player removeEventhandler["HandleDamage", _safeZoneDamageEH];
+    player removeEventHandler["Fired", _safeZoneFiredEH];
+}; 
