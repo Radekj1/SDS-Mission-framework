@@ -444,7 +444,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadeblue,1];
 		_unit addWeapon "Binocular";
-		_unit linkIte*m "ItemGPS";
+		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
 	};
 
