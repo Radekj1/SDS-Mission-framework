@@ -44,7 +44,6 @@
 //		r 			- rifleman
 //		car			- carabineer
 //		smg			- submachinegunner
-//		gren		- grenadier
 //
 //		v_car		- car/4x4
 //		v_tr		- truck
@@ -65,8 +64,10 @@
 _attach1 = "rhsusf_acc_anpeq15A";		// IR Laser
 _attach2 = "rhsusf_acc_anpeq15_light";		// Flashlight
 
+
 _silencer1 = "rhsusf_acc_nt4_black";		// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";			// 6.5 suppressor
+_silencer3 = "hlc_muzzle_556NATO_KAC";
 
 _scope1 = "rhsusf_acc_eotech_552";		// Holosight
 _scope2 = "RH_ta31rmr";				// MRCO Scope - 1x - 6x
@@ -113,9 +114,10 @@ _smgmag = "hlc_30Rnd_9x19_B_MP5";
 _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Diver
-_diverWep = "arifle_SDAR_F";
+_diverWep = "hlc_rifle_RU556";
 _diverMag1 = "30Rnd_556x45_Stanag";
-_diverMag2 = "20Rnd_556x45_UW_mag";
+_diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "rhs_weap_m16a4_carryhandle_M203";
@@ -169,10 +171,13 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_Parachute";			// Parachute
-_bagmedium = "B_Kitbag_cbr";				// carries 240, weighs 30
-_baglarge =  "B_Carryall_cbr"; 			// carries 320, weighs 40
-_bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";		// used by divers
+_bagsmall = "B_Parachute";			// Spadochron
+_bagFTL = "tf_rt1523g_big_rhs";      // Plecak dla dowódcy (radio)
+_bagMedic = "B_Kitbag_cbr";        // Plecak dla medyka
+_bagAR = "rhsusf_assault_eagleaiii_coy";    // Plecak dla RKM
+_bagENG = "B_Carryall_mcamo";                // Plecak dla Mechanika
+_bagR = "B_AssaultPack_cbr";				// Plecak dla strzelca, strzelca AT
+_bagmediumdiver =  "B_Kitbag_rgr";		// used by divers
 _baguav = "B_rhsusf_B_BACKPACK";			// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
@@ -256,10 +261,10 @@ _mediumRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW"
 _heavyRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"];
 
 // Diver
-_diverUniform =  ["U_B_Wetsuit"];
-_diverHelmet = [];
-_diverRig = ["V_RebreatherB"];
-_diverGlasses = ["G_Diving"];
+_diverUniform =  ["rhs_uniform_FROG01_wd"];
+_diverHelmet = ["H_HelmetB_camo"];
+_diverRig = ["V_PlateCarrierH_CTRG"];
+_diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["U_B_HeliPilotCoveralls"];
@@ -389,7 +394,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -407,7 +412,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 // LOADOUT: MEDIC
@@ -441,7 +446,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,1];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 
@@ -723,6 +728,7 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "Binocular";
+		_unit addBackpack _bagFTL;
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -828,6 +834,7 @@ switch (_typeofUnit) do
 // LOADOUT: Diver
 	case "div":
 	{
+
 		_unit addmagazines [_diverMag1,4];
 		_unit addmagazines [_diverMag2,3];
 		_unit addweapon _diverWep;
@@ -835,7 +842,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_attach1,_scope1,_silencer1];
+		_attachments = [_attach1,_attach2,_scope1,_silencer3];
 		["div"] call _backpack;
 	};
 
@@ -875,21 +882,6 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
 		["smg"] call _backpack;
-	};
-
-// LOADOUT: GRENADIER
-	case "gren":
-	{
-		_unit addmagazines [_glriflemag,7];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addweapon _glrifle;
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
-		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,2];
-		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
-		["g"] call _backpack;
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
