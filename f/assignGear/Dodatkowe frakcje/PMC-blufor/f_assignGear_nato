@@ -171,9 +171,12 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_Parachute";			// Parachute
-_bagmedium = "B_AssaultPack_rgr";				// carries 240, weighs 30
-_baglarge =  "B_Kitbag_rgr"; 			// carries 320, weighs 40
-_bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";		// used by divers
+_bagFTL = "tf_rt1523g_bwmod";    // Plecak dla dowódcy (radio)
+_bagMedic = "B_Kitbag_rgr";        // Plecak dla medyka
+_bagAR = "B_Carryall_khk";   // Plecak dla RKM
+_bagENG = "B_TacticalPack_blk";              // Plecak dla Mechanika
+_bagR = "B_AssaultPack_rgr";				// Plecak dla strzelca, strzelca AT
+_bagmediumdiver = "rhsusf_assault_eagleaiii_coy";		// used by divers
 _baguav = "B_rhsusf_B_BACKPACK";			// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
@@ -408,13 +411,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit addmagazines [_DMriflemag,6];
+		_unit addmagazines [_DMriflemag,7];
 		_unit addweapon _DMrifle;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -441,8 +444,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadeblue,1];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		_unit linkIte*m "ItemGPS";
+		["ftl"] call _backpack;
 	};
 
 
