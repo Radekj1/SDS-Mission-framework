@@ -44,7 +44,6 @@
 //		r 			- rifleman
 //		car			- carabineer
 //		smg			- submachinegunner
-//		gren		- grenadier
 //
 //		v_car		- car/4x4
 //		v_tr		- truck
@@ -166,7 +165,12 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_Parachute";			// Parachute
+_bagsmall = "B_Parachute";		         	// Parachute
+_bagFTL = "tf_mr3000_rhs";                   // Plecak dla dowódcy (radio)
+_bagMedic = "B_Carryall_oli";               // Plecak dla medyka
+_bagAR = "B_Kitbag_sgg";                     // Plecak dla RKM
+_bagENG = "rhs_assault_umbts_engineer_empty";   // Plecak dla Mechanika
+_bagR = "rhs_sidor";				// Plecak dla strzelca, strzelca AT
 _bagmedium = "B_Kitbag_sgg";			// carries 200, weighs 30
 _baglarge =  "B_Carryall_oli"; 			// carries 320, weighs 40
 _bagmediumdiver =  "rhs_assault_umbts";		// used by divers
@@ -332,6 +336,7 @@ if (_isMan) then {
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
 
+	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
     _unit addItem _bandage;
@@ -399,7 +404,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -417,7 +422,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 // LOADOUT: MEDIC
@@ -451,7 +456,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["g"] call _backpack;
+		["ftl"] call _backpack;
 	};
 
 
@@ -733,6 +738,7 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "Binocular";
+		_unit addBackpack _bagFTL;
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -887,20 +893,6 @@ switch (_typeofUnit) do
 		["smg"] call _backpack;
 	};
 
-// LOADOUT: GRENADIER
-	case "gren":
-	{
-		_unit addmagazines [_glriflemag,7];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addweapon _glrifle;
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
-		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,2];
-		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
-		["g"] call _backpack;
-	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
