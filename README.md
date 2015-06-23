@@ -12,17 +12,22 @@ Poradnik jak stworzyć misję za pomocą szablonu SDS
 8. Wejdź z powrotem na edytor i kliknij "Zapisz"
 9. Wybierz mapę Altis i otwórz misję "SDS_szablon"
 10. Skopiuj potrzebne ci jednostki po czym wróć na swoją misję i tam je wklej
-11. Dodaj wszystkich graczy jako grywalnych oraz jednego jako gracza (usuń postawionego wcześniej gracza)
+11. Dodaj wszystkich graczy jako grywalnych oraz jednego jako gracza (usuń postawioną wcześniej jednostkę)
 12. Obok graczy stwórz respawn tj.
    -stwórz znacznik (nie zmieniaj jego wartości ani wyglądu)
    -nazwij go "respawn_west" (jeżeli gracz to blufor)
-   -nazwij go "respawn_east" (jeżeli gracz to opfor)   
+   -nazwij go "respawn_east" (jeżeli gracz to opfor)
+(ewentualnie możesz skopiować respawn z szablonu misji na Altis)
 
-13. Dodaj moduł zeusa (Moduły -> Zeus -> Mistrz gry), w polu właściciel wpisz #adminlogged
-14. Zapisz swój postep po czym przejdź do dodania jednostek wroga
+13. Wejdź z powrotem na Szablon (Altis)
+14. Skopiuj moduły Zeusa, ACE, Flage - DAC oraz safezone dla danej frakcji
+15. Wróć na swoją misję, Wklej moduły Zeusa, ACE, Flage - DAC gdzieś na kancie mapy
+16. safezone wklej obok znacznika respawn
+   
+17. Zapisz swój postęp po czym przejdź do dodania jednostek wroga
 
 
-15. Aby dodać jednostki wroga:
+18. Aby dodać jednostki wroga:
 
  - stwórz nowy wyzwalacz oraz dobierz jego kształt
  - w polu "nazwa" wpisz "z1"
@@ -47,6 +52,7 @@ Poradnik jak stworzyć misję za pomocą szablonu SDS
  e - są to śmigłowce, w tym przypadku 1 o liczebności oddziału 2. wygeneruje się 20 waypointów
  
  Jeżeli nie chcesz danej klasy jednostek usuń jej wartości np. "fun=["z1",[2,0,0],[4,2,40,10],[],[],[],[2,9,0,0]] spawn DAC_Zone;"
+w tym przypadku zespałnią się tylko 4 oddziały piechoty
  
  f - pierwsza wartość to strony po której są boty: 0 = east    1 = West   2 = RACS   3 = Civilian
  
@@ -65,14 +71,15 @@ Poradnik jak stworzyć misję za pomocą szablonu SDS
   // Russians VDV case 10
   // SLA case 11
   
- 
-16. Po dodaniu stref za pomocą znaczników oznacz cele oraz sojuszniczą bazę.
+19. Po dodaniu stref za pomocą znaczników oznacz cele oraz sojuszniczą bazę.
+
+
 
 Koniec pracy w edytorze ;) ...
 
-Następnie możesz otworzyć folder ze zrobioną misją i zmienić:
+Następnie otwórz folder ze zrobioną misją i zmień:
 
-1. Autorów oraz nazwe misji
+- Autorzy oraz nazwa misji
 w tym celu otwórz plik "description.ext" 
 
 Zmień tam (jak na przykładzie niżej):
@@ -84,12 +91,12 @@ loadScreen = "logo.paa";  bez zmian
 
 Reszta nie podlega zmianom
 
-2. Jednostki jakimi gra gracz
+- Jednostki jakimi gra gracz
 
 W tym celu wchodzimy do folderu "f\assignGear", gdzie znajduje się folder z dodatkowymi frakcjami 
 Jest tam kilka folderów z różnymi frakcjami, jeżeli chcesz zmienić frakcję po prostu skopiuj ją i nadpisz bezpośrednio do "f\assignGear"
 
-3. Briefing - w tym celu wejdź do "f\briefing"
+- Briefing - w tym celu wejdź do "f\briefing"
 
 Tam w zależności od frakcji jaką zagrasz wybierz
 
@@ -97,4 +104,4 @@ Tam w zależności od frakcji jaką zagrasz wybierz
  - "f_briefing_csat"
  - "f_briefing_aaf"
  
- Tam wpisz swój briefing według opisu w plikach
+ Tam wpisz swój briefing według opisu jaki znajduje się w plikach
