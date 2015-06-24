@@ -59,12 +59,12 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
-// USMC (BLUFOR)
+// USMC "WD"(BLUFOR)
   case 5:
   {
-    _Unit_Pool_S = ["rhsusf_usmc_marpat_wd_combatcrewman","rhsusf_usmc_marpat_wd_helipilot","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_riflemanat","rhsusf_usmc_marpat_wd_rifleman","rhsusf_usmc_marpat_wd_marksman","rhsusf_usmc_marpat_wd_machinegunner_ass","rhsusf_usmc_marpat_wd_machinegunner","rhsusf_usmc_marpat_wd_autorifleman_m249","rhsusf_usmc_marpat_wd_autorifleman_m249_ass","rhsusf_usmc_marpat_wd_stinger"];
-    _Unit_Pool_V = ["rhsusf_m1025_w_s_m2_10","rhsusf_m1025_w_s_mk19_10","rhsusf_rg33_m2_usmc_wd"];
-    _Unit_Pool_T = ["rhsusf_m1a1fep_wd","rhsusf_m1a1fep_od"];
+    _Unit_Pool_S = ["rhsusf_usmc_marpat_wd_rifleman","rhsusf_usmc_marpat_wd_rifleman_m4","rhsusf_usmc_marpat_wd_autorifleman_m249","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_stinger","rhsusf_usmc_marpat_wd_crewman","rhsusf_usmc_marpat_wd_driver","rhsusf_usmc_marpat_wd_riflemanat"];
+    _Unit_Pool_V = ["rhsusf_m1025_w_m2","rhsusf_m1025_w_mk19"];
+    _Unit_Pool_T = ["rhsusf_m1a1fep_wd"];
     _Unit_Pool_A = ["RHS_AH1Z_wd","RHS_UH1Y_FFAR","RHS_UH1Y","B_Heli_Light_01_armed_F"];
   };
 //-------------------------------------------------------------------------------------------------
@@ -121,6 +121,16 @@ switch (_TypNumber) do
     _Unit_Pool_V = ["LOP_SLA_BTR60","LOP_SLA_BTR70","LOP_SLA_Ural_open"];
     _Unit_Pool_T = ["LOP_SLA_BMP1D","LOP_SLA_BMP2D","LOP_SLA_T72BB","LOP_SLA_T72BA"];
     _Unit_Pool_A = ["LOP_SLA_Mi8MTV3_UPK23","LOP_SLA_Mi8MT_Cargo"];
+  };
+
+//-------------------------------------------------------------------------------------------------
+// USMC "D"(BLUFOR)
+  case 12:
+  {
+    _Unit_Pool_S = ["rhsusf_usmc_marpat_d_rifleman","rhsusf_usmc_marpat_d_rifleman_m4","rhsusf_usmc_marpat_d_autorifleman_m249","rhsusf_usmc_marpat_d_teamleader","rhsusf_usmc_marpat_d_stinger","rhsusf_usmc_marpat_d_crewman","rhsusf_usmc_marpat_d_driver","rhsusf_usmc_marpat_d_riflemanat"];
+    _Unit_Pool_V = ["rhsusf_m1025_d_m2","rhsusf_m1025_d_Mk19"];
+    _Unit_Pool_T = ["rhsusf_m1a1fep_d"];
+    _Unit_Pool_A = ["RHS_AH1Z_wd","RHS_UH1Y_FFAR","RHS_UH1Y","B_Heli_Light_01_armed_F"];
   };
 //-------------------------------------------------------------------------------------------------
   Default
