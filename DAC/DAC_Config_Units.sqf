@@ -65,7 +65,7 @@ switch (_TypNumber) do
     _Unit_Pool_S = ["rhsusf_usmc_marpat_wd_crewman","rhsusf_usmc_marpat_wd_helipilot","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_rifleman","rhsusf_usmc_marpat_wd_rifleman_m4","rhsusf_usmc_marpat_wd_autorifleman_m249","rhsusf_usmc_marpat_wd_autorifleman_m249_ass","rhsusf_usmc_marpat_wd_stinger","rhsusf_usmc_marpat_wd_driver","rhsusf_usmc_marpat_wd_riflemanat","rhsusf_usmc_marpat_wd_engineer","rhsusf_usmc_marpat_wd_marksman"];
     _Unit_Pool_V = ["rhsusf_m1025_w_m2","rhsusf_m1025_w_mk19","rhsusf_m1025_w"];
     _Unit_Pool_T = ["rhsusf_m1a1fep_wd"];
-    _Unit_Pool_A = ["RHS_UH1Y_FFAR","RHS_UH1Y","RHS_UH60M"];
+    _Unit_Pool_A = ["RHS_UH1Y_FFAR","RHS_UH1Y","RHS_UH60M","MELB_AH6M_L"];
   };
 //-------------------------------------------------------------------------------------------------
 // CDF (BLUFOR)
@@ -130,7 +130,7 @@ switch (_TypNumber) do
     _Unit_Pool_S = ["rhsusf_usmc_marpat_d_crewman","rhsusf_usmc_marpat_d_helipilot","rhsusf_usmc_marpat_d_teamleader","rhsusf_usmc_marpat_d_rifleman","rhsusf_usmc_marpat_d_rifleman_m4","rhsusf_usmc_marpat_d_autorifleman_m249","rhsusf_usmc_marpat_d_autorifleman_m249_ass","rhsusf_usmc_marpat_d_stinger","rhsusf_usmc_marpat_d_driver","rhsusf_usmc_marpat_d_riflemanat","rhsusf_usmc_marpat_d_engineer","rhsusf_usmc_marpat_d_marksman"];
     _Unit_Pool_V = ["rhsusf_m1025_d_m2","rhsusf_m1025_d_Mk19","rhsusf_m1025_d"];
     _Unit_Pool_T = ["rhsusf_m1a1fep_d"];
-    _Unit_Pool_A = ["RHS_UH1Y_FFAR","RHS_UH1Y","RHS_UH60M"];
+    _Unit_Pool_A = ["RHS_UH1Y_FFAR","RHS_UH1Y","RHS_UH60M","MELB_AH6M_L"];
   };
 //-------------------------------------------------------------------------------------------------
 // Afghan Police(BLUFOR)
