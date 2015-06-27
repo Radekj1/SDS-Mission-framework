@@ -220,25 +220,10 @@ f_wound_extraFAK = 2;
 [] execVM "f\Safezone\Safezone.sqf";
 
 // ====================================================================================
-
-// BWMF: DAC Debug Params
-// This doesn't even call HC. DAC on-server doesn't call HC any more. This is just for DAC setup. It should be investigated in the future to make sure DAC units are going in the correct places, rather than a HC server.
-
-[] call F_DAC_fnc_setupDacParams;
-
-// ====================================================================================
-// Werthles - Split AI Groups Evenly Among Headless Clients
+// eulerfoiler - HC Round-Robin Load Balancing
 // This automatically carries over units and data from Zeus or main spawn. DAC spawn works as well.
 // This is currently in use. DAC HC is not in use, it should be turned off.
 
-// WerthlesHeadless Parameters:
-// Repeating - true/Once - false,
-// Time between repeats (seconds),
-// Debug on - true/off - false,
-// Advanced balancing - true/Simple balancing - false,
-// Delay before executing (seconds),
-// Additional syncing time between groups transferred to try
-// to reduce bad unit transfer caused by desyncs (seconds)
-[true, 40, false, true, 30, 3] execVM "f\headlessClient\WerthlesHeadless.sqf";
+execVM "f\headlessclient\passToHCs.sqf";
 
 // ====================================================================================
