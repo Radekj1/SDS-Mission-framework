@@ -189,14 +189,14 @@ _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "rhs_weap_pkp";
-_ARmag = "rhs_100Rnd_762x54mmR";
-_ARmag_tr = "rhs_100Rnd_762x54mmR_green";
+_AR = "hlc_rifle_rpk";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
-_MMG = "hlc_lmg_M60E4";
-_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
-_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
+_MMG = "rhs_weap_pkp";
+_MMGmag = "rhs_100Rnd_762x54mmR";
+_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Marksman rifle
 _DMrifle = "srifle_EBR_F";
