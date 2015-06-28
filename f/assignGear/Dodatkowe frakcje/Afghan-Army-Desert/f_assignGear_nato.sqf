@@ -265,15 +265,15 @@ _diverRig = ["V_PlateCarrierH_CTRG"];
 _diverGlasses = [];
 
 // Pilot
-_pilotUniform = ["LOP_U_AA_Fatigue_03"];
+_pilotUniform = ["LOP_U_AA_Fatigue_01_slv"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["LOP_V_CarrierLite_TAN"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["LOP_U_AA_Fatigue_03"];
-_crewHelmet = ["H_Cap_usblack"];
-_crewRig = ["V_PlateCarrier1_rgr"];
+_crewUniform = ["LOP_U_AA_Fatigue_01_slv"];
+_crewHelmet = ["rhs_tsh4"];
+_crewRig = ["LOP_V_Carrier_TAN"];
 _crewGlasses = [];
 
 // Ghillie
