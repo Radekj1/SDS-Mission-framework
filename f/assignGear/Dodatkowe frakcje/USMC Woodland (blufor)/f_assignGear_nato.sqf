@@ -164,10 +164,14 @@ _chemred = "Chemlight_red";
 _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
+
 // Backpacks
-_bagsmall = "B_Parachute";			// Parachute
-_bagmedium = "B_Kitbag_rgr";				// carries 240, weighs 30
-_baglarge =  "B_Carryall_khk"; 			// carries 320, weighs 40
+_bagsmall = "B_Parachute";			// Spadochron
+_bagFTL = "tf_anprc155_coyote";      // Plecak dla dowódcy (radio)
+_bagMedic = "B_Kitbag_rgr";        // Plecak dla medyka
+_bagAR = "rhsusf_assault_eagleaiii_coy"; // Plecak dla RKM
+_bagENG = "B_Carryall_khk";                // Plecak dla Mechanika
+_bagR = "B_AssaultPack_cbr";				// Plecak dla strzelca, strzelca AT
 _bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";		// used by divers
 _baguav = "B_rhsusf_B_BACKPACK";			// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";				// used by Heavy MG gunner
@@ -720,6 +724,7 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "Binocular";
+		_unit addBackpack _bagFTL;
 	};
 
 // LOADOUT: VEHICLE DRIVER
