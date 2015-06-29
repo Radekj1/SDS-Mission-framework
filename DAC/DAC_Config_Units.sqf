@@ -59,13 +59,13 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
-// USMC (BLUFOR)
+// USMC "WD"(BLUFOR)
   case 5:
   {
-    _Unit_Pool_S = ["rhsusf_usmc_marpat_wd_combatcrewman","rhsusf_usmc_marpat_wd_helipilot","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_riflemanat","rhsusf_usmc_marpat_wd_rifleman","rhsusf_usmc_marpat_wd_marksman","rhsusf_usmc_marpat_wd_machinegunner_ass","rhsusf_usmc_marpat_wd_machinegunner","rhsusf_usmc_marpat_wd_autorifleman_m249","rhsusf_usmc_marpat_wd_autorifleman_m249_ass","rhsusf_usmc_marpat_wd_stinger"];
-    _Unit_Pool_V = ["rhsusf_m1025_w_s_m2_10","rhsusf_m1025_w_s_mk19_10","rhsusf_rg33_m2_usmc_wd"];
-    _Unit_Pool_T = ["rhsusf_m1a1fep_wd","rhsusf_m1a1fep_od"];
-    _Unit_Pool_A = ["RHS_AH1Z_wd","RHS_UH1Y_FFAR","RHS_UH1Y","B_Heli_Light_01_armed_F"];
+    _Unit_Pool_S = ["rhsusf_usmc_marpat_wd_crewman","rhsusf_usmc_marpat_wd_helipilot","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_rifleman","rhsusf_usmc_marpat_wd_rifleman_m4","rhsusf_usmc_marpat_wd_autorifleman_m249","rhsusf_usmc_marpat_wd_autorifleman_m249_ass","rhsusf_usmc_marpat_wd_stinger","rhsusf_usmc_marpat_wd_driver","rhsusf_usmc_marpat_wd_riflemanat","rhsusf_usmc_marpat_wd_engineer","rhsusf_usmc_marpat_wd_marksman"];
+    _Unit_Pool_V = ["rhsusf_m1025_w_m2","rhsusf_m1025_w_mk19","rhsusf_m1025_w"];
+    _Unit_Pool_T = ["rhsusf_m1a1fep_wd"];
+    _Unit_Pool_A = ["RHS_UH1Y_FFAR","RHS_UH1Y","RHS_UH60M","MELB_AH6M_L"];
   };
 //-------------------------------------------------------------------------------------------------
 // CDF (BLUFOR)
@@ -111,7 +111,7 @@ switch (_TypNumber) do
     _Unit_Pool_S = ["rhs_vdv_combatcrew","rhs_pilot","rhs_vdv_sergeant","rhs_vdv_RShG2","rhs_vdv_LAT","rhs_vdv_rifleman","rhs_vdv_medic","rhs_vdv_marksman","rhs_vdv_machinegunner","rhs_vdv_machinegunner_assistant","rhs_vdv_at","rhs_vdv_strelok_rpg_assist","rhs_vdv_grenadier","rhs_vdv_engineer","rhs_vdv_aa"];
     _Unit_Pool_V = ["rhs_tigr_ffv_vdv","RHS_Ural_Open_VDV_01","RHS_Ural_VDV_01","rhs_btr80_vdv","rhs_btr80a_vdv"];
     _Unit_Pool_T = ["rhs_bmd1p","rhs_bmd2m","rhs_bmd4m_vdv","rhs_bmd4ma_vdv","rhs_bmp1p_vdv","rhs_bmp2k_vdv","rhs_sprut_vdv"];
-    _Unit_Pool_A = ["RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_UPK23_vdv","RHS_Mi24V_UPK23_vdv"];
+    _Unit_Pool_A = ["RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_UPK23_vdv"];
   };
 //-------------------------------------------------------------------------------------------------
   // SLA (OPFOR)
@@ -122,7 +122,37 @@ switch (_TypNumber) do
     _Unit_Pool_T = ["LOP_SLA_BMP1D","LOP_SLA_BMP2D","LOP_SLA_T72BB","LOP_SLA_T72BA"];
     _Unit_Pool_A = ["LOP_SLA_Mi8MTV3_UPK23","LOP_SLA_Mi8MT_Cargo"];
   };
+
 //-------------------------------------------------------------------------------------------------
+// USMC "D"(BLUFOR)
+  case 12:
+  {
+    _Unit_Pool_S = ["rhsusf_usmc_marpat_d_crewman","rhsusf_usmc_marpat_d_helipilot","rhsusf_usmc_marpat_d_teamleader","rhsusf_usmc_marpat_d_rifleman","rhsusf_usmc_marpat_d_rifleman_m4","rhsusf_usmc_marpat_d_autorifleman_m249","rhsusf_usmc_marpat_d_autorifleman_m249_ass","rhsusf_usmc_marpat_d_stinger","rhsusf_usmc_marpat_d_driver","rhsusf_usmc_marpat_d_riflemanat","rhsusf_usmc_marpat_d_engineer","rhsusf_usmc_marpat_d_marksman"];
+    _Unit_Pool_V = ["rhsusf_m1025_d_m2","rhsusf_m1025_d_Mk19","rhsusf_m1025_d"];
+    _Unit_Pool_T = ["rhsusf_m1a1fep_d"];
+    _Unit_Pool_A = ["RHS_UH1Y_FFAR","RHS_UH1Y","RHS_UH60M","MELB_AH6M_L"];
+  };
+//-------------------------------------------------------------------------------------------------
+// Afghan Police(BLUFOR)
+  case 13:
+  {
+    _Unit_Pool_S = ["LOP_AA_Police_TL","LOP_AA_Police_SL","LOP_AA_Police_Corpsman","LOP_AA_Police_Rifleman","LOP_AA_Police_MG"];
+    _Unit_Pool_V = ["LOP_AA_Offroad_Police","LOP_AA_Offroad_M2_Police"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------
+// Afghan Army(BLUFOR)
+  case 14:
+  {
+    _Unit_Pool_S = ["LOP_AA_Infantry_Engineer","LOP_AA_Infantry_TL","LOP_AA_Infantry_SL","LOP_AA_Infantry_Corpsman","LOP_AA_Infantry_Rifleman","LOP_AA_Infantry_AT","LOP_AA_Infantry_AT_Asst","LOP_AA_Infantry_MG_Asst","LOP_AA_Infantry_MG","LOP_AA_Infantry_Marksman","LOP_AA_Infantry_GL"];
+    _Unit_Pool_V = ["LOP_AA_M998_D_4DR","LOP_AA_M1025_W_M2","LOP_AA_M1025_W_Mk19","LOP_AA_M1025_D"];
+    _Unit_Pool_T = ["LOP_AA_M113_W","LOP_AA_BMP2","LOP_AA_BMP1","LOP_AA_ZSU234"];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------  
+  
+  
   Default
   {
     if(DAC_Basic_Value != 5) then
