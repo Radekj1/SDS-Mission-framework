@@ -26,6 +26,13 @@ enableSentences false;
 
 // ====================================================================================
 
+// Respanw on Nimitz
+// Ten kod spowoduje, że gracze odrodzą się na lotiskowcu a nie pod nim (więcej info: https://www.youtube.com/watch?v=e47f4EYNVbk )
+
+// "respawn_west" setMarkerPosLocal [markerPos "respawn_West" select 0, markerPos "respawn_West" select 1, 18];
+
+// ====================================================================================
+
 // F3 - Briefing
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
