@@ -45,7 +45,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=91;
+		items=94;
 		class Item0
 		{
 			side="WEST";
@@ -55,10 +55,11 @@ class Mission
 				class Item0
 				{
 					position[]={23953.895,3.1900001,18606.393};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=0;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -5048,6 +5049,66 @@ class Mission
 				};
 			};
 		};
+		class Item91
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23668.58,3.1900001,19289.365};
+					azimut=-0.79421997;
+					id=335;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC";
+				};
+			};
+		};
+		class Item92
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23671.59,3.1900001,19153.834};
+					azimut=-0.79421997;
+					id=336;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC2";
+				};
+			};
+		};
+		class Item93
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23671.592,3.1900001,19027.344};
+					azimut=-0.79421997;
+					id=337;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC3";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -5056,7 +5117,7 @@ class Mission
 		{
 			position[]={24019.916,3.1900001,19041.689};
 			azimut=0.91207302;
-			id=335;
+			id=338;
 			side="EMPTY";
 			vehicle="I_CargoNet_01_ammo_F";
 			skill=0.60000002;
@@ -5067,7 +5128,7 @@ class Mission
 		{
 			position[]={24011.182,3.1900001,18655.348};
 			azimut=6.1266198;
-			id=336;
+			id=339;
 			side="EMPTY";
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
@@ -5078,7 +5139,7 @@ class Mission
 		{
 			position[]={24005.412,3.1900001,18272.484};
 			azimut=1.98466;
-			id=337;
+			id=340;
 			side="EMPTY";
 			vehicle="O_CargoNet_01_ammo_F";
 			skill=0.60000002;
