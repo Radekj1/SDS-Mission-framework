@@ -261,9 +261,9 @@ _mediumRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW"
 _heavyRig = ["rhsusf_iotv_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Medic","rhsusf_iotv_ocp_Squadleader","rhsusf_iotv_ocp_Teamleader"];
 
 // Diver
-_diverUniform =  ["rhs_uniform_FROG01_wd"];
-_diverHelmet = ["H_HelmetB_camo"];
-_diverRig = ["V_PlateCarrierH_CTRG"];
+_diverUniform =  ["rhs_uniform_FROG01_m81"];
+_diverHelmet = ["rhsusf_mich_bare_norotos_arc","rhsusf_mich_bare_norotos","rhsusf_ach_helmet_M81","rhsusf_ach_bare_headset_ess"];
+_diverRig = ["rhsusf_spc"];
 _diverGlasses = [];
 
 // Pilot
