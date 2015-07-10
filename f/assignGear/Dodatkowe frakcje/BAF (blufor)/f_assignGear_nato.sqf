@@ -61,10 +61,10 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15A";		// IR Laser
+_attach1 = "UK3CB_BAF_LLM_IR";		// IR Laser
 _attach2 = "rhsusf_acc_anpeq15_light";		// Flashlight
 
-_silencer1 = "rhsusf_acc_nt4_black";		// 5.56 suppressor
+_silencer1 = "UK3CB_BAF_L85_Silencer";		// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";			// 6.5 suppressor
 
 _scope1 = "rhsusf_acc_eotech_552";		// Holosight
@@ -94,12 +94,12 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_m16a4_carryhandle_grip_pmag";
+_rifle = "UK3CB_BAF_L85A2_RIS_AFG";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_m4a1_grip2";
+_carbine = "UK3CB_BAF_L22A2";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -114,7 +114,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "rhs_weap_m4a1_m320";
+_glrifle = "UK3CB_BAF_L85A2_UGL";
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
@@ -131,8 +131,8 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "rhsusf_weap_m1911a1";
-_pistolmag = "rhsusf_mag_7x45acp_MHP";
+_pistol = "UK3CB_BAF_L131A1";
+_pistolmag = "UK3CB_BAF_17Rnd_9mm";
 
 // Grenades
 _grenade = "rhs_mag_m67";
@@ -167,13 +167,13 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_Parachute";			// Spadochron
-_bagFTL = "tf_anprc155_coyote";      // Plecak dla dowódcy (radio)
-_bagMedic = "B_Kitbag_rgr";        // Plecak dla medyka
-_bagAR = "rhsusf_assault_eagleaiii_coy"; // Plecak dla RKM
-_bagENG = "B_Carryall_khk";                // Plecak dla Mechanika
-_bagR = "B_AssaultPack_cbr";				// Plecak dla strzelca, strzelca AT
+_bagFTL = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";      // Plecak dla dowódcy (radio)
+_bagMedic = "UK3CB_BAF_B_Bergen_MTP_Medic_H_B";        // Plecak dla medyka
+_bagAR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"; // Plecak dla RKM
+_bagENG = "UK3CB_BAF_B_Bergen_MTP_Engineer_H_A";                // Plecak dla Mechanika
+_bagR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";				// Plecak dla strzelca, strzelca AT
 _bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";		// used by divers
-_baguav = "B_rhsusf_B_BACKPACK";			// used by UAV operator
+_baguav = "UK3CB_BAF_B_Bergen_MTP_Radio_H_B";			// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
 _baghatg = "B_AT_01_weapon_F";				// used by Heavy AT gunner
@@ -193,9 +193,9 @@ _ARmag = "rhs_200rnd_556x45_M_SAW";
 _ARmag_tr = "rhs_200rnd_556x45_M_SAW";
 
 // Medium MG
-_MMG = "hlc_lmg_M60E4";
-_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
-_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
+_MMG = "rhs_weap_m240B_CAP";
+_MMGmag = "rhsusf_100Rnd_762x51";
+_MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Marksman rifle
 _DMrifle = "rhs_weap_m14ebrri";
@@ -246,8 +246,8 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_FROG01_wd"];
-_baseHelmet = ["rhsusf_ach_bare_wood_headset_ess","rhsusf_ach_bare_wood_headset","rhsusf_ach_bare_wood"];
+_baseUniform = ["UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM","UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve","UK3CB_BAF_U_CombatUniform_MTP_TShirt"];
+_baseHelmet = ["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_B","UK3CB_BAF_H_Mk7_Camo_E","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_ESS_C","UK3CB_BAF_H_Mk7_Net_C","UK3CB_BAF_H_Mk7_Net_ESS_A","UK3CB_BAF_H_Mk7_Net_ESS_C","UK3CB_BAF_H_Mk7_Scrim_C","UK3CB_BAF_H_Mk7_Scrim_D","UK3CB_BAF_H_Mk7_Scrim_E","UK3CB_BAF_H_Mk7_Scrim_ESS_C","UK3CB_BAF_H_Mk7_Net_CESS_A"];
 _baseGlasses = [];
 
 // Armored vests
@@ -262,15 +262,15 @@ _diverRig = ["rhsusf_spc"];
 _diverGlasses = [];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotUniform = ["UK3CB_BAF_U_HeliPilotCoveralls_RAF"];
+_pilotHelmet = ["UK3CB_BAF_H_PilotHelmetHeli_A"];
+_pilotRig = ["UK3CB_BAF_V_Pilot_A"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_FROG01_wd"];
-_crewHelmet = ["rhsusf_cvc_helmet"];
-_crewRig = ["rhsusf_spc"];
+_crewUniform = ["UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM","UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve","UK3CB_BAF_U_CombatUniform_MTP_TShirt"];
+_crewHelmet = ["UK3CB_BAF_H_CrewHelmet_A","UK3CB_BAF_H_CrewHelmet_ESS_A"];
+_crewRig = ["UK3CB_BAF_V_Osprey_Holster","UK3CB_BAF_V_Osprey"];
 _crewGlasses = [];
 
 // Ghillie
