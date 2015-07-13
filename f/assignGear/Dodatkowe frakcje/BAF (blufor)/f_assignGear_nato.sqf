@@ -262,15 +262,15 @@ _diverRig = ["rhsusf_spc"];
 _diverGlasses = [];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotUniform = ["UK3CB_BAF_U_HeliPilotCoveralls_RAF"];
+_pilotHelmet = ["UK3CB_BAF_H_PilotHelmetHeli_A"];
+_pilotRig = ["UK3CB_BAF_V_Pilot_A"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_FROG01_wd"];
-_crewHelmet = ["rhsusf_cvc_helmet"];
-_crewRig = ["rhsusf_spc"];
+_crewUniform = ["UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM","UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve","UK3CB_BAF_U_CombatUniform_MTP_TShirt"];
+_crewHelmet = ["UK3CB_BAF_H_CrewHelmet_A","UK3CB_BAF_H_CrewHelmet_ESS_A"];
+_crewRig = ["UK3CB_BAF_V_Osprey_Holster","UK3CB_BAF_V_Osprey"];
 _crewGlasses = [];
 
 // Ghillie
