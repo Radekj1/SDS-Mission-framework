@@ -147,7 +147,7 @@ _smokegrenadered = "SmokeShellRed";
 
 // Sprzet medyczny itp.
 _bandage = "ACE_fieldDressing";
-_epinephrine = "_epinephrine";
+_epinephrine = "ACE_epinephrine";
 _morphine = "ACE_morphine";
 _blood = "ACE_bloodIV_500";
 _earplugs = "ACE_EarPlugs";
