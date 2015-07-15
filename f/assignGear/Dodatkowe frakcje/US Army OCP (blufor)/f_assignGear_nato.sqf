@@ -104,7 +104,7 @@ _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_m4a1_carryhandle_grip";
+_carbine = "rhs_weap_m4_m320";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -174,7 +174,7 @@ _chemblue = "Chemlight_blue";
 _bagsmall = "B_Parachute";			// Spadochron
 _bagFTL = "tf_rt1523g_big_rhs";      // Plecak dla dowódcy (radio)
 _bagMedic = "B_Kitbag_cbr";        // Plecak dla medyka
-_bagAR = "rhsusf_assault_eagleaiii_coy";    // Plecak dla RKM
+_bagAR = "B_Carryall_mcamo";    // Plecak dla RKM
 _bagENG = "B_Carryall_mcamo";                // Plecak dla Mechanika
 _bagR = "B_AssaultPack_cbr";				// Plecak dla strzelca, strzelca AT
 _bagmediumdiver =  "B_Kitbag_rgr";		// used by divers
@@ -392,7 +392,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
 	};
@@ -403,14 +403,13 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
 	};
@@ -422,7 +421,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		//{_unit addItem _firstaid} forEach [1,2,3,4];
 		//_unit addItem [_bandage,30];
 		//_unit addItem [_morphine,15];
@@ -442,9 +441,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
-		_unit addmagazines [_smokegrenadeblue,1];
-		_unit addWeapon "Binocular";
+		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
 	};
@@ -465,9 +463,9 @@ switch (_typeofUnit) do
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_riflemag_tr,2];
-		_unit addweapon _rifle;
+		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -479,9 +477,9 @@ switch (_typeofUnit) do
 // LOADOUT: RIFLEMAN (AT)
 	case "rat":
 	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
+		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_riflemag_tr,2];
+		_unit addweapon _rifle;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -497,7 +495,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_DMriflemag,7];
 		_unit addweapon _DMrifle;
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		["dm"] call _backpack;
@@ -510,7 +508,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_MMGmag,1];
 		_unit addweapon _MMG;
 		_unit addmagazines [_MMGmag,2];
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		["mmg"] call _backpack;
@@ -563,7 +561,7 @@ switch (_typeofUnit) do
 		["matg"] call _backpack;
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -576,8 +574,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";;
-		_unit addmagazines [_grenade,1];
+		_unit addWeapon "Rangefinder";
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
@@ -656,7 +654,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Binocular";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,2];
@@ -683,7 +681,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Binocular";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -698,7 +696,7 @@ switch (_typeofUnit) do
 		_unit addweapon _SNrifle;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_attach1,_scope3];
 	};
 
@@ -708,7 +706,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,3];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon "Rangefinder";
@@ -724,11 +722,11 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "Binocular";
-		_unit addBackpack _bagFTL;
+		_unit addWeapon "ACE_Vector";
+		["ftl"] call _backpack;
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -738,7 +736,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		["cc"] call _backpack;
@@ -751,7 +749,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 	};
@@ -763,7 +761,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 	};
@@ -775,7 +773,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		["cc"] call _backpack;
 	};
 
@@ -786,7 +784,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
@@ -834,7 +832,6 @@ switch (_typeofUnit) do
 // LOADOUT: Diver
 	case "div":
 	{
-
 		_unit addmagazines [_diverMag1,4];
 		_unit addmagazines [_diverMag2,3];
 		_unit addweapon _diverWep;
@@ -842,7 +839,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_attach1,_attach2,_scope1,_silencer3];
+		_attachments = [_attach1,_scope1,_silencer1];
 		["div"] call _backpack;
 	};
 
@@ -882,6 +879,21 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
 		["smg"] call _backpack;
+	};
+
+// LOADOUT: GRENADIER
+	case "gren":
+	{
+		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag_tr,2];
+		_unit addweapon _glrifle;
+		_unit addmagazines [_glmag,6];
+		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_grenade,3];
+		_unit addmagazines [_pistolmag,2];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		["g"] call _backpack;
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
