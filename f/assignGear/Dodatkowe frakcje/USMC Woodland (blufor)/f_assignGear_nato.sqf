@@ -721,6 +721,7 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "ACE_Vector";
+		_attachments = [];
 		["ftl"] call _backpack;
 	};
 
@@ -734,6 +735,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -747,6 +749,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -759,6 +762,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -769,6 +773,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -780,6 +785,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
@@ -974,7 +980,10 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
-		_unit addItemCargoGlobal [_firstaid, 6];
+		_unit addItemCargoGlobal [_bandage, 25];
+		_unit addItemCargoGlobal ["ACE_morphine",25];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",25];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
 };
 
 // CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
@@ -995,7 +1004,10 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
-		_unit addItemCargoGlobal [_firstaid, 25];
+		_unit addItemCargoGlobal [_bandage, 50];
+		_unit addItemCargoGlobal ["ACE_morphine",50];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",50];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",25];
 };
 
 // CRATE: Duża skrzynka, amunicja dla 1 plutonu
@@ -1016,16 +1028,19 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
-		_unit addItemCargoGlobal [_firstaid, 75];
+		_unit addItemCargoGlobal [_bandage, 150];
+		_unit addItemCargoGlobal ["ACE_morphine",100];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",100];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
 };
 
 // CRATE: Mała skrzynka, zasoby medyczne
 	case "crate_smallmedical":
 {
-		clearWeaponCargoGlobal _unit;
-		clearMagazineCargoGlobal _unit;
-		clearItemCargoGlobal _unit;
-		clearBackpackCargoGlobal _unit;
+	clearWeaponCargoGlobal _unit;
+	clearMagazineCargoGlobal _unit;
+	clearItemCargoGlobal _unit;
+	clearBackpackCargoGlobal _unit;
         _unit addItemCargoGlobal ["ACE_fieldDressing",400];
         _unit addItemCargoGlobal ["ACE_morphine",300];
         _unit addItemCargoGlobal ["ACE_epinephrine",100];
@@ -1035,10 +1050,10 @@ switch (_typeofUnit) do
 // CRATE: Duża skrzynka, zasoby medyczne
 	case "crate_bigmedical":
 {
-		clearWeaponCargoGlobal _unit;
-		clearMagazineCargoGlobal _unit;
-		clearItemCargoGlobal _unit;
-		clearBackpackCargoGlobal _unit;
+	clearWeaponCargoGlobal _unit;
+	clearMagazineCargoGlobal _unit;
+	clearItemCargoGlobal _unit;
+	clearBackpackCargoGlobal _unit;
         _unit addItemCargoGlobal ["ACE_fieldDressing",1000];
         _unit addItemCargoGlobal ["ACE_morphine",800];
         _unit addItemCargoGlobal ["ACE_epinephrine",400];
