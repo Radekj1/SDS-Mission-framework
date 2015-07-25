@@ -76,10 +76,10 @@ _bipod1 = "rhsusf_acc_harris_bipod";		// Default bipod
 _bipod2 = "bipod_02_F_blk";			// Black bipod
 
 // Default setup
-_attachments = [_attach2,_scope1]; 		// The default attachment set for most units, overwritten in the individual unitType
+_attachments = [_attach2]; 		// The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
-// [_attach1,_scope1,_silencer1] = remove all, add items assigned in _attach1, _scope1 and _silencer1
+// [_attach1,_silencer1] = remove all, add items assigned in _attach1, _scope1 and _silencer1
 // [_scope2] = add _scope2, remove rest
 // false = keep attachments as they are
 
@@ -194,7 +194,7 @@ _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
-_MMG = "rhs_weap_pkp";
+_MMG = "rhs_weap_pkm";
 _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
@@ -248,7 +248,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["LOP_U_AA_Fatigue_03"];
-_baseHelmet = ["rhsusf_ach_bare_tan"];
+_baseHelmet = ["rhs_6b27m_green","rhs_6b27m_green_ess","rhsusf_ach_bare_tan_headset_ess","LOP_H_6B27M_ess_ANA","rhsusf_ach_bare_tan"];
 _baseGlasses = [];
 
 // Vests
@@ -835,7 +835,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_attach1,_scope1,_silencer1];
+		_attachments = [_attach1,_silencer1];
 		["div"] call _backpack;
 	};
 
