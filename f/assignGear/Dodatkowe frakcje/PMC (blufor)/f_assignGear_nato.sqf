@@ -725,6 +725,7 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "ACE_Vector";
+		_attachments = [];
 		["ftl"] call _backpack;
 	};
 
@@ -738,6 +739,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -750,6 +752,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
+		_attachments = [];
 		_unit assignItem "ItemGPS";
 	};
 
@@ -762,6 +765,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
+		_attachments = [];
 		_unit assignItem "ItemGPS";
 	};
 
@@ -773,6 +777,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -784,6 +789,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
