@@ -258,27 +258,27 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 
 // Woodland-Hex
-_baseUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
-_baseHelmet = ["LOP_H_SSh68Helmet_OLV"];
+_baseUniform = ["LOP_U_TAK_Civ_Fatigue_01","LOP_U_TAK_Civ_Fatigue_02","LOP_U_TAK_Civ_Fatigue_04","LOP_U_UA_Fatigue_03","LOP_U_AM_Fatigue_01","LOP_U_AM_Fatigue_02","LOP_U_AM_Fatigue_03","LOP_U_AM_Fatigue_04"];
+_baseHelmet = ["H_ShemagOpen_khk","LOP_H_Pakol","H_ShemagOpen_tan","LOP_H_Turban","H_TKA_A3_Turban"];
 _baseGlasses = [];
 
 // Urban
-//_baseUniform = ["LOP_U_UA_Fatigue_01"];
+//_baseUniform = ["LOP_U_TAK_Civ_Fatigue_02"];
 //_baseHelmet = [];
 
 // Vests
-_lightRig = ["LOP_V_6B23_6Sh92_OLV","LOP_V_6Sh92_Radio_OLV","LOP_V_6Sh92_Vog_OLV"];
-_mediumRig = ["LOP_V_6B23_6Sh92_OLV","LOP_V_6Sh92_Radio_OLV","LOP_V_6Sh92_Vog_OLV"]; 	// default for all infantry classes
-_heavyRig = ["LOP_V_6B23_6Sh92_OLV","LOP_V_6Sh92_Radio_OLV","LOP_V_6Sh92_Vog_OLV"];
+_lightRig = ["V_BandollierB_rgr"];
+_mediumRig = ["V_BandollierB_rgr"]; 	// default for all infantry classes
+_heavyRig = ["V_BandollierB_rgr"];
 
 // Diver
-_diverUniform =  ["LOP_U_UA_Fatigue_01"];
+_diverUniform =  ["LOP_U_AM_Fatigue_01"];
 _diverHelmet = [];
 _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_UA_Fatigue_01"];
+_pilotUniform = ["LOP_U_AM_Fatigue_01"];
 _pilotHelmet = ["rhs_zsh7a_mike","rhs_zsh7a","rhs_gssh18"];
 _pilotRig = ["rhs_vest_commander"];
 _pilotGlasses = [];
@@ -286,7 +286,7 @@ _pilotGlasses = [];
 // Crewman
 _crewUniform = ["LOP_U_AM_Fatigue_01"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["LOP_V_6Sh92_Radio_OLV"];
+_crewRig = ["rhs_6b23_ML_crewofficer","rhs_6b23_ML_crew","rhs_6b23_ML_engineer"];
 _crewGlasses = [];
 
 // Ghillie
@@ -386,24 +386,6 @@ switch (_typeofUnit) do
 {
 
 // ====================================================================================
-
-// LOADOUT: COMMANDER
-	case "co":
-	{
-		_unit addmagazines [_glriflemag,7];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
-		_unit addweapon _glrifle;					//_COrifle
-		_unit addmagazines [_pistolmag,2];
-		_unit addweapon _pistol;
-		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,1];
-		_unit addmagazines [_smokegrenadered,2];
-		_unit addWeapon "ACE_Vector";
-		_unit linkItem "ItemGPS";
-		["ftl"] call _backpack;
-	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
@@ -734,6 +716,7 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "ACE_Vector";
+		_attachments = [];
 		["ftl"] call _backpack;
 	};
 
@@ -747,6 +730,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -760,6 +744,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -772,6 +757,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -782,6 +768,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -793,6 +780,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
