@@ -140,7 +140,14 @@ _grenade = "rhs_mag_m67";
 _smokegrenade = "rhs_mag_an_m8hc";
 _smokegrenadegreen = "rhs_mag_m18_green";
 
-// misc medical items.
+// Sprzet medyczny itp.
+_bandage = "ACE_fieldDressing";
+_epinephrine = "ACE_epinephrine";
+_morphine = "ACE_morphine";
+_blood = "ACE_bloodIV_500";
+_earplugs = "ACE_EarPlugs";
+_bodybag = "ACE_bodyBag";
+
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
