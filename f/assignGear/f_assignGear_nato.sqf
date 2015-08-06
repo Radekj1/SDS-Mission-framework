@@ -316,13 +316,28 @@ if (_isMan) then {
 	// ADD UNIVERSAL ITEMS
 	// Add items universal to all units of this faction
 
-	_unit linkItem _nvg;			// Add and equip the faction's nvg
-	_unit addItem _firstaid;		// Add a single first aid kit (FAK)
-	_unit linkItem "ItemMap";		// Add and equip the map
-	_unit linkItem "ItemCompass";	// Add and equip a compass
-	_unit linkItem "ItemRadio";		// Add and equip A3's default radio
-	_unit linkItem "ItemWatch";		// Add and equip a watch
-	//_unit linkItem "ItemGPS"; 	// Add and equip a GPS
+	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
+	_unit addItem _bandage;	
+    	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;	
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
+	_unit addItem _morphine;
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _epinephrine;
+	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
+	_unit linkItem "ItemMap";		// Dodanie mapy
+	_unit linkItem "ItemCompass";		// Dodanie kompsu
+	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
+	_unit linkItem "ItemWatch";		// Dodanie zegarka
+	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
 
