@@ -72,7 +72,7 @@ _scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
 _scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
 // Default setup
-_attachments = [_attach2,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
+_attachments = [_scope1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
 // [_attach1,_scope1,_silencer2] = remove all, add items assigned in _attach1, _scope1 and _silencer1
@@ -94,12 +94,12 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "UK3CB_BAF_L85A2_RIS_AFG";
+_rifle = "UK3CB_BAF_L85A2_EMAG";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "UK3CB_BAF_L86A3";
+_carbine = "UK3CB_BAF_L22";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -153,7 +153,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "rhsusf_ANPVS_15";
+_nvg = "UK3CB_BAF_HMNVS";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -167,9 +167,9 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_Parachute";			// Spadochron
-_bagFTL = "tf_rt1523g_big_rhs";      // Plecak dla dowódcy (radio)
-_bagMedic = "UK3CB_BAF_B_Bergen_MTP_Medic_L_B";        // Plecak dla medyka
-_bagAR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"; // Plecak dla RKM
+_bagFTL = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";    	 // Plecak dla dowódcy (radio)
+_bagMedic = "UK3CB_BAF_B_Bergen_MTP_Medic_L_B";        	// Plecak dla medyka
+_bagAR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C";		// Plecak dla RKM
 _bagENG = "UK3CB_BAF_B_Bergen_MTP_Engineer_H_A";                // Plecak dla Mechanika
 _bagR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";				// Plecak dla strzelca, strzelca AT
 _bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";		// used by divers
@@ -179,7 +179,7 @@ _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
 _baghatg = "B_AT_01_weapon_F";				// used by Heavy AT gunner
 _baghatag = "B_HMG_01_support_F";			// used by Heavy AT assistant gunner
 _bagmtrg = "B_Mortar_01_weapon_F";			// used by Mortar gunner
-_bagmtrag = "B_Mortar_01_support_F";		// used by Mortar assistant gunner
+_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
@@ -193,9 +193,9 @@ _ARmag = "rhs_200rnd_556x45_M_SAW";
 _ARmag_tr = "rhs_200rnd_556x45_M_SAW";
 
 // Medium MG
-_MMG = "hlc_lmg_M60E4";
-_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
-_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
+_MMG = "rhs_weap_m240B_CAP";
+_MMGmag = "rhsusf_100Rnd_762x51";
+_MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Marksman rifle
 _DMrifle = "rhs_weap_m14ebrri";
@@ -247,7 +247,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve"];
-_baseHelmet = ["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_CESS_A"];
+_baseHelmet = ["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_CESS_A","UK3CB_BAF_H_Mk7_Net_ESS_D"];
 _baseGlasses = [];
 
 // Armored vests
@@ -299,7 +299,7 @@ _isMan = _unit isKindOf "CAManBase";	// We check if we're dealing with a soldier
 // This block needs only to be run on an infantry unit
 if (_isMan) then {
 
-		// PREPARE UNIT FOR GEAR ADDITION
+	// PREPARE UNIT FOR GEAR ADDITION
 	// The following code removes all existing weapons, items, magazines and backpacks
 
 	removeBackpack _unit;
@@ -322,7 +322,7 @@ if (_isMan) then {
 	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
-    _unit addItem _bandage;
+    	_unit addItem _bandage;
 	_unit addItem _bandage;
 	_unit addItem _bandage;	
 	_unit addItem _bandage;
@@ -332,12 +332,11 @@ if (_isMan) then {
 	_unit addItem _bandage;	
 	_unit addItem _bandage;
 	_unit addItem _bandage;
-	_unit addItem _bandage;	// Dodanie 12 sztuk bandaży
+	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
 	_unit addItem _morphine;
-	_unit addItem _morphine;
-	_unit addItem _morphine;
-	_unit addItem _morphine;		// Dodanie 4 sztuk morfiny
-	_unit addItem _epinephrine;	
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _epinephrine;
+	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
