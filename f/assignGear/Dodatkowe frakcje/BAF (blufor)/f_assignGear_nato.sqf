@@ -61,8 +61,8 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15A";		// IR Laser
-_attach2 = "rhsusf_acc_anpeq15_light";		// Flashlight
+_attach1 = "UK3CB_BAF_LLM_IR_Black";        		// IR Laser
+_attach2 = "UK3CB_BAF_LLM_Flashlight_Black";        	// Flashlight
 
 _silencer1 = "UK3CB_BAF_L85_Silencer";		// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";			// 6.5 suppressor
