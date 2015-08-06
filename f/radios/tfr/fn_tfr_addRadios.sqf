@@ -15,6 +15,7 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
       _radio1 = "tf_rt1523g_big_rhs";
+      // _radio1 = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";  //radio dla jednostek BAF
       _radio2 = TF_defaultWestPersonalRadio;
       _radio3 = TF_defaultWestRiflemanRadio;};
     case (east): {
