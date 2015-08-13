@@ -357,6 +357,7 @@ if (_isMan) then {
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
+_unit linkItem "ItemRadio"; // powinno naprawić brak radia u indforu :)
 	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
