@@ -194,7 +194,7 @@ _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
-_MMG = "rhs_weap_pkp";
+_MMG = "rhs_weap_pkm";
 _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
@@ -212,8 +212,8 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 // _DMriflemag = "10Rnd_127x54_Mag";
 
 // Rifleman AT
-_RAT = "ibr_rpg7v";
-_RATmag = "ibr_pg7v";
+_RAT = "rhs_weap_rpg26";
+_RATmag = "rhs_rpg26_mag";
 
 // Medium AT
 _MAT = "rhs_weap_rpg7";
@@ -258,8 +258,8 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 
 // Woodland-Hex
-_baseUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
-_baseHelmet = ["LOP_H_SSh68Helmet_OLV"];
+_baseUniform = ["LOP_U_UA_Fatigue_01","U_BG_Guerrilla_6_1","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
+_baseHelmet = ["LOP_H_SSh68Helmet_OLV","rhs_6b28","rhs_beanie_green","rhs_6b26","rhs_6b27m","LOP_H_6B27M_WDL","LOP_H_6B27M_CDF","H_Bandanna_camo"];
 _baseGlasses = [];
 
 // Urban
@@ -338,7 +338,7 @@ if (_isMan) then {
 
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
-    _unit addItem _bandage;
+    	_unit addItem _bandage;
 	_unit addItem _bandage;
 	_unit addItem _bandage;	
 	_unit addItem _bandage;
@@ -348,16 +348,15 @@ if (_isMan) then {
 	_unit addItem _bandage;	
 	_unit addItem _bandage;
 	_unit addItem _bandage;
-	_unit addItem _bandage;	// Dodanie 12 sztuk bandaży
+	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
 	_unit addItem _morphine;
-	_unit addItem _morphine;
-	_unit addItem _morphine;
-	_unit addItem _morphine;		// Dodanie 4 sztuk morfiny
-	_unit addItem _epinephrine;	
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _epinephrine;
+	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";		// Dodanie kompsu
+	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
-_unit linkItem "ItemRadio"; // powinno naprawić brak radia u indforu :)
 	//_unit linkItem "ItemGPS"; 		// Dodanie GPS (wyczone)
 
 };
