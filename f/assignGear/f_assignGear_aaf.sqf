@@ -350,7 +350,9 @@ if (_isMan) then {
 	_unit addItem _bandage;
 	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
 	_unit addItem _morphine;
-	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _morphine;
+	_unit addItem _morphine;
+	_unit addItem _morphine;		// Dodanie 4 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
 	_unit linkItem "ItemMap";		// Dodanie mapy
