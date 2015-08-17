@@ -796,7 +796,7 @@ switch (_typeofUnit) do
 
 // LOADOUT: ENGINEER (DEMO)
 	case "eng":
-	{
+{
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,1];
@@ -805,6 +805,8 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_unit addItem "ACE_Clacker"; //zapalnik
+		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["eng"] call _backpack;
 	};
 
