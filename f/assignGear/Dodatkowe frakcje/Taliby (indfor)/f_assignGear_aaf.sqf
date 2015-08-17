@@ -194,7 +194,7 @@ _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
-_MMG = "rhs_weap_pkp";
+_MMG = "rhs_weap_pkm";
 _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
@@ -212,8 +212,8 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 // _DMriflemag = "10Rnd_127x54_Mag";
 
 // Rifleman AT
-_RAT = "ibr_rpg7v";
-_RATmag = "ibr_pg7v";
+_RAT = "rhs_weap_rpg26";
+_RATmag = "rhs_rpg26_mag";
 
 // Medium AT
 _MAT = "rhs_weap_rpg7";
@@ -350,7 +350,9 @@ if (_isMan) then {
 	_unit addItem _bandage;
 	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
 	_unit addItem _morphine;
-	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
+	_unit addItem _morphine;
+	_unit addItem _morphine;
+	_unit addItem _morphine;		// Dodanie 4 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
 	_unit linkItem "ItemMap";		// Dodanie mapy
