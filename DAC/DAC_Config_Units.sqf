@@ -136,7 +136,7 @@ switch (_TypNumber) do
 // Afghan Police(BLUFOR)
   case 13:
   {
-    _Unit_Pool_S = ["LOP_AA_Police_TL","LOP_AA_Police_SL","LOP_AA_Police_Corpsman","LOP_AA_Police_Rifleman","LOP_AA_Police_MG"];
+    _Unit_Pool_S = ["LOP_AA_Police_Rifleman","LOP_AA_Police_Rifleman","LOP_AA_Police_SL","LOP_AA_Police_TL","LOP_AA_Police_Corpsman","LOP_AA_Police_Rifleman","LOP_AA_Police_MG"];
     _Unit_Pool_V = ["LOP_AA_Offroad_Police","LOP_AA_Offroad_M2_Police"];
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
