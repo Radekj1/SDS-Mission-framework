@@ -194,7 +194,7 @@ _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
-_MMG = "rhs_weap_pkp";
+_MMG = "rhs_weap_pkm";
 _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
@@ -272,14 +272,14 @@ _diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["LOP_U_CDF_Fatigue_01"];
-_pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotHelmet = ["rhs_zsh7a_mike","rhs_zsh7a"];
+_pilotRig = ["rhs_vest_commander"];
 _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["LOP_U_CDF_Fatigue_01"];
-_crewHelmet = ["rhsusf_cvc_green_helmet"];
-_crewRig = ["rhsusf_spc"];
+_crewHelmet = ["rhs_tsh4"];
+_crewRig = ["V_CDF_A3_6b23_crew"];
 _crewGlasses = [];
 
 // Ghillie
