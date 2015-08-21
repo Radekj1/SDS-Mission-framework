@@ -151,7 +151,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------  
-  
+// African militia (INDFOR)
+  case 15:
+  {
+    _Unit_Pool_S = ["LOP_AFR_Driver","LOP_AFR_Driver","LOP_AFR_Infantry_TL","LOP_AFR_Infantry_SL","LOP_AFR_Infantry_Rifleman","LOP_AFR_Infantry_Marksman","LOP_AFR_Infantry_AR","LOP_AFR_Infantry_IED","LOP_AFR_Infantry_GL","LOP_AFR_Infantry_Corpsman","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_AT"									];
+    _Unit_Pool_V = ["LOP_AFR_Landrover_M2"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------  
   
   Default
   {
