@@ -577,3 +577,10 @@ case "cc":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
 };
+
+
+// Plecak Pilota
+case "pp":
+{
+	_unit addBackpack _bagPP;
+};
