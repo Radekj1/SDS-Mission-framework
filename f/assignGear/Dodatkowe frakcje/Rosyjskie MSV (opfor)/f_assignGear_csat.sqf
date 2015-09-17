@@ -185,7 +185,7 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk";
+_AR = "hlc_rifle_rpk74n";
 _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
@@ -370,6 +370,24 @@ switch (_typeofUnit) do
 
 // ====================================================================================
 
+// LOADOUT: COMMANDER
+	case "co":
+	{
+		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag_tr,2];
+		_unit addmagazines [_glmag,6];
+		_unit addmagazines [_glsmokewhite,2];
+		_unit addweapon _glrifle;					//_COrifle
+		_unit addmagazines [_pistolmag,2];
+		_unit addweapon _pistol;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addWeapon "Binocular";
+		_unit linkItem "ItemGPS";
+		["ftl"] call _backpack;
+	};
+
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
@@ -382,7 +400,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
 	};
@@ -415,7 +433,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
 	};
@@ -629,7 +647,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,2];
@@ -656,7 +674,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
@@ -700,7 +718,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Binocular";
 		_attachments = [];
 		["ftl"] call _backpack;
 	};
@@ -793,8 +811,10 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
-		_unit addItem "ACE_Clacker";			//zapalnik
-		_unit addItem "ACE_DefusalKit";			//zestaw do rozbrajania
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
+		_unit addItem "ACE_Clacker"; //zapalnik
+		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
 

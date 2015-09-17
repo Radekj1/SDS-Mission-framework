@@ -243,7 +243,7 @@ _specOp = [];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_04_slv","LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04","LOP_U_PMC_Fatigue_04","LOP_U_AFR_Fatigue_01"];
+_baseUniform = ["LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_04_slv","LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04","LOP_U_PMC_Fatigue_04","LOP_U_AFR_Fatigue_01","rhs_chdkz_uniform_2","rhs_chdkz_uniform_5"];
 _baseHelmet = ["rhs_6b27m_green","rhs_beanie_green","rhs_beanie","H_Booniehat_khk_hs","H_ShemagOpen_tan","H_Shemag_olive","LOP_H_ChDKZ_Beret"];
 _baseGlasses = [];
 
@@ -802,6 +802,10 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
+		_unit addItem "ACE_Clacker"; //zapalnik
+		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
 

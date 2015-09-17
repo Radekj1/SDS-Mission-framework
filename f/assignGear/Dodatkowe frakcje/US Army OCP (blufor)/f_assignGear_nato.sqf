@@ -798,8 +798,6 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addItem "ACE_Clacker"; //zapalnik
-		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["eng"] call _backpack;
 	};
 
@@ -814,6 +812,10 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
+		_unit addItem "ACE_Clacker"; //zapalnik
+		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
 
@@ -827,7 +829,7 @@ switch (_typeofUnit) do
         _unit addweapon _glrifle;        
         _unit addmagazines [_smokegrenade,2];
         _unit addmagazines [_grenade,2];
-        _unit addmagazines [_pistolmag,2];
+        _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
 		_unit linkItem "ItemGPS"; 
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
