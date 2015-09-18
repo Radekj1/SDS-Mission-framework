@@ -139,16 +139,19 @@ _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadeblue = "SmokeShellBlue";
 _smokegrenadered = "SmokeShellRed";
 
-// Sprzet medyczny i inne przydatne rzeczy.
+// Sprzet medyczny
 _bandage = "ACE_fieldDressing";
 _epinephrine = "ACE_epinephrine";
 _morphine = "ACE_morphine";
 _blood = "ACE_bloodIV_500";
-_earplugs = "ACE_EarPlugs";
 _bodybag = "ACE_bodyBag";
 
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
+
+//Przydatne rzeczy
+_earplugs = "ACE_EarPlugs";
+_IRstrobe = "ACE_IR_Strobe_Item";
 
 // Noktowizja
 _nvg = "rhsusf_ANPVS_15";
@@ -334,6 +337,7 @@ if (_isMan) then {
 	_unit addItem _morphine;		// Dodanie 3 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
+	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
