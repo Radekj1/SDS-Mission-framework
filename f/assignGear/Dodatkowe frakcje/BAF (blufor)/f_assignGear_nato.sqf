@@ -834,7 +834,7 @@ switch (_typeofUnit) do
         _unit addweapon _pistol;
 		_unit linkItem "ItemGPS"; 
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
-        ["uav"] call _backpack;
+        ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
 
