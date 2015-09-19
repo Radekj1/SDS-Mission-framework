@@ -23,7 +23,7 @@ switch ((side player)) do { //longrange, shortrange, rifradio
       _radio2 = TF_defaultEastPersonalRadio;
       _radio3 = TF_defaultEastRiflemanRadio;};
     default {
-      _radio1 = TF_defaultGuerBackpack;
+      _radio1 = "tf_anprc155_coyote";
       _radio2 = TF_defaultGuerPersonalRadio;
       _radio3 = TF_defaultGuerRiflemanRadio;};
 };
