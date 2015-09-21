@@ -20,13 +20,13 @@ switch (_CampTyp) do
 //-------------------------------------------------------------------------------------------------------------------------
 	case 0:   // IND OUTPOST with tent and 2x mortar
 	{
-		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["O_Mortar_01_F",0,12,0,"LOP_AM_Infantry_Engineer"],["O_Mortar_01_F",14,12,0,"LOP_AM_Infantry_Engineer"]];
+		_campStatic    = [["B_Mortar_01_F",0,12,0,"rhsusf_usmc_marpat_d_fso"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
-		_campWall      = ["Land_fort_bagfence_long",[-10,30],[40,56,0],[5,5,5,5],[1,0.2],[0,0]];
+		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
 //-------------------------------------------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_NATO_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["B_Mortar_01_F",0,12,0,"rhsusf_usmc_marpat_wd_rifleman"],["B_Mortar_01_F",14,12,0,"rhsusf_usmc_marpat_wd_rifleman"]];
+		_campStatic    = [["B_Mortar_01_F",0,12,0,"B_CDF_A3_Soldier_Militia"],["B_Mortar_01_F",14,12,0,"B_CDF_A3_Soldier_Militia"]];
 		_campAddUnit   = [];
 		_campUserObj   = [
 			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
@@ -72,7 +72,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["O_Mortar_01_F",0,12,0,"LOP_AM_Infantry_Engineer"],["O_Mortar_01_F",14,12,0,"LOP_AM_Infantry_Engineer"]];
+		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AFR_Infantry_Rifleman"]];
 		_campAddUnit   = [];
 		_campUserObj   = [
 			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
@@ -117,7 +117,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["O_Mortar_01_F",0,12,0,"LOP_AM_Infantry_Engineer"],["O_Mortar_01_F",14,12,0,"LOP_AM_Infantry_Engineer"]];
+		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AFR_Infantry_Rifleman"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -138,7 +138,9 @@ switch (_CampTyp) do
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
 	
-//-------------------------------------------------------------------------------------------------------------------------	Default {
+//-------------------------------------------------------------------------------------------------------------------------
+
+	Default {
 				if(DAC_Basic_Value != 5) then
 				{
 					DAC_Basic_Value = 5;publicvariable "DAC_Basic_Value";

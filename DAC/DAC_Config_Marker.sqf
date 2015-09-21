@@ -375,18 +375,18 @@ switch (_MarkerConfig) do
 	{		
 				_setShowZones 		= 0;
 				_setShowWPs 		= 0;
-				_setShowUnit 		= [1,1,1,1];
+				_setShowUnit 		= 0;
 				_setGroupType 		= 0;
-				_setMarkerText		= ["if(format[""%1"",_group] == ""<NULL-group>"") then {format[""<--- %1"",typeof _unit]} else {format[""%1"",count units _group]}"];
-				_setMarkerDel 		= 1;
-				_setMarkerRefresh 	= [0.5,0.5];
-				_setSizeWpLine 		= [1,5];
+				_setMarkerText		= [];
+				_setMarkerDel 		= 0;
+				_setMarkerRefresh 	= [];
+				_setSizeWpLine 		= [];
 				_setSizeLeaderLine 	= 0;
 				_setSizeZoneLine 	= 0;
-				_setSizeCampLine 	= 4;
-				_setSizeZoneBorder 	= 4;
+				_setSizeCampLine 	= 0;
+				_setSizeZoneBorder 	= 0;
 				_setArtiMarker 		= 1;
-				_setCampMarker 		= 1;
+				_setCampMarker 		= 0;
 				_setSideColor 		= [
 										"ColorRed",
 										"ColorBlue",
