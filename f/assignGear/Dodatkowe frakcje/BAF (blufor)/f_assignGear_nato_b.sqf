@@ -8,8 +8,8 @@ case "m":
 	// LOADOUT: LIGHT
 	if (_loadout == 0) then {
 	_unit addBackpack _bagsmall;
-	    _unit addItem [_blood, 6];
-		_unit addItem [_bandage,30];
+	    _unit addItem [_saline, 6];
+		_unit addItem [_bandage,45];
 		_unit addItem [_morphine,15];
 		_unit addItem [_epinephrine,15];
 	};
@@ -17,10 +17,11 @@ case "m":
 	if (_loadout == 1) then {
 		_unit addBackpack _bagMedic;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal	[_blood, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_bandage, 30];
+		(unitBackpack _unit) addItemCargoGlobal	[_saline, 10];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage, 45];
 		(unitBackpack _unit) addItemCargoGlobal [_morphine, 15];
 		(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 15];
+		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 8];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
 		(unitBackpack _unit) addItemCargoGlobal ["UK3CB_BAF_H_Beret_PR",1];
 	};
@@ -28,10 +29,11 @@ case "m":
 	if (_loadout == 2) then {
 		_unit addBackpack _bagMedic;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal	[_blood, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_bandage, 30];
+		(unitBackpack _unit) addItemCargoGlobal	[_saline, 10];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage, 45];
 		(unitBackpack _unit) addItemCargoGlobal [_morphine, 15];
 		(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 15];
+		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 8];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
 		(unitBackpack _unit) addItemCargoGlobal ["UK3CB_BAF_H_Beret_PR",1];
 	};

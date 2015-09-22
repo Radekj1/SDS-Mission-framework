@@ -137,11 +137,14 @@ _smokegrenadeblue = "SmokeShellBlue";
 _smokegrenadered = "SmokeShellRed";
 
 // Sprzet medyczny
-_bandage = "ACE_fieldDressing";
-_epinephrine = "ACE_epinephrine";
-_morphine = "ACE_morphine";
-_blood = "ACE_bloodIV_500";
-_bodybag = "ACE_bodyBag";
+_personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
+_surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
+_bandage = "ACE_quikclot";					// Opatrunek "Quik Clot" dla piechoty
+_epinephrine = "ACE_epinephrine";			// Epinefryna
+_morphine = "ACE_morphine";					// Morfina
+_blood = "ACE_bloodIV_500";					// Krew 500 ml
+_plasma = "ACE_plasmaIV_500";				// Osocze 500 ml
+_saline = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
 
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
@@ -330,9 +333,9 @@ if (_isMan) then {
 	_unit addItem _bandage;
 	_unit addItem _bandage;
 	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
+	_unit addItem _personalAidKit;	// Dodanie jednorazowej apteczki
 	_unit addItem _morphine;
-	_unit addItem _morphine;
-	_unit addItem _morphine;		// Dodanie 3 sztuk morfiny
+	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
 	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
