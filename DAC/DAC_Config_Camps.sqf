@@ -18,11 +18,11 @@ private [
 switch (_CampTyp) do
 {
 //-------------------------------------------------------------------------------------------------------------------------
-	case 0:   // IND OUTPOST with tent and 2x mortar
+	case 0:   // IND OUTPOST with tent and 1x mortar
 	{
-		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["B_Mortar_01_F",0,12,0,"rhsusf_usmc_marpat_d_fso"]];
+		_campStatic    = [["B_Mortar_01_F",0,12,0,"LOP_AM_Infantry_Engineer"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -68,11 +68,11 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 3:		// IND  HQ with 4 x towers 2 x mortar    big walls closed on N side large opening S side 
+	case 3:		// IND  HQ with 4 x towers 1 x mortar    big walls closed on N side large opening S side 
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AFR_Infantry_Rifleman"]];
+		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AM_Infantry_Engineer"]];
 		_campAddUnit   = [];
 		_campUserObj   = [
 			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
@@ -113,11 +113,11 @@ switch (_CampTyp) do
 	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 6:  // IND OUTPOST with sandbag tower and 2x mortar
+	case 6:  // IND OUTPOST with sandbag tower and PLOT
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AFR_Infantry_Rifleman"]];
+		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AM_Infantry_Engineer"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
