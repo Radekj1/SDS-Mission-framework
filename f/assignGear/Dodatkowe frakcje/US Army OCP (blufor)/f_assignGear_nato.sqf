@@ -195,9 +195,14 @@ _ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
 _ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
 
 // Strzelec MMG
-_MMG = "rhs_weap_m240B_CAP";
-_MMGmag = "rhsusf_100Rnd_762x51";
-_MMGmag_tr = "rhsusf_100Rnd_762x51";
+//_MMG = "rhs_weap_m240B_CAP";
+//_MMGmag = "rhsusf_100Rnd_762x51";
+//_MMGmag_tr = "rhsusf_100Rnd_762x51";
+
+// Strzelec MMG
+_MMG = "hlc_lmg_M60E4";
+_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
+_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
 
 // Strzelec wyborowy (broń DLC)
 _DMrifle = "srifle_DMR_06_camo_F";
