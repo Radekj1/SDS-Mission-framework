@@ -166,20 +166,21 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_Parachute";							// Spadochron
-_bagFTL = "tf_rt1523g_big_bwmod_tropen";      		// Plecak dla dowódcy (radio)
-_bagMedic = "B_Carryall_khk";        				// Plecak dla medyka
-_bagAR = "B_Carryall_khk";							// Plecak dla RKM
-_bagENG = "B_Kitbag_rgr";                			// Plecak dla Mechanika
-_bagR = "B_Kitbag_rgr";								// Plecak dla strzelca, strzelca AT
-_bagmediumdiver = "rhsusf_assault_eagleaiii_coy";	// used by divers
-_baguav = "tf_rt1523g_big_bwmod_tropen";			// used by UAV operator
+_bagsmall = "B_Parachute";						// Spadochron
+_bagFTL = "tf_rt1523g_big_bwmod_tropen";      				// Plecak dla dowódcy (radio)
+_bagPP = "tf_rt1523g_big_bwmod_tropen";      				// Plecak pilota (radio)
+_bagMedic = "B_Carryall_khk";        					// Plecak dla medyka
+_bagAR = "B_Carryall_khk";						// Plecak dla RKM
+_bagENG = "B_Kitbag_rgr";                				// Plecak dla Mechanika
+_bagR = "B_Kitbag_rgr";							// Plecak dla strzelca, strzelca AT
+_bagmediumdiver = "rhsusf_assault_eagleaiii_coy";			// used by divers
+_baguav = "tf_rt1523g_big_bwmod_tropen";				// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";						// used by Heavy MG gunner
-_baghmgag = "RHS_M2_MiniTripod_Bag";				// used by Heavy MG assistant gunner
+_baghmgag = "RHS_M2_MiniTripod_Bag";					// used by Heavy MG assistant gunner
 _baghatg = "B_AT_01_weapon_F";						// used by Heavy AT gunner
 _baghatag = "B_HMG_01_support_F";					// used by Heavy AT assistant gunner
 _bagmtrg = "B_Mortar_01_weapon_F";					// used by Mortar gunner
-_bagmtrag = "B_Mortar_01_support_F";				// used by Mortar assistant gunner
+_bagmtrag = "B_Mortar_01_support_F";					// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";						// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";					// used by Heavy SAM assistant gunner
 
