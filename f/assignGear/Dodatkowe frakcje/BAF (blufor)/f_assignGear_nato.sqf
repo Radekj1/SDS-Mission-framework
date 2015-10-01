@@ -163,22 +163,23 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Plecaki
-_bagsmall = "B_Parachute";									// Spadochron
-_bagFTL = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";    	 		// Plecak dla dowódcy (radio)
-_bagMedic = "UK3CB_BAF_B_Bergen_MTP_Medic_L_B";        		// Plecak dla medyka
-_bagAR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C";				// Plecak dla RKM
-_bagENG = "UK3CB_BAF_B_Bergen_MTP_Engineer_H_A";			// Plecak dla Mechanika
-_bagR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";				// Plecak dla strzelca, strzelca AT
-_bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";			// used by divers
-_baguav = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";				// used by UAV operator
-_baghmgg = "RHS_M2_Gun_Bag";								// used by Heavy MG gunner
+_bagsmall = "B_Parachute";							// Spadochron
+_bagFTL = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";    	 			// Plecak dla dowódcy (radio)
+_bagPP = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";    	 				// Plecak dla pilota (radio)
+_bagMedic = "UK3CB_BAF_B_Bergen_MTP_Medic_L_B";        				// Plecak dla medyka
+_bagAR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C";					// Plecak dla RKM
+_bagENG = "UK3CB_BAF_B_Bergen_MTP_Engineer_H_A";				// Plecak dla Mechanika
+_bagR = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";					// Plecak dla strzelca, strzelca AT
+_bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";				// used by divers
+_baguav = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";					// used by UAV operator
+_baghmgg = "RHS_M2_Gun_Bag";							// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";						// used by Heavy MG assistant gunner
-_baghatg = "B_AT_01_weapon_F";								// used by Heavy AT gunner
-_baghatag = "B_HMG_01_support_F";							// used by Heavy AT assistant gunner
-_bagmtrg = "B_Mortar_01_weapon_F";							// used by Mortar gunner
+_baghatg = "B_AT_01_weapon_F";							// used by Heavy AT gunner
+_baghatag = "B_HMG_01_support_F";						// used by Heavy AT assistant gunner
+_bagmtrg = "B_Mortar_01_weapon_F";						// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";						// used by Mortar assistant gunner
-_baghsamg = "B_AA_01_weapon_F";								// used by Heavy SAM gunner
-_baghsamag = "B_HMG_01_support_F";							// used by Heavy SAM assistant gunner
+_baghsamg = "B_AA_01_weapon_F";							// used by Heavy SAM gunner
+_baghsamag = "B_HMG_01_support_F";						// used by Heavy SAM assistant gunner
 
 // ====================================================================================
 
