@@ -156,6 +156,7 @@ _medkit = "Medikit";
 //Przydatne rzeczy
 _earplugs = "ACE_EarPlugs";
 _IRstrobe = "ACE_IR_Strobe_Item";
+_latarka = "ACE_Flashlight_XL50";
 
 // Noktowizja
 _nvg = "rhsusf_ANPVS_15";
@@ -354,7 +355,7 @@ if (_isMan) then {
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
 	//_unit linkItem "ItemGPS"; 	// Dodanie GPS (wyczone)
-	
+	_unit addItem _latarka;			// Latarka na mape
 	
   };
   
