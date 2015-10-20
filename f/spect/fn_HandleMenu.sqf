@@ -36,5 +36,25 @@ switch (_button) do {
     	{
     		_control ctrlSetText "First Person";
     	}
-	}
+	};
+    case 4: {
+        _this spawn {
+            [] call F_fnc_ForceExit;
+            f_cam_VirtualCreated = nil;
+            switch (f_var_radios) do {
+                // ACRE
+                case 1: {
+                    [false] call acre_api_fnc_setSpectator;
+                };
+                // TFR
+                case 2: {
+                    [player, false] call TFAR_fnc_forceSpectator;
+                };
+                case 3: {
+                    [false] call acre_api_fnc_setSpectator;
+                };
+            };
+            forceRespawn player;
+        };
+    };
 };

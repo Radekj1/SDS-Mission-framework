@@ -2,6 +2,7 @@ class fspectator
 {
 	file = "f\spect";
 	class CamInit{};
+	class CamInitRespawn{};
 	class OnUnload{};
 	class DrawTags{};
 	class EventHandler{};

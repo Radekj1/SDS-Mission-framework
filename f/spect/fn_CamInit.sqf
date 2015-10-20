@@ -119,7 +119,7 @@ f_cam_muteSpectators = true;
 
 // ====================================================================================
 // Menu (Top left)
-f_cam_menuControls = [2111,2112,2113,2114,2101,4302];
+f_cam_menuControls = [2111,2112,2113,2114,2101,4302,2120];
 f_cam_menuShownTime = 0;
 f_cam_menuShown = true;
 f_cam_menuWorking = false;
@@ -195,6 +195,11 @@ createDialog "f_spec_dialog";
 ((findDisplay 9228) displayCtrl 1360) ctrlShow false;
 ((findDisplay 9228) displayCtrl 1360) mapCenterOnCamera false;
 
+
+if (isNil "camInitRespawnNext") then
+{
+    ((findDisplay 9228) displayCtrl 2120) ctrlShow false;
+};
 f_cam_helptext = "<t color='#EAA724'><br />Hold right-click to pan the camera<br />Use the scroll wheel or numpad+/- to zoom in and out.<br />Use ctrl + rightclick to fov zoom<br /><br />Press H to show and close the help window.<br />Press M to toggle between no map,minimap and full size map.<br />T for switching on tracers on the map<br/>Space to switch to freecam <br/>Press H to close this window</t>";
 ((findDisplay 9228) displayCtrl 1310) ctrlSetStructuredText parseText (f_cam_helptext);
 // create the camera and set it up.
