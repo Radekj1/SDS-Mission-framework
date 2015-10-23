@@ -169,22 +169,40 @@ _chemblue = "Chemlight_blue";
 
 // Plecaki
 _bagsmall = "B_Parachute";		         		// Parachute
-_bagFTL = "tf_mr3000_rhs";                  			// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  			// Plecak dla pilota (radio)
-_bagMedic = "B_Carryall_cbr";               			// Plecak dla medyka
-_bagAR = "B_Kitbag_rgr";                     			// Plecak dla RKM
-_bagENG = "rhs_assault_umbts_engineer_empty";   		// Plecak dla Mechanika
-_bagR = "rhs_sidor";						// Plecak dla strzelca, strzelca AT
-_bagmedium = "B_Kitbag_rgr";					// carries 200, weighs 30
+
+_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
+_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+
+_bagTL = "B_Kitbag_cbr";						//Plecak dowódcy drużyny
+
+_bagMs = "B_AssaultPack_cbr";					// Plecak dla medyka (mały)
+_bagMm = "B_FieldPack_cbr";						// Plecak dla medyka (średni)
+_bagMb = "B_TacticalPack_oli";               	// Plecak dla medyka (duży)
+
+_bagARs = "rhs_assault_umbts";					// Plecak dla RKM (mały)
+_bagARm = "B_Kitbag_cbr";						// Plecak dla RKM (średni)
+_bagARb = "B_Carryall_cbr";                     // Plecak dla RKM (duży)
+
+_bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
+
+_bagR = "B_FieldPack_oli";						// Plecak dla strzelca, strzelca AT
+
+_bagMAT = "rhs_rpg_empty";						// Plecak dla MAT
+
+_bagmedium = "B_Kitbag_cbr";					// carries 200, weighs 30
 _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
-_bagmediumdiver =  "rhs_assault_umbts";				// used by divers
-_baguav = "tf_mr3000_rhs";					// used by UAV operator
+
+_bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
+
+_baguav = "tf_mr3000_rhs";						// Plecak RTO
+
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
+
 _baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
 _baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
 _bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";				// used by Mortar assistant gunner
+_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
 _baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
 _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
@@ -445,7 +463,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["ftl"] call _backpack;
+		["g"] call _backpack;
 	};
 
 
