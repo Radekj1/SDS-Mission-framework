@@ -146,7 +146,7 @@ class Params
     {
             title = "$STR_f_param_loadouts";
             values[] = {0,1,2};
-            texts[] = {"Paratroopers","Normal","Heavy"};
+            texts[] = {"Light","Normal","Heavy"};
             default = 1;
             code = "f_param_backpacks = %1";
     };
