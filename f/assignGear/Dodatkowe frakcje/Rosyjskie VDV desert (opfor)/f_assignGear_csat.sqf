@@ -463,7 +463,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
-		["ftl"] call _backpack;
+		["g"] call _backpack;
 	};
 
 
