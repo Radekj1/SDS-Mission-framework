@@ -790,6 +790,21 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
+        class SpectRespawnButton: RscSpectButton
+        {
+            idc = 2120;
+            x = 0.25 * safezoneW + safezoneX;
+            y = -5.99921e-005 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.02 * safezoneH;
+            text = "Respawn";
+            tooltip = "Return to game";
+            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+            onButtonClick = "[_this select 0,4] call f_fnc_HandleMenu";
+            onMouseHolding = "f_cam_menuShownTime=time";
+            onMouseMoving = "f_cam_menuShownTime=time";
+        };
+		
         class SpecText: RscSpectText
         {
             idc = 1000;

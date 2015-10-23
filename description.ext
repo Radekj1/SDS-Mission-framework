@@ -37,6 +37,7 @@ respawn = 3; // respawn w bazie
 respawndelay = 10; // 10 sekund po smierci dopiero sie zrespawnuje gracz
 respawnOnStart = 0; // nie tykac
 respawnTemplates[] = {"Seagull","f_spectator","f_JIP"}; // nie tykac
+// respawnTemplates[] = {"Seagull","f_SpectatorRespawn"}; // spectator z opcją respawnu ( używać tylko gdy respawn=3 )
 
 // ============================================================================================
 
@@ -369,6 +370,10 @@ class CfgRespawnTemplates
 	class f_Spectator
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
+	};
+	class f_SpectatorRespawn
+	{
+		onPlayerRespawn = "f_fnc_CamInitRespawn";
 	};
   	//Overwrite Vanilla Seagull
     class Seagull
