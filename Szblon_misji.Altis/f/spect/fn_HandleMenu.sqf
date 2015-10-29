@@ -49,6 +49,7 @@ switch (_button) do {
                 // TFR
                 case 2: {
                     [player, false] call TFAR_fnc_forceSpectator;
+                    diag_log "TFR wylaczenie dla SPEC";    //LOG do RPT
                 };
                 case 3: {
                     [false] call acre_api_fnc_setSpectator;
