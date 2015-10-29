@@ -64,3 +64,11 @@ else
 		[_xUnit,_this select 2,_this select 3] call fJipPlayerRespawn;
 	};
 };
+
+//Przeladowanie brifu.
+waitUntil{ oldPlayerFaction == faction player };
+
+[] execVM "f\medical\medical_init.sqf";
+f_script_briefing = [] execVM "briefing.sqf";
+[] execVM "f\briefing\f_orbatNotes.sqf";
+[] execVM "f\briefing\f_loadoutNotes.sqf";
