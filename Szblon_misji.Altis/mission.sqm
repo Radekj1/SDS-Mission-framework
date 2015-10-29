@@ -20,7 +20,6 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
 		"dac_source",
-		"A3_Characters_F_Gamma",
 		"A3_Supplies_F_Heli_CargoNets",
 		"a3_map_altis"
 	};
@@ -61,17 +60,30 @@ class Mission
 					vehicle="B_officer_F";
 					player="PLAYER COMMANDER";
 					leader=1;
-					rank="LIEUTENANT";
+					rank="COLONEL";
 					skill=0.60000002;
 					text="UnitNATO_CO";
 					init="GrpNATO_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="Oficer";
+					description="Dowódca Komapnii";
 				};
 				class Item1
 				{
-					position[]={23394.191,3.1900001,18391.383};
-					azimut=-0.79422045;
+					position[]={23393.477,3.1900001,18391.508};
+					azimut=-0.79421997;
 					id=1;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_CO_UAV";
+					init="GrpNATO_CO = group this; [""uav"",this] call f_fnc_assignGear;";
+					description="RTO";
+				};
+				class Item2
+				{
+					position[]={23396.578,3.1900001,18391.219};
+					azimut=-0.79422045;
+					id=2;
 					side="WEST";
 					vehicle="B_medic_F";
 					rank="CORPORAL";
@@ -80,19 +92,6 @@ class Mission
 					init="GrpNATO_CO = group this; [""m"",this] call f_fnc_assignGear;";
 					description="Medyk";
 				};
-				class Item2
-				{
-					position[]={23397.176,3.1900001,18391.262};
-					azimut=-0.79421997;
-					id=2;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					rank="CORPORAL";
-					skill=0.60000002;
-					text="UnitNATO_CO_UAV";
-					init="GrpNATO_CO = group this; [""uav"",this] call f_fnc_assignGear;";
-					description="FAC";
-				};
 				class Item3
 				{
 					position[]={23400.039,3.1900001,18391.324};
@@ -100,6 +99,7 @@ class Mission
 					id=3;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_CO_D";
 					init="GrpNATO_CO = group this; [""eng"",this] call f_fnc_assignGear;";
@@ -116,12 +116,12 @@ class Mission
 				class Item0
 				{
 					position[]={23439.889,3.1900001,18362.643};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=4;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
 					leader=1;
-					rank="SERGEANT";
+					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_ASL_SL";
 					init="GrpNATO_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
@@ -133,11 +133,12 @@ class Mission
 					azimut=355.47699;
 					id=5;
 					side="WEST";
-					vehicle="B_soldier_repair_F";
+					vehicle="B_medic_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ASL_M";
-					init="GrpNATO_ASL = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="Alpha Mechanik";
+					init="GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="Alpha Medeyk";
 				};
 			};
 		};
@@ -150,12 +151,12 @@ class Mission
 				class Item0
 				{
 					position[]={23438.156,3.1900001,18351.699};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=6;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_A1_FTL";
 					init="GrpNATO_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
@@ -164,10 +165,11 @@ class Mission
 				class Item1
 				{
 					position[]={23441.051,3.1900001,18350.02};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=7;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_A1_AR";
 					init="GrpNATO_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -176,10 +178,11 @@ class Mission
 				class Item2
 				{
 					position[]={23444.166,3.1900001,18349.969};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=8;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A1_AAR";
 					init="GrpNATO_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
@@ -188,14 +191,14 @@ class Mission
 				class Item3
 				{
 					position[]={23447.355,3.1900001,18349.98};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=9;
 					side="WEST";
-					vehicle="B_soldier_LAT_F";
+					vehicle="B_Soldier_F";
 					skill=0.60000002;
-					text="UnitNATO_A1_AT";
-					init="GrpNATO_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
-					description="Alpha 1 Strzelec (AT)";
+					text="UnitNATO_A1_R";
+					init="GrpNATO_A1 = group this; [""r"",this] call f_fnc_assignGear;";
+					description="Alpha 1 Strzelec";
 				};
 			};
 		};
@@ -208,12 +211,12 @@ class Mission
 				class Item0
 				{
 					position[]={23439.539,3.1900001,18341.682};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=10;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_A2_FTL";
 					init="GrpNATO_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
@@ -234,26 +237,27 @@ class Mission
 				class Item2
 				{
 					position[]={23445.375,3.1900001,18339.76};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=12;
 					side="WEST";
-					vehicle="B_soldier_AAR_F";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_A2_AAR";
-					init="GrpNATO_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
-					description="Alpha 2 Amunicyjny RKM";
+					text="UnitNATO_A2_AT_2";
+					init="GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="Alpha 2 Strzelec (AT)";
 				};
 				class Item3
 				{
 					position[]={23448.693,3.1900001,18339.791};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=13;
 					side="WEST";
-					vehicle="B_soldier_LAT_F";
+					vehicle="B_Soldier_F";
 					skill=0.60000002;
-					text="UnitNATO_A2_AT";
-					init="GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
-					description="Alpha 2 Strzelec (AT)";
+					text="UnitNATO_A2_R";
+					init="GrpNATO_A2 = group this; [""r"",this] call f_fnc_assignGear;";
+					description="Alpha 2 Strzelec";
 				};
 			};
 		};
@@ -266,12 +270,12 @@ class Mission
 				class Item0
 				{
 					position[]={23463.82,3.1900001,18362.572};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=14;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
 					leader=1;
-					rank="SERGEANT";
+					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_BSL_SL";
 					init="GrpNATO_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
@@ -279,15 +283,16 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={23468.742,3.1900001,18361.486};
+					position[]={23466.172,3.1900001,18361.135};
 					azimut=355.47699;
 					id=15;
 					side="WEST";
-					vehicle="B_soldier_repair_F";
+					vehicle="B_medic_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO";
-					init="GrpNATO_BSL = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="Bravo Mechanik";
+					text="UnitNATO_BSL_M";
+					init="GrpNATO_BSL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="Bravo Medyk";
 				};
 			};
 		};
@@ -300,12 +305,12 @@ class Mission
 				class Item0
 				{
 					position[]={23462.307,3.1900001,18351.438};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=16;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_B1_FTL";
 					init="GrpNATO_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
@@ -314,10 +319,11 @@ class Mission
 				class Item1
 				{
 					position[]={23465.195,3.1900001,18349.854};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=17;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B1_AR";
 					init="GrpNATO_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -326,10 +332,11 @@ class Mission
 				class Item2
 				{
 					position[]={23468.188,3.1900001,18349.799};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=18;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B1_AAR";
 					init="GrpNATO_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
@@ -338,14 +345,14 @@ class Mission
 				class Item3
 				{
 					position[]={23471.465,3.1900001,18349.822};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=19;
 					side="WEST";
-					vehicle="B_soldier_LAT_F";
+					vehicle="B_Soldier_F";
 					skill=0.60000002;
-					text="UnitNATO_B1_AT";
-					init="GrpNATO_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
-					description="Bravo 1 Strzelec (AT)";
+					text="UnitNATO_B1_R";
+					init="GrpNATO_B1 = group this; [""r"",this] call f_fnc_assignGear;";
+					description="Bravo 1 Strzelec";
 				};
 			};
 		};
@@ -358,12 +365,12 @@ class Mission
 				class Item0
 				{
 					position[]={23463.301,3.1900001,18341.396};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=20;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_B2_FTL";
 					init="GrpNATO_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
@@ -372,38 +379,40 @@ class Mission
 				class Item1
 				{
 					position[]={23466.479,3.1900001,18339.689};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=21;
 					side="WEST";
-					vehicle="B_soldier_AR_F";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_B2_AR";
-					init="GrpNATO_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
-					description="Bravo 2 Strzelec RKM";
+					text="UnitNATO_B2_AT_1";
+					init="GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="Bravo 2 Strzelec (AT)";
 				};
 				class Item2
 				{
 					position[]={23469.635,3.1900001,18339.588};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=22;
 					side="WEST";
-					vehicle="B_soldier_AAR_F";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_B2_AAR";
-					init="GrpNATO_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
-					description="Bravo 2 Amunicyjny RKM";
+					text="UnitNATO_B2_AT_2";
+					init="GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="Bravo 2 Strzelec (AT)";
 				};
 				class Item3
 				{
 					position[]={23473.047,3.1900001,18339.604};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=23;
 					side="WEST";
-					vehicle="B_soldier_LAT_F";
+					vehicle="B_Soldier_F";
 					skill=0.60000002;
-					text="UnitNATO_B2_AT";
-					init="GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
-					description="Bravo 2 Strzelec (AT)";
+					text="UnitNATO_B2_R";
+					init="GrpNATO_B2 = group this; [""r"",this] call f_fnc_assignGear;";
+					description="Bravo 2 Strzelec";
 				};
 			};
 		};
@@ -421,7 +430,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
 					leader=1;
-					rank="SERGEANT";
+					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_CSL_SL";
 					init="GrpNATO_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
@@ -433,11 +442,12 @@ class Mission
 					azimut=355.47699;
 					id=25;
 					side="WEST";
-					vehicle="B_soldier_repair_F";
+					vehicle="B_medic_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_2";
-					init="GrpNATO_CSL = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="Charlie Mechanik";
+					text="UnitNATO_CSL_M";
+					init="GrpNATO_CSL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="Charlie Medyk";
 				};
 			};
 		};
@@ -450,24 +460,25 @@ class Mission
 				class Item0
 				{
 					position[]={23490.131,3.1900001,18349.6};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=26;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_C1_FTL";
 					init="GrpNATO_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-					description="Charlie 2 Dowódca Zespołu";
+					description="Charlie 1 Dowódca Zespołu";
 				};
 				class Item1
 				{
 					position[]={23493.092,3.1900001,18348.037};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=27;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C1_AR";
 					init="GrpNATO_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -476,10 +487,11 @@ class Mission
 				class Item2
 				{
 					position[]={23496.27,3.1900001,18348.061};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=28;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C1_AAR";
 					init="GrpNATO_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
@@ -488,14 +500,14 @@ class Mission
 				class Item3
 				{
 					position[]={23499.58,3.1900001,18348.041};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=29;
 					side="WEST";
-					vehicle="B_soldier_LAT_F";
+					vehicle="B_Soldier_F";
 					skill=0.60000002;
-					text="UnitNATO_C1_AT";
-					init="GrpNATO_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
-					description="Charlie 1 Strzelec (AT)";
+					text="UnitNATO_C1_R";
+					init="GrpNATO_C1 = group this; [""r"",this] call f_fnc_assignGear;";
+					description="Charlie 1 Strzelec";
 				};
 			};
 		};
@@ -522,38 +534,40 @@ class Mission
 				class Item1
 				{
 					position[]={23492.699,3.1900001,18340.645};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=31;
 					side="WEST";
-					vehicle="B_soldier_AR_F";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_C2_AR";
-					init="GrpNATO_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
-					description="Charlie 1 Strzelec RKM";
+					text="UnitNATO_C2_AT_1";
+					init="GrpNATO_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="Charlie 2 Strzelec (AT)";
 				};
 				class Item2
 				{
 					position[]={23495.791,3.1900001,18340.602};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=32;
 					side="WEST";
-					vehicle="B_soldier_AAR_F";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_C2_AAR";
-					init="GrpNATO_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
-					description="Charlie 2 Amunicyjny RKM";
+					text="UnitNATO_C2_AT_2";
+					init="GrpNATO_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="Charlie 2 Strzelec (AT)";
 				};
 				class Item3
 				{
 					position[]={23499.092,3.1900001,18340.633};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=33;
 					side="WEST";
-					vehicle="B_soldier_LAT_F";
+					vehicle="B_Soldier_F";
 					skill=0.60000002;
-					text="UnitNATO_C2_AT";
-					init="GrpNATO_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
-					description="Charlie 2 Strzelec (AT)";
+					text="UnitNATO_C2_R";
+					init="GrpNATO_C2 = group this; [""r"",this] call f_fnc_assignGear;";
+					description="Charlie 2 Strzelec";
 				};
 			};
 		};
@@ -2993,12 +3007,12 @@ class Mission
 				class Item0
 				{
 					position[]={23549.65,3.1900001,18247.189};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=186;
 					side="WEST";
 					vehicle="B_recon_TL_F";
 					leader=1;
-					rank="SERGEANT";
+					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_DT1_TL";
 					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
@@ -3011,7 +3025,7 @@ class Mission
 					id=187;
 					side="WEST";
 					vehicle="B_recon_F";
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D1";
 					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
@@ -3020,7 +3034,7 @@ class Mission
 				class Item2
 				{
 					position[]={23555.498,3.1900001,18245.061};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=188;
 					side="WEST";
 					vehicle="B_recon_F";
@@ -3554,7 +3568,7 @@ class Mission
 				class Item0
 				{
 					position[]={23550.008,3.1900001,18361.662};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=222;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
@@ -3562,16 +3576,17 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_FTL";
-					init="GrpNATO_MMG1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_MMG1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="MMG Dowódca Zespołu";
 				};
 				class Item1
 				{
 					position[]={23554.91,3.1900001,18359.072};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=223;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_G";
 					init="GrpNATO_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
@@ -3580,7 +3595,7 @@ class Mission
 				class Item2
 				{
 					position[]={23559.904,3.1900001,18358.76};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=224;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
@@ -3601,24 +3616,26 @@ class Mission
 				class Item0
 				{
 					position[]={23549.061,3.1900001,18351.217};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=225;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_HMG1_FTL";
-					init="GrpNATO_HMG1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_HMG1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="HMG Dowódca Zespołu";
 				};
 				class Item1
 				{
 					position[]={23553.953,3.1900001,18348.643};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=226;
 					side="WEST";
 					vehicle="B_support_MG_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_HMG1_G";
 					init="GrpNATO_HMG1 = group this; [""hmgg"",this] call f_fnc_assignGear; ";
@@ -3648,7 +3665,7 @@ class Mission
 				class Item0
 				{
 					position[]={23549.252,3.1900001,18339.742};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=228;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
@@ -3656,16 +3673,17 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_MAT1_FTL";
-					init="GrpNATO_MAT1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_MAT1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="MAT Dowódca Zespołu";
 				};
 				class Item1
 				{
 					position[]={23554.412,3.1900001,18336.75};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=229;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MAT1_G";
@@ -3696,7 +3714,7 @@ class Mission
 				class Item0
 				{
 					position[]={23549.346,3.1900001,18327.207};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=231;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
@@ -3704,16 +3722,17 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_HAT1_FTL";
-					init="GrpNATO_HAT1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_HAT1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="HAT Dowódca Zespołu";
 				};
 				class Item1
 				{
 					position[]={23555.008,3.1900001,18324.465};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=232;
 					side="WEST";
 					vehicle="B_soldier_AT_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_HAT1_G";
@@ -3752,7 +3771,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_MTR1_FTL";
-					init="GrpNATO_MTR1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_MTR1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="Moździerz Dowódca Zespołu";
 				};
 				class Item1
@@ -3762,6 +3781,7 @@ class Mission
 					id=235;
 					side="WEST";
 					vehicle="B_support_Mort_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MTR1_G";
@@ -3792,7 +3812,7 @@ class Mission
 				class Item0
 				{
 					position[]={23550.844,3.1900001,18305.195};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=237;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
@@ -3800,26 +3820,27 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_MSAM1_FTL";
-					init="GrpNATO_MSAM1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-					description="SAM Dowódca Zespołu";
+					init="GrpNATO_MSAM1 = group this; [""dc"",this] call f_fnc_assignGear;";
+					description="AA Dowódca Zespołu";
 				};
 				class Item1
 				{
 					position[]={23555.16,3.1900001,18302.012};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=238;
 					side="WEST";
 					vehicle="B_soldier_AA_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MSAM1_G";
 					init="GrpNATO_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear; ";
-					description="SAM Strzelec";
+					description="AA Strzelec";
 				};
 				class Item2
 				{
 					position[]={23561.641,3.1900001,18301.535};
-					azimut=-0.79422045;
+					azimut=-0.79421997;
 					id=239;
 					side="WEST";
 					vehicle="B_soldier_AAA_F";
@@ -3827,7 +3848,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_MSAM1_AG";
 					init="GrpNATO_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
-					description="SAM Obserwator";
+					description="AA Obserwator";
 				};
 			};
 		};
@@ -4238,7 +4259,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_CO";
 					init="GrpCSAT_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="Oficer";
+					description="Dowódca Kompanii";
 				};
 				class Item1
 				{
@@ -4727,35 +4748,35 @@ class Mission
 					side="WEST";
 					vehicle="B_officer_F";
 					leader=1;
-					rank="SERGEANT";
+					rank="MAJOR";
 					skill=0.60000002;
 					text="UnitNATO_DC";
 					init="GrpNATO_DC = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="NATO Deputy Commander";
+					description="Dowódca Plutonu";
 				};
 				class Item1
 				{
-					position[]={23393.42,3.1900001,18376.383};
+					position[]={23392.322,3.1900001,18376.471};
 					id=303;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_DC_UAV";
+					init="GrpNATO_DC = group this; [""uav"",this] call f_fnc_assignGear;";
+					description="RTO";
+				};
+				class Item2
+				{
+					position[]={23395.643,3.1900001,18376.137};
+					id=304;
 					side="WEST";
 					vehicle="B_medic_F";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DC_M";
 					init="GrpNATO_DC = group this; [""m"",this] call f_fnc_assignGear;";
-					description="NATO Medic";
-				};
-				class Item2
-				{
-					position[]={23396.357,3.1900001,18376.305};
-					id=304;
-					side="WEST";
-					vehicle="B_soldier_UAV_F";
-					rank="CORPORAL";
-					skill=0.60000002;
-					text="UnitNATO_DC_UAV";
-					init="GrpNATO_DC = group this; [""uav"",this] call f_fnc_assignGear; nul = this execVM ""f\chargeUAV\f_chargeUAVaction.sqf"";";
-					description="NATO UAV Operator";
+					description="Medyk";
 				};
 				class Item3
 				{
@@ -4763,10 +4784,11 @@ class Mission
 					id=305;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DC_D";
-					init="GrpNATO_DC = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="NATO Driver (Repair)";
+					init="GrpNATO_DC = group this; [""eng"",this] call f_fnc_assignGear;";
+					description="Mechanik";
 				};
 			};
 		};
@@ -4778,7 +4800,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={23444.23,3.1900001,18331.131};
+					position[]={23444.143,3.1900001,18319.777};
 					id=306;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
@@ -4791,7 +4813,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={23447.102,3.1900001,18329.197};
+					position[]={23447.014,3.1900001,18317.844};
 					id=307;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
@@ -4810,7 +4832,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={23468.566,3.1900001,18330.646};
+					position[]={23468.479,3.1900001,18319.293};
 					id=308;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
@@ -4823,7 +4845,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={23471.76,3.1900001,18329.014};
+					position[]={23471.672,3.1900001,18317.66};
 					id=309;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
@@ -4842,7 +4864,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={23495.072,3.1900001,18330.5};
+					position[]={23494.984,3.1900001,18319.146};
 					id=310;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
@@ -4855,7 +4877,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={23498.168,3.1900001,18329.117};
+					position[]={23498.08,3.1900001,18317.764};
 					id=311;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
