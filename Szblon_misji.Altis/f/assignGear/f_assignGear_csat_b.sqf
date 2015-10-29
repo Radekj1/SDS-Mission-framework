@@ -140,7 +140,6 @@ case "rat":
 		_unit addBackpack _bagR;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 6];
-		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 	};
 	// LOADOUT: MEDIUM
 	if (_loadout == 1) then {
@@ -149,7 +148,6 @@ case "rat":
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 8];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
-		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 	};
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
@@ -158,7 +156,6 @@ case "rat":
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 10];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 	};
 };
 
