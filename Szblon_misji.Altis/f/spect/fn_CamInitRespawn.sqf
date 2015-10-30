@@ -68,7 +68,11 @@ else
 //Przeladowanie brifu.
 waitUntil{ oldPlayerFaction == faction player };
 
-[] execVM "f\medical\medical_init.sqf";
 f_script_briefing = [] execVM "briefing.sqf";
+
+//Czeka na zaladowanie wyposażenia.
+waitUntil{(player getVariable ["f_var_assignGear_done", false])};
+
 [] execVM "f\briefing\f_orbatNotes.sqf";
 [] execVM "f\briefing\f_loadoutNotes.sqf";
+[] execVM "f\Safezone\safety_init.sqf";
