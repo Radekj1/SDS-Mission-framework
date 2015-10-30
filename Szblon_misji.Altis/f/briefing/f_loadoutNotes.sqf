@@ -3,54 +3,51 @@
 // ====================================================================================
 
 // DECLARE VARIABLES AND FUNCTIONS
+if (!hasInterface) exitWith {};
 
-private ["_text","_stuff","_weps","_items","_fnc_wepMags","_wepMags","_magArr","_s","_mags","_bp","_maxload"];
+private ["_text","_weps","_items","_fnc_wepMags","_wepMags","_magArr","_s","_mags","_icon"];
 
 // Local function to set the proper magazine count.
 _fnc_wepMags = {
-		private ["_w","_magarr"];
-		_w = _this select 0;
+    private ["_magarr"];
+    params["_w"];
 
-		//Get possible magazines for weapon
-		_wepMags = getArray (configFile >> "CfgWeapons" >> _w >> "magazines");
+    //Get possible magazines for weapon
+    _wepMags = getArray (configFile >> "CfgWeapons" >> _w >> "magazines");
 
-  		// Compare weapon magazines with player magazines
-  		_magArr = [];
-  		{
-  			// findInPairs returns the first index that matches the checked for magazine
-  			_s = [_mags,_x] call BIS_fnc_findInPairs;
+    // Compare weapon magazines with player magazines
+    _magArr = [];
+    {
+        // findInPairs returns the first index that matches the checked for magazine
+        _s = [_mags,_x] call BIS_fnc_findInPairs;
 
-  			//If we have a match
-  			if (_s != -1) then {
-  				// Add the number of magazines to the list
-  				_magArr set [count _magArr,([_mags,[_s, 1]] call BIS_fnc_returnNestedElement)];
+        //If we have a match
+        if (_s != -1) then {
+            // Add the number of magazines to the list
+            _numMags = ([_mags,[_s, 1]] call BIS_fnc_returnNestedElement);
+            _magArr pushBack _numMags;
+            // Remove the entry
+            _mags = [_mags, _s] call BIS_fnc_removeIndex;
 
-  				// Remove the entry
-  				_mags = [_mags, _s] call BIS_fnc_removeIndex;
+        };
+    } forEach _wepMags;
 
-  			};
-  		} forEach _wepMags;
+    if (count _magArr > 0) then {
+        _text = _text + " [";
 
-  		if (count _magArr > 0) then {
-  			_text = _text + " [";
+        {
+            _text = _text + format ["%1",_x];
+            if (count _magarr > (_forEachIndex + 1)) then {_text = _text + "+";}
+        } forEach _magArr;
 
-  			{
-  				_text = _text + format ["%1",_x];
-  				if (count _magarr > (_forEachIndex + 1)) then {_text = _text + "+";}
-  			} forEach _magArr;
-
-  			_text = _text + "]";
-  		};
+        _text = _text + "]";
+    };
 };
 
-
 // ====================================================================================
-
 // SET UP KEY VARIABLES
 
-_text = "<br />NOTE: The loadout shown below is only accurate at mission start.<br />
-<br />";
-_stuff = [];
+_text = "<br/>";
 
 // All weapons minus the field glasses
 _weps = weapons player - ["Rangefinder","Binocular","Laserdesignator"];
@@ -59,18 +56,31 @@ _weps = weapons player - ["Rangefinder","Binocular","Laserdesignator"];
 _wepItems = weaponsItems player;
 
 // Get a nested array containing all unique magazines and their count
-_mags = (magazines player) call BIS_fnc_consolidateArray;
+_mags = (magazines player + primaryWeaponMagazine player + secondaryWeaponMagazine player + handgunMagazine player) call BIS_fnc_consolidateArray;
 
 // Get a nested array containing all non-equipped items and their count
 _items = (items player) call BIS_fnc_consolidateArray;
 
+_visText = "";
+
 // ====================================================================================
+// Do this before _mags is deleted from.
+_magVisText = "";
+{
+    _icon = getText(configFile >> "CfgMagazines" >> (_x select 0) >> "picture");
+    if (_icon find ".paa" == -1) then { _icon = _icon + ".paa"};
+	_magVisText = _magVisText + "<img image='" + _icon + "' height=48 />";
+	if ((_x select 1) > 1) then {
+		_magVisText = _magVisText + format[" x%1",(_x select 1)];
+	};
+
+} forEach _mags;
 
 // WEAPONS
 // Add lines for all carried weapons and corresponding magazines
 
 if (count _weps > 0) then {
-	_text = _text + "<font size='18'>WEAPONS [#MAGAZINES]:</font>";
+	_text = _text + "<font size='18'>BROŃ:</font>";
 	{
 		_text = _text + format["<br/>%1",getText (configFile >> "CfgWeapons" >> _x >> "displayname")];
 
@@ -82,72 +92,77 @@ if (count _weps > 0) then {
 			_text = _text + "<br/> |- UGL";
 			["UGL_F"] call _fnc_wepMags;
 		};
-
+        _icon = getText(configFile >> "CfgWeapons" >> _x >> "picture");
+        if (_icon find ".paa" == -1) then { _icon = _icon + ".paa"};
+		_visText = _visText + "<img image='" + _icon + "' height=48 />";
+        
 		// List weapon attachments
 		// Get attached items
 		_attachments = _wepItems select (([_wepItems,_x] call BIS_fnc_findNestedElement) select 0);
-		_attachments = [_attachments,0] call BIS_fnc_removeIndex; // Remove the first element as it points to the weapon itself
+		_attachments deleteAt 0; // Remove the first element as it points to the weapon itself
 
 		{
 			if (typeName _x != typeName [] && {_x != ""}) then {
+                _icon = getText(configFile >> "CfgWeapons" >> _x >> "picture");
+                if (_icon find ".paa" == -1) then { _icon = _icon + ".paa"};
 				_text = _text + format["<br/> |- %1",getText (configFile >> "CfgWeapons" >> _x >> "displayname")];
+				_visText = _visText + "<img image='" + _icon + "' height=48 />";
 			};
 		} forEach _attachments;
-
+		_visText = _visText;
 	} forEach _weps;
 	_text = _text + "<br/>";
 };
 
 // ====================================================================================
-
 // OTHER MAGAZINES
 // Add lines for all magazines not tied to any carried weapon (grenades etc.)
 
 if (count _mags > 0) then {
-	_text = _text + "<br/><font size='18'>OTHER [#]:</font><br/>";
+	_text = _text + "<br/><font size='18'>GRANATY:</font><br/>";
 
 	{
 		_text = _text + format["%1 [%2]<br/>",getText (configFile >> "CfgMagazines" >> _x select 0 >> "displayname"),_x select 1];
 	} forEach _mags;
 };
 
-// ====================================================================================
+_visText = _visText + _magVisText;
 
+// ====================================================================================
 // BACKPACK
 // Add lines for all other items
 
 if !(backpack player == "") then {
-	_text = _text + "<br/><font size='18'>BACKPACK [%FULL]:</font><br/>";
-
-	_bp = backpack player;
-	_text = _text + format["%1 [%2",getText (configFile >> "CfgVehicles" >> _bp >> "displayname"), 100*loadBackpack player]+"%]<br/>";
-	//_maxload = getNumber(configFile >> "CfgVehicles" >> _bp >> "maximumload");
-	//_text = _text + format["%1 [%2/%3]<br/>",getText (configFile >> "CfgVehicles" >> _bp >> "displayname"), _maxload*loadBackpack player,_maxload];
+	_text = _text + "<br/><font size='18'>PLECAK [WYPEŁNIENIE]:</font><br/>";
+	_text = _text + format["%1 [%2",getText (configFile >> "CfgVehicles" >> (backpack player) >> "displayname"), 100*loadBackpack player]+"%]<br/>";
 };
 
 // ====================================================================================
-
 // ITEMS
 // Add lines for all other items
 
 if (count _items > 0) then {
-	_text = _text + "<br/><font size='18'>ITEMS [#]:</font><br/>";
+	_text = _text + "<br/><font size='18'>PRZEDMIOTY:</font><br/>";
 
 	{
 		_text = _text + format["%1 [%2]<br/>",getText (configFile >> "CfgWeapons" >> _x select 0 >> "displayname"),_x select 1];
+		_visText = _visText + "<img image='" + getText(configFile >> "CfgWeapons" >> _x select 0  >> "picture") + "' height=48 />";
+		if ((_x select 1) > 1) then {
+			_visText = _visText + format[" x%1",(_x select 1)];
+		};
 	} forEach _items;
 
 	{
 		_text = _text + format["*%1<br/>",getText (configFile >> "CfgWeapons" >> _x >> "displayname")];
+		_visText = _visText + "<img image='" + getText(configFile >> "CfgWeapons" >> _x >> "picture") + "' height=48 />";
 	} forEach assignedItems player;
 
-	_text = _text + "<br/>*Indicates an equipped item.";
+	_text = _text + "<br/>*Przedmioty już w wyposażeniu.";
 };
 
 // ====================================================================================
-
 // ADD DIARY SECTION
 // Wait for the briefing script to finish, then add the created text
 
 waitUntil {scriptDone f_script_briefing};
-player createDiaryRecord ["diary", ["Loadout", _text]];
+player createDiaryRecord ["diary", ["Loadout", "<br/>"+ _visText + _text]];
