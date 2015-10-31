@@ -187,6 +187,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["UK3CB_BAF_Wildcat_Armed_Army_ZZ400","RHS_UH60M","MELB_AH6M_L","MELB_AH6M_M"];
   };
 //-------------------------------------------------------------------------------------------------  
+// CDF UN (INDFOR)
+  case 19:
+  {
+    _Unit_Pool_S = ["LOP_UN_Infantry_Crewman","LOP_UN_Infantry_Pilot","LOP_UN_Infantry_SL","LOP_UN_Infantry_Rifleman","LOP_UN_Infantry_MG","LOP_UN_Infantry_MG_Asst","LOP_UN_Infantry_GL","LOP_UN_Infantry_Engineer","LOP_UN_Infantry_Corpsman","LOP_UN_Infantry_AT","LOP_UN_Infantry_AT_Asst","LOP_UN_Infantry_AA"];
+    _Unit_Pool_V = ["LOP_UN_UAZ_Open","LOP_UN_BTR70"];
+    _Unit_Pool_T = ["LOP_UN_BMP1D","LOP_UN_BMP2D"];
+    _Unit_Pool_A = ["LOP_UN_Mi8MTV3_UPK23"];
+  };
+//-------------------------------------------------------------------------------------------------  
 
   Default
   {
