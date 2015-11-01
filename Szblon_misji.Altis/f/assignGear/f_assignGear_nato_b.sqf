@@ -295,7 +295,7 @@ case "mmgag":
 	};
 	// LOADOUT: MEDIUM
 	if (_loadout == 1) then {
-		_unit addBackpack _bagAR;
+		_unit addBackpack _bagARm;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 3];
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 3];
@@ -306,7 +306,7 @@ case "mmgag":
 	};
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
-		_unit addBackpack _bagAR;
+		_unit addBackpack _bagARb;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 4];
