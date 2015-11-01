@@ -234,3 +234,8 @@ f_var_cachingAggressiveness = 2;
 // execVM "f\headlessclient\passToHCs.sqf";
 
 // ====================================================================================
+
+//Dodanie zabezpieczenia po respie
+[]  execVM "f\Safezone\safety_init.sqf";
+
+// ====================================================================================
