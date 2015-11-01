@@ -134,8 +134,9 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // Granaty ręczne
 _grenade = "rhs_mag_rgd5";
 _smokegrenade = "SmokeShell";
-_smokegrenadegreen = "rhs_mag_rdg2_black";
-_smokegrenadered = "rhs_mag_nspn_red";
+_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenadered = "SmokeShellRed";
+_smokegrenadeblue = "SmokeShellBlue";
 
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy

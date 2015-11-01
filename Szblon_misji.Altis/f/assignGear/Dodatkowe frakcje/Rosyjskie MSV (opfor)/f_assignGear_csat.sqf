@@ -134,8 +134,9 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // Granaty ręczne
 _grenade = "rhs_mag_rgd5";
 _smokegrenade = "SmokeShell";
-_smokegrenadegreen = "rhs_mag_rdg2_black";
-_smokegrenadered = "rhs_mag_nspn_red";
+_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenadered = "SmokeShellRed";
+_smokegrenadeblue = "SmokeShellBlue";
 
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
@@ -412,7 +413,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadered,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
@@ -429,7 +430,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadered,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["ftl"] call _backpack;
@@ -462,7 +463,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadered,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
@@ -950,7 +951,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 1];
 		_unit addMagazineCargoGlobal [_grenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenade, 4];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
 		_unit addMagazineCargoGlobal [_glmag, 4];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addItemCargoGlobal [_firstaid,4];
@@ -972,7 +973,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 12];
 		_unit addmagazineCargoGlobal [_mgrenade,12];
 		_unit addMagazineCargoGlobal [_smokegrenade, 12];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 4];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 4];
 		_unit addMagazineCargoGlobal [_glmag, 12];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
 		_unit addItemCargoGlobal [_firstaid,8];
@@ -994,7 +995,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addmagazineCargoGlobal [_mgrenade,8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
 		_unit addMagazineCargoGlobal [_glmag, 8];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addItemCargoGlobal [_firstaid,6];
@@ -1017,7 +1018,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 2];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
 		_unit addItemCargoGlobal [_firstaid, 6];
 };
 
@@ -1038,7 +1039,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 6];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 6];
 		_unit addItemCargoGlobal [_firstaid, 25];
 };
 
@@ -1059,7 +1060,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_ratmag, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
 };
 
