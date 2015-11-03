@@ -17,19 +17,24 @@ KitPickInit =
 	
 	_idx = COMBO lbAdd "Oficer"; COMBO lbSetData [_idx, "co"];
 	_idx = COMBO lbAdd "Medyk"; COMBO lbSetData [_idx, "m"];
-	_idx = COMBO lbAdd "FAC"; COMBO lbSetData [_idx, "uav"];
-	_idx = COMBO lbAdd "Kierowca"; COMBO lbSetData [_idx, "eng"];
+	_idx = COMBO lbAdd "RTO"; COMBO lbSetData [_idx, "uav"];
+	_idx = COMBO lbAdd "Mechanik"; COMBO lbSetData [_idx, "eng"];
 	COMBO lbAdd "----";
 	
-    _idx = COMBO lbAdd "Dowódca oddziału"; COMBO lbSetData [_idx, "ftl"];
-    _idx = COMBO lbAdd "Mechanik"; COMBO lbSetData [_idx, "eng"];
+    _idx = COMBO lbAdd "Dowódca oddziału"; COMBO lbSetData [_idx, "dc"];
+    _idx = COMBO lbAdd "Medyk"; COMBO lbSetData [_idx, "m"];
     COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Dowódca drużyny"; COMBO lbSetData [_idx, "ftl"];
     _idx = COMBO lbAdd "Strzelec RKM"; COMBO lbSetData [_idx, "ar"];
     _idx = COMBO lbAdd "Amunicyjny RKM"; COMBO lbSetData [_idx, "aar"];
+    _idx = COMBO lbAdd "Strzelec"; COMBO lbSetData [_idx, "r"];
+    COMBO lbAdd "----";
+	
+	_idx = COMBO lbAdd "Dowódca drużyny"; COMBO lbSetData [_idx, "ftl"];
     _idx = COMBO lbAdd "Strzelec AT"; COMBO lbSetData [_idx, "rat"];
-    _idx = COMBO lbAdd "Medyk"; COMBO lbSetData [_idx, "m"];
+    _idx = COMBO lbAdd "Strzelec AT"; COMBO lbSetData [_idx, "rat"];
+    _idx = COMBO lbAdd "Strzelec"; COMBO lbSetData [_idx, "r"];
     COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Dowódca pojazdu"; COMBO lbSetData [_idx, "vc"];
