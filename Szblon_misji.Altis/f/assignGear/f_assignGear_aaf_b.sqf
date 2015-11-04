@@ -570,3 +570,9 @@ case "pp":
 {
 	_unit addBackpack _bagPP;
 };
+
+// Plecak Pilota Samolotu
+case "ps":
+{
+	_unit addBackpack _bagsmall;
+};
