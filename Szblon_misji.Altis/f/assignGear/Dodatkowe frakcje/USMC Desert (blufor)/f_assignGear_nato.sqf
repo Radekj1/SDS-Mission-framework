@@ -43,6 +43,7 @@
 //		r 			- strzelec
 //		car			- strzelec (karabin krótki)
 //		smg			- strzelec smg
+//		ps			- pilot samolotu
 //
 //		crate_small	- Mała skrzynka z amunicją (dla teamu)
 //		crate_med	- średnia skrzynka z amunicją (dla sekcji)
@@ -267,7 +268,7 @@ _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = [];
+_specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
@@ -291,6 +292,12 @@ _pilotUniform = ["U_B_HeliPilotCoveralls"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
+
+// JET Pilot
+_sfuniform = ["U_B_PilotCoveralls"];
+_sfhelmet = ["H_PilotHelmetFighter_B"];
+_sfRig = ["V_TacVest_blk"];
+_sfGlasses = [];
 
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_FROG01_d"];
@@ -790,6 +797,20 @@ switch (_typeofUnit) do
 		_attachments = [];
 		["pp"] call _backpack;
 	};
+	
+// LOADOUT: JET PILOTS
+	case "ps":
+	{
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
+		_attachments = [];
+		["ps"] call _backpack;
+	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
 	case "pcc":
@@ -1015,6 +1036,8 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_firstaid, 6];
+		_unit addItemCargoGlobal [_IRstrobe, 30];
+		
 };
 
 // CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
@@ -1036,6 +1059,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_firstaid, 25];
+		_unit addItemCargoGlobal [_IRstrobe, 50];
 };
 
 // CRATE: Duża skrzynka, amunicja dla 1 plutonu
@@ -1057,6 +1081,8 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
+		_unit addItemCargoGlobal [_IRstrobe, 60];
+		
 };
 
 // CRATE: Mała skrzynka, zasoby medyczne
