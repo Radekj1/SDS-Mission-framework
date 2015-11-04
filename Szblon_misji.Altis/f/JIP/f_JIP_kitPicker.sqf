@@ -45,7 +45,10 @@ KitPickInit =
     _idx = COMBO lbAdd "Pilot"; COMBO lbSetData [_idx, "pp"];
     _idx = COMBO lbAdd "Co-Pilot"; COMBO lbSetData [_idx, "pcc"];
 	COMBO lbAdd "----";
-
+	
+	_idx = COMBO lbAdd "Pilot Samolotu"; COMBO lbSetData [_idx, "ps"];
+	COMBO lbAdd "----";
+	
     _idx = COMBO lbAdd "Dowódca sekcji MMG"; COMBO lbSetData [_idx, "ftl"];
     _idx = COMBO lbAdd "Strzelec MMG"; COMBO lbSetData [_idx, "mmgg"];
     _idx = COMBO lbAdd "Amunicyjny MMG"; COMBO lbSetData [_idx, "mmgag"];
