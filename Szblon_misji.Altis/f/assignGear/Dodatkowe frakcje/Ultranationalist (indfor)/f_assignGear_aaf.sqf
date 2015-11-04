@@ -995,7 +995,11 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-		_unit addItemCargoGlobal [_firstaid, 6];
+		_unit addItemCargoGlobal [_bandage, 25];
+		_unit addItemCargoGlobal ["ACE_morphine",25];
+        _unit addItemCargoGlobal ["ACE_epinephrine",25];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
+		_unit addItemCargoGlobal [_IRstrobe, 30];
 };
 
 // CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
@@ -1016,7 +1020,11 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
-		_unit addItemCargoGlobal [_firstaid, 25];
+		_unit addItemCargoGlobal [_bandage, 50];
+		_unit addItemCargoGlobal ["ACE_morphine",50];
+        _unit addItemCargoGlobal ["ACE_epinephrine",50];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",25];
+		_unit addItemCargoGlobal [_IRstrobe, 50];
 };
 
 // CRATE: Duża skrzynka, amunicja dla 1 plutonu
@@ -1037,7 +1045,11 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
-		_unit addItemCargoGlobal [_firstaid, 75];
+		_unit addItemCargoGlobal [_bandage, 150];
+		_unit addItemCargoGlobal ["ACE_morphine",100];
+        _unit addItemCargoGlobal ["ACE_epinephrine",100];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
+		_unit addItemCargoGlobal [_IRstrobe, 70];
 };
 
 // CRATE: Mała skrzynka, zasoby medyczne
