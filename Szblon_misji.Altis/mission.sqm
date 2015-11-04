@@ -138,7 +138,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ASL_M";
 					init="GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
-					description="Alpha Medeyk";
+					description="Alpha Medyk";
 				};
 			};
 		};
