@@ -43,6 +43,7 @@
 //		r 			- strzelec
 //		car			- strzelec (karabin krótki)
 //		smg			- strzelec smg
+//		ps			- pilot samolotu
 //
 //		crate_small	- Mała skrzynka z amunicją (dla teamu)
 //		crate_med	- średnia skrzynka z amunicją (dla sekcji)
@@ -247,7 +248,7 @@ _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = [];
+_specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
@@ -272,6 +273,12 @@ _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
+// JET Pilot
+_sfuniform = ["U_B_PilotCoveralls"];
+_sfhelmet = ["H_PilotHelmetFighter_B"];
+_sfRig = ["V_TacVest_blk"];
+_sfGlasses = [];
+
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_FROG01_wd"];
 _crewHelmet = ["rhsusf_cvc_helmet"];
@@ -284,11 +291,6 @@ _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
 
-// Spec Op
-_sfuniform = ["U_B_SpecopsUniform_sgg"];
-_sfhelmet = ["H_HelmetSpecB","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecB_blk"];
-_sfRig = _mediumRig;
-_sfGlasses = [];
 
 // ====================================================================================
 
@@ -769,6 +771,20 @@ switch (_typeofUnit) do
 		_attachments = [];
 		["pp"] call _backpack;
 	};
+	
+// LOADOUT: JET PILOTS
+	case "ps":
+	{
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
+		_attachments = [];
+		["ps"] call _backpack;
+	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
 	case "pcc":
@@ -995,8 +1011,9 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 25];
 		_unit addItemCargoGlobal ["ACE_morphine",25];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",25];
+        _unit addItemCargoGlobal ["ACE_epinephrine",25];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
+		_unit addItemCargoGlobal [_IRstrobe, 30];
 };
 
 // CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
@@ -1019,8 +1036,9 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal ["ACE_morphine",50];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",50];
+        _unit addItemCargoGlobal ["ACE_epinephrine",50];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",25];
+		_unit addItemCargoGlobal [_IRstrobe, 50];
 };
 
 // CRATE: Duża skrzynka, amunicja dla 1 plutonu
@@ -1043,8 +1061,9 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
 		_unit addItemCargoGlobal ["ACE_morphine",100];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",100];
+        _unit addItemCargoGlobal ["ACE_epinephrine",100];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
+		_unit addItemCargoGlobal [_IRstrobe, 70];
 };
 
 // CRATE: Mała skrzynka, zasoby medyczne
