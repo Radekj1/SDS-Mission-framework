@@ -2061,12 +2061,12 @@ class Mission
 					azimut=-0.79422045;
 					id=126;
 					side="WEST";
-					vehicle="B_Helipilot_F";
+					vehicle="B_Pilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_AH1_P";
-					init="GrpNATO_AH1 = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver VehNATO_AH1;";
+					init="GrpNATO_AH1 = group this; [""ps"",this] call f_fnc_assignGear; this moveInDriver VehNATO_AH1;";
 					description="Pilot";
 				};
 				class Item1
@@ -2075,11 +2075,11 @@ class Mission
 					azimut=-0.79422045;
 					id=127;
 					side="WEST";
-					vehicle="B_soldier_repair_F";
+					vehicle="B_Pilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_AH1_CP";
-					init="GrpNATO_AH1 = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [VehNATO_AH1,[0]];";
+					init="GrpNATO_AH1 = group this; [""ps"",this] call f_fnc_assignGear; this moveInTurret [VehNATO_AH1,[0]];";
 					description="Strzelec";
 				};
 			};
@@ -2471,7 +2471,7 @@ class Mission
 					azimut=-0.5217151;
 					id=151;
 					side="EAST";
-					vehicle="O_helipilot_F";
+					vehicle="O_Pilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -2485,7 +2485,7 @@ class Mission
 					azimut=-0.5217151;
 					id=152;
 					side="EAST";
-					vehicle="O_soldier_repair_F";
+					vehicle="O_Pilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_AH1_CP";
@@ -2755,7 +2755,7 @@ class Mission
 					azimut=-0.32745519;
 					id=169;
 					side="GUER";
-					vehicle="I_Soldier_repair_F";
+					vehicle="I_pilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_AH1_CP";
