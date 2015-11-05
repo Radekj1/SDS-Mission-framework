@@ -999,7 +999,7 @@ switch (_typeofUnit) do
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_carbine, 2];
-		_unit addWeaponCargoGlobal [_RAT, 2];
+		_unit addWeaponCargoGlobal [_RAT, 1];
 		_unit addMagazineCargoGlobal [_riflemag, 5];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
@@ -1008,7 +1008,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal ["ACE_morphine",4];
         	_unit addItemCargoGlobal ["ACE_epinephrine",2];
 		_unit addItemCargoGlobal ["ToolKit", 2];
-		_unit addItemCargoGlobal ["ACE_wirecutter", 2];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
 		_unit addItemCargoGlobal [_IRstrobe, 10];
 		
 	};
