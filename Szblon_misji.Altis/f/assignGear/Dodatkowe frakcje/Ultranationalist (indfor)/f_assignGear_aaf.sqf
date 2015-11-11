@@ -912,69 +912,90 @@ switch (_typeofUnit) do
 		["g"] call _backpack;
 	};
 
-// CARGO: CAR - room for 10 weapons and 50 cargo items
+// CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"blu_f"] call f_fnc_assignGear
 	case "v_car":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addWeaponCargoGlobal [_carbine, 2];
-		_unit addMagazineCargoGlobal [_riflemag, 8];
-		_unit addMagazineCargoGlobal [_glriflemag, 8];
-		_unit addMagazineCargoGlobal [_carbinemag, 10];
-		_unit addMagazineCargoGlobal [_armag, 5];
-		_unit addMagazineCargoGlobal [_ratmag, 1];
-		_unit addMagazineCargoGlobal [_grenade, 4];
-		_unit addMagazineCargoGlobal [_smokegrenade, 4];
+		_unit addMagazineCargoGlobal [_riflemag, 2];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-		_unit addMagazineCargoGlobal [_glmag, 4];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-		_unit addItemCargoGlobal [_firstaid,4];
+		_unit addItemCargoGlobal [_bandage, 5];
+		_unit addItemCargoGlobal ["ACE_morphine", 2];
+        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+		_unit addItemCargoGlobal [_IRstrobe, 2];
 	};
 
-// CARGO: TRUCK - room for 50 weapons and 200 cargo items
-	case "v_tr":
+// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"blu_f"] call f_fnc_assignGear
+	case "tr":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addWeaponCargoGlobal [_carbine, 10];
-		_unit addMagazineCargoGlobal [_riflemag, 40];
-		_unit addMagazineCargoGlobal [_glriflemag, 40];
-		_unit addMagazineCargoGlobal [_carbinemag, 40];
-		_unit addMagazineCargoGlobal [_armag, 22];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
-		_unit addMagazineCargoGlobal [_grenade, 12];
-		_unit addmagazineCargoGlobal [_mgrenade,12];
-		_unit addMagazineCargoGlobal [_smokegrenade, 12];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 4];
-		_unit addMagazineCargoGlobal [_glmag, 12];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
-		_unit addItemCargoGlobal [_firstaid,8];
+		_unit addWeaponCargoGlobal [_RAT, 1];
+		_unit addMagazineCargoGlobal [_riflemag, 3];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addItemCargoGlobal [_bandage, 5];
+		_unit addItemCargoGlobal ["ACE_morphine", 2];
+        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+		_unit addItemCargoGlobal ["ToolKit", 1];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_IRstrobe, 5];
 	};
 
-// CARGO: IFV - room for 10 weapons and 100 cargo items
-	case "v_ifv":
+// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"blu_f"] call f_fnc_assignGear
+	case "ifv":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addWeaponCargoGlobal [_carbine, 4];
+		_unit addWeaponCargoGlobal [_RAT, 1];
+		_unit addMagazineCargoGlobal [_riflemag, 5];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addItemCargoGlobal [_bandage, 10];
+		_unit addItemCargoGlobal ["ACE_morphine",4];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",2];
+		_unit addItemCargoGlobal ["ToolKit", 1];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_IRstrobe, 10];
+		
+	};
+	
+// CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"blu_f"] call f_fnc_assignGear
+	case "v_log":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal [_RAT, 5];
 		_unit addMagazineCargoGlobal [_riflemag, 20];
-		_unit addMagazineCargoGlobal [_glriflemag, 20];
-		_unit addMagazineCargoGlobal [_carbinemag, 20];
 		_unit addMagazineCargoGlobal [_armag, 8];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
-		_unit addMagazineCargoGlobal [_grenade, 8];
-		_unit addmagazineCargoGlobal [_mgrenade,8];
-		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-		_unit addMagazineCargoGlobal [_glmag, 8];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-		_unit addItemCargoGlobal [_firstaid,6];
+		_unit addMagazineCargoGlobal [_grenade, 10];
+		_unit addMagazineCargoGlobal [_smokegrenade, 5];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 5];
+		_unit addItemCargoGlobal [_bandage, 15];
+		_unit addItemCargoGlobal ["ACE_morphine",10];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",5];
+		_unit addItemCargoGlobal ["ToolKit", 1];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_IRstrobe, 10];
+		_unit addMagazineCargoGlobal [_MMGmag, 5];
+		_unit addMagazineCargoGlobal [_MATmag1, 4];
+		_unit addMagazineCargoGlobal [_MATmag2, 2];
+		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
+		_unit addItemCargoGlobal ["ACE_Clacker", 2];
+		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
+		
 	};
 
 // CRATE: Mała skrzynka, amunicja dla jednego teamu
