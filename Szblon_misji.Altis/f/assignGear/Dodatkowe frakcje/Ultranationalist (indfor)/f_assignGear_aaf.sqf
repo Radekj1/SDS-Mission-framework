@@ -912,7 +912,7 @@ switch (_typeofUnit) do
 		["g"] call _backpack;
 	};
 
-// CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"blu_f"] call f_fnc_assignGear
+// CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"ind_f"] call f_fnc_assignGear
 	case "v_car":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -929,7 +929,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_IRstrobe, 2];
 	};
 
-// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"blu_f"] call f_fnc_assignGear
+// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"ind_f"] call f_fnc_assignGear
 	case "tr":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -949,7 +949,7 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_IRstrobe, 5];
 	};
 
-// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"blu_f"] call f_fnc_assignGear
+// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"ind_f"] call f_fnc_assignGear
 	case "ifv":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -970,7 +970,7 @@ switch (_typeofUnit) do
 		
 	};
 	
-// CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"blu_f"] call f_fnc_assignGear
+// CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"ind_f"] call f_fnc_assignGear
 	case "v_log":
 	{
 		clearWeaponCargoGlobal _unit;
