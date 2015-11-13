@@ -744,8 +744,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_unit addWeapon "lerca_1200_tan";
 		_attachments = [];
 		["ftl"] call _backpack;
@@ -759,8 +758,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
 		["cc"] call _backpack;
 	};
@@ -773,8 +771,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
 	};
 
@@ -786,8 +783,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
 		["pp"] call _backpack;
 	};
@@ -800,8 +796,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
 		["ps"] call _backpack;
 	};
@@ -838,8 +833,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		["eng"] call _backpack;
 	};
 
@@ -854,8 +848,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_unit addItem "ACE_Clacker"; //zapalnik
 		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
