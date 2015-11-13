@@ -140,6 +140,11 @@ _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadeblue = "SmokeShellBlue";
 _smokegrenadered = "SmokeShellRed";
 
+_flarewhite = "ACE_HandFlare_White";
+_flarered = "ACE_HandFlare_Red";
+_flareyellow = "ACE_HandFlare_Yellow";
+_flaregreen = "ACE_HandFlare_Green";
+
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
