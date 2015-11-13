@@ -16,6 +16,10 @@
         <English> Loadouts </English>
         <Polish> Wyposażenie </Polish>
       </Key>
+       <Key ID="STR_f_param_night_day">
+        <English> Loadouts Night/Day</English>
+        <Polish> Wyposażenie Noc/Dzień </Polish>
+      </Key>
       <Key ID="STR_f_param_timeOfDay">
         <English> Time of Day </English>
         <Polish> Pora dnia </Polish>
