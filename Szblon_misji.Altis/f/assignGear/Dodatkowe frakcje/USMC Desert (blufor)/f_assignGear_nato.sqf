@@ -384,7 +384,9 @@ if (_isMan) then {
 _backpack = {
 	_typeofBackPack = _this select 0;
 	_loadout = f_param_backpacks;
+	_loadout_night_day = f_param_night_day_wyp;
 	if (count _this > 1) then {_loadout = _this select 1};
+	if (count _this > 1) then {_loadout_night_day = _this select 1};
 	switch (_typeofBackPack) do
 	{
 		#include "f_assignGear_nato_b.sqf";
