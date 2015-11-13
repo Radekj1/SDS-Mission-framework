@@ -1201,3 +1201,9 @@ case "pp":
 	_unit addBackpack _bagPP;
 	(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen, 8];
 };
+
+// Plecak Pilota Samolotu		
+case "ps":		
+{		
+	_unit addBackpack _bagsmall;		
+};
