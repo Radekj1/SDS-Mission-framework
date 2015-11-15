@@ -75,7 +75,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_CO_UAV";
+					text="UnitNATO_CO_RTO";
 					init="GrpNATO_CO = group this; [""uav"",this] call f_fnc_assignGear;";
 					description="RTO";
 				};
@@ -138,7 +138,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ASL_M";
 					init="GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
-					description="Alpha Medeyk";
+					description="Alpha Medyk";
 				};
 			};
 		};
@@ -1165,7 +1165,7 @@ class Mission
 					vehicle="I_soldier_F";
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitAAF_CO_R";
+					text="UnitAAF_CO_RTO";
 					init="GrpAAF_CO = group this; [""uav"",this] call f_fnc_assignGear;";
 					description="RTO";
 				};
@@ -2061,12 +2061,12 @@ class Mission
 					azimut=-0.79422045;
 					id=126;
 					side="WEST";
-					vehicle="B_Helipilot_F";
+					vehicle="B_Pilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_AH1_P";
-					init="GrpNATO_AH1 = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver VehNATO_AH1;";
+					init="GrpNATO_AH1 = group this; [""ps"",this] call f_fnc_assignGear; this moveInDriver VehNATO_AH1;";
 					description="Pilot";
 				};
 				class Item1
@@ -2075,11 +2075,11 @@ class Mission
 					azimut=-0.79422045;
 					id=127;
 					side="WEST";
-					vehicle="B_soldier_repair_F";
+					vehicle="B_Pilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_AH1_CP";
-					init="GrpNATO_AH1 = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [VehNATO_AH1,[0]];";
+					init="GrpNATO_AH1 = group this; [""ps"",this] call f_fnc_assignGear; this moveInTurret [VehNATO_AH1,[0]];";
 					description="Strzelec";
 				};
 			};
@@ -2471,7 +2471,7 @@ class Mission
 					azimut=-0.5217151;
 					id=151;
 					side="EAST";
-					vehicle="O_helipilot_F";
+					vehicle="O_Pilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -2485,7 +2485,7 @@ class Mission
 					azimut=-0.5217151;
 					id=152;
 					side="EAST";
-					vehicle="O_soldier_repair_F";
+					vehicle="O_Pilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_AH1_CP";
@@ -2755,7 +2755,7 @@ class Mission
 					azimut=-0.32745519;
 					id=169;
 					side="GUER";
-					vehicle="I_Soldier_repair_F";
+					vehicle="I_pilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_AH1_CP";
@@ -3068,7 +3068,7 @@ class Mission
 				class Item0
 				{
 					position[]={23430.631,3.1900001,17828.713};
-					azimut=-0.32745519;
+					azimut=-0.32745501;
 					id=190;
 					side="GUER";
 					vehicle="I_crew_F";
@@ -3076,32 +3076,32 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TNK2_C";
-					init="GrpAAF_TNK1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK2 = group this; [""vc"",this] call f_fnc_assignGear;";
 					description="Dowódca Czogłu 2";
 				};
 				class Item1
 				{
 					position[]={23432.354,3.1900001,17826.166};
-					azimut=-0.32745519;
+					azimut=-0.32745501;
 					id=191;
 					side="GUER";
 					vehicle="I_crew_F";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TNK2_G";
-					init="GrpAAF_TNK1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK2 = group this; [""vg"",this] call f_fnc_assignGear;";
 					description="Strzelec Czołgu 2";
 				};
 				class Item2
 				{
 					position[]={23435.047,3.1900001,17826.121};
-					azimut=-0.32745519;
+					azimut=-0.32745501;
 					id=192;
 					side="GUER";
 					vehicle="I_Soldier_repair_F";
 					skill=0.60000002;
 					text="UnitAAF_TNK2_D";
-					init="GrpAAF_TNK1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK2 = group this; [""vd"",this] call f_fnc_assignGear;";
 					description="Kierowca Czołgu 2";
 				};
 			};
@@ -3115,7 +3115,7 @@ class Mission
 				class Item0
 				{
 					position[]={23430.689,3.1900001,17819.051};
-					azimut=-0.32745519;
+					azimut=-0.32745501;
 					id=193;
 					side="GUER";
 					vehicle="I_crew_F";
@@ -3123,32 +3123,32 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TNK3_C";
-					init="GrpAAF_TNK1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK3 = group this; [""vc"",this] call f_fnc_assignGear;";
 					description="Dowódca Czogłu 3";
 				};
 				class Item1
 				{
 					position[]={23432.404,3.1900001,17816.508};
-					azimut=-0.32745519;
+					azimut=-0.32745501;
 					id=194;
 					side="GUER";
 					vehicle="I_crew_F";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TNK3_G";
-					init="GrpAAF_TNK1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK3 = group this; [""vg"",this] call f_fnc_assignGear;";
 					description="Strzelec Czołgu 3";
 				};
 				class Item2
 				{
 					position[]={23435.102,3.1900001,17816.461};
-					azimut=-0.32745519;
+					azimut=-0.32745501;
 					id=195;
 					side="GUER";
 					vehicle="I_Soldier_repair_F";
 					skill=0.60000002;
 					text="UnitAAF_TNK3_D";
-					init="GrpAAF_TNK1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK3 = group this; [""vd"",this] call f_fnc_assignGear;";
 					description="Kierowca Czołgu 3";
 				};
 			};
@@ -4270,7 +4270,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCSAT_CO_UAV";
+					text="UnitCSAT_CO_RTO";
 					init="GrpCSAT_CO = group this; [""uav"",this] call f_fnc_assignGear;";
 					description="RTO";
 				};
@@ -4762,7 +4762,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_DC_UAV";
+					text="UnitNATO_DC_RTO";
 					init="GrpNATO_DC = group this; [""uav"",this] call f_fnc_assignGear;";
 					description="RTO";
 				};
@@ -4916,7 +4916,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCSAT_DC_UAV";
+					text="UnitCSAT_DC_RTO";
 					init="GrpCSAT_DC = group this; [""uav"",this] call f_fnc_assignGear;";
 					description="RTO";
 				};

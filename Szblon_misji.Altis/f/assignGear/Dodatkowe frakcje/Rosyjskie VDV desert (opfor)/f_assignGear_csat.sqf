@@ -138,6 +138,11 @@ _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadered = "SmokeShellRed";
 _smokegrenadeblue = "SmokeShellBlue";
 
+_flarewhite = "ACE_HandFlare_White";
+_flarered = "ACE_HandFlare_Red";
+_flareyellow = "ACE_HandFlare_Yellow";
+_flaregreen = "ACE_HandFlare_Green";
+
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
@@ -381,7 +386,9 @@ if (_isMan) then {
 _backpack = {
 	_typeofBackPack = _this select 0;
 	_loadout = f_param_backpacks;
+	_loadout_night_day = f_param_night_day_wyp;
 	if (count _this > 1) then {_loadout = _this select 1};
+	if (count _this > 1) then {_loadout_night_day = _this select 1};
 	switch (_typeofBackPack) do
 	{
 		#include "f_assignGear_csat_b.sqf";
@@ -745,8 +752,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_unit addWeapon "Binocular";
 		_attachments = [];
 		["ftl"] call _backpack;
@@ -760,8 +766,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
 		["cc"] call _backpack;
 	};
@@ -774,8 +779,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
 	};
 
@@ -787,9 +791,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_attachments = [];
+		["pp"] call _backpack;
+		
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -824,8 +829,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		["eng"] call _backpack;
 	};
 
@@ -840,8 +844,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit linkItem "ItemGPS";
 		_unit addItem "ACE_Clacker"; //zapalnik
 		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
@@ -935,69 +938,90 @@ switch (_typeofUnit) do
 		["g"] call _backpack;
 	};
 
-// CARGO: CAR - room for 10 weapons and 50 cargo items
+// CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"opf_f"] call f_fnc_assignGear
 	case "v_car":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addWeaponCargoGlobal [_carbine, 2];
-		_unit addMagazineCargoGlobal [_riflemag, 8];
-		_unit addMagazineCargoGlobal [_glriflemag, 8];
-		_unit addMagazineCargoGlobal [_carbinemag, 10];
-		_unit addMagazineCargoGlobal [_armag, 5];
-		_unit addMagazineCargoGlobal [_ratmag, 1];
-		_unit addMagazineCargoGlobal [_grenade, 4];
-		_unit addMagazineCargoGlobal [_smokegrenade, 4];
+		_unit addMagazineCargoGlobal [_riflemag, 2];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
-		_unit addMagazineCargoGlobal [_glmag, 4];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-		_unit addItemCargoGlobal [_firstaid,4];
+		_unit addItemCargoGlobal [_bandage, 5];
+		_unit addItemCargoGlobal ["ACE_morphine", 2];
+        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+		_unit addItemCargoGlobal [_IRstrobe, 2];
 	};
 
-// CARGO: TRUCK - room for 50 weapons and 200 cargo items
-	case "v_tr":
+// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"opf_f"] call f_fnc_assignGear
+	case "tr":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addWeaponCargoGlobal [_carbine, 10];
-		_unit addMagazineCargoGlobal [_riflemag, 40];
-		_unit addMagazineCargoGlobal [_glriflemag, 40];
-		_unit addMagazineCargoGlobal [_carbinemag, 40];
-		_unit addMagazineCargoGlobal [_armag, 22];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
-		_unit addMagazineCargoGlobal [_grenade, 12];
-		_unit addmagazineCargoGlobal [_mgrenade,12];
-		_unit addMagazineCargoGlobal [_smokegrenade, 12];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 4];
-		_unit addMagazineCargoGlobal [_glmag, 12];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
-		_unit addItemCargoGlobal [_firstaid,8];
+		_unit addWeaponCargoGlobal [_RAT, 1];
+		_unit addMagazineCargoGlobal [_riflemag, 3];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
+		_unit addItemCargoGlobal [_bandage, 5];
+		_unit addItemCargoGlobal ["ACE_morphine", 2];
+        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+		_unit addItemCargoGlobal ["ToolKit", 1];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_IRstrobe, 5];
 	};
 
-// CARGO: IFV - room for 10 weapons and 100 cargo items
-	case "v_ifv":
+// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"opf_f"] call f_fnc_assignGear
+	case "ifv":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addWeaponCargoGlobal [_carbine, 4];
+		_unit addWeaponCargoGlobal [_RAT, 1];
+		_unit addMagazineCargoGlobal [_riflemag, 5];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
+		_unit addItemCargoGlobal [_bandage, 10];
+		_unit addItemCargoGlobal ["ACE_morphine",4];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",2];
+		_unit addItemCargoGlobal ["ToolKit", 1];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_IRstrobe, 10];
+		
+	};
+	
+// CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"opf_f"] call f_fnc_assignGear
+	case "v_log":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal [_RAT, 5];
 		_unit addMagazineCargoGlobal [_riflemag, 20];
-		_unit addMagazineCargoGlobal [_glriflemag, 20];
-		_unit addMagazineCargoGlobal [_carbinemag, 20];
 		_unit addMagazineCargoGlobal [_armag, 8];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
-		_unit addMagazineCargoGlobal [_grenade, 8];
-		_unit addmagazineCargoGlobal [_mgrenade,8];
-		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
-		_unit addMagazineCargoGlobal [_glmag, 8];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-		_unit addItemCargoGlobal [_firstaid,6];
+		_unit addMagazineCargoGlobal [_grenade, 10];
+		_unit addMagazineCargoGlobal [_smokegrenade, 5];
+		_unit addMagazineCargoGlobal [_smokegrenadered, 5];
+		_unit addItemCargoGlobal [_bandage, 15];
+		_unit addItemCargoGlobal ["ACE_morphine",10];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",5];
+		_unit addItemCargoGlobal ["ToolKit", 1];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_IRstrobe, 10];
+		_unit addMagazineCargoGlobal [_MMGmag, 5];
+		_unit addMagazineCargoGlobal [_MATmag1, 4];
+		_unit addMagazineCargoGlobal [_MATmag2, 2];
+		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
+		_unit addItemCargoGlobal ["ACE_Clacker", 2];
+		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
+		
 	};
 
 // CRATE: Mała skrzynka, amunicja dla jednego teamu
@@ -1014,11 +1038,16 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glmag, 5];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addWeaponCargoGlobal [_RAT, 2];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
+		_unit addMagazineCargoGlobal [_MMGmag, 5];
+		_unit addMagazineCargoGlobal [_MATmag1, 5];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
-		_unit addItemCargoGlobal [_firstaid, 6];
+		_unit addItemCargoGlobal [_bandage, 25];
+		_unit addItemCargoGlobal ["ACE_morphine",25];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",25];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
+		_unit addItemCargoGlobal [_IRstrobe, 30];
 };
 
 // CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
@@ -1035,11 +1064,16 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glmag, 20];
 		_unit addMagazineCargoGlobal [_glsmokewhite,15];
 		_unit addWeaponCargoGlobal [_RAT, 6];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
+		_unit addMagazineCargoGlobal [_MMGmag, 15];
+		_unit addMagazineCargoGlobal [_MATmag1, 10];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 6];
-		_unit addItemCargoGlobal [_firstaid, 25];
+		_unit addItemCargoGlobal [_bandage, 50];
+		_unit addItemCargoGlobal ["ACE_morphine",50];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",50];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",25];
+		_unit addItemCargoGlobal [_IRstrobe, 50];
 };
 
 // CRATE: Duża skrzynka, amunicja dla 1 plutonu
@@ -1056,11 +1090,16 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glmag, 60];
 		_unit addMagazineCargoGlobal [_glsmokewhite,50];
 		_unit addWeaponCargoGlobal [_RAT, 20];
-		_unit addMagazineCargoGlobal [_ratmag, 20];
+		_unit addMagazineCargoGlobal [_MMGmag, 30];
+		_unit addMagazineCargoGlobal [_MATmag1, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
-		_unit addItemCargoGlobal [_firstaid, 75];
+		_unit addItemCargoGlobal [_bandage, 150];
+		_unit addItemCargoGlobal ["ACE_morphine",100];
+        	_unit addItemCargoGlobal ["ACE_epinephrine",100];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
+		_unit addItemCargoGlobal [_IRstrobe, 70];
 };
 
 // CRATE: Mała skrzynka, zasoby medyczne

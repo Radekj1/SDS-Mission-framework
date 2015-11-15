@@ -43,7 +43,8 @@ switch (_unitfaction) do
 	{
 		["GrpNATO_CO", 0, "COY-HQ", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["UnitNATO_CO_FAC", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_CO_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_DC_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 
 		["GrpNATO_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -106,7 +107,8 @@ switch (_unitfaction) do
 	{
 		["GrpCSAT_CO", 0, "COY-HQ", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["UnitCSAT_CO_FAC", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitCSAT_CO_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitCSAT_DC_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 		
 		["GrpCSAT_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -171,7 +173,8 @@ switch (_unitfaction) do
 	{
 		["GrpAAF_CO", 0, "COY-HQ", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["UnitAAF_CO_FAC", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitAAF_CO_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitAAF_DC_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 
 		["GrpAAF_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;

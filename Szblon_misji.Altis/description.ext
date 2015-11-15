@@ -151,6 +151,20 @@ class Params
             default = 2;
             code = "f_param_backpacks = %1";
     };
+    
+    
+// ============================================================================================
+
+// Mechanizm wyboru wyposażenia dzień/noc
+
+    class f_param_night_day_wyp
+    {
+            title = "$STR_f_param_night_day";
+            values[] = {0,1};
+            texts[] = {"Noc","Dzień"};
+            default = 1;
+            code = "f_param_night_day_wyp = %1";
+    };
 
 // ============================================================================================
 
