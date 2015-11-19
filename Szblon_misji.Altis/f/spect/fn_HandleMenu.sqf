@@ -56,6 +56,32 @@ switch (_button) do {
                 };
             };
             forceRespawn player;
+			
+			private["_unit"];
+			_unit = _x;
+			
+			{ [_x] call hyp_fnc_traceFireRemove } forEach allUnits;
+			
         };
     };
+	
+	case 5: { // Tracers/Notracers Button
+    	[] call f_cam_ToggleTracers;
+		if (f_cam_toggleTracersV) then {
+    		_control ctrlSetText "Tracers On";
+    	} else {
+    		_control ctrlSetText "Tracers Off";
+    	};
+	};
+	
+	case 6: {
+		
+		if(serverCommandAvailable "#kick") then {
+			hintSilent "Zeus menu";
+			[] call f_cam_AdminZeus;
+		} else 
+		{
+			hintSilent "Zeus zabroniony";
+		}		
+	};	
 };
