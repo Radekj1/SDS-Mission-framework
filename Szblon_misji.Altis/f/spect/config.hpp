@@ -712,10 +712,26 @@ class f_spec_dialog {
             text = "Okay";
             action = "ctrlShow [1315, !ctrlVisible 1315];ctrlShow [1310, !ctrlVisible 1310];ctrlShow [1300, !ctrlVisible 1300];";
         };
+		
+		class SpectRespawnButton: RscSpectButton
+        {
+            idc = 2120;
+			x = 0.00046248 * safezoneW + safezoneX;
+            y = -5.99921e-005 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.02 * safezoneH;
+            text = "Respawn";
+            tooltip = "Return to game";
+            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+            onButtonClick = "[_this select 0,4] call f_fnc_HandleMenu";
+            onMouseHolding = "f_cam_menuShownTime=time";
+            onMouseMoving = "f_cam_menuShownTime=time";
+        };
+		
         class FilterAIButton: RscSpectButton
         {
             idc = 2111;
-            x = 0.00046248 * safezoneW + safezoneX;
+            x = 0.0425375 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
@@ -730,7 +746,7 @@ class f_spec_dialog {
         class SideFilterButton: RscSpectButton
         {
             idc = 2112;
-            x = 0.0425375 * safezoneW + safezoneX;
+            x = 0.08461252 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
@@ -744,7 +760,7 @@ class f_spec_dialog {
         class TagsNameButton: RscSpectButton
         {
             idc = 2113;
-            x = 0.0846125 * safezoneW + safezoneX;
+            x = 0.12668754 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
@@ -758,9 +774,9 @@ class f_spec_dialog {
         class FirstPersonButton: RscSpectButton
         {
             idc = 2114;
-            x = 0.12679 * safezoneW + safezoneX;
+            x = 0.16876256 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
-            w = 0.05 * safezoneW;
+            w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
             text = "First Person";
             tooltip = "Switch between First Person or Third person";
@@ -769,6 +785,36 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
+		
+		class TracerButton: RscSpectButton
+        {
+            idc = 2511;
+            x = 0.21083758 * safezoneW + safezoneX;
+            y = -5.99921e-005 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.02 * safezoneH;
+            text = "Tracers";
+            tooltip = "Toggle highlighted tracers on and off";
+            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+            onButtonClick = "[_this select 0,5] call f_fnc_HandleMenu";
+            onMouseHolding = "f_cam_menuShownTime=time";
+            onMouseMoving = "f_cam_menuShownTime=time";
+        };
+		class ZeusButton: RscSpectButton
+        {
+            idc = 2512;
+            x = 0.2529126 * safezoneW + safezoneX;
+            y = -5.99921e-005 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.02 * safezoneH;
+            text = "Zeus";
+            tooltip = "Open Zeus interface (logged in admin only)";
+            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+            onButtonClick = "[_this select 0,6] call f_fnc_HandleMenu";
+            onMouseHolding = "f_cam_menuShownTime=time";
+            onMouseMoving = "f_cam_menuShownTime=time";
+        };
+		
         class SpecUnitBox: RscSpectList
         {
             idc = 2100;
@@ -781,7 +827,7 @@ class f_spec_dialog {
         class SpecModes: RscSpectCombo
         {
             idc = 2101;
-            x = 0.178999 * safezoneW + safezoneX;
+            x = 0.29498762 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.07 * safezoneW;
             h = 0.02 * safezoneH;
@@ -790,20 +836,7 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
-        class SpectRespawnButton: RscSpectButton
-        {
-            idc = 2120;
-            x = 0.25 * safezoneW + safezoneX;
-            y = -5.99921e-005 * safezoneH + safezoneY;
-            w = 0.04 * safezoneW;
-            h = 0.02 * safezoneH;
-            text = "Respawn";
-            tooltip = "Return to game";
-            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
-            onButtonClick = "[_this select 0,4] call f_fnc_HandleMenu";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
-        };
+        
 		
         class SpecText: RscSpectText
         {
