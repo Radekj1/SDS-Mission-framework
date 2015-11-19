@@ -1335,7 +1335,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_A2_AT_2";
-					init="GrpAAF_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
 					description="Alpha 2 Strzelec (AT)";
 				};
 				class Item3
