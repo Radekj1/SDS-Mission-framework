@@ -49,27 +49,27 @@ KitPickInit =
 	_idx = COMBO lbAdd "Pilot Samolotu"; COMBO lbSetData [_idx, "ps"];
 	COMBO lbAdd "----";
 	
-    _idx = COMBO lbAdd "Dowódca sekcji MMG"; COMBO lbSetData [_idx, "ftl"];
+    _idx = COMBO lbAdd "Dowódca sekcji MMG"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "Strzelec MMG"; COMBO lbSetData [_idx, "mmgg"];
     _idx = COMBO lbAdd "Amunicyjny MMG"; COMBO lbSetData [_idx, "mmgag"];
 	COMBO lbAdd "----";
 
-    _idx = COMBO lbAdd "Dowódca sekcji MAT"; COMBO lbSetData [_idx, "ftl"];
+    _idx = COMBO lbAdd "Dowódca sekcji MAT"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "Strzelec MAT"; COMBO lbSetData [_idx, "matg"];
     _idx = COMBO lbAdd "Amunicyjny MAT"; COMBO lbSetData [_idx, "matag"];
 	COMBO lbAdd "----";
 	
-	 _idx = COMBO lbAdd "Dowódca sekcji MTR"; COMBO lbSetData [_idx, "ftl"];
+	 _idx = COMBO lbAdd "Dowódca sekcji MTR"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "Strzelec MTR"; COMBO lbSetData [_idx, "mtrg"];
     _idx = COMBO lbAdd "Amunicyjny MTR"; COMBO lbSetData [_idx, "mtrag"];
 	COMBO lbAdd "----";
 	
-    _idx = COMBO lbAdd "Dowódca sekcji HMG"; COMBO lbSetData [_idx, "ftl"];
+    _idx = COMBO lbAdd "Dowódca sekcji HMG"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "Strzelec HMG"; COMBO lbSetData [_idx, "hmgg"];
    _idx = COMBO lbAdd "Amunicyjny HMG"; COMBO lbSetData [_idx, "hmgag"];
 	COMBO lbAdd "----";
 
-    _idx = COMBO lbAdd "Dowódca sekcji AA"; COMBO lbSetData [_idx, "ftl"];
+    _idx = COMBO lbAdd "Dowódca sekcji AA"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "Strzelec AA"; COMBO lbSetData [_idx, "msamg"];
     _idx = COMBO lbAdd "Amunicyjny AA"; COMBO lbSetData [_idx, "msamag"];
 	COMBO lbAdd "----";
