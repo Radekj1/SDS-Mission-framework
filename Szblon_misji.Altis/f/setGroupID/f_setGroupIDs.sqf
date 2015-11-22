@@ -12,7 +12,7 @@ _groups = [
 // Automatically assigns intelligible names to groups
 
 ["GrpNATO_CO","CO-HQ"],
-["GrpNATO_DC","DC-HQ"],
+["GrpNATO_DC","1Plt-HQ"],
 
 ["GrpNATO_ASL","ASL"],
 ["GrpNATO_A1","A1"],
@@ -78,7 +78,7 @@ _groups = [
 // Automatically assigns intelligible names to groups
 
 ["GrpCSAT_CO","CO-HQ"],
-["GrpCSAT_DC","DC-HQ"],
+["GrpCSAT_DC","1Plt-HQ"],
 
 ["GrpCSAT_ASL","ASL"],
 ["GrpCSAT_A1","A1"],
@@ -143,7 +143,7 @@ _groups = [
 // Automatically assigns intelligible names to groups
 
 ["GrpAAF_CO","CO-HQ"],
-["GrpAAF_DC","DC-HQ"],
+["GrpAAF_DC","1Plt-HQ"],
 
 ["GrpAAF_ASL","ASL"],
 ["GrpAAF_A1","A1"],
