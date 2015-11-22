@@ -42,7 +42,7 @@ switch (_unitfaction) do
 	case "blu_f":
 	{
 		["GrpNATO_CO", 0, "COY-HQ", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_DC", 0, "1Plt-HQ", "ColorBlue"] spawn f_fnc_localGroupMarker;
 		["UnitNATO_CO_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_DC_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 
@@ -106,7 +106,7 @@ switch (_unitfaction) do
 	case "opf_f":
 	{
 		["GrpCSAT_CO", 0, "COY-HQ", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["GrpCSAT_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_DC", 0, "1Plt-HQ", "ColorBlue"] spawn f_fnc_localGroupMarker;
 		["UnitCSAT_CO_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 		["UnitCSAT_DC_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 		
@@ -172,7 +172,7 @@ switch (_unitfaction) do
 	case "ind_f":
 	{
 		["GrpAAF_CO", 0, "COY-HQ", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["GrpAAF_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_DC", 0, "1Plt-HQ", "ColorBlue"] spawn f_fnc_localGroupMarker;
 		["UnitAAF_CO_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 		["UnitAAF_DC_RTO", 1, "RTO", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
 
