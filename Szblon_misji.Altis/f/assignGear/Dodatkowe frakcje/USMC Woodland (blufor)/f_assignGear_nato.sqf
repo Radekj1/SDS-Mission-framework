@@ -39,7 +39,10 @@
 //		eng			- mechanik
 //		engm		- saper
 //		uav			- RTO/FAC
-//		div    		- siły specjalne
+//		divc    	- dowódca sił specjalnych
+//		divr    	- strzelec AT sił specjalnych
+//		divs    	- saper sił specjalnych
+//		divm    	- medyk sił specjalnych
 //		r 			- strzelec
 //		car			- strzelec (karabin krótki)
 //		smg			- strzelec smg
@@ -177,22 +180,42 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_Parachute";						// Spadochron
-_bagFTL = "tf_rt1523g_big_bwmod_tropen";      				// Plecak dla dowódcy (radio)
-_bagPP = "tf_rt1523g_big_bwmod_tropen";      				// Plecak pilota (radio)
-_bagMedic = "B_Carryall_khk";        					// Plecak dla medyka
-_bagAR = "B_Carryall_khk";						// Plecak dla RKM
-_bagENG = "B_Kitbag_rgr";                				// Plecak dla Mechanika
-_bagR = "B_Kitbag_rgr";							// Plecak dla strzelca, strzelca AT
-_bagmediumdiver = "rhsusf_assault_eagleaiii_coy";			// used by divers
-_baguav = "tf_rt1523g_big_bwmod_tropen";				// used by UAV operator
-_baghmgg = "RHS_M2_Gun_Bag";						// used by Heavy MG gunner
-_baghmgag = "RHS_M2_MiniTripod_Bag";					// used by Heavy MG assistant gunner
-_baghatg = "B_AT_01_weapon_F";						// used by Heavy AT gunner
-_baghatag = "B_HMG_01_support_F";					// used by Heavy AT assistant gunner
-_bagmtrg = "B_Mortar_01_weapon_F";					// used by Mortar gunner
-_bagmtrag = "B_Mortar_01_support_F";					// used by Mortar assistant gunner
-_baghsamg = "B_AA_01_weapon_F";						// used by Heavy SAM gunner
-_baghsamag = "B_HMG_01_support_F";					// used by Heavy SAM assistant gunner
+
+_bagFTL = "tf_rt1523g_big_rhs";					// Plecak dla dowódcy (radio)
+_bagPP = "tf_rt1523g_big_rhs";                  // Plecak dla pilota (radio)
+
+_bagTL = "B_Kitbag_rgr";						//Plecak dowódcy drużyny
+
+_bagMs = "rhsusf_assault_eagleaiii_coy";		// Plecak dla medyka (mały)
+_bagMm = "B_TacticalPack_oil";				// Plecak dla medyka (średni)
+_bagMb = "B_Kitbag_rgr";               		// Plecak dla medyka (duży)
+
+_bagARs = "B_AssaultPack_rgr";				// Plecak dla RKM (mały)
+_bagARm = "B_Kitbag_rgr";						// Plecak dla RKM (średni)
+_bagARb = "B_Carryall_khk";                   // Plecak dla RKM (duży)
+
+_bagENG = "rhsusf_assault_eagleaiii_coy";		// Plecak dla Mechanika
+
+_bagR = "B_Kitbag_rgr";						// Plecak dla strzelca, strzelca AT
+
+_bagMAT = "B_Carryall_khk";					// Plecak dla MAT
+
+_bagmedium = "B_TacticalPack_oil";			// carries 200, weighs 30
+_baglarge =  "B_Carryall_khk"; 				// carries 320, weighs 40
+
+_bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";	// Plecaki SF
+
+_baguav = "tf_rt1523g_big_rhs";					// Plecak RTO
+
+_baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
+
+_baghatg = "B_AT_01_weapon_F";					// used by Heavy AT gunner
+_baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
+_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
+_baghsamg = "B_AA_01_weapon_F";					// used by Heavy SAM gunner
+_baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // ====================================================================================
 
@@ -249,7 +272,7 @@ _APmine2 = "APERSMine_Range_Mag";
 
 _light = [];
 _heavy =  ["eng","engm"];
-_diver = ["div"];
+_diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
@@ -859,19 +882,69 @@ switch (_typeofUnit) do
         _unit addMagazines ["Laserbatteries",2];
 	};
 
-// LOADOUT: Diver
-	case "div":
+// LOADOUT: Dowódca sil specjalnych
+	case "divc":
 	{
 		_unit addmagazines [_diverMag1,4];
-		_unit addmagazines [_diverMag2,3];
 		_unit addweapon _diverWep;
-		_unit addmagazines [_grenade,3];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,3];
+		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_attach1,_scope1,_silencer1];
-		["div"] call _backpack;
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "Laserdesignator_02";
+		_unit addMagazines ["Laserbatteries",2];
+		["divc"] call _backpack;
 	};
+
+// LOADOUT: Medyk sil specjalnych
+	case "divm":
+	{	
+		_unit addmagazines [_diverMag1,4];
+		_unit addweapon _diverWep;
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "lerca_1200_tan";
+		["divm"] call _backpack;
+	};
+
+// LOADOUT: Saper sil specjalnych
+	case "divs":
+	{
+		_unit addmagazines [_diverMag1,4];
+		_unit addweapon _diverWep;
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "lerca_1200_tan";
+		["divs"] call _backpack;
+	};
+	
+// LOADOUT: Strzelec AT sil specjalnych
+	case "divr":
+	{
+		_unit addmagazines [_diverMag1,4];
+		_unit addweapon _diverWep;
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
+		_unit addweapon _RAT;
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "lerca_1200_tan";
+		["divr"] call _backpack;
+	};
+
 
 // LOADOUT: RIFLEMAN
 	case "r":
