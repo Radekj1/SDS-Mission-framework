@@ -39,7 +39,10 @@
 //		eng			- mechanik
 //		engm		- saper
 //		uav			- RTO/FAC
-//		div    		- siły specjalne
+//		divc    	- dowódca sił specjalnych
+//		divr    	- strzelec AT sił specjalnych
+//		divs    	- saper sił specjalnych
+//		divm    	- medyk sił specjalnych
 //		r 			- strzelec
 //		car			- strzelec (karabin krótki)
 //		smg			- strzelec smg
@@ -267,7 +270,7 @@ _APmine2 = "APERSMine_Range_Mag";
 
 _light = [];
 _heavy =  ["eng","engm"];
-_diver = ["div"];
+_diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
@@ -285,9 +288,9 @@ _mediumRig = ["rhs_6b23_ML_6sh92","rhs_6b23_ML_6sh92_headset","rhs_6b23_ML_6sh92
 _heavyRig = ["rhs_6b23_ML_6sh92","rhs_6b23_ML_6sh92_headset","rhs_6b23_ML_6sh92_headset_mapcase","rhs_6b23_ML_6sh92_vog","rhs_6b23_ML_6sh92_vog_headset"];
 
 // Siły specjalne
-_diverUniform =  ["U_O_Wetsuit"];
-_diverHelmet = [];
-_diverRig = ["V_RebreatherIR"];
+_diverUniform =  ["rhs_uniform_m88_patchless"];
+_diverHelmet = ["rhs_6b27m_ml_ess"];
+_diverRig = ["rhs_6b23_ML_6sh92_headset_mapcase"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
@@ -868,22 +871,69 @@ switch (_typeofUnit) do
         _unit addMagazines ["Laserbatteries",2];
 	};
 
-// LOADOUT: Diver
-	case "div":
+// LOADOUT: Dowódca sil specjalnych
+	case "divc":
 	{
 		_unit addmagazines [_diverMag1,4];
-		_unit addmagazines [_diverMag2,3];
 		_unit addweapon _diverWep;
-		_unit addmagazines [_grenade,3];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_scope1,_silencer2];
-		_unit linkItem "ItemGPS"; 
-        _unit addWeapon "Laserdesignator_02";
-        _unit addMagazines ["Laserbatteries",2];
-		["div"] call _backpack;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "Laserdesignator_02";
+		_unit addMagazines ["Laserbatteries",2];
+		["divc"] call _backpack;
 	};
+
+// LOADOUT: Medyk sil specjalnych
+	case "divm":
+	{	
+		_unit addmagazines [_diverMag1,4];
+		_unit addweapon _diverWep;
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "lerca_1200_tan";
+		["divm"] call _backpack;
+	};
+
+// LOADOUT: Saper sil specjalnych
+	case "divs":
+	{
+		_unit addmagazines [_diverMag1,4];
+		_unit addweapon _diverWep;
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "lerca_1200_tan";
+		["divs"] call _backpack;
+	};
+	
+// LOADOUT: Strzelec AT sil specjalnych
+	case "divr":
+	{
+		_unit addmagazines [_diverMag1,4];
+		_unit addweapon _diverWep;
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_attachments = [_attach1,_scope1,_silencer1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
+		_unit addweapon _RAT;
+		_unit linkItem "ItemGPS";
+		_unit addWeapon "lerca_1200_tan";
+		["divr"] call _backpack;
+	};
+
 
 // LOADOUT: RIFLEMAN
 	case "r":
