@@ -1408,10 +1408,7 @@ case "divs":
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 6];
 		};
 	};
-};
-		
-		
-	};
+
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
 	
