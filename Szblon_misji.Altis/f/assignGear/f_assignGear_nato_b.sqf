@@ -1408,32 +1408,6 @@ case "divs":
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 6];
 		};
 	};
-
-	// LOADOUT: HEAVY
-	if (_loadout == 2) then {
-	
-	if (_loadout_night_day == 0) then {
-		_unit addBackpack _bagmediumdiver;
-		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_diverMag2, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen, 8];
-		};
-		
-	if (_loadout_night_day == 1) then {
-		_unit addBackpack _bagmediumdiver;
-		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_diverMag2, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
-		};
-		
-	};
 };
 
 // BACKPACK: UAV
