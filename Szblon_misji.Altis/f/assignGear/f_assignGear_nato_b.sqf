@@ -1203,7 +1203,7 @@ case "divm":
 	// LOADOUT: LIGHT
 	if (_loadout == 0) then {
 		if (_loadout_night_day == 0) then {
-			_unit addBackpack _bagMs;
+			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot,20"];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_morphine",5];
@@ -1214,7 +1214,7 @@ case "divm":
 		};
 		
 	if (_loadout_night_day == 1) then {
-			_unit addBackpack _bagMs;
+			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot,20"];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_morphine",5];
@@ -1227,7 +1227,7 @@ case "divm":
 	// LOADOUT: MEDIUM
 	if (_loadout == 1) then {
 		if (_loadout_night_day == 0) then {
-			_unit addBackpack _bagMm;
+			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addItemCargoGlobal	["ACE_bloodIV_500", 4];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot", 25];
@@ -1239,7 +1239,7 @@ case "divm":
 		};
 		
 		if (_loadout_night_day == 1) then {
-			_unit addBackpack _bagMm;
+			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addItemCargoGlobal	["ACE_bloodIV_500", 4];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot", 25];
@@ -1252,7 +1252,7 @@ case "divm":
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
 		if (_loadout_night_day == 0) then {
-			_unit addBackpack _bagMm;
+			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addItemCargoGlobal	["ACE_bloodIV_500", 8];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot", 30];
@@ -1264,7 +1264,7 @@ case "divm":
 		};
 		
 	if (_loadout_night_day == 1) then {
-			_unit addBackpack _bagMm;
+			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addItemCargoGlobal	["ACE_bloodIV_500", 8];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot", 30];
