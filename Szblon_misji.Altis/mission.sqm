@@ -4750,7 +4750,7 @@ class Mission
 					azimut=-0.79421997;
 					id=296;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A2";
 					init="GrpNATO_ENG1 = group this; [""mtrg"",this] call f_fnc_assignGear;";
@@ -4762,7 +4762,7 @@ class Mission
 					azimut=-0.79421997;
 					id=297;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A3";
 					init="GrpNATO_ENG1 = group this; [""mtrag"",this] call f_fnc_assignGear;";
@@ -4807,7 +4807,7 @@ class Mission
 					azimut=-0.32745501;
 					id=300;
 					side="GUER";
-					vehicle="I_soldier_F";
+					vehicle="I_Soldier_repair_F";
 					skill=0.60000002;
 					text="UnitAAF_ENG1_A2";
 					init="GrpAAF_ENG1 = group this; [""mtrg"",this] call f_fnc_assignGear; ";
@@ -4819,7 +4819,7 @@ class Mission
 					azimut=-0.32745501;
 					id=301;
 					side="GUER";
-					vehicle="I_soldier_F";
+					vehicle="I_Soldier_repair_F";
 					skill=0.60000002;
 					fuel=0.99000001;
 					text="UnitAAF_ENG1_A3";
@@ -4866,7 +4866,7 @@ class Mission
 					azimut=-0.52171499;
 					id=304;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_A2";
 					init="GrpCSAT_ENG1 = group this; [""mtrg"",this] call f_fnc_assignGear;";
@@ -4878,7 +4878,7 @@ class Mission
 					azimut=-0.52171499;
 					id=305;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_A3";
 					init="GrpCSAT_ENG1 = group this; [""mtrag"",this] call f_fnc_assignGear;";
