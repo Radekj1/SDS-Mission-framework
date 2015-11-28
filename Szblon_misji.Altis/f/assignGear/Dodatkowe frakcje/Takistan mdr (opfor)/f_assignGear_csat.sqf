@@ -899,7 +899,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
-		_unit addWeapon "lerca_1200_tan";
+		_unit addWeapon "rhs_pdu4";
 		["divm"] call _backpack;
 	};
 
@@ -914,7 +914,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
-		_unit addWeapon "lerca_1200_tan";
+		_unit addWeapon "rhs_pdu4n";
 		["divs"] call _backpack;
 	};
 	
@@ -931,7 +931,7 @@ switch (_typeofUnit) do
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
 		_unit linkItem "ItemGPS";
-		_unit addWeapon "lerca_1200_tan";
+		_unit addWeapon "rhs_pdu4";
 		["divr"] call _backpack;
 	};
 
