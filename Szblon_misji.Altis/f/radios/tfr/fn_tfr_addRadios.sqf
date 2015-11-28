@@ -57,7 +57,7 @@ if(_typeOfUnit != "NIL") then {
       };
 
       // Special cases
-      _specialist = ["vc", "pp", "eng", "engm", "div","uav","dm"];
+      _specialist = ["vc", "pp", "eng", "engm","uav","dm"];
 
       // If unit is leader of group and in the above list, give SR. Else, give them
       // a rifleman's radio.
