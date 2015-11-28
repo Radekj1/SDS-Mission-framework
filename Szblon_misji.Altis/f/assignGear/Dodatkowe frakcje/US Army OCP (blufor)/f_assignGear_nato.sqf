@@ -204,7 +204,7 @@ _bagMAT = "B_Carryall_mcamo";					// Plecak dla MAT
 _bagmedium = "B_TacticalPack_mcamo";			// carries 200, weighs 30
 _baglarge =  "B_Carryall_mcamo"; 				// carries 320, weighs 40
 
-_bagmediumdiver =  "rhsusf_assault_eagleaiii_ocp";	// Plecaki SF
+_bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";	// Plecaki SF
 
 _baguav = "tf_rt1523g_big_rhs";					// Plecak RTO
 
