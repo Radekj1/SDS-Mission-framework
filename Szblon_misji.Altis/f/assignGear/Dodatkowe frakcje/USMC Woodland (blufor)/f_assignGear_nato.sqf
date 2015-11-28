@@ -184,24 +184,24 @@ _bagsmall = "B_Parachute";						// Spadochron
 _bagFTL = "tf_rt1523g_big_rhs";					// Plecak dla dowódcy (radio)
 _bagPP = "tf_rt1523g_big_rhs";                  // Plecak dla pilota (radio)
 
-_bagTL = "B_Kitbag_mcamo";						//Plecak dowódcy drużyny
+_bagTL = "B_Kitbag_rgr";						//Plecak dowódcy drużyny
 
-_bagMs = "rhsusf_assault_eagleaiii_ocp";		// Plecak dla medyka (mały)
-_bagMm = "B_TacticalPack_mcamo";				// Plecak dla medyka (średni)
-_bagMb = "B_Kitbag_mcamo";               		// Plecak dla medyka (duży)
+_bagMs = "rhsusf_assault_eagleaiii_coy";		// Plecak dla medyka (mały)
+_bagMm = "B_TacticalPack_oil";				// Plecak dla medyka (średni)
+_bagMb = "B_Kitbag_rgr";               		// Plecak dla medyka (duży)
 
-_bagARs = "B_AssaultPack_mcamo";				// Plecak dla RKM (mały)
-_bagARm = "B_Kitbag_mcamo";						// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_mcamo";                   // Plecak dla RKM (duży)
+_bagARs = "B_AssaultPack_rgr";				// Plecak dla RKM (mały)
+_bagARm = "B_Kitbag_rgr";						// Plecak dla RKM (średni)
+_bagARb = "B_Carryall_khk";                   // Plecak dla RKM (duży)
 
-_bagENG = "rhsusf_assault_eagleaiii_ocp";		// Plecak dla Mechanika
+_bagENG = "rhsusf_assault_eagleaiii_coy";		// Plecak dla Mechanika
 
-_bagR = "B_Kitbag_mcamo";						// Plecak dla strzelca, strzelca AT
+_bagR = "B_Kitbag_rgr";						// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "B_Carryall_mcamo";					// Plecak dla MAT
+_bagMAT = "B_Carryall_khk";					// Plecak dla MAT
 
-_bagmedium = "B_TacticalPack_mcamo";			// carries 200, weighs 30
-_baglarge =  "B_Carryall_mcamo"; 				// carries 320, weighs 40
+_bagmedium = "B_TacticalPack_oil";			// carries 200, weighs 30
+_baglarge =  "B_Carryall_khk"; 				// carries 320, weighs 40
 
 _bagmediumdiver =  "rhsusf_assault_eagleaiii_ocp";	// Plecaki SF
 
