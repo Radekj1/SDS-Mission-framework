@@ -650,6 +650,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_RangeTable_82mm";
 		["mtrg"] call _backpack;
 	};
 
@@ -664,6 +666,8 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
 		_unit addWeapon "rhs_pdu4";
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_RangeTable_82mm";
 		["mtrag"] call _backpack;
 	};
 
@@ -834,6 +838,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit linkItem "ItemGPS";
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_RangeTable_82mm";
 		["eng"] call _backpack;
 	};
 
