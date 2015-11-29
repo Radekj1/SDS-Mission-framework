@@ -361,7 +361,6 @@ if (_isMan) then {
 	_unit addItem _bandage;
 	_unit addItem _bandage;
 	_unit addItem _bandage;			// Dodanie 12 sztuk bandaży
-	_unit addItem _personalAidKit;	// Dodanie jednorazowej apteczki
 	_unit addItem _morphine;
 	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
@@ -635,6 +634,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_RangeTable_82mm";
 		["mtrg"] call _backpack;
 	};
 
@@ -649,6 +650,8 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
 		_unit addWeapon "rhs_pdu4";
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_RangeTable_82mm";
 		["mtrag"] call _backpack;
 	};
 
@@ -812,6 +815,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit linkItem "ItemGPS";
+		_unit addItem "ACE_MapTools";
+		_unit addItem "ACE_RangeTable_82mm";
 		["eng"] call _backpack;
 	};
 
