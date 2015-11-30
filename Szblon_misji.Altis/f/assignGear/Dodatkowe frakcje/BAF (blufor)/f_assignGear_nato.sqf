@@ -61,13 +61,17 @@
 // Dodatki broń główna
 _attach1 = "UK3CB_BAF_LLM_IR_Black";        			// Laser
 _attach2 = "UK3CB_BAF_LLM_Flashlight_Black";        	// Latarka
+_attach3 = "acc_pointer_IR";							// czerwony laser
 
 _silencer1 = "UK3CB_BAF_Silencer_L85";					// Tłumik L85
 _silencer2 = "UK3CB_BAF_SFFH";							// Tłumik płomieni
+_silencer3 = "rhsusf_acc_nt4_black";					// Tłumik długi czarny
+_silencer4 = "hlc_muzzle_556NATO_KAC";					// Tłumik dla medyka specjalsów
 
 _scope1 = "rhsusf_acc_eotech_552";						// Holograficzny
 _scope2 = "optic_Aco";									// Holograficzny
 _scope3 = "UK3CB_BAF_SB31250_Ghillie";					// Snajperski
+_scope4 = "rhsusf_acc_compm4";						// Specjalsów
 
 // Jakie dodatki mają być dodane
 _attachments = [_attach2,_scope1]; 						// Każda jednostka otrzyma ten zestaw dodatków
@@ -107,9 +111,14 @@ _smgmag = "hlc_30Rnd_9x19_B_MP5";
 _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Siły specjalne
-_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
-_diverMag1 = "30Rnd_556x45_Stanag";
-_diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+_diverWepCaS = "rhs_weap_m4a1_blockII_grip2_KAC";
+_diverMagCaS = "30Rnd_556x45_Stanag";
+_diverWepM = "hlc_rifle_samr2";
+_diverMagM = "30Rnd_556x45_Stanag";
+_diverWepR = "rhs_weap_m249_pip_S_vfg";
+_diverMagR = "rhsusf_100Rnd_556x45_soft_pouch";
+_secendWep = "hlc_smg_mp5k";
+_secendMag = "hlc_30Rnd_9x19_SD_MP5";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "UK3CB_BAF_L85A2_UGL";
@@ -887,13 +896,14 @@ switch (_typeofUnit) do
 // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
+		_unit addmagazines [_diverMagCaS,4];
+		_unit addweapon _diverWepCaS;
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach3,_scope4,_silencer3];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
@@ -903,13 +913,14 @@ switch (_typeofUnit) do
 // LOADOUT: Medyk sil specjalnych
 	case "divm":
 	{	
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
+		_unit addmagazines [_diverMagM,10];
+		_unit addweapon _diverWepM;
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach3,_scope4,_silencer4];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "lerca_1200_tan";
 		["divm"] call _backpack;
@@ -918,13 +929,14 @@ switch (_typeofUnit) do
 // LOADOUT: Saper sil specjalnych
 	case "divs":
 	{
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
+		_unit addmagazines [_diverMagCaS,8];
+		_unit addweapon _diverWepCaS;
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach3,_scope4,_silencer3];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "lerca_1200_tan";
 		["divs"] call _backpack;
@@ -933,13 +945,14 @@ switch (_typeofUnit) do
 // LOADOUT: Strzelec AT sil specjalnych
 	case "divr":
 	{
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
+		_unit addmagazines [_diverMagR,2];
+		_unit addweapon _diverWepR;
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach3,_scope4];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
 		_unit linkItem "ItemGPS";

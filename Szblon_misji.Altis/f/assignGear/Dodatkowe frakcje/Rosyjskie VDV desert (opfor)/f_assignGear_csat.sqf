@@ -61,13 +61,16 @@
 // Dodatki broń główna
 _attach1 = "";							// Brak dodatków do AK
 _attach2 = "";							// Brak dodatków do AK
+_attach3 = "ACE_acc_pointer_green";		// Laser zielony
 
 _silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK)
 _silencer2 = "hlc_muzzle_545SUP_AK";	// Tłumik do AEK`a
+_silencer3 = "hlc_muzzle_snds_fal";		// Tłumik dla medyka specjalsów
 
 _scope1 = "rhs_acc_1p63";				// Celownik holo
 _scope2 = "rhs_acc_pkas";				// Celownik olo (buguje RKM)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny
+_scope4 = "rhsusf_acc_compm4";			// Celownik dla specjalsów
 
 _bipod1 = "bipod_02_F_hex";				// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
@@ -110,9 +113,12 @@ _smgmag = "hlc_30Rnd_545x39_B_AK";
 _smgmag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Siły specjalne
-_diverWep = "hlc_rifle_aek971";
-_diverMag1 = "hlc_30Rnd_545x39_B_AK";
-_diverMag2 = "hlc_30Rnd_545x39_t_ak";
+_diverWepCaS = "hlc_rifle_aku12";
+_diverMagCaS = "hlc_30Rnd_545x39_B_AK";
+_diverWepR = "hlc_rifle_RPK12";
+_diverMagR = "hlc_45Rnd_545x39_t_rpk";
+_diverWepM = "hlc_rifle_falosw";
+_diverMagM = "hlc_20Rnd_762x51_t_fal";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_ak74m_gp25";
@@ -879,13 +885,13 @@ switch (_typeofUnit) do
 // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
-		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_diverMagCaS,4];
+		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
+		_attachments = [_attach3,_scope4,_silencer2];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "Laserdesignator_02";
 		_unit addMagazines ["Laserbatteries",2];
@@ -895,13 +901,13 @@ switch (_typeofUnit) do
 // LOADOUT: Medyk sil specjalnych
 	case "divm":
 	{	
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
-		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_diverMagM,10];
+		_unit addweapon _diverWepM;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
+		_attachments = [_attach3,_scope4,_silencer3];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "rhs_pdu4";
 		["divm"] call _backpack;
@@ -910,13 +916,13 @@ switch (_typeofUnit) do
 // LOADOUT: Saper sil specjalnych
 	case "divs":
 	{
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
-		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_diverMagCaS,8];
+		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
+		_attachments = [_attach3,_scope4,_silencer2];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "rhs_pdu4";
 		["divs"] call _backpack;
@@ -925,13 +931,13 @@ switch (_typeofUnit) do
 // LOADOUT: Strzelec AT sil specjalnych
 	case "divr":
 	{
-		_unit addmagazines [_diverMag1,4];
-		_unit addweapon _diverWep;
-		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_diverMagR,6];
+		_unit addweapon _diverWepR;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
+		_attachments = [_attach3,_scope4,_silencer2];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope1,_silencer1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
 		_unit linkItem "ItemGPS";
