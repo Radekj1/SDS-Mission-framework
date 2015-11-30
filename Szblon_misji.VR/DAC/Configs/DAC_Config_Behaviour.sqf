@@ -23,8 +23,8 @@ switch (_this select 0) do
 		//_setSkill = ["aimingAccuracy","aimingShake","aimingSpeed","Endurance","spotDistance","spotTime","courage","reloadSpeed","commanding","general"];
 		_setSkill   = [[0.05,0.15],[0.6,0.8],[0.2,0.4],[0.2,0.4],[0.2,0.4],[0.2,0.3],[0.2,0.4],[0.1,0.2],[0.2,0.4],[0.1,0.2]];
 		_setCombat  = ["green","white","yellow"];
-		_setBehav   = ["careless","safe","aware"];
-		_setSpeed   = ["limited","normal","full"];
+		_setBehav   = ["safe","aware"];
+		_setSpeed   = ["full"];
 		_setForm    = ["line","vee","column","wedge","stag column","ech left","ech right","file","diamond"];
 		_setFleeing = [0,200];
 		_setHeliVal = [50,100,0.7,1];
@@ -46,8 +46,8 @@ switch (_this select 0) do
 		//_setSkill = ["aimingAccuracy","aimingShake","aimingSpeed","Endurance","spotDistance","spotTime","courage","reloadSpeed","commanding","general"];
 		_setSkill   = [[0.05,0.15],[0.6,0.8],[0.2,0.4],[0.2,0.4],[0.2,0.4],[0.2,0.3],[0.2,0.4],[0.1,0.2],[0.2,0.4],[0.1,0.2]];
 		_setCombat  = ["green","white","yellow"];
-		_setBehav   = ["careless","safe","aware"];
-		_setSpeed   = ["limited","normal","full"];
+		_setBehav   = ["safe","aware"];
+		_setSpeed   = ["full"];
 		_setForm    = ["line","vee","column","wedge","stag column","ech left","ech right","file","diamond"];
 		_setFleeing = [0,200];
 		_setHeliVal = [50,100,0.7,1];

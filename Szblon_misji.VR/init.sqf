@@ -1,4 +1,39 @@
 // ====================================================================================
+// Kompatybilność z HC
+
+[true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";
+
+enableSaving [false, false];
+
+//define function to spawn units
+_spawnUnits = {
+	
+	//DAC spawning
+	[] execVM "DAC\DAC_Config_Creator.sqf";
+	//[] execVM "spawn_viaDAC.sqf";
+	True
+};
+
+//check if HC1 is present
+HC1Present = if(isNil "HC1") then{False} else{True};
+
+//spawn units on HC1 if present
+if(HC1Present && isMultiplayer) then{
+	if(!isServer && !hasInterface) then{
+		diag_log "HC: Spawning AI on the HC";
+		[] call _spawnUnits;
+	};
+}
+
+//spawn units on server
+else{
+	if(isServer) then{
+		diag_log "HC: Spawning AI the SERVER";
+		[] call _spawnUnits;
+	};
+};
+
+// ====================================================================================
 
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)

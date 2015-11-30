@@ -8,11 +8,20 @@
 //    silola@freenet.de     //
 //////////////////////////////
 
+//////////////////////////////////////////////////////////
+// Modified by Monsoon to be headless client compatible //
+//////////////////////////////////////////////////////////
+
+isHC = if(!isServer && !hasInterface) then{ True } else{ False };
+
+_scr = [] spawn (compile preprocessFile "DAC\Scripts\DAC_Preprocess.sqf");
+waituntil {scriptdone _scr};
+
 scalar = "any";DAC_Init_Camps = 0;
 
 waituntil{time > 0.3};
 
-if(isServer) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} else {if(isnull player) then {DAC_Code = 3} else {DAC_Code = 2}};
+if(isServer || isHC) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} else {if(isnull player) then {DAC_Code = 3} else {DAC_Code = 2}};
 
 //===============|
 // DAC_Settings	 |
@@ -57,6 +66,8 @@ if(isServer) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} els
 	"UnitAAF_WSL_SL","UnitAAF_WSL_M","UnitAAF_MMG1_FTL","UnitAAF_MMG1_G","UnitAAF_MMG1_AG","UnitAAF_MAT1_G","UnitAAF_MAT1_AG","UnitAAF_HMG1_FTL","UnitAAF_HMG1_G","UnitAAF_HMG1_AG","UnitAAF_HAT1_G","UnitAAF_HAT1_AG",
 	"UnitCSAT_MTR1_FTL","UnitCSAT_MTR1_G","UnitCSAT_MTR1_AG","UnitCSAT_MSAM1_FTL","UnitCSAT_MSAM1_G","UnitCSAT_MSAM1_AG","UnitCSAT_ST1_SP","UnitCSAT_ST1_SN","UnitCSAT_WSL_SL","UnitCSAT_WSL_M","UnitCSAT_MMG1_FTL",
 	"UnitCSAT_MMG1_G","UnitCSAT_MMG1_AG","UnitCSAT_MAT1_G","UnitCSAT_MAT1_AG","UnitCSAT_HMG1_FTL","UnitCSAT_HMG1_G","UnitCSAT_HMG1_AG","UnitCSAT_HAT1_G","UnitCSAT_HAT1_AG"]};
+	
+	
 	if(isNil "DAC_AI_Count_Level")	then {		DAC_AI_Count_Level  = [[2,4],[3,6],[4,8],[8,14],[1,2]]			};
 	if(isNil "DAC_Dyn_Weather") 	then {		DAC_Dyn_Weather		= [0,0,0,[0, 0, 0],0]						};
 	if(isNil "DAC_Reduce_Value") 	then {		DAC_Reduce_Value	= [1000,1050,0.3]							};
@@ -73,7 +84,7 @@ if(isServer) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} els
 	if(isNil "DAC_Fast_Init") 		then {		DAC_Fast_Init		= false										};
 	if(isNil "DAC_Player_Marker")	then {		DAC_Player_Marker	= false										};
 	if(isNil "DAC_Direct_Start")	then {		DAC_Direct_Start	= false										};
-	if(isNil "DAC_Activate_Sound")	then {		DAC_Activate_Sound	= true										};
+	if(isNil "DAC_Activate_Sound")	then {		DAC_Activate_Sound	= false										};
 	if(isNil "DAC_Auto_UnitCount")	then {		DAC_Auto_UnitCount	= [8,10]									};
 	if(isNil "DAC_Player_Support")	then {		DAC_Player_Support	= [10,[4,2000,3,1000]]						};
 	if(isNil "DAC_SaveDistance")	then {		DAC_SaveDistance	= [500,["DAC_Save_Pos"]]					};
@@ -90,7 +101,7 @@ if(isServer) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} els
 
 	//=============================================================================================================|
 	
-	_scr = [] spawn (compile preprocessFile "\DAC_Source\Scripts\DAC_Start_Creator.sqf");
+	_scr = [] spawn (compile preprocessFile "DAC\Scripts\DAC_Start_Creator.sqf");
 	waituntil {scriptdone _scr};
 	sleep 0.1;
 	waituntil {(DAC_Basic_Value > 0)};

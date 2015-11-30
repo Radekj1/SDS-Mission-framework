@@ -100,7 +100,7 @@ switch (_TypNumber) do
   case 9:
   {
     _Unit_Pool_S = ["LOP_AM_Infantry_Engineer","LOP_AM_Infantry_Engineer","LOP_AM_Infantry_TL","LOP_AM_Infantry_SL","LOP_AM_Soldier","LOP_AM_Infantry_Marksman","LOP_AM_Infantry_Engineer","LOP_AM_Infantry_GL","LOP_AM_Infantry_Corpsman","LOP_AM_Infantry_AR","LOP_AM_Infantry_AT"];
-    _Unit_Pool_V = ["LOP_AM_Landrover","LOP_AM_Landrover_M2","LOP_AM_BTR60"];
+    _Unit_Pool_V = ["LOP_AM_Landrover_M2","LOP_AM_BTR60"];
     _Unit_Pool_T = ["RDS_T55_AAF_01"];
     _Unit_Pool_A = [];
   };
