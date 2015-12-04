@@ -30,8 +30,8 @@ switch (_this select 0) do
 	};
 
 	//Turn safety off
-	case false;
-	default {
+	case false:
+	{
 
 		//Allow player to fire weapons
 		if !(isNil "f_eh_safetyMan") then {
