@@ -4729,7 +4729,7 @@ class Mission
 					skill=0.60000002;
 					ammo=0.37334669;
 					text="UnitNATO_ENG1_FTL";
-					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ENG1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="Mechanik Dowódca Zespołu";
 				};
 				class Item1
@@ -4786,7 +4786,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAAF_ENG1_FTL";
-					init="GrpAAF_ENG1 = group this; [""eng"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ENG1 = group this; [""dc"",this] call f_fnc_assignGear; ";
 					description="Mechanik Dowódca Zespołu";
 				};
 				class Item1
@@ -4845,7 +4845,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_FTL";
-					init="GrpCSAT_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ENG1 = group this; [""dc"",this] call f_fnc_assignGear;";
 					description="Mechanik Dowódca Zespołu";
 				};
 				class Item1
@@ -5609,14 +5609,14 @@ class Mission
 		class Item0
 		{
 			position[]={5624.832,5,6164.438};
-			a=0;
-			b=0;
+			a=300;
+			b=300;
 			activationBy="ANY";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			name="respawn_west";
-			expCond="(player distance respawn_west) < 300;";
+			expCond="this ||  (player distance respawn_west) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
@@ -5625,15 +5625,15 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={5695.5234,5,4695.4141};
-			a=0;
-			b=0;
+			position[]={5669.8164,5,4695.4141};
+			a=300;
+			b=300;
 			activationBy="ANY";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			name="respawn_east";
-			expCond="(player distance respawn_east) < 300;";
+			expCond="this ||  (player distance respawn_east) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
@@ -5643,14 +5643,14 @@ class Mission
 		class Item2
 		{
 			position[]={5625.4604,5,5438.5913};
-			a=0;
-			b=0;
+			a=300;
+			b=300;
 			activationBy="ANY";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			name="respawn_guerrila";
-			expCond="(player distance respawn_guerrila) < 300;";
+			expCond="this || (player distance respawn_guerrila) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
