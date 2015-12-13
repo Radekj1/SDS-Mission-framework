@@ -73,6 +73,20 @@ KitPickInit =
     _idx = COMBO lbAdd "Strzelec AA"; COMBO lbSetData [_idx, "msamg"];
     _idx = COMBO lbAdd "Amunicyjny AA"; COMBO lbSetData [_idx, "msamag"];
 	COMBO lbAdd "----";
+
+    _idx = COMBO lbAdd "Dowódca sekcji SF"; COMBO lbSetData [_idx, "divc"];
+    _idx = COMBO lbAdd "Strzelec AT SF"; COMBO lbSetData [_idx, "divr"];
+    _idx = COMBO lbAdd "Saper SF"; COMBO lbSetData [_idx, "divs"];
+    _idx = COMBO lbAdd "Medyk SF"; COMBO lbSetData [_idx, "divm"];
+	COMBO lbAdd "----";
+	
+    _idx = COMBO lbAdd "Dowódca sekcji logistyki"; COMBO lbSetData [_idx, "dc"];
+    _idx = COMBO lbAdd "Mechanik"; COMBO lbSetData [_idx, "eng"];
+    _idx = COMBO lbAdd "Strzelec MTR"; COMBO lbSetData [_idx, "mtrg"];
+    _idx = COMBO lbAdd "Amunicyjny MTR"; COMBO lbSetData [_idx, "mtrag"];
+	COMBO lbAdd "----";
+	
+	
 	
     _sel = player getVariable "KitPicker_Selection";
     if (!isNil '_sel') then
