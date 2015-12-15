@@ -121,19 +121,6 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - Dynamic View Distance
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// f_var_viewDistance_default = 1250;
-// f_var_viewDistance_tank = 2000;
-// f_var_viewDistance_car = 2000;
-// f_var_viewDistance_rotaryWing = 2500;
-// f_var_viewDistance_fixedWing = 5000;
-// f_var_viewDistance_crewOnly = true;
-// [] execVM "f\dynamicViewDistance\f_setViewDistanceLoop.sqf";
-
-// ====================================================================================
-
 // F3 - Authorised Crew Check
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -246,30 +233,16 @@ f_var_cachingAggressiveness = 2;
 
 // ====================================================================================
 
-// F3 - Medical Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// SWS Config Settings
-// How many extra FirstAidKits (FAKS) each player should receive when using the F3 Simple Wounding System:
-//f_wound_extraFAK = 2;
-
-//[] execVM "f\medical\medical_init.sqf";
-
-// ====================================================================================
-
 //Dodanie safezone na respie
 [] execVM "f\Safezone\Safezone.sqf";
-
-// ====================================================================================
-// eulerfoiler - HC Round-Robin Load Balancing
-// This automatically carries over units and data from Zeus or main spawn. DAC spawn works as well.
-// This is currently in use. DAC HC is not in use, it should be turned off.
-
-// execVM "f\headlessclient\passToHCs.sqf";
 
 // ====================================================================================
 
 //Dodanie zabezpieczenia po respie
 []  execVM "f\Safezone\safety_init.sqf";
+
+// ====================================================================================
+
+[] execVM "f\Safezone\cleanup.sqf";
 
 // ====================================================================================

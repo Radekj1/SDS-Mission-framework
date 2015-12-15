@@ -182,20 +182,6 @@ class Params
 
 // ============================================================================================
 
-// F3 - Medical Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_medical
-    {
-            title = "Medical System";
-            values[] = {0,1,2};
-            texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod"};
-            default = 0;
-            code = "f_var_medical = %1";
-    };
-
-// ============================================================================================
-
 // F3 - Mission Timer/Safe Start
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -248,57 +234,6 @@ class Params
 
 // ============================================================================================
 
-// F3 - AI Skill Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-/*
-	class f_param_AISkill_BLUFOR
-	{
-		title = "$STR_f_param_AISkill_BLUFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_BLUFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_OPFOR
-	{
-		title = "$STR_f_param_AISkill_OPFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_OPFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_INDP
-	{
-		title = "$STR_f_param_AISkill_INDP";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_INDP = %1";
-	};
-*/
-
-// ============================================================================================
-
-// F3 - Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-	class f_param_caching
-	{
-		title = "Cache AI outside distance (m)";
-		values[] = {0,600,800,1000,1500,2000};
-		default = 0;
-		code = "f_param_caching = %1";
-	};
-
-// ============================================================================================
-
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
@@ -313,7 +248,7 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Misja zakończona sukcesem"; // Misja udala sie, wykonalismy wszystkie cele bez wiekszych strat
+		title = "Misja udana"; // Misja udala sie, wykonalismy wszystkie cele bez wiekszych strat
 		subtitle = "";
 		description = "*** Insert debriefing #1 here. ***";
 		// pictureBackground = "";
@@ -458,14 +393,6 @@ class CfgFunctions
 			class SetFog{};
 			class SetWeather{};
 		};
-		class cache
-		{
-			file = "f\cache";
-			class cInit {};
-			class cTracker {};
-			class gCache {};
-			class gUncache {};
-		};
 		class groupMarkers {
 			file = "f\groupMarkers";
 			class localGroupMarker{};
@@ -487,11 +414,6 @@ class CfgFunctions
 		{
 			file = "f\removeBody";
 			class removeBody{};
-		};
-		class setAISkill
-		{
-			file = "f\setAISKill";
-			class setAISKill{};
 		};
 		class mapClickTeleport
 		{
@@ -537,7 +459,6 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
-		#include "f\simplewoundingsystem\config.hpp"
 		#include "f\spect\functions.hpp"
 
 	};
