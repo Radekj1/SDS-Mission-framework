@@ -5616,7 +5616,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="respawn_west";
-			expCond="this ||  (player distance respawn_west) < 300;";
+			expCond="this &&  (player distance respawn_west) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
@@ -5633,7 +5633,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="respawn_east";
-			expCond="this ||  (player distance respawn_east) < 300;";
+			expCond="this &&  (player distance respawn_east) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
@@ -5650,7 +5650,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="respawn_guerrila";
-			expCond="this || (player distance respawn_guerrila) < 300;";
+			expCond="this && (player distance respawn_guerrila) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
