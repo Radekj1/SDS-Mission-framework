@@ -55,9 +55,9 @@ switch (_TypNumber) do
 // Russians (OPFOR)
   case 4:
   {
-    _Unit_Pool_S = ["min_rf_crew", "min_rf_helipilot", "min_rf_soldier_TL", "min_rf_soldier_GL", "min_rf_medic","min_rf_soldier_A"," min_rf_soldier_AR",	"min_rf_soldier","min_rf_soldier_M","min_rf_soldier_LAT"];
-    _Unit_Pool_V = ["CUP_O_UAZ_MG_RU","CUP_O_UAZ_Unarmed_RU","CUP_O_Ural_RU","CUP_O_Ural_ZU23_RU","CUP_O_BTR90_RU"];
-    _Unit_Pool_T = ["CUP_O_T72_RU"];
+    _Unit_Pool_S = ["min_rf_crew", "min_rf_helipilot", "min_rf_soldier_TL", "min_rf_soldier_GL", "min_rf_medic","min_rf_soldier_A","min_rf_soldier_AR","min_rf_soldier","min_rf_soldier_M","min_rf_soldier_LAT"];
+    _Unit_Pool_V = ["CUP_O_UAZ_MG_RU", "CUP_O_UAZ_SPG9_RU", "CUP_O_Ural_RU", "CUP_O_Ural_ZU23_RU" , "CUP_O_BTR90_RU"];
+    _Unit_Pool_T = ["CUP_O_BMP2_RU", "CUP_O_T72_RU"];
     _Unit_Pool_A = ["CUP_O_Mi8_RU"];
   };
  
@@ -106,7 +106,6 @@ switch (_TypNumber) do
   };
  
 //-------------------------------------------------------------------------------------------------
-
 
   Default
   {
