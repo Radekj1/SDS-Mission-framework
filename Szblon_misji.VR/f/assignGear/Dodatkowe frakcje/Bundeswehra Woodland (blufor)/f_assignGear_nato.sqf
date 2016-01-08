@@ -60,8 +60,8 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "CUP_acc_Flashlight";		// Latarka i laser (można przełączyć)
-_attach2 = "";							// Laser i latarka (można przełączyć)
+_attach1 = "CUP_acc_Flashlight";		// Latarka 
+_attach2 = "CUP_acc_ANPEQ_15";			// Laser
 _attach3 = "";							// czerwony laser
 	
 _silencer1 = "BWA3_muzzle_snds_G36";	// Tłumik 5.56 (długi)
@@ -73,8 +73,8 @@ _scope1 = "BWA3_optic_RSAS";			// Aimpoint (Bw)
 _scope2 = "CUP_optic_CompM2_Black";		// Aimpoint (CUP)
 _scope3 = "";							// Celownik snajperski 6.5-20x
 
-_bipod1 = "";		// 
-_bipod2 = "bipod_02_F_blk";					// 
+_bipod1 = "";							// 
+_bipod2 = "bipod_02_F_blk";				// 
 
 // Jakie dodatki mają być dodane
 _attachments = [_attach1,_scope2]; 			// Każda jednostka otrzyma ten zestaw dodatków
@@ -176,6 +176,7 @@ _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "BWA3_Vector";
 _lornetkaFTL = "Binocular";
+_GPS = "ItemGPS";
 
 // Noktowizja
 _nvg = "ACE_NVG_Gen2";
@@ -225,12 +226,12 @@ _bagMAT = "BWA3_PatrolPack_Fleck";				// Plecak dla MAT
 _bagmedium = "BWA3_Kitbag_Fleck";				// carries 200, weighs 30
 _baglarge =  "BWA3_PatrolPack_Fleck"; 			// carries 320, weighs 40
 
-//_bagmediumdiver =  "";	// Plecaki SF
+//_bagmediumdiver =  "";						// Plecaki SF
 
 _baguav = "tf_rt1523g_big_bwmod";				// Plecak RTO
 
-//_baghmgg = "";					// used by Heavy MG gunner
-//_baghmgag = ;			// used by Heavy MG assistant gunner
+_baghmgg = "CUP_B_M2_Gun_Bag";				// used by Heavy MG gunner
+_baghmgag = "CUP_B_M2_MiniTripod_Bag";		// used by Heavy MG assistant gunner
 
 _baghatg = "B_AT_01_weapon_F";					// used by Heavy AT gunner
 _baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
@@ -447,7 +448,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon _lornetkaFTL;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
 
@@ -464,7 +465,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon _lornetkaFTL;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
 
@@ -476,7 +477,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		["m"] call _backpack;
 	};
 
@@ -493,7 +494,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addWeapon _lornetkaFTL;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		["g"] call _backpack;
 	};
 
@@ -777,7 +778,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
 		_attachments = [];
 		["vc"] call _backpack;
@@ -789,7 +790,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 		["cc"] call _backpack;
 	};
@@ -800,7 +801,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 	};
 
@@ -810,7 +811,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 		["pp"] call _backpack;
 	};
@@ -821,7 +822,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 		["cc"] call _backpack;
 	};
@@ -832,7 +833,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 		["ps"] call _backpack;
 	};
@@ -843,7 +844,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 	};
 
@@ -856,7 +857,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addItem "ACE_MapTools";
 		_unit addItem "ACE_RangeTable_82mm";
 		["eng"] call _backpack;
@@ -873,7 +874,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addItem "ACE_Clacker"; //zapalnik
 		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
@@ -891,7 +892,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
-		_unit linkItem "ItemGPS"; 
+		_unit linkItem _GPS;
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
@@ -908,7 +909,7 @@ switch (_typeofUnit) do
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;
@@ -925,7 +926,7 @@ switch (_typeofUnit) do
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addWeapon "lerca_1200_tan";
 		["divm"] call _backpack;
 	};
@@ -941,7 +942,7 @@ switch (_typeofUnit) do
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addWeapon "lerca_1200_tan";
 		["divs"] call _backpack;
 	};
@@ -959,7 +960,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addWeapon "lerca_1200_tan";
 		["divr"] call _backpack;
 	};
@@ -1031,7 +1032,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
 		_unit addItemCargoGlobal ["ACE_morphine", 2];
-        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+        _unit addItemCargoGlobal ["ACE_epinephrine", 2];
 		_unit addItemCargoGlobal [_IRstrobe, 2];
 	};
 
@@ -1049,7 +1050,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
 		_unit addItemCargoGlobal ["ACE_morphine", 2];
-        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+        _unit addItemCargoGlobal ["ACE_epinephrine", 2];
 		_unit addItemCargoGlobal ["ToolKit", 1];
 		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
 		_unit addItemCargoGlobal [_IRstrobe, 5];
@@ -1069,7 +1070,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 10];
 		_unit addItemCargoGlobal ["ACE_morphine",4];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",2];
+        _unit addItemCargoGlobal ["ACE_epinephrine",2];
 		_unit addItemCargoGlobal ["ToolKit", 1];
 		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
 		_unit addItemCargoGlobal [_IRstrobe, 10];
@@ -1125,7 +1126,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 25];
 		_unit addItemCargoGlobal ["ACE_morphine",25];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",25];
+        _unit addItemCargoGlobal ["ACE_epinephrine",25];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
 		_unit addItemCargoGlobal [_IRstrobe, 30];
 };
@@ -1177,7 +1178,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
 		_unit addItemCargoGlobal ["ACE_morphine",100];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",100];
+        _unit addItemCargoGlobal ["ACE_epinephrine",100];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
 		_unit addItemCargoGlobal [_IRstrobe, 70];
 };

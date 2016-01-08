@@ -117,6 +117,30 @@ switch (_TypNumber) do
   };
  
 //-------------------------------------------------------------------------------------------------
+
+// Polskie Siły Zbrojne - Las (BLUFOR)
+  case 10:
+  {
+    _Unit_Pool_S = ["PSZ_PL_WDL10_Soldier_Driver", "PSZ_PL_WDL10_Soldier_Pilot", "PSZ_PL_WDL10_Soldier_TL", "PSZ_PL_WDL10_Soldier_Ammo_PKM", "PSZ_PL_WDL10_Soldier_MG", "PSZ_PL_WDL10_Soldier_Grenadier_RPG7", "PSZ_PL_WDL10_Soldier_AA", "PSZ_PL_WDL10_Soldier_Ammo_RPG7", "PSZ_PL_WDL10_Soldier_Rifleman", "PSZ_PL_WDL10_Soldier_Medic"];
+    _Unit_Pool_V = ["PSZ_PL_Star_944", "PSZ_PL_Zbik_M96_W", "PSZ_PL_Zbik_M97_W"];
+    _Unit_Pool_T = ["BWA3_Leopard2A6M_Fleck"];
+    _Unit_Pool_A = ["MELB_AH6M_L","CUP_B_UH60L_FFV_US"];
+  };
+ 
+//-------------------------------------------------------------------------------------------------
+
+// Polskie Siły Zbrojne - Pustynia (BLUFOR)
+  case 11:
+  {
+    _Unit_Pool_S = ["PSZ_PL_DES10_Soldier_Driver", "PSZ_PL_DES10_Soldier_Pilot", "PSZ_PL_DES10_Soldier_TL", "PSZ_PL_DES10_Soldier_Ammo_PKM", "PSZ_PL_DES10_Soldier_MG", "PSZ_PL_DES10_Soldier_Grenadier_RPG7", "PSZ_PL_DES10_Soldier_Medic", "PSZ_PL_DES10_Soldier_AA", "PSZ_PL_DES10_Soldier_Ammo_RPG7", "PSZ_PL_DES10_Soldier_Rifleman"];
+    _Unit_Pool_V = ["PSZ_PL_Star_944", "PSZ_PL_Zbik_M96_D", "PSZ_PL_Zbik_M97_D"];
+    _Unit_Pool_T = ["BWA3_Leopard2A6M_Tropen"];
+    _Unit_Pool_A = ["CUP_B_UH60L_FFV_US", "CUP_B_CH47F_USA", "MELB_AH6M_L"];
+  };
+ 
+//-------------------------------------------------------------------------------------------------
+
+
   Default
   {
     if(DAC_Basic_Value != 5) then
