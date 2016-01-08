@@ -17,6 +17,8 @@ switch ((side player)) do { //longrange, shortrange, rifradio
       _radio1 = "tf_rt1523g_big_rhs";
       //_radio1 = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";  		//radio dla jednostek BAF
       //_radio1 = "tf_rt1523g_big_bwmod";  					//radio dla jednostek Bundeswery
+      //_radio1 = "tf_rt1523g_big_bwmod";  					//radio dla jednostek PSZ LAS [najlepiej pasuje]
+      //_radio1 = "tf_rt1523g_sage";  						//radio dla jednostek USMC Woodland
       _radio2 = TF_defaultWestPersonalRadio;
       _radio3 = TF_defaultWestRiflemanRadio;};
     case (east): {

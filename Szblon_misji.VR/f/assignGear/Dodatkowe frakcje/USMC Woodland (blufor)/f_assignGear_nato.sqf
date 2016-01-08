@@ -768,7 +768,7 @@ switch (_typeofUnit) do
 		_unit linkItem "ItemGPS";
 		_unit addWeapon "lerca_1200_tan";
 		_attachments = [];
-		["ftl"] call _backpack;
+		["vc"] call _backpack;
 	};
 
 // LOADOUT: VEHICLE DRIVER
