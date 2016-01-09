@@ -46,7 +46,7 @@ case "m":
 	};
 	
 	if (_loadout_night_day == 1) then {
-	_unit addBackpack _bagMs;
+	_unit addBackpack _bagMm;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
 		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];
@@ -72,7 +72,7 @@ case "m":
 		};
 		
 	if (_loadout_night_day == 1) then {
-		_unit addBackpack _bagMs;
+		_unit addBackpack _bagMb;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
 		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];

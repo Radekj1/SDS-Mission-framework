@@ -64,16 +64,17 @@ _attach1 = "CUP_acc_ANPEQ_15";				// Laser
 _attach2 = "acc_flashlight";				// Latarka
 _attach3 = "acc_pointer_IR";				// czerwony laser
 
-//_silencer1 = "";		// Tłumik 5.56 (długi)
-//_silencer2 = "";		// Tłumik 5.56 (krótki)
-//_silencer3 = "";		// Tłumik długi czarny
-//_silencer4 = "";		// Tłumik dla medyka specjalsów
+_silencer1 = "muzzle_snds_M";				// Tłumik 5.56 (długi)
+_silencer2 = "BWA3_muzzle_snds_G36";		// Tłumik 5.56 (krótki)
+_silencer3 = "";							// Tłumik długi czarny
+_silencer4 = "";							// Tłumik dla medyka specjalsów
 
 _scope1 = "PSZ_AccO_EOT552";				// Eotech
 _scope2 = "CUP_optic_Kobra";				// Aimpoint
 //_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope4 = "CUP_optic_CompM2_Black";			// Celownik SF
 
-//_bipod1 = "";								// 
+_bipod1 = "";								// 
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
@@ -88,6 +89,7 @@ _attachments = [_attach2,_scope1]; 			// Każda jednostka otrzyma ten zestaw dod
 
 // Dodatki do pistoletu
 _hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer2 = "muzzle_snds_L";	// SF pistol suppressor
 
 _hg_scope1 = "optic_MRD";			// MRD
 
@@ -114,14 +116,14 @@ _smgmag = "CUP_64Rnd_9x19_Bizon_M";
 _smgmag_tr = "CUP_64Rnd_Green_Tracer_9x19_Bizon_M";
 
 // Siły specjalne
-//_diverWepCaS = "rhs_weap_m4a1_blockII_grip2_KAC";
-//_diverMagCaS = "30Rnd_556x45_Stanag";
-//_diverWepM = "hlc_rifle_samr2";
-//_diverMagM = "30Rnd_556x45_Stanag";
-//_diverWepR = "rhs_weap_m249_pip_S_vfg";
-//_diverMagR = "rhsusf_100Rnd_556x45_soft_pouch";
-//_secendWep = "hlc_smg_mp5k";
-//_secendMag = "hlc_30Rnd_9x19_SD_MP5";
+_diverWepCaS = "PSZ_Radon_HG";
+_diverMagCaS = "PSZ_556x45_STANAG_30";
+_diverWepM = "PSZ_Radon_HG";
+_diverMagM = "PSZ_556x45_STANAG_30";
+_diverWepR = "PSZ_Radon";
+_diverMagR = "PSZ_556x45_STANAG_30";
+_secendWep = "PSZ_P99";
+_secendMag = "PSZ_9x19_P99_16";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "PSZ_Beryl96_Pallad";
@@ -215,7 +217,7 @@ _bagMAT = "PSZ_B_wz97_DES";						// Plecak dla MAT
 _bagmedium = "B_TacticalPack_oli";				// carries 200, weighs 30
 _baglarge =  "PSZ_B_wz97_DES"; 					// carries 320, weighs 40
 
-_bagmediumdiver =  "B_AssaultPack_rgr";			// Plecaki SF
+_bagmediumdiver =  "PSZ_B_wz93_DES";			// Plecaki SF
 
 _baguav = "tf_rt1523g_big";						// Plecak RTO
 
@@ -302,11 +304,13 @@ _lightRig = ["PSZ_V_UKO_L_DES_CO_Headset","PSZ_V_UKO_L_DES_GL_Headset","PSZ_V_UK
 _mediumRig = ["PSZ_V_UKO_L_DES_CO_Headset","PSZ_V_UKO_L_DES_GL_Headset","PSZ_V_UKO_L_DES_MG_Headset","PSZ_V_UKO_L_DES_M_Headset","PSZ_V_UKO_L_DES_R_Headset","PSZ_V_UKO_L_WDL_CO_Headset","PSZ_V_UKO_L_WDL_GL_Headset","PSZ_V_UKO_L_WDL_R_Headset"]; 	// default for all infantry classes
 _heavyRig = ["PSZ_V_UKO_L_DES_CO_Headset","PSZ_V_UKO_L_DES_GL_Headset","PSZ_V_UKO_L_DES_MG_Headset","PSZ_V_UKO_L_DES_M_Headset","PSZ_V_UKO_L_DES_R_Headset","PSZ_V_UKO_L_WDL_CO_Headset","PSZ_V_UKO_L_WDL_GL_Headset","PSZ_V_UKO_L_WDL_R_Headset"];
 
+
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_FROG01_m81"];
-_diverHelmet = ["rhsusf_mich_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81"];
-_diverRig = ["rhsusf_spc_marksman","rhsusf_spc_light"];
+_diverUniform =  ["PSZ_U_PL_DES_wz2010_Crye_Folded","PSZ_U_PL_DES_wz2010_Polar"];
+_diverHelmet = ["PSZ_H_wz2005_OLIVE_ESS","PSZ_H_wz2005_DES_ESS", "PSZ_H_wz2005_DES"];
+_diverRig = ["PSZ_V_UKO_L_DES_M_Headset","PSZ_V_UKO_L_DES_R_Headset", "PSZ_V_UKO_L_WDL_R_Headset"];
 _diverGlasses = [];
+
 
 // Pilot
 _pilotUniform = ["PSZ_U_PL_Pilot_Coverall"];
@@ -902,17 +906,18 @@ switch (_typeofUnit) do
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
-	
+		
  // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMagCaS,4];
+		_unit addmagazines [_diverMagCaS,6];
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2,_silencer3];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
@@ -927,9 +932,10 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepM;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2,_silencer4];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
@@ -943,9 +949,10 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2,_silencer3];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
@@ -955,11 +962,11 @@ switch (_typeofUnit) do
 // LOADOUT: Strzelec AT sil specjalnych
 	case "divr":
 	{
-		_unit addmagazines [_diverMagR,2];
+		_unit addmagazines [_diverMagR,6];
 		_unit addweapon _diverWepR;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];

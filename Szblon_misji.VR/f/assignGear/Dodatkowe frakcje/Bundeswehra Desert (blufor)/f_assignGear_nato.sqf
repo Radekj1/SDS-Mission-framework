@@ -60,18 +60,19 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "acc_flashlight";			// Latarka 
+_attach1 = "CUP_acc_Flashlight";		// Latarka 
 _attach2 = "CUP_acc_ANPEQ_15";			// Laser
-_attach3 = "";							// czerwony laser
+_attach3 = "CUP_acc_ANPEQ_2";			// laser SF
 	
-_silencer1 = "BWA3_muzzle_snds_G36";	// Tłumik 5.56 (długi)
-_silencer2 = "";						// Tłumik 5.56 (krótki)
-_silencer3 = "";						// Tłumik długi czarny
-_silencer4 = "";						// Tłumik dla medyka specjalsów
+_silencer1 = "BWA3_muzzle_snds_G36";	// Tłumik 5.56 (bialy)
+_silencer2 = "";						// Tłumik 5.56
+_silencer3 = "muzzle_snds_B";			// Tłumik długi czarny
+_silencer4 = "BWA3_muzzle_snds_G28";	// Tłumik dla SF
 
 _scope1 = "BWA3_optic_RSAS";			// Aimpoint (Bw)
 _scope2 = "CUP_optic_CompM2_Black";		// Aimpoint (CUP)
 _scope3 = "";							// Celownik snajperski 6.5-20x
+_scope4 = "CUP_optic_CompM2_Desert";	// Celownik SF
 
 _bipod1 = "";							// 
 _bipod2 = "bipod_02_F_blk";				// 
@@ -87,7 +88,8 @@ _attachments = [_attach1,_scope2]; 			// Każda jednostka otrzyma ten zestaw dod
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer1 = "muzzle_snds_acp";			// .45 suppressor
+_hg_silencer2 = "BWA3_acc_LLM01_irlaser";	// SF Pistol IR Laser
 
 _hg_scope1 = "optic_MRD";			// MRD
 
@@ -114,14 +116,12 @@ _smgmag = "BWA3_40Rnd_46x30_MP7_SD";
 _smgmag_tr = "BWA3_40Rnd_46x30_MP7";
 
 // Siły specjalne
-//	_diverWepCaS = "";
-//	_diverMagCaS = "";
-//	_diverWepM = "";
-//	_diverMagM = "";
-//	_diverWepR = "";
-//	_diverMagR = "";
-//	_secendWep = "";
-//	_secendMag = "";
+_diverWepCaS = "BWA3_G27";
+_diverMagCaS = "BWA3_20Rnd_762x51_G28";
+_diverWepM = "BWA3_G28_Assault";
+_diverMagM = "BWA3_20Rnd_762x51_G28";
+_diverWepR = "BWA3_G27_Tan";
+_diverMagR = "BWA3_20Rnd_762x51_G28";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "BWA3_G36K_AG";
@@ -205,7 +205,7 @@ _bagMb = "BWA3_Kitbag_Tropen_Medic";       		// Plecak dla medyka (duży)
 
 _bagARs = "BWA3_TacticalPack_Tropen";			// Plecak dla RKM (mały)
 _bagARm = "BWA3_PatrolPack_Tropen";				// Plecak dla RKM (średni)
-_bagARb = "BWA3_PatrolPack_Tropen";              // Plecak dla RKM (duży)
+_bagARb = "BWA3_PatrolPack_Tropen";             // Plecak dla RKM (duży)
 
 _bagENG = "BWA3_Kitbag_Tropen";					// Plecak dla Mechanika
 
@@ -214,9 +214,9 @@ _bagR = "BWA3_TacticalPack_Tropen";				// Plecak dla strzelca, strzelca AT
 _bagMAT = "BWA3_PatrolPack_Tropen";				// Plecak dla MAT
 
 _bagmedium = "BWA3_Kitbag_Tropen";				// carries 200, weighs 30
-_baglarge =  "BWA3_PatrolPack_Tropen"; 			// carries 320, weighs 40
+_baglarge = "BWA3_PatrolPack_Tropen";			// carries 320, weighs 40
 
-//_bagmediumdiver =  "";						// Plecaki SF
+_bagmediumdiver =  "BWA3_FieldPack_Tropen";		// Plecaki SF
 
 _baguav = "tf_rt1523g_big_bwmod_tropen";		// Plecak RTO
 
@@ -304,10 +304,10 @@ _mediumRig = ["BWA3_Vest_Autorifleman_Tropen", "BWA3_Vest_Grenadier_Tropen", "BW
 _heavyRig = ["BWA3_Vest_Autorifleman_Tropen", "BWA3_Vest_Grenadier_Tropen", "BWA3_Vest_Marksman_Tropen", "BWA3_Vest_Medic_Tropen", "BWA3_Vest_Rifleman1_Tropen", "BWA3_Vest_Leader_Tropen"];
 
 // Siły specjalne
-//_diverUniform =  [];
-//_diverHelmet = [];
-//_diverRig = [];
-//_diverGlasses = [];
+_diverUniform =  ["BWA3_Uniform3_idz_Tropen", "BWA3_Uniform_idz_Tropen"];
+_diverHelmet = ["BWA3_OpsCore_Tropen_Camera","BWA3_OpsCore_Tropen_Patch", "BWA3_OpsCore_Tropen"];
+_diverRig = ["BWA3_Vest_Medic_Tropen", "BWA3_Vest_Leader_Tropen"];
+_diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["BWA3_Uniform_Helipilot"];
@@ -887,17 +887,18 @@ switch (_typeofUnit) do
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
-	
+			
  // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMagCaS,4];
+		_unit addmagazines [_diverMagCaS,6];
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2,_silencer3];
+		_attachments = [_attach3,_scope4,_silencer4];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
@@ -912,12 +913,13 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepM;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2,_silencer4];
+		_attachments = [_attach3,_scope4,_silencer4];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_unit addWeapon "lerca_1200_tan";
+		_unit addWeapon _lornetkaAM;
 		["divm"] call _backpack;
 	};
 
@@ -928,32 +930,34 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2,_silencer3];
+		_attachments = [_attach3,_scope4,_silencer4];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_unit addWeapon "lerca_1200_tan";
+		_unit addWeapon _lornetkaAM;
 		["divs"] call _backpack;
 	};
 	
 // LOADOUT: Strzelec AT sil specjalnych
 	case "divr":
 	{
-		_unit addmagazines [_diverMagR,2];
+		_unit addmagazines [_diverMagR,6];
 		_unit addweapon _diverWepR;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach3,_scope2];
+		_attachments = [_attach3,_scope4,_silencer4];
 		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
+		_unit linkItem _GPS;
+		_unit addWeapon _lornetkaAM;
+		["divr"] call _backpack;
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
-		_unit linkItem _GPS;
-		_unit addWeapon "lerca_1200_tan";
-		["divr"] call _backpack;
 	};
+
 
 
 // LOADOUT: RIFLEMAN

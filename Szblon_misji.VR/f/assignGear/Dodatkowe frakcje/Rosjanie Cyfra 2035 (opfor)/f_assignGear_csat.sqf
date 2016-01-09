@@ -64,13 +64,13 @@ _attach1 = "acc_flashlight";			// Brak dodatków do AK
 _attach2 = "acc_pointer_IR";			// Laser
 
 _silencer1 = "muzzle_min_rf_snds";		// Tłumik ognia
-_silencer2 = "";						// Tłumik do AEK`a
-_silencer3 = "";						// Tłumik dla medyka specjalsów
+_silencer2 = "muzzle_min_rf_snds";		// Tłumik do AK-12 SF
+_silencer3 = "";						// 
 
 _scope1 = "optic_ACO_grn";				// Celownik holo
-_scope2 = "";				// Celownik olo (buguje RKM)
-_scope3 = "";				// Celownik optyczny
-_scope4 = "";			// Celownik dla specjalsów
+_scope2 = "";							// Celownik olo (buguje RKM)
+_scope3 = "";							// Celownik optyczny
+_scope4 = "optic_ACO_grn";				// Celownik dla specjalsów
 
 // Jakie dodatki mają być dodane
 _attachments = [_attach1,_scope1]; 	// Każda jednostka otrzyma ten zestaw dodatków
@@ -84,6 +84,7 @@ _attachments = [_attach1,_scope1]; 	// Każda jednostka otrzyma ten zestaw dodat
 
 // Dodatki do pistoletu
 _hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer2 = "muzzle_snds_L";	// SF Pistol suppressor
 
 _hg_scope1 = "optic_MRD";			// MRD
 
@@ -110,12 +111,12 @@ _smgmag = "30Rnd_min_rf_545x39_mag";
 _smgmag_tr = "30Rnd_min_rf_545x39_T_mag";
 
 // Siły specjalne
-//_diverWepCaS = "";
-//_diverMagCaS = "";
-//_diverWepR = "";
-//_diverMagR = "";
-//_diverWepM = "";
-//_diverMagM = "";
+_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
+_diverMagCaS = "30Rnd_min_rf_545x39_mag";
+_diverWepR = "arifle_min_rf_ak12_camo_grip";
+_diverMagR = "30Rnd_min_rf_545x39_mag";
+_diverWepM = "arifle_min_rf_ak12_camo";
+_diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "arifle_min_rf_ak12_gl";
@@ -222,7 +223,7 @@ _bagMAT = "min_rf_backpack_surpat";				// Plecak dla MAT
 _bagmedium = "min_rf_torna_flora";				// carries 200, weighs 30
 _baglarge =  "min_rf_backpack_surpat"; 			// carries 320, weighs 40
 
-_bagmediumdiver =  "min_rf_torna_flora";		// Plecaki SF
+_bagmediumdiver =  "min_rf_backpack_surpat";	// Plecaki SF
 
 _baguav = "tf_mr3000_rhs";						// Plecak RTO
 
@@ -311,10 +312,10 @@ _mediumRig = ["min_rf_armor_vest_flora"]; 	// default for all infantry classes
 _heavyRig = ["min_rf_highcapacity_vest_flora"];
 
 // Siły specjalne
-//	_diverUniform =  [];
-//	_diverHelmet = [];
-//	_diverRig = [];
-//	_diverGlasses = [];
+_diverUniform =  ["min_rf_klmk_lite", "min_rf_klmk"];
+_diverHelmet = ["min_rf_helmet_para"];
+_diverRig = ["min_rf_highcapacity_vest_surpat", "min_rf_highcapacity_vest_flora"];
+_diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["min_rf_helipilot_overall"];
@@ -915,11 +916,12 @@ switch (_typeofUnit) do
 // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMagCaS,4];
+		_unit addmagazines [_diverMagCaS,6];
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer2];
+		_hg_attachments = [_hg_silencer2];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
@@ -935,7 +937,8 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepM;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer3];
+		_hg_attachments = [_hg_silencer2];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
@@ -950,7 +953,8 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer2];
+		_hg_attachments = [_hg_silencer2];
+		_attachments = [_attach1,_scope4,_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
@@ -965,7 +969,8 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepR;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer2];
+		_attachments = [_attach1,_scope4,_silencer2];
+		_hg_attachments = [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
