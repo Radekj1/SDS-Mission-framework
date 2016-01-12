@@ -60,7 +60,7 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "CUP_acc_Flashlight";		// Latarka 
+_attach1 = "acc_flashlight";			// Latarka 
 _attach2 = "CUP_acc_ANPEQ_15";			// Laser
 _attach3 = "CUP_acc_ANPEQ_2";			// laser SF
 	
