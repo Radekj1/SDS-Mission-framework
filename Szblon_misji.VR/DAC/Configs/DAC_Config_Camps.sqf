@@ -18,7 +18,7 @@ private [
 switch (_CampTyp) do
 {
 //-------------------------------------------------------------------------------------------------------------------------
-	case 0:   // OPFOR OUTPOST with tent and 1x PLOT HEAVY
+	case 0:   // OPFOR - Obóz z namiotem i działem PLOT
 	{
 		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -32,7 +32,7 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 1:   // BLUFOR OUTPOST with tent and 1x PLOT HEAVY
+	case 1:   // BLUFOR - Obóz z namiotem i działem PLOT
 	{
 		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -46,7 +46,7 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 2:   // IND OUTPOST with tent and 1x PLOT HEAVY
+	case 2:   // IND - Obóz z namiotem i działem PLOT
 	{
 		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -61,7 +61,7 @@ switch (_CampTyp) do
 	
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 3:		// BLUFOR  HQ with 4 x towers 2 x mortar    big walls closed on N side large opening S side 
+	case 3:		// BLUFOR  HQ z 4 x wieża + 2 x moździerz    [big walls closed on N side large opening S side]
 	{
 		_campBasic     = ["Flag_NATO_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
@@ -80,7 +80,7 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 4:		// OPFOR  HQ with 4 x towers 2 x mortar    big walls closed on N side large opening S side 
+	case 4:		// OPFOR  HQ z 4 x wieża + 2 x moździerz    [big walls closed on N side large opening S side]
 	{
 		_campBasic     = ["Flag_CSAT_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
@@ -99,7 +99,7 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 5:		// IND  HQ with 4 x towers 2 x mortar    big walls closed on N side large opening S side 
+	case 5:		// IND  HQ z 4 x wieża + 2 x moździerz    	[big walls closed on N side large opening S side]
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
@@ -118,7 +118,7 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 6:  //BLUFOR OUTPOST with sandbag tower and 1x mortar and 1x PLOT ZSU
+	case 6:  //BLUFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU
 	{
 		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -131,7 +131,7 @@ switch (_CampTyp) do
 	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 7:  // OPFOR OUTPOST with sandbag tower and 1x mortar and 1x PLOT ZSU  
+	case 7:  // OPFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU  
 	{
 		_campBasic     = ["Flag_CSAT_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -144,7 +144,7 @@ switch (_CampTyp) do
 	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 8:  // IND OUTPOST with sandbag tower and 1x mortar and 1x PLOT ZSU
+	case 8:  // IND - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -156,8 +156,50 @@ switch (_CampTyp) do
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};	
 //-------------------------------------------------------------------------------------------------------------------------
-		
-	case 9:
+	
+	case 9:   // OPFOR - Zwykły namiot + antena + ognisko
+	{
+		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [];
+		_campAddUnit   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 10:   // BLUFOR - Zwykły namiot + antena + ognisko
+	{
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [];
+		_campAddUnit   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+
+	case 11:   // IND - Zwykły namiot + antena + ognisko
+	{
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [];
+		_campAddUnit   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 12:
 	{
 		_campBasic     = ["NULL"];
 		_campAmmo      = [];

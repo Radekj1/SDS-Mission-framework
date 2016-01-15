@@ -296,7 +296,7 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["PSZ_U_PL_WDL_wz2010_Crye_Folded","PSZ_U_PL_WDL_wz2010_Polar"];
+_baseUniform = ["PSZ_U_PL_WDL_wz2010_Crye","PSZ_U_PL_WDL_wz2010_Polar","PSZ_U_PL_WDL_wz2010_Crye_Folded"];
 _baseHelmet = ["PSZ_H_wz2005_OLIVE_ESS","PSZ_H_wz2005_WDL","PSZ_H_wz2005_WDL_ESS"];
 _baseGlasses = [];
 
