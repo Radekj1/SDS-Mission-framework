@@ -270,7 +270,7 @@ _SNrifleMag = "7Rnd_408_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "DemoCharge_Remote_Mag";
+_satchel = "CUP_PipeBomb_M";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 
@@ -1099,7 +1099,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_MMGmag, 5];
 		_unit addMagazineCargoGlobal [_MATmag1, 4];
 		_unit addMagazineCargoGlobal [_MATmag2, 2];
-		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
+		_unit addMagazineCargoGlobal ["CUP_PipeBomb_M", 6];
 		_unit addItemCargoGlobal ["ACE_Clacker", 2];
 		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
 		

@@ -140,6 +140,7 @@ _pistolmag = "16Rnd_9x21_Mag";
 
 // Granaty ręczne
 _grenade = "CUP_HandGrenade_M67";
+_mgrenade = "ACE_M84";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadered = "SmokeShellRed";
@@ -281,7 +282,7 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "DemoCharge_Remote_Mag";
+_satchel = "CUP_PipeBomb_M";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 
@@ -927,6 +928,7 @@ switch (_typeofUnit) do
 		_unit linkItem _GPS;
 		_unit addWeapon "Laserdesignator_02";
 		_unit addMagazines ["Laserbatteries",2];
+		_unit addmagazines [_mgrenade,3];
 		["divc"] call _backpack;
 	};
 
@@ -943,6 +945,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
+		_unit addmagazines [_mgrenade,3];
 		["divm"] call _backpack;
 	};
 
@@ -959,6 +962,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
+		_unit addmagazines [_mgrenade,3];
 		["divs"] call _backpack;
 	};
 	
@@ -977,6 +981,7 @@ switch (_typeofUnit) do
 		_unit addweapon _RAT;
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
+		_unit addmagazines [_mgrenade,3];
 		["divr"] call _backpack;
 	};
 
@@ -1113,7 +1118,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_MMGmag, 5];
 		_unit addMagazineCargoGlobal [_MATmag1, 4];
 		_unit addMagazineCargoGlobal [_MATmag2, 2];
-		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
+		_unit addMagazineCargoGlobal ["CUP_PipeBomb_M", 6];
 		_unit addItemCargoGlobal ["ACE_Clacker", 2];
 		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
 		
