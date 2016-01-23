@@ -109,9 +109,9 @@ _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "CUP_smg_MP5A5";
-_smgmag = "CUP_30Rnd_9x19_MP5";
-_smgmag_tr = "CUP_30Rnd_9x19_MP5";
+_smg = "CUP_arifle_M4A1";
+_smgmag = "30Rnd_556x45_Stanag";
+_smgmag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Siły specjalne
 //_diverWepCaS = "rhs_weap_m4a1_blockII_grip2_KAC";
@@ -195,26 +195,26 @@ _bagsmall = "B_Parachute";					// Spadochron
 _bagFTL = "tf_rt1523g_sage";				// Plecak dla dowódcy (radio)
 _bagPP = "tf_rt1523g_sage";             	// Plecak dla pilota (radio)
 
-_bagTL = "B_Kitbag_rgr";					//Plecak dowódcy drużyny
+_bagTL = "B_Kitbag_cbr";					//Plecak dowódcy drużyny
 
-_bagMs = "B_AssaultPack_rgr";				// Plecak dla medyka (mały)
+_bagMs = "B_AssaultPack_cbr";				// Plecak dla medyka (mały)
 _bagMm = "B_TacticalPack_oil";				// Plecak dla medyka (średni)
-_bagMb = "B_Kitbag_rgr";               		// Plecak dla medyka (duży)
+_bagMb = "B_Kitbag_cbr";               		// Plecak dla medyka (duży)
 
-_bagARs = "B_AssaultPack_rgr";				// Plecak dla RKM (mały)
-_bagARm = "B_Kitbag_rgr";					// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_khk";                 // Plecak dla RKM (duży)
+_bagARs = "B_AssaultPack_cbr";				// Plecak dla RKM (mały)
+_bagARm = "B_Kitbag_cbr";					// Plecak dla RKM (średni)
+_bagARb = "B_Carryall_cbr";                 // Plecak dla RKM (duży)
 
-_bagENG = "B_AssaultPack_rgr";				// Plecak dla Mechanika
+_bagENG = "B_AssaultPack_cbr";				// Plecak dla Mechanika
 
-_bagR = "B_Kitbag_rgr";						// Plecak dla strzelca, strzelca AT
+_bagR = "B_Kitbag_cbr";						// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "B_Carryall_khk";					// Plecak dla MAT
+_bagMAT = "B_Carryall_cbr";					// Plecak dla MAT
 
 _bagmedium = "B_TacticalPack_oil";			// carries 200, weighs 30
-_baglarge =  "B_Carryall_khk"; 				// carries 320, weighs 40
+_baglarge =  "B_Carryall_cbr"; 				// carries 320, weighs 40
 
-_bagmediumdiver =  "B_AssaultPack_rgr";	// Plecaki SF
+_bagmediumdiver =  "B_AssaultPack_cbr";		// Plecaki SF
 
 _baguav = "tf_rt1523g_sage";					// Plecak RTO
 
@@ -270,7 +270,7 @@ _SNrifleMag = "7Rnd_408_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "CUP_PipeBomb_M";
+_satchel = "DemoCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 
@@ -291,14 +291,14 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["usm_bdu_w"];
-_baseHelmet = ["usm_helmet_pasgt_g_w","usm_helmet_pasgt_w"];
+_baseUniform = ["usm_bdu_d"];
+_baseHelmet = ["usm_helmet_pasgt_g_d","usm_helmet_pasgt_d"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["usm_vest_pasgt_lbe_rm_m","usm_vest_pasgt_lbv_gr","usm_vest_pasgt_lbv_mg","usm_vest_pasgt_lbv_rmp","usm_vest_pasgt_lbv_rm_m"];
-_mediumRig = ["usm_vest_pasgt_lbe_rm_m","usm_vest_pasgt_lbv_gr","usm_vest_pasgt_lbv_mg","usm_vest_pasgt_lbv_rmp","usm_vest_pasgt_lbv_rm_m"]; 	// default for all infantry classes
-_heavyRig = ["usm_vest_pasgt_lbe_rm_m","usm_vest_pasgt_lbv_gr","usm_vest_pasgt_lbv_mg","usm_vest_pasgt_lbv_rmp","usm_vest_pasgt_lbv_rm_m"];
+_lightRig = ["usm_vest_pasgtdes_lbe_gr","usm_vest_pasgtdes_lbe_mg","usm_vest_pasgtdes_lbe_rmp","usm_vest_pasgtdes_lbe_rm","usm_vest_pasgtdes_lbv_gr","usm_vest_pasgtdes_lbv_mg","usm_vest_pasgtdes_lbv_rmp","usm_vest_pasgtdes_lbv_rm"];
+_mediumRig = ["usm_vest_pasgtdes_lbe_gr","usm_vest_pasgtdes_lbe_mg","usm_vest_pasgtdes_lbe_rmp","usm_vest_pasgtdes_lbe_rm","usm_vest_pasgtdes_lbv_gr","usm_vest_pasgtdes_lbv_mg","usm_vest_pasgtdes_lbv_rmp","usm_vest_pasgtdes_lbv_rm"]; 	// default for all infantry classes
+_heavyRig = ["usm_vest_pasgtdes_lbe_gr","usm_vest_pasgtdes_lbe_mg","usm_vest_pasgtdes_lbe_rmp","usm_vest_pasgtdes_lbe_rm","usm_vest_pasgtdes_lbv_gr","usm_vest_pasgtdes_lbv_mg","usm_vest_pasgtdes_lbv_rmp","usm_vest_pasgtdes_lbv_rm"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_FROG01_m81"];
@@ -321,7 +321,7 @@ _sfGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["usm_bdu_odg"];
 _crewHelmet = ["usm_helmet_cvc"];
-_crewRig = ["usm_vest_pasgt"];
+_crewRig = ["usm_vest_pasgtdes"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1099,7 +1099,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_MMGmag, 5];
 		_unit addMagazineCargoGlobal [_MATmag1, 4];
 		_unit addMagazineCargoGlobal [_MATmag2, 2];
-		_unit addMagazineCargoGlobal ["CUP_PipeBomb_M", 6];
+		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
 		_unit addItemCargoGlobal ["ACE_Clacker", 2];
 		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
 		
