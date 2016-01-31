@@ -71,12 +71,12 @@ if(isServer || isHC) then {if(local player) then {DAC_Code = 1} else {DAC_Code =
 	if(isNil "DAC_AI_Count_Level")	then {		DAC_AI_Count_Level  = [[2,4],[3,6],[4,8],[8,14],[1,2]]			};
 	if(isNil "DAC_Dyn_Weather") 	then {		DAC_Dyn_Weather		= [0,0,0,[0, 0, 0],0]						};
 	if(isNil "DAC_Reduce_Value") 	then {		DAC_Reduce_Value	= [1000,1050,0.3]							};
-	if(isNil "DAC_AI_Spawn") 		then {		DAC_AI_Spawn		= [[10,5,5],[10,5,15],1,120,250,0]			};
-	if(isNil "DAC_Delete_Value") 	then {		DAC_Delete_Value	= [[180,150],[180,150],6000]				};
-	if(isNil "DAC_Del_PlayerBody") 	then {		DAC_Del_PlayerBody	= [0,0]										};
+	if(isNil "DAC_AI_Spawn") 		then {		DAC_AI_Spawn		= [[10,5,5],[10,5,15],1,0,250,1]			};
+	if(isNil "DAC_Delete_Value") 	then {		DAC_Delete_Value	= [[180,0],[180,0],600]						};
+	if(isNil "DAC_Del_PlayerBody") 	then {		DAC_Del_PlayerBody	= [180,0]									};
 	if(isNil "DAC_Com_Values") 		then {		DAC_Com_Values		= [0,1,0,0]									};
 	if(isNil "DAC_AI_AddOn") 		then {		DAC_AI_AddOn		= 1											};
-	if(isNil "DAC_AI_Level") 		then {		DAC_AI_Level		= 2											};
+	if(isNil "DAC_AI_Level") 		then {		DAC_AI_Level		= 3											};
 	if(isNil "DAC_Res_Side") 		then {		DAC_Res_Side		= 0											};
 	if(isNil "DAC_Marker") 			then {		DAC_Marker			= 0											};
 	if(isNil "DAC_WP_Speed") 		then {		DAC_WP_Speed		= 0.01										};
@@ -85,16 +85,17 @@ if(isServer || isHC) then {if(local player) then {DAC_Code = 1} else {DAC_Code =
 	if(isNil "DAC_Player_Marker")	then {		DAC_Player_Marker	= false										};
 	if(isNil "DAC_Direct_Start")	then {		DAC_Direct_Start	= false										};
 	if(isNil "DAC_Activate_Sound")	then {		DAC_Activate_Sound	= false										};
-	if(isNil "DAC_Auto_UnitCount")	then {		DAC_Auto_UnitCount	= [8,10]									};
+	if(isNil "DAC_Auto_UnitCount")	then {		DAC_Auto_UnitCount	= [15,10]									};
 	if(isNil "DAC_Player_Support")	then {		DAC_Player_Support	= [10,[4,2000,3,1000]]						};
-	if(isNil "DAC_SaveDistance")	then {		DAC_SaveDistance	= [500,["DAC_Save_Pos"]]					};
+	if(isNil "DAC_SaveDistance")	then {		DAC_SaveDistance	= [250,["DAC_Save_Pos"]]					};
 	if(isNil "DAC_Radio_Max")		then {		DAC_Radio_Max		= DAC_AI_Level								};
+		
 		
 	DAC_BadBuildings 	= 	[];
 	DAC_GunNotAllowed	= 	[];
 	DAC_VehNotAllowed	= 	[];
 	DAC_Locked_Veh		=	[];
-	DAC_SP_Soldiers     =   ["B_soldier_AR_F","B_G_soldier_AR_F","O_soldier_AR_F","O_soldierU_AR_F","O_G_soldier_AR_F","I_soldier_AR_F","I_G_soldier_AR_F"];
+	DAC_SP_Soldiers     =   ["B_soldier_AR_F","B_G_soldier_AR_F","O_soldier_AR_F","O_soldierU_AR_F","O_G_soldier_AR_F","I_soldier_AR_F","I_G_soldier_AR_F","usm_soldier_90s_w_h_ar","min_rf_soldier_AR", "usm_soldier_90s_d_h_ar","BWA3_Autorifleman_Fleck","BWA3_Autorifleman_Tropen","CUP_O_TK_Soldier_AR","CUP_O_TK_Soldier_MG","PSZ_PL_WDL10_Soldier_MG","PSZ_PL_DES10_Soldier_MG"];
 	DAC_Data_Array 		= 	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,[]];
 	DAC_Marker_Val		= 	[];
 	DAC_Zones			=	[];

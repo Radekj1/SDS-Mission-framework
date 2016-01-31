@@ -18,9 +18,148 @@ private [
 switch (_CampTyp) do
 {
 //-------------------------------------------------------------------------------------------------------------------------
-	case 0:   // IND OUTPOST with tent and 1x mortar
+	case 0:   // OPFOR - Obóz z namiotem i działem PLOT
 	{
-		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["pook_S60_RU",0,12,0,"min_rf_soldier"]];
+		_campAddUnit   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 1:   // BLUFOR - Obóz z namiotem i działem PLOT
+	{
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["pook_S60_RU",0,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campAddUnit   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 2:   // IND - Obóz z namiotem i działem PLOT
+	{
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["pook_S60_RU",0,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campAddUnit   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+	
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	case 3:		// BLUFOR  HQ z 4 x wieża + 2 x moździerz    [big walls closed on N side large opening S side]
+	{
+		_campBasic     = ["Flag_NATO_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["B_Mortar_01_F",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campAddUnit   = [];
+		_campUserObj   = [
+			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
+			["Land_Cargo_House_V1_F",2,20,0],["Land_Cargo_House_V1_F",9,20,0],
+			["Land_Mil_ConcreteWall_F",-2,12,90],["Land_Mil_ConcreteWall_F",17,12,90],
+			["Land_ClutterCutter_large_F",1,12,90],["Land_ClutterCutter_large_F",13,12,90],["Land_ClutterCutter_large_F",4,-7,0]
+		];
+		_campRandomObj = [];
+		_campWall      = ["Land_Mil_WallBig_4m_F",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 4:		// OPFOR  HQ z 4 x wieża + 2 x moździerz    [big walls closed on N side large opening S side]
+	{
+		_campBasic     = ["Flag_CSAT_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"min_rf_soldier"],["O_Mortar_01_F",14,12,0,"min_rf_soldier"]];
+		_campAddUnit   = [];
+		_campUserObj   = [
+			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
+			["Land_Cargo_House_V1_F",2,20,0],["Land_Cargo_House_V1_F",9,20,0],
+			["Land_Mil_ConcreteWall_F",-2,12,90],["Land_Mil_ConcreteWall_F",17,12,90],
+			["Land_ClutterCutter_large_F",1,12,90],["Land_ClutterCutter_large_F",13,12,90],["Land_ClutterCutter_large_F",4,-7,0]
+		];
+		_campRandomObj = [];
+		_campWall      = ["Land_Mil_WallBig_4m_F",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 5:		// IND  HQ z 4 x wieża + 2 x moździerz    	[big walls closed on N side large opening S side]
+	{
+		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"CUP_I_TK_GUE_Soldier"],["O_Mortar_01_F",14,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campAddUnit   = [];
+		_campUserObj   = [
+			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
+			["Land_Cargo_House_V1_F",2,20,0],["Land_Cargo_House_V1_F",9,20,0],
+			["Land_Mil_ConcreteWall_F",-2,12,90],["Land_Mil_ConcreteWall_F",17,12,90],
+			["Land_ClutterCutter_large_F",1,12,90],["Land_ClutterCutter_large_F",13,12,90],["Land_ClutterCutter_large_F",4,-7,0]
+		];
+		_campRandomObj = [];
+		_campWall      = ["Land_Mil_WallBig_4m_F",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 6:  //BLUFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU
+	{
+		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["pook_ZU23_RU",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campAddUnit   = [];
+		_campUserObj   = [];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	case 7:  // OPFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU  
+	{
+		_campBasic     = ["Flag_CSAT_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["pook_ZU23_RU",0,12,0,"min_rf_soldier"],["O_Mortar_01_F",14,12,0,"min_rf_soldier"]];
+		_campAddUnit   = [];
+		_campUserObj   = [];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+	
+//-------------------------------------------------------------------------------------------------------------------------
+	case 8:  // IND - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU
+	{
+		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["pook_ZU23_RU",0,12,0,"CUP_I_TK_GUE_Soldier"],["O_Mortar_01_F",14,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campAddUnit   = [];
+		_campUserObj   = [];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};	
+//-------------------------------------------------------------------------------------------------------------------------
+	
+	case 9:   // OPFOR - Zwykły namiot + antena + ognisko
+	{
+		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
 		_campStatic    = [];
 		_campAddUnit   = [];
@@ -29,104 +168,38 @@ switch (_CampTyp) do
 		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
-//-------------------------------------------------------------------------------------------------------------------------
-	case 1:		// BLUFOR  HQ with 4 x towers 2 x mortar    big walls closed on N side large opening S side 
-	{
-		_campBasic     = ["Flag_NATO_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
-		_campAmmo      = [];
-		_campStatic    = [["B_Mortar_01_F",0,12,0,"B_CDF_A3_Soldier_Militia"],["B_Mortar_01_F",14,12,0,"B_CDF_A3_Soldier_Militia"]];
-		_campAddUnit   = [];
-		_campUserObj   = [
-			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
-			["Land_Cargo_House_V1_F",2,20,0],["Land_Cargo_House_V1_F",9,20,0],
-			["Land_Mil_ConcreteWall_F",-2,12,90],["Land_Mil_ConcreteWall_F",17,12,90],
-			["Land_ClutterCutter_large_F",1,12,90],["Land_ClutterCutter_large_F",13,12,90],["Land_ClutterCutter_large_F",4,-7,0]
-		];
-		_campRandomObj = [];
-		_campWall      = ["Land_Mil_WallBig_4m_F",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
-		_campObjInit   = [[],[],[],[],[],[],[]];
-	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 2:		// OPFOR  HQ with 4 x towers 2 x mortar    big walls closed on N side large opening S side 
+	case 10:   // BLUFOR - Zwykły namiot + antena + ognisko
 	{
-		_campBasic     = ["Flag_CSAT_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
-		_campAmmo      = [];
-		_campStatic    = [["O_Mortar_01_F",0,12,0,"rhs_msv_rifleman"],["O_Mortar_01_F",14,12,0,"rhs_msv_rifleman"]];
-		_campAddUnit   = [];
-		_campUserObj   = [
-			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
-			["Land_Cargo_House_V1_F",2,20,0],["Land_Cargo_House_V1_F",9,20,0],
-			["Land_Mil_ConcreteWall_F",-2,12,90],["Land_Mil_ConcreteWall_F",17,12,90],
-			["Land_ClutterCutter_large_F",1,12,90],["Land_ClutterCutter_large_F",13,12,90],["Land_ClutterCutter_large_F",4,-7,0]
-		];
-		_campRandomObj = [];
-		_campWall      = ["Land_Mil_WallBig_4m_F",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
-		_campObjInit   = [[],[],[],[],[],[],[]];
-	};
-	
-//-------------------------------------------------------------------------------------------------------------------------
-	
-	case 3:		// IND  HQ with 4 x towers 1 x mortar    big walls closed on N side large opening S side 
-	{
-		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
-		_campAmmo      = [];
-		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AM_Infantry_Engineer"]];
-		_campAddUnit   = [];
-		_campUserObj   = [
-			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
-			["Land_Cargo_House_V1_F",2,20,0],["Land_Cargo_House_V1_F",9,20,0],
-			["Land_Mil_ConcreteWall_F",-2,12,90],["Land_Mil_ConcreteWall_F",17,12,90],
-			["Land_ClutterCutter_large_F",1,12,90],["Land_ClutterCutter_large_F",13,12,90],["Land_ClutterCutter_large_F",4,-7,0]
-		];
-		_campRandomObj = [];
-		_campWall      = ["Land_Mil_WallBig_4m_F",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
-		_campObjInit   = [[],[],[],[],[],[],[]];
-	};
-	
-//-------------------------------------------------------------------------------------------------------------------------
-	
-	case 4:  //BLUFOR OUTPOST with sandbag tower and 2x mortar
-	{
-		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
-		_campAmmo      = [];
-		_campStatic    = [["B_Mortar_01_F",0,12,0,"rhsusf_usmc_marpat_wd_rifleman"],["B_Mortar_01_F",14,12,0,"rhsusf_usmc_marpat_wd_rifleman"]];
-		_campAddUnit   = [];
-		_campUserObj   = [];
-		_campRandomObj = [];
-		_campWall      = ["Land_fort_bagfence_long",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
-		_campObjInit   = [[],[],[],[],[],[],[]];
-	};
-	
-//-------------------------------------------------------------------------------------------------------------------------
-	case 5:  // OPFOR OUTPOST with sandbag tower and 2x mortar
-	{
-		_campBasic     = ["Flag_CSAT_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
 		_campStatic    = [];
 		_campAddUnit   = [];
-		_campUserObj   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
 		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 6:  // IND OUTPOST with sandbag tower and PLOT
+
+	case 11:   // IND - Zwykły namiot + antena + ognisko
 	{
-		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["RDS_ZU23_AAF",0,12,0,"LOP_AM_Infantry_Engineer"]];
+		_campStatic    = [];
 		_campAddUnit   = [];
-		_campUserObj   = [];
+		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
-		_campWall      = ["Land_fort_bagfence_long",[-10,30],[40,56,0],[0,2,4,2],[1,0.1],[0,0]];
+		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
-	};	
+	};
+	
 //-------------------------------------------------------------------------------------------------------------------------
-		
-	case 7:
+	
+	case 12:
 	{
 		_campBasic     = ["NULL"];
 		_campAmmo      = [];

@@ -46,7 +46,7 @@ case "m":
 	};
 	
 	if (_loadout_night_day == 1) then {
-	_unit addBackpack _bagMs;
+	_unit addBackpack _bagMm;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
 		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];
@@ -72,7 +72,7 @@ case "m":
 		};
 		
 	if (_loadout_night_day == 1) then {
-		_unit addBackpack _bagMs;
+		_unit addBackpack _bagMb;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
 		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];
@@ -145,7 +145,7 @@ case "ftl":
 	
 	if (_loadout_night_day == 0) then {
 		_unit addBackpack _bagFTL;
-		//clearMagazineCargoGlobal (unitBackpack _unit);
+		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,6];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glflaregreen,8];
@@ -162,6 +162,76 @@ case "ftl":
 		};
 	};
 };
+
+
+
+// BACKPACK: Vehicle Comander
+case "vc":
+{
+	// LOADOUT: LIGHT
+	if (_loadout == 0) then {
+	
+	if (_loadout_night_day == 0) then {
+		_unit addBackpack _bagFTL;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen,4];
+		};
+		
+	if (_loadout_night_day == 1) then {
+		_unit addBackpack _bagFTL;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
+		};
+	};
+	// LOADOUT: MEDIUM
+	if (_loadout == 1) then {
+	
+	if (_loadout_night_day == 0) then {
+		_unit addBackpack _bagFTL;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen,4];
+		};
+		
+	if (_loadout_night_day == 1) then {
+		_unit addBackpack _bagFTL;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
+		};		
+		
+	};
+	// LOADOUT: HEAVY
+	if (_loadout == 2) then {
+	
+	if (_loadout_night_day == 0) then {
+		_unit addBackpack _bagFTL;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,3];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,3];
+		(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen,4];
+		};
+		
+	if (_loadout_night_day == 1) then {
+		_unit addBackpack _bagFTL;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,3];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,3];
+		};
+	};
+};
+
+
 
 // BACKPACK: AR
 case "ar":
@@ -1345,7 +1415,7 @@ case "divs":
 		if (_loadout_night_day == 0) then {
 			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
+			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 2];
@@ -1355,7 +1425,7 @@ case "divs":
 		if (_loadout_night_day == 1) then {
 			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
+			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 2];
@@ -1370,7 +1440,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addItemCargoGlobal ["SatchelCharge_Remote_Mag",1];
-			(unitBackpack _unit) addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
+			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 4];
 			(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen, 6];
 		};
@@ -1381,7 +1451,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addItemCargoGlobal ["SatchelCharge_Remote_Mag",1];
-			(unitBackpack _unit) addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
+			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 4];
 		};
 	};
@@ -1393,7 +1463,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addItemCargoGlobal ["SatchelCharge_Remote_Mag",1];
-			(unitBackpack _unit) addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
+			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 6];
 			(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen, 10];
 		};
@@ -1404,7 +1474,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addItemCargoGlobal ["SatchelCharge_Remote_Mag",1];
-			(unitBackpack _unit) addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
+			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 6];
 		};
 	};

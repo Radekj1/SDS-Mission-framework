@@ -2,13 +2,13 @@
 //====================================================================================
 // Kompatybilność z HC
 
-[true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";
+[true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";	//Zakomentować na PvP
 
 //define function to spawn units
 _spawnUnits = {
 	
 	//DAC spawning
-	[] execVM "DAC\DAC_Config_Creator.sqf";
+	[] execVM "DAC\DAC_Config_Creator.sqf";			//Zakomentować na PvP
 	//[] execVM "spawn_viaDAC.sqf";
 	True
 };
