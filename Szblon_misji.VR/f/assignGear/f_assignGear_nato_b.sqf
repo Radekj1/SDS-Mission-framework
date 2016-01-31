@@ -84,12 +84,6 @@ case "m":
 	};
 };
 
-
-//_glflarewhite 
-//_glflarered 
-//_glflareyellow
-//_glflaregreen
-
 // BACKPACK: FTL (CO/DC/SL)
 case "ftl":
 {
