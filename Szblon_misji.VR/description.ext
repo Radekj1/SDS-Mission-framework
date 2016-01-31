@@ -33,10 +33,10 @@ enableDebugConsole = 1;
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-respawn = 3; // respawn w bazie ( Na PvP zmienić na respawn = 1 )
+respawn = 3; // respawn w bazie
 respawndelay = 5; // 5s Oczekiwanie na resp
 respawnOnStart = 0; // nie tykac
-//respawnTemplates[] = {"Seagull","f_spectator","f_JIP"}; // Tryb obserwatora na PvP
+//respawnTemplates[] = {"Seagull","f_spectator","f_JIP"}; // Tryb bez obserwatora
 respawnTemplates[] = {"Seagull","f_SpectatorRespawn"}; // Spectator z opcją respawnu ( używać tylko gdy respawn=3 )
 
 // ============================================================================================
@@ -148,7 +148,7 @@ class Params
             title = "$STR_f_param_loadouts";
             values[] = {0,1,2};
             texts[] = {"Lekkie","Średnie","Cieżkie"};
-            default = 2;
+            default = 1;
             code = "f_param_backpacks = %1";
     };
     
