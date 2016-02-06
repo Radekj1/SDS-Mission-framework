@@ -835,6 +835,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit linkItem _GPS;
 		["cc"] call _backpack;
 		_attachments = [];
 	};
@@ -861,6 +862,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit linkItem _GPS;
 		_attachments = [];
 	};
 
