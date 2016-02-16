@@ -228,8 +228,8 @@ _bagmediumdiver =  "min_rf_backpack_surpat";	// Plecaki SF
 
 _baguav = "tf_mr3000_rhs";						// Plecak RTO
 
-_baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
+//_baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
+//_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
 
 _baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
 _baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
