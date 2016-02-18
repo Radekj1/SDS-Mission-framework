@@ -198,7 +198,7 @@ _bagPP = "tf_rt1523g_sage";             	// Plecak dla pilota (radio)
 _bagTL = "B_Kitbag_rgr";					//Plecak dowódcy drużyny
 
 _bagMs = "B_AssaultPack_rgr";				// Plecak dla medyka (mały)
-_bagMm = "B_TacticalPack_oil";				// Plecak dla medyka (średni)
+_bagMm = "B_TacticalPack_oli";				// Plecak dla medyka (średni)
 _bagMb = "B_Kitbag_rgr";               		// Plecak dla medyka (duży)
 
 _bagARs = "B_AssaultPack_rgr";				// Plecak dla RKM (mały)
@@ -211,7 +211,7 @@ _bagR = "B_Kitbag_rgr";						// Plecak dla strzelca, strzelca AT
 
 _bagMAT = "B_Carryall_khk";					// Plecak dla MAT
 
-_bagmedium = "B_TacticalPack_oil";			// carries 200, weighs 30
+_bagmedium = "B_TacticalPack_oli";			// carries 200, weighs 30
 _baglarge =  "B_Carryall_khk"; 				// carries 320, weighs 40
 
 _bagmediumdiver =  "B_AssaultPack_rgr";	// Plecaki SF
