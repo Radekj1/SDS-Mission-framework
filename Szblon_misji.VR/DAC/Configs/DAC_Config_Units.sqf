@@ -52,7 +52,7 @@ switch (_TypNumber) do
   
 //-------------------------------------------------------------------------------------------------
 
-// Russians (OPFOR)
+// Russians Cyfra 2035 (OPFOR)
   case 4:
   {
     _Unit_Pool_S = ["min_rf_crew", "min_rf_helipilot", "min_rf_soldier_TL", "min_rf_soldier_GL", "min_rf_medic","min_rf_soldier_A","min_rf_soldier_AR","min_rf_soldier","min_rf_soldier_M","min_rf_soldier_LAT"];
@@ -63,7 +63,7 @@ switch (_TypNumber) do
  
 //-------------------------------------------------------------------------------------------------
 
-// US ARMY "WD"(BLUFOR)
+// US ARMY "WD" 80/90 (BLUFOR)
   case 5:
   {
     _Unit_Pool_S = ["usm_soldier_90s_w_h_crew1", "CUP_B_USMC_Pilot", "usm_soldier_90s_w_h_ftl", "usm_soldier_90s_w_h_gr", "usm_soldier_90s_w_h_medic", "usm_soldier_90s_w_h_ar", "usm_soldier_90s_w_h_rm1", "usm_soldier_90s_w_h_rto", "usm_soldier_90s_w_h_at4", "usm_soldier_90s_w_h_aa"];
@@ -74,7 +74,7 @@ switch (_TypNumber) do
   
 //-------------------------------------------------------------------------------------------------
 
-// US ARMY "D"(BLUFOR)
+// US ARMY "D" 80/90 (BLUFOR)
   case 6:
   {
     _Unit_Pool_S = ["usm_soldier_90s_d_h_crew1", "CUP_B_USMC_Pilot", "usm_soldier_90s_d_h_ftl", "usm_soldier_90s_d_h_gr", "usm_soldier_90s_d_h_medic", "usm_soldier_90s_d_h_ar", "usm_soldier_90s_d_h_rm1", "usm_soldier_90s_d_h_rto", "usm_soldier_90s_d_h_at4", "usm_soldier_90s_d_h_aa"];
@@ -140,7 +140,7 @@ switch (_TypNumber) do
  
 //-------------------------------------------------------------------------------------------------
 
-// USMC 2000 (BLUFOR)
+// USMC 2000 CUP (BLUFOR)
   case 12:
   {
     _Unit_Pool_S = ["CUP_B_USMC_Crew", "CUP_B_USMC_Pilot", "CUP_B_USMC_Soldier_TL", "CUP_B_USMC_Soldier_AR", "CUP_B_USMC_Medic", "CUP_B_USMC_Soldier_Marksman", "CUP_B_USMC_Engineer", "CUP_B_USMC_Soldier_GL", "CUP_B_USMC_Soldier_MG", "CUP_B_USMC_Soldier", "CUP_B_USMC_Soldier_LAT", "CUP_B_USMC_SpecOps"];
@@ -249,6 +249,45 @@ switch (_TypNumber) do
   };
  
 //-------------------------------------------------------------------------------------------------
+
+// US Army 2010 RHS (BLUFOR)
+	case 22:
+	{
+    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ucp_squadleader","rhsusf_army_ocp_medic","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_rifleman_m4","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_aa","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_machinegunnera","rhsusf_army_ocp_machinegunner"];
+    _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_M1114_USMC", "CUP_B_HMMWV_TOW_USMC", "CUP_B_LAV25_USMC"];
+    _Unit_Pool_T = ["CUP_B_M113_USA", "CUP_B_M1A1_Woodland_US_Army", "CUP_B_M2Bradley_USA_W"];
+    _Unit_Pool_A = ["MELB_AH6M_L", "MELB_AH6M_M", "CUP_B_UH60M_US", "CUP_B_CH47F_USA"];
+  };
+  
+//-------------------------------------------------------------------------------------------------
+// USMC 2010 RHS (BLUFOR)
+	case 23:
+	{
+    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ucp_squadleader","rhsusf_army_ocp_medic","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_rifleman_m4","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_aa","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_machinegunnera","rhsusf_army_ocp_machinegunner"];
+    _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_M1114_USMC", "CUP_B_HMMWV_Avenger_USMC", "CUP_B_HMMWV_TOW_USMC", "pook_CRAM", "CUP_B_LAV25M240_USMC"];
+    _Unit_Pool_T = ["CUP_B_M1A1_Woodland_USMC", "CUP_B_M1A2_TUSK_MG_USMC","CUP_B_AAV_USMC"];
+    _Unit_Pool_A = ["CUP_B_MH60S_FFV_USMC", "CUP_B_UH1Y_UNA_USMC", "CUP_B_UH1Y_GUNSHIP_USMC", "MELB_AH6M_L"];
+  };
+
+//-------------------------------------------------------------------------------------------------
+// Russians RHS - MSV (OPFOR)
+  case 24:
+  {
+    _Unit_Pool_S = ["rhs_msv_emr_combatcrew","rhs_pilot_combat_heli","rhs_msv_emr_junior_sergeant","rhs_msv_emr_medic","rhs_msv_emr_grenadier_rpg","rhs_msv_emr_aa","rhs_msv_emr_arifleman","rhs_msv_machinegunner_assistant","rhs_msv_rifleman","rhs_msv_LAT","rhs_msv_engineer"];
+    _Unit_Pool_V = ["CUP_O_UAZ_MG_RU", "CUP_O_UAZ_SPG9_RU", "CUP_O_Ural_RU", "CUP_O_Ural_ZU23_RU" , "CUP_O_BTR90_RU","rhs_btr80_msv"];
+    _Unit_Pool_T = ["CUP_O_BMP2_RU", "CUP_O_T72_RU"];
+    _Unit_Pool_A = ["CUP_O_Mi8_RU"];
+  };
+ 
+
+//-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
   Default
   {
     if(DAC_Basic_Value != 5) then
