@@ -484,7 +484,7 @@ case "g":
 	if (_loadout_night_day == 0) then {
 		_unit addBackpack _bagTL;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,3];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
 		(unitBackpack _unit) addMagazineCargoGlobal [_flarewhite,7];
@@ -494,7 +494,7 @@ case "g":
 	if (_loadout_night_day == 1) then {
 		_unit addBackpack _bagTL;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,3];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];
