@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Rosja VDV DEBUG
+// F3 - Folk ARPS Assign Gear Script - Rosja VDV Pustynia
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -278,7 +278,7 @@ _APmine2 = "APERSMine_Range_Mag";
 // Definicja jaka klasa do jakiej frupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
-_light = [];
+_light = ["m"];
 _heavy =  ["eng","engm" ,"aar" , "ar" ];
 _diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
@@ -293,7 +293,7 @@ _baseHelmet = ["rhs_6b28_green","rhs_6b28_ess","rhs_6b28","rhs_6b28_green_ess"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"];
+_lightRig = ["rhs_6b23_digi_medic"];
 _mediumRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"]; 	// default for all infantry classes
 _heavyRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"];
 

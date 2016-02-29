@@ -141,8 +141,8 @@ _glflareyellow = "CUP_FlareYellow_M203";
 _glflaregreen = "CUP_FlareGreen_M203";
 
 // Pistolet (dla wszystkich klas)
-//_pistol = "";	// _pistol = "CUP_hgun_M9"; - bug nie pozwala na dodnie
-//_pistolmag = "";	// _pistolmag = "CUP_15Rnd_9x19_M9";
+_pistol = "CUP_hgun_M9";	// _pistol = "CUP_hgun_M9"; - bug nie pozwala na dodnie
+_pistolmag = "CUP_15Rnd_9x19_M9";	// _pistolmag = "CUP_15Rnd_9x19_M9";
 
 // Granaty ręczne
 _grenade = "HandGrenade";
