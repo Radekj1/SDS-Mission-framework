@@ -66,7 +66,7 @@ switch (_TypNumber) do
 // US ARMY "WD" 80/90 (BLUFOR)
   case 5:
   {
-    _Unit_Pool_S = ["usm_soldier_90s_w_h_crew1", "CUP_B_USMC_Pilot", "usm_soldier_90s_w_h_ftl", "usm_soldier_90s_w_h_gr", "usm_soldier_90s_w_h_medic", "usm_soldier_90s_w_h_ar", "usm_soldier_90s_w_h_rm1", "usm_soldier_90s_w_h_rto", "usm_soldier_90s_w_h_at4", "usm_soldier_90s_w_h_aa"];
+    _Unit_Pool_S = ["usm_soldier_90s_w_h_rm1", "CUP_B_USMC_Pilot", "usm_soldier_90s_w_h_ftl", "usm_soldier_90s_w_h_gr", "usm_soldier_90s_w_h_medic", "usm_soldier_90s_w_h_ar", "usm_soldier_90s_w_h_rm1", "usm_soldier_90s_w_h_rto", "usm_soldier_90s_w_h_at4", "usm_soldier_90s_w_h_aa"];
     _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_M1114_USMC", "CUP_B_HMMWV_TOW_USMC", "CUP_B_LAV25_USMC"];
     _Unit_Pool_T = ["CUP_B_M113_USA", "CUP_B_M1A1_Woodland_US_Army", "CUP_B_M2Bradley_USA_W"];
     _Unit_Pool_A = ["MELB_AH6M_L", "MELB_AH6M_M", "CUP_B_UH60M_US", "CUP_B_CH47F_USA"];
@@ -77,7 +77,7 @@ switch (_TypNumber) do
 // US ARMY "D" 80/90 (BLUFOR)
   case 6:
   {
-    _Unit_Pool_S = ["usm_soldier_90s_d_h_crew1", "CUP_B_USMC_Pilot", "usm_soldier_90s_d_h_ftl", "usm_soldier_90s_d_h_gr", "usm_soldier_90s_d_h_medic", "usm_soldier_90s_d_h_ar", "usm_soldier_90s_d_h_rm1", "usm_soldier_90s_d_h_rto", "usm_soldier_90s_d_h_at4", "usm_soldier_90s_d_h_aa"];
+    _Unit_Pool_S = ["usm_soldier_90s_d_h_rm1", "CUP_B_USMC_Pilot", "usm_soldier_90s_d_h_ftl", "usm_soldier_90s_d_h_gr", "usm_soldier_90s_d_h_medic", "usm_soldier_90s_d_h_ar", "usm_soldier_90s_d_h_rm1", "usm_soldier_90s_d_h_rto", "usm_soldier_90s_d_h_at4", "usm_soldier_90s_d_h_aa"];
     _Unit_Pool_V = ["CUP_B_HMMWV_M2_USA", "CUP_B_HMMWV_SOV_USA", "CUP_B_HMMWV_TOW_USA"];
     _Unit_Pool_T = ["CUP_B_M113_USA", "CUP_B_M1A1_DES_US_Army", "CUP_B_M2Bradley_USA_D"];
     _Unit_Pool_A = ["MELB_AH6M_L", "MELB_AH6M_M", "CUP_B_C130J_USMC", "CUP_B_CH47F_USA" ,"CUP_B_MH60S_USMC"];
@@ -260,10 +260,10 @@ switch (_TypNumber) do
   };
   
 //-------------------------------------------------------------------------------------------------
-// USMC 2010 RHS (BLUFOR)
+// USMC Pustynia 2010 RHS (BLUFOR)
 	case 23:
 	{
-    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ucp_squadleader","rhsusf_army_ocp_medic","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_rifleman_m4","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_aa","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_machinegunnera","rhsusf_army_ocp_machinegunner"];
+    _Unit_Pool_S = ["rhsusf_usmc_marpat_d_crewman","rhsusf_usmc_marpat_d_helipilot","rhsusf_usmc_marpat_d_teamleader","rhsusf_usmc_marpat_d_machinegunner_ass","rhsusf_usmc_marpat_d_machinegunner","rhsusf_usmc_marpat_d_engineer","rhsusf_usmc_marpat_d_gunner","rhsusf_usmc_lar_marpat_d_riflemanat","rhsusf_usmc_marpat_d_autorifleman_m249","rhsusf_usmc_marpat_d_rifleman_m4","rhsusf_usmc_marpat_d_rifleman"];
     _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_M1114_USMC", "CUP_B_HMMWV_Avenger_USMC", "CUP_B_HMMWV_TOW_USMC", "pook_CRAM", "CUP_B_LAV25M240_USMC"];
     _Unit_Pool_T = ["CUP_B_M1A1_Woodland_USMC", "CUP_B_M1A2_TUSK_MG_USMC","CUP_B_AAV_USMC"];
     _Unit_Pool_A = ["CUP_B_MH60S_FFV_USMC", "CUP_B_UH1Y_UNA_USMC", "CUP_B_UH1Y_GUNSHIP_USMC", "MELB_AH6M_L"];
@@ -283,12 +283,7 @@ switch (_TypNumber) do
 //-------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-  Default
+Default
   {
     if(DAC_Basic_Value != 5) then
     {

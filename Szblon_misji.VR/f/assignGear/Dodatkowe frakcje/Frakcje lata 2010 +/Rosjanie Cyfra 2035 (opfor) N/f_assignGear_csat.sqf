@@ -169,7 +169,7 @@ _medkit = "Medikit";
 _earplugs = "ACE_EarPlugs";
 _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
-_lornetkaAM = "ACE_Vector";
+_lornetkaAM = "rhs_pdu4";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 
@@ -185,20 +185,6 @@ _chemred = "Chemlight_red";
 _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
-
-	//	min_rf_torna_flora - sredni
-	//	B_FieldPack_oli - maly
-	//	min_rf_backpack_surpat - duzy
-	//	B_Carryall_oli - duzy
-	//	B_AssaultPack_khk- maly
-	//	B_TacticalPack_oli- sredni
-	//	B_Kitbag_rgr- sredni
-	
-	//B_FieldPack_oli - maly
-	//min_rf_torna_flora - sredni ru
-	//min_rf_backpack_surpat - duzy ru
-	
-	
 
 // Plecaki
 _bagsmall = "B_Parachute";		         		// Parachute

@@ -174,7 +174,7 @@
 	_earplugs = "ACE_EarPlugs";
 	_IRstrobe = "ACE_IR_Strobe_Item";
 	_latarka = "ACE_Flashlight_XL50";
-	_lornetkaAM = "BWA3_Vector";
+	_lornetkaAM = "rhs_pdu4";
 	_lornetkaFTL = "Binocular";
 	_GPS = "ItemGPS";
 	
@@ -300,8 +300,8 @@
 	
 	// Kamizelki
 	_lightRig = ["rhs_6b23_medic"];
-	_mediumRig = ["rhs_6sh92_vog","rhs_vydra_3m","rhs_6b23_vydra_3m","rhs_6b23_digi_6sh92_vog","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz"]; 	// default for all infantry classes
-	_heavyRig = ["rhs_6sh92_vog","rhs_vydra_3m","rhs_6b23_vydra_3m","rhs_6b23_digi_6sh92_vog","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz"];
+	_mediumRig = ["rhs_6sh92_vog","rhs_6b23_vydra_3m","rhs_6b23_digi_6sh92_vog","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz"]; 	// default for all infantry classes
+	_heavyRig = ["rhs_6sh92_vog","rhs_6b23_vydra_3m","rhs_6b23_digi_6sh92_vog","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz"];
 	
 	// Siły specjalne
 	//_diverUniform =  ["BWA3_Uniform3_idz_Tropen", "BWA3_Uniform_idz_Tropen"];
@@ -434,7 +434,7 @@
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
@@ -452,7 +452,7 @@
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
@@ -468,7 +468,7 @@
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,3];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit linkItem _GPS;
@@ -484,7 +484,7 @@
 		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
@@ -1051,7 +1051,7 @@
 		_unit addMagazineCargoGlobal [_riflemag, 2];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
 		_unit addItemCargoGlobal ["ACE_morphine", 2];
         _unit addItemCargoGlobal ["ACE_epinephrine", 2];
@@ -1069,7 +1069,7 @@
 		_unit addMagazineCargoGlobal [_riflemag, 3];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
 		_unit addItemCargoGlobal ["ACE_morphine", 2];
         _unit addItemCargoGlobal ["ACE_epinephrine", 2];
@@ -1089,7 +1089,7 @@
 		_unit addMagazineCargoGlobal [_riflemag, 5];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
 		_unit addItemCargoGlobal [_bandage, 10];
 		_unit addItemCargoGlobal ["ACE_morphine",4];
         _unit addItemCargoGlobal ["ACE_epinephrine",2];
@@ -1111,7 +1111,7 @@
 		_unit addMagazineCargoGlobal [_armag, 15];
 		_unit addMagazineCargoGlobal [_grenade, 10];
 		_unit addMagazineCargoGlobal [_smokegrenade, 15];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 10];
 		_unit addItemCargoGlobal [_bandage, 20];
 		_unit addItemCargoGlobal ["ACE_morphine",15];
         _unit addItemCargoGlobal ["ACE_epinephrine",10];
@@ -1146,7 +1146,7 @@
 		_unit addMagazineCargoGlobal [_MATmag1, 5];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
 		_unit addItemCargoGlobal [_bandage, 25];
 		_unit addItemCargoGlobal ["ACE_morphine",25];
         _unit addItemCargoGlobal ["ACE_epinephrine",25];
@@ -1172,7 +1172,7 @@
 		_unit addMagazineCargoGlobal [_MATmag1, 10];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal ["ACE_morphine",50];
         _unit addItemCargoGlobal ["ACE_epinephrine",50];
@@ -1198,7 +1198,7 @@
 		_unit addMagazineCargoGlobal [_MATmag1, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
-		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
 		_unit addItemCargoGlobal ["ACE_morphine",100];
         _unit addItemCargoGlobal ["ACE_epinephrine",100];
