@@ -385,7 +385,7 @@
 		_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 		_unit addItem _epinephrine;
 		_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
-		_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+		//_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 		_unit linkItem "ItemMap";		// Dodanie mapy
 		_unit linkItem "ItemCompass";	// Dodanie kompsu
 		_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
