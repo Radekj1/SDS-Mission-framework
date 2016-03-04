@@ -48,7 +48,7 @@ switch (_CampTyp) do
 	
 	case 2:   // IND - Obóz z namiotem i działem PLOT
 	{
-		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
 		_campStatic    = [["pook_S60_RU",0,12,0,"CUP_I_TK_GUE_Soldier"]];
 		_campAddUnit   = [];
@@ -187,7 +187,7 @@ switch (_CampTyp) do
 
 	case 11:   // IND - Zwykły namiot + antena + ognisko
 	{
-		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
 		_campStatic    = [];
 		_campAddUnit   = [];
