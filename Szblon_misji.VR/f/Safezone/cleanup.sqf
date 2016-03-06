@@ -26,7 +26,7 @@ case west:
 		while {true} do {
 			sleep 3;
 			_oldworld = _currentworld;
-			_currentworld =+ list respawn_west;
+			_currentworld =+ list safe_west;
 			_newworld = _oldworld - _currentworld;
 			_notalive = [];
 			{
@@ -42,7 +42,7 @@ case east:
 		while {true} do {
 			sleep 3;
 			_oldworld = _currentworld;
-			_currentworld =+ list respawn_east;
+			_currentworld =+ list safe_east;
 			_newworld = _oldworld - _currentworld;
 			_notalive = [];
 			{
@@ -59,7 +59,7 @@ case resistance:
 		while {true} do {
 			sleep 3;
 			_oldworld = _currentworld;
-			_currentworld =+ list respawn_guerrila;
+			_currentworld =+ list safe_guerrila;
 			_newworld = _oldworld - _currentworld;
 			_notalive = [];
 			{
