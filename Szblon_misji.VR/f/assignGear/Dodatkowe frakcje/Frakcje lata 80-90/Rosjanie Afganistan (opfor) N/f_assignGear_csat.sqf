@@ -279,7 +279,7 @@ _APmine2 = "APERSMine_Range_Mag";
 // Definicja jaka klasa do jakiej frupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
-_light = [];
+_light = ["m"];
 _heavy =  ["eng","engm" ,"aar" , "ar" ];
 _diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
@@ -294,7 +294,7 @@ _baseHelmet = ["rhs_ssh68","rhs_ssh68","rhs_ssh68","rhs_ssh68","rhs_ssh68","H_Ba
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_ML_engineer","rhs_6b23_ML_rifleman","rhs_6b23_ML_sniper","rhs_6b23_ML_vydra_3m"];
+_lightRig = ["rhs_6b23_ML_medic"];
 _mediumRig = ["rhs_6b23_ML_engineer","rhs_6b23_ML_rifleman","rhs_6b23_ML_sniper","rhs_6b23_ML_vydra_3m"]; 	// default for all infantry classes
 _heavyRig = ["rhs_6b23_ML_engineer","rhs_6b23_ML_rifleman","rhs_6b23_ML_sniper","rhs_6b23_ML_vydra_3m"];
 

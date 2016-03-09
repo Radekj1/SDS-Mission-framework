@@ -294,8 +294,8 @@ _baseGlasses = [];
 
 // Kamizelki
 _lightRig = ["rhs_6b23_medic"];
-_mediumRig = ["rhs_6b13_Flora","rhs_6b13_Flora_6sh92","rhs_6b13_Flora_6sh92_headset_mapcase","rhs_6b13_Flora_6sh92_radio","rhs_6b13_Flora_6sh92_vog","rhs_6b13","rhs_6b13_6sh92","rhs_6b13_6sh92_radio","rhs_6b13_6sh92_vog"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b13_Flora","rhs_6b13_Flora_6sh92","rhs_6b13_Flora_6sh92_headset_mapcase","rhs_6b13_Flora_6sh92_radio","rhs_6b13_Flora_6sh92_vog","rhs_6b13","rhs_6b13_6sh92","rhs_6b13_6sh92_radio","rhs_6b13_6sh92_vog"];
+_mediumRig = ["rhs_6b13_Flora_6sh92","rhs_6b13_Flora_6sh92_headset_mapcase","rhs_6b13_Flora_6sh92_radio","rhs_6b13_Flora_6sh92_vog","rhs_6b13","rhs_6b13_6sh92","rhs_6b13_6sh92_radio","rhs_6b13_6sh92_vog"]; 	// default for all infantry classes
+_heavyRig = ["rhs_6b13_Flora_6sh92","rhs_6b13_Flora_6sh92_headset_mapcase","rhs_6b13_Flora_6sh92_radio","rhs_6b13_Flora_6sh92_vog","rhs_6b13","rhs_6b13_6sh92","rhs_6b13_6sh92_radio","rhs_6b13_6sh92_vog"];
 
 // Siły specjalne
 _diverUniform =  ["U_O_Wetsuit"];

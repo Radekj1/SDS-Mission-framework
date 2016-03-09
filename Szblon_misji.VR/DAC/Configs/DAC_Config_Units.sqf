@@ -188,7 +188,7 @@ switch (_TypNumber) do
   case 16:
   {
     _Unit_Pool_S = ["CUP_I_TK_GUE_Mechanic", "CUP_I_TK_GUE_Mechanic", "CUP_I_TK_GUE_Commander", "CUP_I_TK_GUE_Soldier_TL", "CUP_I_TK_GUE_Soldier_MG", "CUP_I_TK_GUE_Mechanic", "CUP_I_TK_GUE_Sniper" , "CUP_I_TK_GUE_Soldier_AT", "CUP_I_TK_GUE_Soldier_AAT" , "CUP_I_TK_GUE_Soldier_M16A2", "CUP_I_TK_GUE_Soldier_GL" , "CUP_I_TK_GUE_Guerilla_Enfield", "CUP_I_TK_GUE_Soldier_HAT", "CUP_I_TK_GUE_Soldier_AK_47S", "CUP_I_TK_GUE_Soldier", "CUP_I_TK_GUE_Demo", "CUP_I_TK_GUE_Guerilla_Medic", "CUP_I_TK_GUE_Soldier_AR", "CUP_I_TK_GUE_Soldier_AA"];
-    _Unit_Pool_V = ["CUP_I_Datsun_PK_TK_Random", "CUP_I_Ural_ZU23_TK_Gue", "CUP_I_BRDM2_TK_Gue"];
+    _Unit_Pool_V = ["CUP_I_Datsun_PK_TK_Random", "CUP_I_Ural_ZU23_TK_Gue", "CUP_I_BRDM2_TK_Gue","rhs_ural_work_open_chdkz"];
     _Unit_Pool_T = ["CUP_I_BMP1_TK_GUE", "CUP_I_T34_TK_GUE", "CUP_I_T55_TK_GUE"];
     _Unit_Pool_A = [];
   };
@@ -250,10 +250,10 @@ switch (_TypNumber) do
  
 //-------------------------------------------------------------------------------------------------
 
-// US Army 2010 RHS (BLUFOR)
+// US Army OCP 2010 RHS (BLUFOR)
 	case 22:
 	{
-    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ucp_squadleader","rhsusf_army_ocp_medic","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_rifleman_m4","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_aa","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_machinegunnera","rhsusf_army_ocp_machinegunner"];
+    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ocp_squadleader","rhsusf_army_ocp_medic","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_rifleman_m4","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_aa","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_machinegunnera","rhsusf_army_ocp_machinegunner"];
     _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_M1114_USMC", "CUP_B_HMMWV_TOW_USMC", "CUP_B_LAV25_USMC"];
     _Unit_Pool_T = ["CUP_B_M113_USA", "CUP_B_M1A1_Woodland_US_Army", "CUP_B_M2Bradley_USA_W"];
     _Unit_Pool_A = ["MELB_AH6M_L", "MELB_AH6M_M", "CUP_B_UH60M_US", "CUP_B_CH47F_USA"];
