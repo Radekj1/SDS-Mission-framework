@@ -77,7 +77,7 @@ _bipod1 = "";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach1,_scope2]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach1]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -141,8 +141,8 @@ _glflareyellow = "CUP_FlareYellow_M203";
 _glflaregreen = "CUP_FlareGreen_M203";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "CUP_hgun_M9";	// _pistol = "CUP_hgun_M9"; - bug nie pozwala na dodnie
-_pistolmag = "CUP_15Rnd_9x19_M9";	// _pistolmag = "CUP_15Rnd_9x19_M9";
+//_pistol = "";	// _pistol = "CUP_hgun_M9"; - bug nie pozwala na dodnie
+//_pistolmag = "";	// _pistolmag = "CUP_15Rnd_9x19_M9";
 
 // Granaty ręczne
 _grenade = "HandGrenade";
