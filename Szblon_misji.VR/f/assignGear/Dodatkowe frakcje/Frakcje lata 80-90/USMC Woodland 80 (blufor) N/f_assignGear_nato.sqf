@@ -60,8 +60,8 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "acc_flashlight";				// Latarka
-_attach2 = "CUP_acc_ANPEQ_2";				// Laser
+_attach1 = "rhsusf_acc_anpeq15_light";		// Latarka i laser (można przełączyć)
+_attach2 = "rhsusf_acc_anpeq15";			// Laser i latarka (można przełączyć)
 _attach3 = "acc_pointer_IR";				// czerwony laser
 
 _silencer1 = "CUP_muzzle_snds_M16";			// Tłumik 5.56 (M16)
@@ -99,12 +99,12 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "CUP_arifle_M16A4_Base";
+_rifle = "rhs_weap_m16a4_carryhandle_grip_pmag";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "CUP_arifle_M4A1_black";
+_carbine = "rhs_weap_m4a1_carryhandle_grip";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -124,10 +124,10 @@ _smgmag_tr = "CUP_30Rnd_9x19_MP5";
 //_secendMag = "hlc_30Rnd_9x19_SD_MP5";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "CUP_arifle_M16A4_GL";
+_glrifle = "rhs_weap_m16a4_carryhandle_M203";
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
-_glmag = "CUP_1Rnd_HE_M203";
+_glmag = "1Rnd_HE_Grenade_shell";
 
 // Granaty dymne do granatnika
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
@@ -135,10 +135,10 @@ _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
 // Flary do granatnika
-_glflarewhite = "CUP_FlareWhite_M203";
-_glflarered = "CUP_FlareRed_M203";
-_glflareyellow = "CUP_FlareYellow_M203";
-_glflaregreen = "CUP_FlareGreen_M203";
+_glflarewhite = "3Rnd_UGL_FlareWhite_F";
+_glflarered = "3Rnd_UGL_FlareRed_F";
+_glflareyellow = "3Rnd_UGL_FlareYellow_F";
+_glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistolet (dla wszystkich klas)
 //_pistol = "";	// _pistol = "CUP_hgun_M9"; - bug nie pozwala na dodnie
@@ -233,9 +233,9 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "CUP_lmg_m249_pip2";
-_ARmag = "CUP_100Rnd_TE4_Red_Tracer_556x45_M249";
-_ARmag_tr = "CUP_100Rnd_TE4_Red_Tracer_556x45_M249";
+_AR = "rhs_weap_m249_pip_L";
+_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
+_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
 
 // Strzelec MMG
 _MMG = "CUP_lmg_M60E4";
