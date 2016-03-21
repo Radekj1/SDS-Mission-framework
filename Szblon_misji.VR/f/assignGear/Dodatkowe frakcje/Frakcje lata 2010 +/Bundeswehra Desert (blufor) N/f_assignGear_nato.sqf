@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - CSAT
+// F3 - Folk ARPS Assign Gear Script - NATO - Bundeswehra DESERT
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -46,6 +46,7 @@
 //		r 			- strzelec
 //		car			- strzelec (karabin krótki)
 //		smg			- strzelec smg
+//		ps			- pilot samolotu
 //
 //		crate_small	- Mała skrzynka z amunicją (dla teamu)
 //		crate_med	- średnia skrzynka z amunicją (dla sekcji)
@@ -59,24 +60,25 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "UK3CB_BAF_LLM_Flashlight_Black";							//
-_attach2 = "";							// Brak dodatków do AK
-_attach3 = "ACE_acc_pointer_green";		// Laser zielony
+_attach1 = "acc_flashlight";			// Latarka 
+_attach2 = "CUP_acc_ANPEQ_15";			// Laser
+_attach3 = "CUP_acc_ANPEQ_2";			// laser SF
+	
+_silencer1 = "BWA3_muzzle_snds_G36";	// Tłumik 5.56 (bialy)
+_silencer2 = "";						// Tłumik 5.56
+_silencer3 = "muzzle_snds_B";			// Tłumik długi czarny
+_silencer4 = "BWA3_muzzle_snds_G28";	// Tłumik dla SF
 
-_silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK)
-_silencer2 = "hlc_muzzle_545SUP_AK";	// Tłumik do AEK`a
-_silencer3 = "hlc_muzzle_snds_fal";		// Tłumik dla medyka specjalsów
+_scope1 = "BWA3_optic_RSAS";			// Aimpoint (Bw)
+_scope2 = "CUP_optic_CompM2_Black";		// Aimpoint (CUP)
+_scope3 = "";							// Celownik snajperski 6.5-20x
+_scope4 = "CUP_optic_CompM2_Desert";	// Celownik SF
 
-_scope1 = "rhs_acc_1p63";				// Celownik holo
-_scope2 = "rhs_acc_pkas";				// Celownik olo (buguje RKM)
-_scope3 = "rhs_acc_pso1m2";				// Celownik optyczny
-_scope4 = "rhsusf_acc_compm4";			// Celownik dla specjalsów
-
-_bipod1 = "bipod_02_F_hex";				// Default bipod
-_bipod2 = "bipod_02_F_blk";				// Black bipod
+_bipod1 = "";							// 
+_bipod2 = "bipod_02_F_blk";				// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach1,_scope2]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -86,7 +88,8 @@ _attachments = [_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer1 = "muzzle_snds_acp";			// .45 suppressor
+_hg_silencer2 = "BWA3_acc_LLM01_irlaser";	// SF Pistol IR Laser
 
 _hg_scope1 = "optic_MRD";			// MRD
 
@@ -98,32 +101,32 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "arifle_TRG21_F";
-_riflemag = "30Rnd_556x45_Stanag";
-_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
+_rifle = "BWA3_G36";
+_riflemag = "BWA3_30Rnd_556x45_G36";
+_riflemag_tr = "BWA3_30Rnd_556x45_G36_Tracer";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "arifle_TRG20_F";
-_carbinemag = "30Rnd_556x45_Stanag";
-_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
+_carbine = "BWA3_G36K";
+_carbinemag = "BWA3_30Rnd_556x45_G36";
+_carbinemag_tr = "BWA3_30Rnd_556x45_G36_Tracer";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "hgun_PDW2000_F";
-_smgmag = "30Rnd_9x21_Mag";
-_smgmag_tr = "30Rnd_9x21_Mag";
+_smg = "BWA3_MP7";
+_smgmag = "BWA3_40Rnd_46x30_MP7_SD";
+_smgmag_tr = "BWA3_40Rnd_46x30_MP7";
 
 // Siły specjalne
-_diverWepCaS = "hlc_rifle_aku12";
-_diverMagCaS = "hlc_30Rnd_545x39_B_AK";
-_diverWepR = "hlc_rifle_RPK12";
-_diverMagR = "hlc_45Rnd_545x39_t_rpk";
-_diverWepM = "hlc_rifle_falosw";
-_diverMagM = "hlc_20Rnd_762x51_t_fal";
+_diverWepCaS = "BWA3_G27";
+_diverMagCaS = "BWA3_20Rnd_762x51_G28";
+_diverWepM = "BWA3_G28_Assault";
+_diverMagM = "BWA3_20Rnd_762x51_G28";
+_diverWepR = "BWA3_G27_Tan";
+_diverMagR = "BWA3_20Rnd_762x51_G28";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "arifle_TRG21_GL_F";
-_glriflemag = "30Rnd_556x45_Stanag";
-_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
+_glrifle = "BWA3_G36K_AG";
+_glriflemag = "BWA3_30Rnd_556x45_G36";
+_glriflemag_tr = "BWA3_30Rnd_556x45_G36_Tracer";
 _glmag = "1Rnd_HE_Grenade_shell";
 
 // Granaty dymne do granatnika
@@ -138,11 +141,11 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhsusf_weap_m1911a1";
-_pistolmag = "rhsusf_mag_7x45acp_MHP";
+_pistol = "BWA3_P8";
+_pistolmag = "BWA3_15Rnd_9x19_P8";
 
 // Granaty ręczne
-_grenade = "rhs_mag_m67";
+_grenade = "CUP_HandGrenade_M67";
 _mgrenade = "ACE_M84";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
@@ -171,12 +174,15 @@ _medkit = "Medikit";
 _earplugs = "ACE_EarPlugs";
 _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
+_lornetkaAM = "BWA3_Vector";
+_lornetkaFTL = "Binocular";
+_GPS = "ItemGPS";
 
 // Noktowizja
-_nvg = "NVGoggles_OPFOR";
+_nvg = "NVGoggles";
 
-// UAV Terminal
-_uavterminal = "O_UavTerminal";
+// Terminal UAV
+_uavterminal = "B_UavTerminal";	  // Dla BLUFORU musi być terminal BLUFORU, innej frakcji nie zadziała
 
 // Świetliki
 _chemgreen =  "Chemlight_green";
@@ -184,88 +190,89 @@ _chemred = "Chemlight_red";
 _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
-// Plecaki
-_bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr6000l";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr6000l";                  		// Plecak dla pilota (radio)
+// Backpacks
+_bagsmall = "B_Parachute";						// Spadochron
 
-_bagTL = "B_Kitbag_cbr";						//Plecak dowódcy drużyny
+_bagFTL = "tf_rt1523g_big_bwmod_tropen";		// Plecak dla dowódcy (radio)
+_bagPP = "tf_rt1523g_big_bwmod_tropen";        	// Plecak dla pilota (radio)
 
-_bagMs = "B_AssaultPack_cbr";					// Plecak dla medyka (mały)
-_bagMm = "B_FieldPack_cbr";						// Plecak dla medyka (średni)
-_bagMb = "B_TacticalPack_oli";               	// Plecak dla medyka (duży)
+_bagTL = "BWA3_Kitbag_Tropen";					//Plecak dowódcy drużyny
 
-_bagARs = "rhs_assault_umbts";					// Plecak dla RKM (mały)
-_bagARm = "B_Kitbag_cbr";						// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_cbr";                     // Plecak dla RKM (duży)
+_bagMs = "BWA3_TacticalPack_Tropen_Medic";		// Plecak dla medyka (mały)
+_bagMm = "BWA3_Kitbag_Tropen_Medic";				// Plecak dla medyka (średni)
+_bagMb = "BWA3_Kitbag_Tropen_Medic";       		// Plecak dla medyka (duży)
 
-_bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
+_bagARs = "BWA3_TacticalPack_Tropen";			// Plecak dla RKM (mały)
+_bagARm = "BWA3_PatrolPack_Tropen";				// Plecak dla RKM (średni)
+_bagARb = "BWA3_PatrolPack_Tropen";             // Plecak dla RKM (duży)
 
-_bagR = "B_FieldPack_oli";						// Plecak dla strzelca, strzelca AT
+_bagENG = "BWA3_Kitbag_Tropen";					// Plecak dla Mechanika
 
-_bagMAT = "rhs_rpg_empty";						// Plecak dla MAT
+_bagR = "BWA3_TacticalPack_Tropen";				// Plecak dla strzelca, strzelca AT
 
-_bagmedium = "B_Kitbag_cbr";					// carries 200, weighs 30
-_baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
+_bagMAT = "BWA3_PatrolPack_Tropen";				// Plecak dla MAT
 
-_bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
+_bagmedium = "BWA3_Kitbag_Tropen";				// carries 200, weighs 30
+_baglarge = "BWA3_PatrolPack_Tropen";			// carries 320, weighs 40
 
-_baguav = "tf_mr6000l";						// Plecak RTO
+_bagmediumdiver =  "BWA3_FieldPack_Tropen";		// Plecaki SF
 
-_baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
+_baguav = "tf_rt1523g_big_bwmod_tropen";		// Plecak RTO
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghmgg = "CUP_B_M2_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "CUP_B_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
+
+_baghatg = "B_AT_01_weapon_F";					// used by Heavy AT gunner
+_baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
+_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
+_baghsamg = "B_AA_01_weapon_F";					// used by Heavy SAM gunner
+_baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // ====================================================================================
 
-// UNIQUE, ROLE-SPECIFIC EQUIPMENT
+// Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk74n";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "BWA3_MG4";
+_ARmag = "BWA3_200Rnd_556x45";
+_ARmag_tr = "BWA3_200Rnd_556x45_Tracer";
 
 // Strzelec MMG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x54_Box";
-_MMGmag_tr = "150Rnd_762x54_Box_Tracer";
+_MMG = "BWA3_MG5";
+_MMGmag = "BWA3_120Rnd_762x51";
+_MMGmag_tr = "BWA3_120Rnd_762x51_Tracer";
 
-// Strzelec wyborowy
-_DMrifle = "rhs_weap_svdp_wd";
-_DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
+// Strzelec wyborowy (broń DLC)
+_DMrifle = "srifle_DMR_06_camo_F";
+_DMriflemag = "20Rnd_762x51_Mag";
 
 // Strzelec AT
-_RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+_RAT = "BWA3_Pzf3";
+_RATmag = "BWA3_Pzf3_IT";
 
 // Strzelec MAT
-_MAT = "rhs_weap_rpg7";
-_MATmag1 = "rhs_rpg7_PG7VL_mag";
-_MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT = "CUP_launch_MAAWS";
+_MATmag1 = "CUP_MAAWS_HEAT_M";
+_MATmag2 = "CUP_MAAWS_HEDP_M";
 
 // Strzelec AA
-_SAM = "rhs_weap_igla";
-_SAMmag = "rhs_mag_9k38_rocket";
+_SAM = "BWA3_Fliegerfaust";
+_SAMmag = "BWA3_Fliegerfaust_Mag";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "";
+//_HATmag1 = "";
+//_HATmag2 = "";
 
 // Snajper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "srifle_LRR_F";
+_SNrifleMag = "7Rnd_408_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "DemoCharge_Remote_Mag";
+_satchel = "CUP_PipeBomb_M";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 
@@ -282,49 +289,49 @@ _diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = [];
+_specOp = ["ps"];
+
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["LOP_U_TKA_Fatigue_01"];
-_baseHelmet = ["LOP_H_SSh68Helmet_TAN","H_TKA_A3_Beret"];
+_baseUniform = ["BWA3_Uniform_Tropen","BWA3_Uniform2_Tropen"];
+_baseHelmet = ["BWA3_M92_Tropen","BWA3_MICH_Tropen"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["LOP_V_6Sh92_WDL","LOP_V_6Sh92_Vog_WDL","LOP_V_6Sh92_Radio_WDL"];
-_mediumRig = ["LOP_V_6Sh92_WDL","LOP_V_6Sh92_Vog_WDL","LOP_V_6Sh92_Radio_WDL"]; 	// default for all infantry classes
-_heavyRig = ["LOP_V_6Sh92_WDL","LOP_V_6Sh92_Vog_WDL","LOP_V_6Sh92_Radio_WDL"];
+_lightRig = ["BWA3_Vest_Autorifleman_Tropen", "BWA3_Vest_Grenadier_Tropen", "BWA3_Vest_Marksman_Tropen", "BWA3_Vest_Medic_Tropen", "BWA3_Vest_Rifleman1_Tropen", "BWA3_Vest_Leader_Tropen"];
+_mediumRig = ["BWA3_Vest_Autorifleman_Tropen", "BWA3_Vest_Grenadier_Tropen", "BWA3_Vest_Marksman_Tropen", "BWA3_Vest_Medic_Tropen", "BWA3_Vest_Rifleman1_Tropen", "BWA3_Vest_Leader_Tropen"]; 	// default for all infantry classes
+_heavyRig = ["BWA3_Vest_Autorifleman_Tropen", "BWA3_Vest_Grenadier_Tropen", "BWA3_Vest_Marksman_Tropen", "BWA3_Vest_Medic_Tropen", "BWA3_Vest_Rifleman1_Tropen", "BWA3_Vest_Leader_Tropen"];
 
 // Siły specjalne
-_diverUniform =  ["LOP_U_TKA_Fatigue_01"];
-_diverHelmet = ["H_TKA_A3_Beret"];
-_diverRig = ["LOP_V_6Sh92_Radio_WDL"];
-_diverGlasses = ["G_Diving"];
+_diverUniform =  ["BWA3_Uniform3_idz_Tropen", "BWA3_Uniform_idz_Tropen"];
+_diverHelmet = ["BWA3_OpsCore_Tropen_Camera","BWA3_OpsCore_Tropen_Patch", "BWA3_OpsCore_Tropen"];
+_diverRig = ["BWA3_Vest_Medic_Tropen", "BWA3_Vest_Leader_Tropen"];
+_diverGlasses = [];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_df15"];
-_pilotHelmet = ["rhs_zsh7a_mike","rhs_zsh7a","rhs_gssh18"];
-_pilotRig = ["rhs_vest_commander"];
+_pilotUniform = ["BWA3_Uniform_Helipilot"];
+_pilotHelmet = ["BWA3_Knighthelm"];
+_pilotRig = ["BWA3_Vest_Tropen"];
 _pilotGlasses = [];
 
+// JET Pilot
+_sfuniform = ["U_B_PilotCoveralls"];
+_sfhelmet = ["H_PilotHelmetFighter_B"];
+_sfRig = ["V_TacVest_blk"];
+_sfGlasses = [];
+
 // Załoga pojazdu
-_crewUniform = ["LOP_U_TKA_Fatigue_02"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["V_CDF_A3_6b23_crewofficer"];
+_crewUniform = ["BWA3_Uniform_Crew_Tropen"];
+_crewHelmet = ["BWA3_CrewmanKSK_Tropen_Headset"];
+_crewRig = ["BWA3_Vest_Tropen"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_O_GhillieSuit"]; //DLC alternatives: ["U_O_FullGhillie_lsh","U_O_FullGhillie_ard","U_O_FullGhillie_sard"];
+_ghillieUniform = ["U_B_GhillieSuit"]; //DLC alternatives: ["U_B_FullGhillie_lsh","U_B_FullGhillie_ard","U_B_FullGhillie_sard"];
 _ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_khk"];
+_ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
-
-// Spec Opa
-_sfuniform = ["U_O_SpecopsUniform_ocamo"];
-_sfhelmet = ["H_HelmetSpecO_ocamo","H_HelmetSpecO_blk"];
-_sfRig = ["V_PlateCarrier1_blk"];
-_sfGlasses = [];
-
 
 // ====================================================================================
 
@@ -360,7 +367,7 @@ if (_isMan) then {
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-
+	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
     _unit addItem _bandage;
@@ -380,14 +387,15 @@ if (_isMan) then {
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
 	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
-	_unit linkItem "ItemCompass";	// Dodanie kompasu
+	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
 	//_unit linkItem "ItemGPS"; 	// Dodanie GPS (wyczone)
 	_unit addItem _latarka;			// Latarka na mape
-
-};
-
+	
+  };
+  
+  
 // ====================================================================================
 
 // SETUP BACKPACKS
@@ -401,7 +409,7 @@ _backpack = {
 	if (count _this > 1) then {_loadout_night_day = _this select 1};
 	switch (_typeofBackPack) do
 	{
-		#include "f_assignGear_csat_b.sqf";
+		#include "f_assignGear_nato_b.sqf";
 	};
 };
 
@@ -419,68 +427,68 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
+		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _glrifle;					//_COrifle
-		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_smokegrenade,1];
-		_unit addmagazines [_smokegrenadered,2];
-		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
+		_unit addWeapon _lornetkaFTL;
+		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_DCrifle
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_smokegrenadered,2];
-		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
+		_unit addWeapon _lornetkaFTL;
+		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addweapon _carbine;
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_smokegrenade,3];
+		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
-		//{_unit addItem _firstaid} forEach [1,2,3,4];
-		//_unit addItem [_bandage,30];
-		//_unit addItem [_morphine,15];
-		//_unit addItem [_epinephrine,15];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		["m"] call _backpack;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
-		_unit addweapon _glrifle;					//_FTLrifle
-		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_glsmokewhite,3];
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenadeblue,2];
+		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenadered,2];
-		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
+		_unit addWeapon _lornetkaFTL;
+		_unit linkItem _GPS;
 		["g"] call _backpack;
 	};
 
@@ -488,43 +496,59 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		_unit addmagazines [_ARmag,4];
-		_unit addweapon _AR;
+		_unit addmagazines [_ARmag,3];
+		_unit addmagazines [_ARmag_tr,1];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _AR;
 		_unit addweapon _pistol;
+		_attachments = [_scope2];
 		["ar"] call _backpack;
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_riflemag_tr,2];
-		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
-		_unit addWeapon "rhs_pdu4";
+		_unit addWeapon _lornetkaAM;
 		["aar"] call _backpack;
 	};
 
 // LOADOUT: RIFLEMAN (AT)
 	case "rat":
 	{
-		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_riflemag,3];
 		_unit addmagazines [_riflemag_tr,2];
-		_unit addweapon _rifle;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _rifle;
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
 		["rat"] call _backpack;
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
 	};
+	
+// LOADOUT: RIFLEMAN
+	case "r":
+	{
+		_unit addmagazines [_riflemag,3];
+		_unit addmagazines [_riflemag_tr,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _rifle;
+		_unit addweapon _pistol;
+		["r"] call _backpack;
+	};
+
 
 // LOADOUT: DESIGNATED MARKSMAN
 	case "dm":
@@ -543,11 +567,12 @@ switch (_typeofUnit) do
 	case "mmgg":
 	{
 		_unit addmagazines [_MMGmag,1];
-		_unit addweapon _MMG;
-		_unit addmagazines [_MMGmag,2];
-		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_MMGmag_tr,1];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_smokegrenade,2];		
 		_unit addweapon _pistol;
+		_unit addweapon _MMG;
 		_attachments = [];
 		["mmg"] call _backpack;
 	};
@@ -555,21 +580,21 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
 	case "mmgag":
 	{
-		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_riflemag,3];
 		_unit addmagazines [_riflemag_tr,2];
-		_unit addweapon _rifle;
-		_unit addWeapon "rhs_pdu4";
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _rifle;
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addWeapon _lornetkaAM;				
 		["mmgag"] call _backpack;
 	};
 
 // LOADOUT: HEAVY MG GUNNER
 	case "hmgg":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
@@ -582,10 +607,10 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "rhs_pdu4";
+		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
@@ -596,60 +621,64 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT GUNNER
 	case "matg":
 	{
-		["matg"] call _backpack;
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addweapon _carbine;
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_grenade,2];
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addweapon _MAT;
-		_unit addSecondaryWeaponItem "rhs_acc_pgo7v";
+		_unit addSecondaryWeaponItem "CUP_optic_SMAW_Scope";
+		["matg"] call _backpack;
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
 	case "matag":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addWeapon "rhs_pdu4";
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addWeapon _lornetkaAM;
+		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
 	};
 
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_grenade,2];
 		_unit addweapon _carbine;
+		_unit addweapon _pistol;
 		["hatg"] call _backpack;
 		_unit addWeapon _HAT;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
 	case "hatag":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addWeapon "rhs_pdu4";
-		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_grenade,2];
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addWeapon _lornetkaAM;
 		["hatag"] call _backpack;
 	};
 
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
@@ -664,14 +693,14 @@ switch (_typeofUnit) do
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
-		_unit addWeapon "rhs_pdu4";
+		_unit addWeapon _lornetkaAM;
 		_unit addItem "ACE_MapTools";
 		_unit addItem "ACE_RangeTable_82mm";
 		["mtrag"] call _backpack;
@@ -680,35 +709,37 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM SAM GUNNER
 	case "msamg":
 	{
-		["msamg"] call _backpack;
-		_unit addmagazines [_carbinemag,7];
+		
+		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
 		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
+		_unit addweapon _carbine;
+		_unit addweapon _pistol;
+		["msamg"] call _backpack;
 		_unit addweapon _SAM;
+		
 	};
 
 // LOADOUT: MEDIUM SAM ASSISTANT GUNNER
 	case "msamag":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addWeapon "Binocular";
 		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,1];
+		_unit addweapon _carbine;
+		_unit addweapon _pistol;
+		_unit addWeapon _lornetkaAM;
 		["msamag"] call _backpack;
 	};
 
 // LOADOUT: HEAVY SAM GUNNER
 	case "hsamg":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
@@ -721,10 +752,10 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY SAM ASSISTANT GUNNER
 	case "hsamag":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Binocular";
+		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
@@ -746,16 +777,16 @@ switch (_typeofUnit) do
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag,5];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,3];
-		_unit addmagazines [_glsmokewhite,4];
+		//_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "rhs_pdu4";
+		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 	};
 
 // LOADOUT: VEHICLE COMMANDER
@@ -766,10 +797,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
-		_unit addWeapon "Binocular";
+		_unit linkItem _GPS;
+		_unit addWeapon _lornetkaFTL;
 		_attachments = [];
-		["ftl"] call _backpack;
+		["vc"] call _backpack;
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -780,7 +811,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 		["cc"] call _backpack;
 	};
@@ -793,7 +824,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 	};
 
@@ -805,10 +836,9 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_attachments = [];
 		["pp"] call _backpack;
-		
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -819,8 +849,22 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		["cc"] call _backpack;
+		_unit linkItem _GPS;
 		_attachments = [];
+		["cc"] call _backpack;
+	};
+	
+// LOADOUT: JET PILOTS
+	case "ps":
+	{
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_unit linkItem _GPS;
+		_attachments = [];
+		["ps"] call _backpack;
 	};
 
 // LOADOUT: AIR VEHICLE CREW
@@ -831,28 +875,30 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit linkItem _GPS;
 		_attachments = [];
 	};
 
-// LOADOUT: Mechanik
+// LOADOUT: ENGINEER (DEMO)
 	case "eng":
 {
-		_unit addmagazines [_carbinemag,7];
-		_unit addweapon _carbine;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addItem "ACE_MapTools";
 		_unit addItem "ACE_RangeTable_82mm";
 		["eng"] call _backpack;
 	};
 
-// LOADOUT: Saper
+// LOADOUT: ENGINEER (MINES)
 	case "engm":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_grenade,2];
@@ -860,42 +906,44 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem _GPS;
 		_unit addItem "ACE_Clacker"; //zapalnik
 		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
 
-// LOADOUT: UAV OPERATOR
+// LOADOUT: FAC RTO
 	case "uav":
 	{
-        _unit addmagazines [_glriflemag,7];
+        _unit addmagazines [_glriflemag,5];
         _unit addmagazines [_glriflemag_tr,4];
         _unit addmagazines [_glmag,7];
-        _unit addmagazines [_glsmokewhite,2];
+        //_unit addmagazines [_glsmokewhite,2];
         _unit addweapon _glrifle;        
         _unit addmagazines [_smokegrenade,2];
         _unit addmagazines [_grenade,2];
-        _unit addmagazines [_pistolmag,2];
+        _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
-		_unit linkItem "ItemGPS"; 
-        _unit addWeapon "Laserdesignator_02";
+		_unit linkItem _GPS; 
+        _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
-
-// LOADOUT: Dowódca sil specjalnych
+			
+ // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMagCaS,4];
+		_unit addmagazines [_diverMagCaS,6];
 		_unit addweapon _diverWepCaS;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer2];
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach1,_scope4,_silencer2];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
-		_unit addWeapon "Laserdesignator_02";
+		_unit linkItem _GPS;
+		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;
 	};
@@ -905,13 +953,15 @@ switch (_typeofUnit) do
 	{	
 		_unit addmagazines [_diverMagM,10];
 		_unit addweapon _diverWepM;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer3];
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach1,_scope4,_silencer2];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
-		_unit addWeapon "rhs_pdu4";
+		_unit linkItem _GPS;
+		_unit addWeapon _lornetkaAM;
 		["divm"] call _backpack;
 	};
 
@@ -920,13 +970,15 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_diverMagCaS,8];
 		_unit addweapon _diverWepCaS;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer2];
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach1,_scope4,_silencer2];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
+		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemGPS";
-		_unit addWeapon "rhs_pdu4";
+		_unit linkItem _GPS;
+		_unit addWeapon _lornetkaAM;
 		["divs"] call _backpack;
 	};
 	
@@ -935,40 +987,28 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_diverMagR,6];
 		_unit addweapon _diverWepR;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_attachments = [_attach3,_scope4,_silencer2];
+		_unit addmagazines [_secendMag,3];
+		_unit addweapon _secendWep;
+		_attachments = [_attach1,_scope4,_silencer2];
+		_hg_attachments= [_hg_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
-		_unit linkItem "ItemGPS";
-		_unit addWeapon "rhs_pdu4";
+		_unit linkItem _GPS;
+		_unit addWeapon _lornetkaAM;
 		["divr"] call _backpack;
 	};
 
 
-// LOADOUT: RIFLEMAN
-	case "r":
-	{
-		_unit addmagazines [_riflemag,7];
-		_unit addmagazines [_riflemag_tr,2];
-		_unit addweapon _rifle;
-		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,1];
-		["r"] call _backpack;
-	};
-
 // LOADOUT: CARABINEER
 	case "car":
 	{
-		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag,5];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
 		["car"] call _backpack;
@@ -980,7 +1020,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,7];
 		_unit addweapon _smg;
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,1];
 		["smg"] call _backpack;
@@ -989,19 +1029,19 @@ switch (_typeofUnit) do
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		_unit addmagazines [_glriflemag,7];
+		_unit addmagazines [_glriflemag,5];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addweapon _glrifle;
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		//_unit addmagazines [_glsmokewhite,2];
 		_unit addmagazines [_grenade,3];
-		_unit addmagazines [_pistolmag,3];
+		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		["g"] call _backpack;
 	};
 
-// CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"opf_f"] call f_fnc_assignGear
+// CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"blu_f"] call f_fnc_assignGear
 	case "v_car":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -1011,14 +1051,14 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_riflemag, 2];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
 		_unit addItemCargoGlobal ["ACE_morphine", 2];
-        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+        _unit addItemCargoGlobal ["ACE_epinephrine", 2];
 		_unit addItemCargoGlobal [_IRstrobe, 2];
 	};
 
-// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"opf_f"] call f_fnc_assignGear
+// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"blu_f"] call f_fnc_assignGear
 	case "tr":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -1029,16 +1069,16 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_riflemag, 3];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
 		_unit addItemCargoGlobal ["ACE_morphine", 2];
-        	_unit addItemCargoGlobal ["ACE_epinephrine", 2];
+        _unit addItemCargoGlobal ["ACE_epinephrine", 2];
 		_unit addItemCargoGlobal ["ToolKit", 1];
 		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
 		_unit addItemCargoGlobal [_IRstrobe, 5];
 	};
 
-// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"opf_f"] call f_fnc_assignGear
+// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"blu_f"] call f_fnc_assignGear
 	case "ifv":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -1049,17 +1089,17 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_riflemag, 5];
 		_unit addMagazineCargoGlobal [_grenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 10];
 		_unit addItemCargoGlobal ["ACE_morphine",4];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",2];
+        _unit addItemCargoGlobal ["ACE_epinephrine",2];
 		_unit addItemCargoGlobal ["ToolKit", 1];
 		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
 		_unit addItemCargoGlobal [_IRstrobe, 10];
 		
 	};
 	
-// CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"opf_f"] call f_fnc_assignGear
+// CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"blu_f"] call f_fnc_assignGear
 	case "v_log":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -1067,23 +1107,24 @@ switch (_typeofUnit) do
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_RAT, 5];
-		_unit addMagazineCargoGlobal [_riflemag, 20];
-		_unit addMagazineCargoGlobal [_armag, 8];
+		_unit addMagazineCargoGlobal [_riflemag, 40];
+		_unit addMagazineCargoGlobal [_armag, 15];
 		_unit addMagazineCargoGlobal [_grenade, 10];
-		_unit addMagazineCargoGlobal [_smokegrenade, 5];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 5];
-		_unit addItemCargoGlobal [_bandage, 15];
-		_unit addItemCargoGlobal ["ACE_morphine",10];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",5];
-		_unit addItemCargoGlobal ["ToolKit", 1];
-		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
-		_unit addItemCargoGlobal [_IRstrobe, 10];
-		_unit addMagazineCargoGlobal [_MMGmag, 5];
-		_unit addMagazineCargoGlobal [_MATmag1, 4];
-		_unit addMagazineCargoGlobal [_MATmag2, 2];
-		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
+		_unit addMagazineCargoGlobal [_smokegrenade, 15];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
+		_unit addItemCargoGlobal [_bandage, 20];
+		_unit addItemCargoGlobal ["ACE_morphine",15];
+        _unit addItemCargoGlobal ["ACE_epinephrine",10];
+		_unit addItemCargoGlobal ["ToolKit", 2];
+		_unit addItemCargoGlobal ["ACE_wirecutter", 2];
+		_unit addItemCargoGlobal [_IRstrobe, 20];
+		_unit addMagazineCargoGlobal [_MMGmag, 10];
+		_unit addMagazineCargoGlobal [_MATmag1, 6];
+		_unit addMagazineCargoGlobal [_MATmag2, 4];
+		_unit addMagazineCargoGlobal ["CUP_PipeBomb_M", 6];
 		_unit addItemCargoGlobal ["ACE_Clacker", 2];
 		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
+		_unit addBackpackCargoGlobal [_bagENG,4];
 		
 	};
 
@@ -1105,10 +1146,10 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_MATmag1, 5];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 25];
 		_unit addItemCargoGlobal ["ACE_morphine",25];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",25];
+        _unit addItemCargoGlobal ["ACE_epinephrine",25];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
 		_unit addItemCargoGlobal [_IRstrobe, 30];
 };
@@ -1131,10 +1172,10 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_MATmag1, 10];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 6];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal ["ACE_morphine",50];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",50];
+        _unit addItemCargoGlobal ["ACE_epinephrine",50];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",25];
 		_unit addItemCargoGlobal [_IRstrobe, 50];
 };
@@ -1157,10 +1198,10 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_MATmag1, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
-		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
+		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
 		_unit addItemCargoGlobal ["ACE_morphine",100];
-        	_unit addItemCargoGlobal ["ACE_epinephrine",100];
+        _unit addItemCargoGlobal ["ACE_epinephrine",100];
 		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
 		_unit addItemCargoGlobal [_IRstrobe, 70];
 };
@@ -1190,6 +1231,7 @@ switch (_typeofUnit) do
         _unit addItemCargoGlobal ["ACE_epinephrine",400];
         _unit addItemCargoGlobal ["ACE_bloodIV_500",200];
 };
+
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default

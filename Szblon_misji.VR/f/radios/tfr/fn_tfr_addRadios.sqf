@@ -19,7 +19,8 @@ switch ((side player)) do { //longrange, shortrange, rifradio
       //_radio1 = "tf_rt1523g_big_bwmod";  					//radio dla jednostek Bundeswery Woodland
 	  //_radio1 = "tf_rt1523g_big_bwmod_tropen";  			//radio dla jednostek Bundeswery Desert
       //_radio1 = "tf_rt1523g_big_bwmod";  					//radio dla jednostek PSZ LAS [najlepiej pasuje]
-      //_radio1 = "tf_rt1523g_sage";  						//radio dla jednostek USMC Woodland
+      //_radio1 = "tf_rt1523g_sage";  						//radio dla jednostek USMC Woodland 80/90
+	  //_radio1 = "tf_rt1523g_big_bwmod"					//radio dla jednostek USMC Woodland 2010
       
       _radio2 = TF_defaultWestPersonalRadio;
       _radio3 = TF_defaultWestRiflemanRadio;};

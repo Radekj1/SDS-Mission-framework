@@ -5139,7 +5139,8 @@ class Mission
 				class Item0
 				{
 					position[]={3999.1257,5,4774.3457};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=322;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5151,7 +5152,8 @@ class Mission
 				class Item1
 				{
 					position[]={4001.0261,5,4771.8809};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=323;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5162,7 +5164,8 @@ class Mission
 				class Item2
 				{
 					position[]={4003.948,5,4771.791};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=324;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5173,7 +5176,8 @@ class Mission
 				class Item3
 				{
 					position[]={4006.782,5,4771.752};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=325;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5184,7 +5188,8 @@ class Mission
 				class Item4
 				{
 					position[]={4010.1941,5,4771.8887};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=326;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5195,7 +5200,8 @@ class Mission
 				class Item5
 				{
 					position[]={4013.3054,5,4771.7285};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=327;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5206,7 +5212,8 @@ class Mission
 				class Item6
 				{
 					position[]={4016.7429,5,4771.8301};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=328;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5217,7 +5224,8 @@ class Mission
 				class Item7
 				{
 					position[]={4019.8093,5,4771.9023};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=329;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5228,7 +5236,8 @@ class Mission
 				class Item8
 				{
 					position[]={4023.3621,5,4771.9395};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=330;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5239,7 +5248,8 @@ class Mission
 				class Item9
 				{
 					position[]={4026.9031,5,4771.9922};
-					azimut=1.984694;
+					azimut=1.98469;
+					special="NONE";
 					id=331;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -5259,9 +5269,10 @@ class Mission
 				{
 					position[]={3995.3801,5,5475.6255};
 					azimut=0.91204399;
+					special="NONE";
 					id=332;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					leader=1;
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -5270,10 +5281,11 @@ class Mission
 				class Item1
 				{
 					position[]={4000.5051,5,5473.5161};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=333;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5281,10 +5293,11 @@ class Mission
 				class Item2
 				{
 					position[]={4003.1458,5,5473.4556};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=334;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5292,10 +5305,11 @@ class Mission
 				class Item3
 				{
 					position[]={3997.927,5,5473.5474};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=335;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5303,10 +5317,11 @@ class Mission
 				class Item4
 				{
 					position[]={4005.9758,5,5473.5591};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=336;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5314,10 +5329,11 @@ class Mission
 				class Item5
 				{
 					position[]={4009.009,5,5473.4497};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=337;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5325,10 +5341,11 @@ class Mission
 				class Item6
 				{
 					position[]={4012.2141,5,5473.3716};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=338;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5336,10 +5353,11 @@ class Mission
 				class Item7
 				{
 					position[]={4015.6851,5,5473.3716};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=339;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5347,10 +5365,11 @@ class Mission
 				class Item8
 				{
 					position[]={4019.0913,5,5473.4692};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=340;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5358,10 +5377,11 @@ class Mission
 				class Item9
 				{
 					position[]={4021.9253,5,5473.4321};
-					azimut=0.91204405;
+					azimut=0.91204399;
+					special="NONE";
 					id=341;
 					side="GUER";
-					vehicle="I_Soldier_F";
+					vehicle="I_soldier_F";
 					skill=0.60000002;
 					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="JIP";
@@ -5377,7 +5397,8 @@ class Mission
 				class Item0
 				{
 					position[]={3990.9753,5,6287.0186};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=342;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5389,7 +5410,8 @@ class Mission
 				class Item1
 				{
 					position[]={3993.9819,5,6285.1968};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=343;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5400,7 +5422,8 @@ class Mission
 				class Item2
 				{
 					position[]={3997.3093,5,6285.3677};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=344;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5411,7 +5434,8 @@ class Mission
 				class Item3
 				{
 					position[]={4000.6462,5,6285.6108};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=345;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5422,7 +5446,8 @@ class Mission
 				class Item4
 				{
 					position[]={4027.2666,5,6285.0708};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=346;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5433,7 +5458,8 @@ class Mission
 				class Item5
 				{
 					position[]={4022.8784,5,6285.188};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=347;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5444,7 +5470,8 @@ class Mission
 				class Item6
 				{
 					position[]={4018.1931,5,6285.251};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=348;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5455,7 +5482,8 @@ class Mission
 				class Item7
 				{
 					position[]={4013.9385,5,6285.2412};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=349;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5466,7 +5494,8 @@ class Mission
 				class Item8
 				{
 					position[]={4009.8879,5,6285.4067};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=350;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5477,7 +5506,8 @@ class Mission
 				class Item9
 				{
 					position[]={4004.9897,5,6285.5244};
-					azimut=-2.3172953;
+					azimut=-2.3173001;
+					special="NONE";
 					id=351;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -5615,8 +5645,8 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="respawn_west";
-			expCond="this &&  (player distance respawn_west) < 300;";
+			name="safe_west";
+			expCond="this &&  (player distance safe_west) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
@@ -5632,8 +5662,8 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="respawn_east";
-			expCond="this &&  (player distance respawn_east) < 300;";
+			name="safe_east";
+			expCond="this &&  (player distance safe_east) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects
@@ -5649,8 +5679,8 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="respawn_guerrila";
-			expCond="this && (player distance respawn_guerrila) < 300;";
+			name="safe_guerrila";
+			expCond="this && (player distance safe_guerrila) < 300;";
 			expActiv="inSafeZone = true;";
 			expDesactiv="inSafeZone = false;";
 			class Effects

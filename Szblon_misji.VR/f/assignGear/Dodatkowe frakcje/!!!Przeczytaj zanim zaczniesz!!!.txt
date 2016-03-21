@@ -1,0 +1,15 @@
+
+Są to dodatkowe frakcje dla graczy. Jak pewnie widzisz niektóre frakcje mają na końcu dopiski. Już wyjaśniam. Możesz spotkać następujące oznaczenia:
+
+
+	1.DO ZROBIENIA – jak sama nazwa oznacza jest to frakcja na liście oczekujących do zrobienia, NIE MOŻNA  ich używać podczas tworzenia misji,
+	
+	2.OCZEKUJE – jest to podobne oznaczenie co powyższe lecz tutaj nie wiadomo czy dana frakcja zostanie zrobiona (powody: np. brak odpowiedniego sprzętu, brak odpowiedniej 
+	frakcji), NIE MOŻNA  ich używać podczas tworzenia misji,
+	
+	3.N – jest to oznaczenie iż dana frakcja została już przeniesiona na nowy system tzn. ci co śledzą postęp prac na GIT powinni wiedzieć, że przymierzamy się do wprowadzenia nowego 
+	systemu ilości magazynków (wymuszone przez stamine army) i wszystkie te frakcje, które oznaczone są w ten sposób są już w pełni przeniesione na nowy system. Tych frakcji MOŻNA już
+	używać do tworzenia misji lecz trzeba się liczyć, iż mogą wystąpić jeszcze małe błędy, ponieważ ten system jest jeszcze w fazie testów, ciągle pracuje nad nim i na bieżąco 
+	poprawiam błędy, które sam zauważę lub zostaną mi zgłoszone,
+	
+	4.BRAK OZNACZENIA – są to frakcje na starszym systemie i z czasem zostaną przeniesione na nowy. Tych frakcji MOŻNA używać podczas tworzenia misji.
