@@ -68,12 +68,13 @@ _silencer2 = "CUP_muzzle_snds_SCAR_L";		// Tłumik 5.56 (krótki)
 _scope1 = "CUP_optic_Eotech533";			// Eotech (RHS)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope4 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// 
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach1,_scope1]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach1,_scope4]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
