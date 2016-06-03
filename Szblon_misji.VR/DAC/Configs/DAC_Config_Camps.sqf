@@ -22,7 +22,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_S60_RU",0,12,0,"min_rf_soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"min_rf_soldier"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -36,7 +36,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_S60_RU",0,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campStatic    = [["Flag_NATO_F",0,12,0,"usm_soldier_90s_w_h_rto"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -50,7 +50,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_S60_RU",0,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"CUP_I_TK_GUE_Soldier"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -122,7 +122,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_ZU23_RU",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campStatic    = [["Flag_NATO_F",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -135,7 +135,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_CSAT_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_ZU23_RU",0,12,0,"min_rf_soldier"],["O_Mortar_01_F",14,12,0,"min_rf_soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"min_rf_soldier"],["O_Mortar_01_F",14,12,0,"min_rf_soldier"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -148,7 +148,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_ZU23_RU",0,12,0,"CUP_I_TK_GUE_Soldier"],["O_Mortar_01_F",14,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"CUP_I_TK_GUE_Soldier"],["O_Mortar_01_F",14,12,0,"CUP_I_TK_GUE_Soldier"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
