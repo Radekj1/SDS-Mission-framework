@@ -71,7 +71,7 @@ switch (_unitfaction) do
 		["GrpNATO_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_DT1",  4, "SF1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_DT2",  4, "SF2", "ColorBlack"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_ENG1",  6, "ENG", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_ENG1",  6, "LOG", "ColorOrange"] spawn f_fnc_localGroupMarker;
 
  		["GrpNATO_IFV1",  7, "Wiking 1-1", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_IFV2",  7, "Wiking 1-2", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -135,7 +135,7 @@ switch (_unitfaction) do
 		["GrpCSAT_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_DT1",  4, "SF1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_DT2",  4, "SF2", "ColorBlack"] spawn f_fnc_localGroupMarker;
-		["GrpCSAT_ENG1",  6, "ENG", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_ENG1",  6, "LOG", "ColorOrange"] spawn f_fnc_localGroupMarker;
 
  		["GrpCSAT_IFV1",  7, "Puszka 1-1", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_IFV2",  7, "Puszka 1-2", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -201,7 +201,7 @@ switch (_unitfaction) do
 		["GrpAAF_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_DT1",  4, "SF1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_DT2",  4, "SF2", "ColorBlack"] spawn f_fnc_localGroupMarker;
-		["GrpAAF_ENG1",  6, "ENG", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_ENG1",  6, "LOG", "ColorOrange"] spawn f_fnc_localGroupMarker;
 
  		["GrpAAF_IFV1",  7, "Pantera 1-1", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_IFV2",  7, "Pantera 1-2", "ColorRed"] spawn f_fnc_localGroupMarker;

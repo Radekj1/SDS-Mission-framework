@@ -106,9 +106,9 @@ _carbinemag = "CUP_20Rnd_762x51_FNFAL_M";
 _carbinemag_tr = "CUP_20Rnd_762x51_FNFAL_M";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "CUP_hgun_SA61";
-_smgmag = "CUP_20Rnd_B_765x17_Ball_M";
-_smgmag_tr = "CUP_20Rnd_B_765x17_Ball_M";
+_smg = "rhs_weap_aks74u";
+_smgmag = "rhs_30Rnd_545x39_AK";
+_smgmag_tr = "rhs_30Rnd_545x39_AK";
 
 // Siły specjalne
 _diverWepCaS = "arifle_min_rf_ak12_camo_grip";

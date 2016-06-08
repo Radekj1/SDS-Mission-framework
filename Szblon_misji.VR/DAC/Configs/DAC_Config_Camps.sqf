@@ -20,9 +20,9 @@ switch (_CampTyp) do
 //-------------------------------------------------------------------------------------------------------------------------
 	case 0:   // OPFOR - Obóz z namiotem i działem PLOT
 	{
-		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_Red_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_S60_RU",0,12,0,"min_rf_soldier"]];
+		_campStatic    = [["rhsgref_ins_Igla_AA_pod",0,12,0,"rhs_msv_engineer"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -36,7 +36,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_NATO_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_S60_RU",0,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campStatic    = [["RHS_Stinger_AA_pod_D",0,12,0,"usm_soldier_90s_w_h_rto"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -50,7 +50,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_S60_RU",0,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campStatic    = [["rhsgref_ins_g_ZU23",0,12,0,"CUP_I_TK_GUE_Soldier"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];
@@ -82,9 +82,9 @@ switch (_CampTyp) do
 	
 	case 4:		// OPFOR  HQ z 4 x wieża + 2 x moździerz    [big walls closed on N side large opening S side]
 	{
-		_campBasic     = ["Flag_CSAT_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
+		_campBasic     = ["Flag_Red_F",["Land_WaterTank_F",8,5,0],["Land_Cargo_HQ_V1_F",9,1,180],["Logic",8,-36,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["O_Mortar_01_F",0,12,0,"min_rf_soldier"],["O_Mortar_01_F",14,12,0,"min_rf_soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"rhs_msv_engineer"],["O_Mortar_01_F",14,12,0,"rhs_msv_engineer"]];
 		_campAddUnit   = [];
 		_campUserObj   = [
 			["Land_Cargo_Patrol_V1_F",-7,26,180],["Land_Cargo_Patrol_V1_F",25,26,180],["Land_Cargo_Patrol_V1_F",24,-23,270],["Land_Cargo_Patrol_V1_F",-9,-23,90],
@@ -122,7 +122,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_ZU23_RU",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campStatic    = [["Flag_NATO_F",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -133,9 +133,9 @@ switch (_CampTyp) do
 //-------------------------------------------------------------------------------------------------------------------------
 	case 7:  // OPFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU  
 	{
-		_campBasic     = ["Flag_CSAT_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_Red_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_ZU23_RU",0,12,0,"min_rf_soldier"],["O_Mortar_01_F",14,12,0,"min_rf_soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"rhs_msv_engineer"],["O_Mortar_01_F",14,12,0,"rhs_msv_engineer"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -148,7 +148,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["pook_ZU23_RU",0,12,0,"CUP_I_TK_GUE_Soldier"],["O_Mortar_01_F",14,12,0,"CUP_I_TK_GUE_Soldier"]];
+		_campStatic    = [["O_Mortar_01_F",0,12,0,"CUP_I_TK_GUE_Soldier"],["O_Mortar_01_F",14,12,0,"CUP_I_TK_GUE_Soldier"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -159,7 +159,7 @@ switch (_CampTyp) do
 	
 	case 9:   // OPFOR - Zwykły namiot + antena + ognisko
 	{
-		_campBasic     = ["Flag_CSAT_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
+		_campBasic     = ["Flag_Red_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
 		_campStatic    = [];
 		_campAddUnit   = [];

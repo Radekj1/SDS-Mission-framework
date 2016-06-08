@@ -794,8 +794,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
@@ -808,8 +808,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_attachments = [];
@@ -821,8 +821,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_attachments = [];
@@ -833,8 +833,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_attachments = [];
@@ -846,8 +846,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_attachments = [];
@@ -859,8 +859,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_attachments = [];
@@ -872,8 +872,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
+		//_unit addmagazines [_pistolmag,3];
+		//_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_attachments = [];
