@@ -207,7 +207,7 @@
 	_bagARm = "CUP_B_AlicePack_Khaki";			// Plecak dla RKM (średni)
 	_bagARb = "B_Carryall_cbr";            		// Plecak dla RKM (duży)
 	
-	_bagENG = "rhs_ins_demo";					// Plecak dla Mechanika
+	_bagENG = "B_Carryall_khk";					// Plecak dla Mechanika
 	
 	_bagR = "B_FieldPack_oli";					// Plecak dla strzelca, strzelca AT
 	
