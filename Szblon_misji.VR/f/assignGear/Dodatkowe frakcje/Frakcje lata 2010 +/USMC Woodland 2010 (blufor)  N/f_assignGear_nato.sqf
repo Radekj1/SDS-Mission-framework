@@ -58,6 +58,7 @@
 // Dodatki broń główna
 _attach1 = "rhsusf_acc_anpeq15_light";		// Latarka i laser (można przełączyć)
 _attach2 = "rhsusf_acc_anpeq15";			// Laser i latarka (można przełączyć)
+_attach3 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć)
 
 _silencer1 = "rhsusf_acc_nt4_tan";			// Tłumik 5.56 (długi)
 _silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki)
@@ -71,7 +72,7 @@ _bipod1 = "rhsusf_acc_harris_bipod";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach2,_scope3]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach3,_scope3]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -260,7 +261,7 @@ _SNrifleMag = "7Rnd_408_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "DemoCharge_Remote_Mag";
+_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 

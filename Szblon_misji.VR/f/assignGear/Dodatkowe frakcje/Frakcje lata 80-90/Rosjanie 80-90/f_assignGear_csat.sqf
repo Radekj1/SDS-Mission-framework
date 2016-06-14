@@ -96,19 +96,19 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "CUP_arifle_AK74";
-_riflemag = "CUP_30Rnd_545x39_AK_M";
-_riflemag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
+_rifle = "rhs_weap_ak74m_fullplum";
+_riflemag = "rhs_30Rnd_545x39_AK";
+_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "CUP_arifle_AKS74";
-_carbinemag = "CUP_30Rnd_545x39_AK_M";
-_carbinemag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
+_carbine = "rhs_weap_ak74m_plummag_folded";
+_carbinemag = "rhs_30Rnd_545x39_AK";
+_carbinemag_tr = "rhs_30Rnd_545x39_7N10_AK";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "CUP_arifle_AKS74U";
-_smgmag = "CUP_30Rnd_545x39_AK_M";
-_smgmag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
+_smg = "rhs_weap_aks74u";
+_smgmag = "rhs_30Rnd_545x39_AK";
+_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Siły specjalne
 _diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -119,20 +119,20 @@ _diverWepM = "arifle_min_rf_ak12_camo";
 _diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "CUP_arifle_AK74_GL";
-_glriflemag = "CUP_30Rnd_545x39_AK_M";
-_glriflemag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
-_glmag = "CUP_1Rnd_HE_GP25_M";
+_glrifle = "rhs_weap_ak74m_fullplum_gp25";
+_glriflemag = "rhs_30Rnd_545x39_AK";
+_glriflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_glmag = "rhs_VOG25";
 
 // Granaty dymne do granatnika
-_glsmokewhite = "CUP_1Rnd_SMOKE_GP25_M";
-_glsmokegreen = "CUP_1Rnd_SmokeGreen_GP25_M";
-_glsmokered = "CUP_1Rnd_SmokeRed_GP25_M";
+_glsmokewhite = "rhs_GRD40_White";
+_glsmokegreen = "rhs_GRD40_Green";
+_glsmokered = "rhs_GRD40_Red";
 
 // Flary do granatnika
-_glflarewhite = "CUP_IlumFlareRed_GP25_M";
-_glflarered = "CUP_IlumFlareRed_GP25_M";
-_glflaregreen = "CUP_IlumFlareRed_GP25_M";
+_glflarewhite = "rhs_VG40OP_white";
+_glflarered = "rhs_VG40OP_red";
+_glflaregreen = "rhs_VG40OP_green";
 
 // Pistolet (dla wszystkich klas)
 _pistol = "CUP_hgun_Makarov";
@@ -268,7 +268,7 @@ _SNrifleMag = "CUP_5Rnd_127x108_KSVK_M";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "CUP_PipeBomb_M";
+_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 
@@ -279,7 +279,7 @@ _APmine2 = "APERSMine_Range_Mag";
 // Definicja jaka klasa do jakiej frupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
-_light = [];
+_light = ["m"];
 _heavy =  ["eng","engm" ,"aar" , "ar" ];
 _diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
@@ -294,7 +294,7 @@ _baseHelmet = ["rhs_ssh68"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper","rhs_6b23_vydra_3m"];
+_lightRig = ["rhs_6b23_medic"];
 _mediumRig = ["rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper","rhs_6b23_vydra_3m"]; 	// default for all infantry classes
 _heavyRig = ["rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper","rhs_6b23_vydra_3m"];
 
