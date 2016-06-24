@@ -210,7 +210,7 @@ switch (_TypNumber) do
   case 18:
   {
     _Unit_Pool_S = ["CUP_O_sla_Crew", "CUP_O_sla_Pilot", "CUP_O_sla_Officer", "CUP_O_sla_Soldier_SL", "CUP_O_SLA_Spotter", "CUP_O_sla_Sniper", "CUP_O_sla_Soldier_AT", "CUP_O_sla_Soldier_LAT", "CUP_O_SLA_Soldier_Backpack", "CUP_O_sla_Soldier", "CUP_O_sla_Medic", "CUP_O_sla_Soldier_MG", "CUP_O_sla_Soldier_GL", "CUP_O_sla_Engineer", "CUP_O_sla_Soldier_AR", "CUP_O_sla_Soldier_AMG", "CUP_O_sla_Soldier_AAT"];
-    _Unit_Pool_V = ["CUP_O_Ural_ZU23_SLA", "CUP_O_BRDM2_SLA"];
+    _Unit_Pool_V = ["CUP_O_Ural_ZU23_SLA", "CUP_O_BRDM2_SLA", "CUP_O_BTR60_SLA"];
     _Unit_Pool_T = ["CUP_O_BMP2_SLA", "CUP_O_T72_SLA"];
     _Unit_Pool_A = ["CUP_O_Mi8_SLA_2", "CUP_O_Mi8_SLA_1"];
   };
@@ -221,7 +221,7 @@ switch (_TypNumber) do
   case 19:
   {
     _Unit_Pool_S = ["CUP_O_sla_Crew", "CUP_O_sla_Pilot", "CUP_O_sla_SpecOps_TL", "CUP_O_sla_SpecOps_MG", "CUP_O_sla_SpecOps_LAT", "CUP_O_sla_SpecOps_Demo", "CUP_O_sla_SpecOps"];
-    _Unit_Pool_V = ["CUP_O_Ural_ZU23_SLA", "CUP_O_BRDM2_SLA"];
+    _Unit_Pool_V = ["CUP_O_Ural_ZU23_SLA", "CUP_O_BRDM2_SLA", "CUP_O_BTR60_SLA"];
     _Unit_Pool_T = ["CUP_O_BMP2_SLA"];
     _Unit_Pool_A = ["CUP_O_Mi8_SLA_2", "CUP_O_Mi8_SLA_1"];
   };
@@ -232,7 +232,7 @@ switch (_TypNumber) do
   case 20:
   {
     _Unit_Pool_S = ["CUP_O_sla_Crew", "CUP_O_sla_Pilot", "CUP_O_Partisans_soldier_SL", "CUP_O_Partisans_Engineer", "CUP_O_Partisans_Soldier_AT", "CUP_O_Partisans_soldier_TTsKO", "CUP_O_Partisans_Medic", "CUP_O_Partisans_Soldier_MG", "CUP_O_sla_Miltia"];
-    _Unit_Pool_V = ["CUP_O_Ural_ZU23_SLA", "CUP_O_BRDM2_SLA"];
+    _Unit_Pool_V = ["CUP_O_Ural_ZU23_SLA", "CUP_O_BRDM2_SLA", "CUP_O_BTR60_SLA"];
     _Unit_Pool_T = ["CUP_O_BMP2_SLA", "CUP_O_T72_SLA"];
     _Unit_Pool_A = [];
   };
