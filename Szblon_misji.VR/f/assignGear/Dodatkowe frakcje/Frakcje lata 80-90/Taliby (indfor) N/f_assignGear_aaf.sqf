@@ -109,11 +109,11 @@
 	_carbine = "rhs_weap_akms";
 	_carbinemag = "rhs_30Rnd_762x39mm";
 	_carbinemag_tr = "rhs_30Rnd_762x39mm";
-	
+
 	// Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-	_smg = "CUP_arifle_AKS74U";
-	_smgmag = "CUP_30Rnd_545x39_AK_M";
-	_smgmag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
+	_smg = "rhs_weap_aks74u";
+	_smgmag = "rhs_30Rnd_545x39_AK";
+	_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 	
 	// Siły specjalne
 	//_diverWepCaS = "BWA3_G27";

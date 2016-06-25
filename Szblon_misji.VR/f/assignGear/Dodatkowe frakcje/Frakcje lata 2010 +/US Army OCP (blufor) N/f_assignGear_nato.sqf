@@ -126,10 +126,10 @@ _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
 // Flary do granatnika
-_glflarewhite = "UGL_FlareYellow_F";
-_glflarered = "UGL_FlareRed_F";
-_glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "UGL_FlareGreen_F";
+_glflarewhite = "CUP_1Rnd_StarFlare_White_M203";
+_glflarered = "CUP_1Rnd_StarFlare_Red_M203";
+_glflareyellow = "CUP_1Rnd_StarFlare_White_M203";
+_glflaregreen = "CUP_1Rnd_StarFlare_Green_M203";
 
 // Pistolet (dla wszystkich klas)
 _pistol = "rhsusf_weap_m1911a1";
