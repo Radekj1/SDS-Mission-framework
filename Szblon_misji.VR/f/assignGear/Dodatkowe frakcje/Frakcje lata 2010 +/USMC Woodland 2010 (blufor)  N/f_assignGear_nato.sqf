@@ -239,7 +239,7 @@ _DMriflemag = "rhsusf_20Rnd_762x51_m118_special_Mag";
 
 // Strzelec AT
 _RAT = "CUP_launch_M136";
-_RATmag = "ACE_PreloadedMissileDummy_CUP";
+_RATmag = "CUP_M136_M";
 
 // Strzelec MAT
 _MAT = "CUP_launch_Mk153Mod0";

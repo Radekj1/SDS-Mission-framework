@@ -249,7 +249,7 @@ _DMriflemag = "CUP_5Rnd_762x51_M24";
 
 // Strzelec AT
 _RAT = "CUP_launch_M136";
-_RATmag = "";
+_RATmag = "CUP_M136_M";
 
 // Strzelec MAT
 _MAT = "CUP_launch_Mk153Mod0";

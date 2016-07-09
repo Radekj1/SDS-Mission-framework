@@ -250,7 +250,7 @@
 	
 	// Strzelec AT
 	_RAT = "CUP_launch_RPG18";
-	_RATmag = "ACE_PreloadedMissileDummy_RPG18_CUP";
+	_RATmag = "CUP_RPG18_M";
 	
 	// Strzelec MAT
 	_MAT = "CUP_launch_RPG7V";

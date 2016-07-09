@@ -251,7 +251,7 @@ _DMriflemag = "20Rnd_762x51_Mag";
 
 // Strzelec AT
 _RAT = "CUP_launch_RPG18";
-_RATmag = "";
+_RATmag = "CUP_RPG18_M";
 
 // Strzelec MAT
 _MAT = "CUP_launch_RPG7V";
