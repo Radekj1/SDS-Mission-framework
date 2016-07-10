@@ -246,7 +246,7 @@ _MMGmag_tr = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
 
 // Strzelec AT
 _RAT = "CUP_launch_NLAW";
-_RATmag = "ACE_PreloadedMissileDummy_CUP";
+_RATmag = "CUP_NLAW_M";
 
 // Strzelec MAT
 _MAT = "CUP_launch_MAAWS";
