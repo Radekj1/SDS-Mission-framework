@@ -323,7 +323,7 @@ _ghillieGlasses = [];
 
 // Spec Opa
 _sfuniform = ["min_rf_pilot_overall"];
-_sfhelmet = ["H_PilotHelmetFighter_I"];
+_sfhelmet = ["rhs_zsh7a_alt"];
 _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
 
