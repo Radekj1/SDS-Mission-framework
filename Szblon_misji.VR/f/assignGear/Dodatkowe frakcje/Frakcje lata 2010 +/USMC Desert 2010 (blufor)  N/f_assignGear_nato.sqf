@@ -167,6 +167,7 @@ _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
+_Antena_RTO = "tfw_rf3080Item";
 
 // Noktowizja
 _nvg = "rhsusf_ANPVS_15";
@@ -183,8 +184,8 @@ _chemblue = "Chemlight_blue";
 // Backpacks
 _bagsmall = "B_Parachute";						// Spadochron
 
-_bagFTL = "tf_rt1523g_big_rhs";					// Plecak dla dowódcy (radio)
-_bagPP = "tf_rt1523g_big_rhs";                  // Plecak dla pilota (radio)
+_bagFTL = "tfw_ilbe_blade_d";					// Plecak dla dowódcy (radio)
+_bagPP = "tfw_ilbe_blade_d";                  	// Plecak dla pilota (radio)
 
 _bagTL = "B_Kitbag_cbr";						//Plecak dowódcy drużyny
 
@@ -207,7 +208,7 @@ _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "rhsusf_assault_eagleaiii_coy";	// Plecaki SF
 
-_baguav = "tf_rt1523g_big_rhs";					// Plecak RTO
+_baguav = "tfw_ilbe_d";							// Plecak RTO
 
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
@@ -929,6 +930,7 @@ switch (_typeofUnit) do
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
 	};
 			
  // LOADOUT: Dowódca sil specjalnych

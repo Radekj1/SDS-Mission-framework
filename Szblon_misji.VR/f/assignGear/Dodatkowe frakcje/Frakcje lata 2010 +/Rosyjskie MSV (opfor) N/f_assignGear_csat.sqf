@@ -73,7 +73,7 @@ _bipod1 = "bipod_02_F_hex";				// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_scope1,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_silencer1,_scope2,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -171,6 +171,7 @@ _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "rhs_pdu4";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
+_Antena_RTO = "tfw_rf3080Item";
 
 // Noktowizja
 _nvg = "NVGoggles_OPFOR";
@@ -322,7 +323,7 @@ _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // Spec Opa
-_sfuniform = ["min_rf_pilot_overall"];
+_sfuniform = ["rhs_uniform_df15"];
 _sfhelmet = ["rhs_zsh7a_alt"];
 _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
@@ -932,6 +933,7 @@ switch (_typeofUnit) do
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
 	};
 			
  // LOADOUT: Dowódca sil specjalnych

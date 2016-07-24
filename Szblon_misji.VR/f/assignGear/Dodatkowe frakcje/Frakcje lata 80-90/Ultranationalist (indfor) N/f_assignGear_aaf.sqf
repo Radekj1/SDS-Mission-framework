@@ -177,6 +177,8 @@
 	_lornetkaAM = "rhs_pdu4";
 	_lornetkaFTL = "Binocular";
 	_GPS = "ItemGPS";
+	_Antena_RTO = "tfw_rf3080Item";
+	
 	
 	// Noktowizja
 	_nvg = "NVGoggles";
@@ -316,14 +318,14 @@
 	_pilotGlasses = [];
 	
 	// JET Pilot
-	_sfuniform = ["U_I_pilotCoveralls"];
+	_sfuniform = ["rhs_uniform_df15"];
 	_sfhelmet = ["rhs_zsh7a"];
 	_sfRig = ["rhs_vest_commander"];
 	_sfGlasses = [];
 	
 	// Załoga pojazdu
 	_crewUniform = ["rhs_chdkz_uniform_1"];
-	_crewHelmet = ["rhs_tsh4"];
+	_crewHelmet = ["rhs_zsh7a_alt"];
 	_crewRig = ["rhs_6sh46"];
 	_crewGlasses = [];
 	
@@ -938,7 +940,8 @@ _crate = {
 		_unit linkItem _GPS; 
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
-        _unit addMagazines ["Laserbatteries",2];
+        _unit addMagazines ["Laserbatteries",2];		
+		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
 	};
 			
  // LOADOUT: Dowódca sil specjalnych

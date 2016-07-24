@@ -171,6 +171,7 @@ _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "rhs_pdu4";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
+_Antena_RTO = "tfw_rf3080Item";
 
 // Noktowizja
 _nvg = "ACE_NVG_Gen2";
@@ -323,8 +324,8 @@ _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // Spec Opa
-_sfuniform = ["min_rf_pilot_overall"];
-_sfhelmet = ["H_PilotHelmetFighter_I"];
+_sfuniform = ["rhs_uniform_df15_tan"];
+_sfhelmet = ["rhs_zsh7a_alt"];
 _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
 
@@ -935,6 +936,7 @@ switch (_typeofUnit) do
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
 	};
 			
  // LOADOUT: Dowódca sil specjalnych

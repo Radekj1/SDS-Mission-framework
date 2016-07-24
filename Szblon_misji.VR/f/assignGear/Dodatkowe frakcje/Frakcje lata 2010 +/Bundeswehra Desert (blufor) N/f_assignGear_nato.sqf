@@ -177,6 +177,7 @@ _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "BWA3_Vector";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
+_Antena_RTO = "tfw_rf3080Item";
 
 // Noktowizja
 _nvg = "NVGoggles";
@@ -938,6 +939,7 @@ switch (_typeofUnit) do
         _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
 	};
 			
  // LOADOUT: Dowódca sil specjalnych
