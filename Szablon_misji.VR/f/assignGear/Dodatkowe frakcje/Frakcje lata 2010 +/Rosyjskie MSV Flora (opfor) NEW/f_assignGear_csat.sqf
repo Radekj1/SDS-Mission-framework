@@ -110,12 +110,12 @@ _smgmag = "rhs_30Rnd_545x39_AK";
 _smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Siły specjalne
-_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
-_diverMagCaS = "30Rnd_min_rf_545x39_mag";
-_diverWepR = "arifle_min_rf_ak12_camo_grip";
-_diverMagR = "30Rnd_min_rf_545x39_mag";
-_diverWepM = "arifle_min_rf_ak12_camo";
-_diverMagM = "30Rnd_min_rf_545x39_mag";
+//_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
+//_diverMagCaS = "30Rnd_min_rf_545x39_mag";
+//_diverWepR = "arifle_min_rf_ak12_camo_grip";
+//_diverMagR = "30Rnd_min_rf_545x39_mag";
+//_diverWepM = "arifle_min_rf_ak12_camo";
+//_diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_ak74m_gp25";
@@ -231,9 +231,9 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Strzelec RKM
-_AR = "CUP_arifle_RPK74M";
-_ARmag = "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
-_ARmag_tr = "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+_AR = "rhs_weap_pkm";
+_ARmag = "rhs_100Rnd_762x54mmR";
+_ARmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkp";
@@ -245,17 +245,17 @@ _DMrifle = "rhs_weap_svdp_wd";
 _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
-_RAT = "CUP_launch_RPG18";
-_RATmag = "CUP_RPG18_M";
+_RAT = "rhs_weap_rpg26";
+_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
-_MAT = "CUP_launch_RPG7V";
-_MATmag1 = "CUP_PG7V_M";
-_MATmag2 = "CUP_PG7VM_M";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VR_mag";
 
 // Strzelec AA
-_SAM = "CUP_launch_Igla";
-_SAMmag = "CUP_Igla_M";
+_SAM = "rhs_weap_igla";
+_SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
 _HAT = "launch_O_Titan_short_F";
@@ -634,7 +634,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addweapon _MAT;
-		_unit addSecondaryWeaponItem "CUP_optic_PGO7V3";
+		_unit addSecondaryWeaponItem "rhs_acc_pgo7v";
 		["matg"] call _backpack;
 	};
 
