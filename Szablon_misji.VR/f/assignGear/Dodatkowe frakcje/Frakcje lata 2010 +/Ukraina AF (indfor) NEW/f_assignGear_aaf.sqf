@@ -73,7 +73,7 @@ _bipod1 = "bipod_02_F_hex";				// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_scope2,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_silencer1,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -286,15 +286,15 @@ _ghillie = ["sn","sp"];
 _specOp = [ "ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposarzenia są losowo wybierane z listy    
 _baseUniform = ["LOP_U_UKR_Fatigue_TanMTP","LOP_U_UKR_Fatigue_DPMWDPMD","LOP_U_UKR_Fatigue_Digit","LOP_U_UKR_Fatigue_IzlomTTsKO","LOP_U_UKR_Fatigue_Flec"];
 _baseHelmet = ["LOP_H_6B27M_ess_MTP","LOP_H_SSh68Helmet_OLV","LOP_H_6B27M_Izlom","LOP_H_6B27M_ess_Digit","LOP_H_Beanie_marpat","LOP_H_Beanie_flec"];
 _baseGlasses = [];
 
 // Kamizelki
 _lightRig = ["LOP_V_6B23_Medic_TTKO"];
-_mediumRig = ["LOP_V_6B23_6Sh92_TAN_DMPi","LOP_V_6B23_6Sh92_TTKO_OLV","rhs_6b23_6sh92_vog_headset","LOP_V_6B23_CrewOfficer_TTKO","LOP_V_6B23_Medic_TTKO","LOP_V_6B23_6Sh92_TAN_ACU"]; 	// default for all infantry classes
-_heavyRig = ["LOP_V_6B23_6Sh92_TAN_DMPi","LOP_V_6B23_6Sh92_TTKO_OLV","rhs_6b23_6sh92_vog_headset","LOP_V_6B23_CrewOfficer_TTKO","LOP_V_6B23_Medic_TTKO","LOP_V_6B23_6Sh92_TAN_ACU"];
+_mediumRig = ["LOP_V_6B23_6Sh92_TAN_DMPi","LOP_V_6B23_6Sh92_TTKO_OLV","rhs_6b23_6sh92_vog_headset","LOP_V_6B23_6Sh92_TAN_ACU","LOP_V_6B23_6Sh92_TTKO","LOP_V_6B23_6Sh92_OLV","rhs_6b23_6sh92"]; 	// default for all infantry classes
+_heavyRig = ["LOP_V_6B23_6Sh92_TAN_DMPi","LOP_V_6B23_6Sh92_TTKO_OLV","rhs_6b23_6sh92_vog_headset","LOP_V_6B23_6Sh92_TAN_ACU","LOP_V_6B23_6Sh92_TTKO","LOP_V_6B23_6Sh92_OLV","rhs_6b23_6sh92"];
 
 // Siły specjalne
 _diverUniform =  ["U_O_Wetsuit"];
