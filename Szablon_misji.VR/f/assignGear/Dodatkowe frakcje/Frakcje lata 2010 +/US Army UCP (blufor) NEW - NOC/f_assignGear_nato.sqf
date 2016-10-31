@@ -370,7 +370,7 @@ if (_isMan) then {
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-	//_unit linkItem _nvg;			// Dodanie noktowizji
+	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
     _unit addItem _bandage;
@@ -388,7 +388,7 @@ if (_isMan) then {
 	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
-	//_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -409,7 +409,7 @@ _backpack = {
 	_loadout = f_param_backpacks;
 	_loadout_night_day = f_param_night_day_wyp;
 	if (count _this > 1) then {_loadout = _this select 1};
-	//if (count _this > 1) then {_loadout_night_day = _this select 1};
+	if (count _this > 1) then {_loadout_night_day = _this select 1};
 	switch (_typeofBackPack) do
 	{
 		#include "f_assignGear_nato_b.sqf";
@@ -444,7 +444,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -454,12 +454,6 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
-		
-		if(_loadout_night_day == 0) then 
-		{
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		};
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -468,7 +462,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -478,12 +472,6 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
-		
-		if(_loadout_night_day == 0) then 
-		{
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		};
 	};
 
 // LOADOUT: MEDIC
@@ -507,7 +495,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenadeblue,2];
@@ -516,12 +504,6 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["g"] call _backpack;
-		
-		if(_loadout_night_day == 0) then 
-		{
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		};
 	};
 
 

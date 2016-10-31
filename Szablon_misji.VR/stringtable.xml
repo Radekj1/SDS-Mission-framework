@@ -89,42 +89,46 @@
         <Spanish> Noche </Spanish>
         <French> Nuit </French>
       </Key>
+	  <Key ID="STR_f_param_timeOfDay_Option8">
+        <English> Use mission settings </English>
+		<Polish> Użyj ustawien misji </Polish>
+      </Key>
       <Key ID="STR_f_param_weather">
         <English> Weather </English>
         <Polish> Pogoda </Polish>
 	<French> Météo </English>
       </Key>
       <Key ID="STR_f_param_weather_Option0">
-        <English> Clear (Calm)</English>
-        <Polish> Bezchmurna (bez wiatru)</Polish>
+        <English> Clear </English>
+        <Polish> Bezchmurna </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option1">
-        <English> Clear (Light Winds)</English>
-        <Polish> Bezchmurna (lekki wiatr)</Polish>
+        <English> Cloudy </English>
+        <Polish> Pochmurno </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option2">
-        <English> Clear (Strong Winds)</English>
-        <Polish> Bezchmurna (silny wiatr)</Polish>
+        <English> Mostly Cloudy </English>
+        <Polish> Duże zachmurzenie </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option3">
-        <English> Overcast (Calm)</English>
-        <Polish> Zachmurzenia (bez wiatru)</Polish>
+        <English> Overcast </English>
+        <Polish> Zachmurzenie </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option4">
-        <English> Overcast (Light Winds)</English>
-        <Polish> Zachmurzenia (lekki waitr)</Polish>
+        <English> Foggy </English>
+        <Polish> Mglisto </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option5">
-        <English> Overcast (Strong Winds)</English>
-        <Polish> Zachmurzenia (silny wiatr)</Polish>
+        <English> Showers </English>
+        <Polish> Deszczyk </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option6">
-        <English> Rain (Light Winds)</English>
-        <Polish> Deszcz (lekki wiatr)</Polish>
+        <English> Rain </English>
+        <Polish> Deszcz </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option7">
-        <English> Rain (Strong Winds)</English>
-        <Polish> Deszcz (silny wiatr)</Polish>
+        <English> Heavy Rain </English>
+        <Polish> Mocny Deszcz </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option8">
         <English> Storm </English>
@@ -134,6 +138,10 @@
         <Russian> Гроза </Russian>
         <Spanish> Tormenta </Spanish>
         <French> Averse </French>
+      </Key>
+	   <Key ID="STR_f_param_weather_Option11">
+        <English> Use mission setting </English>
+		 <Polish> Użyj ustawien misji </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option9">
         <English> Light Fog </English>
