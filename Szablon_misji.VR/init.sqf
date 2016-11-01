@@ -102,6 +102,13 @@ f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf"
 
 // ====================================================================================
 
+// F3 - F3 Mission Conditions Selector
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+f_script_setMissionConditions = [] execVM "f\missionConditions\f_setMissionConditions.sqf";
+
+// ====================================================================================
+
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
@@ -231,5 +238,20 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 // ====================================================================================
 
 [] execVM "f\Safezone\cleanup.sqf";
+
+// ====================================================================================
+
+///////////////////////////>>>>> FLARY <<<<<///////////////////////////
+
+if ((!isServer) && (player != player)) then {waitUntil {player == player};};
+
+
+al_flare_intensity = 25;
+publicvariable "al_flare_intensity";
+
+al_flare_range = 400;
+publicvariable "al_flare_range";
+
+player addEventHandler ["Fired",{private ["_al_flare"]; _al_flare = _this select 6;[[[_al_flare],"f\flare_fix\al_flare_enhance.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;}];
 
 // ====================================================================================
