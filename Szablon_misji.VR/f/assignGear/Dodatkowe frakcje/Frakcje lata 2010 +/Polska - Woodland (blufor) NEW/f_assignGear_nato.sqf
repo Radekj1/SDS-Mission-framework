@@ -61,7 +61,7 @@
 
 // Dodatki broń główna
 //_attach1 = "CUP_acc_ANPEQ_15";				// Laser
-_attach2 = "acc_flashlight";				// Latarka
+_attach2 = "rhsusf_acc_M952V";				// Latarka
 _attach3 = "acc_pointer_IR";				// czerwony laser
 
 _silencer1 = "muzzle_snds_M";				// Tłumik 5.56 (długi)
@@ -238,9 +238,9 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "hlc_rifle_RPK12";
+_ARmag = "hlc_60Rnd_545x39_t_rpk";
+_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
 
 // Strzelec MMG
 _MMG = "PSZ_PKM";
