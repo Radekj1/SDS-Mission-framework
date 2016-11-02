@@ -16,16 +16,16 @@ _al_flare = _this select 0;
 if ((typeOf _al_flare) in _type_flares) then {
 	
 switch (typeOf _al_flare) do {
-    case "F_40mm_White": { hint "White Flare";_al_color_flare = [0.7,0.7,0.8]};
-    case "F_40mm_Red": { /*hint "Red Flare";*/_al_color_flare = [0.7,0.15,0.1] };
-    case "F_40mm_Yellow": {/* hint "Yellow Flare";*/_al_color_flare = [0.7,0.7,0] };
-    case "F_40mm_Green": { /*hint "Green Flare";*/_al_color_flare = [0.2,0.7,0.2] };
+    case "F_40mm_White": { hint "White Flare"; _al_color_flare = [0.7,0.7,0.8]};
+    case "F_40mm_Red": { /*hint "Red Flare";*/ _al_color_flare = [0.7,0.15,0.1] };
+    case "F_40mm_Yellow": {/* hint "Yellow Flare";*/ _al_color_flare = [0.7,0.7,0] };
+    case "F_40mm_Green": { /*hint "Green Flare";*/ _al_color_flare = [0.2,0.7,0.2] };
 
 	//RHS GP
-    case "rhs_40mm_white": { hint "White Flare";_al_color_flare = [0.7,0.7,0.8]};
-    case "rhs_40mm_red": { hint "Red Flare";_al_color_flare = [0.7,0.15,0.1] };
-    case "rhs_40mm_Yellow": {/* hint "Yellow Flare";*/_al_color_flare = [0.7,0.7,0] };
-    case "rhs_40mm_green": { /*hint "Green Flare";*/_al_color_flare = [0.2,0.7,0.2] };
+    case "rhs_40mm_white": { /*hint "White Flare";*/ _al_color_flare = [0.7,0.7,0.8]};
+    case "rhs_40mm_red": { /*hint "Red Flare";*/ _al_color_flare = [0.7,0.15,0.1] };
+    case "rhs_40mm_Yellow": {/* hint "Yellow Flare";*/ _al_color_flare = [0.7,0.7,0] };
+    case "rhs_40mm_green": { /*hint "Green Flare";*/ _al_color_flare = [0.2,0.7,0.2] };
 	
 };
 

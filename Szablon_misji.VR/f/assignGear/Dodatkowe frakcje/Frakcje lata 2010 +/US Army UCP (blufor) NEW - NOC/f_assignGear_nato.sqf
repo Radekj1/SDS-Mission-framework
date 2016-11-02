@@ -184,7 +184,7 @@ _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
-_lornetkaRTO = "Laserdesignator_03";
+_lornetkaRTO = "Laserdesignator";
 _GPS = "ItemGPS";
 _Antena_RTO = "tfw_rf3080Item";
 

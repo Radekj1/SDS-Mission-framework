@@ -249,7 +249,7 @@ if ((!isServer) && (player != player)) then {waitUntil {player == player};};
 al_flare_intensity = 25;
 publicvariable "al_flare_intensity";
 
-al_flare_range = 400;
+al_flare_range = 450;
 publicvariable "al_flare_range";
 
 player addEventHandler ["Fired",{private ["_al_flare"]; _al_flare = _this select 6;[[[_al_flare],"f\flare_fix\al_flare_enhance.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;}];
