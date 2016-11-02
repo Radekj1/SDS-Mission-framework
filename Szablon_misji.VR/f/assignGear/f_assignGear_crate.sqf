@@ -79,7 +79,8 @@
 		_unit addMagazineCargoGlobal [_MMGmag, 10];
 		_unit addMagazineCargoGlobal [_MATmag1, 6];
 		_unit addMagazineCargoGlobal [_MATmag2, 4];
-		_unit addMagazineCargoGlobal ["CUP_PipeBomb_M", 6];
+		_unit addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 6];
+		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
 		_unit addItemCargoGlobal ["ACE_Clacker", 2];
 		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
 		_unit addBackpackCargoGlobal [_bagENG,4];
@@ -235,5 +236,54 @@
 		_unit addMagazineCargoGlobal [_HATmag1,20];
 		
 	};
+	
+// CRATE: Skrzynka, zasoby NOCNE
+	case "crate_night_small":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_glflarewhite,20];
+		_unit addMagazineCargoGlobal [_glflarered,20];
+		_unit addMagazineCargoGlobal [_glflareyellow,20];
+		_unit addMagazineCargoGlobal [_glflaregreen,20];		
+		_unit addMagazineCargoGlobal [_flarewhite,20];
+		_unit addMagazineCargoGlobal [_flarered,20];
+		_unit addMagazineCargoGlobal [_flareyellow,20];
+		_unit addMagazineCargoGlobal [_flaregreen,20];		
+		_unit addMagazineCargoGlobal [_chemgreen,20];
+		_unit addMagazineCargoGlobal [_chemred,20];
+		_unit addMagazineCargoGlobal [_chemyellow,20];
+		_unit addMagazineCargoGlobal [_chemblue,20];		
+		_unit addItemCargoGlobal [_IRstrobe,20];	
+				
+	};
+	
+// CRATE: Skrzynka, zasoby NOCNE
+	case "crate_night_big":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_glflarewhite,40];
+		_unit addMagazineCargoGlobal [_glflarered,40];
+		_unit addMagazineCargoGlobal [_glflareyellow,40];
+		_unit addMagazineCargoGlobal [_glflaregreen,40];		
+		_unit addMagazineCargoGlobal [_flarewhite,40];
+		_unit addMagazineCargoGlobal [_flarered,40];
+		_unit addMagazineCargoGlobal [_flareyellow,40];
+		_unit addMagazineCargoGlobal [_flaregreen,40];		
+		_unit addMagazineCargoGlobal [_chemgreen,40];
+		_unit addMagazineCargoGlobal [_chemred,40];
+		_unit addMagazineCargoGlobal [_chemyellow,40];
+		_unit addMagazineCargoGlobal [_chemblue,40];		
+		_unit addItemCargoGlobal [_IRstrobe,40];
+				
+	};
+	
+	
+	
 	
 	

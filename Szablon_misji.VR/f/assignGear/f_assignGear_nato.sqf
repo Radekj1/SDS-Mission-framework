@@ -126,31 +126,11 @@ _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
 _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
-////////////////////////////////////////
-/////////////// NOCNE //////////////////
-////////////////////////////////////////
-
 // Flary do granatnika
 _glflarewhite = "3Rnd_UGL_FlareWhite_F";
 _glflarered = "3Rnd_UGL_FlareRed_F";
 _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
-
-_flarewhite = "ACE_HandFlare_White";
-_flarered = "ACE_HandFlare_Red";
-_flareyellow = "ACE_HandFlare_Yellow";
-_flaregreen = "ACE_HandFlare_Green";
-
-// Świetliki
-_chemgreen =  "Chemlight_green";
-_chemred = "Chemlight_red";
-_chemyellow =  "Chemlight_yellow";
-_chemblue = "Chemlight_blue";
-
-// Noktowizja
-_nvg = "rhsusf_ANPVS_15";
-
-////////////////////////////////////////
 
 // Pistolet (dla wszystkich klas)
 _pistol = "rhsusf_weap_m1911a1";
@@ -186,9 +166,17 @@ _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 _Antena_RTO = "tfw_rf3080Item";
 
+// Noktowizja
+_nvg = "rhsusf_ANPVS_15";
+
 // Terminal UAV
 _uavterminal = "B_UavTerminal";	  // Dla BLUFORU musi być terminal BLUFORU, innej frakcji nie zadziała
 
+// Świetliki
+_chemgreen =  "Chemlight_green";
+_chemred = "Chemlight_red";
+_chemyellow =  "Chemlight_yellow";
+_chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_Parachute";						// Spadochron
@@ -370,7 +358,7 @@ if (_isMan) then {
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-	//_unit linkItem _nvg;			// Dodanie noktowizji
+	_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
     _unit addItem _bandage;
@@ -388,7 +376,7 @@ if (_isMan) then {
 	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
-	//_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -409,7 +397,7 @@ _backpack = {
 	_loadout = f_param_backpacks;
 	_loadout_night_day = f_param_night_day_wyp;
 	if (count _this > 1) then {_loadout = _this select 1};
-	//if (count _this > 1) then {_loadout_night_day = _this select 1};
+	if (count _this > 1) then {_loadout_night_day = _this select 1};
 	switch (_typeofBackPack) do
 	{
 		#include "f_assignGear_nato_b.sqf";
@@ -444,7 +432,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -454,12 +442,6 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
-		
-		if(_loadout_night_day == 0) then 
-		{
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		};
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -468,7 +450,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -478,12 +460,6 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
-		
-		if(_loadout_night_day == 0) then 
-		{
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		};
 	};
 
 // LOADOUT: MEDIC
@@ -507,7 +483,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenadeblue,2];
@@ -516,12 +492,6 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["g"] call _backpack;
-		
-		if(_loadout_night_day == 0) then 
-		{
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		};
 	};
 
 
@@ -1177,26 +1147,6 @@ switch (_typeofUnit) do
 
 // END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 };
-
-//////////////////////////////////////////////////////
-////////////////////// NOCNE /////////////////////////
-//////////////////////////////////////////////////////
-
-	_loadout_night_day = f_param_night_day_wyp;
-		
-	if (_loadout_night_day == 0) then {
-	
-		_unit linkItem _nvg;			// Dodanie noktowizji
-		_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
-		_unit addItem _IRstrobe;		
-	
-		
-		(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
-		(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
-		(unitBackpack _unit) addItemCargoGlobal [_flarewhite,2];
-	};
-	
-//////////////////////////////////////////////////////	
 
 // ====================================================================================
 
