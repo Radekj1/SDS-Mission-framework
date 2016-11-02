@@ -928,7 +928,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
 		_unit linkItem _GPS; 
-        _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+        _unit addWeapon "Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
@@ -947,7 +947,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+		_unit addWeapon "Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;
 	};

@@ -61,7 +61,7 @@
 
 // Dodatki broń główna
 //_attach1 = "CUP_acc_ANPEQ_15";				// Laser
-_attach2 = "acc_flashlight";				// Latarka
+_attach2 = "rhsusf_acc_M952V";				// Latarka
 _attach3 = "acc_pointer_IR";				// czerwony laser
 
 _silencer1 = "muzzle_snds_M";				// Tłumik 5.56 (długi)
@@ -238,9 +238,9 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "rhs_weap_pkm";
-_ARmag = "rhs_100Rnd_762x54mmR";
-_ARmag_tr = "rhs_100Rnd_762x54mmR_green";
+_AR = "hlc_rifle_RPK12";
+_ARmag = "hlc_60Rnd_545x39_t_rpk";
+_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
 
 // Strzelec MMG
 _MMG = "PSZ_PKM";
@@ -939,7 +939,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
 		_unit linkItem _GPS; 
-        _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+        _unit addWeapon "Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
@@ -958,7 +958,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+		_unit addWeapon "Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;
 	};
