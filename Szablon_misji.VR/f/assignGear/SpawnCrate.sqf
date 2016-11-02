@@ -57,7 +57,7 @@ if(_mycrate != "") then
 	_unit setPos _respawnPos;
     [_typeofCrate,_unit,_faction] call f_fnc_assignGear;
 	
-	hint format["You have spawned a %1",_mycrate];
+	//hint format["You have spawned a %1",_mycrate];
 };
 
 // przyklad inicjalizacji ( wpisac w pole init obiektu ) :
