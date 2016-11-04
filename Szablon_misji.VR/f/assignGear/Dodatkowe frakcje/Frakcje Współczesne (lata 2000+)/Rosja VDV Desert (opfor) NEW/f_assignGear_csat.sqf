@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Rosja MSV Las
+// F3 - Folk ARPS Assign Gear Script - Rosja VDV Pustynia
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -151,6 +151,15 @@ _flarered = "ACE_HandFlare_Red";
 _flareyellow = "ACE_HandFlare_Yellow";
 _flaregreen = "ACE_HandFlare_Green";
 
+// Świetliki
+_chemgreen =  "Chemlight_green";
+_chemred = "Chemlight_red";
+_chemyellow =  "Chemlight_yellow";
+_chemblue = "Chemlight_blue";
+
+// Noktowizja
+_nvg = "NVGoggles_OPFOR";
+
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
@@ -173,17 +182,8 @@ _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 _Antena_RTO = "tfw_rf3080Item";
 
-// Noktowizja
-_nvg = "NVGoggles_OPFOR";
-
 // UAV Terminal
 _uavterminal = "O_UavTerminal";
-
-// Świetliki
-_chemgreen =  "Chemlight_green";
-_chemred = "Chemlight_red";
-_chemyellow =  "Chemlight_yellow";
-_chemblue = "Chemlight_blue";
 
 // Plecaki
 _bagsmall = "B_Parachute";		         		// Parachute
@@ -230,13 +230,13 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
-/// Strzelec RKM
+// Strzelec RKM
 _AR = "hlc_rifle_rpk";
 _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Strzelec MMG
-_MMG = "rhs_weap_pkm";
+_MMG = "rhs_weap_pkp";
 _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
@@ -289,14 +289,14 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_flora_patchless"];
-_baseHelmet = ["rhs_6b27m_green","rhs_6b27m_green_ess","rhs_6b27m","rhs_6b27m_ess"];
+_baseUniform = ["rhs_uniform_vdv_emr_des"];
+_baseHelmet = ["rhs_6b28_green","rhs_6b28_ess","rhs_6b28","rhs_6b28_green_ess"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_medic"];
-_mediumRig = ["rhs_6b13_Flora_6sh92","rhs_6b13_Flora_6sh92_headset_mapcase","rhs_6b13_Flora_6sh92_radio","rhs_6b13_Flora_6sh92_vog"]; 	// default for all infantry classes
-_heavyRig =  ["rhs_6b13_Flora_6sh92","rhs_6b13_Flora_6sh92_headset_mapcase","rhs_6b13_Flora_6sh92_radio","rhs_6b13_Flora_6sh92_vog"];
+_lightRig = ["rhs_6b23_digi_medic"];
+_mediumRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"]; 	// default for all infantry classes
+_heavyRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"];
 
 // Siły specjalne
 _diverUniform =  ["U_O_Wetsuit"];
@@ -305,7 +305,7 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_df15"];
+_pilotUniform = ["rhs_uniform_df15_tan"];
 _pilotHelmet = ["rhs_zsh7a_mike","rhs_zsh7a","rhs_gssh18"];
 _pilotRig = ["rhs_vest_commander"];
 _pilotGlasses = [];
@@ -323,7 +323,7 @@ _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // Spec Opa
-_sfuniform = ["rhs_uniform_df15"];
+_sfuniform = ["rhs_uniform_df15_tan"];
 _sfhelmet = ["rhs_zsh7a_alt"];
 _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
@@ -381,7 +381,7 @@ if (_isMan) then {
 	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
-	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+	//_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompasu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -409,6 +409,7 @@ _backpack = {
 	};
 };
 
+
 // SETUP CRATE
 _crate = {
 	_typeofCrate = _this select 0;
@@ -417,6 +418,7 @@ _crate = {
 		#include "f_assignGear_crate.sqf";
 	};
 };
+
 
 // ====================================================================================
 
@@ -1130,9 +1132,19 @@ switch (_typeofUnit) do
 		["crate_hat"] call _crate;
 	};
 	
-//////////////////////////////////////////////////////	
-//////////////////////////////////////////////////////
-
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_small":
+	{
+		["crate_night_small"] call _crate;
+	};
+	
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_big":
+	{
+		["crate_night_big"] call _crate;
+	};
+	
+// ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
@@ -1151,6 +1163,39 @@ switch (_typeofUnit) do
 // END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 };
 
+// ====================================================================================
+// Dodanie nocnego wyposażenia
+
+	_loadout_night_day = f_param_night_day_wyp;
+		
+	if (_loadout_night_day == 0) then {
+	
+		if(_typeofUnit != "ps") then {
+		
+			//_unit linkItem _nvg;			// Dodanie noktowizji
+			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+			_unit addItem _IRstrobe;		
+		
+			
+			(unitBackpack _unit) addItemCargoGlobal [_chemred,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
+		};
+		
+		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
+		
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		
+		};
+		
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+		
+		_unit linkItem _nvg;			// Dodanie noktowizji
+		
+		};
+	};
+	
 // ====================================================================================
 
 // If this is an ammobox, check medical component settings and if needed run converter script.

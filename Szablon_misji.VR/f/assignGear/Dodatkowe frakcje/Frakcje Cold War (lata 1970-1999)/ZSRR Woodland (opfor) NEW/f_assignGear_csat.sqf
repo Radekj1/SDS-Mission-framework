@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Ruscy 80/90 MSV
+// F3 - Folk ARPS Assign Gear Script - ZSRR WOODLAND
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -146,10 +146,20 @@ _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadered = "SmokeShellRed";
 _smokegrenadeblue = "SmokeShellBlue";
 
+// Flary ręczne
 _flarewhite = "ACE_HandFlare_White";
 _flarered = "ACE_HandFlare_Red";
 _flareyellow = "ACE_HandFlare_Yellow";
 _flaregreen = "ACE_HandFlare_Green";
+
+// Świetliki
+_chemgreen =  "Chemlight_green";
+_chemred = "Chemlight_red";
+_chemyellow =  "Chemlight_yellow";
+_chemblue = "Chemlight_blue";
+
+// Noktowizja
+_nvg = "ACE_NVG_Gen2";
 
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
@@ -173,18 +183,8 @@ _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 _Antena_RTO = "tfw_rf3080Item";
 
-// Noktowizja
-_nvg = "ACE_NVG_Gen2";
-
 // UAV Terminal
 _uavterminal = "O_UavTerminal";
-
-// Świetliki
-_chemgreen =  "Chemlight_green";
-_chemred = "Chemlight_red";
-_chemyellow =  "Chemlight_yellow";
-_chemblue = "Chemlight_blue";
-
 
 // Plecaki
 _bagsmall = "B_Parachute";		         		// Parachute
@@ -311,6 +311,12 @@ _pilotHelmet = ["rhs_zsh7a_mike","rhs_gssh18"];
 _pilotRig = ["rhs_vest_commander"];
 _pilotGlasses = [];
 
+// Jet Pilot
+_sfuniform = ["rhs_uniform_df15"];
+_sfhelmet = ["rhs_zsh7a_alt"];
+_sfRig = ["V_Rangemaster_belt"];
+_sfGlasses = [];
+
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_flora_patchless_alt"];
 _crewHelmet = ["rhs_tsh4"];
@@ -322,13 +328,6 @@ _ghillieUniform = ["U_O_GhillieSuit"]; //DLC alternatives: ["U_O_FullGhillie_lsh
 _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
-
-// Spec Opa
-_sfuniform = ["rhs_uniform_df15"];
-_sfhelmet = ["rhs_zsh7a_alt"];
-_sfRig = ["V_Rangemaster_belt"];
-_sfGlasses = [];
-
 
 // ====================================================================================
 
@@ -1133,10 +1132,19 @@ switch (_typeofUnit) do
 		["crate_hat"] call _crate;
 	};
 	
-//////////////////////////////////////////////////////	
-//////////////////////////////////////////////////////
-
-
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_small":
+	{
+		["crate_night_small"] call _crate;
+	};
+	
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_big":
+	{
+		["crate_night_big"] call _crate;
+	};
+	
+// ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
@@ -1155,6 +1163,39 @@ switch (_typeofUnit) do
 // END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 };
 
+// ====================================================================================
+// Dodanie nocnego wyposażenia
+
+	_loadout_night_day = f_param_night_day_wyp;
+		
+	if (_loadout_night_day == 0) then {
+	
+		if(_typeofUnit != "ps") then {
+		
+			//_unit linkItem _nvg;			// Dodanie noktowizji
+			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+			_unit addItem _IRstrobe;		
+		
+			
+			(unitBackpack _unit) addItemCargoGlobal [_chemred,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
+		};
+		
+		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
+		
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		
+		};
+		
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+		
+		_unit linkItem _nvg;			// Dodanie noktowizji
+		
+		};
+	};
+	
 // ====================================================================================
 
 // If this is an ammobox, check medical component settings and if needed run converter script.
