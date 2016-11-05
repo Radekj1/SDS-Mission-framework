@@ -14,9 +14,8 @@ if (!isServer) exitWith {};
 
 [f_param_weather,f_param_fog == 4,f_param_wind == 4] call f_fnc_setWeather;
 
-	if (f_param_weather == 10) then {
-		
-		
+if (f_param_snow != 0) then {
+	
 		_name_terr = worldName;
 
 		if (_name_terr=="Altis" or _name_terr=="Stratis" or _name_terr=="Tanoa") then {
@@ -28,29 +27,9 @@ if (!isServer) exitWith {};
 		};
 		
 		[[[player],"f\missionConditions\fn_SetSnow.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;
-		{[[[_x],"f\missionConditions\snow_breath.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;sleep 0.5} forEach allUnits;
-		
-			//{[[[_x],"AL_snowstorm\snow_breath.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;sleep 0.5} forEach allUnits;
-		
-		
-		
-		
-		//[[[player],"f\missionConditions\snow_breath.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;
-		
-		
-		
-		//["f\missionConditions\fn_SetSnow.sqf","hint",true,true] call BIS_fnc_MP;
-		//"f\missionConditions\fn_SetSnow.sqf" spawn BIS_fnc_MP;
-		//"f\missionConditions\fn_SetSnow.sqf" call BIS_fnc_execVM;
-		
-		
-		//{[[[_x],"f\missionConditions\fn_SetSnow.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;sleep 0.5} forEach allUnits;
-		
-		
-		//[_this] call f_fnc_setSnow;
-	};
-
-//[f_param_weather == 10] call f_fnc_setSnow;
+		{[[[_x],"f\missionConditions\snow_breath.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;sleep 0.5} forEach allUnits;	
+	
+};
 
 if (f_param_fog != 4) then {
 	[f_param_fog] call f_fnc_setFog;

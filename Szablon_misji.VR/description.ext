@@ -203,9 +203,18 @@ class Params
 	class f_param_weather
 	{
 		title = "$STR_f_param_weather";
-		values[] = {0,1,2,3,4,5,6,7,8,9,10};
-		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8,$STR_f_param_weather_Option11,Snow};
+		values[] = {0,1,2,3,4,5,6,7,8,9};
+		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8,$STR_f_param_weather_Option11};
 		default = 1;
+	};
+	
+	class f_param_snow
+	{
+		title = "$STR_f_param_snow";
+		values[] = {0,1,2,3};
+		texts[] = {$STR_f_param_snow_Option0,$STR_f_param_snow_Option1,$STR_f_param_snow_Option2,$STR_f_param_snow_Option3};
+		default = 0;
+		code = "f_param_snow = %1";
 	};
 
 	class f_param_fog
@@ -393,6 +402,7 @@ class CfgFunctions
 			file = "f\missionConditions";
 			class SetTime{};
 			class SetFog{};
+			class SetSnow{};
 			class SetWeather{};
 			class SetWind{};
 		};
