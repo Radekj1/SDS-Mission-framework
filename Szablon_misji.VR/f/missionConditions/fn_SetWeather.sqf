@@ -163,7 +163,7 @@ switch (_weather) do
 		_MissionOvercast = 1;
 		_MissionRain = 1;
 		_MissionRainbow = 0;
-		_MissionLightnings = 1;
+		_MissionLightnings = 0;
 		_MissionWindStr = 0.75;
 		_MissionWindGusts = 1;
 		_MissionWaves = 1;
@@ -171,6 +171,8 @@ switch (_weather) do
 		_MissionFogStrength = 0.3;
 		_MissionFogDecay = 0;
 		_MissionFogBase = 0;
+		
+		[[[0,30+random 180,0,false,false,false], "f\Tthunder_script\alias_thunderbolt.sqf"], "BIS_fnc_execVM", true] call BIS_fnc_MP;
 	};
 };
 

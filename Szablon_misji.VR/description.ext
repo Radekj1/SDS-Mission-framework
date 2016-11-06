@@ -252,6 +252,74 @@ class Params
 
 // ============================================================================================
 
+class CfgSounds
+{
+	class t_close_2
+	{
+		name = "t_close_2"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_2.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_9
+	{
+		name = "t_close_9"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_9.ogg, db+10, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_12
+	{
+		name = "t_close_12"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_12.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_14
+	{
+		name = "t_close_14"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_14.ogg, db+5, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_18
+	{
+		name = "t_close_18"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_18.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};	
+	
+	class t_far_1
+	{
+		name = "t_far_1"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_1.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_18
+	{
+		name = "t_far_18"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_18.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_19
+	{
+		name = "t_far_19"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_19.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_20
+	{
+		name = "t_far_20"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_20.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_21
+	{
+		name = "t_far_21"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_21.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+
+};
+
+// ============================================================================================
+
 // F3 - Briefing Template
 // Credits: BIS - Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
