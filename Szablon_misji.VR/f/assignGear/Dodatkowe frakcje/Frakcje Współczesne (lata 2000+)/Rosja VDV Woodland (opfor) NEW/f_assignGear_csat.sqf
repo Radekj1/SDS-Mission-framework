@@ -1193,8 +1193,7 @@ switch (_typeofUnit) do
 		
 		};
 	};
-	
-// ====================================================================================
+
 // ====================================================================================
 
 // If this is an ammobox, check medical component settings and if needed run converter script.

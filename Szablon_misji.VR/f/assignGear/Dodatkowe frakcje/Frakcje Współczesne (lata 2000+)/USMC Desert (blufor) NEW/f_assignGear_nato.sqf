@@ -377,7 +377,7 @@ if (_isMan) then {
 	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
-	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+	//_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -1128,10 +1128,19 @@ switch (_typeofUnit) do
 		["crate_hat"] call _crate;
 	};
 	
-//////////////////////////////////////////////////////	
-//////////////////////////////////////////////////////
-
-
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_small":
+	{
+		["crate_night_small"] call _crate;
+	};
+	
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_big":
+	{
+		["crate_night_big"] call _crate;
+	};
+	
+// ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
@@ -1149,6 +1158,33 @@ switch (_typeofUnit) do
 
 // END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 };
+
+// ====================================================================================
+// Dodanie nocnego wyposażenia
+
+	_loadout_night_day = f_param_night_day_wyp;
+		
+	if (_loadout_night_day == 0) then {
+	
+		if(_typeofUnit != "ps") then {
+		
+			_unit linkItem _nvg;			// Dodanie noktowizji
+			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+			_unit addItem _IRstrobe;		
+		
+			
+			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
+		};
+		
+		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
+		
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		
+		};
+	};
 
 // ====================================================================================
 
