@@ -108,11 +108,11 @@
       </Key>
       <Key ID="STR_f_param_weather_Option2">
         <English> Mostly Cloudy </English>
-        <Polish> Duże zachmurzenie </Polish>
+        <Polish> Częściowe zachmurzenie </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option3">
         <English> Overcast </English>
-        <Polish> Zachmurzenie </Polish>
+        <Polish> Pełne zachmurzenie </Polish>
       </Key>
       <Key ID="STR_f_param_weather_Option4">
         <English> Foggy </English>
@@ -188,6 +188,28 @@
         <Spanish> Habilidad de la IA (INDEPENDENT) </Spanish>
         <French> Capacité IA (INDEPENDENT) </French>
       </Key>
+	  
+	  <Key ID="STR_f_param_snow">
+        <English> Snow </English>
+        <Polish> Śnieg </Polish>
+      </Key>
+	  <Key ID="STR_f_param_snow_Option0">
+        <English> Clear </English>
+        <Polish> Pogodnie </Polish>
+      </Key>
+	  <Key ID="STR_f_param_snow_Option1">
+        <English> Light snowfall </English>
+        <Polish> Lekki opad śniegu </Polish>
+      </Key>
+	  <Key ID="STR_f_param_snow_Option2">
+        <English> Medium snowfall </English>
+        <Polish> Średni opad śniegu </Polish>
+      </Key>
+	  <Key ID="STR_f_param_snow_Option3">
+        <English> Snowstorm </English>
+        <Polish> Śnieżyca </Polish>
+      </Key> 
+	  
       <Key ID="STR_f_param_AISkill_Option0">
         <English> Super </English>
         <Czech> Super </Czech>

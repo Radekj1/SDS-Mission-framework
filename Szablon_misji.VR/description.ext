@@ -207,6 +207,15 @@ class Params
 		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8,$STR_f_param_weather_Option11};
 		default = 1;
 	};
+	
+	class f_param_snow
+	{
+		title = "$STR_f_param_snow";
+		values[] = {0,1,2,3};
+		texts[] = {$STR_f_param_snow_Option0,$STR_f_param_snow_Option1,$STR_f_param_snow_Option2,$STR_f_param_snow_Option3};
+		default = 0;
+		code = "f_param_snow = %1";
+	};
 
 	class f_param_fog
 	{
@@ -238,6 +247,74 @@ class Params
 
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+};
+
+// ============================================================================================
+
+class CfgSounds
+{
+	class t_close_2
+	{
+		name = "t_close_2"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_2.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_9
+	{
+		name = "t_close_9"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_9.ogg, db+10, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_12
+	{
+		name = "t_close_12"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_12.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_14
+	{
+		name = "t_close_14"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_14.ogg, db+5, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class t_close_18
+	{
+		name = "t_close_18"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_close_18.ogg, db+20, 1.0};
+		titles[] = {0, ""};	
+	};	
+	
+	class t_far_1
+	{
+		name = "t_far_1"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_1.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_18
+	{
+		name = "t_far_18"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_18.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_19
+	{
+		name = "t_far_19"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_19.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_20
+	{
+		name = "t_far_20"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_20.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class t_far_21
+	{
+		name = "t_far_21"; // Name for mission editor
+		sound[] = {f\Tthunder_script\Sound\t_far_21.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
 
 };
 
@@ -393,6 +470,7 @@ class CfgFunctions
 			file = "f\missionConditions";
 			class SetTime{};
 			class SetFog{};
+			class SetSnow{};
 			class SetWeather{};
 			class SetWind{};
 		};
