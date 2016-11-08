@@ -275,7 +275,7 @@ class CfgSounds
 	class t_close_14
 	{
 		name = "t_close_14"; // Name for mission editor
-		sound[] = {f\Tthunder_script\Sound\t_close_14.ogg, db+5, 1.0};
+		sound[] = {f\Tthunder_script\Sound\t_close_14.ogg, db+10, 1.0};
 		titles[] = {0, ""};	
 	};		
 	class t_close_18
