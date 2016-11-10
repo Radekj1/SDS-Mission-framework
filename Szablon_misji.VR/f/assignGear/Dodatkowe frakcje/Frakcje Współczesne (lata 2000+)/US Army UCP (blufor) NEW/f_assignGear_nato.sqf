@@ -59,13 +59,13 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "CUP_acc_ANPEQ_15";				// Laser
+//_attach1 = "CUP_acc_ANPEQ_15";				// Laser
 _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć)
 
 //_silencer1 = "";							// Tłumik 5.56 (długi)
-_silencer2 = "CUP_muzzle_snds_SCAR_L";		// Tłumik 5.56 (krótki)
+//_silencer2 = "CUP_muzzle_snds_SCAR_L";		// Tłumik 5.56 (krótki)
 
-_scope1 = "CUP_optic_Eotech533";			// Eotech (RHS)
+//_scope1 = "CUP_optic_Eotech533";			// Eotech (RHS)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
 _scope4 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
@@ -111,9 +111,9 @@ _smgmag = "rhsusf_mag_40Rnd_46x30_FMJ";
 _smgmag_tr = "rhsusf_mag_40Rnd_46x30_FMJ";
 
 // Siły specjalne
-_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
-_diverMag1 = "30Rnd_556x45_Stanag";
-_diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+//_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
+//_diverMag1 = "30Rnd_556x45_Stanag";
+//_diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m4a1_carryhandle_m203";
@@ -126,11 +126,32 @@ _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
 _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
+////////////////////////////////////////
+/////////////// NOCNE //////////////////
+////////////////////////////////////////
+
 // Flary do granatnika
-_glflarewhite = "3Rnd_UGL_FlareWhite_F";
-_glflarered = "3Rnd_UGL_FlareRed_F";
-_glflareyellow = "3Rnd_UGL_FlareYellow_F";
-_glflaregreen = "3Rnd_UGL_FlareGreen_F";
+_glflarewhite = "UGL_FlareWhite_F";
+_glflarered = "UGL_FlareRed_F";
+_glflareyellow = "UGL_FlareYellow_F";
+_glflaregreen = "UGL_FlareGreen_F";
+
+// Flary ręczne
+_flarewhite = "ACE_HandFlare_White";
+_flarered = "ACE_HandFlare_Red";
+_flareyellow = "ACE_HandFlare_Yellow";
+_flaregreen = "ACE_HandFlare_Green";
+
+// Świetliki
+_chemgreen =  "Chemlight_green";
+_chemred = "Chemlight_red";
+_chemyellow =  "Chemlight_yellow";
+_chemblue = "Chemlight_blue";
+
+// Noktowizja
+_nvg = "rhsusf_ANPVS_15";
+
+////////////////////////////////////////
 
 // Pistolet (dla wszystkich klas)
 _pistol = "rhsusf_weap_m1911a1";
@@ -163,20 +184,13 @@ _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
+_lornetkaRTO = "Laserdesignator";
 _GPS = "ItemGPS";
 _Antena_RTO = "tfw_rf3080Item";
-
-// Noktowizja
-_nvg = "rhsusf_ANPVS_15";
 
 // Terminal UAV
 _uavterminal = "B_UavTerminal";	  // Dla BLUFORU musi być terminal BLUFORU, innej frakcji nie zadziała
 
-// Świetliki
-_chemgreen =  "Chemlight_green";
-_chemred = "Chemlight_red";
-_chemyellow =  "Chemlight_yellow";
-_chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_Parachute";						// Spadochron
@@ -358,7 +372,7 @@ if (_isMan) then {
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
 
-	_unit linkItem _nvg;			// Dodanie noktowizji
+	//_unit linkItem _nvg;			// Dodanie noktowizji
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _bandage;	
     _unit addItem _bandage;
@@ -376,7 +390,7 @@ if (_isMan) then {
 	_unit addItem _morphine;		// Dodanie 2 sztuk morfiny
 	_unit addItem _epinephrine;
 	_unit addItem _epinephrine;		// Dodanie 2 sztuk epinefryny
-	_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+	//_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
@@ -927,7 +941,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
 		_unit linkItem _GPS; 
-        _unit addWeapon "Laserdesignator";
+        _unit addWeapon _lornetkaRTO;
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
@@ -946,7 +960,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_unit addWeapon "Laserdesignator";
+		_unit addWeapon _lornetkaRTO;
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;
 	};
@@ -1127,6 +1141,18 @@ switch (_typeofUnit) do
 		["crate_hat"] call _crate;
 	};
 	
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_small":
+	{
+		["crate_night_small"] call _crate;
+	};
+	
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_big":
+	{
+		["crate_night_big"] call _crate;
+	};
+	
 //////////////////////////////////////////////////////	
 //////////////////////////////////////////////////////
 
@@ -1147,6 +1173,37 @@ switch (_typeofUnit) do
 
 // END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 };
+
+//////////////////////////////////////////////////////
+////////////////////// NOCNE /////////////////////////
+//////////////////////////////////////////////////////
+
+	_loadout_night_day = f_param_night_day_wyp;
+		
+	if (_loadout_night_day == 0) then {
+	
+		if(_typeofUnit != "ps") then {
+		
+			_unit linkItem _nvg;			// Dodanie noktowizji
+			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+			_unit addItem _IRstrobe;		
+		
+			
+			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
+		};
+		
+		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
+		
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		
+		};
+	
+	};
+	
+//////////////////////////////////////////////////////	
 
 // ====================================================================================
 
