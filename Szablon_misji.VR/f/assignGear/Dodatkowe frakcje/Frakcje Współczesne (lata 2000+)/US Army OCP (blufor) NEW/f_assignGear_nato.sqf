@@ -241,7 +241,7 @@ _DMriflemag = "20Rnd_762x51_Mag";
 
 // Strzelec AT
 _RAT = "rhs_weap_M136";
-_RATmag = "";
+//_RATmag = "";
 
 // Strzelec MAT
 _MAT = "rhs_weap_smaw_green";
