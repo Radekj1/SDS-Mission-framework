@@ -59,21 +59,21 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "rhs_acc_2dpZenit";			// Latarka
-_attach2 = "";							// 
+_attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
+_attach2 = "rhs_acc_perst1ik";			// Laser (RHS)
 
-_silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK)
-_silencer2 = "rhs_acc_dtk4screws";		// Tłumik do AEK`a
+_silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
+_silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
-_scope1 = "rhs_acc_1p63";				// Celownik holo
-_scope2 = "rhs_acc_pkas";				// Celownik olo (buguje RKM)
-_scope3 = "rhs_acc_pso1m2";				// Celownik optyczny
+_scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
+_scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
+_scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
 _bipod1 = "bipod_02_F_hex";				// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_scope2,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_silencer1,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -158,7 +158,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Noktowizja
-_nvg = "NVGoggles_OPFOR";
+_nvg = "rhs_1PN138";
 
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy

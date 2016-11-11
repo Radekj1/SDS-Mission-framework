@@ -60,25 +60,22 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "rhsusf_acc_anpeq15_light";		// Latarka i laser (można przełączyć)
-_attach2 = "rhsusf_acc_anpeq15";			// Laser i latarka (można przełączyć)
-_attach3 = "acc_pointer_IR";				// czerwony laser
-_attach4 = "rhsusf_acc_anpeq15_bk_light";	// czerwony laser
+_attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
+_attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć) (RHS)
+_attach3 = "rhsusf_acc_anpeq15side_bk";		// Latarka (RHS)
 
-//_silencer1 = "CUP_muzzle_snds_M16";		// Tłumik 5.56 (M16)
-_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki)
-_silencer3 = "rhsusf_acc_nt4_black";		// Tłumik długi czarny
-_silencer4 = "hlc_muzzle_556NATO_KAC";		// Tłumik dla medyka specjalsów
+_silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
 
-_scope1 = "PSZ_AccO_EOT552";					// Eotech
-//_scope2 = "CUP_optic_CompM2_Black";			// Aimpoint
-_scope3 = "PSZ_AccO_LeupoldMk4_45_14x50_M1";	// Celownik snajperski 6.5-20x
+_scope1 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
+_scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
+_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
 
-_bipod1 = "";		// 
+_bipod1 = "rhsusf_acc_harris_bipod";		// 
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach4]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach3,_scope1]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -809,7 +806,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
-		_attachments = [];
+		//_attachments = [];
 		["vc"] call _backpack;
 	};
 
@@ -822,7 +819,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [];
+		//_attachments = [];
 		["cc"] call _backpack;
 	};
 
@@ -835,7 +832,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [];
+		//_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -847,7 +844,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [];
+		//_attachments = [];
 		["pp"] call _backpack;
 	};
 
@@ -860,7 +857,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [];
+		//_attachments = [];
 		["cc"] call _backpack;
 	};
 	
@@ -873,7 +870,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [];
+		//_attachments = [];
 		["ps"] call _backpack;
 	};
 
@@ -886,7 +883,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [];
+		//_attachments = [];
 	};
 
 // LOADOUT: ENGINEER (DEMO)

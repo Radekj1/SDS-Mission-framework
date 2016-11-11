@@ -60,19 +60,16 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-//_attach1 = "CUP_acc_ANPEQ_15";				// Laser
-_attach2 = "rhsusf_acc_M952V";				// Latarka
-_attach3 = "acc_pointer_IR";				// czerwony laser
+_attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
+_attach2 = "rhsusf_acc_anpeq15side_bk";		// Latarka (RHS)
+_attach3 = "acc_pointer_IR";				// czerwony laser (ARMA)
 
-_silencer1 = "muzzle_snds_M";				// Tłumik 5.56 (długi)
+//_silencer1 = "muzzle_snds_M";				// Tłumik 5.56 (długi)
 //_silencer2 = "BWA3_muzzle_snds_G36";		// Tłumik 5.56 (krótki)
-_silencer3 = "";							// Tłumik długi czarny
-_silencer4 = "";							// Tłumik dla medyka specjalsów
 
-_scope1 = "PSZ_AccO_EOT552";				// Eotech
-//_scope2 = "CUP_optic_Kobra";				// Aimpoint
-//_scope4 = "CUP_optic_CompM2_Black";			// Celownik SF
-//_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope1 = "PSZ_AccO_EOT552";				// Eotech (PSZ)
+_scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
+_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x (RHS)
 
 _bipod1 = "";								// 
 _bipod2 = "bipod_02_F_blk";					// 

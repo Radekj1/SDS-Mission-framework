@@ -56,24 +56,22 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "rhsusf_acc_anpeq15_light";		// Latarka i laser (można przełączyć)
-_attach2 = "rhsusf_acc_anpeq15";			// Laser i latarka (można przełączyć)
-_attach3 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć)
+_attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
+_attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć) (RHS)
+_attach3 = "rhsusf_acc_anpeq15side_bk";		// Latarka (RHS)
 
-_silencer1 = "rhsusf_acc_nt4_tan";			// Tłumik 5.56 (długi)
-_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki)
+_silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
 
-_scope1 = "rhsusf_acc_eotech_552";			// Eotech (RHS)
+_scope1 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
-_scope3 = "CUP_optic_CompM4";				// Aimpoint (CUP)
-_scope4 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
-_scope5 = "PSZ_AccO_EOT552";				// Eotech PL
+_scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// 
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach3,_scope2]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach3,_scope1]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -802,7 +800,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 		["vc"] call _backpack;
 	};
 
@@ -815,7 +813,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 		["cc"] call _backpack;
 	};
 
@@ -828,7 +826,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -840,7 +838,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 		["pp"] call _backpack;
 	};
 
@@ -853,7 +851,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 		["cc"] call _backpack;
 	};
 	
@@ -866,7 +864,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 		["ps"] call _backpack;
 	};
 
@@ -879,7 +877,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_attachments = [_scope5];
+		//_attachments = [_scope5];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
@@ -1168,7 +1166,7 @@ switch (_typeofUnit) do
 	
 		if(_typeofUnit != "ps") then {
 		
-			_unit linkItem _nvg;			// Dodanie noktowizji
+			//_unit linkItem _nvg;			// Dodanie noktowizji
 			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 			_unit addItem _IRstrobe;		
 		
@@ -1184,6 +1182,13 @@ switch (_typeofUnit) do
 		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
 		
 		};
+		
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+		
+		_unit linkItem _nvg;			// Dodanie noktowizji
+		
+		};
+		
 	};
 
 // ====================================================================================
