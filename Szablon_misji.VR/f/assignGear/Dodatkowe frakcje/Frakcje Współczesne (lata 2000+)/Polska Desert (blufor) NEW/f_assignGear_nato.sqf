@@ -133,12 +133,6 @@ _glmag = "PSZ_40x47_NGO74_HE";
 //_glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 //_glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
-// Flary do granatnika
-//_glflarewhite = "3Rnd_UGL_FlareWhite_F";
-//_glflarered = "3Rnd_UGL_FlareRed_F";
-//_glflareyellow = "3Rnd_UGL_FlareYellow_F";
-//_glflaregreen = "3Rnd_UGL_FlareGreen_F";
-
 // Pistolet (dla wszystkich klas)
 _pistol = "PSZ_P99";
 _pistolmag = "PSZ_9x19_P99_16";

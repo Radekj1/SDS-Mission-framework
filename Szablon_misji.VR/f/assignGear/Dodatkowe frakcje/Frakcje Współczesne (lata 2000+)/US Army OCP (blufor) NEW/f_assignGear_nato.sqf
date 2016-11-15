@@ -60,7 +60,7 @@
 // Dodatki broń główna
 _attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
 _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć) (RHS)
-_attach3 = "rhsusf_acc_anpeq15side_bk";		// Latarka (RHS)
+_attach3 = "rhsusf_acc_M952V";		// Latarka (RHS)
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
 _silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
@@ -126,10 +126,10 @@ _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
 // Flary do granatnika
-_glflarewhite = "3Rnd_UGL_FlareWhite_F";
-_glflarered = "3Rnd_UGL_FlareRed_F";
-_glflareyellow = "3Rnd_UGL_FlareYellow_F";
-_glflaregreen = "3Rnd_UGL_FlareGreen_F";
+_glflarewhite = "UGL_FlareWhite_F";
+_glflarered = "UGL_FlareRed_F";
+_glflareyellow = "UGL_FlareYellow_F";
+_glflaregreen = "UGL_FlareGreen_F";
 
 // Pistolet (dla wszystkich klas)
 _pistol = "rhsusf_weap_m1911a1";
