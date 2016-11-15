@@ -387,7 +387,7 @@ if (_isMan) then {
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompasu
 	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
-	_unit linkItem "ItemWatch";		// Dodanie zegarka
+	_unit linkItem "tf_microdagr";		// Dodanie zegarka
 	//_unit linkItem "ItemGPS"; 	// Dodanie GPS (wyczone)
 	//_unit linkItem _nvg; 			// Dodanie Nokto
 	_unit addItem _latarka;			// Latarka na mape
