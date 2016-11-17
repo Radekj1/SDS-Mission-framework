@@ -289,7 +289,7 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["LOP_U_UN_Fatigue_01"];
+_baseUniform = ["rhsgref_uniform_ttsko_mountain"];
 _baseHelmet = ["LOP_H_6B27M_UN","LOP_H_6B27M_ess_UN"];
 _baseGlasses = [];
 
@@ -322,8 +322,8 @@ _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
-// Spec Opa
-_sfuniform = ["LOP_U_UN_Fatigue_01"];
+// Jet Pilot
+_sfuniform = ["rhsgref_uniform_ttsko_mountain"];
 _sfhelmet = ["rhs_zsh7a_alt"];
 _sfRig = ["LOP_V_6B23_Rifleman_UN"];
 _sfGlasses = [];
