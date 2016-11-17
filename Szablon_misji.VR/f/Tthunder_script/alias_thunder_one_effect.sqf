@@ -11,7 +11,7 @@ if ((player distance _alias_bolt_1)>1300) then {
 // far hint "PESTE 1000";//	hint str _sound_far;
 
 _poz_obj_fulger = "Land_HelipadEmpty_F" createVehicleLocal [_alias_bolt_1 select 0,_alias_bolt_1 select 1,0];
-_sound_far = ["t_far_1","t_far_18","t_far_19","t_far_20","t_far_21"] call BIS_fnc_selectRandom;
+_sound_far = ["t_far_1","t_far_19","t_far_20","t_far_21"] call BIS_fnc_selectRandom;
 _f_dim	= 3;
 	
 	_lum_fulg_w = "#lightpoint" createvehiclelocal getPosATL _poz_obj_fulger;

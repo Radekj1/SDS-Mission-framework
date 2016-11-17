@@ -67,7 +67,7 @@ if (_type3_detect>1) then {
 	if (!alias_thunder_3)then {waitUntil {alias_thunder_3};};	
 //	hint "numai sunet";
 
-	_sound_only = ["t_far_1","t_far_18","t_far_19","t_far_20","t_far_21"] call BIS_fnc_selectRandom;
+	_sound_only = ["t_far_1","t_far_19","t_far_20","t_far_21"] call BIS_fnc_selectRandom;
 	
 	//_sound_only = ["t_far_1","t_far_3","t_far_4","t_far_5","t_far_6","t_far_8","t_far_9","t_far_10","t_far_15","t_far_18","t_far_19","t_far_20","t_far_21","t_far_22"] call BIS_fnc_selectRandom;
 	

@@ -9,7 +9,7 @@ _alias_bolt_2 = _this select 0;
 //if ((player distance _alias_bolt_2)>800) then {}; // random sunet sau light //hint str _sound_far_s_l;
 _combinatie = ["sunet","lumina","sunet_lumina"] call BIS_fnc_selectRandom;
 _poz_obj_fulger_s_l = "Land_HelipadEmpty_F" createVehicleLocal [_alias_bolt_2 select 0,_alias_bolt_2 select 1,800];
-_sound_far_s_l = ["t_far_1","t_far_18","t_far_19","t_far_20","t_far_21"] call BIS_fnc_selectRandom;
+_sound_far_s_l = ["t_far_1","t_far_19","t_far_20","t_far_21"] call BIS_fnc_selectRandom;
 
 if ((_combinatie=="sunet_lumina") or (_combinatie=="lumina")) then {
 //	hint "LUMINA ON";
