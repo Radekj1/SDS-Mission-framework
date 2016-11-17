@@ -188,8 +188,8 @@ _uavterminal = "O_UavTerminal";
 // Plecaki
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "tf_anprc155_coyote";                  	// Plecak dla dowódcy (radio)
+_bagPP = "tf_anprc155_coyote";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
@@ -212,7 +212,7 @@ _baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "tf_anprc155_coyote";						// Plecak RTO
 
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
