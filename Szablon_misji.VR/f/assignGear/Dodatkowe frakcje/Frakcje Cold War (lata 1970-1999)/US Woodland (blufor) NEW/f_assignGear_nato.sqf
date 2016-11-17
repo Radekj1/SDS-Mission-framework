@@ -580,7 +580,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];		
 		_unit addweapon _pistol;
 		_unit addweapon _MMG;
-		_attachments = [];
+		_attachments = [_scope1];
 		["mmg"] call _backpack;
 	};
 
