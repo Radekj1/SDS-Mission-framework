@@ -187,8 +187,7 @@
         <Russian> Навык ИИ (INDEPENDENT) </Russian>
         <Spanish> Habilidad de la IA (INDEPENDENT) </Spanish>
         <French> Capacité IA (INDEPENDENT) </French>
-      </Key>
-	  
+      </Key>	  
 	  <Key ID="STR_f_param_snow">
         <English> Snow </English>
         <Polish> Śnieg </Polish>
@@ -202,14 +201,9 @@
         <Polish> Lekki opad śniegu </Polish>
       </Key>
 	  <Key ID="STR_f_param_snow_Option2">
-        <English> Medium snowfall </English>
-        <Polish> Średni opad śniegu </Polish>
-      </Key>
-	  <Key ID="STR_f_param_snow_Option3">
-        <English> Snowstorm </English>
-        <Polish> Śnieżyca </Polish>
-      </Key> 
-	  
+        <English> Heavy snowfall </English>
+        <Polish> Mocny opad śniegu </Polish>
+      </Key>	  
       <Key ID="STR_f_param_AISkill_Option0">
         <English> Super </English>
         <Czech> Super </Czech>

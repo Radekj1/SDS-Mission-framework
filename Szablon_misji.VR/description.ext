@@ -211,8 +211,8 @@ class Params
 	class f_param_snow
 	{
 		title = "$STR_f_param_snow";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_snow_Option0,$STR_f_param_snow_Option1,$STR_f_param_snow_Option2,$STR_f_param_snow_Option3};
+		values[] = {0,1,2};
+		texts[] = {$STR_f_param_snow_Option0,$STR_f_param_snow_Option1,$STR_f_param_snow_Option2};
 		default = 0;
 		code = "f_param_snow = %1";
 	};
