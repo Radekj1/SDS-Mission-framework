@@ -1,5 +1,5 @@
 
-private["_respawn","_spCheck" , "_result" ,"_faction1"];
+private["_respawn","_spCheck" , "_result" ,"_faction1" , "_crateToDelete"];
 
 _caller      = _this select 1;
 
@@ -19,10 +19,10 @@ switch (_typeofCrate) do
 	case "crate_med":          { _mycrate = "B_supplyCrate_F"; };
 	case "crate_large":        { _mycrate = "B_CargoNet_01_ammo_F"; };
 	case "crate_bigmedical":   { _mycrate = "I_CargoNet_01_ammo_F"; };
-	case "crate_mmg":         { _mycrate = "Box_IND_Wps_F"; };  
+	case "crate_mmg":          { _mycrate = "Box_IND_Wps_F"; };  
 	case "crate_mat":		   { _mycrate = "Box_NATO_WpsLaunch_F"; }; 
 	case "crate_sam":		   { _mycrate = "Box_IND_WpsLaunch_F"; };
-	case "crate_hat":         { _mycrate = "Box_East_WpsSpecial_F"; };
+	case "crate_hat":          { _mycrate = "Box_East_WpsSpecial_F"; };
 };
 
 _respawnPos = getMarkerPos "Crate_mark";
@@ -38,26 +38,29 @@ _respawnPos = getMarkerPos "Crate_mark";
 	_spCheck = nearestObject _respawnPos; 
 	_spCheck = player nearSupplies 20;
 	if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-
 */
 	
-	_spCheck = nearestObjects[_respawnPos,[],7] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'		
-	if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-	
-	
-	//hint format["You are in faction: %1",_faction1];
-	
+	_spCheck = nearestObjects[_respawnPos,[],4] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'		
+	//if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
+	if(_spCheck == crateToDelete) then {
+		
+		//hint format["Usunieto ++ %1 == %2",_spCheck,crateToDelete];
+		deleteVehicle _spCheck;
+		
+		};
 	
 if(_mycrate != "") then
 {
 	//_unit = _mycrate createVehicle _xyzpos;
 	
-	sleep 0.3;
+	sleep 0.4;
 	_unit = _mycrate createVehicle _respawnPos;
 	_unit setPos _respawnPos;
     [_typeofCrate,_unit,_faction] call f_fnc_assignGear;
 	
-	//hint format["You have spawned a %1",_mycrate];
+	_spCheck = nearestObjects[_respawnPos,[],4] select 0;	
+	crateToDelete = _spCheck;
+	
 };
 
 // przyklad inicjalizacji ( wpisac w pole init obiektu ) :
