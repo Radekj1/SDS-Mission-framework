@@ -41,38 +41,46 @@ _respawnPos = getMarkerPos "Crate_mark";
 */
 	
 	_spCheck = nearestObjects[_respawnPos,[],4] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'		
-	//if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-	if(_spCheck == crateToDelete) then {
-		
-		//hint format["Usunieto ++ %1 == %2",_spCheck,crateToDelete];
-		deleteVehicle _spCheck;
-		
+	if(!isNil "_spCheck") then {
+		if(_spCheck == crateToDelete) then 
+		{	
+			deleteVehicle _spCheck;
+			//hint format["Usunieto"];
+			//hint format["Usunieto ++ \n%1\n%2",_spCheck,crateToDelete];
 		};
+	};
+	
 	
 if(_mycrate != "") then
 {
 	//_unit = _mycrate createVehicle _xyzpos;
 	
-	sleep 0.4;
+	sleep 0.5;
 	_unit = _mycrate createVehicle _respawnPos;
 	_unit setPos _respawnPos;
-    [_typeofCrate,_unit,_faction] call f_fnc_assignGear;
+	
+	//player sideChat format["Szkrzynia %1  ",_typeofCrate];
 	
 	_spCheck = nearestObjects[_respawnPos,[],4] select 0;	
 	crateToDelete = _spCheck;
 	
+	//player sideChat format["Szkrzynia %1  +=+=+  %2",_typeofCrate,crateToDelete];
+	
+    [_typeofCrate,_unit,_faction] call f_fnc_assignGear;
+	
 };
+
 
 // przyklad inicjalizacji ( wpisac w pole init obiektu ) :
 
-//_null = this addAction ["Mala skrzynia z bronia", "f\assignGear\SpawnCrate.sqf", ["crate_small",faction1] ];
-//_null = this addAction ["Srednia skrzynia z bronia", "f\assignGear\SpawnCrate.sqf", ["crate_med",faction1] ];
-//_null = this addAction ["Duza skrzynia z bronia", "f\assignGear\SpawnCrate.sqf", ["crate_large",faction1] ];
-//_null = this addAction ["Mala skrzynia medyczna", "f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",faction1] ];
-//_null = this addAction ["Duza skrzynia medyczna", "f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",faction1] ];
-//_null = this addAction ["Mala skrzynia z wypo nocnym", "f\assignGear\SpawnCrate.sqf", ["crate_night_small",faction1] ];
-//_null = this addAction ["Duza skrzynia z wypo nocnym", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ];
-//_null = this addAction ["Amunicja MMG", "f\assignGear\SpawnCrate.sqf", ["crate_mmg",faction1] ];
-//_null = this addAction ["Amunicja MAT", "f\assignGear\SpawnCrate.sqf", ["crate_mat",faction1] ];
-//_null = this addAction ["Amunicja SAM", "f\assignGear\SpawnCrate.sqf", ["crate_sam",faction1] ];
-//_null = this addAction ["Amunicja HAT", "f\assignGear\SpawnCrate.sqf", ["crate_hat",faction1] ];
+//_null = this addAction ["Mala skrzynia z bronia", 		"f\assignGear\SpawnCrate.sqf", ["crate_small",			faction1] ];
+//_null = this addAction ["Srednia skrzynia z bronia", 		"f\assignGear\SpawnCrate.sqf", ["crate_med",			faction1] ];
+//_null = this addAction ["Duza skrzynia z bronia", 		"f\assignGear\SpawnCrate.sqf", ["crate_large",			faction1] ];
+//_null = this addAction ["Mala skrzynia medyczna", 		"f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",	faction1] ];
+//_null = this addAction ["Duza skrzynia medyczna", 		"f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",		faction1] ];
+//_null = this addAction ["Mala skrzynia z wypo nocnym", 	"f\assignGear\SpawnCrate.sqf", ["crate_night_small",	faction1] ];
+//_null = this addAction ["Duza skrzynia z wypo nocnym", 	"f\assignGear\SpawnCrate.sqf", ["crate_night_big",		faction1] ];
+//_null = this addAction ["Amunicja MMG", 					"f\assignGear\SpawnCrate.sqf", ["crate_mmg",			faction1] ];
+//_null = this addAction ["Amunicja MAT", 					"f\assignGear\SpawnCrate.sqf", ["crate_mat",			faction1] ];
+//_null = this addAction ["Amunicja SAM", 					"f\assignGear\SpawnCrate.sqf", ["crate_sam",			faction1] ];
+//_null = this addAction ["Amunicja HAT", 					"f\assignGear\SpawnCrate.sqf", ["crate_hat",			faction1] ];

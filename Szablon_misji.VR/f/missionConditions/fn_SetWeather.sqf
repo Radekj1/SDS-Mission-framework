@@ -161,7 +161,7 @@ switch (_weather) do
 	case 8:
 	{
 		_MissionOvercast = 1;
-		_MissionRain = 1;
+		_MissionRain = 0.7;
 		_MissionRainbow = 0;
 		_MissionLightnings = 0;
 		_MissionWindStr = 0.75;
@@ -172,7 +172,7 @@ switch (_weather) do
 		_MissionFogDecay = 0;
 		_MissionFogBase = 0;
 		
-		[[[0,30+random 180,0,false,false,false], "f\Tthunder_script\alias_thunderbolt.sqf"], "BIS_fnc_execVM", true] call BIS_fnc_MP;
+		[[[20+random 40,0,0,false,false,false], "f\Tthunder_script\alias_thunderbolt.sqf"], "BIS_fnc_execVM", true] call BIS_fnc_MP;
 	};
 };
 
