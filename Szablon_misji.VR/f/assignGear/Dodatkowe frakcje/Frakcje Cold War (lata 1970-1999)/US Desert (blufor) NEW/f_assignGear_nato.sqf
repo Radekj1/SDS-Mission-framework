@@ -75,7 +75,7 @@ _bipod1 = "rhsusf_acc_harris_bipod";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach3,_scope1]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach3]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -805,7 +805,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
-		//_attachments = [];
+		_attachments = [_scope1];
 		["vc"] call _backpack;
 	};
 
@@ -818,7 +818,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		//_attachments = [];
+		_attachments = [_scope1];
 		["cc"] call _backpack;
 	};
 
@@ -831,7 +831,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		//_attachments = [];
+		_attachments = [_scope1];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -843,7 +843,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		//_attachments = [];
+		_attachments = [_scope1];
 		["pp"] call _backpack;
 	};
 
@@ -856,7 +856,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		//_attachments = [];
+		_attachments = [_scope1];
 		["cc"] call _backpack;
 	};
 	
@@ -869,7 +869,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		//_attachments = [];
+		_attachments = [_scope1];
 		["ps"] call _backpack;
 	};
 
@@ -882,7 +882,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		//_attachments = [];
+		_attachments = [_scope1];
 	};
 
 // LOADOUT: ENGINEER (DEMO)

@@ -15,6 +15,34 @@ private [
 
 			_CampTyp = _this select 0;_array = [];
 
+
+/*
+/////////////////////////////////////////////
+///////////////SPIS TRESCI///////////////////
+/////////////////////////////////////////////
+
+//////////BLUFOR//////////
+	1 - Obóz z namiotem i działem PLOT
+	3 - HQ z 4 x wieża + 2 x moździerz
+	6 - Obóz z wieżą [z bloków] + 2 x moździerz
+	10 - Zwykły namiot + antena + ognisko
+	
+//////////OPFOR///////////
+	0 - Obóz z namiotem i działem PLOT
+	4 - HQ z 4 x wieża + 2 x moździerz
+	7 - Obóz z wieżą [z bloków] + 2 x moździerz
+	9 - Zwykły namiot + antena + ognisko
+	
+	
+//////////INDFOR//////////
+	2 - Obóz z namiotem i działem PLOT
+	5 - HQ z 4 x wieża + 2 x moździerz
+	8 - Obóz z wieżą [z bloków] + 2 x moździerz
+	11 - Zwykły namiot + antena + ognisko
+
+*////////////////////////////////////////////	
+	
+
 switch (_CampTyp) do
 {
 //-------------------------------------------------------------------------------------------------------------------------
@@ -118,11 +146,11 @@ switch (_CampTyp) do
 	
 //-------------------------------------------------------------------------------------------------------------------------
 	
-	case 6:  //BLUFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU
+	case 6:  //BLUFOR - Obóz z wieżą [z bloków] + 2 x moździerz
 	{
 		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["Flag_NATO_F",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
+		_campStatic    = [["B_Mortar_01_F",0,12,0,"usm_soldier_90s_w_h_rto"],["B_Mortar_01_F",14,12,0,"usm_soldier_90s_w_h_rto"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
@@ -131,7 +159,7 @@ switch (_CampTyp) do
 	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 7:  // OPFOR - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU  
+	case 7:  // OPFOR - Obóz z wieżą [z bloków] + 2 x moździerz
 	{
 		_campBasic     = ["Flag_Red_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
@@ -144,7 +172,7 @@ switch (_CampTyp) do
 	};
 	
 //-------------------------------------------------------------------------------------------------------------------------
-	case 8:  // IND - Obóz z wieżą [z bloków] + 1 x moździerz + 1x PLOT ZSU
+	case 8:  // IND - Obóz z wieżą [z bloków] + 2 x moździerz
 	{
 		_campBasic     = ["FlagCarrierINDFOR_EP1",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [];
