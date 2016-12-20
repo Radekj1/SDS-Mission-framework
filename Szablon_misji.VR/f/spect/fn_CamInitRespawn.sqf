@@ -67,33 +67,15 @@ else
 
 //Przeladowanie brifu.
 waitUntil{ oldPlayerFaction == faction player };
-
-f_script_briefing = [] execVM "briefing.sqf";
+//f_script_briefing = [] execVM "briefing.sqf";
 
 //Czeka na zaladowanie wyposażenia.
 waitUntil{(player getVariable ["f_var_assignGear_done", false])};
 
+[] execVM "init.sqf";
+
+/*
 [] execVM "f\briefing\f_orbatNotes.sqf";
 [] execVM "f\briefing\f_loadoutNotes.sqf";
 [] execVM "f\Safezone\safety_init.sqf";
-
-///////////////////////////>>>>> FLARY <<<<<//////////////////////////////////////////
-// Ponowienie skryptu FLAR //
-
-	if ((!isServer) && (player != player)) then {waitUntil {player == player};};
-
-
-	al_flare_intensity = 25;
-	publicvariable "al_flare_intensity";
-
-	al_flare_range = 400;
-	publicvariable "al_flare_range";
-
-	player addEventHandler ["Fired",{private ["_al_flare"]; _al_flare = _this select 6;[[[_al_flare],"f\flare_fix\al_flare_enhance.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;}];
-
-//////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
+*/
