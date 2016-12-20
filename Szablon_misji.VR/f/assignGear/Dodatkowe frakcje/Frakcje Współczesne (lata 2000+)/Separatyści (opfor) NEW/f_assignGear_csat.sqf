@@ -95,14 +95,14 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74m_2mag";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_rifle = "hlc_rifle_ak74_dirty";
+_riflemag = "hlc_30Rnd_545x39_B_AK";
+_riflemag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_ak74m_camo";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
+_carbine = "hlc_rifle_aks74";
+_carbinemag = "hlc_30Rnd_545x39_B_AK";
+_carbinemag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
 _smg = "rhs_weap_aks74u";
@@ -194,8 +194,8 @@ _bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
 _bagMs = "B_AssaultPack_khk";					// Plecak dla medyka (mały)
-_bagMm = "LOP_US_Kitbag_Med";					// Plecak dla medyka (średni)
-_bagMb = "LOP_US_Kitbag_Med";               	// Plecak dla medyka (duży)
+_bagMm = "B_Kitbag_rgr";					// Plecak dla medyka (średni)
+_bagMb = "B_Kitbag_rgr";               	// Plecak dla medyka (duży)
 
 _bagARs = "rhs_assault_umbts";					// Plecak dla RKM (mały)
 _bagARm = "B_TacticalPack_oli";					// Plecak dla RKM (średni)
@@ -229,9 +229,9 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "hlc_rifle_rpk74n";
+_ARmag = "hlc_60Rnd_545x39_t_rpk";
+_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkm";

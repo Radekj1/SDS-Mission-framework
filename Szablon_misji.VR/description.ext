@@ -233,7 +233,7 @@ class Params
 		default = 0;
 	};
 
-  class f_param_timeOfDay
+	class f_param_timeOfDay
 	{
 		title = "$STR_f_param_timeOfDay";
 		values[] = {0,1,2,3,4,5,6,7,8};
@@ -241,6 +241,15 @@ class Params
 		default = 4;
 		function = "f_fnc_setTime"; // This function is called to apply the values
  		isGlobal = 0; // Execute this only on the server
+	};
+	
+	class f_param_autoTeleport
+	{
+		title = "Auto-teleport of JIP Clients";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+		code = "f_param_autoTeleport = %1";
 	};
 
 // ============================================================================================
@@ -445,7 +454,7 @@ class CfgFunctions
 				preInit = 1;
 				postInit = 1;
 			};
-
+			class getCurLeader{};
 			class nearPlayer{};
 		};
 		class mpEnd
