@@ -1,6 +1,6 @@
 //only run on jips joining after safestart disabled
 waitUntil {!isNull player};
-if ((f_param_autoTeleport == 1) && (f_var_mission_timer == 0)) then {
+if ((f_param_autoTeleport == 1) && ((f_var_mission_timer == 0) || (f_var_mission_timer < 0))) then {
 //player sideChat "Ponownie wywołano JIP teleport";
 
 private _time = time;
