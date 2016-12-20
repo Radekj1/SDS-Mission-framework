@@ -12,23 +12,16 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4178.1313,92.409721,6118.0742};
-		dir[]={0.00060374232,-0.6366027,0.77121365};
-		up[]={0.00049795257,0.77117962,0.63660914};
-		aside[]={1.0000165,7.7104232e-008,-0.00078096602};
+		pos[]={4002.2996,30,4661.7207};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Ui_F",
-	"A3_Supplies_F_Heli_CargoNets",
-	"A3_Characters_F",
-	"ace_gforces",
-	"ace_parachute",
-	"ace_explosives",
-	"A3_Weapons_F_Ammoboxes",
-	"A3_Supplies_F_Exp_Ammoboxes"
+
 };
 class AddonsMetaData
 {
@@ -14842,8 +14835,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3994.8411,5.0014391,4700.5811};
-						angles[]={0,6.2740798,0};
+						position[]={3994.8411,5.0014391,4700.5806};
+						angles[]={0,6.2740746,0};
 					};
 					side="East";
 					flags=6;
@@ -14851,7 +14844,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpCSAT_AH1 = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver VehCSAT_AH1;";
+						init="GrpCSAT_AH1 = group this; [""ps"",this] call f_fnc_assignGear; this moveInDriver VehCSAT_AH1;";
 						name="UnitCSAT_AH1_P";
 						description="Pilot";
 						isPlayable=1;
@@ -14861,25 +14854,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -14898,7 +14872,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -21410,14 +21422,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4171.334,5.0014391,4888.7695};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21472,14 +21484,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4173.2344,5.0014391,4886.3047};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21534,14 +21546,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4176.1563,5.0014391,4886.2148};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21596,14 +21608,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4178.9902,5.0014391,4886.1758};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21658,14 +21670,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4182.4023,5.0014391,4886.3125};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21720,14 +21732,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4185.5137,5.0014391,4886.1523};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21782,14 +21794,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4188.9512,5.0014391,4886.2539};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21844,14 +21856,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4192.0176,5.0014391,4886.3262};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21906,14 +21918,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4195.5703,5.0014391,4886.3633};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -21968,14 +21980,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4199.1113,5.0014391,4886.416};
-						angles[]={0,0.034639373,0};
+						angles[]={0,0.034644786,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22043,14 +22055,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4167.5889,5.0014391,5590.0488};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22105,14 +22117,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4172.7139,5.0014391,5587.9395};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22167,14 +22179,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4175.3545,5.0014391,5587.8789};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22229,14 +22241,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4170.1357,5.0014391,5587.9707};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22291,14 +22303,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4178.1846,5.0014391,5587.9824};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22353,14 +22365,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4181.2178,5.0014391,5587.873};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22415,14 +22427,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4184.4229,5.0014391,5587.7949};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22477,14 +22489,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4187.8936,5.0014391,5587.7949};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22539,14 +22551,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4191.2998,5.0014391,5587.8926};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22601,14 +22613,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4194.1338,5.0014391,5587.8555};
-						angles[]={0,0.015918171,0};
+						angles[]={0,0.015917402,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22676,14 +22688,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4163.1836,5.0014391,6401.4424};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22738,14 +22750,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4166.1904,5.0014391,6399.6206};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22800,14 +22812,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4169.5176,5.0014391,6399.7915};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22862,14 +22874,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4172.8545,5.0014391,6400.0347};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22924,14 +22936,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4199.4746,5.0014391,6399.4946};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -22986,14 +22998,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4195.0869,5.0014391,6399.6118};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -23048,14 +23060,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4190.4014,5.0014391,6399.6748};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -23110,14 +23122,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4186.1465,5.0014391,6399.665};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -23172,14 +23184,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4182.0967,5.0014391,6399.8306};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
@@ -23234,14 +23246,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4177.1982,5.0014391,6399.9482};
-						angles[]={0,6.2427411,0};
+						angles[]={0,6.2427464,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="GrpNATO_JIP = group this;  " \n "nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";  nul = [this] execVM ""f\JIP\f_JIP_addTeleportOptionsAction.sqf"";  " \n "";
 						description="JIP";
 						isPlayable=1;
 					};
