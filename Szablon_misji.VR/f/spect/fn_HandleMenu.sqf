@@ -41,7 +41,7 @@ switch (_button) do {
         _this spawn {
             [] call F_fnc_ForceExit;
             f_cam_VirtualCreated = nil;
-            switch (f_var_radios) do {
+            switch (f_param_radios) do {
                 // ACRE
                 case 1: {
                     [false] call acre_api_fnc_setSpectator;

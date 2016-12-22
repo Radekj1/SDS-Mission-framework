@@ -44,6 +44,9 @@ if (f_var_JIP_GearMenu) then {
 player removeAction F3_JIP_reinforcementOptionsAction;
 F3_JIP_reinforcementOptionsAction = nil;
 
+player removeAction F3_JIP_TeleportAction;
+F3_JIP_TeleportAction = nil;
+
 // ====================================================================================
 
 // IMPLEMENT CHOICES

@@ -313,7 +313,7 @@ switch (_TypNumber) do
   case 23:
   {
     _Unit_Pool_S = ["LOP_AFR_Driver","LOP_AFR_Infantry_IED","LOP_AFR_Infantry_GL","LOP_AFR_Infantry_AR_Asst","LOP_AFR_Infantry_Corpsman","LOP_AFR_Infantry_IED","LOP_AFR_Infantry_Rifleman_3","LOP_AFR_Infantry_AR","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_Rifleman"];
-    _Unit_Pool_V = ["LOP_AFR_Landrover","LOP_AFR_Landrover_M2"];
+    _Unit_Pool_V = ["LOP_AFR_Landrover","I_G_Offroad_01_armed_F"];
     _Unit_Pool_T = ["LOP_AFR_M113_W","LOP_AFR_T34","LOP_AFR_T55"];
     _Unit_Pool_A = [];
   }; 

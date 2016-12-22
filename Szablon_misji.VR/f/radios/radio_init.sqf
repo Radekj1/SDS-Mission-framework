@@ -8,12 +8,12 @@
 // server and client.
 
 // Wait for parameter to be initialised
-waitUntil{!isNil "f_var_radios"};
+waitUntil{!isNil "f_param_radios"};
 
 // If any radio system selected
-if(f_var_radios != 0) then {
+if(f_param_radios != 0) then {
 
-  switch (f_var_radios) do {
+  switch (f_param_radios) do {
   // ACRE
   case 1: {
     [] execVM "f\radios\acre\acre_init.sqf";

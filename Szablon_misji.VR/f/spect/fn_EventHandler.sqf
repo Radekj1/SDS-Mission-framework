@@ -349,7 +349,7 @@ case "KeyDown":
         case 25:
 		{
             f_cam_muteSpectators = !f_cam_muteSpectators;
-            switch (f_var_radios) do {
+            switch (f_param_radios) do {
               // ACRE
               case 1: {
                 [f_cam_muteSpectators] call acre_api_fnc_setSpectator;

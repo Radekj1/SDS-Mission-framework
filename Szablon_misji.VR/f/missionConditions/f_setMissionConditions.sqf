@@ -16,6 +16,9 @@ if (!isServer) exitWith {};
 
 if (f_param_snow != 0) then {
 	
+	[[[player],"f\missionConditions\fn_SetSnow.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;
+	
+	/*
 		_name_terr = worldName;
 
 		if (_name_terr=="Altis" or _name_terr=="Stratis" or _name_terr=="Tanoa") then {
@@ -28,7 +31,7 @@ if (f_param_snow != 0) then {
 		
 		[[[player],"f\missionConditions\fn_SetSnow.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;
 		{[[[_x],"f\missionConditions\snow_breath.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;sleep 0.5} forEach allUnits;	
-	
+	*/
 };
 
 if (f_param_fog != 4) then {
