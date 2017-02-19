@@ -59,21 +59,21 @@
 // Dodatki do broni używane przez większośc klas
 
 // Dodatki broń główna
-_attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
-_attach2 = "rhs_acc_perst1ik";			// Laser (RHS)
+_attach1 = "rhs_acc_perst3_2dp_h";			// Latarka (RHS)
+_attach2 = "rhs_acc_perst3";			// Laser (RHS)
 
 _silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
-_scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
+_scope1 = "optic_ACO_grn";				// Celownik holo (RHS)
 _scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
-_bipod1 = "bipod_02_F_hex";				// Default bipod
+_bipod1 = "rhs_acc_grip_ffg2";				// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_silencer1,_attach1,_scope1,_bipod1]; 	// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -95,12 +95,12 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74m_2mag";
+_rifle = "rhs_weap_ak74mr";
 _riflemag = "rhs_30Rnd_545x39_AK";
 _riflemag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_ak74m";
+_carbine = "rhs_weap_ak74mr";
 _carbinemag = "rhs_30Rnd_545x39_AK";
 _carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
 
@@ -118,7 +118,7 @@ _smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 //_diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74m_gp25";
+_glrifle = "rhs_weap_ak74mr_gp25";
 _glriflemag = "rhs_30Rnd_545x39_AK";
 _glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
 _glmag = "rhs_VOG25";
@@ -229,7 +229,7 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk74n";
+_AR = "hlc_rifle_RPK12";
 _ARmag = "hlc_60Rnd_545x39_t_rpk";
 _ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
 
@@ -288,7 +288,7 @@ _specOp = [ "ps"];
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
 _baseUniform = ["rhs_uniform_vdv_emr"];
-_baseHelmet = ["rhs_6b28_ess","rhs_6b28","rhs_6b28_green_ess"];
+_baseHelmet = ["rhs_6b47","rhs_6b47_ess"];
 _baseGlasses = [];
 
 // Kamizelki
@@ -442,6 +442,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addweapon _pistol;
+		_attachments = [_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
@@ -460,6 +461,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
+		_attachments = [_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
@@ -492,6 +494,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addweapon _pistol;
+		_attachments = [_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["g"] call _backpack;
@@ -508,7 +511,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
+		_attachments = [_attach2,_scope1];
 		["ar"] call _backpack;
 	};
 
@@ -578,7 +581,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];		
 		_unit addweapon _pistol;
 		_unit addweapon _MMG;
-		_attachments = [];
+		_attachments = [_scope2];
 		["mmg"] call _backpack;
 	};
 
@@ -791,6 +794,7 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
+		_attachments = [_attach2,_scope1];
 		_unit linkItem _GPS;
 	};
 
@@ -929,6 +933,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
+		_attachments = [_attach2,_scope1];
 		_unit linkItem _GPS; 
         _unit addWeapon "Laserdesignator";
         ["ftl"] call _backpack;
@@ -1170,7 +1175,7 @@ switch (_typeofUnit) do
 	
 		if(_typeofUnit != "ps") then {
 		
-			//_unit linkItem _nvg;			// Dodanie noktowizji
+			_unit linkItem _nvg;			// Dodanie noktowizji
 			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 			_unit addItem _IRstrobe;		
 		
