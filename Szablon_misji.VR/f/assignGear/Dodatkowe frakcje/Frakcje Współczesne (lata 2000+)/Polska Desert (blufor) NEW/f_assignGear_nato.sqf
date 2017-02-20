@@ -1189,7 +1189,7 @@ switch (_typeofUnit) do
 	
 		if(_typeofUnit != "ps") then {
 		
-			_unit linkItem _nvg;			// Dodanie noktowizji
+			//_unit linkItem _nvg;			// Dodanie noktowizji
 			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
 			_unit addItem _IRstrobe;		
 		
@@ -1208,6 +1208,11 @@ switch (_typeofUnit) do
 		
 		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		
+		};
+		if (_typeofUnit == "pp" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+		
+		_unit linkItem _nvg;			// Dodanie noktowizji
 		
 		};
 	
