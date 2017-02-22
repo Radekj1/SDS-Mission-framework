@@ -1,5 +1,5 @@
 
-private["_respawn","_spCheck" , "_result" ,"_faction1" , "_crateToDelete"];
+private["_respawn", "_spCheck", "_result" ,"_faction1" , "_crateToDelete"];
 
 _caller      = _this select 1;
 
@@ -26,46 +26,20 @@ switch (_typeofCrate) do
 };
 
 _respawnPos = getMarkerPos "Crate_mark";
-
-/*
-	_xyzpos = position _caller;
-	_BoxsArray = 	["Box_NATO_Wps_F","Box_East_Support_F","B_supplyCrate_F","B_CargoNet_01_ammo_F","I_CargoNet_01_ammo_F","Box_NATO_Ammo_F"]; 
-	_BoxsArray isEqualTypeAll  _mycrate;
-	_pos = GetPos _mycrate;
-	_result = typeName _mycrate;
-	hint format["You have spawned a %1",_pos];
-	_spCheck = nearestObjects[_respawnPos,[_mycrate],12] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'
-	_spCheck = nearestObject _respawnPos; 
-	_spCheck = player nearSupplies 20;
-	if(!isNil "_spCheck") then {deleteVehicle _spCheck;};
-*/
 	
-	_spCheck = nearestObjects[_respawnPos,[],4] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'		
+	_spCheck = nearestObjects[_respawnPos,["Box_NATO_Wps_F","Box_East_Support_F","B_supplyCrate_F","B_CargoNet_01_ammo_F","I_CargoNet_01_ammo_F","Box_IND_Wps_F","Box_NATO_WpsLaunch_F","Box_IND_WpsLaunch_F","Box_East_WpsSpecial_F"],10] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'		
 	if(!isNil "_spCheck") then {
-		if(_spCheck == crateToDelete) then 
-		{	
-			deleteVehicle _spCheck;
-			//hint format["Usunieto"];
-			//hint format["Usunieto ++ \n%1\n%2",_spCheck,crateToDelete];
-		};
+		
+		deleteVehicle _spCheck;
 	};
-	
-	
+
+	sleep 0.5;
 if(_mycrate != "") then
 {
-	//_unit = _mycrate createVehicle _xyzpos;
-	
 	sleep 0.5;
 	_unit = _mycrate createVehicle _respawnPos;
 	_unit setPos _respawnPos;
-	
-	//player sideChat format["Szkrzynia %1  ",_typeofCrate];
-	
-	_spCheck = nearestObjects[_respawnPos,[],4] select 0;	
-	crateToDelete = _spCheck;
-	
-	//player sideChat format["Szkrzynia %1  +=+=+  %2",_typeofCrate,crateToDelete];
-	
+		
     [_typeofCrate,_unit,_faction] call f_fnc_assignGear;
 	
 };
