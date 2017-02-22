@@ -62,7 +62,7 @@
 _attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
 _attach2 = "rhs_acc_perst1ik";			// Laser (RHS)
 
-_silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
+_silencer1 = "rhs_acc_dtk1983";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
 _scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
@@ -95,14 +95,14 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "hlc_rifle_ak74_dirty";
-_riflemag = "hlc_30Rnd_545x39_B_AK";
-_riflemag_tr = "hlc_30Rnd_545x39_t_ak";
+_rifle = "rhs_weap_ak74";
+_riflemag = "rhs_30Rnd_545x39_AK";
+_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "hlc_rifle_aks74";
-_carbinemag = "hlc_30Rnd_545x39_B_AK";
-_carbinemag_tr = "hlc_30Rnd_545x39_t_ak";
+_carbine = "rhs_weap_aks74";
+_carbinemag = "rhs_30Rnd_545x39_AK";
+_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
 _smg = "rhs_weap_aks74u";
@@ -118,7 +118,7 @@ _smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 //_diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74m_gp25";
+_glrifle = "rhs_weap_ak74_gp25";
 _glriflemag = "rhs_30Rnd_545x39_AK";
 _glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
 _glmag = "rhs_VOG25";
@@ -506,7 +506,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
 		["ar"] call _backpack;
 	};
 
