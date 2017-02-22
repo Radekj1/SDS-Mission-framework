@@ -17,6 +17,7 @@ class Header
 
 onLoadName = ""; // Dodaj nazwe misji np. "Operacja Baranek"
 onLoadMission = "sds-polska.pl"; // Nie zmieniaj
+overviewText = "Opis"; //Wpisać krótki opis misji
 author = "SDS"; // Dodaj autora lub autorów misji
 loadScreen = "logo.paa"; // Nie zmieniaj
 overviewPicture = "logo2.jpg"; // Tutaj możesz dodać obrazek który bdzie sie wyswietlal jak misja bedzie wybierana na serwerze
