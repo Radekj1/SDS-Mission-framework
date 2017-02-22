@@ -444,7 +444,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addweapon _pistol;
-		_attachments = [_attach2,_scope1];
+		_attachments = [_silencer1,_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
@@ -463,7 +463,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
-		_attachments = [_attach2,_scope1];
+		_attachments = [_silencer1,_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
@@ -496,7 +496,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addweapon _pistol;
-		_attachments = [_attach2,_scope1];
+		_attachments = [_silencer1,_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["g"] call _backpack;
