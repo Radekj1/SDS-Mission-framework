@@ -266,9 +266,16 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
+
+_satche_small = "DemoCharge_Remote_Mag";
+_satche_big = "SatchelCharge_Remote_Mag";
+_toolkit = "ToolKit";
+_zapalnik = "ACE_M26_Clacker";
+_n_rozbraja = "ACE_DefusalKit";
+_saperka = "ACE_EntrenchingTool";
+_wirecutter = "ACE_wirecutter";
 
 // ====================================================================================
 
@@ -916,11 +923,11 @@ switch (_typeofUnit) do
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
 		_unit linkItem _GPS;
-		_unit addItem "ACE_Clacker"; //zapalnik
-		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
+		_unit addItem _zapalnik; //zapalnik
+		_unit addItem _n_rozbraja; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
-
+	
 // LOADOUT: FAC RTO
 	case "uav":
 	{
@@ -1147,6 +1154,19 @@ switch (_typeofUnit) do
 		["crate_night_big"] call _crate;
 	};
 	
+// CRATE: Skrzynka, ładunki
+	case "crate_small_explo":
+	{
+		["crate_small_explo"] call _crate;
+	};
+
+// CRATE: Skrzynka, ładunki
+	case "crate_large_explo":
+	{
+		["crate_large_explo"] call _crate;
+	};
+	
+// ====================================================================================
 // ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

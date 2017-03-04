@@ -283,7 +283,30 @@
 				
 	};
 	
+	// CRATE: Skrzynka mała, ładunki
+	case "crate_small_explo":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_satche_small,10];		
+		_unit addMagazineCargoGlobal [_satche_big,6];		
+		_unit addItemCargoGlobal [_zapalnik,5];
+		_unit addItemCargoGlobal [_n_rozbraja,5];
+				
+	};	
 	
-	
-	
-	
+// CRATE: Skrzynka duża, ładunki
+	case "crate_large_explo":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_satche_small,30];		
+		_unit addMagazineCargoGlobal [_satche_big,20];		
+		_unit addItemCargoGlobal [_zapalnik,8];
+		_unit addItemCargoGlobal [_n_rozbraja,8];
+				
+	};

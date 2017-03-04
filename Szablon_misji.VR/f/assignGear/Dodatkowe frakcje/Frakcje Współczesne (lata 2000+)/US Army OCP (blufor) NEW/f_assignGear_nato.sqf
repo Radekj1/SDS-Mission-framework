@@ -125,11 +125,32 @@ _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
 _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
+////////////////////////////////////////
+/////////////// NOCNE //////////////////
+////////////////////////////////////////
+
 // Flary do granatnika
 _glflarewhite = "UGL_FlareWhite_F";
 _glflarered = "UGL_FlareRed_F";
 _glflareyellow = "UGL_FlareYellow_F";
 _glflaregreen = "UGL_FlareGreen_F";
+
+// Flary ręczne
+_flarewhite = "ACE_HandFlare_White";
+_flarered = "ACE_HandFlare_Red";
+_flareyellow = "ACE_HandFlare_Yellow";
+_flaregreen = "ACE_HandFlare_Green";
+
+// Świetliki
+_chemgreen =  "Chemlight_green";
+_chemred = "Chemlight_red";
+_chemyellow =  "Chemlight_yellow";
+_chemblue = "Chemlight_blue";
+
+// Noktowizja
+_nvg = "rhsusf_ANPVS_15";
+
+////////////////////////////////////////
 
 // Pistolet (dla wszystkich klas)
 _pistol = "rhsusf_weap_m1911a1";
@@ -263,9 +284,16 @@ _SNrifleMag = "7Rnd_408_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
+
+_satche_small = "DemoCharge_Remote_Mag";
+_satche_big = "SatchelCharge_Remote_Mag";
+_toolkit = "ToolKit";
+_zapalnik = "ACE_M26_Clacker";
+_n_rozbraja = "ACE_DefusalKit";
+_saperka = "ACE_EntrenchingTool";
+_wirecutter = "ACE_wirecutter";
 
 // ====================================================================================
 
@@ -909,8 +937,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
 		_unit linkItem _GPS;
-		_unit addItem "ACE_Clacker"; //zapalnik
-		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
+		_unit addItem _zapalnik; //zapalnik
+		_unit addItem _n_rozbraja; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
 
@@ -1138,7 +1166,20 @@ switch (_typeofUnit) do
 	{
 		["crate_night_big"] call _crate;
 	};
+
+// CRATE: Skrzynka, ładunki
+	case "crate_small_explo":
+	{
+		["crate_small_explo"] call _crate;
+	};
+
+// CRATE: Skrzynka, ładunki
+	case "crate_large_explo":
+	{
+		["crate_large_explo"] call _crate;
+	};
 	
+// ====================================================================================
 // ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
