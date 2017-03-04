@@ -58,9 +58,9 @@
 
 // Dodatki do broni używane przez większośc klas
 
-// Dodatki broń główna
-_attach1 = "rhs_acc_perst3_2dp_h";			// Latarka (RHS)
+_attach1 = "rhs_acc_2dpZenit_ris";		// Latarka (RHS)
 _attach2 = "rhs_acc_perst3";			// Laser (RHS)
+_attach3 = "rhs_acc_perst3_2dp_h";		// Latarka+Laser (RHS)
 
 _silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
@@ -69,11 +69,16 @@ _scope1 = "optic_ACO_grn";				// Celownik holo (RHS)
 _scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
-_bipod1 = "rhs_acc_grip_ffg2";				// Default bipod
+_bipod1 = "rhs_acc_grip_ffg2";			// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_attach1,_scope1,_bipod1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_loadout_night_day = f_param_night_day_wyp;
+if (_loadout_night_day == 0) then {								// Każda jednostka otrzyma ten zestaw dodatków
+	_attachments = [_silencer1,_attach2,_scope1,_bipod1]; 		//NOC
+} else {
+	_attachments = [_silencer1,_attach1,_scope1,_bipod1]; 		//DZIEŃ 			
+};
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -451,7 +456,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addweapon _pistol;
-		_attachments = [_silencer1,_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
@@ -470,7 +474,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
-		_attachments = [_silencer1,_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
@@ -503,7 +506,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addweapon _pistol;
-		_attachments = [_silencer1,_attach2,_scope1];
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
 		["g"] call _backpack;
@@ -520,7 +522,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_attach2,_scope1];
+		_attachments = [_scope1];
 		["ar"] call _backpack;
 	};
 
@@ -1195,7 +1197,7 @@ switch (_typeofUnit) do
 		
 	if (_loadout_night_day == 0) then {
 	
-		if(_typeofUnit != "ps") then {
+		//if(_typeofUnit != "ps") then {
 		
 			_unit linkItem _nvg;			// Dodanie noktowizji
 			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
@@ -1205,7 +1207,7 @@ switch (_typeofUnit) do
 			(unitBackpack _unit) addItemCargoGlobal [_chemred,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
-		};
+		//};
 		
 		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
 		
@@ -1214,11 +1216,12 @@ switch (_typeofUnit) do
 		
 		};
 		
-		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+	/*	if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
 		
 		_unit linkItem _nvg;			// Dodanie noktowizji
 		
 		};
+	*/
 	};
 	
 // ====================================================================================

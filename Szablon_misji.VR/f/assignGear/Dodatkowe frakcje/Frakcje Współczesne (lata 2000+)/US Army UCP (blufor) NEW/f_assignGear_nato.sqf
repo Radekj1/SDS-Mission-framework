@@ -61,7 +61,7 @@
 // Dodatki broń główna
 _attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
 _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć) (RHS)
-_attach3 = "rhsusf_acc_M952V";		// Latarka (RHS)
+_attach3 = "rhsusf_acc_M952V";				// Latarka (RHS)
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
 _silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
@@ -74,7 +74,12 @@ _bipod1 = "rhsusf_acc_harris_bipod";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach1,_scope1]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_loadout_night_day = f_param_night_day_wyp;
+if (_loadout_night_day == 0) then {			// Każda jednostka otrzyma ten zestaw dodatków
+	_attachments = [_attach1,_scope1];		//NOC
+} else {
+	_attachments = [_attach3,_scope1];		//DZIEŃ 			
+};
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
