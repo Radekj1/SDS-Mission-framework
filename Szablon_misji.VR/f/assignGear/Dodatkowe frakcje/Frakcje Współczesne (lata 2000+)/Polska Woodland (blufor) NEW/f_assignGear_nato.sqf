@@ -61,7 +61,7 @@
 
 // Dodatki broń główna
 _attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
-_attach2 = "rhsusf_acc_anpeq15side_bk";		// Latarka (RHS)
+_attach2 = "rhsusf_acc_M952V";				// Latarka (RHS)
 _attach3 = "acc_pointer_IR";				// czerwony laser (ARMA)
 
 //_silencer1 = "muzzle_snds_M";				// Tłumik 5.56 (długi)
