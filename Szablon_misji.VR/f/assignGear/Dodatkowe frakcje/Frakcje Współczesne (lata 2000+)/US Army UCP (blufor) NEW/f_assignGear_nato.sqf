@@ -159,8 +159,8 @@ _nvg = "rhsusf_ANPVS_15";
 ////////////////////////////////////////
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhsusf_weap_m1911a1";
-_pistolmag = "rhsusf_mag_7x45acp_MHP";
+_pistol = "rhsusf_weap_m9";
+_pistolmag = "rhsusf_mag_15Rnd_9x19_FMJ";
 
 // Granaty ręczne
 _grenade = "rhs_mag_m67";
