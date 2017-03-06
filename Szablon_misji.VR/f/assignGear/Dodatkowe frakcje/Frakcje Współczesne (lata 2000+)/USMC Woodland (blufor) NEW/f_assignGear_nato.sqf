@@ -130,8 +130,8 @@ _glflareyellow = "UGL_FlareYellow_F";
 _glflaregreen = "UGL_FlareGreen_F";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhsusf_weap_m1911a1";
-_pistolmag = "rhsusf_mag_7x45acp_MHP";
+_pistol = "rhsusf_weap_m9";
+_pistolmag = "rhsusf_mag_15Rnd_9x19_FMJ";
 
 // Granaty ręczne
 _grenade = "HandGrenade";
