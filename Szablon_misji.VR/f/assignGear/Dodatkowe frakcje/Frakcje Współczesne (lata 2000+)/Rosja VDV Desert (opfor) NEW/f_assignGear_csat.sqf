@@ -139,8 +139,8 @@ _glflarered = "rhs_VG40OP_red";
 _glflaregreen = "rhs_VG40OP_green";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_makarov_pmm";
-_pistolmag = "rhs_mag_9x18_12_57N181S";
+_pistol = "rhs_weap_pya";
+_pistolmag = "rhs_mag_9x19_17";
 
 // Granaty ręczne
 _grenade = "rhs_mag_rgd5";
