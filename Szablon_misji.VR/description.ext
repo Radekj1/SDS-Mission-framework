@@ -256,6 +256,15 @@ class Params
 		default = 1;
 		code = "f_param_autoTeleport = %1";
 	};
+	
+	class f_param_IND_friends
+	{
+		title="INDFOR sprzymierzony z BLUEFOR";
+		values[]={0,1,2};
+		texts[]={"Ustawienia misji","Nie","Tak"};
+		default = 0;
+		code = "f_param_IND_friends = %1";
+	};
 
 // ============================================================================================
 
