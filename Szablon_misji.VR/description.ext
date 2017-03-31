@@ -259,7 +259,7 @@ class Params
 	
 	class f_param_IND_friends
 	{
-		title="INDFOR sprzymierzony z BLUEFOR";
+		title="INDFOR sprzymierzony z BLUFOR";
 		values[]={0,1,2};
 		texts[]={"Ustawienia misji","Nie","Tak"};
 		default = 0;
