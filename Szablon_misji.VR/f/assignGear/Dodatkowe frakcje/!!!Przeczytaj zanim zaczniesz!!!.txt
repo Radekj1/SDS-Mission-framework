@@ -1,4 +1,4 @@
-
+﻿
 Są to dodatkowe frakcje dla graczy. Jak pewnie widzisz niektóre frakcje mają na końcu dopiski. Już wyjaśniam. Możesz spotkać następujące oznaczenia:
 
 
@@ -13,3 +13,5 @@ Są to dodatkowe frakcje dla graczy. Jak pewnie widzisz niektóre frakcje mają 
 	poprawiam błędy, które sam zauważę lub zostaną mi zgłoszone,
 	
 	4.BRAK OZNACZENIA – są to frakcje na starszym systemie i z czasem zostaną przeniesione na nowy. Tych frakcji MOŻNA używać podczas tworzenia misji.
+	
+	5.ND - nie działa 

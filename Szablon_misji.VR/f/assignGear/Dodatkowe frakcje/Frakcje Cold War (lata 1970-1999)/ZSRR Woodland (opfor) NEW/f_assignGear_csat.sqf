@@ -97,19 +97,19 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "hlc_rifle_ak74_dirty";
-_riflemag = "hlc_30Rnd_545x39_B_AK";
-_riflemag_tr = "hlc_30Rnd_545x39_t_ak";
+_rifle = "rhs_weap_ak74";
+_riflemag = "rhs_30Rnd_545x39_AK";
+_riflemag_tr = "rhs_30Rnd_545x39_7N22_AK";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "hlc_rifle_aks74";
-_carbinemag = "hlc_30Rnd_545x39_B_AK";
-_carbinemag_tr = "hlc_30Rnd_545x39_t_ak";
+_carbine = "rhs_weap_aks74";
+_carbinemag = "rhs_30Rnd_545x39_AK";
+_carbinemag_tr = "rhs_30Rnd_545x39_7N22_AK";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
 _smg = "rhs_weap_aks74u";
 _smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smgmag_tr = "rhs_30Rnd_545x39_7N22_AK";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -120,7 +120,7 @@ _smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 //_diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74m_fullplum_gp25";
+_glrifle = "rhs_weap_ak74_gp25";
 _glriflemag = "rhs_30Rnd_545x39_AK";
 _glriflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
 _glmag = "rhs_VOG25";
@@ -233,9 +233,9 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "hlc_rifle_rpk74n";
+_ARmag = "hlc_60Rnd_545x39_t_rpk";
+_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkm";
@@ -270,16 +270,9 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
+_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
-
-_satche_small = "DemoCharge_Remote_Mag";
-_satche_big = "SatchelCharge_Remote_Mag";
-_toolkit = "ToolKit";
-_zapalnik = "ACE_M26_Clacker";
-_n_rozbraja = "ACE_DefusalKit";
-_saperka = "ACE_EntrenchingTool";
-_wirecutter = "ACE_wirecutter";
 
 // ====================================================================================
 
@@ -298,14 +291,14 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_flora_patchless_alt"];
-_baseHelmet = ["rhs_ssh68"];
+_baseUniform = ["Pograntsovka_M88"];
+_baseHelmet = ["rhs_ssh68","ssh68_net_of","ssh68_camo_kzs"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_medic"];
-_mediumRig = ["rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper","rhs_6b23_vydra_3m"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper","rhs_6b23_vydra_3m"];
+_lightRig = ["rhs_6b5_medic_vsr","rhs_6b5_medic"];
+_mediumRig = ["rhs_6b5_vsr","rhs_6b5","rhs_6b5_sniper_vsr"]; 	// default for all infantry classes
+_heavyRig = ["rhs_6b5_vsr","rhs_6b5","rhs_6b5_sniper_vsr"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_gorka_r_y"];
@@ -326,9 +319,9 @@ _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhs_uniform_flora_patchless_alt"];
+_crewUniform = ["Butan_M88"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b23_crew","rhs_6b23_crewofficer"];
+_crewRig = ["rhs_6b5_officer"];
 _crewGlasses = [];
 
 // Ghillie

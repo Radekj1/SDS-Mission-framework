@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - ZSRR DESERT
+// F3 - Folk ARPS Assign Gear Script - CDF
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -97,19 +97,19 @@ _hg_attachments= []; // Tak jak wyżej, można ustalić ododatki na pistolet
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_rifle = "rhs_weap_akm";
+_riflemag = "rhs_30Rnd_762x39mm";
+_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_aks74";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
+_carbine = "rhs_weap_akms";
+_carbinemag = "rhs_30Rnd_762x39mm";
+_carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_aks74u";
-_smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smg = "rhs_weap_savz61";
+_smgmag = "rhsgref_20rnd_765x17_vz61";
+_smgmag_tr = "rhsgref_20rnd_765x17_vz61";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -120,9 +120,9 @@ _smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 //_diverMagM = "30Rnd_min_rf_545x39_mag";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_glrifle = "rhs_weap_akm_gp25";
+_glriflemag = "rhs_30Rnd_762x39mm";
+_glriflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 _glmag = "rhs_VOG25";
 
 // Granaty dymne do granatnika
@@ -147,7 +147,7 @@ _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadered = "SmokeShellRed";
 _smokegrenadeblue = "SmokeShellBlue";
 
-// Flary ręczne
+//Flary ręczne
 _flarewhite = "ACE_HandFlare_White";
 _flarered = "ACE_HandFlare_Red";
 _flareyellow = "ACE_HandFlare_Yellow";
@@ -190,8 +190,8 @@ _uavterminal = "O_UavTerminal";
 // Plecaki
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "tf_anprc155_coyote";                  	// Plecak dla dowódcy (radio)
+_bagPP = "tf_anprc155_coyote";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
@@ -214,17 +214,15 @@ _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "tf_anprc155_coyote";						// Plecak RTO
 
 _baghmgg = "RHS_Kord_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
 
 _baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
 _baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
-
 _bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
 _bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
-
 _baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
 _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
@@ -270,16 +268,9 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
+_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
-
-_satche_small = "DemoCharge_Remote_Mag";
-_satche_big = "SatchelCharge_Remote_Mag";
-_toolkit = "ToolKit";
-_zapalnik = "ACE_M26_Clacker";
-_n_rozbraja = "ACE_DefusalKit";
-_saperka = "ACE_EntrenchingTool";
-_wirecutter = "ACE_wirecutter";
 
 // ====================================================================================
 
@@ -298,14 +289,14 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_m88_patchless"];
-_baseHelmet = ["rhs_ssh68","ssh68_net_of"];
+_baseUniform = ["rhsgref_uniform_ttsko_mountain"];
+_baseHelmet = ["rhsgref_6b27m_ttsko_forest","rhsgref_ssh68_ttsko_forest"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b5_medic"];
-_mediumRig = ["rhs_6b5","rhs_6b5_sniper","rhs_6b5_officer"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b5","rhs_6b5_sniper","rhs_6b5_officer"];
+_lightRig = ["rhsgref_6b23_khaki_medic"];
+_mediumRig = ["rhsgref_6b23_khaki_nco","rhsgref_6b23_khaki","rhsgref_6b23_khaki_rifleman","rhsgref_6b23_khaki_sniper"]; 	// default for all infantry classes
+_heavyRig = ["rhsgref_6b23_khaki_nco","rhsgref_6b23_khaki","rhsgref_6b23_khaki_rifleman","rhsgref_6b23_khaki_sniper"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_gorka_r_y"];
@@ -314,15 +305,15 @@ _diverRig = ["rhs_vydra_3m"];
 _diverGlasses = [];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_df15_tan"];
-_pilotHelmet = ["rhs_zsh7a_mike","rhs_gssh18"];
-_pilotRig = ["rhs_vest_commander"];
+_pilotUniform = ["rhsgref_uniform_ttsko_urban"];
+_pilotHelmet = ["rhs_zsh7a_mike"];
+_pilotRig = ["rhsgref_6b23_khaki"];
 _pilotGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhs_uniform_m88_patchless"];
+_crewUniform = ["rhsgref_uniform_ttsko_urban"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b23_ML_crew","rhs_6b23_ML_crewofficer"];
+_crewRig = ["rhsgref_6b23_khaki_officer"];
 _crewGlasses = [];
 
 // Ghillie
@@ -331,12 +322,11 @@ _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
-// Spec Opa
-_sfuniform = ["rhs_uniform_df15_tan"];
+// Jet Pilot
+_sfuniform = ["rhsgref_uniform_ttsko_mountain"];
 _sfhelmet = ["rhs_zsh7a_alt"];
-_sfRig = ["V_Rangemaster_belt"];
+_sfRig = ["rhs_vest_commander"];
 _sfGlasses = [];
-
 
 // ====================================================================================
 
@@ -414,7 +404,7 @@ _backpack = {
 	if (count _this > 1) then {_loadout_night_day = _this select 1};
 	switch (_typeofBackPack) do
 	{
-		#include "f_assignGear_csat_b.sqf";
+		#include "f_assignGear_aaf_b.sqf";
 	};
 };
 
@@ -927,7 +917,7 @@ switch (_typeofUnit) do
 		_unit addItem _n_rozbraja; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
-	
+
 // LOADOUT: FAC RTO
 	case "uav":
 	{
@@ -1199,7 +1189,7 @@ switch (_typeofUnit) do
 			_unit addItem _IRstrobe;		
 		
 			
-			(unitBackpack _unit) addItemCargoGlobal [_chemred,2];
+			(unitBackpack _unit) addItemCargoGlobal [_chemgreen,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
 		};
