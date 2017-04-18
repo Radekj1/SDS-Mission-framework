@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - NATO - US Army UCP
+// F3 - Folk ARPS Assign Gear Script - NATO - US Army UCP [V-1.7 | 18.04.2017]
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
