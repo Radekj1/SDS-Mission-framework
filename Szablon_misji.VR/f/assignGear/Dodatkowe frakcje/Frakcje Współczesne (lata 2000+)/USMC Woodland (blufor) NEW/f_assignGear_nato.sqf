@@ -229,9 +229,9 @@ _ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
 _ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
 
 // Strzelec MMG
-_MMG = "rhs_weap_m240B";
-_MMGmag = "rhsusf_100Rnd_762x51";
-_MMGmag_tr = "rhsusf_100Rnd_762x51_m62_tracer";
+_MMG = "hlc_lmg_M60E4";
+_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
+_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
 
 // Strzelec wyborowy
 _DMrifle = "rhs_weap_m14ebrri";
@@ -511,7 +511,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
 		["ar"] call _backpack;
 	};
 
@@ -581,7 +580,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];		
 		_unit addweapon _pistol;
 		_unit addweapon _MMG;
-		_attachments = [_scope1];
+		_attachments = [];
 		["mmg"] call _backpack;
 	};
 

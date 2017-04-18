@@ -268,9 +268,16 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
-_satchel = "SatchelCharge_Remote_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
+
+_satche_small = "DemoCharge_Remote_Mag";
+_satche_big = "SatchelCharge_Remote_Mag";
+_toolkit = "ToolKit";
+_zapalnik = "ACE_M26_Clacker";
+_n_rozbraja = "ACE_DefusalKit";
+_saperka = "ACE_EntrenchingTool";
+_wirecutter = "ACE_wirecutter";
 
 // ====================================================================================
 
@@ -509,7 +516,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
 		["ar"] call _backpack;
 	};
 

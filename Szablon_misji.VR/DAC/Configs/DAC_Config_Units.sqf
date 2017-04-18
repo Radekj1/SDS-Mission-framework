@@ -16,30 +16,33 @@ _TypNumber = _this select 0;_TempArray = [];
 /////////////////////////////////////////////
 ///////////////SPIS TRESCI///////////////////
 /////////////////////////////////////////////
-
+// [MD] - frakcje współczesne "modern"
+// [CW] - frokcje Cold War
+// [U] - frakcje uniwersalne
 //////////BLUFOR//////////
-	 7 - US Army OCP 2010 RHS
-	 8 - USMC Pustynia 2010 RHS
-	 9 - Polskie Siły Zbrojne - Las
-	10 - Polskie Siły Zbrojne - Pustynia
-	11 - US ARMY "WD" 80/90
-	12 - US ARMY "D" 80/90
-	13 - CDF
-	14 - Afghan Police
+	 7 - US Army OCP 2010 RHS [MD]
+	 8 - USMC Pustynia 2010 RHS [MD]
+	 9 - Polskie Siły Zbrojne - Las [MD]
+	10 - Polskie Siły Zbrojne - Pustynia [MD]
+	11 - US ARMY "WD" 80/90 [CW]
+	12 - US ARMY "D" 80/90 [CW]
+	13 - CDF [CW]
+	14 - Afghan Police [MD]
 	
 //////////OPFOR///////////
-	15 - Russians RHS - MSV Leśne
-	16 - Russians RHS - VDV Pustynia 
-	17 - ChDKZ 
-	18 - SLA
-	19 - United Armed Forces of Novorossiya
+	15 - Russians RHS - MSV Leśne [MD]
+	16 - Russians RHS - VDV Pustynia [MD]
+	17 - ChDKZ [U]
+	18 - SLA [CW]
+	19 - United Armed Forces of Novorossiya [MD]
+	25 - ZSSR [CW]
 	
 //////////INDFOR//////////
-	20 - Takistan REBELS
-	21 - CDF UN
-	22 - Ultranationalists
-	23 - African Militia
-	24 - Ukraine Armed Forces
+	20 - Takistan REBELS [U]
+	21 - CDF UN [CW]
+	22 - Ultranationalists [U]
+	23 - African Militia [U]
+	24 - Ukraine Armed Forces [MD]
 
 *////////////////////////////////////////////
 
@@ -244,8 +247,8 @@ switch (_TypNumber) do
   {
     _Unit_Pool_S = ["LOP_ChDKZ_Infantry_Crewman","LOP_ChDKZ_Infantry_Pilot","LOP_ChDKZ_Infantry_TL","LOP_ChDKZ_Infantry_MG","LOP_ChDKZ_Infantry_MG_Asst","LOP_ChDKZ_Infantry_AT","LOP_ChDKZ_Infantry_GL","LOP_ChDKZ_Infantry_Corpsman","LOP_ChDKZ_Infantry_Rifleman_3"];
     _Unit_Pool_V = ["rhsgref_ins_ural_Zu23","rhsgref_BRDM2_ins","rhsgref_ins_uaz_dshkm","rhsgref_ins_uaz_spg9","rhsgref_ins_ural_open"];
-    _Unit_Pool_T = ["LOP_ChDKZ_T72BA","LOP_ChDKZ_BMP1","LOP_ChDKZ_BMP2"];
-    _Unit_Pool_A = ["LOP_ChDKZ_Mi8MT_Cargo","LOP_ChDKZ_Mi8MTV3_UPK23"];
+    _Unit_Pool_T = ["rhsgref_ins_t72ba","rhsgref_ins_bmd1p","rhsgref_ins_bmd2"];
+    _Unit_Pool_A = ["rhsgref_ins_Mi8amt"];
   }; 
   
 //-------------------------------------------------------------------------------------------------
@@ -272,6 +275,16 @@ switch (_TypNumber) do
 
 //-------------------------------------------------------------------------------------------------
 
+// Russians ZSSR (OPFOR)
+  case 25:
+  {
+    _Unit_Pool_S = ["oksv_wood_tank_crew","rhs_pilot","oksv_wood_serg","oksv_wood_gp","oksv_wood_rifleman","oksv_wood_sniper","oksv_wood_medic","oksv_wood_rpg","oksv_wood_rpgassis","oksv_wood_machinegunne","oksv_wood_secnumber"];
+    _Unit_Pool_V = ["oksv_wood_brdm2","oksv_wood_btr70"];
+    _Unit_Pool_T = ["oksv_wood_zsu234","oksv_wood_bmp1k","oksv_wood_bmp2","oksv_t80"];
+    _Unit_Pool_A = ["RHS_Mi8AMTSh_vvsc","RHS_Mi8AMTSh_UPK23_vvsc"];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
 //////////////////////////////////////////////////////////////////
 //////////////////////INDFOR//////////////////////////////////////
 //////////////////////////////////////////////////////////////////  

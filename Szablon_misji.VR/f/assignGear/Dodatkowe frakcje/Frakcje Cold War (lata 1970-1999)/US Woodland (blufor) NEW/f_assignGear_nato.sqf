@@ -75,7 +75,7 @@ _bipod1 = "rhsusf_acc_harris_bipod";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach3]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = [_attach2]; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // [] = brak dodatków
 // [_attach1,_scope1,_silencer1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1 i _silencer1
@@ -101,7 +101,7 @@ _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_m4a1_carryhandle_grip";
+_carbine = "rhs_weap_m4_carryhandle";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -138,8 +138,8 @@ _glflareyellow = "UGL_FlareYellow_F";
 _glflaregreen = "UGL_FlareGreen_F";
 
 // Pistolet (dla wszystkich klas)
-//_pistol = "";	// _pistol = "CUP_hgun_M9"; - bug nie pozwala na dodnie
-//_pistolmag = "";	// _pistolmag = "CUP_15Rnd_9x19_M9";
+_pistol = "rhsusf_weap_m1911a1";
+_pistolmag = "";
 
 // Granaty ręczne
 _grenade = "HandGrenade";
@@ -232,14 +232,14 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "rhs_weap_m249_pip_L";
+_AR = "rhs_weap_m249_pip_L_para";
 _ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
 _ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
 
 // Strzelec MMG
-_MMG = "rhs_weap_m240B";
-_MMGmag = "rhsusf_100Rnd_762x51";
-_MMGmag_tr = "rhsusf_100Rnd_762x51_m62_tracer";
+_MMG = "hlc_lmg_m60";
+_MMGmag = "hlc_100Rnd_762x51_M_M60E4";
+_MMGmag_tr = "hlc_100Rnd_762x51_M_M60E4";
 
 // Strzelec wyborowy
 _DMrifle = "rhs_weap_m14ebrri";
@@ -247,7 +247,7 @@ _DMriflemag = "rhsusf_20Rnd_762x51_m118_special_Mag";
 
 // Strzelec AT
 _RAT = "rhs_weap_m72a7";
-_RATmag = "rhs_m72a7_mag";
+//_RATmag = "rhs_m72a7_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_smaw_green";
@@ -264,8 +264,8 @@ _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 
 // Snajper
-_SNrifle = "srifle_LRR_F";
-_SNrifleMag = "7Rnd_408_Mag";
+_SNrifle = "rhs_weap_M107";
+_SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
 
 // Mechanicy/saperzy
 _ATmine = "ATMine_Range_Mag";
@@ -297,14 +297,14 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposarzenia są losowo wybierane z listy
-_baseUniform = ["usm_bdu_w"];
-_baseHelmet = ["usm_helmet_pasgt_g_w","usm_helmet_pasgt_w"];
+_baseUniform = ["rhsgref_uniform_woodland"];
+_baseHelmet = ["rhsusf_ach_helmet_M81"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["usm_vest_pasgt_lbe_rm_m","usm_vest_pasgt_lbv_gr","usm_vest_pasgt_lbv_mg","usm_vest_pasgt_lbv_rmp","usm_vest_pasgt_lbv_rm_m"];
-_mediumRig = ["usm_vest_pasgt_lbe_rm_m","usm_vest_pasgt_lbv_gr","usm_vest_pasgt_lbv_mg","usm_vest_pasgt_lbv_rmp","usm_vest_pasgt_lbv_rm_m"]; 	// default for all infantry classes
-_heavyRig = ["usm_vest_pasgt_lbe_rm_m","usm_vest_pasgt_lbv_gr","usm_vest_pasgt_lbv_mg","usm_vest_pasgt_lbv_rmp","usm_vest_pasgt_lbv_rm_m"];
+_lightRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
+_mediumRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_FROG01_m81"];
@@ -326,8 +326,8 @@ _sfGlasses = [];
 
 // Załoga pojazdu
 _crewUniform = ["usm_bdu_odg"];
-_crewHelmet = ["usm_helmet_cvc"];
-_crewRig = ["usm_vest_pasgt"];
+_crewHelmet = ["rhsusf_cvc_green_helmet"];
+_crewRig = ["rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie

@@ -75,9 +75,9 @@ _bipod2 = "bipod_02_F_blk";					//
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {			// Każda jednostka otrzyma ten zestaw dodatków
-	_attachments = [_attach1,_scope1];		//NOC
+	_attachments = [_attach1,_scope2];		//NOC
 } else {
-	_attachments = [_attach3,_scope1];		//DZIEŃ 			
+	_attachments = [_attach3,_scope2];		//DZIEŃ 			
 };
 
 // [] = brak dodatków
@@ -538,7 +538,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
 		["ar"] call _backpack;
 	};
 
