@@ -1,4 +1,6 @@
-private["_respawn", "_spCheck", "_result" ,"_faction1" , "_crateToDelete"];
+// S.D.S Spawn Crate Script - [V-1.7 | 19.04.2017]
+
+private["_respawn","_spCheck", "_result" ,"_faction1" , "_crateToDelete"];
 
 _caller      = _this select 1;
 _faction1 = faction _caller;

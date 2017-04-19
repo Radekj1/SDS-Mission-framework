@@ -1,27 +1,3 @@
-/*
-_personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
-_surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-_bandage = "ACE_quikclot";					// Opatrunek "Quik Clot" dla piechoty
-_epinephrine = "ACE_epinephrine";			// Epinefryna
-_morphine = "ACE_morphine";					// Morfina
-_blood = "ACE_bloodIV_500";					// Krew 500 ml
-_plasma = "ACE_plasmaIV_500";				// Osocze 500 ml
-_saline = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
-
-_ATmine = "ATMine_Range_Mag";
-_APmine1 = "APERSBoundingMine_Range_Mag";
-_APmine2 = "APERSMine_Range_Mag";
-
-_satche_small = "DemoCharge_Remote_Mag";
-_satche_big = 	"SatchelCharge_Remote_Mag";
-_toolkit = 		"ToolKit";
-_zapalnik = 	"ACE_M26_Clacker";
-_n_rozbraja = 	"ACE_DefusalKit";
-_saperka = 		"ACE_EntrenchingTool";
-_wirecutter = 	"ACE_wirecutter";
-
-*/
-
 
 // CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"blu_f"] call f_fnc_assignGear
 	case "v_car":
