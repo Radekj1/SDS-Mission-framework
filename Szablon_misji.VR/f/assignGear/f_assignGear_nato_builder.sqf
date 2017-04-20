@@ -157,7 +157,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
 		["ar"] call _backpack;
 	};
 
@@ -817,39 +816,9 @@ switch (_typeofUnit) do
 		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_nato.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 
-
 // ====================================================================================
 
 // END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 };
 
-//////////////////////////////////////////////////////
-////////////////////// NOCNE /////////////////////////
-//////////////////////////////////////////////////////
-
-	_loadout_night_day = f_param_night_day_wyp;
-		
-	if (_loadout_night_day == 0) then {
-	
-		if(_typeofUnit != "ps") then {
-		
-			_unit linkItem _nvg;			// Dodanie noktowizji
-			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
-			_unit addItem _IRstrobe;		
-		
-			
-			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
-			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
-			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
-		};
-		
-		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
-		
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
-		
-		};
-	
-	};
-	
-//////////////////////////////////////////////////////
+// ====================================================================================

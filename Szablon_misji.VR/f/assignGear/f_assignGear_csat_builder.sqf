@@ -157,7 +157,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
-		_attachments = [_scope2];
+		_attachments = [];
 		["ar"] call _backpack;
 	};
 
@@ -561,8 +561,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
 		_unit linkItem _GPS;
-		_unit addItem "ACE_Clacker"; //zapalnik
-		_unit addItem "ACE_DefusalKit"; //zestaw do rozbrajania
+		_unit addItem _zapalnik; //zapalnik
+		_unit addItem _n_rozbraja; //zestaw do rozbrajania
 		["engm"] call _backpack;
 	};
 
@@ -579,7 +579,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
 		_unit linkItem _GPS; 
-        _unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+        _unit addWeapon "Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
@@ -598,7 +598,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
-		_unit addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+		_unit addWeapon "Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;
 	};
@@ -779,8 +779,31 @@ switch (_typeofUnit) do
 		["crate_hat"] call _crate;
 	};
 	
-//////////////////////////////////////////////////////	
-//////////////////////////////////////////////////////
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_small":
+	{
+		["crate_night_small"] call _crate;
+	};
+	
+// CRATE: Skrzynka, zasoby Nocne
+	case "crate_night_big":
+	{
+		["crate_night_big"] call _crate;
+	};
+	
+// CRATE: Skrzynka, ładunki
+	case "crate_small_explo":
+	{
+		["crate_small_explo"] call _crate;
+	};
+
+// CRATE: Skrzynka, ładunki
+	case "crate_large_explo":
+	{
+		["crate_large_explo"] call _crate;
+	};
+	
+// ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
@@ -799,17 +822,3 @@ switch (_typeofUnit) do
 };
 
 // ====================================================================================
-
-// If this isn't run on an infantry unit we can exit
-if !(_isMan) exitWith {};
-
-// ====================================================================================
-
-// Handle weapon attachments
-#include "f_assignGear_attachments.sqf";
-
-// ====================================================================================
-
-// ENSURE UNIT HAS CORRECT WEAPON SELECTED ON SPAWNING
-
-_unit selectweapon primaryweapon _unit;

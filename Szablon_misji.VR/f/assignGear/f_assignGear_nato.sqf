@@ -17,7 +17,7 @@
 */
 // ====================================================================================
 	// Proszę wpisać odpowiednią liczbę dla wybranej frakcji
-	_loadout_faction_player = 2;
+	_loadout_faction_player = 1;
 // ====================================================================================
 
 //Definicje przedmiotów
@@ -132,6 +132,53 @@ Medical = {
 	_unit addItem _latarka;			// Latarka na mape
 };
 
+
+Night_Eq_NVG = {
+	_loadout_night_day = f_param_night_day_wyp;
+		
+	if (_loadout_night_day == 0) then {
+		if(_typeofUnit != "ps") then {
+			_unit linkItem _nvg;			// Dodanie noktowizji
+			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+			_unit addItem _IRstrobe;		
+			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
+		};
+		
+		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		};
+		
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+			_unit linkItem _nvg;			// Dodanie noktowizji	
+		};
+	};
+};
+
+Night_Eq_No_NVG = {
+	_loadout_night_day = f_param_night_day_wyp;
+		
+	if (_loadout_night_day == 0) then {
+		if(_typeofUnit != "ps") then {
+			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
+			_unit addItem _IRstrobe;		
+			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
+			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
+		};
+		
+		if (_typeofUnit == "dc" || _typeofUnit == "co" || _typeofUnit == "ftl" || _typeofUnit == "uav") then {
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite,4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
+		};
+		
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+			_unit linkItem _nvg;			// Dodanie noktowizji	
+		};
+	};
+};
 	
 
 // ====================================================================================
@@ -207,11 +254,6 @@ _glmag = "1Rnd_HE_Grenade_shell";
 // Pistolet (dla wszystkich klas)
 _pistol = "rhsusf_weap_m9";
 _pistolmag = "rhsusf_mag_15Rnd_9x19_FMJ";
-
-// Siły specjalne
-//_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
-//_diverMag1 = "30Rnd_556x45_Stanag";
-//_diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // ====================================================================================
 
@@ -311,7 +353,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhs_uniform_cu_ucp"];
 _baseHelmet = ["rhsusf_ach_helmet_ESS_ucp", "rhsusf_ach_helmet_headset_ucp", "rhsusf_ach_helmet_headset_ess_ucp"];
 _baseGlasses = [];
@@ -381,17 +423,16 @@ if (_isMan) then {
 	#include "f_assignGear_clothes.sqf";
 
 // ====================================================================================
-
-	// Przedmioty uniwersalne dla klas
-	// Dodanie przedmiotów do każdej jednstki (gracza)
-	
+	// Dodanie przedmiotów medycznych do każdej jednstki (gracza)	
 	call Medical;
 	
   };
   
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };
@@ -514,7 +555,7 @@ _bagsmall = "B_Parachute";						// Spadochron
 _bagFTL = "tf_rt1523g_big_rhs";					// Plecak dla dowódcy (radio)
 _bagPP = "tf_rt1523g_big_rhs";                  // Plecak dla pilota (radio)
 
-_bagTL = "B_rhsusf_B_BACKPACK";					//Plecak dowódcy drużyny
+_bagTL = "rhsusf_assault_eagleaiii_ocp";		//Plecak dowódcy drużyny
 
 _bagMs = "rhsusf_assault_eagleaiii_coy";		// Plecak dla medyka (mały)
 _bagMm = "rhsusf_assault_eagleaiii_coy";		// Plecak dla medyka (średni)
@@ -563,7 +604,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhs_uniform_cu_ocp"];
 _baseHelmet = ["rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_headset_ess_ocp", "rhsusf_ach_helmet_ESS_ocp"];
 _baseGlasses = [];
@@ -643,8 +684,10 @@ if (_isMan) then {
   };
   
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };	
@@ -811,7 +854,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhs_uniform_FROG01_d"];
 _baseHelmet = ["rhsusf_mich_helmet_marpatd","rhsusf_lwh_helmet_marpatd"];
 _baseGlasses = [];
@@ -890,8 +933,10 @@ if (_isMan) then {
   };
   
 // ====================================================================================
- 
-//WYWOŁANIE BUILDERA
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
+
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };
@@ -1056,7 +1101,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhs_uniform_FROG01_wd"];
 _baseHelmet = ["rhsusf_lwh_helmet_marpatwd","rhsusf_lwh_helmet_marpatwd_ess","rhsusf_lwh_helmet_marpatwd_headset","rhsusf_mich_bare_norotos","rhsusf_mich_helmet_marpatwd","rhsusf_mich_helmet_marpatwd_alt","rhsusf_mich_helmet_marpatwd_norotos"];
 _baseGlasses = [];
@@ -1135,8 +1180,10 @@ if (_isMan) then {
   };  
   
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };
@@ -1313,7 +1360,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["PSZ_U_PL_DES_wz2010_Crye","PSZ_U_PL_DES_wz2010_Crye_Folded","PSZ_U_PL_DES_wz2010_Polar","PSZ_U_PL_WDL_wz2010_Crye_Folded","PSZ_U_PL_WDL_wz2010_Polar"];
 _baseHelmet = ["PSZ_H_wz2005_DES","PSZ_H_wz2005_DES_ESS","PSZ_H_wz2005_OLIVE","PSZ_H_wz2005_OLIVE_ESS","PSZ_H_wz2005_WDL","PSZ_H_wz2005_WDL_ESS"];
 _baseGlasses = [];
@@ -1392,8 +1439,10 @@ if (_isMan) then {
   };
   
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };	
@@ -1571,7 +1620,7 @@ _specOp = ["ps"];
 
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["PSZ_U_PL_WDL_wz2010_Crye","PSZ_U_PL_WDL_wz2010_Polar","PSZ_U_PL_WDL_wz2010_Crye_Folded"];
 _baseHelmet = ["PSZ_H_wz2005_OLIVE_ESS","PSZ_H_wz2005_WDL","PSZ_H_wz2005_WDL_ESS"];
 _baseGlasses = [];
@@ -1650,8 +1699,10 @@ if (_isMan) then {
   };  
   
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };
@@ -1835,7 +1886,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["usm_bdu_d"];
 _baseHelmet = ["usm_helmet_pasgt_g_d","usm_helmet_pasgt_d"];
 _baseGlasses = [];
@@ -1914,8 +1965,10 @@ if (_isMan) then {
   };
 
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };	
@@ -2088,7 +2141,7 @@ _ghillie = ["sn","sp"];
 _specOp = ["ps"];
 
 // Podstawowe mundury
-// Elementy wyposarzenia są losowo wybierane z listy
+// Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhsgref_uniform_woodland"];
 _baseHelmet = ["rhsusf_ach_helmet_M81"];
 _baseGlasses = [];
@@ -2167,8 +2220,10 @@ if (_isMan) then {
   };
 
 // ====================================================================================
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 
-//WYWOŁANIE BUILDERA
+	//WYWOŁANIE BUILDERA
 	call Builder;
 
 };
