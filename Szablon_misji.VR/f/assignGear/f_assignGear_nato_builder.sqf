@@ -282,7 +282,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addweapon _MAT;
-		_unit addSecondaryWeaponItem "rhs_weap_optic_smaw";
+		_unit addSecondaryWeaponItem _MAT_sight;
 		["matg"] call _backpack;
 	};
 

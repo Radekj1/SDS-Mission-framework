@@ -278,6 +278,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT_sight = "rhs_acc_pgo7v";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -538,6 +539,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT_sight = "rhs_acc_pgo7v";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -790,6 +792,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT_sight = "rhs_acc_pgo7v";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -1044,6 +1047,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT_sight = "rhs_acc_pgo7v";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -1297,6 +1301,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT_sight = "rhs_acc_pgo7v";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -1552,6 +1557,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
+_MAT_sight = "rhs_acc_pgo7v";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
