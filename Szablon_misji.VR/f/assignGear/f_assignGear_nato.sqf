@@ -342,7 +342,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -594,7 +594,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1093,7 +1093,7 @@ _baghsamag = "B_HMG_01_support_F";					// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1353,7 +1353,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1613,7 +1613,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1881,7 +1881,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -2137,7 +2137,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
