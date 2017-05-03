@@ -16,30 +16,33 @@ _TypNumber = _this select 0;_TempArray = [];
 /////////////////////////////////////////////
 ///////////////SPIS TRESCI///////////////////
 /////////////////////////////////////////////
-
+// [MD] - frakcje współczesne "modern"
+// [CW] - frokcje Cold War
+// [U] - frakcje uniwersalne
 //////////BLUFOR//////////
-	 7 - US Army OCP 2010 RHS
-	 8 - USMC Pustynia 2010 RHS
-	 9 - Polskie Siły Zbrojne - Las
-	10 - Polskie Siły Zbrojne - Pustynia
-	11 - US ARMY "WD" 80/90
-	12 - US ARMY "D" 80/90
-	13 - CDF
-	14 - Afghan Police
+	 7 - US Army OCP 2010 RHS [MD]
+	 8 - USMC Pustynia 2010 RHS [MD]
+	 9 - Polskie Siły Zbrojne - Las [MD]
+	10 - Polskie Siły Zbrojne - Pustynia [MD]
+	11 - US ARMY "WD" 80/90 [CW]
+	12 - US ARMY "D" 80/90 [CW]
+	13 - CDF [CW]
+	14 - Afghan Police [MD]
 	
 //////////OPFOR///////////
-	15 - Russians RHS - MSV Leśne
-	16 - Russians RHS - VDV Pustynia 
-	17 - ChDKZ 
-	18 - SLA
-	19 - United Armed Forces of Novorossiya
+	15 - Russians RHS - MSV Leśne [MD]
+	16 - Russians RHS - VDV Pustynia [MD]
+	17 - ChDKZ [U]
+	18 - SLA [CW]
+	19 - United Armed Forces of Novorossiya [MD]
+	25 - ZSSR [CW]
 	
 //////////INDFOR//////////
-	20 - Takistan REBELS
-	21 - CDF UN
-	22 - Ultranationalists
-	23 - African Militia
-	24 - Ukraine Armed Forces
+	20 - Takistan REBELS [U]
+	21 - CDF UN [CW]
+	22 - Ultranationalists [U]
+	23 - African Militia [U]
+	24 - Ukraine Armed Forces [MD]
 
 *////////////////////////////////////////////
 
@@ -242,10 +245,10 @@ switch (_TypNumber) do
 // ChDKZ (OPFOR)
   case 17:
   {
-    _Unit_Pool_S = ["LOP_ChDKZ_Infantry_Crewman","LOP_ChDKZ_Infantry_Pilot","LOP_ChDKZ_Infantry_TL","LOP_ChDKZ_Infantry_MG","LOP_ChDKZ_Infantry_MG_Asst","LOP_ChDKZ_Infantry_AT","LOP_ChDKZ_Infantry_GL","LOP_ChDKZ_Infantry_Corpsman","LOP_ChDKZ_Infantry_Rifleman_3"];
-    _Unit_Pool_V = ["rhsgref_ins_ural_Zu23","rhsgref_BRDM2_ins","rhsgref_ins_uaz_dshkm","rhsgref_ins_uaz_spg9","rhsgref_ins_ural_open"];
-    _Unit_Pool_T = ["LOP_ChDKZ_T72BA","LOP_ChDKZ_BMP1","LOP_ChDKZ_BMP2"];
-    _Unit_Pool_A = ["LOP_ChDKZ_Mi8MT_Cargo","LOP_ChDKZ_Mi8MTV3_UPK23"];
+    _Unit_Pool_S = ["rhsgref_ins_crew","rhsgref_ins_pilot","rhsgref_ins_squadleader","rhsgref_ins_rifleman_akm","rhsgref_ins_rifleman_aks74","rhsgref_ins_rifleman_RPG26","rhsgref_ins_engineer","rhsgref_ins_sniper","rhsgref_ins_spotter","rhsgref_ins_militiaman_mosin","rhsgref_ins_machinegunner","rhsgref_ins_grenadier_rpg","rhsgref_ins_medic"];
+    _Unit_Pool_V = ["rhsgref_ins_uaz_ags","rhsgref_BRDM2_ins","rhsgref_BRDM2_ATGM_ins","rhsgref_ins_uaz_dshkm","rhsgref_ins_uaz_spg9","rhsgref_ins_btr60","rhsgref_ins_ural_Zu23"];
+    _Unit_Pool_T = ["rhsgref_ins_zsu234","rhsgref_ins_bmp2e","rhsgref_ins_bmp1p","rhsgref_ins_t72ba","rhsgref_ins_t72bb"];
+    _Unit_Pool_A = ["rhsgref_ins_Mi8amt"];
   }; 
   
 //-------------------------------------------------------------------------------------------------
@@ -272,6 +275,16 @@ switch (_TypNumber) do
 
 //-------------------------------------------------------------------------------------------------
 
+// Russians ZSSR (OPFOR)
+  case 25:
+  {
+    _Unit_Pool_S = ["oksv_wood_tank_crew","rhs_pilot","oksv_wood_serg","oksv_wood_gp","oksv_wood_rifleman","oksv_wood_sniper","oksv_wood_medic","oksv_wood_rpg","oksv_wood_rpgassis","oksv_wood_machinegunne","oksv_wood_secnumber"];
+    _Unit_Pool_V = ["oksv_wood_brdm2","oksv_wood_btr70"];
+    _Unit_Pool_T = ["oksv_wood_zsu234","oksv_wood_bmp1k","oksv_wood_bmp2","oksv_t80"];
+    _Unit_Pool_A = ["RHS_Mi8AMTSh_vvsc","RHS_Mi8AMTSh_UPK23_vvsc"];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
 //////////////////////////////////////////////////////////////////
 //////////////////////INDFOR//////////////////////////////////////
 //////////////////////////////////////////////////////////////////  
@@ -291,7 +304,7 @@ switch (_TypNumber) do
   case 21:
   {
     _Unit_Pool_S = ["LOP_UN_Infantry_Crewman","LOP_UN_Infantry_Pilot","LOP_UN_Infantry_TL","LOP_UN_Infantry_Rifleman","LOP_UN_Infantry_MG","LOP_UN_Infantry_MG_Asst","LOP_UN_Infantry_AT","LOP_UN_Infantry_GL","LOP_UN_Infantry_Engineer","LOP_UN_Infantry_Corpsman","LOP_UN_Infantry_Rifleman_4","LOP_UN_Infantry_AT_Asst"];
-    _Unit_Pool_V = ["rhsgref_un_ural","rhsgref_un_btr70","rhsgref_un_uaz"];
+    _Unit_Pool_V = ["rhsgref_un_btr70","rhsgref_un_m1117","rhsgref_un_ural"];
     _Unit_Pool_T = [];
     _Unit_Pool_A = ["rhsgref_un_Mi8amt"];
   }; 
@@ -301,10 +314,10 @@ switch (_TypNumber) do
 // Ultranationalists (INDFOR)
   case 22:
   {
-    _Unit_Pool_S = ["LOP_UA_Infantry_Crewman","LOP_UA_Infantry_Pilot","LOP_UA_Infantry_TL","LOP_UA_Infantry_GL","LOP_UA_Infantry_AT","LOP_UA_Infantry_Rifleman_3","LOP_UA_Infantry_MG","LOP_UA_Infantry_MG_Asst","LOP_UA_Infantry_AT_Asst","LOP_UA_Infantry_Corpsman","LOP_UA_Infantry_Engineer","LOP_UA_Infantry_Rifleman_2"];
-    _Unit_Pool_V = ["LOP_UA_UAZ_DshKM","LOP_UA_UAZ_SPG","LOP_UA_Ural_open","LOP_UKR_BTR70"];
-    _Unit_Pool_T = ["LOP_UA_BMP1","LOP_UA_BMP2","LOP_UA_T72BA"];
-    _Unit_Pool_A = ["LOP_UA_Mi8MT_Cargo","LOP_UA_Mi8MTV3_UPK23"];
+    _Unit_Pool_S = ["rhsgref_nat_crew","rhsgref_nat_warlord","rhsgref_nat_commander","rhsgref_nat_militiaman_kar98k","rhsgref_nat_rifleman_akms","rhsgref_nat_grenadier","rhsgref_nat_rifleman","rhsgref_nat_saboteur","rhsgref_nat_pmil_grenadier_rpg","rhsgref_nat_pmil_hunter","rhsgref_nat_pmil_machinegunner","rhsgref_nat_pmil_medic"];
+    _Unit_Pool_V = ["rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_ags","rhsgref_nat_uaz_spg9","rhsgref_nat_btr70","rhsgref_nat_ural_Zu23"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------

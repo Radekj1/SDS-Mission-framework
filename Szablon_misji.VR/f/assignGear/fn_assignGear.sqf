@@ -104,9 +104,9 @@ if(_faction == "ind_f") then {
 // The following block of code executes only if the unit is in a FIA slot (any faction); it
 // automatically includes a file which contains the appropriate equipment data.
 
-if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
-	#include "f_assignGear_fia.sqf"
-};
+//if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
+//	#include "f_assignGear_fia.sqf"
+//};
 
 // ====================================================================================
 

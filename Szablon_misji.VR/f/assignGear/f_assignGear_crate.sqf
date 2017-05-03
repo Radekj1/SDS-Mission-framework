@@ -11,8 +11,8 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
-		_unit addItemCargoGlobal ["ACE_morphine", 2];
-        _unit addItemCargoGlobal ["ACE_epinephrine", 2];
+		_unit addItemCargoGlobal [_morphine, 2];
+        _unit addItemCargoGlobal [_epinephrine, 2];
 		_unit addItemCargoGlobal [_IRstrobe, 2];
 	};
 
@@ -29,10 +29,11 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 5];
-		_unit addItemCargoGlobal ["ACE_morphine", 2];
-        _unit addItemCargoGlobal ["ACE_epinephrine", 2];
-		_unit addItemCargoGlobal ["ToolKit", 1];
-		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_morphine, 2];
+        _unit addItemCargoGlobal [_epinephrine, 2];
+		_unit addItemCargoGlobal [_toolkit, 1];
+		_unit addItemCargoGlobal [_wirecutter, 2];
+		_unit addItemCargoGlobal [_saperka, 1];
 		_unit addItemCargoGlobal [_IRstrobe, 5];
 	};
 
@@ -49,10 +50,10 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 2];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 10];
-		_unit addItemCargoGlobal ["ACE_morphine",4];
-        _unit addItemCargoGlobal ["ACE_epinephrine",2];
-		_unit addItemCargoGlobal ["ToolKit", 1];
-		_unit addItemCargoGlobal ["ACE_wirecutter", 1];
+		_unit addItemCargoGlobal [_morphine, 4];
+        _unit addItemCargoGlobal [_epinephrine, 2];
+		_unit addItemCargoGlobal [_toolkit, 1];
+		_unit addItemCargoGlobal [_wirecutter, 1];
 		_unit addItemCargoGlobal [_IRstrobe, 10];
 		
 	};
@@ -71,19 +72,21 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 15];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addItemCargoGlobal [_bandage, 20];
-		_unit addItemCargoGlobal ["ACE_morphine",15];
-        _unit addItemCargoGlobal ["ACE_epinephrine",10];
-		_unit addItemCargoGlobal ["ToolKit", 2];
-		_unit addItemCargoGlobal ["ACE_wirecutter", 2];
+		_unit addItemCargoGlobal [_morphine, 15];
+        _unit addItemCargoGlobal [_epinephrine, 10];
+        _unit addItemCargoGlobal [_personalAidKit, 4];
+		_unit addItemCargoGlobal [_toolkit, 2];
+		_unit addItemCargoGlobal [_wirecutter, 2];
+		_unit addItemCargoGlobal [_saperka, 2];	
 		_unit addItemCargoGlobal [_IRstrobe, 20];
 		_unit addMagazineCargoGlobal [_MMGmag, 10];
 		_unit addMagazineCargoGlobal [_MATmag1, 6];
 		_unit addMagazineCargoGlobal [_MATmag2, 4];
-		_unit addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 6];
-		_unit addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 6];
-		_unit addItemCargoGlobal ["ACE_Clacker", 2];
-		_unit addItemCargoGlobal ["ACE_DefusalKit", 2];		
-		_unit addBackpackCargoGlobal [_bagENG,4];
+		_unit addMagazineCargoGlobal [_satche_small, 6];
+		_unit addMagazineCargoGlobal [_satche_big, 6];
+		_unit addItemCargoGlobal [_zapalnik, 2];
+		_unit addItemCargoGlobal [_n_rozbraja, 2];		
+		_unit addBackpackCargoGlobal [_bagENG, 4];
 		
 	};
 
@@ -107,9 +110,10 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 25];
-		_unit addItemCargoGlobal ["ACE_morphine",25];
-        _unit addItemCargoGlobal ["ACE_epinephrine",25];
-		_unit addItemCargoGlobal ["ACE_bloodIV_500",10];
+		_unit addItemCargoGlobal [_morphine, 25];
+        _unit addItemCargoGlobal [_epinephrine, 25];
+		_unit addItemCargoGlobal [_blood, 10];
+		_unit addItemCargoGlobal [_personalAidKit, 2];
 		_unit addItemCargoGlobal [_IRstrobe, 30];
 };
 
@@ -133,9 +137,10 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_bandage, 50];
-		_unit addItemCargoGlobal ["ACE_morphine",50];
-        _unit addItemCargoGlobal ["ACE_epinephrine",50];
-		_unit addItemCargoGlobal ["ACE_bloodIV_500",25];
+		_unit addItemCargoGlobal [_morphine, 50];
+        _unit addItemCargoGlobal [_epinephrine, 50];
+		_unit addItemCargoGlobal [_blood, 25];
+		_unit addItemCargoGlobal [_personalAidKit, 4];
 		_unit addItemCargoGlobal [_IRstrobe, 50];
 };
 
@@ -159,9 +164,10 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
-		_unit addItemCargoGlobal ["ACE_morphine",100];
-        _unit addItemCargoGlobal ["ACE_epinephrine",100];
-		_unit addItemCargoGlobal ["ACE_bloodIV_500",50];
+		_unit addItemCargoGlobal [_morphine, 100];
+        _unit addItemCargoGlobal [_epinephrine, 100];
+		_unit addItemCargoGlobal [_blood, 50];
+		_unit addItemCargoGlobal [_personalAidKit, 6];
 		_unit addItemCargoGlobal [_IRstrobe, 70];
 };
 
@@ -172,10 +178,11 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-        _unit addItemCargoGlobal ["ACE_fieldDressing",400];
-        _unit addItemCargoGlobal ["ACE_morphine",300];
-        _unit addItemCargoGlobal ["ACE_epinephrine",100];
-        _unit addItemCargoGlobal ["ACE_bloodIV_500",75];
+        _unit addItemCargoGlobal [_bandage, 200];
+        _unit addItemCargoGlobal [_morphine, 100];
+        _unit addItemCargoGlobal [_epinephrine, 100];
+        _unit addItemCargoGlobal [_blood, 50];
+		_unit addItemCargoGlobal [_personalAidKit, 15];
 };
 
 // CRATE: Duża skrzynka, zasoby medyczne
@@ -185,10 +192,11 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-        _unit addItemCargoGlobal ["ACE_fieldDressing",1000];
-        _unit addItemCargoGlobal ["ACE_morphine",800];
-        _unit addItemCargoGlobal ["ACE_epinephrine",400];
-        _unit addItemCargoGlobal ["ACE_bloodIV_500",200];
+        _unit addItemCargoGlobal [_bandage, 400];
+        _unit addItemCargoGlobal [_morphine, 200];
+        _unit addItemCargoGlobal [_epinephrine, 200];
+        _unit addItemCargoGlobal [_blood, 100];
+		_unit addItemCargoGlobal [_personalAidKit, 30];
 };
 
 
@@ -202,7 +210,7 @@
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
 		_unit addMagazineCargoGlobal [_MMGmag, 10];
-		_unit addMagazineCargoGlobal [_MMGmag_tr,20];
+		_unit addMagazineCargoGlobal [_MMGmag_tr, 10];
 	};
 
 // CRATE: Skrzynka, zasoby MAT
@@ -212,7 +220,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_MATmag1,20];
+		_unit addMagazineCargoGlobal [_MATmag1, 8];
 	};	
 
 // CRATE: Skrzynka, zasoby SAM
@@ -222,7 +230,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_SAMmag,20];
+		_unit addMagazineCargoGlobal [_SAMmag, 8];
 		
 	};
 	
@@ -233,7 +241,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_HATmag1,20];
+		_unit addMagazineCargoGlobal [_HATmag1, 5];
 		
 	};
 	
@@ -283,7 +291,30 @@
 				
 	};
 	
+	// CRATE: Skrzynka mała, ładunki
+	case "crate_small_explo":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_satche_small,10];		
+		_unit addMagazineCargoGlobal [_satche_big,6];		
+		_unit addItemCargoGlobal [_zapalnik,5];
+		_unit addItemCargoGlobal [_n_rozbraja,5];
+				
+	};	
 	
-	
-	
-	
+// CRATE: Skrzynka duża, ładunki
+	case "crate_large_explo":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_satche_small,30];		
+		_unit addMagazineCargoGlobal [_satche_big,20];		
+		_unit addItemCargoGlobal [_zapalnik,8];
+		_unit addItemCargoGlobal [_n_rozbraja,8];
+				
+	};

@@ -1,18 +1,14 @@
 //====================================================================================
 //====================================================================================
-// Kompatybilność z HC
+//S.D.S - Kompatybilność z HC
 
 [true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";	//Zakomentować na PvP
 
-//define function to spawn units
 _spawnUnits = {
-	
 	//DAC spawning
 	[] execVM "DAC\DAC_Config_Creator.sqf";			//Zakomentować na PvP
-	//[] execVM "spawn_viaDAC.sqf";
 	True
 };
-
 //check if HC1 is present
 HC1Present = if(isNil "HC1") then{False} else{True};
 
@@ -23,7 +19,6 @@ if(HC1Present && isMultiplayer) then{
 		[] call _spawnUnits;
 	};
 }
-
 //spawn units on server
 else{
 	if(isServer) then{
@@ -33,21 +28,18 @@ else{
 };
 
 // ====================================================================================
-
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 enableSaving [false, false];
 
 // ====================================================================================
-
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 enableSentences false;
 
 // ====================================================================================
-
 // F3 - MapClick Teleport
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -59,56 +51,48 @@ enableSentences false;
 // [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 
 // ====================================================================================
-
 // Respanw on Nimitz
 // Ten kod spowoduje, że gracze odrodzą się na lotiskowcu a nie pod nim (więcej info: https://www.youtube.com/watch?v=e47f4EYNVbk )
 
 // "respawn_west" setMarkerPosLocal [markerPos "respawn_West" select 0, markerPos "respawn_West" select 1, 18];
 
 // ====================================================================================
-
 // F3 - Briefing
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_briefing = [] execVM "briefing.sqf";
 
 // ====================================================================================
-
 // F3 - F3 Folk ARPS Group IDs
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 
 // ====================================================================================
-
 // F3 - Buddy Team Colours
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 
 // ====================================================================================
-
 // F3 - Fireteam Member Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // [] spawn f_fnc_SetLocalFTMemberMarkers;
 
 // ====================================================================================
-
 // F3 - F3 Folk ARPS Group Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
 
 // ====================================================================================
-
 // F3 - F3 Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_setMissionConditions = [] execVM "f\missionConditions\f_setMissionConditions.sqf";
 
 // ====================================================================================
-
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
@@ -117,7 +101,10 @@ if(isServer) then {
 };
 
 // ====================================================================================
-
+//S.D.S - Zmiana setfrennd dla Indfor - Blufor
+[] execVM "f\common\set_friend.sqf";
+	
+// ====================================================================================
 // F3 - Automatic Body Removal
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -127,7 +114,6 @@ if(isServer) then {
  [] execVM "f\removeBody\f_addRemoveBodyEH.sqf";
 
 // ====================================================================================
-
 // F3 - Authorised Crew Check
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -135,7 +121,6 @@ if(isServer) then {
 // VehicleName addEventhandler ["GetIn", {[_this,["UnitClass1","UnitClass2"],false] call f_fnc_authorisedCrewCheck}];
 
 // ====================================================================================
-
 // F3 - Casualties Cap
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -152,7 +137,6 @@ if(isServer) then {
 // [INDEPENDENT,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
 // ====================================================================================
-
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -160,21 +144,18 @@ if(isServer) then {
 // [] execVM "f\setAISKill\f_setAISkill.sqf";
 
 // ====================================================================================
-
 // F3 - Assign Gear AI
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // [] execVM "f\assignGear\f_assignGear_AI.sqf";
 
 // ====================================================================================
-
 // F3 - Name Tags
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // [] execVM "f\nametag\f_nametags.sqf";
 
 // ====================================================================================
-
 // F3 - Group E&E Check
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -182,35 +163,30 @@ if(isServer) then {
 // [["Grp1","Grp2"],ObjectName or "MarkerName",100,1] execVM "f\EandEcheck\f_EandECheckLoop.sqf";
 
 // ====================================================================================
-
 // F3 - ORBAT Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\briefing\f_orbatNotes.sqf";
 
 // ====================================================================================
-
 // F3 - Loadout Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\briefing\f_loadoutNotes.sqf";
 
 // ====================================================================================
-
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
 // ====================================================================================
-
 // F3 - Mission Timer/Safe Start
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\safeStart\f_safeStart.sqf";
 
 // ====================================================================================
-
 // F3 - JIP setup
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -226,32 +202,25 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 [] execVM "f\radios\radio_init.sqf";
 
 // ====================================================================================
-
-//Dodanie safezone na respie
+//S.D.S - Dodanie safezone na respie
 [] execVM "f\Safezone\Safezone.sqf";
 
 // ====================================================================================
-
-//Dodanie zabezpieczenia po respie
+//S.D.S - Dodanie zabezpieczenia po respie
 []  execVM "f\Safezone\safety_init.sqf";
 
 // ====================================================================================
-
+//S.D.S - Dodanie cleanup na bazie
 [] execVM "f\Safezone\cleanup.sqf";
 
 // ====================================================================================
-
-///////////////////////////>>>>> FLARY <<<<<///////////////////////////
-
+//S.D.S - >>>>> FLARY FIX<<<<<
 if ((!isServer) && (player != player)) then {waitUntil {player == player};};
-
 
 al_flare_intensity = 25;
 publicvariable "al_flare_intensity";
-
 al_flare_range = 450;
 publicvariable "al_flare_range";
 
 player addEventHandler ["Fired",{private ["_al_flare"]; _al_flare = _this select 6;[[[_al_flare],"f\flare_fix\al_flare_enhance.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;}];
-
 // ====================================================================================

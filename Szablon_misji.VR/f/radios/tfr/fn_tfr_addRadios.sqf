@@ -7,21 +7,21 @@
 private["_unit", "_typeOfUnit", "_longRange","_radio1","_radio2","_radio3", "_backpackItems"];
 
 _unit = player;
-
 _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
+
+_radioFactionPlayer = f_param_player_faction_Blufor;
 
 // DEFINE THE RADIOS THAT WILL BE USED
 
 switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
-      _radio1 = "tf_rt1523g_big_rhs";
-      //_radio1 = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";  		//radio dla jednostek BAF
-      //_radio1 = "tf_rt1523g_big_bwmod";  					//radio dla jednostek Bundeswery Woodland
-	  //_radio1 = "tf_rt1523g_big_bwmod_tropen";  			//radio dla jednostek Bundeswery Desert
-      //_radio1 = "tf_rt1523g_big_bwmod";  					//radio dla jednostek PSZ LAS [najlepiej pasuje]
-      //_radio1 = "tf_rt1523g_sage";  						//radio dla jednostek USMC Woodland 80/90
-	  //_radio1 = "tfw_ilbe_blade_coy";						//radio dla jednostek USMC Woodland 2010
-	  //_radio1 = "tfw_ilbe_blade_d";						//radio dla jednostek USMC Desert 2010
+		switch (_radioFactionPlayer) do {
+			case 3: {_radio1 = "tfw_ilbe_blade_d";};		//radio dla jednostek USMC Desert 2010
+			case 4: {_radio1 = "tfw_ilbe_blade_coy";};		//radio dla jednostek USMC Woodland 2010
+			case 5: {_radio1 = "tf_rt1523g_big_bwmod";};	//radio dla jednostek PSZ LAS
+			case 8: {_radio1 = "tf_rt1523g_sage";}; 		//radio dla jednostek US Woodland 80/90
+			default {_radio1 = "tf_rt1523g_big_rhs";};		//DOMYŚLNE RADIO TRAF
+		};
       
       _radio2 = TF_defaultWestPersonalRadio;
       _radio3 = TF_defaultWestRiflemanRadio;};

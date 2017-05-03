@@ -30,7 +30,7 @@ if (vehicle _lead != _lead) then {
         [_lead,player],
         {
           params ["_leader","_joiner"];
-          //hint ((name _joiner) + " dołączył w trakcie gry (JIP) (" + getText(configFile >> "CfgVehicles" >> (typeOf _joiner) >> "displayName") + ") i został teleportowany do twojego pojazdu. Przydziel go do drużyny, " + (name _leader) + "!");
+          hint ((name _joiner) + " dołączył w trakcie gry (JIP) (" + getText(configFile >> "CfgVehicles" >> (typeOf _joiner) >> "displayName") + ") i został teleportowany do twojego pojazdu. Przydziel go do drużyny, " + (name _leader) + "!");
           //systemChat ((name _joiner) + " dołączył w trakcie gry (JIP) (" + getText(configFile >> "CfgVehicles" >> (typeOf _joiner) >> "displayName") + ") i został teleportowany do twojego pojazdu. Przydziel go do drużyny, " + (name _leader) + "!");
         }
       ],
@@ -54,7 +54,7 @@ if (vehicle _lead != _lead) then {
       [_lead,player],
       {
         params ["_leader","_joiner"];
-        //hint ((name _joiner) + " dołączył w trakcie gry (JIP) (" + getText(configFile >> "CfgVehicles" >> (typeOf _joiner) >> "displayName") + ") i został teleportowany tuż za ciebie. Przydziel go do drużyny, " + (name _leader) + "!");
+        hint ((name _joiner) + " dołączył w trakcie gry (JIP) (" + getText(configFile >> "CfgVehicles" >> (typeOf _joiner) >> "displayName") + ") i został teleportowany tuż za ciebie. Przydziel go do drużyny, " + (name _leader) + "!");
         //systemChat ((name _joiner) + " jest JIP (" + getText(configFile >> "CfgVehicles" >> (typeOf _joiner) >> "displayName") + ") i został teleportowany tuż za ciebie. Przydziel go do drużyny, " + (name _leader) + "!");
       }
     ],
