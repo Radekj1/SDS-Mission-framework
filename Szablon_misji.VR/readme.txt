@@ -20,7 +20,8 @@ README CONTENTS
 01. VERSION HISTORY
 ===================
 
-1.7 | **-04-2017 |
+1.8 | **-**-2017 |
+1.7 | 03-05-2017 |
 1.6 | 22-12-2016 |
 
 MORE DETAILS AT TEH END OF THE FILE
@@ -79,33 +80,48 @@ To play this mission the following addons are required:
 ==================
 
 ==================
-1.7 | **-04-2017
+1.8 | **-**-2017
 
-Zmiany do dnia 04.04.2017
 
-ADDED IN 1.7
-1.	Dodanie rozpiski z radiami
-2.	Dodanie krótkiego opisu misji do szablonu [description.ext]
-3.	Dodane nowych skrzyń do respa
-4.	Dodanie możliwości zmiany sprzymierzenia dla Indforu
-5.	Dodanie dla VDV nowych AK z szynami
-6.	Dodanie dla PSZ nowego wyposażenia nocnego
-7.	Dodanie M9 dla USA
-8.	Dodanie GRACH - Rosja (nowe)
+==================
+1.7 | 03-05-2017
 
-FIXED IN 1.7
+DODANE W 1.7
+1.	Całkowita reorganizacja assignGear-a
+2.	Dodanie automatu do wybierania radia
+3.	Dodanie rozpiski z radiami
+4.	Dodanie krótkiego opisu misji do szablonu [description.ext]
+5.	Dodane nowych skrzyń do respawnu
+6.	Dodanie możliwości zmiany sprzymierzenia dla Indforu
+7.	Dodanie dla VDV nowych AK z szynami
+8.	Dodanie dla PSZ nowego wyposażenia nocnego
+9.	Dodanie M9 dla USA
+10.	Dodanie GRACH - Rosja (nowe)
+11.	Dodanie frakcji dla graczy CDF (opartych na RHS)
+12.	Dodanie definicja celownika MAT [nowy assignGear]
+
+NAPRAWIONE W 1.7
 1.	Naprawa klasy wskaźnika dla RTO - UCP 
-2.	Polacy - usunięto noktowizje
-3.	Separatyści i Ukraina - poprawienie klas broni
-4.	ACE - zwiększenie mnożnika bólu
-5.	Zmiana ilości i klas przedmiotów w skrzyniach [przedmioty z ACE]
-6.	Reprodukcja skryptu wyposażenia nocnego w większości frakcjach
+2.	Optymalizacja skryptu respawnu skrzyń
+3.	Polacy - usunięto noktowizje
+4.	Separatyści i Ukraina - poprawienie klas broni
+5.	ACE - zwiększenie mnożnika bólu i krwawienia
+6.	Zmiana ilości i klas przedmiotów w skrzyniach [przedmioty z ACE]
+7.	Reprodukcja skryptu wyposażenia nocnego w większości frakcjach
+8.	Zmiana ilości przedmiotów w skrzyniach (przez ACE)
+9.	Sprawdzenie wyposażenia nocnego w frakcjach
+10.	Aktualizacja frakcji Cold War
+11.	Naprawa plecaku FTL (USA OCP)
+12.	Naprawa RTO - Rosja MSV
+13.	Usunięcie zbędnych plików
+14.	Poprawki celowników do RKM
+15.	aktualizacja USMC (obie wersje) 
 
 
 ==================
 1.6 | 22-12-2016
 
-ADDED IN 1.6
+DODANE W 1.6
 1.	Dodanie Polakom granatnika ręcznego dla flar (skrypt wyposażenia Dzień/Noc)
 2.	Dodanie i implementacja skryptu poprawiającego działanie flar granatnika 
 3.	Dodanie i implementacja spawnu skrzyń na respie (z Alive)
@@ -119,7 +135,7 @@ ADDED IN 1.6
 11.	Dodanie RHS-owych mundurów dla CDF UN
 12.	Dodanie opcji teleportu do dowódcy dla osób, które się spóźniły [JIP].
 
-FIXED IN 1.6
+NAPRAWIONE W 1.6
 1.	Podmiana znaczników laserowych na Armowe dla RTO (wszystkie frakcje)
 2.	Nowy skrypt wyposażenia Dzień/Noc
 3.	RPK dla RKM (większość frakcji)
