@@ -113,6 +113,7 @@ Builder ={
 		#include "f_assignGear_aaf_builder.sqf";
 	};
 
+//Dodanie wyposażenia medycznego
 Medical = {
 	for "_p" from 1 to 12 do {_unit addItem _bandage;};		// Dodanie 12 sztuk bandaży
 	for "_p" from 1 to 2 do {_unit addItem _morphine;};		// Dodanie 2 sztuk morfiny
@@ -125,6 +126,7 @@ Medical = {
 	_unit addItem _latarka;			// Latarka na mape
 };
 
+//Nocne wyposażenie oparte na latarkach, flarach, lightstick-ach
 Night_Eq_No_NVG = {
 	_loadout_night_day = f_param_night_day_wyp;
 		
@@ -304,7 +306,7 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = ["m"];
@@ -556,7 +558,7 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = ["m"];
@@ -809,7 +811,7 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = ["m"];
@@ -1062,7 +1064,7 @@ _baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
