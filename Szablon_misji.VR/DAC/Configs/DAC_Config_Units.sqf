@@ -245,9 +245,9 @@ switch (_TypNumber) do
 // ChDKZ (OPFOR)
   case 17:
   {
-    _Unit_Pool_S = ["LOP_ChDKZ_Infantry_Crewman","LOP_ChDKZ_Infantry_Pilot","LOP_ChDKZ_Infantry_TL","LOP_ChDKZ_Infantry_MG","LOP_ChDKZ_Infantry_MG_Asst","LOP_ChDKZ_Infantry_AT","LOP_ChDKZ_Infantry_GL","LOP_ChDKZ_Infantry_Corpsman","LOP_ChDKZ_Infantry_Rifleman_3"];
-    _Unit_Pool_V = ["rhsgref_ins_ural_Zu23","rhsgref_BRDM2_ins","rhsgref_ins_uaz_dshkm","rhsgref_ins_uaz_spg9","rhsgref_ins_ural_open"];
-    _Unit_Pool_T = ["rhsgref_ins_t72ba","rhsgref_ins_bmd1p","rhsgref_ins_bmd2"];
+    _Unit_Pool_S = ["rhsgref_ins_crew","rhsgref_ins_pilot","rhsgref_ins_squadleader","rhsgref_ins_rifleman_akm","rhsgref_ins_rifleman_aks74","rhsgref_ins_rifleman_RPG26","rhsgref_ins_engineer","rhsgref_ins_sniper","rhsgref_ins_spotter","rhsgref_ins_militiaman_mosin","rhsgref_ins_machinegunner","rhsgref_ins_grenadier_rpg","rhsgref_ins_medic"];
+    _Unit_Pool_V = ["rhsgref_ins_uaz_ags","rhsgref_BRDM2_ins","rhsgref_BRDM2_ATGM_ins","rhsgref_ins_uaz_dshkm","rhsgref_ins_uaz_spg9","rhsgref_ins_btr60","rhsgref_ins_ural_Zu23"];
+    _Unit_Pool_T = ["rhsgref_ins_zsu234","rhsgref_ins_bmp2e","rhsgref_ins_bmp1p","rhsgref_ins_t72ba","rhsgref_ins_t72bb"];
     _Unit_Pool_A = ["rhsgref_ins_Mi8amt"];
   }; 
   
@@ -304,7 +304,7 @@ switch (_TypNumber) do
   case 21:
   {
     _Unit_Pool_S = ["LOP_UN_Infantry_Crewman","LOP_UN_Infantry_Pilot","LOP_UN_Infantry_TL","LOP_UN_Infantry_Rifleman","LOP_UN_Infantry_MG","LOP_UN_Infantry_MG_Asst","LOP_UN_Infantry_AT","LOP_UN_Infantry_GL","LOP_UN_Infantry_Engineer","LOP_UN_Infantry_Corpsman","LOP_UN_Infantry_Rifleman_4","LOP_UN_Infantry_AT_Asst"];
-    _Unit_Pool_V = ["rhsgref_un_ural","rhsgref_un_btr70","rhsgref_un_uaz"];
+    _Unit_Pool_V = ["rhsgref_un_btr70","rhsgref_un_m1117","rhsgref_un_ural"];
     _Unit_Pool_T = [];
     _Unit_Pool_A = ["rhsgref_un_Mi8amt"];
   }; 
@@ -314,10 +314,10 @@ switch (_TypNumber) do
 // Ultranationalists (INDFOR)
   case 22:
   {
-    _Unit_Pool_S = ["LOP_UA_Infantry_Crewman","LOP_UA_Infantry_Pilot","LOP_UA_Infantry_TL","LOP_UA_Infantry_GL","LOP_UA_Infantry_AT","LOP_UA_Infantry_Rifleman_3","LOP_UA_Infantry_MG","LOP_UA_Infantry_MG_Asst","LOP_UA_Infantry_AT_Asst","LOP_UA_Infantry_Corpsman","LOP_UA_Infantry_Engineer","LOP_UA_Infantry_Rifleman_2"];
-    _Unit_Pool_V = ["LOP_UA_UAZ_DshKM","LOP_UA_UAZ_SPG","LOP_UA_Ural_open","LOP_UKR_BTR70"];
-    _Unit_Pool_T = ["LOP_UA_BMP1","LOP_UA_BMP2","LOP_UA_T72BA"];
-    _Unit_Pool_A = ["LOP_UA_Mi8MT_Cargo","LOP_UA_Mi8MTV3_UPK23"];
+    _Unit_Pool_S = ["rhsgref_nat_crew","rhsgref_nat_warlord","rhsgref_nat_commander","rhsgref_nat_militiaman_kar98k","rhsgref_nat_rifleman_akms","rhsgref_nat_grenadier","rhsgref_nat_rifleman","rhsgref_nat_saboteur","rhsgref_nat_pmil_grenadier_rpg","rhsgref_nat_pmil_hunter","rhsgref_nat_pmil_machinegunner","rhsgref_nat_pmil_medic"];
+    _Unit_Pool_V = ["rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_ags","rhsgref_nat_uaz_spg9","rhsgref_nat_btr70","rhsgref_nat_ural_Zu23"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------
