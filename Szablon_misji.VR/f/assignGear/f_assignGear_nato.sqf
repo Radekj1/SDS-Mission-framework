@@ -13,7 +13,7 @@
 	6.	Polska Woodland
 	7.	US Desert [CW]
 	8.	US Woodland [CW]
-	9.  M.S.K.E Defense Forces[CW/MODERN]
+	9.	M.S.K.E Defense Forces [U]
 	
 */
 // ====================================================================================
@@ -342,7 +342,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -594,7 +594,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1093,7 +1093,7 @@ _baghsamag = "B_HMG_01_support_F";					// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1353,7 +1353,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1613,7 +1613,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -1881,7 +1881,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -2137,7 +2137,7 @@ _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
 // Mundury, kamizelki itp.
 
-// Definicja jaka klasa do jakiej frupy ma się zaliczać
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = [];
@@ -2240,7 +2240,7 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//M.S.K.E Defense Forces
+	//M.S.K.E Defense Forces [U]
 	case 9: 
 	{
 // Dodatki broń główna
@@ -2294,11 +2294,6 @@ _carbinemag_tr = "hlc_24Rnd_75x55_T_stgw";
 _smg = "rhs_weap_pp2000";
 _smgmag = "rhs_mag_9x19mm_7n21_44";
 _smgmag_tr = "rhs_mag_9x19mm_7n21_44";
-
-// Siły specjalne
-_diverWep = "rhs_weap_asval";
-_diverMag1 = "rhs_20rnd_9x39mm_SP5";
-_diverMag2 = "rhs_20rnd_9x39mm_SP6";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m16a4_carryhandle_M203";
