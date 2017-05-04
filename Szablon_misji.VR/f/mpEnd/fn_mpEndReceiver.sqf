@@ -44,35 +44,39 @@ switch (_ending) do
 	case 1:
 	{
 // Place any custom code for ending #1 after this line:
-
-
-
+	if (isServer) then {
+		[] call ocap_fnc_exportData;
+	};
+	
 // Do not allow custom code for ending #1 to continue after this comment.
 	};
 // Ending #2
 	case 2:
 	{
 // Place any custom code for ending #2 after this line:
-
-
-
+	if (isServer) then {
+		[] call ocap_fnc_exportData;
+	};
+	
 // Do not allow custom code for ending #2 to continue after this comment.
 	};
 // Ending #3
 	case 3:
 	{
 // Place any custom code for ending #3 after this line:
-
-
-
+	if (isServer) then {
+		[] call ocap_fnc_exportData;
+	};
+	
 // Do not allow custom code for ending #3 to continue after this comment.
 	};
 // Ending #4
 	case 4:
 	{
 // Place any custom code for ending #4 after this line:
-
-
+	if (isServer) then {
+		[] call ocap_fnc_exportData;
+	};
 
 // Do not allow custom code for ending #4 to continue after this comment.
 	};
@@ -80,8 +84,9 @@ switch (_ending) do
 	case 5:
 	{
 // Place any custom code for ending #5 after this line:
-
-
+	if (isServer) then {
+		[] call ocap_fnc_exportData;
+	};
 
 // Do not allow custom code for ending #5 to continue after this comment.
 	};
@@ -89,8 +94,9 @@ switch (_ending) do
 	case 6:
 	{
 // Place any custom code for ending #6 after this line:
-
-
+	if (isServer) then {
+		[] call ocap_fnc_exportData;
+	};
 
 // Do not allow custom code for ending #6 to continue after this comment.
 	};

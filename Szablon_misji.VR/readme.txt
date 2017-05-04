@@ -115,7 +115,7 @@ NAPRAWIONE W 1.7
 12.	Naprawa RTO - Rosja MSV
 13.	Usunięcie zbędnych plików
 14.	Poprawki celowników do RKM
-15.	aktualizacja USMC (obie wersje) 
+15.	Aktualizacja USMC (obie wersje) 
 
 
 ==================
