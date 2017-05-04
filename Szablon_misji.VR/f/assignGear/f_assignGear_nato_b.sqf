@@ -519,9 +519,16 @@ case "matag":
 // LOADOUT: HEAVY AT GUNNER (HATG)
 case "hatg":
 {
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	
+	if(_HAT_Mobile) then{
 		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
+	}else{
+		_unit addBackpack _baghatg;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+	};		
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
@@ -529,10 +536,15 @@ case "hatg":
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER (HATAG)
 case "hatag":
-{
+{	
+	if(_HAT_Mobile) then{
 		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+	}else{
+		_unit addBackpack _baghatg;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+	};
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];

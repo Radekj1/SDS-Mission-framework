@@ -293,6 +293,7 @@ _SAMmag = "rhs_fim92_mag";
 _HAT = "rhs_weap_fgm148";
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT_Mobile = true;			//HAT mobilny - Javelin
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -546,6 +547,7 @@ _SAMmag = "rhs_fim92_mag";
 _HAT = "rhs_weap_fgm148";
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT_Mobile = true; 	//HAT mobilny - Javelin
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -797,6 +799,7 @@ _SAMmag = "rhs_fim92_mag";
 _HAT = "rhs_weap_fgm148";
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT_Mobile = true; 	//HAT mobilny - Javelin
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -1047,6 +1050,7 @@ _SAMmag = "rhs_fim92_mag";
 _HAT = "rhs_weap_fgm148";
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT_Mobile = true; 	//HAT mobilny - Javelin
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -1304,6 +1308,7 @@ _SAMmag = "PSZ_Grom_AA";
 _HAT = "PSZ_Spike_LR";
 _HATmag1 = "PSZ_Spike_THEAT";
 _HATmag2 = "PSZ_Spike_THEAT";
+_HAT_Mobile = true; 	//HAT mobilny - Spike
 
 // Snajper
 _SNrifle = "srifle_LRR_F";
@@ -1564,6 +1569,7 @@ _SAMmag = "PSZ_Grom_AA";
 _HAT = "PSZ_Spike_LR";
 _HATmag1 = "PSZ_Spike_THEAT";
 _HATmag2 = "PSZ_Spike_THEAT";
+_HAT_Mobile = true; 	//HAT mobilny - Spike
 
 // Snajper
 _SNrifle = "srifle_LRR_F";
@@ -1832,6 +1838,7 @@ _SAMmag = "rhs_fim92_mag";
 _HAT = "rhs_weap_fgm148";
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT_Mobile = true; 	//HAT mobilny - Javelin
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -2088,6 +2095,7 @@ _SAMmag = "rhs_fim92_mag";
 _HAT = "rhs_weap_fgm148";
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT_Mobile = true; 	//HAT mobilny - Javelin
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -2340,9 +2348,10 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";
-_HATmag1 = "rhs_fgm148_magazine_AT";
-_HATmag2 = "rhs_fgm148_magazine_AT";
+_HAT = "";
+_HATmag1 = "";
+_HATmag2 = "";
+_HAT_Mobile = false; 	//HAT statyczny - Kornet
 
 // Snajper
 _SNrifle = "rhs_weap_M107";
@@ -2354,37 +2363,37 @@ _SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
 
 _bagsmall = "B_Parachute";						// Spadochron
 
-_bagFTL = "tfw_ilbe_gr";					// Plecak dla dowódcy (radio)
-_bagPP = "tfw_ilbe_gr";                  // Plecak dla pilota (radio)
+_bagFTL = "tfw_ilbe_gr";						// Plecak dla dowódcy (radio)
+_bagPP = "tfw_ilbe_gr";                  		// Plecak dla pilota (radio)
 
-_bagTL = "B_AssaultPack_blk";		//Plecak dowódcy drużyny
+_bagTL = "B_AssaultPack_blk";					//Plecak dowódcy drużyny
 
-_bagMs = "B_TacticalPack_blk";						// Plecak dla medyka (mały)
-_bagMm = "B_AssaultPack_blk";		// Plecak dla medyka (średni)
-_bagMb = "B_AssaultPack_blk";        // Plecak dla medyka (duży)
+_bagMs = "B_TacticalPack_blk";					// Plecak dla medyka (mały)
+_bagMm = "B_AssaultPack_blk";					// Plecak dla medyka (średni)
+_bagMb = "B_AssaultPack_blk";        			// Plecak dla medyka (duży)
 
-_bagARs = "B_TacticalPack_blk";		// Plecak dla RKM (mały)
-_bagARm = "B_Carryall_oli";					// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_oli";                   // Plecak dla RKM (duży)
+_bagARs = "B_TacticalPack_blk";					// Plecak dla RKM (mały)
+_bagARm = "B_Carryall_oli";						// Plecak dla RKM (średni)
+_bagARb = "B_Carryall_oli";                   	// Plecak dla RKM (duży)
 
-_bagENG = "B_TacticalPack_blk";		// Plecak dla Mechanika
+_bagENG = "B_TacticalPack_blk";					// Plecak dla Mechanika
 
 _bagR = "B_AssaultPack_blk";					// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "B_Carryall_oli";					// Plecak dla MAT
+_bagMAT = "B_Carryall_oli";						// Plecak dla MAT
 
-_bagmedium = "B_TacticalPack_blk";	// carries 200, weighs 30
-_baglarge =  "B_Carryall_oli"; 				// carries 320, weighs 40
+_bagmedium = "B_TacticalPack_blk";				// carries 200, weighs 30
+_baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
 
-_bagmediumdiver =  "B_AssaultPack_blk";	// Plecaki SF
+_bagmediumdiver =  "B_AssaultPack_blk";			// Plecaki SF
 
-_baguav = "tfw_ilbe_gr";					// Plecak RTO
+_baguav = "tfw_ilbe_gr";						// Plecak RTO
 
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
+_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "RHS_Kornet_Gun_Bag";					// used by Heavy AT gunner
-_baghatag = "RHS_Kornet_Tripod_Bag";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_Kornet_Gun_Bag";				// used by Heavy AT gunner
+_baghatag = "RHS_Kornet_Tripod_Bag";			// used by Heavy AT assistant gunner
 _bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";					// used by Heavy SAM gunner
