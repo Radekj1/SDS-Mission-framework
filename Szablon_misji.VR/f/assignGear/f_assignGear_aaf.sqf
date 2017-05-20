@@ -395,12 +395,12 @@ if (_isMan) then {
 
 	};
 
-// ====================================================================================
-	//Dodanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-	
+// ====================================================================================	
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };
 	
@@ -648,11 +648,11 @@ if (_isMan) then {
 	};
 
 // ====================================================================================
-	//Dodanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-	
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 
@@ -901,11 +901,11 @@ if (_isMan) then {
 	};
 
 // ====================================================================================
-	//Dodanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-	
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 	
@@ -1154,11 +1154,11 @@ if (_isMan) then {
 	};
 
 // ====================================================================================
-	//Dodanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-	
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 	
