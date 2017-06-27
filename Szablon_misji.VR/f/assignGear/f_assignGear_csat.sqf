@@ -1,5 +1,5 @@
 // ====================================================================================
-// S.D.S Assign Gear Script - [V-1.7 | 20.04.2017]
+// S.D.S Assign Gear Script - [V-1.7.1 | 27.06.2017]
 // ====================================================================================
 
 //	SPIS TRESCI
@@ -433,12 +433,12 @@ if (_isMan) then {
 
 };
 
-// ====================================================================================
-	//Dodanie nocnego wyposażenia
-	call Night_Eq_NVG;
-	
+// ====================================================================================	
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dodanie nocnego wyposażenia
+	call Night_Eq_NVG;
 		
 };
 	
@@ -693,11 +693,11 @@ if (_isMan) then {
 };
 
 // ====================================================================================
-	//Dpdanie nocnego wyposażenia
-	call Night_Eq_NVG;
-
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dpdanie nocnego wyposażenia
+	call Night_Eq_NVG;
 		
 };	
 	
@@ -948,11 +948,11 @@ if (_isMan) then {
 };
 
 // ====================================================================================
-	//Dpdanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dpdanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 	
@@ -1201,11 +1201,11 @@ if (_isMan) then {
 };
 
 // ====================================================================================
-	//Dpdanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-
 	//WYWOŁANIE BUILDERA
 	call Builder;
+
+	//Dpdanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 	
@@ -1457,11 +1457,11 @@ if (_isMan) then {
 };
 
 // ====================================================================================
-	//Dpdanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dpdanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 		
@@ -1713,17 +1713,17 @@ if (_isMan) then {
 };
 
 // ====================================================================================
-	//Dpdanie nocnego wyposażenia
-	call Night_Eq_No_NVG;
-
 	//WYWOŁANIE BUILDERA
 	call Builder;
+	
+	//Dpdanie nocnego wyposażenia
+	call Night_Eq_No_NVG;
 		
 };	
 
 // ====================================================================================
 // ====================================================================================
-//EMD CASE STATEMENT		
+//END CASE STATEMENT		
 
 };
 
