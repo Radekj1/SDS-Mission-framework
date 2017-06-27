@@ -13,7 +13,7 @@
 	6.	Polska Woodland
 	7.	US Desert [CW]
 	8.	US Woodland [CW]
-	9.	M.S.K.E Defense Forces [U] ===[WIP]===
+	9.	Everon Defense Forces [U]
 	
 */
 // ====================================================================================
@@ -2249,8 +2249,7 @@ if (_isMan) then {
 //*****************************************************************************************************
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
-//===[WIP]======[WIP]======[WIP]======[WIP]===
-	//M.S.K.E Defense Forces [U]
+	//Everon Defense Forces [U]
 	case 9: 
 	{
 // Dodatki broń główna
@@ -2348,10 +2347,10 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "";
-_HATmag1 = "";
-_HATmag2 = "";
-_HAT_Mobile = false; 	//HAT statyczny - Kornet
+//_HAT = "";
+//_HATmag1 = "";
+//_HATmag2 = "";
+//_HAT_Mobile = false; 	//HAT statyczny - Kornet
 
 // Snajper
 _SNrifle = "rhs_weap_M107";

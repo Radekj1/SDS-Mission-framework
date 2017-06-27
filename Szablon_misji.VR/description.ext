@@ -285,8 +285,8 @@ class Params
 	class f_param_player_faction_Blufor
 	{
 		title = "Frakcja BLUFOR";
-		values[] = {1,2,3,4,5,6,7,8};
-		texts[] = {1. US ARMY UCP, 2. US ARMY OCP, 3. USMC Desert, 4. USMC Woodland, 5. Polska Desert, 6. Polska Woodland, 7. US Desert [CW], 8. US Woodland [CW]};
+		values[] = {1,2,3,4,5,6,7,8,9};
+		texts[] = {1. US ARMY UCP, 2. US ARMY OCP, 3. USMC Desert, 4. USMC Woodland, 5. Polska Desert, 6. Polska Woodland, 7. US Desert [CW], 8. US Woodland [CW], 9. Everon Defense Forces [U]};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
 	};
