@@ -1,5 +1,5 @@
 // ====================================================================================
-// S.D.S Assign Gear Script - [V-1.7.1 | 27.06.2017]
+// S.D.S Assign Gear Script - [V-1.8 beta | 17.10.2017]
 // ====================================================================================
 
 //	SPIS TRESCI
@@ -8,7 +8,7 @@
 	1.	Rosja VDV Desert
 	2.	Rosja VDV Woodland
 	3.	Rosja MSV Woodland
-	4.	Separatyści
+	4.	Chedaki
 	5.	ZSRR Desert [CW]
 	6.	ZSRR Woodland [CW]
 	
@@ -39,6 +39,7 @@ _lornetkaAM = "rhs_pdu4";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 _Antena_RTO = "tfw_rf3080Item";
+_handcuffs = "ACE_CableTie";
 
 // Flary ręczne
 _flarewhite = "ACE_HandFlare_White";
@@ -92,6 +93,7 @@ _uavterminal = "O_UavTerminal";
 _ATmine = "ATMine_Range_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
+_mineDetector = "ACE_VMM3";
 
 //Konstruktor BUILDERA
 Builder ={	
@@ -195,7 +197,7 @@ _attach3 = "rhs_acc_perst3_2dp_h";		// Latarka+Laser (RHS)
 _silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
-_scope1 = "optic_ACO_grn";				// Celownik holo (RHS)
+_scope1 = "rhs_acc_ekp8_18";				// Celownik holo (RHS)
 _scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
@@ -456,7 +458,7 @@ _attach3 = "rhs_acc_perst3_2dp_h";		// Latarka+Laser (RHS)
 _silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
-_scope1 = "optic_ACO_grn";				// Celownik holo (RHS)
+_scope1 = "rhs_acc_ekp8_18";				// Celownik holo (RHS)
 _scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
@@ -960,13 +962,13 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//Separatyści
+	//Chedaki
 	case 4:
 	{
 _attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
 _attach2 = "rhs_acc_perst1ik";			// Laser (RHS)
 
-_silencer1 = "rhs_acc_dtk1983";			// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
+_silencer1 = "rhs_acc_dtkakm";			// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
 _scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
@@ -991,14 +993,14 @@ _hg_attachments= [];
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_rifle = "rhs_weap_akm";
+_riflemag = "rhs_30Rnd_762x39mm";
+_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_aks74";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
+_carbine = "rhs_weap_akms";
+_carbinemag = "rhs_30Rnd_762x39mm";
+_carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
 _smg = "rhs_weap_aks74u";
@@ -1006,14 +1008,14 @@ _smgmag = "rhs_30Rnd_545x39_AK";
 _smgmag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_glrifle = "rhs_weap_akm_gp25";
+_glriflemag = "rhs_30Rnd_762x39mm";
+_glriflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 _glmag = "rhs_VOG25";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_makarov_pmm";
-_pistolmag = "rhs_mag_9x18_12_57N181S";
+_pistol = "rhs_weap_tt33";
+_pistolmag = "rhs_mag_762x25_8";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -1028,9 +1030,9 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk74n";
-_ARmag = "hlc_60Rnd_545x39_t_rpk";
-_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
+_AR = "hlc_rifle_rpk_75rnd";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkm";
@@ -1123,14 +1125,14 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["LOP_U_US_Fatigue_06","LOP_U_US_Fatigue_07","LOP_U_US_Fatigue_02","LOP_U_US_Fatigue_09","LOP_U_US_Fatigue_08","LOP_U_US_Fatigue_11","LOP_U_US_Fatigue_04","LOP_U_US_Fatigue_05","LOP_U_US_Fatigue_10"];
-_baseHelmet = ["rhs_6b26_ess","LOP_H_6B27M_Skol","rhs_6b27m_digi","LOP_H_6B27M_Skol","rhs_beret_milp","LOP_H_6B27M_ess_Flora","rhs_beanie_green","rhs_6b27m_digi_ess","rhs_6b28_green_ess","rhs_6b28_green"];
+_baseUniform = ["rhsgref_uniform_woodland_olive","rhsgref_uniform_reed","rhsgref_uniform_flecktarn","rhsgref_uniform_dpm_olive","rhsgref_uniform_altis_lizard_olive"];
+_baseHelmet = ["H_Bandanna_camo","rhs_beanie_green","rhs_beanie","rhs_ssh68","rhsgref_Booniehat_alpen","rhsgref_ssh68_vsr"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_medic"];
-_mediumRig = ["rhs_6b23_6sh116","rhs_6b13_Flora_6sh92","LOP_V_6B23_6Sh92_OLV","rhs_6b23_6sh92","rhs_6b23_digi_6sh92_vog","LOP_V_6Sh92_Radio_OLV","rhs_6b13_6sh92","rhs_6b23_digi_6sh92_radio"];
-_heavyRig =  ["rhs_6b23_6sh116","rhs_6b13_Flora_6sh92","LOP_V_6B23_6Sh92_OLV","rhs_6b23_6sh92","rhs_6b23_digi_6sh92_vog","LOP_V_6Sh92_Radio_OLV","rhs_6b13_6sh92","rhs_6b23_digi_6sh92_radio"];
+_lightRig = ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
+_mediumRig = ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
+_heavyRig =  ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
 
 // Siły specjalne
 _diverUniform =  ["U_O_Wetsuit"];
@@ -1139,15 +1141,15 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_US_Fatigue_05"];
-_pilotHelmet = ["rhs_zsh7a_mike_green"];
-_pilotRig = ["rhs_6b23_digi_engineer"];
+_pilotUniform = ["rhsgref_uniform_olive"];
+_pilotHelmet = ["rhs_gssh18","rhs_zsh7a_mike_green_alt"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["LOP_U_US_Fatigue_03"];
+_crewUniform = ["rhsgref_uniform_altis_lizard_olive"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["LOP_V_6Sh92_OLV","rhs_6b23_digi_crew","rhs_6b23_digi_rifleman"];
+_crewRig = ["V_TacVest_camo"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1282,9 +1284,9 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk74n";
-_ARmag = "hlc_60Rnd_545x39_t_rpk";
-_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
+_AR = "hlc_rifle_rpk_75rnd";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkm";
@@ -1380,13 +1382,13 @@ _specOp = [ "ps"];
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhs_uniform_m88_patchless"];
-_baseHelmet = ["rhs_ssh68","ssh68_net_of"];
+_baseHelmet = ["rhs_ssh68","H_Bandanna_sand","H_Booniehat_tan"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b5_medic"];
-_mediumRig = ["rhs_6b5","rhs_6b5_sniper","rhs_6b5_officer"];
-_heavyRig = ["rhs_6b5","rhs_6b5_sniper","rhs_6b5_officer"];
+_lightRig = ["rhs_6b5_medic_khaki"];
+_mediumRig = ["rhs_6b5_khaki","rhs_6b5_officer_khaki","rhs_6b5_sniper_khaki"];
+_heavyRig = ["rhs_6b5_khaki","rhs_6b5_officer_khaki","rhs_6b5_sniper_khaki"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_gorka_r_y"];
@@ -1403,7 +1405,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_m88_patchless"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b23_ML_crew","rhs_6b23_ML_crewofficer"];
+_crewRig = ["rhs_6b13"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1538,9 +1540,9 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk74n";
-_ARmag = "hlc_60Rnd_545x39_t_rpk";
-_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
+_AR = "hlc_rifle_rpk_75rnd";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkm";
@@ -1635,8 +1637,8 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["Pograntsovka_M88"];
-_baseHelmet = ["rhs_ssh68","ssh68_net_of","ssh68_camo_kzs"];
+_baseUniform = ["rhsgref_uniform_vsr"];
+_baseHelmet = ["rhs_ssh68","rhsgref_ssh68_vsr"];
 _baseGlasses = [];
 
 // Kamizelki
@@ -1663,9 +1665,9 @@ _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["Butan_M88"];
+_crewUniform = ["rhsgref_uniform_vsr"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b5_officer"];
+_crewRig = ["rhs_6b13"];
 _crewGlasses = [];
 
 // Ghillie
