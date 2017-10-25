@@ -285,8 +285,8 @@ class Params
 	class f_param_player_faction_Blufor
 	{
 		title = "Frakcja BLUFOR";
-		values[] = {1,2,3,4,5,6,7,8,9};
-		texts[] = {1. US ARMY UCP, 2. US ARMY OCP, 3. USMC Desert, 4. USMC Woodland, 5. Polska Desert, 6. Polska Woodland, 7. US Desert [CW], 8. US Woodland [CW], 9. Everon Defense Forces [U]};
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {1. US ARMY UCP, 2. US ARMY OCP, 3. USMC Desert, 4. USMC Woodland, 5. Polska Desert, 6. Polska Woodland, 7. US Desert [CW], 8. US Woodland [CW], 9. Everon Defence Forces [U], 10. Altis Defence Forces [U]};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
 	};
@@ -304,7 +304,7 @@ class Params
 	{
 		title = "Frakcja INDFOR";
 		values[] = {1,2,3,4};
-		texts[] = {1. CDF UN, 2. Ukraina, 3. CDF [CW], 4. Rebels [CW]};
+		texts[] = {1. CDF UN, 2. Ukraina, 3. CDF [CW], 4. Chedaki [CW]};
 		default = 1;
 		code = "f_param_player_faction_Indfor = %1";
 	};
