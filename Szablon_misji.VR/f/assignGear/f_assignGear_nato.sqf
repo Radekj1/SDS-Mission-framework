@@ -294,7 +294,7 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";		//zakomentować jeśli HAT statyczny
+_HAT = "rhs_weap_fgm148";		
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;			//true - Javelin		false - TOW
@@ -549,7 +549,7 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";		//zakomentować jeśli HAT statyczny
+_HAT = "rhs_weap_fgm148";		
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;			//true - Javelin		false - TOW
@@ -802,7 +802,7 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";		//zakomentować jeśli HAT statyczny
+_HAT = "rhs_weap_fgm148";		
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;			//true - Javelin		false - TOW
@@ -1054,7 +1054,7 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";		//zakomentować jeśli HAT statyczny
+_HAT = "rhs_weap_fgm148";		
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;			//true - Javelin		false - TOW
@@ -1312,7 +1312,7 @@ _SAM = "PSZ_Grom";
 _SAMmag = "PSZ_Grom_AA";
 
 // Strzelec HAT
-_HAT = "PSZ_Spike_LR";		//zakomentować jeśli HAT statyczny
+_HAT = "PSZ_Spike_LR";		
 _HATmag1 = "PSZ_Spike_THEAT";
 _HATmag2 = "PSZ_Spike_THEAT";
 _HAT_Mobile = true; 	//HAT mobilny - Spike		HAT statyczny - SPG-9
@@ -1842,7 +1842,7 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";		//zakomentować jeśli HAT statyczny
+_HAT = "rhs_weap_fgm148";		
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;			//true - Javelin		false - TOW
@@ -2099,7 +2099,7 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Strzelec HAT
-_HAT = "rhs_weap_fgm148";		//zakomentować jeśli HAT statyczny
+_HAT = "rhs_weap_fgm148";		
 _HATmag1 = "rhs_fgm148_magazine_AT";
 _HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;			//true - Javelin		false - TOW

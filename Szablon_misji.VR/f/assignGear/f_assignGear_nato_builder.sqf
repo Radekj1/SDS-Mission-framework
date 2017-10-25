@@ -311,7 +311,10 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		["hatg"] call _backpack;
-		_unit addWeapon _HAT;
+		//Add this to another factions if needed
+		if(_HAT_Mobile) then {			
+		    _unit addWeapon _HAT;
+		}
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
