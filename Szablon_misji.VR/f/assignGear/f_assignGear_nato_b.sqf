@@ -449,6 +449,7 @@ case "matg":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		//(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];
@@ -461,6 +462,7 @@ case "matg":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		//(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];
@@ -472,6 +474,7 @@ case "matg":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 3];
 		//(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];
@@ -488,6 +491,7 @@ case "matag":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];
@@ -499,6 +503,7 @@ case "matag":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];	
@@ -510,6 +515,7 @@ case "matag":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 3];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];		
@@ -525,13 +531,14 @@ case "hatg":
 		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
 	}else{
 		_unit addBackpack _baghatg;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 	};		
-		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
+
 };
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER (HATAG)
@@ -540,14 +547,15 @@ case "hatag":
 	if(_HAT_Mobile) then{
 		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
 	}else{
 		_unit addBackpack _baghatg;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 	};
-		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
+	
 };
 
 // BACKPACK: MORTAR GUNNER (MTRG)
@@ -698,7 +706,7 @@ case "smg":
 	};
 };
 
-// BACKPACK: DowÃ³dca sil specjalnych
+// BACKPACK: Dowódca sil specjalnych
 case "divc":
 {
 	// LOADOUT: LIGHT
