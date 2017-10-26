@@ -1,5 +1,5 @@
 // ====================================================================================
-// S.D.S Assign Gear Script - [V-1.8 beta | 25.10.2017]
+// S.D.S Assign Gear Script - [V-1.8 beta | 26.10.2017]
 // ====================================================================================
 
 //	SPIS TRESCI
@@ -204,14 +204,15 @@ _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączy
 _attach3 = "rhsusf_acc_M952V";				// Latarka (RHS)
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
-_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_grey";		// Tłumik 5.56 (krótki) (RHS)
 
 _scope1 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope4 = "rhsusf_acc_T1_high";				// Aimpoint RHS (SF)
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// 
-_bipod2 = "bipod_02_F_blk";					// 
+_bipod2 = "rhsusf_acc_grip1";				// Grippod
 
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
@@ -228,7 +229,7 @@ if (_loadout_night_day == 0) then {			// Każda jednostka otrzyma ten zestaw dod
 
 // ====================================================================================
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer1 = "rhsusf_acc_omega9k";	// 9mm tłumik do Glocka 17
 _hg_scope1 = "optic_MRD";			// MRD
 _hg_attachments= [];
 // ====================================================================================
@@ -249,6 +250,13 @@ _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _smg = "rhsusf_weap_MP7A1_base_f";
 _smgmag = "rhsusf_mag_40Rnd_46x30_FMJ";
 _smgmag_tr = "rhsusf_mag_40Rnd_46x30_FMJ";
+
+// Siły specjalne
+_diverWep = "rhs_weap_m4a1_blockII_KAC_bk";
+_diverMag1 = "30Rnd_556x45_Stanag";
+_diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+_sfPistol = "rhsusf_weap_glock17g4";
+_sfPistolMag = "rhsusf_mag_17Rnd_9x19_FMJ";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m4a1_carryhandle_m203";
@@ -331,7 +339,7 @@ _bagMAT = "B_Carryall_mcamo";					// Plecak dla MAT
 _bagmedium = "rhsusf_assault_eagleaiii_ucp";	// carries 200, weighs 30
 _baglarge =  "B_Carryall_mcamo"; 				// carries 320, weighs 40
 
-_bagmediumdiver =  "rhsusf_assault_eagleaiii_ucp";	// Plecaki SF
+_bagmediumdiver =  "rhsusf_assault_eagleaiii_ocp";	// Plecaki SF
 
 _baguav = "tf_rt1523g_big_rhs";					// Plecak RTO
 
@@ -372,9 +380,9 @@ _mediumRig = ["rhsusf_iotv_ucp_Grenadier", "rhsusf_iotv_ucp_Medic", "rhsusf_iotv
 _heavyRig = ["rhsusf_iotv_ucp_Grenadier", "rhsusf_iotv_ucp_Medic", "rhsusf_iotv_ucp_Repair", "rhsusf_iotv_ucp_SAW", "rhsusf_iotv_ucp_Squadleader", "rhsusf_iotv_ucp_Teamleader"];
 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_FROG01_m81"];
-_diverHelmet = ["rhsusf_mich_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81"];
-_diverRig = ["rhsusf_spc_marksman","rhsusf_spc_light"];
+_diverUniform =  ["rhs_uniform_g3_mc"];
+_diverHelmet = ["rhsusf_opscore_mc_cover_pelt","rhsusf_opscore_mc_cover_pelt_nsw","rhsusf_opscore_mc_cover_pelt_cam"];
+_diverRig = ["rhsusf_mbav_grenadier","rhsusf_mbav_mg","rhsusf_mbav_medic","rhsusf_mbav_rifleman"];
 _diverGlasses = [];
 
 // Pilot
@@ -386,7 +394,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_cu_ucp"];
 _crewHelmet = ["rhsusf_cvc_green_helmet"];
-_crewRig = ["rhsusf_spc"];
+_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -457,14 +465,15 @@ _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączy
 _attach3 = "rhsusf_acc_M952V";				// Latarka (RHS)
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
-_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_grey";		// Tłumik 5.56 (krótki) (RHS)
 
 _scope1 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope4 = "rhsusf_acc_T1_high";				// Aimpoint RHS (SF)
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// 
-_bipod2 = "bipod_02_F_blk";					// 
+_bipod2 = "rhsusf_acc_grip1";				// Grippod
 
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
@@ -477,7 +486,7 @@ if (_loadout_night_day == 0) then {			// Każda jednostka otrzyma ten zestaw dod
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer1 = "rhsusf_acc_omega9k";	// 9mm tłumik do Glocka 17
 _hg_scope1 = "optic_MRD";			// MRD
 _hg_attachments= [];
 
@@ -501,9 +510,11 @@ _smgmag = "rhsusf_mag_40Rnd_46x30_FMJ";
 _smgmag_tr = "rhsusf_mag_40Rnd_46x30_FMJ";
 
 // Siły specjalne
-_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
+_diverWep = "rhs_weap_m4a1_blockII_KAC_bk";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+_sfPistol = "rhsusf_weap_glock17g4";
+_sfPistolMag = "rhsusf_mag_17Rnd_9x19_FMJ";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m4a1_carryhandle_m203";
@@ -622,14 +633,13 @@ _baseGlasses = [];
 
 // Kamizelki
 _lightRig = ["rhsusf_iotv_ocp_Grenadier", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Teamleader"];
-_mediumRig = ["rhsusf_iotv_ocp_Grenadier", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Repair",
-"rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Teamleader"];
+_mediumRig = ["rhsusf_iotv_ocp_Grenadier", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Teamleader"];
 _heavyRig = ["rhsusf_iotv_ocp_Grenadier", "rhsusf_iotv_ocp_Medic", "rhsusf_iotv_ocp_Repair", "rhsusf_iotv_ocp_Rifleman", "rhsusf_iotv_ocp_Squadleader", "rhsusf_iotv_ocp_Teamleader"];
 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_FROG01_m81"];
-_diverHelmet = ["rhsusf_mich_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81"];
-_diverRig = ["rhsusf_spc_marksman","rhsusf_spc_light"];
+_diverUniform =  ["rhs_uniform_g3_mc"];
+_diverHelmet = ["rhsusf_opscore_mc_cover_pelt","rhsusf_opscore_mc_cover_pelt_nsw","rhsusf_opscore_mc_cover_pelt_cam"];
+_diverRig = ["rhsusf_mbav_grenadier","rhsusf_mbav_mg","rhsusf_mbav_medic","rhsusf_mbav_rifleman"];
 _diverGlasses = [];
 
 // Pilot
@@ -640,8 +650,8 @@ _pilotGlasses = [];
 
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_cu_ocp"];
-_crewHelmet = ["H_HelmetCrew_I"];
-_crewRig = ["rhsusf_spc"];
+_crewHelmet = ["rhsusf_cvc_helmet"];
+_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -715,14 +725,15 @@ _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączy
 _attach3 = "rhsusf_acc_M952V";				// Latarka (RHS)
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
-_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_grey";		// Tłumik 5.56 (krótki) (RHS)
 
 _scope1 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope4 = "rhsusf_acc_T1_high";				// Aimpoint RHS (SF)
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// 
-_bipod2 = "bipod_02_F_blk";					// 
+_bipod2 = "rhsusf_acc_grip1";				// Grippod 
 
 // Jakie dodatki mają być dodane
 _attachments = [_attach3,_scope2]; 			// Każda jednostka otrzyma ten zestaw dodatków
@@ -730,7 +741,7 @@ _attachments = [_attach3,_scope2]; 			// Każda jednostka otrzyma ten zestaw dod
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer1 = "rhsusf_acc_omega9k";	// 9mm tłumik do Glocka 17
 _hg_scope1 = "optic_MRD";			// MRD
 _hg_attachments= [];
 
@@ -754,9 +765,11 @@ _smgmag = "rhsusf_mag_40Rnd_46x30_FMJ";
 _smgmag_tr = "rhsusf_mag_40Rnd_46x30_FMJ";
 
 // Siły specjalne
-_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
+_diverWep = "rhs_weap_m4a1_blockII_KAC_bk";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+_sfPistol = "rhsusf_weap_glock17g4";
+_sfPistolMag = "rhsusf_mag_17Rnd_9x19_FMJ";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m16a4_carryhandle_M203";
@@ -879,9 +892,9 @@ _mediumRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_mg","rhsusf_spc
 _heavyRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_mg","rhsusf_spc_rifleman","rhsusf_spc_squadleader","rhsusf_spc_teamleader"];
 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_FROG01_m81"];
-_diverHelmet = ["rhsusf_mich_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81"];
-_diverRig = ["rhsusf_spc_marksman","rhsusf_spc_light"];
+_diverUniform =  ["rhs_uniform_g3_tan"];
+_diverHelmet = ["rhsusf_opscore_mar_ut","rhsusf_opscore_mar_ut_pelt"];
+_diverRig = ["rhsusf_mbav_grenadier","rhsusf_mbav_mg","rhsusf_mbav_medic","rhsusf_mbav_rifleman"];
 _diverGlasses = [];
 
 // Pilot
@@ -967,14 +980,15 @@ _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączy
 _attach3 = "rhsusf_acc_M952V";				// Latarka (RHS)
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
-_silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_grey";		// Tłumik 5.56 (krótki) (RHS)
 
 _scope1 = "PSZ_AccO_EOT552";				// Eotech (Czarny PSZ)
 _scope2 = "rhsusf_acc_compm4";				// Aimpoint (RHS)
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";		// Celownik snajperski 6.5-20x
+_scope4 = "rhsusf_acc_T1_high";				// Aimpoint RHS (SF)
 
 _bipod1 = "rhsusf_acc_harris_bipod";		// 
-_bipod2 = "bipod_02_F_blk";					// 
+_bipod2 = "rhsusf_acc_grip1";				// Grippod 
 
 // Jakie dodatki mają być dodane
 _attachments = [_attach3,_scope2]; 			// Każda jednostka otrzyma ten zestaw dodatków
@@ -982,7 +996,7 @@ _attachments = [_attach3,_scope2]; 			// Każda jednostka otrzyma ten zestaw dod
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+_hg_silencer1 = "rhsusf_acc_omega9k";	// 9mm tłumik do Glocka 17
 _hg_scope1 = "optic_MRD";			// MRD
 _hg_attachments= []; 
 
@@ -1006,9 +1020,11 @@ _smgmag = "rhsusf_mag_40Rnd_46x30_FMJ";
 _smgmag_tr = "rhsusf_mag_40Rnd_46x30_FMJ";
 
 // Siły specjalne
-_diverWep = "rhs_weap_m4a1_blockII_grip2_KAC";
+_diverWep = "rhs_weap_m4a1_blockII_KAC_bk";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "30Rnd_556x45_Stanag_Tracer_Red";
+_sfPistol = "rhsusf_weap_glock17g4";
+_sfPistolMag = "rhsusf_mag_17Rnd_9x19_FMJ";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m16a4_carryhandle_M203";
@@ -1088,7 +1104,7 @@ _bagR = "B_AssaultPack_rgr";						// Plecak dla strzelca, strzelca AT
 
 _bagMAT = "B_Carryall_cbr";							// Plecak dla MAT
 
-_bagmediumdiver = "rhsusf_assault_eagleaiii_coy";	// used by divers
+_bagmediumdiver = "rhsusf_assault_eagleaiii_coy";	// Plecak dla SF
 
 _baguav = "tfw_ilbe_coy";							// Plecak RTO
 
@@ -1129,9 +1145,9 @@ _mediumRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_mg","rhsusf_spc
 _heavyRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_mg","rhsusf_spc_rifleman","rhsusf_spc_squadleader","rhsusf_spc_teamleader"];
 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_FROG01_m81"];
-_diverHelmet = ["rhsusf_mich_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81"];
-_diverRig = ["rhsusf_spc_marksman","rhsusf_spc_light"];
+_diverUniform =  ["rhs_uniform_g3_m81"];
+_diverHelmet = ["rhsusf_opscore_mar_fg_pelt","rhsusf_opscore_mar_fg"];
+_diverRig = ["rhsusf_mbav_grenadier","rhsusf_mbav_mg","rhsusf_mbav_medic","rhsusf_mbav_rifleman"];
 _diverGlasses = [];
 
 // Pilot
@@ -1267,17 +1283,14 @@ _secendWep = "PSZ_P99";
 _secendMag = "PSZ_9x19_P99_16";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "PSZ_Beryl96_Pallad";
+_glrifle = "PSZ_Beryl04_GPBO_G";
 _glriflemag = "PSZ_556x45_Beryl_30";
 _glriflemag_tr = "PSZ_556x45_Beryl_30_T_G";
-_glmag = "PSZ_40x47_NGO74_HE";
+_glmag = "1Rnd_HE_Grenade_shell";
 
 // Pistolet (dla wszystkich klas)
 _pistol = "PSZ_P99";
 _pistolmag = "PSZ_9x19_P99_16";
-
-//Granatnik ręczny
-_pistol_GL= "rhs_weap_M320";
 
 // ====================================================================================
 
@@ -1299,7 +1312,7 @@ _DMriflemag = "20Rnd_762x51_Mag";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -1409,7 +1422,7 @@ _sfGlasses = [];
 
 // Załoga pojazdu
 _crewUniform = ["PSZ_U_PL_WDL_wz2010_Crye"];
-_crewHelmet = ["usm_helmet_cvc"];
+_crewHelmet = ["rhsusf_cvc_green_alt_helmet"];
 _crewRig = ["PSZ_V_Kontraktor_DES"];
 _crewGlasses = [];
 
@@ -1493,10 +1506,10 @@ _attachments = [_attach2,_scope1]; 			// Każda jednostka otrzyma ten zestaw dod
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-_hg_silencer2 = "muzzle_snds_L";	// SF pistol suppressor
-_hg_scope1 = "optic_MRD";			// MRD
-_hg_attachments= []; 
+//_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+//_hg_silencer2 = "muzzle_snds_L";	// SF pistol suppressor
+//_hg_scope1 = "optic_MRD";			// MRD
+//_hg_attachments= []; 
 
 // ====================================================================================
 
@@ -1528,17 +1541,14 @@ _secendWep = "PSZ_P99";
 _secendMag = "PSZ_9x19_P99_16";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "PSZ_Beryl96_Pallad_G";
+_glrifle = "PSZ_Beryl04_GPBO_G";
 _glriflemag = "PSZ_556x45_Beryl_30";
-_glriflemag_tr = "PSZ_556x45_Beryl_30_T_R";
-_glmag = "PSZ_40x47_NGO74_HE";
+_glriflemag_tr = "PSZ_556x45_Beryl_30_T_G";
+_glmag = "1Rnd_HE_Grenade_shell";
 
 // Pistolet (dla wszystkich klas)
 _pistol = "PSZ_P99";
 _pistolmag = "PSZ_9x19_P99_16";
-
-//Granatnik ręczny
-_pistol_GL= "rhs_weap_M320";
 
 // ====================================================================================
 
@@ -1560,7 +1570,7 @@ _DMriflemag = "20Rnd_762x51_Mag";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -1576,7 +1586,7 @@ _SAMmag = "PSZ_Grom_AA";
 _HAT = "PSZ_Spike_LR";
 _HATmag1 = "PSZ_Spike_THEAT";
 _HATmag2 = "PSZ_Spike_THEAT";
-_HAT_Mobile = true; 	//HAT mobilny - Spike
+_HAT_Mobile = true; 	//HAT mobilny - Spike		HAT statyczny - SPG-9
 
 // Snajper
 _SNrifle = "srifle_LRR_F";
@@ -1617,8 +1627,8 @@ _baguav = "tf_rt1523g_big_bwmod";				// Plecak RTO
 _baghmgg = "RHS_M2_Gun_Bag";						// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "B_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_SPG9_Gun_Bag";				// used by Heavy AT gunner
+_baghatag = "RHS_SPG9_Tripod_Bag";			// used by Heavy AT assistant gunner
 _bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";					// used by Heavy SAM gunner
@@ -1671,7 +1681,7 @@ _sfGlasses = [];
 
 // Załoga pojazdu
 _crewUniform = ["PSZ_U_PL_DES_wz2010_Polar"];
-_crewHelmet = ["usm_helmet_cvc"];
+_crewHelmet = ["rhsusf_cvc_green_alt_helmet"];
 _crewRig = ["PSZ_V_Kontraktor_WDL"];
 _crewGlasses = [];
 
@@ -1940,7 +1950,7 @@ _sfGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhsgref_uniform_olive"];
 _crewHelmet = ["rhsusf_cvc_helmet","rhsusf_cvc_alt_helmet"];
-_crewRig = ["rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -2197,7 +2207,7 @@ _sfGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhsgref_uniform_olive"];
 _crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_alt_helmet"];
-_crewRig = ["rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -2423,7 +2433,7 @@ _specOp = ["ps"];
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["rhsgref_uniform_tigerstripe"];
-_baseHelmet = ["usm_bdu_boonie_tgrstp", "usm_bdu_cap_tgrstp", "usm_bdu_8point_tgrstp", "rhsgref_helmet_M1_bare_alt01"];
+_baseHelmet = ["rhsgref_helmet_M1_bare_alt01","rhsgref_helmet_M1_painted"];
 _baseGlasses = [];
 
 // Kamizelki
@@ -2554,14 +2564,14 @@ _riflemag = "20Rnd_762x51_Mag";
 _riflemag_tr = "rhsusf_20Rnd_762x51_m62_Mag";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_savz58v_black";
-_carbinemag = "rhs_30Rnd_762x39mm_Savz58";
-_carbinemag_tr = "rhs_30Rnd_762x39mm_Savz58_tracer";
+_carbine = "hlc_rifle_g3a3v";
+_carbinemag = "hlc_20rnd_762x51_b_G3";
+_carbinemag_tr = "hlc_20rnd_762x51_T_G3";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_savz61";
-_smgmag = "rhsgref_20rnd_765x17_vz61";
-_smgmag_tr = "rhsgref_20rnd_765x17_vz61";
+_smg = "hlc_smg_mp5a2";
+_smgmag = "hlc_30Rnd_9x19_B_MP5";
+_smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_m16a4_carryhandle_M203";
