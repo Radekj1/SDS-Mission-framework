@@ -18,7 +18,7 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 f_radios_settings_acre2_shortRange = nil;
 
 // Set the list of units that get a long range
-f_radios_settings_acre2_longRange = ["co", "dc", "m", "mmgag","hmgag","matag","hatag", "mtrag","msamag","sp","vc", "pp", "eng", "engm", "uav", "div"];
+f_radios_settings_acre2_longRange = ["co","dc","vc","pp"];
 
 // Unit types you want to give an extra long-range radio
 // E.G: ["co", "m"] would give the CO and all medics an extra long-range radios
@@ -69,4 +69,4 @@ f_radios_settings_acre2_groups_indfor = ["Alpha","Bravo","Charlie","Delta","Echo
 
 // ACRE can AI hear players?
 // False - AI not hear players, true - AI hear players.
-[false] call acre_api_fnc_setRevealToAI;
+[true] call acre_api_fnc_setRevealToAI;

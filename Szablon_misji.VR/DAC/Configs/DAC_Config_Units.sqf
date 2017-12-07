@@ -223,10 +223,10 @@ switch (_TypNumber) do
 // Russians RHS - MSV Leśne (OPFOR)
   case 15:
   {
-    _Unit_Pool_S = ["rhs_msv_emr_combatcrew","rhs_pilot_combat_heli","rhs_msv_emr_junior_sergeant","rhs_msv_emr_medic","rhs_msv_emr_grenadier_rpg","rhs_msv_emr_arifleman","rhs_msv_machinegunner_assistant","rhs_msv_rifleman","rhs_msv_LAT","rhs_msv_engineer"];
-    _Unit_Pool_V = ["RHS_Ural_Zu23_MSV_01","RHS_Ural_Open_MSV_01","rhs_btr70_msv","rhs_tigr_msv"];
-    _Unit_Pool_T = ["rhs_bmp1_msv","rhs_bmp2k_msv","rhs_t72ba_tv","rhs_t80u","rhs_t80"];
-    _Unit_Pool_A = ["RHS_Mi8AMTSh_vvs","RHS_Mi8mt_vvs","RHS_Mi8MTV3_UPK23_vvs"];
+    _Unit_Pool_S = ["rhs_msv_combatcrew","rhs_pilot_combat_heli","rhs_msv_sergeant","rhs_msv_RShG2","rhs_msv_LAT","rhs_msv_grenadier","rhs_msv_rifleman","rhs_msv_medic","rhs_msv_marksman","rhs_msv_machinegunner","rhs_msv_machinegunner_assistant","rhs_msv_grenadier_rpg","rhs_msv_strelok_rpg_assist","rhs_msv_aa"];
+    _Unit_Pool_V = ["rhsgref_BRDM2_msv","rhsgref_BRDM2_ATGM_msv","rhsgref_BRDM2_HQ_msv","rhs_btr70_msv","rhs_btr80_msv","RHS_Ural_Zu23_MSV_01","rhsgref_nat_uaz_ags","rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_spg9"];
+    _Unit_Pool_T = ["rhs_bmp1k_msv","rhs_bmp2k_msv","rhs_bmp3_msv","rhs_bmp3mera_msv","rhs_Ob_681_2","rhs_t72bc_tv","rhs_t80um","rhs_t90a_tv","rhs_zsu234_aa"];
+    _Unit_Pool_A = [];
   }; 
   
 //-------------------------------------------------------------------------------------------------

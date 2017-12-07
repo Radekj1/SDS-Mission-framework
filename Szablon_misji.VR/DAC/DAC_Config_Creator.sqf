@@ -95,7 +95,7 @@ if(isServer || isHC) then {if(local player) then {DAC_Code = 1} else {DAC_Code =
 	DAC_GunNotAllowed	= 	[];
 	DAC_VehNotAllowed	= 	[];
 	DAC_Locked_Veh		=	[];
-	DAC_SP_Soldiers		=	["rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_machinegunner","rhsusf_usmc_marpat_d_machinegunner","rhsusf_usmc_marpat_d_autorifleman_m249","PSZ_PL_WDL10_Soldier_MG","PSZ_PL_DES10_Soldier_MG","usm_ranger_90s_w_h_mg","usm_ranger_90s_w_h_ar","usm_soldier_90s_d_h_mg","usm_soldier_90s_d_h_ar","rhsgref_cdf_b_reg_machinegunner","rhsgref_hidf_autorifleman","rhsgref_hidf_machinegunner","","","","","","","","","","","","","","","","","","",""];
+	DAC_SP_Soldiers		=	["rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_machinegunner","rhsusf_usmc_marpat_d_machinegunner","rhsusf_usmc_marpat_d_autorifleman_m249","PSZ_PL_WDL10_Soldier_MG","PSZ_PL_DES10_Soldier_MG","usm_ranger_90s_w_h_mg","usm_ranger_90s_w_h_ar","usm_soldier_90s_d_h_mg","usm_soldier_90s_d_h_ar","rhsgref_cdf_b_reg_machinegunner","rhsgref_hidf_autorifleman","rhsgref_hidf_machinegunner","rhs_msv_machinegunner","","","","","","","","","","","","","","","","","",""];
 	DAC_Data_Array 		= 	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,[]];
 	DAC_Marker_Val		= 	[];
 	DAC_Zones			=	[];

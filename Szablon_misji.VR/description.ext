@@ -43,7 +43,7 @@ respawn = 3; // respawn w bazie
 respawndelay = 5; // 5s Oczekiwanie na resp
 respawnOnStart = 0; // nie tykac
 //respawnTemplates[] = {"Seagull","f_spectator","f_JIP"}; // Tryb bez obserwatora
-respawnTemplates[] = {"Seagull","f_SpectatorRespawn"}; // Spectator z opcją respawnu ( używać tylko gdy respawn=3 )
+respawnTemplates[] = {"f_SpectatorRespawn"}; // Spectator z opcją respawnu ( używać tylko gdy respawn=3 )
 
 // ============================================================================================
 
@@ -200,7 +200,7 @@ class Params
             title = "Radio System";
             values[] = {0,1,2,3};
             texts[] = {"Off","ACRE","TFR","ACRE2"};
-            default = 2;
+            default = 3;
             code = "f_param_radios = %1";
     };
 

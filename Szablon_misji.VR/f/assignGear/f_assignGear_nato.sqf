@@ -2015,7 +2015,7 @@ if (_isMan) then {
 	{
 _attach1 = "rhsusf_acc_anpeq15side_bk";		// Laser (RHS)
 _attach2 = "rhsusf_acc_anpeq15_bk_light";	// Laser i latarka (można przełączyć) (RHS)
-_attach3 = "rhsusf_acc_M952V";				// Latarka (RHS)
+_attach3 = "acc_flashlight";				// Latarka
 
 _silencer1 = "rhsusf_acc_nt4_black";		// Tłumik 5.56 (długi) (RHS)
 _silencer2 = "rhsusf_acc_rotex5_tan";		// Tłumik 5.56 (krótki) (RHS)
@@ -2124,31 +2124,31 @@ _SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
 
 _bagsmall = "B_Parachute";					// Spadochron
 
-_bagFTL = "tf_rt1523g_green";				// Plecak dla dowódcy (radio)
-_bagPP = "tf_rt1523g_green";             	// Plecak dla pilota (radio)
+_bagFTL = "usm_pack_st138_prc77";				// Plecak dla dowódcy (radio)
+_bagPP = "usm_pack_st138_prc77";             	// Plecak dla pilota (radio)
 
 _bagTL = "B_Kitbag_rgr";					//Plecak dowódcy drużyny
 
-_bagMs = "B_AssaultPack_rgr";				// Plecak dla medyka (mały)
-_bagMm = "B_TacticalPack_oli";				// Plecak dla medyka (średni)
+_bagMs = "usm_pack_m5_medic";				// Plecak dla medyka (mały)
+_bagMm = "usm_pack_m5_medic";				// Plecak dla medyka (średni)
 _bagMb = "B_Kitbag_rgr";               		// Plecak dla medyka (duży)
 
 _bagARs = "B_AssaultPack_rgr";				// Plecak dla RKM (mały)
 _bagARm = "B_Kitbag_rgr";					// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_khk";                 // Plecak dla RKM (duży)
+_bagARb = "usm_pack_alice";                 // Plecak dla RKM (duży)
 
 _bagENG = "B_AssaultPack_rgr";				// Plecak dla Mechanika
 
 _bagR = "B_Kitbag_rgr";						// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "B_Carryall_khk";					// Plecak dla MAT
+_bagMAT = "usm_pack_alice";					// Plecak dla MAT
 
 _bagmedium = "B_TacticalPack_oli";			// carries 200, weighs 30
-_baglarge =  "B_Carryall_khk"; 				// carries 320, weighs 40
+_baglarge =  "usm_pack_alice"; 				// carries 320, weighs 40
 
 _bagmediumdiver =  "B_AssaultPack_rgr";		// Plecaki SF
 
-_baguav = "tf_rt1523g_green";					// Plecak RTO
+_baguav = "usm_pack_st138_prc77";					// Plecak RTO
 
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
@@ -2177,14 +2177,14 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhsgref_uniform_woodland"];
-_baseHelmet = ["rhsgref_helmet_pasgt_woodland","rhsgref_helmet_pasgt_woodland_rhino"];
+_baseUniform = ["usm_bdu_w"];
+_baseHelmet = ["usm_helmet_pasgt_g_w","usm_helmet_pasgt_w"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
-_mediumRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
-_heavyRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
+_lightRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
+_mediumRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
+_heavyRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_FROG01_m81"];
@@ -2194,7 +2194,7 @@ _diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["rhsusf_hgu56p_green"];
+_pilotHelmet = ["rhsusf_hgu56p_visor_usa","rhsusf_hgu56p_usa"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
