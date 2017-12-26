@@ -31,11 +31,10 @@ _TypNumber = _this select 0;_TempArray = [];
 	
 //////////OPFOR///////////
 	15 - Russians RHS - MSV Leśne [MD]
-	16 - Russians RHS - VDV Pustynia [MD]
-	17 - ChDKZ [U]
-	18 - SLA [CW]
-	19 - United Armed Forces of Novorossiya [MD]
-	25 - ZSSR [CW]
+	16 - Russians RHS - VDV Leśne [MD]
+	17 - Russians RHS - VDV Pustynia [MD]
+	18 - Takistan Army [CW]
+	19 - SLA [CW]
 	
 //////////INDFOR//////////
 	20 - Takistan REBELS [U]
@@ -231,59 +230,48 @@ switch (_TypNumber) do
   
 //-------------------------------------------------------------------------------------------------
   
-// Russians RHS - VDV Pustynia (OPFOR)
+// Russians RHS - VDV Leśne (OPFOR)
   case 16:
   {
-    _Unit_Pool_S = ["rhs_vdv_des_armoredcrew","rhs_pilot_combat_heli","rhs_vdv_des_grenadier","rhs_vdv_des_arifleman","rhs_vdv_des_machinegunner_assistant","rhs_vdv_des_grenadier_rpg","rhs_vdv_des_strelok_rpg_assist","rhs_vdv_des_engineer","rhs_vdv_des_efreitor","rhs_vdv_des_grenadier","rhs_vdv_des_medic"];
-    _Unit_Pool_V = ["RHS_Ural_Zu23_MSV_01","RHS_Ural_Open_MSV_01","rhs_btr70_msv","rhs_tigr_3camo_vdv"];
-    _Unit_Pool_T = ["rhs_bmp1_msv","rhs_bmp2k_msv","rhs_t72ba_tv","rhs_t80u","rhs_t80"];
-    _Unit_Pool_A = ["RHS_Mi8mt_vdv","RHS_Mi8MTV3_vdv","RHS_Mi8MTV3_UPK23_vdv"];
+    _Unit_Pool_S = ["rhs_vdv_armoredcrew","rhs_pilot_combat_heli","rhs_vdv_grenadier_alt","rhs_vdv_RShG2","rhs_vdv_LAT","rhs_vdv_rifleman","rhs_vdv_medic","rhs_vdv_marksman","rhs_vdv_grenadier_rpg","rhs_vdv_strelok_rpg_assist","rhs_vdv_machinegunner_assistant","rhs_vdv_arifleman","rhs_vdv_aa"];
+    _Unit_Pool_V = ["rhs_tigr_sts_3camo_vdv","rhs_btr80_vdv","rhs_btr80a_vdv","rhsgref_BRDM2_vdv","rhsgref_BRDM2_ATGM_vdv","rhsgref_BRDM2_HQ_vdv","rhs_gaz66_zu23_vdv"];
+    _Unit_Pool_T = ["rhs_bmd1p","rhs_bmd2m","rhs_bmd4ma_vdv","rhs_sprut_vdv","rhs_zsu234_aa"];
+    _Unit_Pool_A = ["RHS_Mi8MTV3_heavy_vdv","RHS_Mi8MTV3_vdv"];
   }; 
   
 //-------------------------------------------------------------------------------------------------
   
-// ChDKZ (OPFOR)
+// Russians RHS - VDV Pustynia (OPFOR)
   case 17:
   {
-    _Unit_Pool_S = ["rhsgref_ins_crew","rhsgref_ins_pilot","rhsgref_ins_squadleader","rhsgref_ins_rifleman_akm","rhsgref_ins_rifleman_aks74","rhsgref_ins_rifleman_RPG26","rhsgref_ins_engineer","rhsgref_ins_sniper","rhsgref_ins_spotter","rhsgref_ins_militiaman_mosin","rhsgref_ins_machinegunner","rhsgref_ins_grenadier_rpg","rhsgref_ins_medic"];
-    _Unit_Pool_V = ["rhsgref_ins_uaz_ags","rhsgref_BRDM2_ins","rhsgref_BRDM2_ATGM_ins","rhsgref_ins_uaz_dshkm","rhsgref_ins_uaz_spg9","rhsgref_ins_btr60","rhsgref_ins_ural_Zu23"];
-    _Unit_Pool_T = ["rhsgref_ins_zsu234","rhsgref_ins_bmp2e","rhsgref_ins_bmp1p","rhsgref_ins_t72ba","rhsgref_ins_t72bb"];
-    _Unit_Pool_A = ["rhsgref_ins_Mi8amt"];
+    _Unit_Pool_S = ["rhs_vdv_des_combatcrew","rhs_pilot_combat_heli","rhs_vdv_des_grenadier","rhs_vdv_des_RShG2","rhs_vdv_des_LAT","rhs_vdv_des_rifleman","rhs_vdv_des_marksman","rhs_vdv_des_machinegunner_assistant","rhs_vdv_des_grenadier_rpg","rhs_vdv_des_strelok_rpg_assist","rhs_vdv_des_medic","rhs_vdv_des_arifleman","rhs_vdv_des_aa"];
+    _Unit_Pool_V = ["rhs_tigr_sts_3camo_vdv","rhs_btr80_vdv","rhs_btr80a_vdv","rhsgref_BRDM2_vdv","rhsgref_BRDM2_ATGM_vdv","rhsgref_BRDM2_HQ_vdv","rhs_gaz66_zu23_vdv"];
+    _Unit_Pool_T = ["rhs_bmd1p","rhs_bmd2m","rhs_bmd4ma_vdv","rhs_sprut_vdv","rhs_zsu234_aa"];
+    _Unit_Pool_A = ["RHS_Mi8MTV3_heavy_vdv","RHS_Mi8MTV3_vdv"];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
+  
+// Takistan Army (OPFOR)
+  case 18:
+  {
+    _Unit_Pool_S = ["LOP_TKA_Infantry_Crewman","LOP_TKA_Infantry_Pilot","LOP_TKA_Infantry_TL","LOP_TKA_Infantry_Rifleman_3","LOP_TKA_Infantry_Rifleman_2","LOP_TKA_Infantry_Rifleman","LOP_TKA_Infantry_Marksman","LOP_TKA_Infantry_MG_Asst","LOP_TKA_Infantry_MG","LOP_TKA_Infantry_AT_Asst","LOP_TKA_Infantry_AT","LOP_TKA_Infantry_GL","LOP_TKA_Infantry_Corpsman","LOP_TKA_Infantry_AA",""];
+    _Unit_Pool_V = ["LOP_TKA_UAZ_AGS","LOP_TKA_UAZ_DshKM","LOP_TKA_UAZ_SPG","LOP_TKA_BTR60","LOP_TKA_BTR70"];
+    _Unit_Pool_T = ["LOP_TKA_T34","LOP_TKA_T55","LOP_TKA_T72BB","LOP_TKA_ZSU234","LOP_TKA_BMP1D","LOP_TKA_BMP2D"];
+    _Unit_Pool_A = ["LOP_TKA_Mi8MTV3_FAB","LOP_TKA_Mi8MTV3_UPK23"];
   }; 
   
 //-------------------------------------------------------------------------------------------------
     
 // SLA (OPFOR)
-  case 18:
-  {
-    _Unit_Pool_S = ["LOP_SLA_Infantry_Crewman","LOP_SLA_Infantry_Pilot","LOP_SLA_Infantry_TL","LOP_SLA_Infantry_MG","LOP_SLA_Infantry_MG_Asst","LOP_SLA_Infantry_AT","LOP_SLA_Infantry_GL","LOP_SLA_Infantry_Engineer","LOP_SLA_Infantry_Corpsman","LOP_SLA_Infantry_AT_Asst"];
-    _Unit_Pool_V = ["LOP_SLA_UAZ_DshKM","LOP_SLA_UAZ_SPG","LOP_SLA_Ural","LOP_SLA_BTR70"];
-    _Unit_Pool_T = ["LOP_SLA_BMP1","LOP_SLA_BMP2","LOP_SLA_T72BA"];
-    _Unit_Pool_A = ["LOP_SLA_Mi8MT_Cargo","LOP_SLA_Mi8MTV3_UPK23"];
-  }; 
-
-//-------------------------------------------------------------------------------------------------
-
-// United Armed Forces of Novorossiya (OPFOR)
   case 19:
   {
-    _Unit_Pool_S = ["LOP_US_Infantry_Crewman","LOP_US_Infantry_Officer","LOP_US_Infantry_TL","LOP_US_Infantry_Rifleman_4","LOP_US_Infantry_MG_2","LOP_US_Infantry_MG_Asst","LOP_US_Infantry_GL_2","LOP_US_Infantry_AT","LOP_US_Infantry_Corpsman","LOP_US_Infantry_Engineer","LOP_US_Infantry_AT_Asst"];
-    _Unit_Pool_V = ["LOP_US_BTR70","LOP_US_UAZ_DshKM","LOP_US_UAZ_SPG","LOP_US_Ural"];
-    _Unit_Pool_T = ["LOP_US_T72BA","LOP_US_BMP1","LOP_US_BMP2"];
-    _Unit_Pool_A = [];
+    _Unit_Pool_S = ["LOP_SLA_Infantry_Crewman","LOP_SLA_Infantry_Pilot","LOP_SLA_Infantry_TL","LOP_SLA_Infantry_Rifleman_2","LOP_SLA_Infantry_Rifleman","LOP_SLA_Infantry_Marksman","LOP_SLA_Infantry_MG_Asst","LOP_SLA_Infantry_MG","LOP_SLA_Infantry_AT","LOP_SLA_Infantry_GL","LOP_SLA_Infantry_Corpsman","LOP_SLA_Infantry_AT_Asst","LOP_SLA_Infantry_AA"];
+    _Unit_Pool_V = ["LOP_SLA_UAZ_AGS","LOP_SLA_UAZ_DshKM","LOP_SLA_UAZ_SPG","LOP_SLA_BTR60","LOP_SLA_BTR70"];
+    _Unit_Pool_T = ["LOP_SLA_BMP1D","LOP_SLA_BMP2D","LOP_SLA_T72BB","LOP_SLA_ZSU234"];
+    _Unit_Pool_A = ["LOP_SLA_Mi8MTV3_FAB","LOP_SLA_Mi8MTV3_UPK23"];
   }; 
 
-//-------------------------------------------------------------------------------------------------
-
-// Russians ZSSR (OPFOR)
-  case 25:
-  {
-    _Unit_Pool_S = ["oksv_wood_tank_crew","rhs_pilot","oksv_wood_serg","oksv_wood_gp","oksv_wood_rifleman","oksv_wood_sniper","oksv_wood_medic","oksv_wood_rpg","oksv_wood_rpgassis","oksv_wood_machinegunne","oksv_wood_secnumber"];
-    _Unit_Pool_V = ["oksv_wood_brdm2","oksv_wood_btr70"];
-    _Unit_Pool_T = ["oksv_wood_zsu234","oksv_wood_bmp1k","oksv_wood_bmp2","oksv_t80"];
-    _Unit_Pool_A = ["RHS_Mi8AMTSh_vvsc","RHS_Mi8AMTSh_UPK23_vvsc"];
-  }; 
-  
 //-------------------------------------------------------------------------------------------------
 //////////////////////////////////////////////////////////////////
 //////////////////////INDFOR//////////////////////////////////////

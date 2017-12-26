@@ -303,8 +303,8 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
+_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "B_Kitbag_sgg";						//Plecak dowódcy drużyny
 
@@ -327,7 +327,7 @@ _baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "rhs_assault_umbts";						// Plecak RTO
 
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
@@ -564,8 +564,8 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
+_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
@@ -588,7 +588,7 @@ _baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "rhs_assault_umbts";						// Plecak RTO
 
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
