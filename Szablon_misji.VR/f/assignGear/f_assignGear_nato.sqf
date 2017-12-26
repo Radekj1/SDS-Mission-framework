@@ -1760,7 +1760,7 @@ _bipod1 = "rhsusf_acc_harris_bipod";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach3]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = []; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // ====================================================================================
 
@@ -1774,14 +1774,14 @@ _hg_attachments= [];
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_m16a4_carryhandle";
+_rifle = "gst_m16a2_2";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_m4_carryhandle";
-_carbinemag = "30Rnd_556x45_Stanag";
-_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_carbine = "hlc_rifle_M14";
+_carbinemag = "20Rnd_762x51_Mag";
+_carbinemag_tr = "rhsusf_20Rnd_762x51_m62_Mag";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
 _smg = "hlc_smg_mp5a4";
@@ -1799,7 +1799,7 @@ _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 //_secendMag = "hlc_30Rnd_9x19_SD_MP5";
 
 // Broń z granatnikiem (dla dowódców)
-_glrifle = "rhs_weap_m16a4_carryhandle_M203";
+_glrifle = "gst_m16a2_gl";
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
@@ -1867,8 +1867,8 @@ _SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
 
 _bagsmall = "B_Parachute";					// Spadochron
 
-_bagFTL = "tf_rt1523g_sage";				// Plecak dla dowódcy (radio)
-_bagPP = "tf_rt1523g_sage";             	// Plecak dla pilota (radio)
+_bagFTL = "usm_pack_st138_prc77";				// Plecak dla dowódcy (radio)
+_bagPP = "usm_pack_st138_prc77";             	// Plecak dla pilota (radio)
 
 _bagTL = "B_Kitbag_cbr";					//Plecak dowódcy drużyny
 
@@ -1891,7 +1891,7 @@ _baglarge =  "B_Carryall_cbr"; 				// carries 320, weighs 40
 
 _bagmediumdiver =  "B_AssaultPack_cbr";		// Plecaki SF
 
-_baguav = "tf_rt1523g_sage";					// Plecak RTO
+_baguav = "usm_pack_st138_prc77";					// Plecak RTO
 
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
@@ -1920,14 +1920,14 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhsgref_uniform_3color_desert"];
-_baseHelmet = ["rhsgref_helmet_pasgt_3color_desert","rhsgref_helmet_pasgt_3color_desert_rhino"];
+_baseUniform = ["usm_bdu_dcu"];
+_baseHelmet = ["usm_helmet_pasgt_dcu","usm_helmet_pasgt_g_dcu"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
-_mediumRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
-_heavyRig = ["rhsusf_spc_corpsman","rhsusf_spc_iar","rhsusf_spc_light","rhsusf_spc_mg","rhsusf_spc_patchless_radio","rhsusf_spc_rifleman","rhsusf_spc_squadleader"];
+_lightRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
+_mediumRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
+_heavyRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_FROG01_m81"];
@@ -1937,7 +1937,7 @@ _diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["rhsusf_hgu56p_green"];
+_pilotHelmet = ["rhsusf_hgu56p","rhsusf_hgu56p_visor_mask_skull"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
@@ -1949,7 +1949,7 @@ _sfGlasses = [];
 
 // Załoga pojazdu
 _crewUniform = ["rhsgref_uniform_olive"];
-_crewHelmet = ["rhsusf_cvc_helmet","rhsusf_cvc_alt_helmet"];
+_crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_alt_helmet"];
 _crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
 _crewGlasses = [];
 
@@ -2028,7 +2028,7 @@ _bipod1 = "rhsusf_acc_harris_bipod";		//
 _bipod2 = "bipod_02_F_blk";					// 
 
 // Jakie dodatki mają być dodane
-_attachments = [_attach3]; 			// Każda jednostka otrzyma ten zestaw dodatków
+_attachments = []; 			// Każda jednostka otrzyma ten zestaw dodatków
 
 // ====================================================================================
 
@@ -2042,14 +2042,14 @@ _hg_attachments= [];
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_m16a4_carryhandle";
+_rifle = "gst_m16a2_2";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_m4_carryhandle";
-_carbinemag = "30Rnd_556x45_Stanag";
-_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_carbine = "hlc_rifle_M14";
+_carbinemag = "20Rnd_762x51_Mag";
+_carbinemag_tr = "rhsusf_20Rnd_762x51_m62_Mag";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
 _smg = "hlc_smg_mp5a4";
@@ -2067,7 +2067,7 @@ _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 //_secendMag = "hlc_30Rnd_9x19_SD_MP5";
 
 // Broń z granatnikiem (dla dowódców)
-_glrifle = "rhs_weap_m16a4_carryhandle_M203";
+_glrifle = "gst_m16a2_gl";
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
