@@ -37,11 +37,14 @@ _TypNumber = _this select 0;_TempArray = [];
 	19 - SLA [CW]
 	
 //////////INDFOR//////////
-	20 - Takistan REBELS [U]
-	21 - CDF UN [CW]
-	22 - Ultranationalists [U]
-	23 - African Militia [U]
-	24 - Ukraine Armed Forces [MD]
+	20 - ChDKZ [CW/U]
+	21 - Partyzanci [CW/U]
+	22 - Komuniści [CW/U] (NAPA)
+	23 - UN Old [CW]
+	24 - UN Modern [MD]
+	25 - Murzyny [U] (African rebels)
+	26 - Ciapaci [U] (Takistan rebels)
+	27 - RACS [U]
 
 *////////////////////////////////////////////
 
@@ -277,62 +280,93 @@ switch (_TypNumber) do
 //////////////////////INDFOR//////////////////////////////////////
 //////////////////////////////////////////////////////////////////  
 
-// Takistan REBELS (INDFOR)
+// CHDKZ (INDFOR)
   case 20:
   {
-    _Unit_Pool_S = ["LOP_AM_Infantry_Rifleman_2","LOP_AM_Infantry_Rifleman_2","LOP_AM_Infantry_GL","LOP_AM_Infantry_Engineer","LOP_AM_Infantry_Corpsman","LOP_AM_Infantry_AT","LOP_AM_Infantry_AR_Asst","LOP_AM_Infantry_SL"];
-    _Unit_Pool_V = ["LOP_AM_Offroad_M2","LOP_AM_UAZ_DshKM","LOP_AM_UAZ_SPG","LOP_AM_UAZ_Open"];
-    _Unit_Pool_T = ["LOP_ISTS_T72BA","LOP_ISTS_BMP1","LOP_ISTS_T55"];
+    _Unit_Pool_S = ["rhsgref_ins_g_crew","rhsgref_ins_g_pilot","rhsgref_ins_g_squadleader","rhsgref_ins_g_spotter","rhsgref_ins_g_sniper","rhsgref_ins_g_engineer","rhsgref_ins_g_rifleman_RPG26","rhsgref_ins_g_grenadier","rhsgref_ins_g_rifleman_aksu","rhsgref_ins_g_rifleman_aks74","rhsgref_ins_g_rifleman_akm","rhsgref_ins_g_rifleman","rhsgref_ins_g_militiaman_mosin","rhsgref_ins_g_medic","rhsgref_ins_g_machinegunner","rhsgref_ins_g_grenadier_rpg","rhsgref_ins_g_specialist_aa"];
+    _Unit_Pool_V = ["rhsgref_ins_g_uaz_ags","rhsgref_ins_g_uaz_dshkm_chdkz","rhsgref_ins_g_uaz_spg9","rhsgref_ins_g_btr60","rhsgref_ins_g_btr70","rhsgref_BRDM2_ins_g","rhsgref_BRDM2_ATGM_ins_g","rhsgref_BRDM2_HQ_ins_g","rhsgref_ins_g_ural_Zu23"];
+    _Unit_Pool_T = ["rhsgref_ins_g_bmd1","rhsgref_ins_g_bmd2","rhsgref_ins_g_t72bb","rhsgref_ins_g_zsu234"];
     _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------
   
-// CDF UN (INDFOR)
+// Partyzanci (INDFOR)
   case 21:
   {
-    _Unit_Pool_S = ["LOP_UN_Infantry_Crewman","LOP_UN_Infantry_Pilot","LOP_UN_Infantry_TL","LOP_UN_Infantry_Rifleman","LOP_UN_Infantry_MG","LOP_UN_Infantry_MG_Asst","LOP_UN_Infantry_AT","LOP_UN_Infantry_GL","LOP_UN_Infantry_Engineer","LOP_UN_Infantry_Corpsman","LOP_UN_Infantry_Rifleman_4","LOP_UN_Infantry_AT_Asst"];
-    _Unit_Pool_V = ["rhsgref_un_btr70","rhsgref_un_m1117","rhsgref_un_ural"];
+    _Unit_Pool_S = ["rhsgref_nat_pmil_crew","rhsgref_nat_pmil_crew","rhsgref_nat_pmil_commander","rhsgref_nat_pmil_saboteur","rhsgref_nat_pmil_rifleman_m92","rhsgref_nat_pmil_rifleman","rhsgref_nat_pmil_specialist_aa","rhsgref_nat_pmil_grenadier","rhsgref_nat_pmil_rifleman_aksu","rhsgref_nat_pmil_medic","rhsgref_nat_pmil_machinegunner","rhsgref_nat_pmil_hunter","rhsgref_nat_pmil_grenadier_rpg"];
+    _Unit_Pool_V = ["rhsgref_nat_uaz_ags","rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_spg9","rhsgref_nat_btr70","rhsgref_nat_ural_Zu23"];
     _Unit_Pool_T = [];
-    _Unit_Pool_A = ["rhsgref_un_Mi8amt"];
+    _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------
  
-// Ultranationalists (INDFOR)
+// Komuniści (INDFOR)
   case 22:
   {
-    _Unit_Pool_S = ["rhsgref_nat_crew","rhsgref_nat_warlord","rhsgref_nat_commander","rhsgref_nat_militiaman_kar98k","rhsgref_nat_rifleman_akms","rhsgref_nat_grenadier","rhsgref_nat_rifleman","rhsgref_nat_saboteur","rhsgref_nat_pmil_grenadier_rpg","rhsgref_nat_pmil_hunter","rhsgref_nat_pmil_machinegunner","rhsgref_nat_pmil_medic"];
-    _Unit_Pool_V = ["rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_ags","rhsgref_nat_uaz_spg9","rhsgref_nat_btr70","rhsgref_nat_ural_Zu23"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = [];
+    _Unit_Pool_S = ["LOP_UA_Infantry_Crewman","LOP_UA_Infantry_Pilot","LOP_UA_Infantry_TL","LOP_UA_Infantry_MG_Asst","LOP_UA_Infantry_MG","LOP_UA_Infantry_Marksman","LOP_UA_Infantry_Rifleman_3","LOP_UA_Infantry_Rifleman","LOP_UA_Infantry_Rifleman_2","LOP_UA_Infantry_AT","LOP_UA_Infantry_GL","LOP_UA_Infantry_Corpsman","LOP_UA_Infantry_AT_Asst"];
+    _Unit_Pool_V = ["LOP_UA_UAZ_AGS","LOP_UA_UAZ_DshKM","LOP_UA_UAZ_SPG"];
+    _Unit_Pool_T = ["LOP_UA_BMP1","LOP_UA_BMP2","LOP_UA_T72BA","LOP_UA_ZSU234"];
+    _Unit_Pool_A = ["LOP_UA_Mi8MTV3_FAB","LOP_UA_Mi8MTV3_UPK23"];
   }; 
 
 //-------------------------------------------------------------------------------------------------
   
-// African Militia (INDFOR)
+// UN old (INDFOR)
   case 23:
   {
-    _Unit_Pool_S = ["LOP_AFR_Driver","LOP_AFR_Infantry_IED","LOP_AFR_Infantry_GL","LOP_AFR_Infantry_AR_Asst","LOP_AFR_Infantry_Corpsman","LOP_AFR_Infantry_IED","LOP_AFR_Infantry_Rifleman_3","LOP_AFR_Infantry_AR","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_Rifleman"];
-    _Unit_Pool_V = ["LOP_AFR_Landrover","I_G_Offroad_01_armed_F"];
-    _Unit_Pool_T = ["LOP_AFR_M113_W","LOP_AFR_T34","LOP_AFR_T55"];
-    _Unit_Pool_A = [];
+    _Unit_Pool_S = ["rhsgref_cdf_un_crew","rhsgref_cdf_un_pilot","rhsgref_cdf_un_squadleader","rhsgref_cdf_un_rifleman_lite","rhsgref_cdf_un_grenadier","rhsgref_cdf_un_rifleman","rhsgref_cdf_un_medic","rhsgref_cdf_un_machinegunner","rhsgref_cdf_un_grenadier_rpg"];
+    _Unit_Pool_V = ["LOP_UN_UAZ_AGS","rhsgref_un_ural","LOP_UN_UAZ_DshKM","LOP_UN_UAZ_SPG","LOP_UN_BTR70"];
+    _Unit_Pool_T = ["LOP_UN_BMP1D","LOP_UN_BMP2D","LOP_UN_ZSU234"];
+    _Unit_Pool_A = ["LOP_UN_Mi8MTV3_UPK23","LOP_UN_Mi8MTV3_FAB"];
   }; 
  
 //-------------------------------------------------------------------------------------------------
 
-// Ukraine Armed Forces (INDFOR)
+// UN new (INDFOR)
   case 24:
   {
-    _Unit_Pool_S = ["LOP_UKR_Infantry_crew","LOP_UKR_Infantry_pilot","LOP_UKR_Infantry_sergeant","LOP_UKR_Infantry_RPG","LOP_UKR_Infantry_Grenadier","LOP_UKR_Infantry_engineer","LOP_UKR_Infantry_RPG_Asst","LOP_UKR_Infantry_AR_Asst","LOP_UKR_Infantry_AR","LOP_UKR_Infantry_medic","LOP_UKR_Infantry_LAT"];
-    _Unit_Pool_V = ["LOP_UKR_BTR80","LOP_UKR_UAZ","LOP_UKR_UAZ_DshKM","LOP_UKR_UAZ_SPG","LOP_UKR_Ural_open"];
-    _Unit_Pool_T = ["LOP_UKR_BMP1","LOP_UKR_BMP2","LOP_UKR_T72BA"];
-    _Unit_Pool_A = ["LOP_UKR_Mi8MT_Cargo","LOP_UKR_Mi8MTV3_UPK23"];
+    _Unit_Pool_S = ["LOP_UN_Infantry_Crewman","LOP_UN_Infantry_Pilot","LOP_UN_Infantry_TL","LOP_UN_Infantry_Rifleman_4","LOP_UN_Infantry_Rifleman_3","LOP_UN_Infantry_Rifleman_2","LOP_UN_Infantry_Rifleman","LOP_UN_Infantry_Marksman","LOP_UN_Infantry_MG_Asst","LOP_UN_Infantry_MG","LOP_UN_Infantry_AT","LOP_UN_Infantry_GL","LOP_UN_Infantry_Corpsman","LOP_UN_Infantry_AT_Asst","LOP_UN_Infantry_AA"];
+    _Unit_Pool_V = ["LOP_UN_UAZ_AGS","LOP_UN_UAZ_DshKM","LOP_UN_UAZ_SPG","LOP_UN_BTR70","rhsgref_un_m1117"];
+    _Unit_Pool_T = ["LOP_UN_BMP1D","LOP_UN_BMP2D","LOP_UN_ZSU234"];
+    _Unit_Pool_A = ["LOP_UN_Mi8MTV3_UPK23","LOP_UN_Mi8MTV3_FAB"];
   }; 
-
+  
 //-------------------------------------------------------------------------------------------------
 
+// Murzyny (INDFOR)
+  case 25:
+  {
+    _Unit_Pool_S = ["I_C_Helipilot_F","I_C_Helipilot_F","LOP_AFR_Infantry_GL","I_C_Soldier_Para_7_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_8_F","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_AR"];
+    _Unit_Pool_V = ["LOP_AFR_Landrover_M2","LOP_AFR_Landrover_SPG9","LOP_AFR_Nissan_PKM","LOP_AFR_Offroad_M2","LOP_AFR_BTR60"];
+    _Unit_Pool_T = ["LOP_AFR_T34","LOP_AFR_T55","LOP_AFR_T72BA"];
+    _Unit_Pool_A = [];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
 
+// Ciapaci (INDFOR)
+  case 26:
+  {
+    _Unit_Pool_S = ["LOP_AM_Infantry_Rifleman_3","LOP_AM_Infantry_Rifleman_3","LOP_AM_Infantry_SL","LOP_AM_Infantry_AR_Asst","LOP_AM_Infantry_AR","LOP_AM_Infantry_Marksman","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman_3","LOP_AM_Infantry_Rifleman_5","LOP_AM_Infantry_Rifleman_4","LOP_AM_Infantry_Rifleman_2","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman_6","LOP_AM_Infantry_GL","LOP_AM_Infantry_Corpsman"];
+    _Unit_Pool_V = ["LOP_AM_Landrover_M2","LOP_AM_Landrover_SPG9","LOP_AM_Nissan_PKM","LOP_AM_Offroad_M2","LOP_AM_UAZ_AGS","LOP_AM_UAZ_DshKM","LOP_AM_UAZ_SPG","LOP_AM_BTR60"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
+
+// RACS (INDFOR)
+  case 27:
+  {
+    _Unit_Pool_S = ["LOP_RACS_Infantry_Crewman","LOP_RACS_Infantry_Pilot","LOP_RACS_Infantry_TL","LOP_RACS_Infantry_Rifleman_3","LOP_RACS_Infantry_Rifleman_2","LOP_RACS_Infantry_Rifleman","LOP_RACS_Infantry_Marksman","LOP_RACS_Infantry_MG_Asst","LOP_RACS_Infantry_MG","LOP_RACS_Infantry_AT_Asst","LOP_RACS_Infantry_AT","LOP_RACS_Infantry_GL_2","LOP_RACS_Infantry_Corpsman"];
+    _Unit_Pool_V = ["LOP_RACS_Landrover_M2"];
+    _Unit_Pool_T = ["LOP_RACS_T72BA"];
+    _Unit_Pool_A = ["LOP_RACS_MH9_armed","LOP_RACS_UH60M"];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
 
 
   
