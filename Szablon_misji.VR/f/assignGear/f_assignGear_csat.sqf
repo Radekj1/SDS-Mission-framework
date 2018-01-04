@@ -1,5 +1,5 @@
 // ====================================================================================
-// S.D.S Assign Gear Script - [V-1.8 beta | 17.10.2017]
+// S.D.S Assign Gear Script - [V-1.8 beta | 04.01.2018]
 // ====================================================================================
 
 //	SPIS TRESCI
@@ -38,7 +38,6 @@ _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "rhs_pdu4";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
-_Antena_RTO = "tfw_rf3080Item";
 _handcuffs = "ACE_CableTie";
 
 // Flary ręczne
@@ -125,8 +124,8 @@ Medical = {
 	for "_p" from 1 to 2 do {_unit addItem _epinephrine;};	// Dodanie 2 sztuk epinefryny	
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
-	_unit linkItem "ItemRadio";		// Dodanie radia (nie z taskforce)
-	_unit linkItem "tf_microdagr";	// Dodanie zegarka
+	_unit linkItem "ItemRadio";		// Dodanie radia
+	_unit linkItem "ItemWatch";	// Dodanie zegarka
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _latarka;			// Latarka na mape
 };
@@ -282,7 +281,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v";
+_MAT_sight = "rhs_acc_pgo7v3";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -543,7 +542,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v";
+_MAT_sight = "rhs_acc_pgo7v3";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -796,7 +795,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v";
+_MAT_sight = "rhs_acc_pgo7v3";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -817,8 +816,8 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
+_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "B_Kitbag_sgg";						//Plecak dowódcy drużyny
 
@@ -841,7 +840,7 @@ _baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "rhs_assault_umbts";						// Plecak RTO
 
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
@@ -1051,7 +1050,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v";
+_MAT_sight = "rhs_acc_pgo7v3";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -1072,8 +1071,8 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
+_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
@@ -1096,7 +1095,7 @@ _baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "rhs_assault_umbts";						// Plecak RTO
 
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
@@ -1305,7 +1304,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v";
+_MAT_sight = "rhs_acc_pgo7v3";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -1326,8 +1325,8 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
+_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
@@ -1350,7 +1349,7 @@ _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "rhs_assault_umbts";						// Plecak RTO
 
 _baghmgg = "RHS_Kord_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
@@ -1561,7 +1560,7 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v";
+_MAT_sight = "rhs_acc_pgo7v3";
 
 // Strzelec AA
 _SAM = "rhs_weap_igla";
@@ -1582,8 +1581,8 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "tf_mr3000_rhs";                  	// Plecak dla dowódcy (radio)
-_bagPP = "tf_mr3000_rhs";                  		// Plecak dla pilota (radio)
+_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
+_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
@@ -1606,7 +1605,7 @@ _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
 
-_baguav = "tf_mr3000_rhs";						// Plecak RTO
+_baguav = "rhs_assault_umbts";						// Plecak RTO
 
 _baghmgg = "RHS_Kord_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
