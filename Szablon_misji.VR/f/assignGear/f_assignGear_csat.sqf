@@ -1636,7 +1636,7 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhsgref_uniform_vsr"];
+_baseUniform = ["rhs_uniform_flora_patchless_alt"];
 _baseHelmet = ["rhs_ssh68","rhsgref_ssh68_vsr"];
 _baseGlasses = [];
 
@@ -1664,7 +1664,7 @@ _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhsgref_uniform_vsr"];
+_crewUniform = ["rhs_uniform_flora_patchless_alt"];
 _crewHelmet = ["rhs_tsh4"];
 _crewRig = ["rhs_6b13"];
 _crewGlasses = [];
