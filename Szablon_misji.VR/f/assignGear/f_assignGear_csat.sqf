@@ -381,7 +381,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_mflora_patchless"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b23_ML_crewofficer","rhs_6b23_ML_crew","rhs_6b23_ML_engineer"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
@@ -640,7 +640,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_mflora_patchless"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b23_digi_crewofficer","rhs_6b23_digi_crew","rhs_6b23_digi_engineer"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
@@ -895,7 +895,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_mflora_patchless"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b23_ML_crewofficer","rhs_6b23_ML_crew","rhs_6b23_ML_engineer"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1404,7 +1404,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_m88_patchless"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b13"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1666,7 +1666,7 @@ _sfGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_flora_patchless_alt"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_6b13"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
