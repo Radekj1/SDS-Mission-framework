@@ -847,7 +847,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhsgref_uniform_ttsko_urban"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhsgref_6b23_khaki_officer"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
