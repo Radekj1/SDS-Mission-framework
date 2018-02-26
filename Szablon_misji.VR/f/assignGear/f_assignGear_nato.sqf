@@ -14,7 +14,7 @@
 	7.	US Desert [CW]
 	8.	US Woodland [CW]
 	9.	Everon Defence Forces [U]
-	10. Altis Defence Forces [U]
+	10.	Altis Defence Forces [U]
 	
 */
 // ====================================================================================
@@ -393,7 +393,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_cu_ucp"];
 _crewHelmet = ["rhsusf_cvc_green_helmet"];
-_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spcs_ucp"];
 _crewGlasses = [];
 
 // Ghillie
@@ -650,7 +650,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_cu_ocp"];
 _crewHelmet = ["rhsusf_cvc_helmet"];
-_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spcs_ocp"];
 _crewGlasses = [];
 
 // Ghillie
@@ -905,7 +905,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_FROG01_d"];
 _crewHelmet = ["rhsusf_cvc_helmet"];
-_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1158,7 +1158,7 @@ _pilotGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhs_uniform_FROG01_wd"];
 _crewHelmet = ["rhsusf_cvc_helmet"];
-_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -1949,7 +1949,7 @@ _sfGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhsgref_uniform_olive"];
 _crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_alt_helmet"];
-_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
@@ -2206,7 +2206,7 @@ _sfGlasses = [];
 // Załoga pojazdu
 _crewUniform = ["rhsgref_uniform_olive"];
 _crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_alt_helmet"];
-_crewRig = ["rhsusf_spc","rhsusf_spc_crewman"];
+_crewRig = ["rhsusf_spc_crewman"];
 _crewGlasses = [];
 
 // Ghillie
