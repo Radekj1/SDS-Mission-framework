@@ -20,7 +20,7 @@
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-_bandage = "ACE_quikclot";					// Opatrunek "Quik Clot" dla piechoty
+_bandage = "ACE_elasticBandage";					// Opatrunek "Quik Clot" dla piechoty
 _epinephrine = "ACE_epinephrine";			// Epinefryna
 _morphine = "ACE_morphine";					// Morfina
 _blood = "ACE_bloodIV_500";					// Krew 500 ml
@@ -59,6 +59,7 @@ _toolkit = "ToolKit";
 _zapalnik = "ACE_M26_Clacker";
 _n_rozbraja = "ACE_DefusalKit";
 _saperka = "ACE_EntrenchingTool";
+_mlotek = "ACE_Fortify";
 _wirecutter = "ACE_wirecutter";
 
 // Granaty ręczne
@@ -120,7 +121,7 @@ Medical = {
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
 	_unit linkItem "ItemRadio";		// Dodanie radia
-	_unit linkItem "ItemWatch";	// Dodanie zegarka
+	_unit linkItem "ItemWatch";		// Dodanie zegarka
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _latarka;			// Latarka na mape
 };
