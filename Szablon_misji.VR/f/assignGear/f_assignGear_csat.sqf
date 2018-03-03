@@ -358,7 +358,7 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_vdv_emr_des"];
+_baseUniform = ["rhs_uniform_emr_des_patchless"];
 _baseHelmet = ["rhs_6b47","rhs_6b47_ess"];
 _baseGlasses = [];
 

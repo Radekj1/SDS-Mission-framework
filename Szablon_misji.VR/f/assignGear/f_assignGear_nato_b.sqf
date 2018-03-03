@@ -573,7 +573,7 @@ case "mtrag":
 // BACKPACK: MEDIUM SAM GUNNER (MSAMG)
 case "msamg":
 {
-		_unit addBackpack _bagR;
+		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
@@ -584,7 +584,7 @@ case "msamg":
 // BACKPACK: MEDIUM SAM ASSISTANT GUNNER (MSAMAG)
 case "msamag":
 {
-		_unit addBackpack _bagR;
+		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 1];

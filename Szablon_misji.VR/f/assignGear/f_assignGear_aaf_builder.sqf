@@ -424,20 +424,19 @@ switch (_typeofUnit) do
 		_unit addweapon _SNrifle;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
+		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope3];
+		_attachments = [_bipod1,_scope3];
 	};
 
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		_unit addmagazines [_glriflemag,5];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
-		//_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_COrifle
+		_unit addmagazines [_DMriflemag,7];
+		_unit addweapon _DMrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon _lornetkaAM;
+		_attachments = [_bipod1,_scope1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit linkItem _GPS;
@@ -511,8 +510,6 @@ switch (_typeofUnit) do
 // LOADOUT: JET PILOTS
 	case "ps":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
@@ -536,33 +533,30 @@ switch (_typeofUnit) do
 // LOADOUT: ENGINEER (DEMO)
 	case "eng":
 {
-		_unit addmagazines [_carbinemag,3];
-		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _carbine;
-		_unit addweapon _pistol;
-		_unit linkItem _GPS;
-		_unit addItem "ACE_MapTools";
-		_unit addItem "ACE_RangeTable_82mm";
+		_unit addweapon _mineDetector;
+		_unit linkItem _uavterminal;
+		_unit addWeapon _lornetkaRTO;
+        _unit addMagazines ["Laserbatteries",2];
+		_attachments = [];
 		["eng"] call _backpack;
 	};
 
 // LOADOUT: ENGINEER (MINES)
 	case "engm":
 	{
-		_unit addmagazines [_carbinemag,5];
-		_unit addweapon _carbine;
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
+		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_unit addmagazines [_APmine2,2];
-		_unit addItem "MineDetector";
+		_unit addweapon _mineDetector;
 		_unit linkItem _GPS;
 		_unit addItem _zapalnik; //zapalnik
 		_unit addItem _n_rozbraja; //zestaw do rozbrajania
+		_attachments = [];
 		["engm"] call _backpack;
 	};
 	
@@ -583,7 +577,6 @@ switch (_typeofUnit) do
         _unit addWeapon "Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
-		(unitBackpack _unit) addItemCargoGlobal [_Antena_RTO, 1];
 	};
 			
  // LOADOUT: Dowódca sil specjalnych
