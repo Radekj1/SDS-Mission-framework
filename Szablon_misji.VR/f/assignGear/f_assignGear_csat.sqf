@@ -1,5 +1,5 @@
 // ====================================================================================
-// S.D.S Assign Gear Script - [V-1.8 beta | 04.01.2018]
+// S.D.S Assign Gear Script - [V-1.8 beta | 04.03.2018]
 // ====================================================================================
 
 //	SPIS TRESCI
@@ -39,6 +39,7 @@ _lornetkaAM = "rhs_pdu4";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 _handcuffs = "ACE_CableTie";
+_worek = "ACE_bodyBag";
 
 // Flary ręczne
 _flarewhite = "ACE_HandFlare_White";
@@ -53,10 +54,12 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 //Przedmioty w skrzyniach
-_satche_small = "DemoCharge_Remote_Mag";
-_satche_big = "SatchelCharge_Remote_Mag";
+_satche_small = "ClaymoreDirectionalMine_Remote_Mag";
+_satche_big = "DemoCharge_Remote_Mag";
+_satche_extra_big = "SatchelCharge_Remote_Mag";
 _toolkit = "ToolKit";
-_zapalnik = "ACE_M26_Clacker";
+_zapalnik = "ACE_Clacker";
+_zapalnik_b = "ACE_M26_Clacker";
 _n_rozbraja = "ACE_DefusalKit";
 _saperka = "ACE_EntrenchingTool";
 _mlotek = "ACE_Fortify";
@@ -276,7 +279,7 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -289,9 +292,9 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "launch_O_Titan_short_F";
+//_HATmag1 = "Titan_AT";
+//_HATmag2 = "Titan_AP";
 
 // Snajper
 _SNrifle = "srifle_GM6_F";
@@ -332,14 +335,14 @@ _baguav = "rhs_assault_umbts";						// Plecak RTO
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_Kornet_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_Kornet_Tripod_Bag";				// used by Heavy AT assistant gunner
 
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
+_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -537,7 +540,7 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -550,9 +553,9 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "launch_O_Titan_short_F";
+//_HATmag1 = "Titan_AT";
+//_HATmag2 = "Titan_AP";
 
 // Snajper
 _SNrifle = "srifle_GM6_F";
@@ -593,12 +596,14 @@ _baguav = "rhs_assault_umbts";						// Plecak RTO
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghatg = "RHS_Kornet_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_Kornet_Tripod_Bag";				// used by Heavy AT assistant gunner
+
+_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
+
+_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -790,7 +795,7 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -803,9 +808,9 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "launch_O_Titan_short_F";
+//_HATmag1 = "Titan_AT";
+//_HATmag2 = "Titan_AP";
 
 // Snajper
 _SNrifle = "srifle_GM6_F";
@@ -846,14 +851,14 @@ _baguav = "rhs_assault_umbts";						// Plecak RTO
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_Metis_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_Metis_Tripod_Bag";				// used by Heavy AT assistant gunner
 
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
+_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -1003,9 +1008,9 @@ _carbinemag = "rhs_30Rnd_762x39mm";
 _carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_aks74u";
-_smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smg = "rhs_weap_akms_folded";
+_smgmag = "rhs_30Rnd_762x39mm";
+_smgmag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Broń z granatnikiem (dla dowóców)
 _glrifle = "rhs_weap_akm_gp25";
@@ -1045,7 +1050,7 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -1058,9 +1063,9 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "launch_O_Titan_short_F";
+//_HATmag1 = "Titan_AT";
+//_HATmag2 = "Titan_AP";
 
 // Snajper
 _SNrifle = "srifle_GM6_F";
@@ -1101,12 +1106,14 @@ _baguav = "rhs_assault_umbts";						// Plecak RTO
 _baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghatg = "RHS_SPG9_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_SPG9_Tripod_Bag";				// used by Heavy AT assistant gunner
+
+_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
+
+_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -1299,7 +1306,7 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -1312,9 +1319,9 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "launch_O_Titan_short_F";
+//_HATmag1 = "Titan_AT";
+//_HATmag2 = "Titan_AP";
 
 // Snajper
 _SNrifle = "srifle_GM6_F";
@@ -1331,7 +1338,7 @@ _bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
-_bagMs = "rhs_sidorMG";							// Plecak dla medyka (mały)
+_bagMs = "rhs_sidor";							// Plecak dla medyka (mały)
 _bagMm = "B_FieldPack_oli";						// Plecak dla medyka (średni)
 _bagMb = "B_FieldPack_oli";               		// Plecak dla medyka (duży)
 
@@ -1341,11 +1348,11 @@ _bagARb = "B_Carryall_cbr";						// Plecak dla RKM (duży)
 
 _bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
 
-_bagR = "rhs_sidorMG";							// Plecak dla strzelca, strzelca AT
+_bagR = "rhs_sidor";							// Plecak dla strzelca, strzelca AT
 
 _bagMAT = "B_Carryall_cbr";						// Plecak dla MAT
 
-_bagmedium = "rhs_sidorMG";						// carries 200, weighs 30
+_bagmedium = "rhs_sidor";						// carries 200, weighs 30
 _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
@@ -1355,14 +1362,14 @@ _baguav = "rhs_assault_umbts";						// Plecak RTO
 _baghmgg = "RHS_Kord_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_SPG9_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_SPG9_Tripod_Bag";				// used by Heavy AT assistant gunner
 
 _bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
 _bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -1555,7 +1562,7 @@ _DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Strzelec AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+//_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
 _MAT = "rhs_weap_rpg7";
@@ -1568,9 +1575,9 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-_HAT = "launch_O_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+//_HAT = "launch_O_Titan_short_F";
+//_HATmag1 = "Titan_AT";
+//_HATmag2 = "Titan_AP";
 
 // Snajper
 _SNrifle = "srifle_GM6_F";
@@ -1587,7 +1594,7 @@ _bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
-_bagMs = "rhs_sidorMG";							// Plecak dla medyka (mały)
+_bagMs = "rhs_sidor";							// Plecak dla medyka (mały)
 _bagMm = "B_FieldPack_oli";						// Plecak dla medyka (średni)
 _bagMb = "B_FieldPack_oli";               		// Plecak dla medyka (duży)
 
@@ -1597,11 +1604,11 @@ _bagARb = "B_Carryall_cbr";						// Plecak dla RKM (duży)
 
 _bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
 
-_bagR = "rhs_sidorMG";							// Plecak dla strzelca, strzelca AT
+_bagR = "rhs_sidor";							// Plecak dla strzelca, strzelca AT
 
 _bagMAT = "B_Carryall_cbr";						// Plecak dla MAT
 
-_bagmedium = "rhs_sidorMG";						// carries 200, weighs 30
+_bagmedium = "rhs_sidor";						// carries 200, weighs 30
 _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
@@ -1611,14 +1618,14 @@ _baguav = "rhs_assault_umbts";						// Plecak RTO
 _baghmgg = "RHS_Kord_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_SPG9_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_SPG9_Tripod_Bag";				// used by Heavy AT assistant gunner
 
 _bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
 _bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "O_AA_01_weapon_F";					// used by Heavy SAM gunner
-_baghsamag = "O_HMG_01_support_F";				// used by Heavy SAM assistant gunner
+_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
