@@ -220,9 +220,9 @@ _bipod2 = "rhsusf_acc_grip1";				// Grippod
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {					// Każda jednostka otrzyma ten zestaw dodatków
-	_attachments = [_bipod2_attach1,_scope1];		//NOC
+	_attachments = [_bipod2,_attach1,_scope1];		//NOC
 } else {
-	_attachments = [_bipod2_attach1,_scope1];		//DZIEŃ 			
+	_attachments = [_bipod2,_attach1,_scope1];		//DZIEŃ 			
 };
 
 // [] = brak dodatków
@@ -246,7 +246,7 @@ _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_m4_carryhandle";
+_carbine = "rhs_weap_m4a1_carryhandle_pmag";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -507,7 +507,7 @@ _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_m4_carryhandle";
+_carbine = "rhs_weap_m4a1_carryhandle_pmag";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
