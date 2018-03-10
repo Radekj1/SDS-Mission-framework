@@ -92,6 +92,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
+		_unit addItem _radioMR;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
@@ -110,6 +111,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
+		_unit addItem _radioMR;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
@@ -454,6 +456,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
+		_unit addItem _radioMR;
 		_attachments = [];
 		["vc"] call _backpack;
 	};
@@ -491,6 +494,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit addItem _radioMR;
 		_unit linkItem _GPS;
 		_attachments = [];
 		["pp"] call _backpack;
@@ -516,6 +520,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
+		_unit addItem _radioMR;
 		["ps"] call _backpack;
 	};
 
@@ -575,6 +580,7 @@ switch (_typeofUnit) do
         _unit addweapon _pistol;
 		_unit linkItem _GPS; 
         _unit addWeapon _lornetkaRTO;
+		_unit addItem _radioMR;
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
@@ -593,6 +599,7 @@ switch (_typeofUnit) do
 		_hg_attachments= [_hg_silencer1];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaRTO;
+		_unit addItem _radioMR;
 		_unit addMagazines ["Laserbatteries",2];
 		for "_p" from 1 to 4 do {_unit addItem _handcuffs;};
 		["divc"] call _backpack;

@@ -93,6 +93,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
 		_unit linkItem _GPS;
+		_unit addItem _radioMR;
 		["ftl"] call _backpack;
 	};
 
@@ -110,6 +111,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
+		_unit addItem _radioMR;
 		_unit linkItem _GPS;
 		["ftl"] call _backpack;
 	};
@@ -453,6 +455,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaFTL;
+		_unit addItem _radioMR;
 		_attachments = [];
 		["vc"] call _backpack;
 	};
@@ -491,6 +494,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
+		_unit addItem _radioMR;
 		_attachments = [];
 		["pp"] call _backpack;
 	};
@@ -515,6 +519,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
+		_unit addItem _radioMR;
 		_attachments = [];
 		["ps"] call _backpack;
 	};
@@ -531,7 +536,7 @@ switch (_typeofUnit) do
 		_attachments = [];
 	};
 
-// LOADOUT: ENGINEER (DEMO)
+// LOADOUT: ENGINEER (LOGI)
 	case "eng":
 {
 		_unit addmagazines [_smgmag,5];
@@ -542,11 +547,12 @@ switch (_typeofUnit) do
 		_unit linkItem _uavterminal;
 		_unit addWeapon _lornetkaRTO;
 		_unit addMagazines ["Laserbatteries",2];
+		_unit addItem _radioMR;
 		_attachments = [];
 		["eng"] call _backpack;
 	};
 
-// LOADOUT: ENGINEER (MINES)
+// LOADOUT: ENGINEER (HQ)
 	case "engm":
 	{
 		_unit addmagazines [_sngmag,5];
@@ -573,7 +579,8 @@ switch (_typeofUnit) do
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
-		_unit linkItem _GPS; 
+		_unit linkItem _GPS;
+		_unit addItem _radioMR;
         _unit addWeapon "Laserdesignator";
         ["ftl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
@@ -592,6 +599,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _GPS;
+		_unit addItem _radioMR;
 		_unit addWeapon "Laserdesignator";
 		_unit addMagazines ["Laserbatteries",2];
 		["divc"] call _backpack;

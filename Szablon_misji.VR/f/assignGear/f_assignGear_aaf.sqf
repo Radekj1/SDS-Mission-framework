@@ -20,7 +20,7 @@
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-_bandage = "ACE_elasticBandage";					// Opatrunek "Quik Clot" dla piechoty
+_bandage = "ACE_elasticBandage";			// Opatrunek "Quik Clot" dla piechoty
 _epinephrine = "ACE_epinephrine";			// Epinefryna
 _morphine = "ACE_morphine";					// Morfina
 _blood = "ACE_bloodIV_500";					// Krew 500 ml
@@ -28,6 +28,11 @@ _plasma = "ACE_plasmaIV_500";				// Osocze 500 ml
 _saline = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
+
+//Radia ACRE2
+_radioSR = "ACRE_PRC343";
+_radioMR = "ACRE_PRC152";
+_radioLR = "ACRE_PRC77";
 
 //Przydatne rzeczy
 _earplugs = "ACE_EarPlugs";
@@ -125,7 +130,7 @@ Medical = {
 	for "_p" from 1 to 2 do {_unit addItem _epinephrine;};	// Dodanie 2 sztuk epinefryny	
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
-	_unit linkItem "ItemRadio";		// Dodanie radia
+	_unit addItem _radioSR;		// Dodanie radia
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _latarka;			// Latarka na mape
