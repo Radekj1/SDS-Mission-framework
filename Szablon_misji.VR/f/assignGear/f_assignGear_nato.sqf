@@ -2197,9 +2197,9 @@ _mediumRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp"
 _heavyRig = ["usm_vest_rba_lbe_gr","usm_vest_rba_lbe_mg","usm_vest_rba_lbe_rmp","usm_vest_rba_lbe_rm","usm_vest_rba_lbv_gr","usm_vest_rba_lbv_mg","usm_vest_rba_lbv_rmp"];
 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_FROG01_m81"];
-_diverHelmet = ["rhsusf_mich_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81"];
-_diverRig = ["rhsusf_spc_marksman","rhsusf_spc_light"];
+_diverUniform =  ["usm_bdu_w"];
+_diverHelmet = ["rhsusf_mich_bare_tan_headset","rhsusf_mich_bare_alt_tan"];
+_diverRig = ["rhsusf_mbav_rifleman","rhsusf_mbav_mg"];
 _diverGlasses = [];
 
 // Pilot

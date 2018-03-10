@@ -977,8 +977,8 @@ _glriflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 _glmag = "rhs_VOG25";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_makarov_pmm";
-_pistolmag = "rhs_mag_9x18_12_57N181S";
+_pistol = "rhs_weap_tt33";
+_pistolmag = "rhs_mag_762x25_8";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -993,9 +993,9 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk74n";
-_ARmag = "hlc_60Rnd_545x39_t_rpk";
-_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
+_AR = "hlc_rifle_rpk_75rnd";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Strzelec MMG
 _MMG = "rhs_weap_pkm";
@@ -1040,7 +1040,7 @@ _bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
 
 _bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
 
-_bagMs = "rhs_sidorMG";							// Plecak dla medyka (mały)
+_bagMs = "rhs_sidor";							// Plecak dla medyka (mały)
 _bagMm = "B_FieldPack_oli";						// Plecak dla medyka (średni)
 _bagMb = "B_FieldPack_oli";               		// Plecak dla medyka (duży)
 
@@ -1050,11 +1050,11 @@ _bagARb = "B_Carryall_cbr";						// Plecak dla RKM (duży)
 
 _bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
 
-_bagR = "rhs_sidorMG";							// Plecak dla strzelca, strzelca AT
+_bagR = "rhs_sidor";							// Plecak dla strzelca, strzelca AT
 
 _bagMAT = "B_Carryall_cbr";						// Plecak dla MAT
 
-_bagmedium = "rhs_sidorMG";						// carries 200, weighs 30
+_bagmedium = "rhs_sidor";						// carries 200, weighs 30
 _baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
 
 _bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
@@ -1090,14 +1090,14 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhsgref_uniform_flecktarn","rhsgref_uniform_reed","rhsgref_uniform_woodland_olive","rhs_uniform_mvd_izlom","rhsgref_uniform_alpenflage"];
-_baseHelmet = ["rhsgref_helmet_M1_painted_alt01","rhs_beanie_green","H_Shemag_olive","H_Cap_blk","H_Bandanna_camo","rhsgref_ssh68_vsr"];
+_baseUniform = ["rhsgref_uniform_flecktarn","rhsgref_uniform_og107_erdl","rhsgref_uniform_reed","rhsgref_uniform_woodland_olive"];
+_baseHelmet = ["H_Bandanna_khk","H_Booniehat_khk","H_Shemag_olive","rhs_beanie"];
 _baseGlasses = [];
 
 // Kamizelki
 _lightRig = [];
-_mediumRig = ["V_TacVest_brn","V_TacVest_camo","rhsgref_TacVest_ERDL","V_HarnessO_gry","V_Chestrig_khk"];
-_heavyRig = ["V_TacVest_brn","V_TacVest_camo","rhsgref_TacVest_ERDL","V_HarnessO_gry","V_Chestrig_khk"];
+_mediumRig = ["V_Chestrig_khk","V_HarnessO_brn","V_TacVest_khk"];
+_heavyRig = ["V_Chestrig_khk","V_HarnessO_brn","V_TacVest_khk"];
 
 // Siły specjalne
 _diverUniform =  ["rhs_uniform_gorka_r_y"];
@@ -1106,15 +1106,15 @@ _diverRig = ["rhs_vydra_3m"];
 _diverGlasses = [];
 
 // Pilot
-_pilotUniform = ["U_I_HeliPilotCoveralls"];
-_pilotHelmet = ["rhs_zsh7a_mike_green_alt"];
-_pilotRig = ["V_BandollierB_oli"];
+_pilotUniform = ["U_BG_Guerrilla_6_1"];
+_pilotHelmet = ["H_Cap_headphones"];
+_pilotRig = ["V_BandollierB_khk"];
 _pilotGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhsgref_uniform_ERDL"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["V_BandollierB_cbr"];
+_crewUniform = ["U_BG_Guerrilla_6_1"];
+_crewHelmet = ["H_Cap_headphones"];
+_crewRig = ["V_BandollierB_khk"];
 _crewGlasses = [];
 
 // Ghillie
