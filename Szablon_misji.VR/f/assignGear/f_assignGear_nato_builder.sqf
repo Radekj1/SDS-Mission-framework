@@ -546,6 +546,7 @@ switch (_typeofUnit) do
 		_unit addweapon _mineDetector;
 		_unit linkItem _uavterminal;
 		_unit addWeapon _lornetkaRTO;
+		_unit addItem _radioMR;
         _unit addMagazines ["Laserbatteries",2];
 		_attachments = [];
 		["eng"] call _backpack;
