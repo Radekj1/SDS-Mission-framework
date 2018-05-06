@@ -90,12 +90,12 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-// Launchers (MAT, HAT, SAM)
+// Launchers (MAT, HAT)
 	case 3:
 	{
 		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
 		_mkr setMarkerShapeLocal "ICON";
-		_mkrName setMarkerTypeLocal  "b_motor_inf";
+		_mkrName setMarkerTypeLocal  "b_support";
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
@@ -176,6 +176,16 @@ switch (_mkrType) do
 		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_art";
+		_mkrName setMarkerColorLocal _mkrColor;
+		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerTextLocal _mkrText;
+	};
+// Launchers (SAM)
+	case 12:
+	{
+		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
+		_mkr setMarkerShapeLocal "ICON";
+		_mkrName setMarkerTypeLocal  "b_antiair";
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;

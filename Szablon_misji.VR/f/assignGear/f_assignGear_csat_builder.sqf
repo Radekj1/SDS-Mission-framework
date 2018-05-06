@@ -555,7 +555,7 @@ switch (_typeofUnit) do
 // LOADOUT: ENGINEER (HQ)
 	case "engm":
 	{
-		_unit addmagazines [_sngmag,5];
+		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
@@ -593,8 +593,7 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepCaS;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach1,_scope4,_silencer2];
-		_hg_attachments= [_hg_silencer2];
+		_attachments = [_attach1,_scope2,_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
@@ -608,12 +607,11 @@ switch (_typeofUnit) do
 // LOADOUT: Medyk sil specjalnych
 	case "divm":
 	{	
-		_unit addmagazines [_diverMagM,10];
+		_unit addmagazines [_diverMagM,6];
 		_unit addweapon _diverWepM;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach1,_scope4,_silencer2];
-		_hg_attachments= [_hg_silencer2];
+		_attachments = [_attach1,_scope2,_silencer2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
@@ -625,12 +623,11 @@ switch (_typeofUnit) do
 // LOADOUT: Saper sil specjalnych
 	case "divs":
 	{
-		_unit addmagazines [_diverMagCaS,8];
-		_unit addweapon _diverWepCaS;
+		_unit addmagazines [_diverMagR,8];
+		_unit addweapon _diverWepR;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach1,_scope4,_silencer2];
-		_hg_attachments= [_hg_silencer2];
+		_attachments = [_attach1,_scope2,];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
@@ -642,12 +639,11 @@ switch (_typeofUnit) do
 // LOADOUT: Strzelec AT sil specjalnych
 	case "divr":
 	{
-		_unit addmagazines [_diverMagR,6];
+		_unit addmagazines [_diverMagR,8];
 		_unit addweapon _diverWepR;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach1,_scope4,_silencer2];
-		_hg_attachments= [_hg_silencer2];
+		_attachments = [_attach1,_scope2,];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];

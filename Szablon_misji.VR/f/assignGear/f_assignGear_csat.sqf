@@ -982,7 +982,7 @@ _silencer1 = "rhs_acc_dtkakm";			// Tłumik płomieni (domyslny do wszytskich AK
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
 _scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
-_scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
+_scope2 = "rhs_acc_ekp8_02";				// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
 _bipod1 = "bipod_02_F_hex";				// Default bipod
@@ -1028,12 +1028,12 @@ _pistol = "rhs_weap_tt33";
 _pistolmag = "rhs_mag_762x25_8";
 
 // Siły specjalne
-//_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
-//_diverMagCaS = "30Rnd_min_rf_545x39_mag";
-//_diverWepR = "arifle_min_rf_ak12_camo_grip";
-//_diverMagR = "30Rnd_min_rf_545x39_mag";
-//_diverWepM = "arifle_min_rf_ak12_camo";
-//_diverMagM = "30Rnd_min_rf_545x39_mag";
+_diverWepCaS = "rhs_weap_ak74n_gp25";
+_diverMagCaS = "rhs_30Rnd_545x39_AK";
+_diverWepR = "rhs_weap_asval_grip";
+_diverMagR = "rhs_20rnd_9x39mm_SP5";
+_diverWepM = "hlc_rifle_rpk74n_60rnd";
+_diverMagM = "hlc_60Rnd_545x39_t_rpk";
 
 // ====================================================================================
 
@@ -1147,10 +1147,10 @@ _mediumRig = ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest
 _heavyRig =  ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
 
 // Siły specjalne
-_diverUniform =  ["U_O_Wetsuit"];
-_diverHelmet = [];
-_diverRig = ["V_RebreatherIR"];
-_diverGlasses = ["G_Diving"];
+_diverUniform =  ["rhs_uniform_gorka_r_g"];
+_diverHelmet = ["rhs_altyn_novisor","rhs_altyn_novisor_ess","rhs_altyn_visordown","rhs_altyn"];
+_diverRig = ["rhs_6sh92","rhs_6sh92_radio","rhs_6sh92_vog"];
+_diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["rhsgref_uniform_olive"];
