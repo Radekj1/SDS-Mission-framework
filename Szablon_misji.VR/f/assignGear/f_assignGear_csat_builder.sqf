@@ -627,7 +627,7 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepR;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach1,_scope2,];
+		_attachments = [_attach1,_scope2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
@@ -643,7 +643,7 @@ switch (_typeofUnit) do
 		_unit addweapon _diverWepR;
 		_unit addmagazines [_secendMag,3];
 		_unit addweapon _secendWep;
-		_attachments = [_attach1,_scope2,];
+		_attachments = [_attach1,_scope2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
