@@ -552,7 +552,7 @@ case "hatag":
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 2];
 	}else{
-		_unit addBackpack _baghatg;
+		_unit addBackpack _baghatag;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 	};
 	
