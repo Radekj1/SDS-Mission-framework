@@ -795,7 +795,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_DefusalKit",1];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
-			(unitBackpack _unit) addMagazineCargoGlobal [_diverMagCaS, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_diverMagR, 2];
 		
 	};
 	// LOADOUT: MEDIUM
@@ -806,7 +806,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addItemCargoGlobal ["SatchelCharge_Remote_Mag",1];
 			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_diverMagCaS, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_diverMagR, 2];
 	};
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
@@ -816,7 +816,7 @@ case "divs":
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
 			(unitBackpack _unit) addItemCargoGlobal ["SatchelCharge_Remote_Mag",1];
 			(unitBackpack _unit) addItemCargoGlobal ["CUP_PipeBomb_M",2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_diverMagCaS, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_diverMagR, 2];
 	};
 };
 

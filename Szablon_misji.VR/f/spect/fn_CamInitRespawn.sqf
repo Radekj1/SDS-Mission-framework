@@ -19,12 +19,12 @@ if (isNil "camInitRespawnNext") then
 
 if( camInitRespawnNext ) then
 {
-	diag_log "Respawning as spectator";
+	diag_log "Wejscie na spectra";
 	[true] call ace_spectator_fnc_setSpectator;
 }
 else
 {
-    diag_log "Respawning JIP";
+    diag_log "Reap jako JIP";
     [false] call ace_spectator_fnc_setSpectator;
 	
     player allowDamage true;
@@ -33,18 +33,16 @@ else
     [player, "ace_spectator_isSet"] call ace_common_fnc_unhideUnit;
     [player, "ace_spectator_isSet"] call ace_common_fnc_unmuteUnit;
 	
-    diag_log "Before JIP";
+    diag_log "Przed nadaniem opcji JIP";
 	if(isNil "fJipPlayerRespawn") then
 	{
 		fJipPlayerRespawn = compile preprocessFileLineNumbers 'f\JIP\f_JIP_playerRespawn.sqf';
 	};
 	[_unit,_oldUnit,_respawn] call fJipPlayerRespawn;
-    diag_log "After JIP";
+    diag_log "Po nadaniu opcji JIP";
 	
 	waitUntil{(player getVariable ["f_var_assignGear_done", false])};
-	
-	[] execVM "init.sqf";
-    diag_log "After init";
+	diag_log "Zakonczenie";
 };
 
 camInitRespawnNext = !camInitRespawnNext;
