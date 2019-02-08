@@ -20,12 +20,32 @@
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-_bandage = "ACE_elasticBandage";			// Opatrunek "Quik Clot" dla piechoty
-_epinephrine = "ACE_epinephrine";			// Epinefryna
-_morphine = "ACE_morphine";					// Morfina
-_blood = "ACE_bloodIV_500";					// Krew 500 ml
-_plasma = "ACE_plasmaIV_500";				// Osocze 500 ml
-_saline = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
+_AED = "adv_aceCPR_AED";					// Defibrylator
+_splint = "adv_aceSplint_splint";			// Szyny do usztwniania
+
+_bandage = "ACE_fieldDressing";				// Ogólny bandaż dla piechoty
+_bandage_elastic = "ACE_elasticBandage";	// Bandaż elastyczny
+_bandage_packing = "ACE_packingBandage";	//
+_bandage_quikclot = "ACE_quikclot";			// Opatrunek "QuikClot"
+_tourniquet ="ACE_tourniquet";				// Opaska uciskowa
+
+_epinephrine = "ACE_epinephrine";			// Epinefryna (zwiększa tętno)
+_morphine = "ACE_morphine";					// Morfina (niweluje ból, rozrzedza krew)
+_adenosine = "ACE_adenosine";				// Adenozyna (obniża tętno)
+_atropine = "ACE_atropine";					// Atropina (obniża tętno)
+
+_blood_s = "ACE_bloodIV_250";				// Krew 200 ml
+_blood_m = "ACE_bloodIV_500";				// Krew 500 ml
+_blood_b = "ACE_bloodIV";					// Krew 1000 ml
+
+_plasma_s = "ACE_plasmaIV_250";				// Osocze 200 ml
+_plasma_m = "ACE_plasmaIV_500";				// Osocze 500 ml
+_plasma_b = "ACE_plasmaIV";					// Osocze 1000 ml
+
+_saline_s = "ACE_salineIV_250";				// Sól fizjologiczna 200 ml
+_saline_m = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
+_saline_b = "ACE_salineIV";					// Sól fizjologiczna 1000 ml
+
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -125,12 +145,12 @@ Builder ={
 
 //Dodanie wyposażenia medycznego
 Medical = {
-	for "_p" from 1 to 12 do {_unit addItem _bandage;};		// Dodanie 12 sztuk bandaży
-	for "_p" from 1 to 2 do {_unit addItem _morphine;};		// Dodanie 2 sztuk morfiny
-	for "_p" from 1 to 2 do {_unit addItem _epinephrine;};	// Dodanie 2 sztuk epinefryny	
+	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Dodanie 8 sztuk bandaży
+	_unit addItem _morphine;		// Dodanie morfiny
+	_unit addItem _epinephrine;		// Dodanie epinefryny	
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
-	_unit addItem _radioSR;		// Dodanie radia
+	_unit addItem _radioSR;			// Dodanie radia
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _latarka;			// Latarka na mape

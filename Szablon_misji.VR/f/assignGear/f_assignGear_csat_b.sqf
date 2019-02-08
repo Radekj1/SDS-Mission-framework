@@ -13,11 +13,18 @@ case "m":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_carbinemag, 1];
 		//(unitBackpack _unit) addItemCargoGlobal [_carbinemag_tr, 1];
-		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];
-		(unitBackpack _unit) addItemCargoGlobal [_morphine,15];
-		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,15];
-		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 6];
+		(unitBackpack _unit) addItemCargoGlobal [_blood_m, 6];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage,15];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic,15];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_packing,10];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_quikclot,10];
+		(unitBackpack _unit) addItemCargoGlobal [_tourniquet,6];
+		(unitBackpack _unit) addItemCargoGlobal [_morphine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_adenosine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_splint,10];
+		(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+		(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 	};
 	
 	// LOADOUT: MEDIUM
@@ -27,11 +34,18 @@ case "m":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_carbinemag, 1];
 		(unitBackpack _unit) addItemCargoGlobal [_carbinemag_tr, 1];
-		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];
-		(unitBackpack _unit) addItemCargoGlobal [_morphine,15];
-		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,15];
-		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 6];
+		(unitBackpack _unit) addItemCargoGlobal [_blood_m, 6];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage,15];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic,15];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_packing,10];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_quikclot,10];
+		(unitBackpack _unit) addItemCargoGlobal [_tourniquet,6];
+		(unitBackpack _unit) addItemCargoGlobal [_morphine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_adenosine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_splint,10];
+		(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+		(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 			
 	};
 	// LOADOUT: HEAVY
@@ -41,11 +55,18 @@ case "m":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_carbinemag, 2];
 		(unitBackpack _unit) addItemCargoGlobal [_carbinemag_tr, 1];
-		(unitBackpack _unit) addItemCargoGlobal [_blood, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_bandage,40];
-		(unitBackpack _unit) addItemCargoGlobal [_morphine,15];
-		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,15];
-		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 6];
+		(unitBackpack _unit) addItemCargoGlobal [_blood_m, 6];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage,15];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic,15];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_packing,10];
+		(unitBackpack _unit) addItemCargoGlobal [_bandage_quikclot,10];
+		(unitBackpack _unit) addItemCargoGlobal [_tourniquet,6];
+		(unitBackpack _unit) addItemCargoGlobal [_morphine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_adenosine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_splint,10];
+		(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+		(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 	
 	};
 };
@@ -739,7 +760,7 @@ case "divm":
 	if (_loadout == 1) then {
 			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addItemCargoGlobal	["ACE_bloodIV_500", 4];
+			(unitBackpack _unit) addItemCargoGlobal	["ACE_blood_mIV_500", 4];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot", 25];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_morphine", 7];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_epinephrine", 7];
@@ -749,7 +770,7 @@ case "divm":
 	if (_loadout == 2) then {
 			_unit addBackpack _bagmediumdiver;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addItemCargoGlobal	["ACE_bloodIV_500", 8];
+			(unitBackpack _unit) addItemCargoGlobal	["ACE_blood_mIV_500", 8];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_quikclot", 30];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_morphine", 10];
 			(unitBackpack _unit) addItemCargoGlobal ["ACE_epinephrine", 10];

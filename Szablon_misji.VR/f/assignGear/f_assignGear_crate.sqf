@@ -60,6 +60,7 @@
 	
 // CARGO: LOGISTYKa - Przykład inicjalizacji: ["v_log",this,"blu_f"] call f_fnc_assignGear
 	case "v_log":
+	
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
@@ -74,7 +75,6 @@
 		_unit addItemCargoGlobal [_bandage, 20];
 		_unit addItemCargoGlobal [_morphine, 15];
         _unit addItemCargoGlobal [_epinephrine, 10];
-        _unit addItemCargoGlobal [_personalAidKit, 4];
 		_unit addItemCargoGlobal [_toolkit, 2];
 		_unit addItemCargoGlobal [_wirecutter, 2];
 		_unit addItemCargoGlobal [_saperka, 2];	
@@ -93,7 +93,8 @@
 
 // CRATE: Mała skrzynka, amunicja dla jednego teamu
 	case "crate_small":
-{
+
+	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
@@ -103,6 +104,7 @@
 		_unit addMagazineCargoGlobal [_armag, 5];
 		_unit addMagazineCargoGlobal [_carbinemag, 5];
 		_unit addMagazineCargoGlobal [_glmag, 5];
+		_unit addMagazineCargoGlobal [_smgmag, 5];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addWeaponCargoGlobal [_RAT, 2];
 		_unit addMagazineCargoGlobal [_MMGmag, 5];
@@ -112,11 +114,12 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
 		_unit addItemCargoGlobal [_bandage, 25];
 		_unit addItemCargoGlobal [_IRstrobe, 30];
-};
+	};
 
 // CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
 	case "crate_med":
-{
+
+	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
@@ -126,6 +129,7 @@
 		_unit addMagazineCargoGlobal [_armag, 15];
 		_unit addMagazineCargoGlobal [_carbinemag, 20];
 		_unit addMagazineCargoGlobal [_glmag, 20];
+		_unit addMagazineCargoGlobal [_smgmag, 20];
 		_unit addMagazineCargoGlobal [_glsmokewhite,15];
 		_unit addWeaponCargoGlobal [_RAT, 6];
 		_unit addMagazineCargoGlobal [_MMGmag, 15];
@@ -135,11 +139,12 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal [_IRstrobe, 50];
-};
+	};
 
 // CRATE: Duża skrzynka, amunicja dla 1 plutonu
 	case "crate_large":
-{
+	
+	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
@@ -149,6 +154,7 @@
 		_unit addMagazineCargoGlobal [_armag, 45];
 		_unit addMagazineCargoGlobal [_carbinemag, 60];
 		_unit addMagazineCargoGlobal [_glmag, 60];
+		_unit addMagazineCargoGlobal [_smgmag, 45];
 		_unit addMagazineCargoGlobal [_glsmokewhite,50];
 		_unit addWeaponCargoGlobal [_RAT, 20];
 		_unit addMagazineCargoGlobal [_MMGmag, 30];
@@ -158,22 +164,28 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
 		_unit addItemCargoGlobal [_IRstrobe, 70];
-};
+	};
 
 // CRATE: Mała skrzynka, zasoby medyczne
 	case "crate_smallmedical":
-{
+
+	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
         _unit addItemCargoGlobal [_bandage, 200];
+		_unit addItemCargoGlobal [_bandage_elastic, 200];
+		_unit addItemCargoGlobal [_bandage_packing, 200];
+		_unit addItemCargoGlobal [_bandage_quikclot, 200];
         _unit addItemCargoGlobal [_morphine, 100];
         _unit addItemCargoGlobal [_epinephrine, 100];
-        _unit addItemCargoGlobal [_blood, 50];
-		_unit addItemCargoGlobal [_personalAidKit, 15];
+		_unit addItemCargoGlobal [_adenosine, 100];
+		_unit addItemCargoGlobal [_tourniquet, 50];
+        _unit addItemCargoGlobal [_blood_m, 50];
+		_unit addItemCargoGlobal [_splint, 30];
 		_unit addItemCargoGlobal [_worek, 25];
-};
+	};
 
 // CRATE: Duża skrzynka, zasoby medyczne
 	case "crate_bigmedical":
@@ -183,10 +195,14 @@
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
         _unit addItemCargoGlobal [_bandage, 400];
+		_unit addItemCargoGlobal [_bandage_elastic, 400];
+		_unit addItemCargoGlobal [_bandage_packing, 400];
+		_unit addItemCargoGlobal [_bandage_quikclot, 400];
         _unit addItemCargoGlobal [_morphine, 200];
         _unit addItemCargoGlobal [_epinephrine, 200];
-        _unit addItemCargoGlobal [_blood, 100];
-		_unit addItemCargoGlobal [_personalAidKit, 30];
+		_unit addItemCargoGlobal [_adenosine, 200];
+        _unit addItemCargoGlobal [_blood_m, 100];
+		_unit addItemCargoGlobal [_splint, 60];
 		_unit addItemCargoGlobal [_worek, 50];
 };
 

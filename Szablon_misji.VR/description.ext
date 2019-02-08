@@ -285,8 +285,8 @@ class Params
 	class f_param_player_faction_Blufor
 	{
 		title = "Frakcja BLUFOR";
-		values[] = {1,2,3,4,5,6,7,8,9,10};
-		texts[] = {1. US ARMY UCP, 2. US ARMY OCP, 3. USMC Desert, 4. USMC Woodland, 5. Polska Desert, 6. Polska Woodland, 7. US Desert [CW], 8. US Woodland [CW], 9. Everon Defence Forces [U], 10. Altis Defence Forces [U]};
+		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
+		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army Delta, 8. US Army CW (WD), 9. US Army CW (DS), 10. CDF (mountain), 11. CDF (DS), 12. CDF (winter), 13. IDF, 14. BW (WD), 15. BW (DS), 16. ACR (WD), 17. ACR (DS)};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
 	};
@@ -294,8 +294,8 @@ class Params
 	class f_param_player_faction_Opfor
 	{
 		title = "Frakcja OPFOR";
-		values[] = {1,2,3,4,5,6};
-		texts[] = {1. Rosja VDV Desert, 2. Rosja VDV Woodland, 3. Rosja MSV Woodland, 4. Separatyści, 5. ZSRR Desert [CW], 6. ZSRR Woodland [CW]};
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {1. CHdKZ, 2. KPA (korea), 3. VDV (WD), 4. VDV (DS), 5. MSV (WD), 6. SLA (DS), 7. SLA (WD), 8. SLA (urban/winter), 9. Takistan Army, 10. Takistan Rebels};
 		default = 1;
 		code = "f_param_player_faction_Opfor = %1";
 	};
@@ -303,8 +303,8 @@ class Params
 	class f_param_player_faction_Indfor
 	{
 		title = "Frakcja INDFOR";
-		values[] = {1,2,3,4};
-		texts[] = {1. CDF UN, 2. Ukraina, 3. CDF [CW], 4. Chedaki [CW]};
+		values[] = {1,2,3,4,5,6,7};
+		texts[] = {1. NAPA, 2. PMC, 3. RACS (DS), 4. RACS (WD), 5. Takistan Rebels, 6. UN (DS), 7. UN (mountain), 8. Zachodni ultrancjonaliści};
 		default = 1;
 		code = "f_param_player_faction_Indfor = %1";
 	};

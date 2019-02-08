@@ -5,12 +5,16 @@
 //	SPIS TRESCI
 /*
 
-	1.	Rosja VDV Desert
-	2.	Rosja VDV Woodland
-	3.	Rosja MSV Woodland
-	4.	Chedaki
-	5.	ZSRR Desert [CW]
-	6.	ZSRR Woodland [CW]
+	1. CHdKZ
+	2. KPA (korea)
+	3. VDV (WD)
+	4. VDV (DS)
+	5. MSV (WD)
+	6. SLA (DS)
+	7. SLA (WD)
+	8. SLA (urban/winter)
+	9. Takistan Army
+	10. Takistan Rebels
 	
 */
 // ====================================================================================
@@ -22,12 +26,32 @@
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-_bandage = "ACE_elasticBandage";			// Opatrunek "Quik Clot" dla piechoty
-_epinephrine = "ACE_epinephrine";			// Epinefryna
-_morphine = "ACE_morphine";					// Morfina
-_blood = "ACE_bloodIV_500";					// Krew 500 ml
-_plasma = "ACE_plasmaIV_500";				// Osocze 500 ml
-_saline = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
+_AED = "adv_aceCPR_AED";					// Defibrylator
+_splint = "adv_aceSplint_splint";			// Szyny do usztwniania
+
+_bandage = "ACE_fieldDressing";				// Ogólny bandaż dla piechoty
+_bandage_elastic = "ACE_elasticBandage";	// Bandaż elastyczny
+_bandage_packing = "ACE_packingBandage";	//
+_bandage_quikclot = "ACE_quikclot";			// Opatrunek "QuikClot"
+_tourniquet ="ACE_tourniquet";				// Opaska uciskowa
+
+_epinephrine = "ACE_epinephrine";			// Epinefryna (zwiększa tętno)
+_morphine = "ACE_morphine";					// Morfina (niweluje ból, rozrzedza krew)
+_adenosine = "ACE_adenosine";				// Adenozyna (obniża tętno)
+_atropine = "ACE_atropine";					// Atropina (obniża tętno)
+
+_blood_s = "ACE_bloodIV_250";				// Krew 200 ml
+_blood_m = "ACE_bloodIV_500";				// Krew 500 ml
+_blood_b = "ACE_bloodIV";					// Krew 1000 ml
+
+_plasma_s = "ACE_plasmaIV_250";				// Osocze 200 ml
+_plasma_m = "ACE_plasmaIV_500";				// Osocze 500 ml
+_plasma_b = "ACE_plasmaIV";					// Osocze 1000 ml
+
+_saline_s = "ACE_salineIV_250";				// Sól fizjologiczna 200 ml
+_saline_m = "ACE_salineIV_500";				// Sól fizjologiczna 500 ml
+_saline_b = "ACE_salineIV";					// Sól fizjologiczna 1000 ml
+
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -40,7 +64,7 @@ _radioLR = "ACRE_PRC77";
 _earplugs = "ACE_EarPlugs";
 _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
-_lornetkaAM = "rhs_pdu4";
+_lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
 _GPS = "ItemGPS";
 _handcuffs = "ACE_CableTie";
@@ -71,7 +95,7 @@ _mlotek = "ACE_Fortify";
 _wirecutter = "ACE_wirecutter";
 
 // Granaty ręczne
-_grenade = "rhs_mag_rgd5";
+_grenade = "CUP_HandGrenade_RGD5";
 _mgrenade = "ACE_M84";
 _smokegrenade = "SmokeShell";
 
@@ -82,17 +106,17 @@ _smokegrenadered = "SmokeShellRed";
 _smokegrenadeblue = "SmokeShellBlue";
 
 // Granaty dymne do granatnika
-_glsmokewhite = "rhs_GRD40_White";
-_glsmokegreen = "rhs_GRD40_Green";
-_glsmokered = "rhs_GRD40_Red";
+_glsmokewhite = "CUP_1Rnd_SMOKE_GP25_M";
+_glsmokegreen = "CUP_1Rnd_SmokeGreen_GP25_M";
+_glsmokered = "CUP_1Rnd_SmokeRed_GP25_M";
 
 // Flary do granatnika
-_glflarewhite = "rhs_VG40OP_white";
-_glflarered = "rhs_VG40OP_red";
-_glflaregreen = "rhs_VG40OP_green";
+_glflarewhite = "CUP_IlumFlareWhite_GP25_M";
+_glflarered = "CUP_IlumFlareRed_GP25_M";
+_glflaregreen = "CUP_IlumFlareGreen_GP25_M";
 
 // Noktowizja
-_nvg = "rhs_1PN138";
+_nvg = "CUP_NVG_HMNVS";
 
 // UAV Terminal
 _uavterminal = "O_UavTerminal";
@@ -128,12 +152,12 @@ Builder ={
 	
 //Dodanie wyposażenia medycznego
 Medical = {
-	for "_p" from 1 to 12 do {_unit addItem _bandage;};		// Dodanie 12 sztuk bandaży
-	for "_p" from 1 to 2 do {_unit addItem _morphine;};		// Dodanie 2 sztuk morfiny
-	for "_p" from 1 to 2 do {_unit addItem _epinephrine;};	// Dodanie 2 sztuk epinefryny	
+	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Dodanie 8 sztuk bandaży
+	_unit addItem _morphine;		// Dodanie morfiny
+	_unit addItem _epinephrine;		// Dodanie epinefryny	
 	_unit linkItem "ItemMap";		// Dodanie mapy
 	_unit linkItem "ItemCompass";	// Dodanie kompsu
-	_unit addItem _radioSR;		// Dodanie radia
+	_unit addItem _radioSR;			// Dodanie radia
 	_unit linkItem "ItemWatch";		// Dodanie zegarka
 	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
 	_unit addItem _latarka;			// Latarka na mape
@@ -195,18 +219,18 @@ Night_Eq_No_NVG = {
 switch (_loadout_faction_player) do
 {
 
-	//Rosja VDV Desert
+	//CHdKZ
 	case 1: 
 	{
-_attach1 = "rhs_acc_2dpZenit_ris";		// Latarka (RHS)
-_attach2 = "rhs_acc_perst3";			// Laser (RHS)
+_attach1 = "CUP_acc_Flashlight";		// Latarka (RHS)
+_attach2 = "CUP_acc_ANPEQ_2";			// Laser (RHS)
 _attach3 = "rhs_acc_perst3_2dp_h";		// Latarka+Laser (RHS)
 
-_silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
+_silencer1 = "CUP_muzzle_TGPA";			// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
-_scope1 = "rhs_acc_ekp8_18";				// Celownik holo (RHS)
-_scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
+_scope1 = "CUP_optic_Kobra";			// Celownik holo (RHS)
+_scope2 = "CUP_optic_PSO_3";			// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
 _bipod1 = "rhs_acc_grip_ffg2";			// Default bipod
@@ -214,10 +238,12 @@ _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
-if (_loadout_night_day == 0) then {								// Każda jednostka otrzyma ten zestaw dodatków
-	_attachments = [_silencer1,_attach2,_scope1,_bipod1]; 		//NOC
-} else {
-	_attachments = [_silencer1,_attach1,_scope1,_bipod1]; 		//DZIEŃ 			
+if (_loadout_night_day == 0) then 
+{								// Każda jednostka otrzyma ten zestaw dodatków
+	_attachments = [_attach1,_scope1]; 		//NOC
+} else 
+{
+	_attachments = [_scope1]; 		//DZIEŃ 			
 };
 
 // ====================================================================================
@@ -232,29 +258,29 @@ _hg_attachments= [];
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74mr";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_rifle = "CUP_arifle_AK74M";
+_riflemag = "CUP_30Rnd_545x39_AK74M_M";
+_riflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_ak74mr";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
+_carbine = "CUP_arifle_AKS74";
+_carbinemag = "CUP_30Rnd_545x39_AK74M_M";
+_carbinemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_aks74u";
-_smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smg = "CUP_arifle_AKS74U";
+_smgmag = "CUP_30Rnd_545x39_AK74M_M";
+_smgmag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74mr_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
-_glmag = "rhs_VOG25";
+_glrifle = "CUP_arifle_AK74M_GL";
+_glriflemag = "CUP_30Rnd_545x39_AK74M_M";
+_glriflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+_glmag = "CUP_1Rnd_HE_GP25_M";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_pya";
-_pistolmag = "rhs_mag_9x19_17";
+_pistol = "CUP_hgun_Makarov";
+_pistolmag = "CUP_8Rnd_9x18_Makarov_M";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -269,41 +295,42 @@ _pistolmag = "rhs_mag_9x19_17";
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_RPK12";
-_ARmag = "hlc_60Rnd_545x39_t_rpk";
-_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
+_AR = "CUP_arifle_RPK74M";
+_ARmag = "CUP_60Rnd_545x39_AK74M_M";
+_ARmag_tr = "CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Strzelec MMG
-_MMG = "rhs_weap_pkp";
-_MMGmag = "rhs_100Rnd_762x54mmR";
-_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
+_MMG = "CUP_lmg_PKM";
+_MMGmag = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
+_MMGmag_tr = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
 
 // Strzelec wyborowy
-_DMrifle = "rhs_weap_svdp_wd";
-_DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
+_DMrifle = "CUP_srifle_SVD";
+_DMriflemag = "CUP_10Rnd_762x54_SVD_M";
 
 // Strzelec AT
-_RAT = "rhs_weap_rpg26";
+_RAT = "CUP_launch_RPG18";
 //_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
-_MAT = "rhs_weap_rpg7";
-_MATmag1 = "rhs_rpg7_PG7VL_mag";
-_MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v3";
+_MAT = "CUP_launch_RPG7V";
+_MATmag1 = "CUP_PG7VL_M";
+_MATmag2 = "CUP_PG7VR_M";
+_MAT_sight = "CUP_optic_PGO7V3";
 
 // Strzelec AA
-_SAM = "rhs_weap_igla";
-_SAMmag = "rhs_mag_9k38_rocket";
+_SAM = "CUP_launch_Igla";
+//_SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-//_HAT = "launch_O_Titan_short_F";
-//_HATmag1 = "Titan_AT";
-//_HATmag2 = "Titan_AP";
+_HAT = "CUP_launch_Metis";
+_HATmag1 = "CUP_AT13_M";
+_HATmag2 = "CUP_AT13_M";
+_HAT_Mobile = false;
 
 // Snajper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "CUP_srifle_ksvk";
+_SNrifleMag = "CUP_5Rnd_127x108_KSVK_M";
 
 // ====================================================================================
 
@@ -311,43 +338,43 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
-_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
+_bagFTL = "CUP_B_Kombat_Radio_Olive";                  	// Plecak dla dowódcy (radio)
+_bagPP = "B_FieldPack_oli";                  		// Plecak dla pilota (radio)
 
-_bagTL = "B_Kitbag_sgg";						//Plecak dowódcy drużyny
+_bagTL = "B_FieldPack_oli";						//Plecak dowódcy drużyny
 
-_bagMs = "B_AssaultPack_khk";					// Plecak dla medyka (mały)
-_bagMm = "B_FieldPack_oli";						// Plecak dla medyka (średni)
-_bagMb = "B_TacticalPack_oli";               	// Plecak dla medyka (duży)
+_bagMs = "B_FieldPack_oli";					// Plecak dla medyka (mały)
+_bagMm = "CUP_B_Kombat_Olive";						// Plecak dla medyka (średni)
+_bagMb = "CUP_B_AlicePack_Khaki";               	// Plecak dla medyka (duży)
 
-_bagARs = "rhs_assault_umbts";					// Plecak dla RKM (mały)
-_bagARm = "B_Kitbag_sgg";						// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_oli";                     // Plecak dla RKM (duży)
+_bagARs = "B_FieldPack_oli";					// Plecak dla RKM (mały)
+_bagARm = "CUP_B_Kombat_Olive";						// Plecak dla RKM (średni)
+_bagARb = "CUP_B_AlicePack_Khaki";                     // Plecak dla RKM (duży)
 
-_bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
+_bagENG = "B_Carryall_oli";	// Plecak dla Mechanika
 
-_bagR = "B_FieldPack_oli";						// Plecak dla strzelca, strzelca AT
+_bagR = "CUP_B_AlicePack_Khaki";						// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "rhs_rpg_empty";						// Plecak dla MAT
+_bagMAT = "CUP_B_AlicePack_Khaki";						// Plecak dla MAT
 
-_bagmedium = "B_Kitbag_sgg";					// carries 200, weighs 30
-_baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
+_bagmedium = "CUP_B_Kombat_Olive";					// carries 200, weighs 30
+_baglarge =  "CUP_B_AlicePack_Khaki"; 					// carries 320, weighs 40
 
-_bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
+_bagmediumdiver =  "CUP_B_Kombat_Olive";			// Plecaki SF
 
-_baguav = "rhs_assault_umbts";						// Plecak RTO
+_baguav = "CUP_B_Kombat_Radio_Olive";						// Plecak RTO
 
-_baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
+_baghmgg = "CUP_B_Kord_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "CUP_B_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "RHS_Kornet_Gun_Bag";					// used by Heavy AT gunner
-_baghatag = "RHS_Kornet_Tripod_Bag";				// used by Heavy AT assistant gunner
+_baghatg = "CUP_B_Metis_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "CUP_B_Metis_Tripod_Bag";				// used by Heavy AT assistant gunner
 
-_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
-_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
+_bagmtrg = "CUP_B_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "CUP_B_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
-_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
+_baghsamg = "CUP_B_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "CUP_B_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -366,14 +393,14 @@ _specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_emr_des_patchless"];
-_baseHelmet = ["rhs_6b47","rhs_6b47_ess"];
+_baseUniform = ["CUP_U_O_RUS_Flora_1","CUP_U_O_RUS_Flora_2"];
+_baseHelmet = ["CUP_H_RUS_6B27"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_digi_medic"];
-_mediumRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"];
-_heavyRig = ["rhs_6b23_digi_6sh92_headset_spetsnaz","rhs_6b23_digi_6sh92_Spetsnaz","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz","rhs_6b23_digi_6sh92","rhs_6b23_digi_rifleman","rhs_6b23_digi_6sh92_vog"];
+_lightRig = ["CUP_V_CDF_6B3_1_Green"];
+_mediumRig = ["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2","CUP_V_RUS_6B3_3"];
+_heavyRig = ["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2","CUP_V_RUS_6B3_3"];
 
 // Siły specjalne
 _diverUniform =  ["U_O_Wetsuit"];
@@ -382,15 +409,15 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_df15_tan"];
-_pilotHelmet = ["rhs_zsh7a_mike","rhs_zsh7a","rhs_gssh18"];
-_pilotRig = ["rhs_vest_commander"];
+_pilotUniform = ["CUP_U_O_RUS_Flora_3"];
+_pilotHelmet = ["CUP_H_RUS_ZSH_Shield_Up"];
+_pilotRig = ["CUP_V_C_Police_Holster"];
 _pilotGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhs_uniform_mflora_patchless"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_vydra_3m"];
+_crewUniform = ["CUP_U_O_RUS_Flora_2"];
+_crewHelmet = ["CUP_H_SLA_TankerHelmet"];
+_crewRig = ["CUP_V_RUS_6B3_4"];
 _crewGlasses = [];
 
 // Ghillie
@@ -448,7 +475,7 @@ if (_isMan) then {
 	call Builder;
 	
 	//Dodanie nocnego wyposażenia
-	call Night_Eq_NVG;
+	call Night_Eq_No_NVG;
 		
 };
 	
@@ -456,10 +483,10 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//Rosja VDV Woodland
+	//KPA (korea)
 	case 2:
 	{
-_attach1 = "rhs_acc_2dpZenit_ris";		// Latarka (RHS)
+_attach1 = "CUP_acc_Flashlight";		// Latarka (RHS)
 _attach2 = "rhs_acc_perst3";			// Laser (RHS)
 _attach3 = "rhs_acc_perst3_2dp_h";		// Latarka+Laser (RHS)
 
@@ -476,9 +503,10 @@ _bipod2 = "bipod_02_F_blk";				// Black bipod
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {								// Każda jednostka otrzyma ten zestaw dodatków
-	_attachments = [_silencer1,_attach2,_scope1,_bipod1]; 		//NOC
-} else {
-	_attachments = [_silencer1,_attach1,_scope1,_bipod1]; 		//DZIEŃ 			
+	_attachments = [_attach1]; 		//NOC
+} 
+else {
+	_attachments = []; 		//DZIEŃ 			
 };
 
 // ====================================================================================
@@ -493,29 +521,29 @@ _hg_attachments= [];
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74mr";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_rifle = "CUP_arifle_AK74";
+_riflemag = "CUP_30Rnd_545x39_AK_M";
+_riflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_ak74mr";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
+_carbine = "CUP_arifle_AKS74";
+_carbinemag = "CUP_30Rnd_545x39_AK_M";
+_carbinemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_aks74u";
-_smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smg = "CUP_arifle_AKS74U";
+_smgmag = "CUP_30Rnd_545x39_AK_M";
+_smgmag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74mr_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
-_glmag = "rhs_VOG25";
+_glrifle = "CUP_arifle_AK74_GL";
+_glriflemag = "CUP_30Rnd_545x39_AK_M";
+_glriflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M";
+_glmag = "CUP_1Rnd_HE_GP25_M";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_pya";
-_pistolmag = "rhs_mag_9x19_17";
+_pistol = "CUP_hgun_Makarov";
+_pistolmag = "CUP_8Rnd_9x18_Makarov_M";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -530,41 +558,42 @@ _pistolmag = "rhs_mag_9x19_17";
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_RPK12";
-_ARmag = "hlc_60Rnd_545x39_t_rpk";
-_ARmag_tr = "hlc_60Rnd_545x39_t_rpk";
+_AR = "CUP_arifle_RPK74_45";
+_ARmag = "CUP_60Rnd_545x39_AK74M_M";
+_ARmag_tr = "CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Strzelec MMG
-_MMG = "rhs_weap_pkp";
-_MMGmag = "rhs_100Rnd_762x54mmR";
-_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
+_MMG = "CUP_lmg_PKM";
+_MMGmag = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
+_MMGmag_tr = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
 
 // Strzelec wyborowy
-_DMrifle = "rhs_weap_svdp_wd";
-_DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
+_DMrifle = "CUP_srifle_SVD";
+_DMriflemag = "CUP_10Rnd_762x54_SVD_M";
 
 // Strzelec AT
-_RAT = "rhs_weap_rpg26";
+_RAT = "CUP_launch_RPG18";
 //_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
-_MAT = "rhs_weap_rpg7";
-_MATmag1 = "rhs_rpg7_PG7VL_mag";
-_MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v3";
+_MAT = "CUP_launch_RPG7V";
+_MATmag1 = "CUP_PG7VL_M";
+_MATmag2 = "CUP_PG7VR_M";
+_MAT_sight = "CUP_optic_PGO7V3";
 
 // Strzelec AA
-_SAM = "rhs_weap_igla";
-_SAMmag = "rhs_mag_9k38_rocket";
+_SAM = "CUP_launch_Igla";
+//_SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-//_HAT = "launch_O_Titan_short_F";
-//_HATmag1 = "Titan_AT";
-//_HATmag2 = "Titan_AP";
+_HAT = "CUP_launch_Metis";
+_HATmag1 = "CUP_AT13_M";
+_HATmag2 = "CUP_AT13_M";
+_HAT_Mobile = false;
 
 // Snajper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "CUP_srifle_ksvk";
+_SNrifleMag = "CUP_5Rnd_127x108_KSVK_M";
 
 // ====================================================================================
 
@@ -572,43 +601,44 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
-_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
+_bagFTL = "B_Kitbag_rgr";                  	// Plecak dla dowódcy (radio)
+_bagPP = "B_FieldPack_khk";                  		// Plecak dla pilota (radio)
 
-_bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
+_bagTL = "B_Kitbag_rgr";					//Plecak dowódcy drużyny
 
-_bagMs = "B_AssaultPack_khk";					// Plecak dla medyka (mały)
-_bagMm = "B_FieldPack_oli";						// Plecak dla medyka (średni)
-_bagMb = "B_TacticalPack_oli";               	// Plecak dla medyka (duży)
+_bagMs = "B_FieldPack_khk";					// Plecak dla medyka (mały)
+_bagMm = "B_TacticalPack_rgr";						// Plecak dla medyka (średni)
+_bagMb = "B_Carryall_khk";               	// Plecak dla medyka (duży)
 
-_bagARs = "rhs_assault_umbts";					// Plecak dla RKM (mały)
-_bagARm = "rhs_assault_umbts";					// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_oli";                     // Plecak dla RKM (duży)
+_bagARs = "B_FieldPack_khk";					// Plecak dla RKM (mały)
+_bagARm = "B_TacticalPack_rgr";					// Plecak dla RKM (średni)
+_bagARb = "B_Carryall_khk";                     // Plecak dla RKM (duży)
 
-_bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
+_bagENG = "B_Carryall_khk";	// Plecak dla Mechanika
 
-_bagR = "B_FieldPack_oli";						// Plecak dla strzelca, strzelca AT
+_bagR = "B_TacticalPack_rgr";						// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "rhs_rpg_empty";						// Plecak dla MAT
+_bagMAT = "B_Carryall_khk";						// Plecak dla MAT
 
-_bagmedium = "rhs_assault_umbts";				// carries 200, weighs 30
-_baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
+_bagmedium = "B_TacticalPack_rgr";				// carries 200, weighs 30
+_baglarge =  "B_Carryall_khk"; 					// carries 320, weighs 40
 
-_bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
+_bagmediumdiver =  "B_Kitbag_rgr";			// Plecaki SF
 
-_baguav = "rhs_assault_umbts";						// Plecak RTO
+_baguav = "B_Kitbag_rgr";						// Plecak RTO
 
-_baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
+_baghmgg = "CUP_B_Kord_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "CUP_B_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "RHS_Kornet_Gun_Bag";					// used by Heavy AT gunner
-_baghatag = "RHS_Kornet_Tripod_Bag";				// used by Heavy AT assistant gunner
+_baghatg = "CUP_B_Metis_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "CUP_B_Metis_Tripod_Bag";				// used by Heavy AT assistant gunner
 
-_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
-_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
+_bagmtrg = "CUP_B_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "CUP_B_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
-_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
+_baghsamg = "CUP_B_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "CUP_B_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
+
 
 // ====================================================================================
 
@@ -627,14 +657,14 @@ _specOp = [ "ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_vdv_emr"];
-_baseHelmet = ["rhs_6b47","rhs_6b47_ess"];
+_baseUniform = ["CFP_U_WorkUniform_DRK"];
+_baseHelmet = ["SP_SSh68CoverHelmet_DRK"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b23_digi_medic"];
-_mediumRig = ["rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio","rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_6sh116","rhs_6b23_digi_6sh92","rhs_6b23_digi_6sh92_vog"];
-_heavyRig = ["rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio","rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_6sh116","rhs_6b23_digi_6sh92","rhs_6b23_digi_6sh92_vog"];
+_lightRig = ["CFP_Field_Satchel"];
+_mediumRig = ["CFP_Field_Satchel"];
+_heavyRig = ["CFP_Field_Satchel"];
 
 // Siły specjalne
 _diverUniform =  ["U_O_Wetsuit"];
@@ -643,15 +673,15 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_df15"];
-_pilotHelmet = ["rhs_zsh7a_mike","rhs_zsh7a","rhs_gssh18"];
-_pilotRig = ["rhs_vest_commander"];
+_pilotUniform = ["SP_0000_Standard_FieldUniform_Black"];
+_pilotHelmet = ["CUP_H_RUS_ZSH_Shield_Up"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhs_uniform_mflora_patchless"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_vydra_3m"];
+_crewUniform = ["CFP_U_WorkUniform_DRK2"];
+_crewHelmet = ["CUP_H_RUS_TSH_4_Brown"];
+_crewRig = ["CFP_Field_Satchel"];
 _crewGlasses = [];
 
 // Ghillie
@@ -709,7 +739,7 @@ if (_isMan) then {
 	call Builder;
 	
 	//Dpdanie nocnego wyposażenia
-	call Night_Eq_NVG;
+	call Night_Eq_No_NVG;
 		
 };	
 	
@@ -717,7 +747,7 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//Rosja MSV Woodland
+	//VDV (WD)
 	case 3:
 	{
 _attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
@@ -972,210 +1002,220 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//Chedaki
-	case 4:
-	{
-_attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
-_attach2 = "rhs_acc_perst1ik";			// Laser (RHS)
-
-_silencer1 = "rhs_acc_dtkakm";			// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
-_silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
-
-_scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
-_scope2 = "rhs_acc_ekp8_02";				// Celownik holo (buguje RKM) (RHS)
-_scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
-
-_bipod1 = "bipod_02_F_hex";				// Default bipod
-_bipod2 = "bipod_02_F_blk";				// Black bipod
+	   //RU VDV (DS)
+    case 4:
+    {
+// Dodatki broń główna
+_attach1 = "CUP_acc_ANPEQ_2";     // Laser (CUP)
+_attach2 = "CUP_acc_Flashlight_desert";              // Latarka (CUP)
+ 
+_silencer1 = "rhsusf_acc_nt4_black";        // Tłumik 5.56 (długi) (RHS)
+_silencer2 = "rhsusf_acc_rotex5_grey";      // Tłumik 5.56 (krótki) (RHS)
+ 
+_scope1 = "CUP_optic_Kobra";          // Kobra
+ 
+_bipod1 = "rhsusf_acc_harris_bipod";        //
+_bipod2 = "rhsusf_acc_grip1";               // Grippod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_loadout_night_day = f_param_night_day_wyp;
+if (_loadout_night_day == 0) then {                 // Każda jednostka otrzyma ten zestaw dodatków
 
+    _attachments = [_attach1,_scope1];      //NOC
+} else {
+    _attachments = [_attach1,_scope1];      //DZIEŃ           
+};
+ 
+// [] = brak dodatków
+// [_attach1,_scope1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1
+// [_scope2] = dodaje tylko _scope2, reszta zostaje usunięta
+// false = nie zmieniaj dodatków, zostaw tak jak domyślnie arma respi na broni
+ 
 // ====================================================================================
-
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-_hg_scope1 = "optic_MRD";			// MRD
-_hg_attachments= [];
-
+_hg_silencer1 = "rhsusf_acc_omega9k";   // 9mm tłumik do Glocka 17
+_hg_attah1 = "acc_flashlight_pistol";
+_hg_scope1 = "optic_MRD";           // MRD
+_hg_attachments= [_hg_attah1];
 // ====================================================================================
-
+ 
 // Bronie
-
+ 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_akm";
-_riflemag = "rhs_30Rnd_762x39mm";
-_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
-
+_rifle = "CUP_arifle_AK74M";
+_riflemag = "CUP_30Rnd_545x39_AK74M_M";
+_riflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+ 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_akms";
-_carbinemag = "rhs_30Rnd_762x39mm";
-_carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
-
+_carbine = "CUP_arifle_AKS74U";
+_carbinemag = "CUP_30Rnd_545x39_AK74M_M";
+_carbinemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+ 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_akms_folded";
-_smgmag = "rhs_30Rnd_762x39mm";
-_smgmag_tr = "rhs_30Rnd_762x39mm_tracer";
-
-// Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_akm_gp25";
-_glriflemag = "rhs_30Rnd_762x39mm";
-_glriflemag_tr = "rhs_30Rnd_762x39mm_tracer";
-_glmag = "rhs_VOG25";
-
-// Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_tt33";
-_pistolmag = "rhs_mag_762x25_8";
-
+_smg = "CUP_arifle_AKS74U";
+_smgmag = "CUP_30Rnd_545x39_AK74M_M";
+_smgmag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+ 
 // Siły specjalne
-_diverWepCaS = "rhs_weap_ak74n_gp25";
-_diverMagCaS = "rhs_30Rnd_545x39_AK";
-_diverWepR = "rhs_weap_asval_grip";
-_diverMagR = "rhs_20rnd_9x39mm_SP5";
-_diverWepM = "hlc_rifle_rpk74n_60rnd";
-_diverMagM = "hlc_60Rnd_545x39_t_rpk";
-
+_diverWep = "CUP_arifle_AK74M";
+_diverMag1 = "CUP_30Rnd_545x39_AK74M_M";
+_diverMag2 = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+_sfPistol = "CUP_hgun_Makarov";
+_sfPistolMag = "CUP_8Rnd_9x18_Makarov_M";
+ 
+// Broń z granatnikiem (dla dowóców)
+_glrifle = "CUP_arifle_AK74M_GL";
+_glriflemag = "CUP_30Rnd_545x39_AK74M_M";
+_glriflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+_glmag = "1Rnd_HE_Grenade_shell";
+ 
+// Pistolet (dla wszystkich klas)
+_pistol = "CUP_hgun_Makarov";
+_pistolmag = "CUP_8Rnd_9x18_Makarov_M";
+ 
 // ====================================================================================
-
+ 
 // Sprzęt dla klas funkcyjnych
-
+ 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk_75rnd";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
-
+_AR = "CUP_arifle_RPK74M";
+_ARmag = "CUP_60Rnd_545x39_AK74M_M";
+_ARmag_tr = "CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+ 
 // Strzelec MMG
-_MMG = "rhs_weap_pkm";
-_MMGmag = "rhs_100Rnd_762x54mmR";
-_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
-
+_MMG = "CUP_lmg_Pecheneg";
+_MMGmag = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
+_MMGmag_tr = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
+ 
 // Strzelec wyborowy
-_DMrifle = "rhs_weap_svdp_wd";
-_DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
-
+_DMrifle = "rhs_weap_m14ebrri";
+_DMriflemag = "rhsusf_20Rnd_762x51_m118_special_Mag";
+ 
 // Strzelec AT
-_RAT = "rhs_weap_rpg26";
-//_RATmag = "rhs_rpg26_mag";
-
+_RAT = "CUP_launch_RPG18";
+//_RATmag = "";
+ 
 // Strzelec MAT
-_MAT = "rhs_weap_rpg7";
-_MATmag1 = "rhs_rpg7_PG7VL_mag";
-_MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v3";
-
+_MAT = "CUP_launch_RPG7V";
+_MATmag1 = "CUP_PG7VL_M";
+_MATmag2 = "CUP_OG7_M";
+_MAT_sight = "CUP_optic_PGO7V3";
+//_MATsptr = "rhs_mag_smaw_SR";
+ 
 // Strzelec AA
-_SAM = "rhs_weap_igla";
-_SAMmag = "rhs_mag_9k38_rocket";
-
+_SAM = "CUP_launch_9K32Strela";
+_SAMmag = "CUP_Strela_2_M";
+ 
 // Strzelec HAT
-//_HAT = "launch_O_Titan_short_F";
-//_HATmag1 = "Titan_AT";
-//_HATmag2 = "Titan_AP";
-
+_HAT = "CUP_launch_RPG7V";      
+_HATmag1 = "CUP_PG7VR_M";
+_HATmag2 = "CUP_TBG7V_M";
+_HAT_Mobile = true;         //true - Javelin        false - TOW
+ 
 // Snajper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
-
+_SNrifle = "rhs_weap_M107";
+_SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
+ 
 // ====================================================================================
-
+ 
 // Plecaki
-
-_bagsmall = "B_Parachute";		         		// Parachute
-
-_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
-_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
-
-_bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
-
-_bagMs = "B_AssaultPack_khk";					// Plecak dla medyka (mały)
-_bagMm = "B_Kitbag_rgr";					// Plecak dla medyka (średni)
-_bagMb = "B_Kitbag_rgr";               	// Plecak dla medyka (duży)
-
-_bagARs = "rhs_assault_umbts";					// Plecak dla RKM (mały)
-_bagARm = "B_TacticalPack_oli";					// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_oli";                     // Plecak dla RKM (duży)
-
-_bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
-
-_bagR = "B_FieldPack_oli";						// Plecak dla strzelca, strzelca AT
-
-_bagMAT = "rhs_rpg_empty";						// Plecak dla MAT
-
-_bagmedium = "B_TacticalPack_oli";					// carries 200, weighs 30
-_baglarge =  "B_Carryall_oli"; 					// carries 320, weighs 40
-
-_bagmediumdiver =  "rhs_assault_umbts";			// Plecaki SF
-
-_baguav = "rhs_assault_umbts";						// Plecak RTO
-
-_baghmgg = "RHS_NSV_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_NSV_Tripod_Bag";				// used by Heavy MG assistant gunner
-
-_baghatg = "RHS_SPG9_Gun_Bag";					// used by Heavy AT gunner
-_baghatag = "RHS_SPG9_Tripod_Bag";				// used by Heavy AT assistant gunner
-
-_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
-_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
-
-_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
-_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
-
+ 
+_bagsmall = "B_Parachute";                      // Spadochron
+ 
+_bagFTL = "CUP_B_Kombat_Radio_Olive";                   // Plecak dla dowódcy (radio)
+_bagPP = "rhsusf_assault_eagleaiii_ucp";                  // Plecak dla pilota (radio)
+ 
+_bagTL = "CUP_B_RUS_Backpack";        //Plecak dowódcy drużyny
+ 
+_bagMs = "CUP_B_RUS_Pack_Medic";                        // Plecak dla medyka (mały)
+_bagMm = "CUP_B_RUS_Pack_Medic";        // Plecak dla medyka (średni)
+_bagMb = "CUP_B_RUS_Pack_Medic";        // Plecak dla medyka (duży)
+ 
+_bagARs = "B_FieldPack_cbr";       // Plecak dla RKM (mały)
+_bagARm = "CUP_B_RUS_Pack_Medic";                   // Plecak dla RKM (średni)
+_bagARb = "CUP_B_RUS_Pack_Medic";                   // Plecak dla RKM (duży)
+ 
+_bagENG = "B_FieldPack_cbr";       // Plecak dla Mechanika
+ 
+_bagR = "CUP_B_RUS_Backpack";                  // Plecak dla strzelca, strzelca AT
+ 
+_bagMAT = "SP_Carryall_Tan";                   // Plecak dla MAT
+ 
+_bagmedium = "SP_Carryall_Tan";    // carries 200, weighs 30
+_baglarge =  "SP_Carryall_Tan";                // carries 320, weighs 40
+ 
+_bagmediumdiver =  "CUP_B_RUS_Backpack";  // Plecaki SF
+ 
+_baguav = "CUP_B_Kombat_Radio_Olive";                   // Plecak RTO
+ 
+_baghmgg = "CUP_B_DShkM_Gun_Bag";                    // used by Heavy MG gunner
+_baghmgag = "CUP_B_DShkM_TripodLow_Bag";            // used by Heavy MG assistant gunner
+ 
+_baghatg = "CUP_B_Metis_Gun_Bag";                   // used by Heavy AT gunner
+_baghatag = "CUP_B_Metis_Tripod_Bag";               // used by Heavy AT assistant gunner
+ 
+_bagmtrg = "CUP_B_Podnos_Gun_Bag";              // used by Mortar gunner
+_bagmtrag = "CUP_B_Podnos_Bipod_Bag";           // used by Mortar assistant gunner
+ 
+_baghsamg = "CUP_B_AGS30_Gun_Bag";                 // used by Heavy SAM gunner
+_baghsamag = "CUP_B_AGS30_Tripod_Bag";              // used by Heavy SAM assistant gunner
+ 
 // ====================================================================================
-
+ 
 // Mundury, kamizelki itp.
-
+ 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
-
+ 
 _light = ["m"];
-_heavy =  ["eng","engm" ,"aar" , "ar" ];
+_heavy =  ["eng","engm"];
 _diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = [ "ps"];
-
+_specOp = ["ps"];
+ 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhsgref_uniform_woodland_olive","rhsgref_uniform_reed","rhsgref_uniform_flecktarn","rhsgref_uniform_dpm_olive","rhsgref_uniform_altis_lizard_olive"];
-_baseHelmet = ["H_Bandanna_camo","rhs_beanie_green","rhs_beanie","rhs_ssh68","rhsgref_Booniehat_alpen","rhsgref_ssh68_vsr"];
+_baseUniform = ["CUP_U_O_RUARMY_DesertEMR_VDV", "CUP_U_O_RUARMY_DesertEMR_2_VDV"];
+_baseHelmet = ["CFP_H_O_RUARMY_6B27_NVG", "CFP_H_O_RUARMY_6B27"];
 _baseGlasses = [];
-
+ 
 // Kamizelki
-_lightRig = ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
-_mediumRig = ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
-_heavyRig =  ["rhsgref_TacVest_ERDL","V_Chestrig_khk","V_TacVest_khk","V_TacVest_oli","V_Chestrig_oli","V_TacVest_blk","V_TacVest_camo"];
-
+_lightRig = ["CUP_V_CDF_6B3_1_DST", "CUP_V_CDF_6B3_2_DST", "CUP_V_CDF_6B3_3_DST", "CUP_V_CDF_6B3_4_DST", "CUP_V_CDF_6B3_5_DST", "CUP_V_CDF_6B3_5_MNT"];
+_mediumRig = ["CUP_V_CDF_6B3_1_DST", "CUP_V_CDF_6B3_2_DST", "CUP_V_CDF_6B3_3_DST", "CUP_V_CDF_6B3_4_DST", "CUP_V_CDF_6B3_5_DST", "CUP_V_CDF_6B3_5_MNT"];
+_heavyRig = ["CUP_V_CDF_6B3_1_DST", "CUP_V_CDF_6B3_2_DST", "CUP_V_CDF_6B3_3_DST", "CUP_V_CDF_6B3_4_DST", "CUP_V_CDF_6B3_5_DST", "CUP_V_CDF_6B3_5_MNT"];
+ 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_gorka_r_g"];
-_diverHelmet = ["rhs_altyn_novisor","rhs_altyn_novisor_ess","rhs_altyn_visordown","rhs_altyn"];
-_diverRig = ["rhs_6sh92","rhs_6sh92_radio","rhs_6sh92_vog"];
+_diverUniform =  ["rhs_uniform_g3_mc"];
+_diverHelmet = ["rhsusf_opscore_mc_cover_pelt","rhsusf_opscore_mc_cover_pelt_nsw","rhsusf_opscore_mc_cover_pelt_cam"];
+_diverRig = ["rhsusf_mbav_grenadier","rhsusf_mbav_mg","rhsusf_mbav_medic","rhsusf_mbav_rifleman"];
 _diverGlasses = [];
-
+ 
 // Pilot
-_pilotUniform = ["rhsgref_uniform_olive"];
-_pilotHelmet = ["rhs_gssh18","rhs_zsh7a_mike_green_alt"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotUniform = ["CUP_U_O_SLA_Overalls_Pilot"];
+_pilotHelmet = ["CUP_H_RUS_ZSH_Shield_Down", "CUP_H_RUS_ZSH_Shield_Up"];
+_pilotRig = ["CUP_V_C_Police_Holster"];
 _pilotGlasses = [];
-
+ 
 // Załoga pojazdu
-_crewUniform = ["rhsgref_uniform_altis_lizard_olive"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["V_TacVest_camo"];
+_crewUniform = ["SP_0000_Standard_Coverall_Tan"];
+_crewHelmet = ["CUP_H_RUS_TSH_4_Brown"];
+_crewRig = ["CFP_AK_VEST_LOlive", "CFP_AK_VEST_Olive"];
 _crewGlasses = [];
-
+ 
 // Ghillie
-_ghillieUniform = ["U_O_GhillieSuit"];
+_ghillieUniform = ["U_B_GhillieSuit"];
 _ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_khk"];
+_ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
-
-// Spec Opa
-_sfuniform = ["rhs_uniform_df15"];
-_sfhelmet = ["rhs_zsh7a_alt"];
+ 
+// JET Pilot
+_sfuniform = ["U_B_PilotCoveralls"];
+_sfhelmet = ["H_PilotHelmetFighter_B"];
 _sfRig = ["V_Rangemaster_belt"];
 _sfGlasses = [];
-
+ 
 // ====================================================================================
 
 // INTERPRET PASSED VARIABLES
@@ -1227,30 +1267,37 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//ZSRR Desert [CW]
-	case 5:
+	//Rosja MSV
+	case 1: 
 	{
-_attach1 = "rhs_acc_2dpZenit";			// Latarka (RHS)
-_attach2 = "rhs_acc_perst1ik";			// Laser (RHS)
+_attach1 = "CUP_acc_Flashlight";		// Latarka (RHS)
+_attach2 = "CUP_acc_ANPEQ_2";			// Laser (RHS)
+_attach3 = "rhs_acc_perst3_2dp_h";		// Latarka+Laser (RHS)
 
-_silencer1 = "rhs_acc_dtk";				// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
+_silencer1 = "CUP_muzzle_TGPA";			// Tłumik płomieni (domyslny do wszytskich AK) (RHS)
 _silencer2 = "rhs_acc_dtk4short";		// Tłumik (RHS)
 
-_scope1 = "rhs_acc_1p63";				// Celownik holo (RHS)
-_scope2 = "rhs_acc_pkas";				// Celownik holo (buguje RKM) (RHS)
+_scope1 = "CUP_optic_Kobra";			// Celownik holo (RHS)
+_scope2 = "CUP_optic_PSO_3";			// Celownik holo (buguje RKM) (RHS)
 _scope3 = "rhs_acc_pso1m2";				// Celownik optyczny (RHS)
 
-_bipod1 = "bipod_02_F_hex";				// Default bipod
+_bipod1 = "rhs_acc_grip_ffg2";			// Default bipod
 _bipod2 = "bipod_02_F_blk";				// Black bipod
 
 // Jakie dodatki mają być dodane
-_attachments = [_silencer1,_attach1]; 	// Każda jednostka otrzyma ten zestaw dodatków
+_loadout_night_day = f_param_night_day_wyp;
+if (_loadout_night_day == 0) then 
+{								// Każda jednostka otrzyma ten zestaw dodatków
+	_attachments = [_attach1,_scope1]; 		//NOC
+} else 
+{
+	_attachments = [_scope1]; 		//DZIEŃ 			
+};
 
 // ====================================================================================
 
 // Dodatki do pistoletu
 _hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-_hg_silencer2 = "muzzle_snds_L";	// SF Pistol suppressor
 _hg_scope1 = "optic_MRD";			// MRD
 _hg_attachments= [];
 
@@ -1259,29 +1306,29 @@ _hg_attachments= [];
 // Bronie
 
 // Podstawowa broń (dla przykładowo: Amunicyjny MMG, Amunicyjny RKM, Amunicyjny MAT,Strzelec)
-_rifle = "rhs_weap_ak74";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_AK_green";
+_rifle = "CUP_arifle_AK74M";
+_riflemag = "CUP_30Rnd_545x39_AK74M_M";
+_riflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
-_carbine = "rhs_weap_aks74";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
+_carbine = "CUP_arifle_AKS74";
+_carbinemag = "CUP_30Rnd_545x39_AK74M_M";
+_carbinemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)
-_smg = "rhs_weap_aks74u";
-_smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smg = "CUP_arifle_AKS74U";
+_smgmag = "CUP_30Rnd_545x39_AK74M_M";
+_smgmag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Broń z granatnikiem (dla dowóców)
-_glrifle = "rhs_weap_ak74_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_AK_green";
-_glmag = "rhs_VOG25";
+_glrifle = "CUP_arifle_AK74M_GL";
+_glriflemag = "CUP_30Rnd_545x39_AK74M_M";
+_glriflemag_tr = "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
+_glmag = "CUP_1Rnd_HE_GP25_M";
 
 // Pistolet (dla wszystkich klas)
-_pistol = "rhs_weap_makarov_pmm";
-_pistolmag = "rhs_mag_9x18_12_57N181S";
+_pistol = "CUP_hgun_Makarov";
+_pistolmag = "CUP_8Rnd_9x18_Makarov_M";
 
 // Siły specjalne
 //_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
@@ -1296,41 +1343,42 @@ _pistolmag = "rhs_mag_9x18_12_57N181S";
 // Sprzęt dla klas funkcyjnych
 
 // Strzelec RKM
-_AR = "hlc_rifle_rpk_75rnd";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "CUP_arifle_RPK74M";
+_ARmag = "CUP_60Rnd_545x39_AK74M_M";
+_ARmag_tr = "CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M";
 
 // Strzelec MMG
-_MMG = "rhs_weap_pkm";
-_MMGmag = "rhs_100Rnd_762x54mmR";
-_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
+_MMG = "CUP_lmg_PKM";
+_MMGmag = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
+_MMGmag_tr = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M";
 
 // Strzelec wyborowy
-_DMrifle = "rhs_weap_svdp_wd";
-_DMriflemag = "rhs_10Rnd_762x54mmR_7N1";
+_DMrifle = "CUP_srifle_SVD";
+_DMriflemag = "CUP_10Rnd_762x54_SVD_M";
 
 // Strzelec AT
-_RAT = "rhs_weap_rpg26";
+_RAT = "CUP_launch_RPG18";
 //_RATmag = "rhs_rpg26_mag";
 
 // Strzelec MAT
-_MAT = "rhs_weap_rpg7";
-_MATmag1 = "rhs_rpg7_PG7VL_mag";
-_MATmag2 = "rhs_rpg7_PG7VR_mag";
-_MAT_sight = "rhs_acc_pgo7v3";
+_MAT = "CUP_launch_RPG7V";
+_MATmag1 = "CUP_PG7VL_M";
+_MATmag2 = "CUP_PG7VR_M";
+_MAT_sight = "CUP_optic_PGO7V3";
 
 // Strzelec AA
-_SAM = "rhs_weap_igla";
-_SAMmag = "rhs_mag_9k38_rocket";
+_SAM = "CUP_launch_Igla";
+//_SAMmag = "rhs_mag_9k38_rocket";
 
 // Strzelec HAT
-//_HAT = "launch_O_Titan_short_F";
-//_HATmag1 = "Titan_AT";
-//_HATmag2 = "Titan_AP";
+_HAT = "CUP_launch_Metis";
+_HATmag1 = "CUP_AT13_M";
+_HATmag2 = "CUP_AT13_M";
+_HAT_Mobile = false;
 
 // Snajper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "CUP_srifle_ksvk";
+_SNrifleMag = "CUP_5Rnd_127x108_KSVK_M";
 
 // ====================================================================================
 
@@ -1338,43 +1386,43 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 
 _bagsmall = "B_Parachute";		         		// Parachute
 
-_bagFTL = "rhs_assault_umbts";                  	// Plecak dla dowódcy (radio)
-_bagPP = "rhs_assault_umbts";                  		// Plecak dla pilota (radio)
+_bagFTL = "CUP_B_Kombat_Radio_Olive";                  	// Plecak dla dowódcy (radio)
+_bagPP = "B_FieldPack_oli";                  		// Plecak dla pilota (radio)
 
-_bagTL = "rhs_assault_umbts";					//Plecak dowódcy drużyny
+_bagTL = "B_FieldPack_oli";						//Plecak dowódcy drużyny
 
-_bagMs = "rhs_sidor";							// Plecak dla medyka (mały)
-_bagMm = "B_FieldPack_oli";						// Plecak dla medyka (średni)
-_bagMb = "B_FieldPack_oli";               		// Plecak dla medyka (duży)
+_bagMs = "B_FieldPack_oli";					// Plecak dla medyka (mały)
+_bagMm = "CUP_B_Kombat_Olive";						// Plecak dla medyka (średni)
+_bagMb = "CUP_B_AlicePack_Khaki";               	// Plecak dla medyka (duży)
 
-_bagARs = "B_FieldPack_cbr";					// Plecak dla RKM (mały)
-_bagARm = "rhs_assault_umbts";					// Plecak dla RKM (średni)
-_bagARb = "B_Carryall_cbr";						// Plecak dla RKM (duży)
+_bagARs = "B_FieldPack_oli";					// Plecak dla RKM (mały)
+_bagARm = "CUP_B_Kombat_Olive";						// Plecak dla RKM (średni)
+_bagARb = "CUP_B_AlicePack_Khaki";                     // Plecak dla RKM (duży)
 
-_bagENG = "rhs_assault_umbts_engineer_empty";	// Plecak dla Mechanika
+_bagENG = "B_Carryall_oli";	// Plecak dla Mechanika
 
-_bagR = "rhs_sidor";							// Plecak dla strzelca, strzelca AT
+_bagR = "CUP_B_AlicePack_Khaki";						// Plecak dla strzelca, strzelca AT
 
-_bagMAT = "B_Carryall_cbr";						// Plecak dla MAT
+_bagMAT = "CUP_B_AlicePack_Khaki";						// Plecak dla MAT
 
-_bagmedium = "rhs_sidor";						// carries 200, weighs 30
-_baglarge =  "B_Carryall_cbr"; 					// carries 320, weighs 40
+_bagmedium = "CUP_B_Kombat_Olive";					// carries 200, weighs 30
+_baglarge =  "CUP_B_AlicePack_Khaki"; 					// carries 320, weighs 40
 
-_bagmediumdiver =  "B_Carryall_cbr";			// Plecaki SF
+_bagmediumdiver =  "CUP_B_Kombat_Olive";			// Plecaki SF
 
-_baguav = "rhs_assault_umbts";						// Plecak RTO
+_baguav = "CUP_B_Kombat_Radio_Olive";						// Plecak RTO
 
-_baghmgg = "RHS_Kord_Gun_Bag";					// used by Heavy MG gunner
-_baghmgag = "RHS_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
+_baghmgg = "CUP_B_Kord_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "CUP_B_Kord_Tripod_Bag";				// used by Heavy MG assistant gunner
 
-_baghatg = "RHS_SPG9_Gun_Bag";					// used by Heavy AT gunner
-_baghatag = "RHS_SPG9_Tripod_Bag";				// used by Heavy AT assistant gunner
+_baghatg = "CUP_B_Metis_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "CUP_B_Metis_Tripod_Bag";				// used by Heavy AT assistant gunner
 
-_bagmtrg = "RHS_Podnos_Gun_Bag";				// used by Mortar gunner
-_bagmtrag = "RHS_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
+_bagmtrg = "CUP_B_Podnos_Gun_Bag";				// used by Mortar gunner
+_bagmtrag = "CUP_B_Podnos_Bipod_Bag";				// used by Mortar assistant gunner
 
-_baghsamg = "RHS_AGS30_Gun_Bag";					// used by Heavy GMG gunner
-_baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
+_baghsamg = "CUP_B_AGS30_Gun_Bag";					// used by Heavy GMG gunner
+_baghsamag = "CUP_B_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 
 // ====================================================================================
 
@@ -1384,44 +1432,44 @@ _baghsamag = "RHS_AGS30_Tripod_Bag";				// used by Heavy GMG assistant gunner
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _light = ["m"];
-_heavy =  ["eng","engm" ,"aar" , "ar" ];
+_heavy =  ["eng","engm" ,"aar" , "ar"];
 _diver = ["divc","divr","divs","divm"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = [ "ps"];
+_specOp = ["ps"];
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["rhs_uniform_m88_patchless"];
-_baseHelmet = ["rhs_ssh68","H_Bandanna_sand","H_Booniehat_tan"];
+_baseUniform = ["CUP_U_O_RUS_Flora_1","CUP_U_O_RUS_Flora_2"];
+_baseHelmet = ["CUP_H_RUS_6B27"];
 _baseGlasses = [];
 
 // Kamizelki
-_lightRig = ["rhs_6b5_medic_khaki"];
-_mediumRig = ["rhs_6b5_khaki","rhs_6b5_officer_khaki","rhs_6b5_sniper_khaki"];
-_heavyRig = ["rhs_6b5_khaki","rhs_6b5_officer_khaki","rhs_6b5_sniper_khaki"];
+_lightRig = ["CUP_V_CDF_6B3_1_Green"];
+_mediumRig = ["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2","CUP_V_RUS_6B3_3"];
+_heavyRig = ["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2","CUP_V_RUS_6B3_3"];
 
 // Siły specjalne
-_diverUniform =  ["rhs_uniform_gorka_r_y"];
-_diverHelmet = ["rhs_ssh68"];
-_diverRig = ["rhs_vydra_3m"];
-_diverGlasses = [];
+_diverUniform =  ["U_O_Wetsuit"];
+_diverHelmet = [];
+_diverRig = ["V_RebreatherIR"];
+_diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_df15_tan"];
-_pilotHelmet = ["rhs_zsh7a_mike","rhs_gssh18"];
-_pilotRig = ["rhs_vest_commander"];
+_pilotUniform = ["CUP_U_O_RUS_Flora_3"];
+_pilotHelmet = ["CUP_H_RUS_ZSH_Shield_Up"];
+_pilotRig = ["CUP_V_C_Police_Holster"];
 _pilotGlasses = [];
 
 // Załoga pojazdu
-_crewUniform = ["rhs_uniform_m88_patchless"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["rhs_vydra_3m"];
+_crewUniform = ["CUP_U_O_RUS_Flora_2"];
+_crewHelmet = ["CUP_H_SLA_TankerHelmet"];
+_crewRig = ["CUP_V_RUS_6B3_4"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_O_GhillieSuit"];
+_ghillieUniform = ["U_O_GhillieSuit"]; 
 _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
@@ -1459,22 +1507,22 @@ if (_isMan) then {
 	// HANDLE CLOTHES
 	// Handle clothes and helmets and such using the include file called next.
 
-	#include "f_assignGear_clothes.sqf";		
-		
+	#include "f_assignGear_clothes.sqf";
+
 // ====================================================================================
 
 	// Przedmioty uniwersalne dla klas
 	// Dodanie przedmiotów do każdej jednstki (gracza)
-	
+
 	call Medical;
 
 };
 
-// ====================================================================================
+// ====================================================================================	
 	//WYWOŁANIE BUILDERA
 	call Builder;
 	
-	//Dpdanie nocnego wyposażenia
+	//Dodanie nocnego wyposażenia
 	call Night_Eq_No_NVG;
 		
 };	
