@@ -303,7 +303,7 @@ class Params
 	class f_param_player_faction_Indfor
 	{
 		title = "Frakcja INDFOR";
-		values[] = {1,2,3,4,5,6,7};
+		values[] = {1,2,3,4,5,6,7,8};
 		texts[] = {1. NAPA, 2. PMC, 3. RACS (DS), 4. RACS (WD), 5. Takistan Rebels, 6. UN (DS), 7. UN (mountain), 8. Zachodni ultrancjonaliści};
 		default = 1;
 		code = "f_param_player_faction_Indfor = %1";
