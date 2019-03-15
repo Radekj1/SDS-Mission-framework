@@ -1268,7 +1268,7 @@ if (_isMan) then {
 //*****************************************************************************************************
 
 	//Rosja MSV
-	case 1: 
+	case 5: 
 	{
 _attach1 = "CUP_acc_Flashlight";		// Latarka (RHS)
 _attach2 = "CUP_acc_ANPEQ_2";			// Laser (RHS)
