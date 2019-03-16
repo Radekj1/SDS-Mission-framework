@@ -426,7 +426,7 @@ _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
-// Spec Opa
+// Jet pilot
 _sfuniform = ["rhs_uniform_df15_tan"];
 _sfhelmet = ["rhs_zsh7a_alt"];
 _sfRig = ["V_Rangemaster_belt"];
