@@ -3591,7 +3591,7 @@ _baseGlasses = [];
  
 // Kamizelki
 _lightRig = ["CFP_Modular1_IDF"];
-_mediumRig = ["CFP_RAV_IDF";
+_mediumRig = ["CFP_RAV_IDF"];
 _heavyRig = ["CFP_RAV_IDF"];
  
 // Siły specjalne
