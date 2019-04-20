@@ -36,13 +36,13 @@ _TypNumber = _this select 0;_TempArray = [];
 	11 - Bundeswehr (DS) [MD]
 	12 - Bundeswehr (WD) [MD]
 	13 - CDF (DS) [U]
-    14 - CDF (WD) [U]
+  14 - CDF (WD) [U]
 	15 - CDF (WINTER) [U]
-    16 - IDF [MD]
-    17 - US UCP (DS) [MD]
-    18 - US UCP (WD) [MD]
-    19 - USMC (DS) [MD]
-    20 - USMC (WD) [MD]
+  16 - IDF [MD]
+  17 - US UCP (DS) [MD]
+  18 - US UCP (WD) [MD]
+  19 - USMC (DS) [MD]
+  20 - USMC (WD) [MD]
 	21 - USMC (DS) [CW]
 	22 - USMC (WD) [CW]
 //////////OPFOR///////////
@@ -620,6 +620,17 @@ switch (_TypNumber) do
  
 //-------------------------------------------------------------------------------------------------
   
+  // Syndykat paramilita (INDFOR)
+  case 48:
+  {
+    _Unit_Pool_S = ["CUP_I_PMC_Crew","CUP_I_PMC_Pilot","CUP_I_PMC_Soldier_TL","CUP_I_PMC_Soldier_MG_PKM","CUP_I_PMC_Soldier_AT","CUP_I_PMC_Soldier_GL_M16A2","CUP_I_PMC_Medic","CUP_I_PMC_Contractor2","CUP_I_PMC_Soldier_AA"];
+    _Unit_Pool_V = ["CUP_I_SUV_Armored_ION","CUP_I_LSV_02_Minigun_ION","CUP_I_LSV_02_AT_ION","CUP_I_4WD_LMG_ION","CUP_I_4WD_AT_ION"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = ["CUP_I_Ka60_GL_Blk_ION"];
+  }; 
+
+//-------------------------------------------------------------------------------------------------
+
 // XX (INDFOR)
   case 100:
   {
