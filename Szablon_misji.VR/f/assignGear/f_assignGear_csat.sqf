@@ -283,12 +283,14 @@ _pistol = "CUP_hgun_Makarov";
 _pistolmag = "CUP_8Rnd_9x18_Makarov_M";
 
 // Siły specjalne
-//_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
-//_diverMagCaS = "30Rnd_min_rf_545x39_mag";
-//_diverWepR = "arifle_min_rf_ak12_camo_grip";
-//_diverMagR = "30Rnd_min_rf_545x39_mag";
-//_diverWepM = "arifle_min_rf_ak12_camo";
-//_diverMagM = "30Rnd_min_rf_545x39_mag";
+_diverWepCaS = "CUP_arifle_AK74_GL";
+_diverMagCaS = "CUP_30Rnd_545x39_AK_M";
+
+_diverWepR = "CUP_srifle_VSSVintorez_VFG";
+_diverMagR = "CUP_30Rnd_9x39_SP5_VIKHR_M";
+
+_diverWepM = "CUP_arifle_RPK74_45";
+_diverMagM = "CUP_60Rnd_545x39_AK74M_M";
 
 // ====================================================================================
 
@@ -403,10 +405,10 @@ _mediumRig = ["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2","CUP_V_RUS_6B3_3"];
 _heavyRig = ["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2","CUP_V_RUS_6B3_3"];
 
 // Siły specjalne
-_diverUniform =  ["U_O_Wetsuit"];
-_diverHelmet = [];
-_diverRig = ["V_RebreatherIR"];
-_diverGlasses = ["G_Diving"];
+_diverUniform =  ["CUP_U_O_RUS_Gorka_Partizan"];
+_diverHelmet = ["CUP_H_RUS_ZSH_1_Goggles"];
+_diverRig = ["CUP_V_O_Ins_Carrier_Rig_Com","CUP_V_O_Ins_Carrier_Rig_MG","CUP_V_RUS_Smersh_2","CUP_V_O_Ins_Carrier_Rig_Light"];
+_diverGlasses = [];
 
 // Pilot
 _pilotUniform = ["CUP_U_O_RUS_Flora_3"];

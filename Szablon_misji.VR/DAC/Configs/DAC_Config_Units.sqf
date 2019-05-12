@@ -45,6 +45,7 @@ _TypNumber = _this select 0;_TempArray = [];
   20 - USMC (WD) [MD]
 	21 - USMC (DS) [CW]
 	22 - USMC (WD) [CW]
+  28 - BW [CW]
 //////////OPFOR///////////
 	23 - RU MSV (WD)
 	24 - RU VDV (WD)
@@ -327,13 +328,24 @@ switch (_TypNumber) do
 
 //-------------------------------------------------------------------------------------------------
 
-// US Marine Corps Las (BLUFOR)
+// US Marine Corps Las COLD WAR (BLUFOR)
   case 22:
   {
-    _Unit_Pool_S = ["CUP_B_USMC_Crewman_FROG_WDL","CFP_B_USMC_Pilot_DES_01","CUP_B_USMC_Soldier_TL_FROG_WDL","CUP_B_USMC_Soldier_AR_FROG_WDL","CUP_B_USMC_Soldier_MG_FROG_WDL","CUP_B_USMC_Soldier_LAT_FROG_WDL","CUP_B_USMC_Soldier_AT_FROG_WDL","CUP_B_USMC_Soldier_AA_FROG_WDL","CUP_B_USMC_Medic_FROG_WDL","CUP_B_USMC_Soldier_GL_FROG_WDL","CUP_B_USMC_Soldier_Marksman_FROG_WDL"];
-    _Unit_Pool_V = ["CUP_B_M1151_Deploy_USMC","CUP_B_HMMWV_TOW_USMC","CUP_B_RG31_M2_OD_USMC","CUP_B_RG31_Mk19_OD_USMC","CUP_B_LAV25M240_USMC"];
-    _Unit_Pool_T = ["CUP_B_M1A1_Woodland_USMC","CUP_B_M1A2_TUSK_MG_USMC"];
-    _Unit_Pool_A = ["CFP_B_USMC_UH_1Y_Venom_Gunship_DES_01","CFP_B_USMC_MH_60S_Seahawk_FFV_DES_01","CFP_B_USMC_MH_60S_Seahawk_M3M_DES_01","CUP_B_MH60L_DAP_4x_USN"];
+    _Unit_Pool_S = ["CUP_B_USMC_Crew","CUP_B_USMC_Pilot","usm_marine_90s_w_l_rto","usm_marine_90s_w_h_ar","usm_marine_90s_w_h_mg","usm_marine_90s_w_h_gr","usm_marine_90s_w_h_aa","usm_marine_90s_w_h_at4","usm_marine_90s_w_h_medic"];
+    _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC","CUP_B_HMMWV_M1114_USMC","CUP_B_HMMWV_MK19_USMC","CUP_B_HMMWV_Avenger_USMC","CUP_B_HMMWV_TOW_USMC"];
+    _Unit_Pool_T = ["CUP_B_LAV25M240_USMC","CUP_B_AAV_USMC","CUP_B_M60A3_TTS_USMC"];
+    _Unit_Pool_A = ["CUP_B_UH1Y_Gunship_Dynamic_USMC","CUP_B_UH60S_USN","CUP_B_MH60L_DAP_2x_USN"];
+  };
+
+//-------------------------------------------------------------------------------------------------
+
+// BW (BLUFOR)
+  case 28:
+  {
+    _Unit_Pool_S = ["gm_ge_army_crew_mp2a1_80_oli","CFP_B_DEARMY_WDL_Pilot_01","gm_ge_army_squadleader_g3a3_p2a1_80_ols","gm_ge_army_rifleman_g3a3_80_ols","gm_ge_army_medic_g3a3_80_ols","gm_ge_army_machinegunner_mg3_80_ols","gm_ge_army_antitank_g3a3_pzf84_80_ols","gm_ge_army_antitank_g3a3_pzf44_80_ols","gm_ge_army_grenadier_g3a3_80_ols"];
+    _Unit_Pool_V = ["gm_ge_army_iltis_cargo","gm_ge_army_iltis_milan","gm_ge_army_kat1_451_cargo","gm_ge_army_fuchsa0_reconnaissance","gm_ge_army_m113a1g_apc","gm_ge_army_m113a1g_apc_milan"];
+    _Unit_Pool_T = ["gm_ge_army_gepard1a1","gm_ge_army_Leopard1a3","gm_ge_army_Leopard1a1a2","gm_ge_army_Leopard1a1a1","gm_ge_army_Leopard1a3a1"];
+    _Unit_Pool_A = ["CUP_B_UH1D_GER_KSK","CUP_B_UH1D_slick_GER_KSK","CFP_B_DEARMY_WDL_CH_53G_Super_Stallion_01"];
   };
 
 //-------------------------------------------------------------------------------------------------
