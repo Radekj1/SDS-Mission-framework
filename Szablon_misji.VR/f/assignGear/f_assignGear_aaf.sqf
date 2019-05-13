@@ -5,10 +5,14 @@
 //	SPIS TRESCI
 /*
 
-	1.	CDF UN
-	2.	CDF
-	3.	CDF [CW]
-	4.	Rebels [CW]
+1. [ ] NAPA
+2. [ ] PMC
+3. [ ] RACS (DS)
+4. [ ] RACS (WD)
+5. [ ] Takistan Rebels
+6. [ ] UN (DS)
+7. [ ] UN (WD)
+8. [ ] Zachodni ultrancjonaliści
 	
 */
 // ====================================================================================
@@ -65,14 +69,14 @@ _handcuffs = "ACE_CableTie";
 _worek = "ACE_bodyBag";
 
 // Granaty dymne do granatnika
-_glsmokewhite = "rhs_GRD40_White";
-_glsmokegreen = "rhs_GRD40_Green";
-_glsmokered = "rhs_GRD40_Red";
+_glsmokewhite = "CUP_1Rnd_SMOKE_GP25_M";
+_glsmokegreen = "CUP_1Rnd_SmokeGreen_GP25_M";
+_glsmokered = "CUP_1Rnd_SmokeRed_GP25_M";
 
 // Flary do granatnika
-_glflarewhite = "rhs_VG40OP_white";
-_glflarered = "rhs_VG40OP_red";
-_glflaregreen = "rhs_VG40OP_green";
+_glflarewhite = "CUP_IlumFlareWhite_GP25_M";
+_glflarered = "CUP_IlumFlareRed_GP25_M";
+_glflaregreen = "CUP_IlumFlareGreen_GP25_M";
 
 //Przedmioty w skrzyniach
 _satche_small = "ClaymoreDirectionalMine_Remote_Mag";
@@ -93,7 +97,7 @@ _APmine2 = "APERSMine_Range_Mag";
 _mineDetector = "ACE_VMM3";
 
 // Granaty ręczne
-_grenade = "rhs_mag_rgd5";
+_grenade = "CUP_HandGrenade_RGD5";
 _mgrenade = "ACE_M84";
 
 //Granaty dymne
@@ -115,7 +119,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Noktowizja
-_nvg = "rhs_1PN138";
+_nvg = "CUP_NVG_PVS7";
 
 // UAV Terminal
 _uavterminal = "O_UavTerminal";
@@ -212,11 +216,19 @@ if (_loadout_night_day == 0) then
 	_attachments = [_scope1]; 		//DZIEŃ 			
 };
 
+/*
+[] = brak dodatków
+[_attach1,_scope1] = usuwa dodatki a na ich miejsce dodaje _attach1, _scope1
+[_scope2] = dodaje tylko _scope2, reszta zostaje usunięta
+false = nie zmieniaj dodatków, zostaw tak jak domyślnie arma respi na broni
+*/
+
 // ====================================================================================
 
 // Dodatki do pistoletu
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-_hg_scope1 = "optic_MRD";			// MRD
+_hg_silencer1 = "muzzle_snds_L";							// 9mm tłumik do Glocka 17
+_hg_attach1 = "CUP_acc_Glock17_Flashlight";
+_hg_scope1 = "optic_MRD";											// MRD
 _hg_attachments= [];
 
 // ====================================================================================
@@ -248,13 +260,20 @@ _glmag = "CUP_1Rnd_HE_GP25_M";
 _pistol = "CUP_hgun_Makarov";
 _pistolmag = "CUP_8Rnd_9x18_Makarov_M";
 
+/*
 // Siły specjalne
-//_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
-//_diverMagCaS = "30Rnd_min_rf_545x39_mag";
-//_diverWepR = "arifle_min_rf_ak12_camo_grip";
-//_diverMagR = "30Rnd_min_rf_545x39_mag";
-//_diverWepM = "arifle_min_rf_ak12_camo";
-//_diverMagM = "30Rnd_min_rf_545x39_mag";
+_SFWepTL = "rhs_weap_hk416d10_m320";
+_SFMagTL = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+
+_SFWepM = "rhs_weap_m249_pip_S_vfg";
+_SFMagM = "rhsusf_100Rnd_556x45_soft_pouch";
+
+_SFWepR = "rhs_weap_M590_5RD";
+_SFMagR = "rhsusf_5Rnd_00Buck";
+
+_SFsecendWep = "rhsusf_weap_glock17g4";
+_SFsecendMag = "rhsusf_mag_17Rnd_9x19_JHP";
+*/
 
 // ====================================================================================
 
@@ -443,11 +462,6 @@ if (_isMan) then {
 	call Night_Eq_No_NVG;
 		
 };
-	
-//*****************************************************************************************************
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//*****************************************************************************************************
-
 	
 // ====================================================================================
 // ====================================================================================

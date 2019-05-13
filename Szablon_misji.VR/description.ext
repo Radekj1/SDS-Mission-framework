@@ -285,7 +285,7 @@ class Params
 	class f_param_player_faction_Blufor
 	{
 		title = "Frakcja BLUFOR";
-		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
+		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
 		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army (UCP), 8. US Army CW (WD), 9. US Army CW (DS), 10. US Army CW (WT), 11. CDF (WD), 12. CDF (DS), 13. CDF (WT), 14. IDF, 15. BW (WD), 16. BW (DS), 17. ACR (WD), 18. ACR (DS)};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
@@ -295,7 +295,7 @@ class Params
 	{
 		title = "Frakcja OPFOR";
 		values[] = {1,2,3,4,5,6,7,8,9,10};
-		texts[] = {1. CHdKZ, 2. KPA (korea), 3. VDV (WD), 4. VDV (DS), 5. MSV (WD), 6. SLA (DS), 7. SLA (WD), 8. SLA (urban/winter), 9. Takistan Army, 10. Takistan Rebels};
+		texts[] = {1. CHdKZ, 2. KPA (korea), 3. VDV (WD), 4. VDV CW (WD), 5. VDV CW (DS), 6. SLA (DS), 7. SLA (WD), 8. SLA (urban/winter), 9. Takistan Army, 10. Takistan Rebels};
 		default = 1;
 		code = "f_param_player_faction_Opfor = %1";
 	};
