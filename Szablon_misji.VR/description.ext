@@ -286,7 +286,7 @@ class Params
 	{
 		title = "Frakcja BLUFOR";
 		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
-		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army Delta, 8. US Army CW (WD), 9. US Army CW (DS), 10. CDF (mountain), 11. CDF (DS), 12. CDF (winter), 13. IDF, 14. BW (WD), 15. BW (DS), 16. ACR (WD), 17. ACR (DS)};
+		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army (UCP), 8. US Army CW (WD), 9. US Army CW (DS), 10. US Army CW (WT), 11. CDF (WD), 12. CDF (DS), 13. CDF (WT), 14. IDF, 15. BW (WD), 16. BW (DS), 17. ACR (WD), 18. ACR (DS)};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
 	};
