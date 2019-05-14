@@ -1577,7 +1577,7 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//ZSRR Woodland [CW]
+	//SLA (DS)
 	case 6:
 	{
 _attach1 = "rhs_acc_2dpZenit";			// Latarka 
@@ -1633,13 +1633,20 @@ _glmag = "rhs_VOG25";
 _pistol = "rhs_weap_makarov_pmm";
 _pistolmag = "rhs_mag_9x18_12_57N181S";
 
+/*
 // Siły specjalne
-//_diverWepCaS = "arifle_min_rf_ak12_camo_grip";
-//_diverMagCaS = "30Rnd_min_rf_545x39_mag";
-//_diverWepR = "arifle_min_rf_ak12_camo_grip";
-//_diverMagR = "30Rnd_min_rf_545x39_mag";
-//_diverWepM = "arifle_min_rf_ak12_camo";
-//_diverMagM = "30Rnd_min_rf_545x39_mag";
+_SFWepTL = "rhs_weap_hk416d10_m320";
+_SFMagTL = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+
+_SFWepM = "rhs_weap_m249_pip_S_vfg";
+_SFMagM = "rhsusf_100Rnd_556x45_soft_pouch";
+
+_SFWepR = "rhs_weap_M590_5RD";
+_SFMagR = "rhsusf_5Rnd_00Buck";
+
+_SFsecendWep = "rhsusf_weap_glock17g4";
+_SFsecendMag = "rhsusf_mag_17Rnd_9x19_JHP";
+*/
 
 // ====================================================================================
 
