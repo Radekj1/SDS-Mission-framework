@@ -26,8 +26,8 @@ KitPickInit =
     COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Dowódca drużyny/Team Leader"; COMBO lbSetData [_idx, "ftl"];
-    _idx = COMBO lbAdd "Strzelec RKM/RMK Rifleman"; COMBO lbSetData [_idx, "ar"];
-    _idx = COMBO lbAdd "Amunicyjny RKM/RKM Assistant"; COMBO lbSetData [_idx, "aar"];
+    _idx = COMBO lbAdd "Strzelec RKM/LMG Rifleman"; COMBO lbSetData [_idx, "ar"];
+    _idx = COMBO lbAdd "Amunicyjny RKM/LMG Assistant"; COMBO lbSetData [_idx, "aar"];
     _idx = COMBO lbAdd "Strzelec/Rifleman"; COMBO lbSetData [_idx, "r"];
     COMBO lbAdd "----";
 	
