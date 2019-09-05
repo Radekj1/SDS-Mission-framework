@@ -3826,9 +3826,9 @@ _scope3 = "CUP_optic_LeupoldM3LR";		// Celownik snajperski 6.5-20x
 // Jakie dodatki mają być dodane
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {			// Każda jednostka otrzyma ten zestaw dodatków
-	_attachments = [_attach3];		//NOC
+	_attachments = [_scope1,_attach1];		//NOC
 } else {
-	_attachments = [];		//DZIEŃ 			
+	_attachments = [_scope1];		//DZIEŃ 			
 };
 
 /*
@@ -3992,7 +3992,7 @@ _specOp = ["ps"];
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["CFP_U_FieldUniform_idf_SS", "CFP_U_FieldUniform_idf"];
-_baseHelmet = ["CFP_IDF_M76", "CFP_IDF_M76_GG", "CFP_IDF_M76_CB_GG", "CFP_IDF_M76_BD_GG"];
+_baseHelmet = ["CFP_IDF_M76", "CFP_IDF_M76_BD_CB_GG_Black", "CFP_IDF_M76_GG", "CFP_IDF_M76_CB_GG", "CFP_IDF_M76_BD_GG", "CFP_MitzHelm1_Des2", "CFP_MitzHelm2_Des2", "CFP_MitzHelm3_Des2", "CFP_MitzHelm4_Des2"];
 _baseGlasses = [];
 
 // Kamizelki

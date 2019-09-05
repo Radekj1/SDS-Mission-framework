@@ -87,6 +87,14 @@ End Safe Start timer</execute><br/>
 
 |- <execute expression=""[[true],'f_fnc_safety',playableUnits + switchableUnits] call BIS_fnc_MP;
 hintsilent 'Safety on!' "">
+Start recording</execute><br/>
+
+|- <execute expression=""[[true],'f_fnc_safety',playableUnits + switchableUnits] call BIS_fnc_MP;
+hintsilent 'Safety on!' "">
+Stop recording</execute><br/>
+
+|- <execute expression=""[[true],'f_fnc_safety',playableUnits + switchableUnits] call BIS_fnc_MP;
+hintsilent 'Safety on!' "">
 Force safety on for all players</execute><br/>
 
 |- <execute expression=""[[false],'f_fnc_safety',playableUnits + switchableUnits] call BIS_fnc_MP;
