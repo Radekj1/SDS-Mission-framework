@@ -60,17 +60,17 @@ _groups = [
 ["GrpNATO_TNK2","Tytan 1-2"],
 ["GrpNATO_TNK3","Tytan 1-3"],
 
-["GrpNATO_TH1","Spartan1"],
-["GrpNATO_TH2","Spartan2"],
-["GrpNATO_TH3","Spartan3"],
-["GrpNATO_TH4","Spartan4"],
-["GrpNATO_TH5","Spartan5"],
-["GrpNATO_TH6","Spartan6"],
-["GrpNATO_TH7","Spartan7"],
-["GrpNATO_TH8","Spartan8"],
+["GrpNATO_TH1","Spartan 1"],
+["GrpNATO_TH2","Spartan 2"],
+["GrpNATO_TH3","Spartan 3"],
+["GrpNATO_TH4","Spartan 4"],
+["GrpNATO_TH5","Spartan 5"],
+["GrpNATO_TH6","Spartan 6"],
+["GrpNATO_TH7","Spartan 7"],
+["GrpNATO_TH8","Spartan 8"],
 
-["GrpNATO_AH1","Łowca1"],
-["GrpNATO_AH2","Łowca2"],
+["GrpNATO_AH1","Hunter 1"],
+["GrpNATO_AH2","Hunter 2"],
 
 // ====================================================================================
 
