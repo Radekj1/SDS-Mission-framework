@@ -66,7 +66,7 @@ _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 _lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
-_GPS = "ItemGPS";
+_GPS = "ACE_DAGR";
 _handcuffs = "ACE_CableTie";
 _worek = "ACE_bodyBag";
 
