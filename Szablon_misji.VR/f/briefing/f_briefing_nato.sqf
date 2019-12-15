@@ -43,3 +43,14 @@ Tu możesz podać inf. na temat Sojuszniczych jednostek na mapie
 "]];
 
 // ====================================================================================
+
+// NOTES: ROE
+// The code below creates the mission sub-section of notes.
+
+_roe = player createDiaryRecord ["diary", ["ROE","
+<br/>
+Tu wpisz zasady otwarcia ognia
+<br/>
+"]];
+
+// ====================================================================================

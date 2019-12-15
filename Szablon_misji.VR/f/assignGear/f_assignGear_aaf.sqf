@@ -62,21 +62,47 @@ _radioLR = "ACRE_PRC77";
 _earplugs = "ACE_EarPlugs";
 _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
-_lornetkaAM = "rhs_pdu4";
+_lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
-_GPS = "ACE_DAGR";
+_lornetkaRTO = "UK3CB_BAF_Soflam_Laserdesignator";
+_GPS = "ACE_microDAGR";
 _handcuffs = "ACE_CableTie";
 _worek = "ACE_bodyBag";
+_huntIR = "ACE_HuntIR_M203";
+_huntIR_tab = "ACE_HuntIR_monitor";
+
+// Flary ręczne
+_flarewhite = "ACE_HandFlare_White";
+_flarered = "ACE_HandFlare_Red";
+_flareyellow = "ACE_HandFlare_Yellow";
+_flaregreen = "ACE_HandFlare_Green";
+
+// Świetliki
+_chemgreen =  "Chemlight_green";
+_chemred = "Chemlight_red";
+_chemyellow =  "Chemlight_yellow";
+_chemblue = "Chemlight_blue";
+
+//Granaty dymne
+_smokegrenade = "SmokeShell";
+_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenadeblue = "SmokeShellBlue";
+_smokegrenadered = "SmokeShellRed";
+
+// Granaty ręczne
+_grenade = "HandGrenade";
+_mgrenade = "ACE_M84";
 
 // Granaty dymne do granatnika
-_glsmokewhite = "CUP_1Rnd_SMOKE_GP25_M";
-_glsmokegreen = "CUP_1Rnd_SmokeGreen_GP25_M";
-_glsmokered = "CUP_1Rnd_SmokeRed_GP25_M";
+_glsmokewhite = "1Rnd_Smoke_Grenade_shell";
+_glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
+_glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
 // Flary do granatnika
-_glflarewhite = "CUP_IlumFlareWhite_GP25_M";
-_glflarered = "CUP_IlumFlareRed_GP25_M";
-_glflaregreen = "CUP_IlumFlareGreen_GP25_M";
+_glflarewhite = "CUP_1Rnd_StarFlare_White_M203";
+_glflarered = "CUP_1Rnd_StarFlare_Red_M203";
+_glflareyellow = "UGL_FlareYellow_F";
+_glflaregreen = "CUP_1Rnd_StarFlare_Green_M203";
 
 //Przedmioty w skrzyniach
 _satche_small = "ClaymoreDirectionalMine_Remote_Mag";
@@ -96,33 +122,8 @@ _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 _mineDetector = "ACE_VMM3";
 
-// Granaty ręczne
-_grenade = "CUP_HandGrenade_RGD5";
-_mgrenade = "ACE_M84";
-
-//Granaty dymne
-_smokegrenade = "SmokeShell";
-_smokegrenadegreen = "SmokeShellGreen";
-_smokegrenadered = "SmokeShellRed";
-_smokegrenadeblue = "SmokeShellBlue";
-
-//Flary ręczne
-_flarewhite = "ACE_HandFlare_White";
-_flarered = "ACE_HandFlare_Red";
-_flareyellow = "ACE_HandFlare_Yellow";
-_flaregreen = "ACE_HandFlare_Green";
-
-// Świetliki
-_chemgreen =  "Chemlight_green";
-_chemred = "Chemlight_red";
-_chemyellow =  "Chemlight_yellow";
-_chemblue = "Chemlight_blue";
-
 // Noktowizja
-_nvg = "CUP_NVG_PVS7";
-
-// UAV Terminal
-_uavterminal = "O_UavTerminal";
+_nvg = "CUP_NVG_PVS15_black";
 
 //Konstruktor BUILDERA
 Builder ={	
