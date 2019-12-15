@@ -22,6 +22,21 @@ _glasses = _baseGlasses;
 
 // Flip through unit to assign specialized uniforms
 
+// CO/DC/SL/TL
+if (_typeOfUnit in _slR) then {
+	_rig = _slRig;
+};
+
+// Medic
+if (_typeOfUnit in _medR) then {
+	_rig = _medRig;
+};
+
+// Enginer
+if (_typeOfUnit in _engR) then {
+	_rig = _engRig;
+};
+
 // Light
 if (_typeOfUnit in _light) then {
 	_rig = _lightRig;
@@ -37,7 +52,15 @@ if (_typeOfUnit in _pilot) then {
 	_helmet = _pilotHelmet;
 	_uniform = _pilotUniform;
 	_rig = _pilotRig;
-	_glasses = _pilotGlasses
+	_glasses = _pilotGlasses;
+};
+
+// Jet Pilot
+if (_typeOfUnit in _JPilotR) then {
+	_helmet = _JPilotHelmet;
+	_uniform = _JPilotUniform;
+	_rig = _JPilotRig;
+	_glasses = _JPilotGlasses;
 };
 
 // Crew
@@ -66,10 +89,10 @@ if (_typeOfUnit in _ghillie) then {
 
 // Spec Op
 if (_typeOfUnit in _specOp) then {
-	_helmet = _sfHelmet;
-	_uniform = _sfUniform;
-	_rig = _sfRig;
-	_glasses = _sfGlasses;
+	_helmet = _SFHelmet;
+	_uniform = _SFUniform;
+	_rig = _SFRig;
+	_glasses = _SFGlasses;
 };
 
 // Add clothing items to unit
