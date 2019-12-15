@@ -236,7 +236,7 @@ class Params
 		title = "$STR_f_param_weather";
 		values[] = {0,1,2,3,4,5,6,7,8,9};
 		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8,$STR_f_param_weather_Option11};
-		default = 1;
+		default = 9;
 	};
 	
 	class f_param_snow
@@ -253,7 +253,7 @@ class Params
 		title = "Override Fog";
 		values[] = {0,1,2,4};
 		texts[] = {"No Fog","Light Fog","Heavy Fog","Use default"};
-		default = 0;
+		default = 4;
 	};
 
 	class f_param_wind
@@ -261,7 +261,7 @@ class Params
 		title = "Override Wind";
 		values[] = {0,1,2,4};
 		texts[] = {"No Wind","Light Wind","Heavy Wind","Use default"};
-		default = 0;
+		default = 4;
 	};
 
 	class f_param_timeOfDay
@@ -269,7 +269,7 @@ class Params
 		title = "$STR_f_param_timeOfDay";
 		values[] = {0,1,2,3,4,5,6,7,8};
 		texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7,$STR_f_param_timeOfDay_Option8};
-		default = 4;
+		default = 8;
 		function = "f_fnc_setTime"; // This function is called to apply the values
  		isGlobal = 0; // Execute this only on the server
 	};
@@ -285,8 +285,8 @@ class Params
 	class f_param_player_faction_Blufor
 	{
 		title = "Frakcja BLUFOR";
-		values[] = {1,2,3,4,5,6,7,8,9,10};
-		texts[] = {1. US ARMY UCP, 2. US ARMY OCP, 3. USMC Desert, 4. USMC Woodland, 5. Polska Desert, 6. Polska Woodland, 7. US Desert [CW], 8. US Woodland [CW], 9. Everon Defence Forces [U], 10. Altis Defence Forces [U]};
+		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
+		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army (UCP), 8. US Army CW (WD), 9. US Army CW (DS), 10. US Army CW (WT), 11. CDF (WD), 12. CDF (DS), 13. CDF (WT), 14. IDF, 15. BW (WD), 16. BW (DS), 17. ACR (WD), 18. ACR (DS)};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
 	};
@@ -294,8 +294,8 @@ class Params
 	class f_param_player_faction_Opfor
 	{
 		title = "Frakcja OPFOR";
-		values[] = {1,2,3,4,5,6};
-		texts[] = {1. Rosja VDV Desert, 2. Rosja VDV Woodland, 3. Rosja MSV Woodland, 4. Separatyści, 5. ZSRR Desert [CW], 6. ZSRR Woodland [CW]};
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {1. CHdKZ, 2. KPA (korea), 3. VDV (WD), 4. VDV CW (WD), 5. VDV CW (DS), 6. SLA (DS), 7. SLA (WD), 8. SLA (urban/winter), 9. Takistan Army, 10. Takistan Rebels};
 		default = 1;
 		code = "f_param_player_faction_Opfor = %1";
 	};
@@ -303,8 +303,8 @@ class Params
 	class f_param_player_faction_Indfor
 	{
 		title = "Frakcja INDFOR";
-		values[] = {1,2,3,4};
-		texts[] = {1. CDF UN, 2. Ukraina, 3. CDF [CW], 4. Chedaki [CW]};
+		values[] = {1,2,3,4,5,6,7,8};
+		texts[] = {1. NAPA, 2. PMC, 3. RACS (DS), 4. RACS (WD), 5. Takistan Rebels, 6. UN (DS), 7. UN (mountain), 8. Zachodni ultrancjonaliści};
 		default = 1;
 		code = "f_param_player_faction_Indfor = %1";
 	};

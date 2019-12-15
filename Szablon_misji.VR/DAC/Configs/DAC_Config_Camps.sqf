@@ -50,7 +50,7 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_Red_F",["Land_Fire_burning",8,5,0],["CampEAST_EP1",5,0,180],["Logic",10,15,0],0];
 		_campAmmo      = [];
-		_campStatic    = [["rhsgref_ins_Igla_AA_pod",0,12,0,"rhs_msv_engineer"]];
+		_campStatic    = [["CUP_O_ZU23_TK_INS",0,12,0,"CUP_O_TK_INS_Soldier_FNFAL"]];
 		_campAddUnit   = [];
 		_campUserObj   = [["Land_Antenna",5,-5,45]];
 		_campRandomObj = [];

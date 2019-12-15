@@ -394,7 +394,7 @@ switch (_typeofUnit) do
 		["msamag"] call _backpack;
 	};
 
-// LOADOUT: HEAVY SAM GUNNER
+// LOADOUT: GMG GUNNER
 	case "hsamg":
 	{
 		_unit addmagazines [_carbinemag,5];
@@ -407,7 +407,7 @@ switch (_typeofUnit) do
 		["hsamg"] call _backpack;
 	};
 
-// LOADOUT: HEAVY SAM ASSISTANT GUNNER
+// LOADOUT: GMG ASSISTANT GUNNER
 	case "hsamag":
 	{
 		_unit addmagazines [_carbinemag,5];
@@ -589,18 +589,20 @@ switch (_typeofUnit) do
  // LOADOUT: Dowódca sil specjalnych
 	case "divc":
 	{
-		_unit addmagazines [_diverMag1,5];
-		_unit addmagazines [_diverMag2,2];
+		_unit addmagazines [_SFMagTL,7];
+        _unit addmagazines [_glmag,7];
+        _unit addmagazines [_huntIR,2];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_sfPistolMag,2];
+		_unit addmagazines [_SFsecendMag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addweapon _diverWep;
-		_attachments = [_attach2,_silencer1,_scope4,_bipod2];
-		_unit addweapon _sfPistol;
-		_hg_attachments= [_hg_silencer1];
+		_unit addweapon _SFWepTL;
+		_attachments = [_attach1,_silencer1,_scope4];
+		_unit addweapon _SFsecendWep;
+		_hg_attachments= [_hg_silencer1,_hg_attach1];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
+		_unit addItem _huntIR_tab;
 		_unit addMagazines ["Laserbatteries",2];
 		for "_p" from 1 to 4 do {_unit addItem _handcuffs;};
 		["divc"] call _backpack;
@@ -609,15 +611,14 @@ switch (_typeofUnit) do
 // LOADOUT: Medyk sil specjalnych
 	case "divm":
 	{	
-		_unit addmagazines [_diverMag1,5];
-		_unit addmagazines [_diverMag2,2];
+		_unit addmagazines [_SFMagM,4];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_sfPistolMag,2];
+		_unit addmagazines [_SFsecendMag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addweapon _diverWep;
-		_attachments = [_attach2,_silencer1,_scope4,_bipod2];
+		_unit addweapon _SFWepM;
+		_attachments = [_attach1,_silencer1,_scope4,_bipod1];
 		_unit addweapon _sfPistol;
-		_hg_attachments= [_hg_silencer1];
+		_hg_attachments= [_hg_silencer1,_hg_attah1];
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 4 do {_unit addItem _handcuffs;};
@@ -627,16 +628,17 @@ switch (_typeofUnit) do
 // LOADOUT: Saper sil specjalnych
 	case "divs":
 	{
-		_unit addmagazines [_diverMag1,5];
-		_unit addmagazines [_diverMag2,2];
+		_unit addmagazines [_SFMagTL,7];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_sfPistolMag,2];
+		_unit addmagazines [_huntIR,2];
+		_unit addmagazines [_SFsecendMag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addweapon _diverWep;
-		_attachments = [_attach2,_silencer1,_scope4,_bipod2];
+		_unit addweapon _SFWepTL;
+		_attachments = [_attach1,_silencer1,_scope4];
 		_unit addweapon _sfPistol;
-		_hg_attachments= [_hg_silencer1];
+		_hg_attachments= [_hg_silencer1,_hg_attah1];
 		_unit linkItem _GPS;
+		_unit addItem _huntIR_tab;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 4 do {_unit addItem _handcuffs;};
 		["divs"] call _backpack;
@@ -645,15 +647,14 @@ switch (_typeofUnit) do
 // LOADOUT: Strzelec AT sil specjalnych
 	case "divr":
 	{
-		_unit addmagazines [_diverMag1,5];
-		_unit addmagazines [_diverMag2,2];
+		_unit addmagazines [_SFMagR,10];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_sfPistolMag,2];
+		_unit addmagazines [_SFsecendMag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addweapon _diverWep;
-		_attachments = [_attach2,_silencer1,_scope4,_bipod2];
+		_unit addweapon _SFWepR;
+		_attachments = [];
 		_unit addweapon _sfPistol;
-		_hg_attachments= [_hg_silencer1];
+		_hg_attachments= [_hg_silencer1,_hg_attah1];
 		_unit addweapon _RAT;
 		_unit linkItem _GPS;
 		_unit addWeapon _lornetkaAM;
