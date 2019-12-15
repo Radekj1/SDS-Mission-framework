@@ -171,7 +171,7 @@ class Params
     {
             title = "$STR_f_param_loadouts";
             values[] = {0,1,2};
-            texts[] = {"Lekkie","Średnie","Cieżkie"};
+            texts[] = {"Light","Medium","Heavy"};
             default = 1;
             code = "f_param_backpacks = %1";
     };
@@ -185,7 +185,7 @@ class Params
     {
             title = "$STR_f_param_night_day";
             values[] = {0,1};
-            texts[] = {"Noc","Dzień"};
+            texts[] = {"Night","Day"};
             default = 1;
             code = "f_param_night_day_wyp = %1";
     };
@@ -284,7 +284,7 @@ class Params
 	
 	class f_param_player_faction_Blufor
 	{
-		title = "Frakcja BLUFOR";
+		title = "BLUFOR (players)";
 		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
 		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army (UCP), 8. US Army CW (WD), 9. US Army CW (DS), 10. US Army CW (WT), 11. CDF (WD), 12. CDF (DS), 13. CDF (WT), 14. IDF, 15. BW (WD), 16. BW (DS), 17. ACR (WD), 18. ACR (DS)};
 		default = 1;
@@ -293,7 +293,7 @@ class Params
 	
 	class f_param_player_faction_Opfor
 	{
-		title = "Frakcja OPFOR";
+		title = "OPFOR (players)";
 		values[] = {1,2,3,4,5,6,7,8,9,10};
 		texts[] = {1. CHdKZ, 2. KPA (korea), 3. VDV (WD), 4. VDV CW (WD), 5. VDV CW (DS), 6. SLA (DS), 7. SLA (WD), 8. SLA (urban/winter), 9. Takistan Army, 10. Takistan Rebels};
 		default = 1;
@@ -302,7 +302,7 @@ class Params
 	
 	class f_param_player_faction_Indfor
 	{
-		title = "Frakcja INDFOR";
+		title = "INDFOR (players)";
 		values[] = {1,2,3,4,5,6,7,8};
 		texts[] = {1. NAPA, 2. PMC, 3. RACS (DS), 4. RACS (WD), 5. Takistan Rebels, 6. UN (DS), 7. UN (mountain), 8. Zachodni ultrancjonaliści};
 		default = 1;
@@ -311,7 +311,7 @@ class Params
 	
 	class f_param_Spacer4
     {
-            title = "==================== Ustawienia JIP ====================";
+            title = "==================== JIP settings ====================";
             values[] = {0};
             texts[] = {""};
             default = 0;
@@ -410,9 +410,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Misja udana"; // Misja udala sie, wykonalismy wszystkie cele bez wiekszych strat
+		title = "Mission succeeded"; // Misja udala sie, wykonalismy wszystkie cele bez wiekszych strat
 		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		description = "Congratulations You managed to complete all primary and secondary objectives and avoid heavy casualties";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -420,9 +420,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Misja zakończona"; // Misja udala sie, jednak ponieslimy znaczne straty
+		title = "Mission finished"; // Misja udala sie, jednak ponieslimy znaczne straty
 		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		description = "You managed to complete all primary objectives. Maybe some of secondary objectives. Also You took some casualties.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -430,9 +430,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Misja nieudana"; // Misje nieudana, nie udalo nam sie wykonac zadan, ale wycofalismy sie do bazy lub do bezpiecznego terenu
+		title = "Mission failed"; // Misje nieudana, nie udalo nam sie wykonac zadan, ale wycofalismy sie do bazy lub do bezpiecznego terenu
 		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
+		description = "You did not complete primary objectives but at least some of You managed to survivr to tell the tale.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -440,9 +440,9 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Porażka"; // Misja nieudana, wszyscy zgineli
+		title = "Defeat"; // Misja nieudana, wszyscy zgineli
 		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		description = "Everything is lost, You all died and failed Your objectives. Shame on You!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
