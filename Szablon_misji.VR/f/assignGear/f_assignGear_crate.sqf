@@ -1,4 +1,3 @@
-
 // CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"blu_f"] call f_fnc_assignGear
 	case "v_car":
 	{
@@ -91,7 +90,7 @@
 		
 	};
 
-// CRATE: Mała skrzynka, amunicja dla jednego teamu
+// CRATE: Small ammo crate - should be enough for one fireteam
 	case "crate_small":
 
 	{
@@ -107,8 +106,6 @@
 		_unit addMagazineCargoGlobal [_smgmag, 5];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addWeaponCargoGlobal [_RAT, 2];
-		_unit addMagazineCargoGlobal [_MMGmag, 5];
-		_unit addMagazineCargoGlobal [_MATmag1, 5];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 2];
@@ -116,7 +113,7 @@
 		_unit addItemCargoGlobal [_IRstrobe, 30];
 	};
 
-// CRATE: Średnia Skrzynka , Amunicja dla jednej sekcji
+// CRATE: Medium ammo crate = should be enough for one squad
 	case "crate_med":
 
 	{
@@ -141,7 +138,7 @@
 		_unit addItemCargoGlobal [_IRstrobe, 50];
 	};
 
-// CRATE: Duża skrzynka, amunicja dla 1 plutonu
+// CRATE: Big ammo crate = should be enoug for platoon to rearm
 	case "crate_large":
 	
 	{

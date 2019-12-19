@@ -11,19 +11,19 @@ _mycrate = "";
 
 switch (_typeofCrate) do
 {
-	case "crate_small":        { _mycrate = "Box_EAF_Ammo_F"; }; 
-	case "crate_med":          { _mycrate = "I_EAF_supplyCrate_F"; };
-	case "crate_large":        { _mycrate = "I_E_CargoNet_01_ammo_F"; };
-	case "crate_small_explo":  { _mycrate = "Box_EAF_AmmoOrd_F"; }; 
-	case "crate_large_explo":  { _mycrate = "Box_EAF_AmmoOrd_F"; };
-	case "crate_smallmedical": { _mycrate = "Box_I_E_UAV_06_medical_F"; };
+	case "crate_small":        { _mycrate = "Box_NATO_Ammo_F"; }; 
+	case "crate_med":          { _mycrate = "B_supplyCrate_F"; };
+	case "crate_large":        { _mycrate = "B_CargoNet_01_ammo_F"; };
+	case "crate_small_explo":  { _mycrate = "Box_NATO_AmmoOrd_F"; }; 
+	case "crate_large_explo":  { _mycrate = "Box_NATO_AmmoOrd_F"; };
+	case "crate_smallmedical": { _mycrate = "Box_B_UAV_06_medical_F"; };
 	case "crate_bigmedical":   { _mycrate = "ACE_medicalSupplyCrate"; };
-	case "crate_night_small":  { _mycrate = "Box_EAF_Support_F"; };
-	case "crate_night_big":    { _mycrate = "Box_EAF_Equip_F"; };	
-	case "crate_mmg":          { _mycrate = "Box_EAF_WpsSpecial_F"; };  
-	case "crate_mat":		   { _mycrate = "Box_EAF_WpsLaunch_F"; }; 
-	case "crate_sam":		   { _mycrate = "Box_EAF_WpsLaunch_F"; };
-	case "crate_hat":          { _mycrate = "Box_EAF_WpsLaunch_F"; };
+	case "crate_night_small":  { _mycrate = "Box_NATO_Equip_F"; };
+	case "crate_night_big":    { _mycrate = "Box_NATO_Equip_F"; };	
+	case "crate_mmg":          { _mycrate = "Box_NATO_WpsSpecial_F"; };  
+	case "crate_mat":		   { _mycrate = "Box_NATO_WpsLaunch_F"; }; 
+	case "crate_sam":		   { _mycrate = "Box_NATO_WpsLaunch_F"; };
+	case "crate_hat":          { _mycrate = "Box_NATO_WpsLaunch_F"; };
 	case "crate_ACRE":		   { _mycrate = "ACRE_RadioSupplyCrate"; };
 };
 
@@ -47,33 +47,16 @@ if(_mycrate != "") then
 };
 
 /*
-_null = this addAction ["Mała skrzynia z bronią", "f\assignGear\SpawnCrate.sqf", ["crate_small",faction1] ]; 
-_null = this addAction ["Średnia skrzynia z bronią", "f\assignGear\SpawnCrate.sqf", ["crate_med",faction1] ]; 
-_null = this addAction ["Duża skrzynia z bronią", "f\assignGear\SpawnCrate.sqf", ["crate_large",faction1] ]; 
-_null = this addAction ["Mała skrzynia z ładunkami", "f\assignGear\SpawnCrate.sqf", ["crate_small_explo",faction1] ]; 
-_null = this addAction ["Duża skrzynia z ładunkami", "f\assignGear\SpawnCrate.sqf", ["crate_large_explo",faction1] ]; 
-_null = this addAction ["Mała skrzynia medyczna", "f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",faction1] ]; 
-_null = this addAction ["Duża skrzynia medyczna", "f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",faction1] ]; 
-_null = this addAction ["Mała skrzynia z wypo nocnym", "f\assignGear\SpawnCrate.sqf", ["crate_night_small",faction1] ]; 
-_null = this addAction ["Duża skrzynia z wypo nocnym", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ]; 
-_null = this addAction ["Amunicja MMG", "f\assignGear\SpawnCrate.sqf", ["crate_mmg",faction1] ]; 
-_null = this addAction ["Amunicja MAT", "f\assignGear\SpawnCrate.sqf", ["crate_mat",faction1] ]; 
-_null = this addAction ["Amunicja SAM", "f\assignGear\SpawnCrate.sqf", ["crate_sam",faction1] ]; 
-_null = this addAction ["Amunicja HAT", "f\assignGear\SpawnCrate.sqf", ["crate_hat",faction1] ];
-/*
-
-/*
-_null = this addAction ["Mała skrzynia z bronią", "f\assignGear\SpawnCrate.sqf", ["crate_small",faction1] ]; 
-_null = this addAction ["Średnia skrzynia z bronią", "f\assignGear\SpawnCrate.sqf", ["crate_med",faction1] ]; 
-_null = this addAction ["Duża skrzynia z bronią", "f\assignGear\SpawnCrate.sqf", ["crate_large",faction1] ]; 
-_null = this addAction ["Mała skrzynia z ładunkami", "f\assignGear\SpawnCrate.sqf", ["crate_small_explo",faction1] ]; 
-_null = this addAction ["Mała skrzynia medyczna", "f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",faction1] ]; 
-_null = this addAction ["Duża skrzynia medyczna", "f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",faction1] ]; 
-_null = this addAction ["Mała skrzynia z wypo nocnym", "f\assignGear\SpawnCrate.sqf", ["crate_night_small",faction1] ]; 
-_null = this addAction ["Duża skrzynia z wypo nocnym", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ]; 
-_null = this addAction ["Amunicja MMG", "f\assignGear\SpawnCrate.sqf", ["crate_mmg",faction1] ]; 
-_null = this addAction ["Amunicja MAT", "f\assignGear\SpawnCrate.sqf", ["crate_mat",faction1] ]; 
-_null = this addAction ["Amunicja SAM", "f\assignGear\SpawnCrate.sqf", ["crate_sam",faction1] ]; 
-_null = this addAction ["Amunicja HAT", "f\assignGear\SpawnCrate.sqf", ["crate_hat",faction1] ];
-_null = this addAction ["Radia", "f\assignGear\SpawnCrate.sqf", ["crate_ACRE",faction1] ];
+_null = this addAction ["Small ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_small",faction1] ]; 
+_null = this addAction ["Medium ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_med",faction1] ]; 
+_null = this addAction ["Big ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_large",faction1] ]; 
+_null = this addAction ["Explosives", "f\assignGear\SpawnCrate.sqf", ["crate_small_explo",faction1] ]; 
+_null = this addAction ["Small medical", "f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",faction1] ]; 
+_null = this addAction ["Big medcial", "f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",faction1] ]; 
+_null = this addAction ["Night equipment", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ]; 
+_null = this addAction ["MMG ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_mmg",faction1] ]; 
+_null = this addAction ["MAT ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_mat",faction1] ]; 
+_null = this addAction ["SAM ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_sam",faction1] ]; 
+_null = this addAction ["HAT ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_hat",faction1] ];
+_null = this addAction ["Radios", "f\assignGear\SpawnCrate.sqf", ["crate_ACRE",faction1] ];
 /*

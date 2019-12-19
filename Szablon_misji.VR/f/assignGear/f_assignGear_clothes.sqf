@@ -29,7 +29,10 @@ if (_typeOfUnit in _slR) then {
 
 // Medic
 if (_typeOfUnit in _medR) then {
+	_helmet = _medHelmet;
+	_uniform = _medUniform;
 	_rig = _medRig;
+	_glasses = _medGlasses;
 };
 
 // Enginer
