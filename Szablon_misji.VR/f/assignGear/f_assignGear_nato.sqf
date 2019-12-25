@@ -919,45 +919,45 @@ _SFsecendMag = "rhsusf_mag_17Rnd_9x19_JHP";
 // Equipment for special clases
 
 // Light machinegun
-_AR = "arifle_MX_SW_F";
-_ARmag = "100Rnd_65x39_caseless_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
+_AR = "UK3CB_BAF_L110A1";
+_ARmag = "UK3CB_BAF_556_100Rnd";
+_ARmag_tr = "UK3CB_BAF_556_100Rnd_T";
 
 // Medium machinegun
-_MMG = "MMG_02_sand_F";
-_MMGmag = "130Rnd_338_Mag";
-_MMGmag_tr = "ACE_130Rnd_338_Mag_green";
+_MMG = "UK3CB_BAF_L7A2";
+_MMGmag = "UK3CB_BAF_762_100Rnd";
+_MMGmag_tr = "UK3CB_BAF_762_100Rnd_T";
 
 // Marksman
-_DMrifle = "srifle_EBR_F";
-_DMriflemag = "20Rnd_762x51_Mag";
+_DMrifle = "UK3CB_BAF_L129A1";
+_DMriflemag = "UK3CB_BAF_762_L42A1_20Rnd";
 
 // Light AT
-_RAT = "launch_NLAW_F";
-_RATmag = "NLAW_F";
+_RAT = "rhs_weap_m72a7";
+//_RATmag = "NLAW_F";
 
 // Medium anti tank launcher
-_MAT = "launch_MRAWS_sand_F";
-_MATmag1 = "MRAWS_HEAT_F";
-_MATmag2 = "MRAWS_HE_F";
-//_MAT_sight = "";
+_MAT = "rhs_optic_maaws";
+_MATmag1 = "rhs_mag_maaws_HEAT";
+_MATmag2 = "rhs_mag_maaws_HEDP";
+_MAT_sight = "rhs_mag_maaws_HEAT";
 //_MATsptr = "";
 
 // Surface-air launcher
-_SAM = "launch_B_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "rhs_weap_fim92";
+_SAMmag = "rhs_fim92_mag";
 
 // Heavy anti tank launcher
-_HAT = "launch_B_Titan_short_F";		
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+_HAT = "rhs_weap_fgm148";		
+_HATmag1 = "rhs_fgm148_magazine_AT";
+_HATmag2 = "rhs_fgm148_magazine_AT";
 _HAT_Mobile = true;
 
 // _HAT_Mobile = true; /true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
 
 // Sniper
-_SNrifle = "srifle_LRR_F";
-_SNrifleMag = "7Rnd_408_Mag";
+_SNrifle = "UK3CB_BAF_L135A1";
+_SNrifleMag = "UK3CB_BAF_127_10Rnd";
 
 // ====================================================================================
 
@@ -977,8 +977,8 @@ _bagMs = "B_Kitbag_rgr";	//Backpack for medic
 _bagMm = "B_Carryall_oli";	//Backpack for medic
 _bagMl = "B_Bergen_mcamo_F";	//Backpack for medic
 
-_bagRadio = "B_RadioBag_01_mtp_F";
-_bagTL = "B_FieldPack_blk";
+_bagRadio = "UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A";
+_bagTL = "UK3CB_BAF_B_Bergen_DPMT_SL_A";
 
 _bagENGs = "B_AssaultPack_blk";
 _bagENGm = "B_FieldPack_blk";
