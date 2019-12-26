@@ -6,6 +6,8 @@
 /*
 
 	1. NATO
+	2. BAF (MTP)
+	3. BAF (WD)
 
 */
 // ====================================================================================
@@ -827,7 +829,7 @@ if (_isMan) then {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //*****************************************************************************************************
 
-	//NATO
+	//BAF (WD)
 	case 3: 
 	{
 // Main weapond attachments
@@ -1012,15 +1014,15 @@ _baggmgag = "B_HMG_01_support_F";				// used by GMG assistant gunner
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
 _baseUniform = ["UK3CB_BAF_U_CombatUniform_DPMT"];
-_baseHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
+_baseHelmet = ["UK3CB_BAF_H_Mk6_DPMT_B", "UK3CB_BAF_H_Mk6_DPMT_C", "UK3CB_BAF_H_Mk6_DPMT_F"];
 _baseGlasses = [];
 
 // Kamizelki
-_slRig = ["V_PlateCarrierGL_blk"];
-_engRig = ["V_PlateCarrierSpec_blk"];
-_lightRig = ["V_PlateCarrier1_blk"];
-_mediumRig = ["V_PlateCarrier2_blk"];
-_heavyRig = ["V_PlateCarrierSpec_blk"];
+_slRig = ["UK3CB_BAF_V_Osprey_DPMT3"];
+_engRig = ["UK3CB_BAF_V_Osprey_DPMT4"];
+_lightRig = ["UK3CB_BAF_V_Osprey_DPMT7", "UK3CB_BAF_V_Osprey_DPMT6"];
+_mediumRig = ["UK3CB_BAF_V_Osprey_DPMT2", "UK3CB_BAF_V_Osprey_DPMT5", "UK3CB_BAF_V_Osprey_DPMT8"];
+_heavyRig = ["UK3CB_BAF_V_Osprey_DPMT4"];
 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
@@ -1039,14 +1041,14 @@ _ghillie = ["sn","sp"];
 
 //
 _medUniform = ["UK3CB_BAF_U_CombatUniform_DPMT_ShortSleeve"];
-_medHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
-_medRig = ["V_TacVest_blk"];
+_medHelmet = ["UK3CB_BAF_H_Mk6_DPMT_D", "UK3CB_BAF_H_Mk6_DPMT_E"];
+_medRig = ["UK3CB_BAF_V_Osprey_DPMT9"];
 _medGlasses = [];
 
 // Heli Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_BandollierB_blk"];
+_pilotUniform = ["UK3CB_BAF_U_HeliPilotCoveralls_RAF"];
+_pilotHelmet = ["UK3CB_BAF_H_PilotHelmetHeli_A"];
+_pilotRig = ["UK3CB_BAF_V_Pilot_DPMT"];
 _pilotGlasses = [];
 
 // Jet Pilot
@@ -1056,9 +1058,9 @@ _JPilotRig = ["V_Rangemaster_belt"];
 _JPilotGlasses = [];
 
 // Crew
-_crewUniform = ["U_B_CombatUniform_mcam_tshirt"];
-_crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_Chestrig_blk"];
+_crewUniform = ["UK3CB_BAF_U_CrewmanCoveralls_RTR"];
+_crewHelmet = ["UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A", "UK3CB_BAF_H_CrewHelmet_DPMT_A"];
+_crewRig = ["UK3CB_BAF_V_Osprey_DPMT1"];
 _crewGlasses = [];
 
 // Divers
