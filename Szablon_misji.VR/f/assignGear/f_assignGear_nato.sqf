@@ -965,26 +965,26 @@ _SNrifleMag = "UK3CB_BAF_127_10Rnd";
 
 _parachute = "B_Parachute";
 
-_bagsmall = "B_Kitbag_mcamo";
-_bagmedium = "B_Carryall_mcamo";
-_baglarge =  "B_Bergen_mcamo_F";
+_bagsmall = "UK3CB_BAF_B_Kitbag_DPMT";
+_bagmedium = "UK3CB_BAF_B_Bergen_DPMT_Rifleman_B";
+_baglarge =  "UK3CB_BAF_B_Carryall_DPMT";
 
-_bagSupSmall = "B_Kitbag_cbr";
-_bagSupMedium = "B_Carryall_cbr";
-_bagSupLarge =  "B_Bergen_mcamo_F";
+_bagSupSmall = "UK3CB_BAF_B_Kitbag_OLI";
+_bagSupMedium = "UK3CB_BAF_B_Bergen_OLI_Rifleman_B";
+_bagSupLarge =  "UK3CB_BAF_B_Carryall_OLI";
 
-_bagMs = "B_Kitbag_rgr";	//Backpack for medic
-_bagMm = "B_Carryall_oli";	//Backpack for medic
-_bagMl = "B_Bergen_mcamo_F";	//Backpack for medic
+_bagMs = "UK3CB_BAF_B_Kitbag_OLI";	//Backpack for medic
+_bagMm = "UK3CB_BAF_B_Bergen_OLI_Rifleman_B";	//Backpack for medic
+_bagMl = "UK3CB_BAF_B_Carryall_OLI";	//Backpack for medic
 
 _bagRadio = "UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A";
 _bagTL = "UK3CB_BAF_B_Bergen_DPMT_SL_A";
 
-_bagENGs = "B_AssaultPack_blk";
-_bagENGm = "B_FieldPack_blk";
-_bagENGl = "B_TacticalPack_blk";
+_bagENGs = "UK3CB_BAF_B_Kitbag_DPMT";
+_bagENGm = "UK3CB_BAF_B_Bergen_DPMT_Rifleman_B";
+_bagENGl = "UK3CB_BAF_B_Carryall_DPMT";
 
-_bagMAT = "B_Bergen_mcamo_F";	// Plecak dla MAT
+_bagMAT = "UK3CB_BAF_B_Carryall_OLI";	// Plecak dla MAT
 
 _bagSF = "B_Kitbag_sgg";
 
@@ -1011,7 +1011,7 @@ _baggmgag = "B_HMG_01_support_F";				// used by GMG assistant gunner
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_vest"];
+_baseUniform = ["UK3CB_BAF_U_CombatUniform_DPMT"];
 _baseHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
 _baseGlasses = [];
 
@@ -1038,7 +1038,7 @@ _sfR = ["sftl","sfm","sfat","sfs"];
 _ghillie = ["sn","sp"];
 
 //
-_medUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
+_medUniform = ["UK3CB_BAF_U_CombatUniform_DPMT_ShortSleeve"];
 _medHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
 _medRig = ["V_TacVest_blk"];
 _medGlasses = [];
