@@ -290,8 +290,8 @@ _smgmag_tr = "30Rnd_9x21_Mag_SMG_02_Tracer_Green";
 // GL (used by FTL,TL,CO,PLT and Grenadier)
 _glrifle = "UK3CB_BAF_L119A1_UKUGL";
 _glriflemag = "UK3CB_BAF_556_30Rnd";
-_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
-_glmag = "UK3CB_BAF_1Rnd_HE_Grenade_Shell";
+_glriflemag_tr = "UK3CB_BAF_556_30Rnd_T";
+_glmag = "1Rnd_HE_Grenade_shell";
 
 // Pistol 
 _pistol = "rhsusf_weap_m9";
