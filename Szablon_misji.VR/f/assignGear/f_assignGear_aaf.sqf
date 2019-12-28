@@ -2263,7 +2263,7 @@ _medGlasses = [];
 
 // Heli Pilot
 _pilotUniform = ["rhssaf_uniform_heli_pilot"];
-_pilotHelmet = ["rhs_zsh7a_mike_alt","rhs_zsh7a_mike"];
+_pilotHelmet = ["rhs_zsh7a_mike_green_alt","rhs_zsh7a_mike_green"];
 _pilotRig = ["rhssaf_vest_md99_md2camo"];
 _pilotGlasses = [];
 
