@@ -303,8 +303,8 @@ class Params
 	class f_param_player_faction_Indfor
 	{
 		title = "INDFOR (players)";
-		values[] = {1,2,3,4,5,6};
-		texts[] = {1. AAF 2015, 2. SAF (WD) | CW |, 3.  SAF (WD) | MD |, 4. SAF (DS) | MD |, 5. SAF UN (WD) | MD |, 6. SAF UN (DS) | MD |};
+		values[] = {1,2,3,4,5,6,7};
+		texts[] = {1. AAF 2015, 2. SAF (WD) | CW |, 3.  SAF (WD) | MD |, 4. SAF (DS) | MD |, 5. SAF UN (WD) | MD |, 6. SAF UN (DS) | MD |, 7. SAF (WD) | U |};
 		default = 1;
 		code = "f_param_player_faction_Indfor = %1";
 	};
