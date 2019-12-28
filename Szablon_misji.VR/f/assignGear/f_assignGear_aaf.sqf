@@ -2214,8 +2214,8 @@ _bagSOFLAM = "B_Static_Designator_01_weapon_F";
 _baghmgg = "RHS_DShkM_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_DShkM_TripodLow_Bag";			// used by Heavy MG assistant gunner
 
-_baghatg = "RHS_Kornet_Gun_Bag";					// used by Heavy AT gunner
-_baghatag = "RHS_Kornet_Tripod_Bag";				// used by Heavy AT assistant gunner
+_baghatg = "RHS_Metis_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RHS_Metis_Tripod_Bag";				// used by Heavy AT assistant gunner
 
 _bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
