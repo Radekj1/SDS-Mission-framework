@@ -2035,6 +2035,606 @@ if (_isMan) then {
 
 };
 
+//*****************************************************************************************************
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//*****************************************************************************************************
+
+	//DK (WD) | CW
+	case 7: 
+	{
+// Main weapond attachments
+
+_attach1 = "acc_pointer_IR";	// Laser
+_attach2 = "acc_flashlight";	// Flashlight
+//_attach3 = "";				// Laser + Flashlight
+
+_silencer1 = "muzzle_snds_H";			// Silencer for basic weapon
+_silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
+
+_scope1 = "optic_Holosight";			// Basic scope
+_scope2 = "optic_DMS";					// Additional scope (for SF etc.)
+_scope3 = "gm_feroz24_blk";					// Sniper scope
+
+_bipod1 = "bipod_01_F_blk";				// Bipod for basic weapon
+_bipod2 = "bipod_01_F_snd";				// Bipod for additional weapon (for SF etc.)
+
+// What addons should be added to eatch unit
+
+_loadout_night_day = f_param_night_day_wyp;
+if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+	_attachments = [];		//For night
+} 
+else {
+	_attachments = [];		//For day
+};
+
+/*
+[] = no addons will be added
+[_attach1,_scope1] = will add included addons
+false = will not change anything, so if weapon by default have scope it will stay
+*/
+
+// ====================================================================================
+
+// Secondary weapon attachemnts
+_hg_silencer1 = "muzzle_snds_acp";
+_hg_attach1 = "acc_flashlight_pistol";
+_hg_scope1 = "optic_MRD";
+_hg_attachments= [];
+
+// ====================================================================================
+
+// Weapons
+
+// Basic weapon (its for most of basic units, like rifleman etc.)
+_rifle = "UK3CB_M16A2";
+_riflemag = "UK3CB_BAF_556_30Rnd";
+_riflemag_tr = "UK3CB_BAF_556_30Rnd_T";
+
+// Light/short version (its for units with additional equipment, like medic etc.)
+_carbine = "UK3CB_M16_Carbine";
+_carbinemag = "UK3CB_BAF_556_30Rnd";
+_carbinemag_tr = "UK3CB_BAF_556_30Rnd_T";
+
+// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smg = "UK3CB_MP5";
+_smgmag = "30Rnd_9x21_Mag";
+_smgmag_tr = "30Rnd_9x21_Mag";
+
+// GL version (mostly for commanders but also for grenadiers)
+_glrifle = "UK3CB_M16A2_UGL";
+_glriflemag = "UK3CB_BAF_556_30Rnd";
+_glriflemag_tr = "UK3CB_BAF_556_30Rnd_T";
+_glmag = "1Rnd_HE_Grenade_shell";
+
+// Pistol (for everyone YAY!)
+_pistol = "UK3CB_BAF_L105A1";
+_pistolmag = "UK3CB_BAF_9_15Rnd";
+
+/*
+// Siły specjalne
+_SFWepTL = "rhs_weap_hk416d10_m320";
+_SFMagTL = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+
+_SFWepM = "rhs_weap_m249_pip_S_vfg";
+_SFMagM = "rhsusf_100Rnd_556x45_soft_pouch";
+
+_SFWepR = "rhs_weap_M590_5RD";
+_SFMagR = "rhsusf_5Rnd_00Buck";
+
+_SFsecendWep = "rhsusf_weap_glock17g4";
+_SFsecendMag = "rhsusf_mag_17Rnd_9x19_JHP";
+*/
+
+// ====================================================================================
+
+// Equipment for special clases
+
+// Light machinegun
+_AR = "gm_lmgm62_blk";
+_ARmag = "gm_120Rnd_762x51mm_B_T_DM21_mg3_grn";
+_ARmag_tr = "gm_120Rnd_762x51mm_B_T_DM21_mg3_grn";
+
+// Medium machinegun
+_MMG = "UK3CB_M60";
+_MMGmag = "UK3CB_100Rnd_762x51_B_M60";
+_MMGmag_tr = "UK3CB_100Rnd_762x51_T_M60";
+
+// Marksman
+_DMrifle = "gm_gvm75_oli";
+_DMriflemag = "gm_20Rnd_762x51mm_B_T_DM21_g3_blk";
+
+// Light AT
+_RAT = "rhs_weap_m72a7";
+//_RATmag = "NLAW_F";
+
+// Medium anti tank launcher
+_MAT = "gm_pzf84_oli";
+_MATmag1 = "gm_1Rnd_84x245mm_heat_t_DM12a1_carlgustaf";
+_MATmag2 = "gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf";
+_MAT_sight = "gm_feroz2x17_pzf84_blk";
+//_MATsptr = "";
+
+// Surface-air launcher
+_SAM = "rhs_weap_fim92";
+_SAMmag = "rhs_fim92_mag";
+
+// Heavy anti tank launcher
+_HAT = "launch_B_Titan_short_F";		
+_HATmag1 = "Titan_AT";
+_HATmag2 = "Titan_AP";
+_HAT_Mobile = false;
+
+// _HAT_Mobile = true; /true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
+
+// Sniper
+_SNrifle = "rhs_weap_M107";
+_SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
+
+// ====================================================================================
+
+// Bagbacks
+
+_parachute = "B_Parachute";
+
+_bagsmall = "B_FieldPack_oli";
+_bagmedium = "gm_dk_army_backpack_73_oli";
+_baglarge =  "B_Carryall_oli";
+
+_bagSupSmall = "B_FieldPack_oli";
+_bagSupMedium = "gm_dk_army_backpack_73_oli";
+_bagSupLarge =  "B_Carryall_oli";
+
+_bagMs = "gm_ge_backpack_satchel_80_san";	//Backpack for medic
+_bagMm = "gm_ge_backpack_satchel_80_san";	//Backpack for medic
+_bagMl = "gm_ge_backpack_satchel_80_san";	//Backpack for medic
+
+_bagRadio = "UK3CB_B_B_Radio_Backpack";
+_bagTL = "B_FieldPack_khk";
+
+_bagENGs = "gm_ge_backpack_satchel_80_blk";
+_bagENGm = "gm_ge_backpack_satchel_80_blk";
+_bagENGl = "gm_ge_backpack_satchel_80_blk";
+
+_bagMAT = "B_Bergen_mcamo_F";	// Plecak dla MAT
+
+_bagSF = "B_Kitbag_sgg";
+
+_bagmediumdiver =  "B_SCBA_01_F";	// Diver backpack
+
+_baguav = "B_UAV_01_backpack_F";					// 
+_bagSOFLAM = "B_Static_Designator_01_weapon_F";
+
+_baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "RHS_M2_Tripod_Bag";			// used by Heavy MG assistant gunner
+
+_baghatg = "rhs_Tow_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "rhs_TOW_Tripod_Bag";				// used by Heavy AT assistant gunner
+
+_bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
+_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
+
+_baggmgg = "RHS_Mk19_Gun_Bag";					// used by GMG gunner
+_baggmgag = "RHS_Mk19_Tripod_Bag";				// used by GMG assistant gunner
+
+// ====================================================================================
+
+// Mundury, kamizelki itp.
+
+// Podstawowe mundury
+// Elementy wyposażenia są losowo wybierane z listy
+_baseUniform = ["gm_dk_army_uniform_soldier_84_m84"];
+_baseHelmet = ["gm_dk_headgear_m96_cover_m84", "gm_dk_headgear_m96_oli"];
+_baseGlasses = [];
+
+// Kamizelki
+_slRig = ["gm_dk_army_vest_m00_m84_rifleman"];
+_engRig = ["gm_dk_army_vest_m00_m84"];
+_lightRig = ["gm_dk_army_vest_m00_m84"];
+_mediumRig = ["gm_dk_army_vest_m00_m84_rifleman"];
+_heavyRig = ["gm_dk_army_vest_m00_m84_machinegunner"];
+
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
+// Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
+
+_slR = ["co", "dc", "ftl"];
+_medR = ["m"];
+_engR = ["eng","engm"];
+_light = ["aar","mmgag","matag","hmgg","hmgag","hatag","msamag"];
+_heavy =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
+_pilot = ["pp","pcc","pc"];
+_JPilotR = ["ps"];
+_crew = ["vc","vg","vd"];
+_diver = ["divc","divr","divs","divm"];
+_sfR = ["sftl","sfm","sfat","sfs"];
+_ghillie = ["sn","sp"];
+
+//
+_medUniform = ["gm_dk_army_uniform_soldier_84_m84"];
+_medHelmet = ["gm_dk_headgear_m96_oli"];
+_medRig = ["gm_dk_army_vest_m00_m84"];
+_medGlasses = [];
+
+// Heli Pilot
+_pilotUniform = ["U_B_HeliPilotCoveralls"];
+_pilotHelmet = ["H_PilotHelmetHeli_B"];
+_pilotRig = ["V_BandollierB_blk"];
+_pilotGlasses = [];
+
+// Jet Pilot
+_JPilotUniform = ["U_B_PilotCoveralls"];
+_JPilotHelmet = ["H_PilotHelmetFighter_B"];
+_JPilotRig = ["V_Rangemaster_belt"];
+_JPilotGlasses = [];
+
+// Crew
+_crewUniform = ["gm_dk_army_uniform_soldier_84_oli"];
+_crewHelmet = ["gm_ge_headgear_crewhat_80_blk"];
+_crewRig = ["gm_dk_army_vest_54_crew"];
+_crewGlasses = [];
+
+// Divers
+_diverUniform =  ["U_B_Wetsuit"];
+_diverHelmet = [];
+_diverRig = ["V_RebreatherB"];
+_diverGlasses = ["G_B_Diving"];
+
+// Special forces
+_SFUniform =  ["U_B_CTRG_Soldier_F"];
+_SFHelmet = ["H_HelmetB_TI_tna_F"];
+_SFRig = ["V_PlateCarrier2_rgr_noflag_F"];
+_SFGlasses = ["G_Balaclava_TI_G_tna_F"];
+
+// Ghillie (sniper/spotter)
+_ghillieUniform = ["U_B_FullGhillie_sard"];
+_ghillieHelmet = [];
+_ghillieRig = ["V_TacVest_oli"];
+_ghillieGlasses = [];
+
+// ====================================================================================
+
+// INTERPRET PASSED VARIABLES
+// The following inrerprets formats what has been passed to this script element
+
+_typeofUnit = toLower (_this select 0);	// Tidy input for SWITCH/CASE statements, expecting something like : r = Rifleman, co = Commanding Officer, rat = Rifleman (AT)
+_unit = _this select 1;					// expecting name of unit; originally passed by using 'this' in unit init
+_isMan = _unit isKindOf "CAManBase";	// We check if we're dealing with a soldier or a vehicle
+
+// ====================================================================================
+
+// This block needs only to be run on an infantry unit
+if (_isMan) then {
+
+	// PREPARE UNIT FOR GEAR ADDITION
+	// The following code removes all existing weapons, items, magazines and backpacks
+
+	removeBackpack _unit;
+	removeAllWeapons _unit;
+	removeAllItemsWithMagazines _unit;
+	removeAllAssignedItems _unit;
+
+// ====================================================================================
+
+	// HANDLE CLOTHES
+	// Handle clothes and helmets and such using the include file called next.
+
+	#include "f_assignGear_clothes.sqf";
+
+// ====================================================================================
+	// Add medical qeuipment to eatch unit (player)	
+	call Medical;
+	
+  };
+  
+// ====================================================================================
+	//Call builder script
+	call Builder;
+	
+	//Add night equipment
+	call Night_Eq_No_NVG;
+
+};
+
+//*****************************************************************************************************
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//*****************************************************************************************************
+
+	//DK (WT) | CW
+	case 8: 
+	{
+// Main weapond attachments
+
+_attach1 = "acc_pointer_IR";	// Laser
+_attach2 = "acc_flashlight";	// Flashlight
+//_attach3 = "";				// Laser + Flashlight
+
+_silencer1 = "muzzle_snds_H";			// Silencer for basic weapon
+_silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
+
+_scope1 = "optic_Holosight";			// Basic scope
+_scope2 = "optic_DMS";					// Additional scope (for SF etc.)
+_scope3 = "gm_feroz24_blk";					// Sniper scope
+
+_bipod1 = "bipod_01_F_blk";				// Bipod for basic weapon
+_bipod2 = "bipod_01_F_snd";				// Bipod for additional weapon (for SF etc.)
+
+// What addons should be added to eatch unit
+
+_loadout_night_day = f_param_night_day_wyp;
+if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+	_attachments = [];		//For night
+} 
+else {
+	_attachments = [];		//For day
+};
+
+/*
+[] = no addons will be added
+[_attach1,_scope1] = will add included addons
+false = will not change anything, so if weapon by default have scope it will stay
+*/
+
+// ====================================================================================
+
+// Secondary weapon attachemnts
+_hg_silencer1 = "muzzle_snds_acp";
+_hg_attach1 = "acc_flashlight_pistol";
+_hg_scope1 = "optic_MRD";
+_hg_attachments= [];
+
+// ====================================================================================
+
+// Weapons
+
+// Basic weapon (its for most of basic units, like rifleman etc.)
+_rifle = "UK3CB_M16A2";
+_riflemag = "UK3CB_BAF_556_30Rnd";
+_riflemag_tr = "UK3CB_BAF_556_30Rnd_T";
+
+// Light/short version (its for units with additional equipment, like medic etc.)
+_carbine = "UK3CB_M16_Carbine";
+_carbinemag = "UK3CB_BAF_556_30Rnd";
+_carbinemag_tr = "UK3CB_BAF_556_30Rnd_T";
+
+// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smg = "UK3CB_MP5";
+_smgmag = "30Rnd_9x21_Mag";
+_smgmag_tr = "30Rnd_9x21_Mag";
+
+// GL version (mostly for commanders but also for grenadiers)
+_glrifle = "UK3CB_M16A2_UGL";
+_glriflemag = "UK3CB_BAF_556_30Rnd";
+_glriflemag_tr = "UK3CB_BAF_556_30Rnd_T";
+_glmag = "1Rnd_HE_Grenade_shell";
+
+// Pistol (for everyone YAY!)
+_pistol = "UK3CB_BAF_L105A1";
+_pistolmag = "UK3CB_BAF_9_15Rnd";
+
+/*
+// Siły specjalne
+_SFWepTL = "rhs_weap_hk416d10_m320";
+_SFMagTL = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+
+_SFWepM = "rhs_weap_m249_pip_S_vfg";
+_SFMagM = "rhsusf_100Rnd_556x45_soft_pouch";
+
+_SFWepR = "rhs_weap_M590_5RD";
+_SFMagR = "rhsusf_5Rnd_00Buck";
+
+_SFsecendWep = "rhsusf_weap_glock17g4";
+_SFsecendMag = "rhsusf_mag_17Rnd_9x19_JHP";
+*/
+
+// ====================================================================================
+
+// Equipment for special clases
+
+// Light machinegun
+_AR = "gm_lmgm62_blk";
+_ARmag = "gm_120Rnd_762x51mm_B_T_DM21_mg3_grn";
+_ARmag_tr = "gm_120Rnd_762x51mm_B_T_DM21_mg3_grn";
+
+// Medium machinegun
+_MMG = "UK3CB_M60";
+_MMGmag = "UK3CB_100Rnd_762x51_B_M60";
+_MMGmag_tr = "UK3CB_100Rnd_762x51_T_M60";
+
+// Marksman
+_DMrifle = "gm_gvm75_oli";
+_DMriflemag = "gm_20Rnd_762x51mm_B_T_DM21_g3_blk";
+
+// Light AT
+_RAT = "rhs_weap_m72a7";
+//_RATmag = "NLAW_F";
+
+// Medium anti tank launcher
+_MAT = "gm_pzf84_oli";
+_MATmag1 = "gm_1Rnd_84x245mm_heat_t_DM12a1_carlgustaf";
+_MATmag2 = "gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf";
+_MAT_sight = "gm_feroz2x17_pzf84_blk";
+//_MATsptr = "";
+
+// Surface-air launcher
+_SAM = "rhs_weap_fim92";
+_SAMmag = "rhs_fim92_mag";
+
+// Heavy anti tank launcher
+_HAT = "launch_B_Titan_short_F";		
+_HATmag1 = "Titan_AT";
+_HATmag2 = "Titan_AP";
+_HAT_Mobile = false;
+
+// _HAT_Mobile = true; /true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
+
+// Sniper
+_SNrifle = "rhs_weap_M107";
+_SNrifleMag = "rhsusf_mag_10Rnd_STD_50BMG_M33";
+
+// ====================================================================================
+
+// Bagbacks
+
+_parachute = "B_Parachute";
+
+_bagsmall = "B_FieldPack_oli";
+_bagmedium = "gm_dk_army_backpack_73_oli";
+_baglarge =  "B_Carryall_oli";
+
+_bagSupSmall = "B_FieldPack_oli";
+_bagSupMedium = "gm_dk_army_backpack_73_oli";
+_bagSupLarge =  "B_Carryall_oli";
+
+_bagMs = "gm_ge_backpack_satchel_80_san";	//Backpack for medic
+_bagMm = "gm_ge_backpack_satchel_80_san";	//Backpack for medic
+_bagMl = "gm_ge_backpack_satchel_80_san";	//Backpack for medic
+
+_bagRadio = "UK3CB_B_B_Radio_Backpack";
+_bagTL = "B_FieldPack_khk";
+
+_bagENGs = "gm_ge_backpack_satchel_80_blk";
+_bagENGm = "gm_ge_backpack_satchel_80_blk";
+_bagENGl = "gm_ge_backpack_satchel_80_blk";
+
+_bagMAT = "B_Bergen_mcamo_F";	// Plecak dla MAT
+
+_bagSF = "B_Kitbag_sgg";
+
+_bagmediumdiver =  "B_SCBA_01_F";	// Diver backpack
+
+_baguav = "B_UAV_01_backpack_F";					// 
+_bagSOFLAM = "B_Static_Designator_01_weapon_F";
+
+_baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
+_baghmgag = "RHS_M2_Tripod_Bag";			// used by Heavy MG assistant gunner
+
+_baghatg = "rhs_Tow_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "rhs_TOW_Tripod_Bag";				// used by Heavy AT assistant gunner
+
+_bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
+_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
+
+_baggmgg = "RHS_Mk19_Gun_Bag";					// used by GMG gunner
+_baggmgag = "RHS_Mk19_Tripod_Bag";				// used by GMG assistant gunner
+
+// ====================================================================================
+
+// Mundury, kamizelki itp.
+
+// Podstawowe mundury
+// Elementy wyposażenia są losowo wybierane z listy
+_baseUniform = ["gm_dk_army_uniform_soldier_84_win"];
+_baseHelmet = ["gm_dk_headgear_m96_cover_wht"];
+_baseGlasses = [];
+
+// Kamizelki
+_slRig = ["gm_dk_army_vest_m00_win_rifleman"];
+_engRig = ["gm_dk_army_vest_m00_win"];
+_lightRig = ["gm_dk_army_vest_m00_win"];
+_mediumRig = ["gm_dk_army_vest_m00_win_rifleman"];
+_heavyRig = ["gm_dk_army_vest_m00_win_machinegunner"];
+
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
+// Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
+
+_slR = ["co", "dc", "ftl"];
+_medR = ["m"];
+_engR = ["eng","engm"];
+_light = ["aar","mmgag","matag","hmgg","hmgag","hatag","msamag"];
+_heavy =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
+_pilot = ["pp","pcc","pc"];
+_JPilotR = ["ps"];
+_crew = ["vc","vg","vd"];
+_diver = ["divc","divr","divs","divm"];
+_sfR = ["sftl","sfm","sfat","sfs"];
+_ghillie = ["sn","sp"];
+
+//
+_medUniform = ["gm_dk_army_uniform_soldier_84_win"];
+_medHelmet = ["gm_dk_headgear_m96_cover_wht"];
+_medRig = ["gm_dk_army_vest_m00_win"];
+_medGlasses = [];
+
+// Heli Pilot
+_pilotUniform = ["U_B_HeliPilotCoveralls"];
+_pilotHelmet = ["H_PilotHelmetHeli_B"];
+_pilotRig = ["V_BandollierB_blk"];
+_pilotGlasses = [];
+
+// Jet Pilot
+_JPilotUniform = ["U_B_PilotCoveralls"];
+_JPilotHelmet = ["H_PilotHelmetFighter_B"];
+_JPilotRig = ["V_Rangemaster_belt"];
+_JPilotGlasses = [];
+
+// Crew
+_crewUniform = ["gm_dk_army_uniform_soldier_84_oli"];
+_crewHelmet = ["gm_ge_headgear_crewhat_80_blk"];
+_crewRig = ["gm_dk_army_vest_54_crew"];
+_crewGlasses = [];
+
+// Divers
+_diverUniform =  ["U_B_Wetsuit"];
+_diverHelmet = [];
+_diverRig = ["V_RebreatherB"];
+_diverGlasses = ["G_B_Diving"];
+
+// Special forces
+_SFUniform =  ["U_B_CTRG_Soldier_F"];
+_SFHelmet = ["H_HelmetB_TI_tna_F"];
+_SFRig = ["V_PlateCarrier2_rgr_noflag_F"];
+_SFGlasses = ["G_Balaclava_TI_G_tna_F"];
+
+// Ghillie (sniper/spotter)
+_ghillieUniform = ["U_B_FullGhillie_sard"];
+_ghillieHelmet = [];
+_ghillieRig = ["V_TacVest_oli"];
+_ghillieGlasses = [];
+
+// ====================================================================================
+
+// INTERPRET PASSED VARIABLES
+// The following inrerprets formats what has been passed to this script element
+
+_typeofUnit = toLower (_this select 0);	// Tidy input for SWITCH/CASE statements, expecting something like : r = Rifleman, co = Commanding Officer, rat = Rifleman (AT)
+_unit = _this select 1;					// expecting name of unit; originally passed by using 'this' in unit init
+_isMan = _unit isKindOf "CAManBase";	// We check if we're dealing with a soldier or a vehicle
+
+// ====================================================================================
+
+// This block needs only to be run on an infantry unit
+if (_isMan) then {
+
+	// PREPARE UNIT FOR GEAR ADDITION
+	// The following code removes all existing weapons, items, magazines and backpacks
+
+	removeBackpack _unit;
+	removeAllWeapons _unit;
+	removeAllItemsWithMagazines _unit;
+	removeAllAssignedItems _unit;
+
+// ====================================================================================
+
+	// HANDLE CLOTHES
+	// Handle clothes and helmets and such using the include file called next.
+
+	#include "f_assignGear_clothes.sqf";
+
+// ====================================================================================
+	// Add medical qeuipment to eatch unit (player)	
+	call Medical;
+	
+  };
+  
+// ====================================================================================
+	//Call builder script
+	call Builder;
+	
+	//Add night equipment
+	call Night_Eq_No_NVG;
+
+};
+
 // ====================================================================================
 // ====================================================================================
 //END CASE STATEMENT		
