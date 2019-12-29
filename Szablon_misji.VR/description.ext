@@ -294,8 +294,8 @@ class Params
 	class f_param_player_faction_Opfor
 	{
 		title = "OPFOR (players)";
-		values[] = {1,2,3,4,5,6,7,8,9,10};
-		texts[] = {1. CHdKZ, 2. KPA (korea), 3. VDV (WD), 4. VDV CW (WD), 5. VDV CW (DS), 6. SLA (DS), 7. SLA (WD), 8. SLA (urban/winter), 9. Takistan Army, 10. Takistan Rebels};
+		values[] = {1,2,3};
+		texts[] = {1. CSAT, 2. PL (WD) | CW |, 3. PL (WT) | CW |};
 		default = 1;
 		code = "f_param_player_faction_Opfor = %1";
 	};
