@@ -742,7 +742,7 @@ _medGlasses = [];
 
 // Heli Pilot
 _pilotUniform = ["gm_pl_army_uniform_soldier_autumn_80_moro"];
-_pilotHelmet = ["rhs_zsh7a_mike", "rhs_zsh7a_mike_alt"];
+_pilotHelmet = ["nva_zsh3_01", "nva_zsh3_02"];
 _pilotRig = ["gm_ge_army_vest_80_officer"];
 _pilotGlasses = [];
 
@@ -1041,7 +1041,7 @@ _medGlasses = [];
 
 // Heli Pilot
 _pilotUniform = ["gm_pl_army_uniform_soldier_autumn_80_moro"];
-_pilotHelmet = ["rhs_zsh7a_mike", "rhs_zsh7a_mike_alt"];
+_pilotHelmet = ["nva_zsh3_01", "nva_zsh3_02"];
 _pilotRig = ["gm_ge_army_vest_80_officer"];
 _pilotGlasses = [];
 
@@ -1340,7 +1340,7 @@ _medGlasses = [];
 
 // Heli Pilot
 _pilotUniform = ["len_lwp_uniform_soldier_80_blue"];
-_pilotHelmet = ["rhs_zsh7a_mike", "rhs_zsh7a_mike_alt"];
+_pilotHelmet = ["nva_zsh3_03", "nva_zsh3_04"];
 _pilotRig = ["gm_ge_army_vest_80_officer"];
 _pilotGlasses = [];
 
@@ -1639,7 +1639,7 @@ _medGlasses = [];
 
 // Heli Pilot
 _pilotUniform = ["len_lwp_uniform_soldier_80_blue"];
-_pilotHelmet = ["rhs_zsh7a_mike", "rhs_zsh7a_mike_alt"];
+_pilotHelmet = ["nva_zsh3_03", "nva_zsh3_04"];
 _pilotRig = ["gm_ge_army_vest_80_officer"];
 _pilotGlasses = [];
 
