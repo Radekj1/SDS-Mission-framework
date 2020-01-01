@@ -13,9 +13,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={4102.7168,141.91344,6081.2427};
-		dir[]={0.066778168,-0.35468978,-0.93272871};
-		up[]={0.025340607,0.93490177,-0.35396218};
-		aside[]={-0.99753827,1.1012353e-006,-0.071424007};
+		dir[]={0.88101435,-0.46151027,0.10520887};
+		up[]={0.45840541,0.88704014,0.054740667};
+		aside[]={0.11859209,4.4627814e-007,-0.99303573};
 	};
 };
 binarizationWanted=0;
@@ -305,7 +305,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=249;
+		items=245;
 		class Item0
 		{
 			dataType="Marker";
@@ -17432,7 +17432,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpCSAT_AH1 = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [VehCSAT_AH1,[0]];";
+						init="call{GrpCSAT_AH1 = group this; [""ps"",this] call f_fnc_assignGear; this moveInTurret [VehCSAT_AH1,[0]];}";
 						name="UnitCSAT_AH1_CP";
 						description="Co-pilot";
 						isPlayable=1;
@@ -17611,7 +17611,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpAAF_AH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
+						init="call{GrpAAF_AH1 = group this; [""ps"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_AH1_CP";
 						description="Co-pilot";
 						isPlayable=1;
@@ -17718,7 +17718,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4088.251,5.0014391,6286.0908};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=6;
@@ -17782,7 +17782,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4093.251,5.0014391,6284.4404};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=4;
@@ -17846,7 +17846,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4083.251,5.0014391,6284.4404};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=4;
@@ -17922,7 +17922,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4133.4326,5.0014391,6284.6787};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=6;
@@ -17986,7 +17986,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4138.4326,5.0014391,6283.0283};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=4;
@@ -18050,7 +18050,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4128.4326,5.0014391,6283.0283};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=4;
@@ -18126,7 +18126,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4171.5547,5.0014391,6282.561};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=6;
@@ -18190,7 +18190,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4176.5547,5.0014391,6280.9106};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=4;
@@ -18254,7 +18254,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4166.5547,5.0014391,6280.9106};
-						angles[]={-0,6.2693238,0};
+						angles[]={0,6.2693238,0};
 					};
 					side="West";
 					flags=4;
@@ -29212,18 +29212,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5531.2949,5.5802579,7667.7554};
+				position[]={5531.2949,5.5803246,7667.7549};
 				angles[]={0,0.014940019,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="_null = this addAction [""Mala skrzynia z bronia"", ""f\assignGear\SpawnCrate.sqf"", [""crate_small"",faction1] ]; " \n "_null = this addAction [""Srednia skrzynia z bronia"", ""f\assignGear\SpawnCrate.sqf"", [""crate_med"",faction1] ]; " \n "_null = this addAction [""Duza skrzynia z bronia"", ""f\assignGear\SpawnCrate.sqf"", [""crate_large"",faction1] ]; " \n "_null = this addAction [""Mala skrzynia medyczna"", ""f\assignGear\SpawnCrate.sqf"", [""crate_smallmedical"",faction1] ]; " \n "_null = this addAction [""Duza skrzynia medyczna"", ""f\assignGear\SpawnCrate.sqf"", [""crate_bigmedical"",faction1] ]; " \n "_null = this addAction [""Mala skrzynia z wypo nocnym"", ""f\assignGear\SpawnCrate.sqf"", [""crate_night_small"",faction1] ]; " \n "_null = this addAction [""Duza skrzynia z wypo nocnym"", ""f\assignGear\SpawnCrate.sqf"", [""crate_night_big"",faction1] ]; " \n "_null = this addAction [""Amunicja MMG"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mmg"",faction1] ]; " \n "_null = this addAction [""Amunicja MAT"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mat"",faction1] ]; " \n "_null = this addAction [""Amunicja SAM"", ""f\assignGear\SpawnCrate.sqf"", [""crate_sam"",faction1] ]; " \n "_null = this addAction [""Amunicja HAT"", ""f\assignGear\SpawnCrate.sqf"", [""crate_hat"",faction1] ];";
+				init="call{_null = this addAction [""Small ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_small"",faction1] ];  " \n "_null = this addAction [""Medium ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_med"",faction1] ];  " \n "_null = this addAction [""Big ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_large"",faction1] ];  " \n "_null = this addAction [""Explosives"", ""f\assignGear\SpawnCrate.sqf"", [""crate_small_explo"",faction1] ];  " \n "_null = this addAction [""Small medical"", ""f\assignGear\SpawnCrate.sqf"", [""crate_smallmedical"",faction1] ];  " \n "_null = this addAction [""Big medcial"", ""f\assignGear\SpawnCrate.sqf"", [""crate_bigmedical"",faction1] ];  " \n "_null = this addAction [""Night equipment"", ""f\assignGear\SpawnCrate.sqf"", [""crate_night_big"",faction1] ];  " \n "_null = this addAction [""MMG ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mmg"",faction1] ];  " \n "_null = this addAction [""MAT ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mat"",faction1] ];  " \n "_null = this addAction [""SAM ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_sam"",faction1] ];  " \n "_null = this addAction [""HAT ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_hat"",faction1] ]; " \n "_null = this addAction [""Radios"", ""f\assignGear\SpawnCrate.sqf"", [""crate_ACRE"",faction1] ];}";
 			};
 			id=592;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.0080666542;
+			atlOffset=-0.007999897;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30147,46 +30147,6 @@ class Mission
 				};
 				nAttributes=2;
 			};
-		};
-		class Item245
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=621;
-			atlOffset=-5;
-		};
-		class Item246
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=624;
-			atlOffset=-5;
-		};
-		class Item247
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=629;
-			atlOffset=-5;
-		};
-		class Item248
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=639;
-			atlOffset=-5;
 		};
 	};
 };

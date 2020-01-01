@@ -508,7 +508,7 @@ case "matag":
     {
 	// LOADOUT: LIGHT
 	if (_loadout == 0) then {
-		_unit addBackpack _bagSupSmall;
+		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
@@ -520,7 +520,7 @@ case "matag":
 	};
 	// LOADOUT: MEDIUM
 	if (_loadout == 1) then {
-		_unit addBackpack _bagSupMedium;
+		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
@@ -532,7 +532,7 @@ case "matag":
 	};
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
-		_unit addBackpack _bagSupLarge;
+		_unit addBackpack _bagMAT;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
