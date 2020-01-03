@@ -24,7 +24,6 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Characters_F",
-	"ace_nouniformrestrictions",
 	"ace_gforces",
 	"ace_parachute",
 	"ace_explosives",
@@ -36,7 +35,6 @@ addons[]=
 	"A3_Soft_F_Exp_Truck_01",
 	"ace_cargo",
 	"A3_Armor_F_Beta_APC_Wheeled_01",
-	"kat_aceMisc",
 	"acre_sys_intercom",
 	"A3_Armor_F_Gamma_MBT_01",
 	"A3_Armor_F_EPC_MBT_01",
@@ -91,8 +89,8 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="ace_nouniformrestrictions";
-			name="ACE3 - No Uniform Restrictions";
+			className="ace_parachute";
+			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -161,9 +159,9 @@ class AddonsMetaData
 		};
 		class Item13
 		{
-			className="kat_aceMisc";
-			name="kat_aceMisc";
-			author="Katalam";
+			className="acre_sys_intercom";
+			name="ACRE2 - Vehicle Intercom";
+			author="ACRE2Team";
 		};
 		class Item14
 		{
