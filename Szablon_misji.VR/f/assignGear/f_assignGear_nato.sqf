@@ -6,7 +6,7 @@
 /*
 
 	1. NATO
-	2.  BAF (MTP) | MD |  
+	2. BAF (MTP) | MD |  
  	3. BAF (WD) | MD |  
  	4. BAF (DS) | MD |  
  	5. CDF (WD) | MD | PARA
@@ -27,12 +27,9 @@
 // Sprzet medyczny
 _personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
 _surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-_AED = "KAT_X_AED";							// AED from KAT
+//_AED = "KAT_X_AED";							// AED from KAT
 //_AED = "adv_aceCPR_AED";					// AED from ACE
-_splint = "adv_aceSplint_splint";			// Szyny do usztwniania
-
-_tubeOld = "KAT_guedel";					//
-_tubeNew = "KAT_larynx";					//
+_splint = "ACE_splint";			// Szyny do usztwniania
 
 _bandage = "ACE_fieldDressing";				// Ogólny bandaż dla piechoty
 _bandage_elastic = "ACE_elasticBandage";	// Bandaż elastyczny
@@ -43,18 +40,13 @@ _tourniquet ="ACE_tourniquet";				// Opaska uciskowa
 _epinephrine = "ACE_epinephrine";			// Epinefryna (zwiększa tętno)
 _morphine = "ACE_morphine";					// Morfina (niweluje ból, rozrzedza krew)
 _adenosine = "ACE_adenosine";				// Adenozyna (obniża tętno)
-_atropine = "ACE_atropine";					// Atropina (obniża tętno)
+//_atropine = "ACE_atropine";					// Atropina (obniża tętno)
 
-//KAT Blood
-_blood_s = "KAT_bloodIV_O_250";				// Blood 200 ml
-_blood_m = "KAT_bloodIV_O_500";				// Blood 500 ml
-_blood_b = "KAT_bloodIV_O";					// Blood 1000 ml
-
-/* ACE Blood
+// ACE Blood
 _blood_s = "ACE_bloodIV_250";				// Blood 200 ml
 _blood_m = "ACE_bloodIV_500";				// Blood 500 ml
 _blood_b = "ACE_bloodIV";					// Blood 1000 ml
-*/
+
 _plasma_s = "ACE_plasmaIV_250";				// Plasma 200 ml
 _plasma_m = "ACE_plasmaIV_500";				// Plasma 500 ml
 _plasma_b = "ACE_plasmaIV";					// Plasma 1000 ml
