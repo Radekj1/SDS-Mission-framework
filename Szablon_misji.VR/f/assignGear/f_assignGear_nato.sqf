@@ -15,7 +15,11 @@
  	8. DK (WT) | CW |  
  	9. US ARMY (WD) | CW | VIETNAM
  	10. US ARMY (WD) | CW |  
- 	11. US ARMY (DS) | CW |  
+ 	11. US ARMY (DS) | CW | 
+	12. US ARMY (UCP) | MD | 2005
+ 	13. US ARMY (MTP) | MD | 2020
+ 	14. USMC (WD) | MD | 2010-15
+ 	15. USMC (DS) | MD | 2010-15
 
 */
 // ====================================================================================
