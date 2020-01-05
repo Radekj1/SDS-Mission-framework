@@ -83,15 +83,15 @@ _AntenaAndMast = "ACRE_VHF30108";
 // ====================================================================================
 
 // Basic night equipment
-_nvg = "NVGoggles";
+_nvg = "rhsusf_ANPVS_15";
 _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 
 // GL Flare
-_glflarewhite = "CUP_1Rnd_StarFlare_White_M203";
-_glflarered = "CUP_1Rnd_StarFlare_Red_M203";
+_glflarewhite = "UGL_FlareWhite_F";
+_glflarered = "UGL_FlareRed_F";
 _glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "CUP_1Rnd_StarFlare_Green_M203";
+_glflaregreen = "UGL_FlareGreen_F";
 
 // Hand Flares
 _flarewhite = "ACE_HandFlare_White";

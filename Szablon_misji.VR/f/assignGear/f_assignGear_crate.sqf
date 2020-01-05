@@ -88,14 +88,19 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addItemCargoGlobal [_toolkit, 2];
-		_unit addItemCargoGlobal [_wirecutter, 2];
-		_unit addItemCargoGlobal [_saperka, 2];	
-		_unit addMagazineCargoGlobal [_satche_small, 6];
-		_unit addMagazineCargoGlobal [_satche_big, 6];
-		_unit addItemCargoGlobal [_zapalnik_b, 2];
-		_unit addItemCargoGlobal [_n_rozbraja, 2];
-		_unit addItemCargoGlobal [_worek, 20];
+        _unit addItemCargoGlobal [_bandage, 200];
+		_unit addItemCargoGlobal [_bandage_elastic, 200];
+		_unit addItemCargoGlobal [_bandage_packing, 200];
+		_unit addItemCargoGlobal [_bandage_quikclot, 200];
+        _unit addItemCargoGlobal [_morphine, 100];
+        _unit addItemCargoGlobal [_epinephrine, 100];
+		_unit addItemCargoGlobal [_adenosine, 100];
+        _unit addItemCargoGlobal [_blood_m, 50];
+		_unit addItemCargoGlobal [_splint, 30];
+		_unit addItemCargoGlobal [_tourniquet, 30];
+		_unit addItemCargoGlobal [_worek, 25];
+		_unit addItemCargoGlobal [_personalAidKit, 25];
+		_unit addItemCargoGlobal [_surgicalKit, 2];
 	};
 
 // CRATE: Small ammo crate - should be enough for one fireteam
@@ -141,7 +146,6 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 6];
 		_unit addItemCargoGlobal [_bandage, 50];
-		_unit addItemCargoGlobal [_IRstrobe, 50];
 	};
 
 // CRATE: Big ammo crate = should be enoug for platoon to rearm
@@ -164,7 +168,6 @@
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
-		_unit addItemCargoGlobal [_IRstrobe, 70];
 	};
 
 // CRATE: Mała skrzynka, zasoby medyczne
@@ -182,7 +185,6 @@
         _unit addItemCargoGlobal [_morphine, 100];
         _unit addItemCargoGlobal [_epinephrine, 100];
 		_unit addItemCargoGlobal [_adenosine, 100];
-		_unit addItemCargoGlobal [_tourniquet, 50];
         _unit addItemCargoGlobal [_blood_m, 50];
 		_unit addItemCargoGlobal [_splint, 30];
 		_unit addItemCargoGlobal [_tourniquet, 30];
