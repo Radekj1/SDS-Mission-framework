@@ -1,6 +1,6 @@
 //====================================================================================
 //====================================================================================
-//S.D.S - Kompatybilność z HC
+//S.D.S - HC compatybility
 
 [true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";	//Zakomentować na PvP
 
@@ -49,12 +49,6 @@ enableSentences false;
 // f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
 // f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
 // [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
-
-// ====================================================================================
-// Respanw on Nimitz
-// Ten kod spowoduje, że gracze odrodzą się na lotiskowcu a nie pod nim (więcej info: https://www.youtube.com/watch?v=e47f4EYNVbk )
-
-// "respawn_west" setMarkerPosLocal [markerPos "respawn_West" select 0, markerPos "respawn_West" select 1, 18];
 
 // ====================================================================================
 // F3 - Briefing

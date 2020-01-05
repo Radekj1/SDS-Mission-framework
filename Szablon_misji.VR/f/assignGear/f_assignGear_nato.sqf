@@ -22,25 +22,34 @@
 	_loadout_faction_player = f_param_player_faction_Blufor;
 // ====================================================================================
 
-//Definicje przedmiotów
+//Items definitions
 
-// Sprzet medyczny
-_personalAidKit = "ACE_personalAidKit";		// Zestaw pierwszej pomocy
-_surgicalKit = "ACE_surgicalKit";			// Zestaw do szycia ran
-//_AED = "KAT_X_AED";							// AED from KAT
-//_AED = "adv_aceCPR_AED";					// AED from ACE
-_splint = "ACE_splint";			// Szyny do usztwniania
+// ====================================================================================
+// Medical items
+// ====================================================================================
 
-_bandage = "ACE_fieldDressing";				// Ogólny bandaż dla piechoty
-_bandage_elastic = "ACE_elasticBandage";	// Bandaż elastyczny
-_bandage_packing = "ACE_packingBandage";	//
-_bandage_quikclot = "ACE_quikclot";			// Opatrunek "QuikClot"
-_tourniquet ="ACE_tourniquet";				// Opaska uciskowa
+// Default Arma3 stuff
+_firstaid = "FirstAidKit";
+_medkit = "Medikit";
 
-_epinephrine = "ACE_epinephrine";			// Epinefryna (zwiększa tętno)
-_morphine = "ACE_morphine";					// Morfina (niweluje ból, rozrzedza krew)
-_adenosine = "ACE_adenosine";				// Adenozyna (obniża tętno)
-//_atropine = "ACE_atropine";					// Atropina (obniża tętno)
+// Basic medical equipment
+_personalAidKit = "ACE_personalAidKit";		// personal Aid Kit
+_surgicalKit = "ACE_surgicalKit";			// surgical Kit
+_worek = "ACE_bodyBag";						// body Bag
+
+// Bandages
+_bandage = "ACE_fieldDressing";				// field Dressing
+_bandage_elastic = "ACE_elasticBandage";	// elastic Bandage
+_bandage_packing = "ACE_packingBandage";	// packing Bandage
+_bandage_quikclot = "ACE_quikclot";			// quikclot
+_tourniquet ="ACE_tourniquet";				// tourniquet
+_splint = "ACE_splint";						// splint
+
+// Drugs
+_epinephrine = "ACE_epinephrine";			// epinephrine (zwiększa tętno)
+_morphine = "ACE_morphine";					// morphine (niweluje ból, rozrzedza krew)
+_adenosine = "ACE_adenosine";				// adenosine (obniża tętno)
+//_atropine = "ACE_atropine";				// atropine (obniża tętno)
 
 // ACE Blood
 _blood_s = "ACE_bloodIV_250";				// Blood 200 ml
@@ -55,86 +64,132 @@ _saline_s = "ACE_salineIV_250";				// Saline 200 ml
 _saline_m = "ACE_salineIV_500";				// Saline 500 ml
 _saline_b = "ACE_salineIV";					// Saline 1000 ml
 
-_firstaid = "FirstAidKit";
-_medkit = "Medikit";
+// ====================================================================================
+// Radios - ACRE2
+// ====================================================================================
 
-//Radia ACRE2
+// Radios
 _radioSR = "ACRE_PRC343";
 _radioMR = "ACRE_PRC152";
 _radioLR = "ACRE_PRC77";
 
-//Przydatne rzeczy
-_earplugs = "ACE_EarPlugs";
+// Antenas
+_antena = "ACRE_VHF30108SPIKE";
+_mast "ACRE_VHF30108MAST";
+_AntenaAndMast = "ACRE_VHF30108";
+
+// ====================================================================================
+// Night equipemnt
+// ====================================================================================
+
+// Basic night equipment
+_nvg = "NVGoggles";
 _IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
-_maptools = "ACE_MapTools";
-_lornetkaAM = "ACE_Vector";
-_lornetkaFTL = "Binocular";
-_lornetkaRTO = "UK3CB_BAF_Soflam_Laserdesignator";
-_GPS = "ACE_microDAGR";
-_handcuffs = "ACE_CableTie";
-_worek = "ACE_bodyBag";
-_huntIR = "ACE_HuntIR_M203";
-_huntIR_tab = "ACE_HuntIR_monitor";
 
-// Flary ręczne
+// GL Flare
+_glflarewhite = "CUP_1Rnd_StarFlare_White_M203";
+_glflarered = "CUP_1Rnd_StarFlare_Red_M203";
+_glflareyellow = "UGL_FlareYellow_F";
+_glflaregreen = "CUP_1Rnd_StarFlare_Green_M203";
+
+// Hand Flares
 _flarewhite = "ACE_HandFlare_White";
 _flarered = "ACE_HandFlare_Red";
 _flareyellow = "ACE_HandFlare_Yellow";
 _flaregreen = "ACE_HandFlare_Green";
 
-// Świetliki
+// Chemlights
 _chemgreen =  "Chemlight_green";
 _chemred = "Chemlight_red";
 _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
-//Granaty dymne
+_chemgreenHI =  "ACE_Chemlight_HiGreen";
+_chemredHI = "ACE_Chemlight_HiRed";
+_chemyellowHI =  "ACE_Chemlight_HiYellow";
+_chemblueHI = "ACE_Chemlight_HiBlue";
+
+// ====================================================================================
+// Grenades and GLs
+// ====================================================================================
+
+// Hand granade
+_grenade = "HandGrenade";	//basic frag granade
+_mgrenade = "ACE_M84";		//flashbang
+_mgrenade9 = "ACE_CTS9";	//flashbang 9-bangs
+_igrenade = "ACE_M14"; 		//incidenary
+
+// Granaty dymne
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadeblue = "SmokeShellBlue";
 _smokegrenadered = "SmokeShellRed";
 
-// Granaty ręczne
-_grenade = "HandGrenade";
-_mgrenade = "ACE_M84";
+// GL Rounds
+//_glmag = "1Rnd_HE_Grenade_shell";
+_huntIR = "ACE_HuntIR_M203";
 
 // Granaty dymne do granatnika
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
 _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
-// Flary do granatnika
-_glflarewhite = "CUP_1Rnd_StarFlare_White_M203";
-_glflarered = "CUP_1Rnd_StarFlare_Red_M203";
-_glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "CUP_1Rnd_StarFlare_Green_M203";
+// ====================================================================================
+// Mines/Expolisved/Logi stuff
+// ====================================================================================
 
-//Przedmioty w skrzyniach
-_satche_small = "ClaymoreDirectionalMine_Remote_Mag";
-_satche_big = "DemoCharge_Remote_Mag";
-_satche_extra_big = "SatchelCharge_Remote_Mag";
+// Basic equipment
+_mineDetector = "ACE_VMM3";
 _toolkit = "ToolKit";
+_n_rozbraja = "ACE_DefusalKit";
+
 _zapalnik = "ACE_Clacker";
 _zapalnik_b = "ACE_M26_Clacker";
-_n_rozbraja = "ACE_DefusalKit";
+_Dswitch = "ACE_DeadManSwitch";
+_cell = "ACE_Cellphone";
+
 _saperka = "ACE_EntrenchingTool";
 _mlotek = "ACE_Fortify";
 _wirecutter = "ACE_wirecutter";
 
-// Mechanicy/saperzy
+_maptools = "ACE_MapTools";
+_tableMTR = "ACE_RangeTable_82mm";
+_tableART = "ACE_artilleryTable";
+_RangeCard = "ACE_RangeCard";
+
+// Terminal UAV
+_uavterminal = "B_UavTerminal";
+
+// Mines
 _ATmine = "ATMine_Range_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
-_mineDetector = "ACE_VMM3";
 
-// Noktowizja
-_nvg = "NVGoggles";
+// Explosives
+_satche_small = "ClaymoreDirectionalMine_Remote_Mag";
+_satche_big = "DemoCharge_Remote_Mag";
+_satche_extra_big = "SatchelCharge_Remote_Mag";
 
-// Terminal UAV
-_uavterminal = "B_UavTerminal";	  // Dla BLUFORU musi być terminal BLUFORU, innej frakcji nie zadziała
+// ====================================================================================
+// Other items
+// ====================================================================================
 
-//Konstruktor BUILDERA
+_earplugs = "ACE_EarPlugs";
+_lornetkaAM = "ACE_Vector";
+_lornetkaFTL = "Binocular";
+_lornetkaRTO = "UK3CB_BAF_Soflam_Laserdesignator";
+_GPS = "ACE_microDAGR";
+_handcuffs = "ACE_CableTie";
+_huntIR_tab = "ACE_HuntIR_monitor";
+_Chemlight_Shield = "ACE_Chemlight_Shield";
+_heliRope = "ACE_rope36";
+_spray = "ACE_SpraypaintRed";
+_UAVbattery = "ACE_UAVBattery";
+
+// ====================================================================================
+// Konstruktor BUILDERA
+// ====================================================================================
 Builder = {	
 	_backpack = {
 		_typeofBackPack = _this select 0;

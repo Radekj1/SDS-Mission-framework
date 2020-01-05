@@ -5,9 +5,9 @@
 
 class Header
 {
-	gameType = Coop; // Dodaj jaki to rodzaj rozgrywki PvP lub COOP
-	minPlayers = 1; // Minimalna liczba graczy by rozegrac misje
-	maxPlayers = 457; // Maksymalna możliwa liczba graczy na misji
+	gameType = Coop; // (https://community.bistudio.com/wiki/Multiplayer_Game_Types)
+	minPlayers = 1; // Min player count to play mission
+	maxPlayers = 457; // Max player count to play mission
 };
 
 // ============================================================================================
@@ -15,15 +15,15 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-///////////DO EDYCJI///////////
-onLoadName = ""; // Dodaj nazwe misji np. "Operacja Baranek"
-author = "SDS"; // Dodaj autora lub autorów misji
-overviewText = "Opis"; //Wpisać krótki opis misji
+///////////EDIT THIS///////////
 
-///////////////////////////////
-onLoadMission = "sds-polska.pl"; // Nie zmieniaj
-loadScreen = "logo.paa"; // Nie zmieniaj
-//overviewPicture = "logo2.jpg"; // Tutaj możesz dodać obrazek który bdzie sie wyswietlal jak misja bedzie wybierana na serwerze
+onLoadName = ""; // Add missions name to display in missions selection
+author = "SDS"; // Add author or authors
+overviewText = "Opis"; //Add short description of mission
+onLoadMission = "sds-polska.pl"; // Short text on bottom on loading screen
+loadScreen = "logo.paa"; // Picture used on loading screen
+//overviewPicture = "logo2.jpg"; // Picture shown in missions selection on server
+
 ///////////////////////////////
 
 // ============================================================================================
@@ -39,11 +39,11 @@ enableDebugConsole = 1;
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-respawn = 3; // respawn w bazie
-respawndelay = 5; // 5s Oczekiwanie na resp
-respawnOnStart = 0; // nie tykac
-//respawnTemplates[] = {"Seagull","f_spectator","f_JIP"}; // Tryb bez obserwatora
-respawnTemplates[] = {"f_SpectatorRespawn"}; // Spectator z opcją respawnu ( używać tylko gdy respawn=3 )
+respawn = 3; // Respawn on marker
+respawndelay = 5; // Delay to respawn
+respawnOnStart = 0; // Dont touch
+//respawnTemplates[] = {"Seagull","f_spectator","f_JIP"}; // Respawn without spectator
+respawnTemplates[] = {"f_SpectatorRespawn"}; // Respawn with spectator (use ony if: respawn=3)
 
 // ============================================================================================
 
@@ -137,7 +137,7 @@ class Params
 
 	class f_param_Spacer
     {
-            title = "==================== Ustawienia misji ====================";
+            title = "==================== Mission settings ====================";
             values[] = {0};
             texts[] = {""};
             default = 0;
@@ -154,9 +154,9 @@ class Params
 	
 	class f_param_IND_friends
     {
-        title="INDFOR sprzymierzony z BLUFOR";
+        title="Should INDFOR be friendly with BLUFOR";
         values[]={0,1,2};
-        texts[]={"Ustawienia misji","Nie","Tak"};
+        texts[]={"Mission settings","No","Yes"};
         default = 0;
         code = "f_param_IND_friends = %1";
     };
@@ -179,7 +179,8 @@ class Params
     
 // ============================================================================================
 
-// Mechanizm wyboru wyposażenia dzień/noc
+// S.D.S - Day/Night Equipment System
+// TO DO
 
     class f_param_night_day_wyp
     {
@@ -225,7 +226,7 @@ class Params
 
 	class f_param_Spacer2
     {
-            title = "==================== Ustawienia pogody ====================";
+            title = "==================== Weather settings ====================";
             values[] = {0};
             texts[] = {""};
             default = 0;
@@ -276,7 +277,7 @@ class Params
 		
 	class f_param_Spacer3
     {
-            title = "==================== Ustawienia frakcji graczy ====================";
+            title = "==================== Player faction settings ====================";
             values[] = {0};
             texts[] = {""};
             default = 0;
@@ -285,8 +286,8 @@ class Params
 	class f_param_player_faction_Blufor
 	{
 		title = "BLUFOR (players)";
-		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
-		texts[] = {1. UK MPT, 2. UK DPM (WD), 3. UK DPM (DS), 4. US Rangers, 5. USMC (WD), 6. USMC (DS), 7. US Army (UCP), 8. US Army CW (WD), 9. US Army CW (DS), 10. US Army CW (WT), 11. CDF (WD), 12. CDF (DS), 13. CDF (WT), 14. IDF, 15. BW (WD), 16. BW (DS), 17. ACR (WD), 18. ACR (DS)};
+		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19};
+		texts[] = {1. NATO, 2. BAF (MTP) | MD, 3. BAF (WD) | MD, 4. BAF (DS) | MD, 5. CDF (WD) | MD, 6. CDF (WD) | U, 7. DK (WD) | CW, 8. DK (WT) | CW, 9. US ARMY (WD) | CW | VIETNAM, 10. US ARMY (WD) | CW, 11. US ARMY (DS) | CW, 12. US ARMY (UCP) | MD, 13. US ARMY (MTP) | MD, 14. USMC (WD) | MD, 15. USMC (DS) | MD, 16. DE (WD) | CW, 17. DE (WT) | CW, 18. DE (WD) | MD, 19. FIA (WD) | U};
 		default = 1;
 		code = "f_param_player_faction_Blufor = %1";
 	};
@@ -295,7 +296,7 @@ class Params
 	{
 		title = "OPFOR (players)";
 		values[] = {1,2,3,4,5};
-		texts[] = {1. CSAT, 2. PL (WD) | CW |, 3. PL (WT) | CW |, 4. DE (WD) | CW |, 5. DE (WT) | CW |};
+		texts[] = {1. CSAT, 2. PL (WD) | CW, 3. PL (WT) | CW, 4. DE (WD) | CW, 5. DE (WT) | CW};
 		default = 1;
 		code = "f_param_player_faction_Opfor = %1";
 	};
@@ -304,7 +305,7 @@ class Params
 	{
 		title = "INDFOR (players)";
 		values[] = {1,2,3,4,5,6,7};
-		texts[] = {1. AAF 2015, 2. SAF (WD) | CW |, 3.  SAF (WD) | MD |, 4. SAF (DS) | MD |, 5. SAF UN (WD) | MD |, 6. SAF UN (DS) | MD |, 7. SAF (WD) | U |};
+		texts[] = {1. AAF 2015, 2. SAF (WD) | CW, 3.  SAF (WD) | MD, 4. SAF (DS) | MD, 5. SAF UN (WD) | MD, 6. SAF UN (DS) | MD, 7. SAF (WD) | U};
 		default = 1;
 		code = "f_param_player_faction_Indfor = %1";
 	};
