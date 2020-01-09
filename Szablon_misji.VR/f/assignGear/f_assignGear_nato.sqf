@@ -79,7 +79,7 @@ _radioLR = "ACRE_PRC77";
 
 // Antenas
 _antena = "ACRE_VHF30108SPIKE";
-_mast "ACRE_VHF30108MAST";
+_mast = "ACRE_VHF30108MAST";
 _AntenaAndMast = "ACRE_VHF30108";
 
 // ====================================================================================

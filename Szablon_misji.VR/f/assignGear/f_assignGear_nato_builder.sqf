@@ -752,6 +752,12 @@ switch (_typeofUnit) do
 		["v_log"] call _crate;	
 	};
 
+// CARGO: Med - Przykład inicjalizacji: ["v_med",this,"blu_f"] call f_fnc_assignGear
+	case "v_med":
+	{
+		["v_med"] call _crate;	
+	};
+
 // CRATE: Mała skrzynka, amunicja dla jednego teamu
 	case "crate_small":
 	{
