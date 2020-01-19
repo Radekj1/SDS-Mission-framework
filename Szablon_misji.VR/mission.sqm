@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4168.0337,35.605545,4741.9097};
-		dir[]={-0.0025164669,-0.55796248,0.82998425};
-		up[]={-0.0016907064,0.82979172,0.5580405};
-		aside[]={1.0001048,-2.4622477e-007,0.0030368089};
+		pos[]={4154.1411,109.96532,6205.8501};
+		dir[]={-0.64247054,-0.5775485,0.50387931};
+		up[]={-0.45450932,0.81627625,0.35646471};
+		aside[]={0.61719048,-6.4773485e-007,0.78695494};
 	};
 };
 binarizationWanted=0;
@@ -21039,8 +21039,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4093.251,5.0014391,6284.4404};
-						angles[]={0,6.2693238,0};
+						position[]={4093.251,5.0014391,6284.4409};
+						angles[]={0,6.2693272,0};
 					};
 					side="West";
 					flags=4;
@@ -21050,7 +21050,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpNATO_IFV1 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV1;";
 						name="UnitNATO_IFV1_G";
-						description="Gunner IFV 1";
+						description="Alpha Vehicle Gunner ";
 						isPlayable=1;
 					};
 					id=309;
@@ -21059,25 +21059,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -21095,7 +21076,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -21103,8 +21141,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4083.251,5.0014391,6284.4404};
-						angles[]={0,6.2693238,0};
+						position[]={4083.251,5.0014391,6284.4409};
+						angles[]={0,6.2693272,0};
 					};
 					side="West";
 					flags=6;
@@ -21113,7 +21151,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpNATO_IFV1 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV1;";
 						name="UnitNATO_IFV1_D";
-						description="Driver IFV 1";
+						description="Alpha Vehicle Driver";
 						isPlayable=1;
 					};
 					id=310;
@@ -21121,25 +21159,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
@@ -21158,7 +21177,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -21190,7 +21266,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpNATO_IFV2 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV2;";
 						name="UnitNATO_IFV2_G";
-						description="Gunner IFV 2";
+						description="Bravo Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=313;
@@ -21253,7 +21329,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpNATO_IFV2 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV2;";
 						name="UnitNATO_IFV2_D";
-						description="Driver IFV 2";
+						description="Bravo Vehicle Driver";
 						isPlayable=1;
 					};
 					id=314;
@@ -21330,7 +21406,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpNATO_IFV3 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV3;";
 						name="UnitNATO_IFV3_G";
-						description="Gunner IFV 3";
+						description="Charlie Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=317;
@@ -21393,7 +21469,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpNATO_IFV3 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV3;";
 						name="UnitNATO_IFV3_D";
-						description="Driver IFV 3";
+						description="Charlie Vehicle Driver";
 						isPlayable=1;
 					};
 					id=318;
@@ -21674,7 +21750,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpCSAT_IFV1 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehCSAT_IFV1;";
 						name="UnitCSAT_IFV1_G";
-						description="Gunner IFV 1";
+						description="Alpha Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=325;
@@ -21737,7 +21813,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpCSAT_IFV1 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehCSAT_IFV1;";
 						name="UnitCSAT_IFV1_D";
-						description="Driver IFV 1";
+						description="Alpha Vehicle Driver";
 						isPlayable=1;
 					};
 					id=326;
@@ -21814,7 +21890,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpCSAT_IFV2 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehCSAT_IFV2;";
 						name="UnitCSAT_IFV2_G";
-						description="Gunner IFV 2";
+						description="Bravo Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=329;
@@ -21877,7 +21953,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpCSAT_IFV2 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehCSAT_IFV2;";
 						name="UnitCSAT_IFV2_D";
-						description="Driver IFV 2";
+						description="Bravo Vehicle Driver";
 						isPlayable=1;
 					};
 					id=330;
@@ -21954,7 +22030,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpCSAT_IFV3 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehCSAT_IFV3;";
 						name="UnitCSAT_IFV3_G";
-						description="Gunner IFV 3";
+						description="Charlie Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=333;
@@ -22017,7 +22093,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpCSAT_IFV3 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehCSAT_IFV3;";
 						name="UnitCSAT_IFV3_D";
-						description="Driver IFV 3";
+						description="Charlie Vehicle Driver";
 						isPlayable=1;
 					};
 					id=334;
@@ -22298,7 +22374,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpAAF_IFV1 = group this; [""vg"",this] call f_fnc_assignGear;";
 						name="UnitAAF_IFV1_G";
-						description="Gunner IFV 1";
+						description="Alpha Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=341;
@@ -22361,7 +22437,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpAAF_IFV1 = group this; [""vd"",this] call f_fnc_assignGear;";
 						name="UnitAAF_IFV1_D";
-						description="Driver IFV 1";
+						description="Alpha Vehicle Driver";
 						isPlayable=1;
 					};
 					id=342;
@@ -22438,7 +22514,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpAAF_IFV2 = group this; [""vg"",this] call f_fnc_assignGear;";
 						name="UnitAAF_IFV2_G";
-						description="Gunner IFV 2";
+						description="Bravo Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=345;
@@ -22501,7 +22577,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpAAF_IFV2 = group this; [""vd"",this] call f_fnc_assignGear;";
 						name="UnitAAF_IFV2_D";
-						description="Driver IFV 2";
+						description="Bravo Vehicle Driver";
 						isPlayable=1;
 					};
 					id=346;
@@ -22578,7 +22654,7 @@ class Mission
 						rank="CORPORAL";
 						init="GrpAAF_IFV3 = group this; [""vg"",this] call f_fnc_assignGear;";
 						name="UnitAAF_IFV3_G";
-						description="Gunner IFV 3";
+						description="Charlie Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=349;
@@ -22641,7 +22717,7 @@ class Mission
 						skill=0.60000002;
 						init="GrpAAF_IFV3 = group this; [""vd"",this] call f_fnc_assignGear;";
 						name="UnitAAF_IFV3_D";
-						description="Driver IFV 3";
+						description="Charlie Vehicle Driver";
 						isPlayable=1;
 					};
 					id=350;

@@ -66,7 +66,7 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.5, 0.5];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-// UAV Operator
+// RTO
 	case 1:
 	{
 		_mkr = createMarkerLocal [_mkrName,[(getPos _unt select 0),(getPos _unt select 1)]];
