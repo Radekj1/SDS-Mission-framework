@@ -1,3 +1,7 @@
+// ====================================================================================
+// S.D.S Assign Crate Script - [V-2.0 beta | 19.01.2020]
+// ====================================================================================
+
 // CARGO: CAR - Przykład inicjalizacji: ["v_car",this,"blu_f"] call f_fnc_assignGear
 	case "v_car":
 	{
@@ -19,8 +23,8 @@
 		_unit addItemCargoGlobal [_wirecutter, 1];
 	};
 
-// CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"blu_f"] call f_fnc_assignGear
-	case "tr":
+// CARGO: TRUCK - Przykład inicjalizacji: ["v_tr",this,"blu_f"] call f_fnc_assignGear
+	case "v_tr":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
@@ -40,8 +44,8 @@
 		_unit addItemCargoGlobal [_wirecutter, 1];
 	};
 
-// CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"blu_f"] call f_fnc_assignGear
-	case "ifv":
+// CARGO: IFV - Przykład inicjalizacji: ["v_ifv",this,"blu_f"] call f_fnc_assignGear
+	case "v_ifv":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
@@ -81,7 +85,7 @@
 		_unit addWeaponCargoGlobal [_mineDetector, 2];
 	};
 
-	// CARGO: LOGISTYKa - Przykład inicjalizacji: ["v_med",this,"blu_f"] call f_fnc_assignGear
+// CARGO: LOGISTYKa - Przykład inicjalizacji: ["v_med",this,"blu_f"] call f_fnc_assignGear
 	case "v_med":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -101,6 +105,18 @@
 		_unit addItemCargoGlobal [_worek, 25];
 		_unit addItemCargoGlobal [_personalAidKit, 25];
 		_unit addItemCargoGlobal [_surgicalKit, 2];
+	};
+
+// CARGO: Heli - Przykład inicjalizacji: ["v_heli",this,"blu_f"] call f_fnc_assignGear
+	case "v_heli":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+        _unit addItemCargoGlobal [_heliRope, 6];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 5];
+		_unit addMagazineCargoGlobal [_flaregreen, 5];
 	};
 
 // CRATE: Small ammo crate - should be enough for one fireteam
@@ -178,18 +194,17 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-        _unit addItemCargoGlobal [_bandage, 200];
-		_unit addItemCargoGlobal [_bandage_elastic, 200];
-		_unit addItemCargoGlobal [_bandage_packing, 200];
-		_unit addItemCargoGlobal [_bandage_quikclot, 200];
-        _unit addItemCargoGlobal [_morphine, 100];
-        _unit addItemCargoGlobal [_epinephrine, 100];
-		_unit addItemCargoGlobal [_adenosine, 100];
-        _unit addItemCargoGlobal [_blood_m, 50];
-		_unit addItemCargoGlobal [_splint, 30];
-		_unit addItemCargoGlobal [_tourniquet, 30];
-		_unit addItemCargoGlobal [_worek, 25];
-		_unit addItemCargoGlobal [_personalAidKit, 25];
+        _unit addItemCargoGlobal [_bandage, 50];
+		_unit addItemCargoGlobal [_bandage_elastic, 50];
+		_unit addItemCargoGlobal [_bandage_packing, 50];
+		_unit addItemCargoGlobal [_bandage_quikclot, 50];
+        _unit addItemCargoGlobal [_morphine, 20];
+        _unit addItemCargoGlobal [_epinephrine, 20];
+		_unit addItemCargoGlobal [_adenosine, 20];
+        _unit addItemCargoGlobal [_blood_m, 10];
+		_unit addItemCargoGlobal [_splint, 15];
+		_unit addItemCargoGlobal [_tourniquet, 15];
+		_unit addItemCargoGlobal [_personalAidKit, 8];
 	};
 
 // CRATE: Duża skrzynka, zasoby medyczne
@@ -305,7 +320,7 @@
 				
 	};
 	
-	// CRATE: Skrzynka mała, ładunki
+// CRATE: Skrzynka mała, ładunki
 	case "crate_small_explo":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -332,10 +347,12 @@
 		_unit addMagazineCargoGlobal [_satche_extra_big,10];		
 		_unit addItemCargoGlobal [_zapalnik_b,6];
 		_unit addItemCargoGlobal [_n_rozbraja,6];
+		_unit addWeaponCargoGlobal [_mineDetector,1];
+		_unit addItemCargoGlobal [_toolkit,1];
 				
 	};
 
-	// CRATE: Radios
+// CRATE: Radios
 	case "crate_ACRE":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -345,4 +362,45 @@
 		_unit addItemCargoGlobal [_radioSR,15];
 		_unit addItemCargoGlobal [_radioMR,5];
 		_unit addItemCargoGlobal [_radioLR,3];
+		_unit addItemCargoGlobal [_antena,3];
+		_unit addItemCargoGlobal [_mast,3];
+	};
+
+// CRATE: Mortar
+	case "crate_MTR":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_mtrHE,15];
+		_unit addMagazineCargoGlobal [_mtrSmoke,15];
+		_unit addMagazineCargoGlobal [_mtrFlare,15];
+		_unit addItemCargoGlobal [_maptools,1];
+		_unit addItemCargoGlobal [_tableMTR,1];
+	};
+
+// CRATE: Others
+	case "crate_misc":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addItemCargoGlobal [_earplugs,15];
+		_unit addItemCargoGlobal [_handcuffs,15];
+		_unit addItemCargoGlobal [_huntIR_tab,15];
+		_unit addItemCargoGlobal [_Chemlight_Shield,15];
+		_unit addItemCargoGlobal [_spray,15];
+		_unit addItemCargoGlobal [_UAVbattery,15];
+		_unit addItemCargoGlobal [_maptools,15];
+		_unit addItemCargoGlobal [_tableMTR,15];
+		_unit addItemCargoGlobal [_tableART,15];
+		_unit addItemCargoGlobal [_RangeCard,15];
+		_unit addItemCargoGlobal [_cell,15];
+		_unit addItemCargoGlobal [_Dswitch,15];
+		_unit addMagazineCargoGlobal [_mgrenade,15];
+		_unit addMagazineCargoGlobal [_mgrenade9,15];
+		_unit addMagazineCargoGlobal [_igrenade,15];
+		_unit addMagazineCargoGlobal [_huntIR,15];
 	};
