@@ -295,8 +295,8 @@ class Params
 	class f_param_player_faction_Opfor
 	{
 		title = "OPFOR (players)";
-		values[] = {1,2,3,4,5};
-		texts[] = {1. CSAT, 2. PL (WD) | CW, 3. PL (WT) | CW, 4. DE (WD) | CW, 5. DE (WT) | CW};
+		values[] = {1,2,3,4,5,6,7};
+		texts[] = {1. CSAT, 2. PL (WD) | CW, 3. PL (WT) | CW, 4. DE (WD) | CW, 5. DE (WT) | CW, 6. RU (WD) | MD | VDV, 7. RU (DS) | MD | VDV};
 		default = 1;
 		code = "f_param_player_faction_Opfor = %1";
 	};
