@@ -166,6 +166,19 @@ _satche_big = "DemoCharge_Remote_Mag";
 _satche_extra_big = "SatchelCharge_Remote_Mag";
 
 // ====================================================================================
+// Mortar Ammo
+// ====================================================================================
+
+// Basic ammo
+_mtrHE = "ACE_1Rnd_82mm_Mo_HE";
+_mtrSmoke = "ACE_1Rnd_82mm_Mo_Smoke";
+_mtrFlare = "ACE_1Rnd_82mm_Mo_Illum";
+
+// Adv ammo - not used
+_mtrHEg = "ACE_1Rnd_82mm_Mo_HE_Guided";
+_mtrHElg = "ACE_1Rnd_82mm_Mo_HE_LaserGuided";
+
+// ====================================================================================
 // Other items
 // ====================================================================================
 
@@ -332,7 +345,7 @@ _riflemag_tr = "30Rnd_65x39_caseless_green_mag_Tracer";
 
 // Broń wersja "krótka" (dla przykładowo: Medyk, Strzelec (AT), Strzelec MAT)
 _carbine = "arifle_Katiba_C_F";
-_carbinemag = "CUP_30Rnd_730Rnd_65x39_caseless_green62x39_AK47_M";
+_carbinemag = "30Rnd_65x39_caseless_green";
 _carbinemag_tr = "30Rnd_65x39_caseless_green_mag_Tracer";
 
 // Broń PDW (dla przykładowo: Pilot, Co-pilot,Dowódca pojazdu)

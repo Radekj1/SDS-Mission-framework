@@ -758,7 +758,7 @@ switch (_typeofUnit) do
 		["v_med"] call _crate;	
 	};
 
-// CARGO: Med - Przykład inicjalizacji: ["v_med",this,"blu_f"] call f_fnc_assignGear
+// CARGO: Med - Przykład inicjalizacji: ["v_heli",this,"blu_f"] call f_fnc_assignGear
 	case "v_heli":
 	{
 		["v_heli"] call _crate;	
@@ -843,15 +843,15 @@ switch (_typeofUnit) do
 	};
 
 // CRATE: Radios
-	case "crate_ACRE":
+	case "crate_radio":
 	{
-		["crate_ACRE"] call _crate;
+		["crate_radio"] call _crate;
 	};
 
 // CRATE: Mortar
-	case "crate_MTR":
+	case "crate_mtr":
 	{
-		["crate_MTR"] call _crate;
+		["crate_mtr"] call _crate;
 	};
 
 // CRATE: Others

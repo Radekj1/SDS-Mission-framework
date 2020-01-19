@@ -735,15 +735,15 @@ switch (_typeofUnit) do
 	};
 
 // CARGO: TRUCK - Przykład inicjalizacji: ["tr",this,"blu_f"] call f_fnc_assignGear
-	case "tr":
+	case "v_tr":
 	{
-		["tr"] call _crate;
+		["v_tr"] call _crate;
 	};
 
 // CARGO: IFV - Przykład inicjalizacji: ["ifv",this,"blu_f"] call f_fnc_assignGear
-	case "ifv":
+	case "v_ifv":
 	{
-		["ifv"] call _crate;
+		["v_ifv"] call _crate;
 	};
 	
 // CARGO: LOGISTYKI - Przykład inicjalizacji: ["v_log",this,"blu_f"] call f_fnc_assignGear
@@ -756,6 +756,12 @@ switch (_typeofUnit) do
 	case "v_med":
 	{
 		["v_med"] call _crate;	
+	};
+
+// CARGO: Med - Przykład inicjalizacji: ["v_heli",this,"blu_f"] call f_fnc_assignGear
+	case "v_heli":
+	{
+		["v_heli"] call _crate;	
 	};
 
 // CRATE: Mała skrzynka, amunicja dla jednego teamu
@@ -834,6 +840,24 @@ switch (_typeofUnit) do
 	case "crate_large_explo":
 	{
 		["crate_large_explo"] call _crate;
+	};
+
+// CRATE: Radios
+	case "crate_radio":
+	{
+		["crate_radio"] call _crate;
+	};
+
+// CRATE: Mortar
+	case "crate_mtr":
+	{
+		["crate_mtr"] call _crate;
+	};
+
+// CRATE: Others
+	case "crate_misc":
+	{
+		["crate_misc"] call _crate;
 	};
 	
 // ====================================================================================

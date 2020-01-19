@@ -353,7 +353,7 @@
 	};
 
 // CRATE: Radios
-	case "crate_ACRE":
+	case "crate_radio":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
@@ -367,7 +367,7 @@
 	};
 
 // CRATE: Mortar
-	case "crate_MTR":
+	case "crate_mtr":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;

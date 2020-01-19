@@ -168,6 +168,19 @@ _satche_big = "DemoCharge_Remote_Mag";
 _satche_extra_big = "SatchelCharge_Remote_Mag";
 
 // ====================================================================================
+// Mortar Ammo
+// ====================================================================================
+
+// Basic ammo
+_mtrHE = "ACE_1Rnd_82mm_Mo_HE";
+_mtrSmoke = "ACE_1Rnd_82mm_Mo_Smoke";
+_mtrFlare = "ACE_1Rnd_82mm_Mo_Illum";
+
+// Adv ammo - not used
+_mtrHEg = "ACE_1Rnd_82mm_Mo_HE_Guided";
+_mtrHElg = "ACE_1Rnd_82mm_Mo_HE_LaserGuided";
+
+// ====================================================================================
 // Other items
 // ====================================================================================
 
