@@ -14,17 +14,8 @@ waitUntil{!isNil "f_param_radios"};
 if(f_param_radios != 0) then {
 
   switch (f_param_radios) do {
-  // ACRE
-  case 1: {
-    [] execVM "f\radios\acre\acre_init.sqf";
-  };
-
-  // TFR
-  case 2: {
-    [] execVM "f\radios\tfr\tfr_init.sqf";
-  };
   // acre2
-  case 3: {
+  case 1: {
     [] execVM "f\radios\acre2\acre2_init.sqf";
   };
 

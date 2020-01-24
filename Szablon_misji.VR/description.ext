@@ -199,9 +199,9 @@ class Params
     class f_param_radios
     {
             title = "Radio System";
-            values[] = {0,1,2,3};
-            texts[] = {"Off","ACRE","TFR","ACRE2"};
-            default = 3;
+            values[] = {0,1};
+            texts[] = {"Off","On"};
+            default = 1;
             code = "f_param_radios = %1";
     };
 
