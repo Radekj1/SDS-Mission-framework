@@ -2776,7 +2776,7 @@ _smgmag_tr = "rhsgref_30rnd_1143x23_M1T_SMG";
 // GL version (mostly for commanders but also for grenadiers)
 _glrifle = "UK3CB_M16A2_UGL";
 _glriflemag = "1Rnd_HE_Grenade_shell";
-_glriflemag_tr = "1Rnd_HE_Grenade_shell";
+_glriflemag_tr = "rhsusf_mag_7x45acp_MHP";
 _glmag = "1Rnd_HE_Grenade_shell";
 
 // Pistol (for everyone YAY!)
