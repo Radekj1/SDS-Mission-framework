@@ -1977,7 +1977,7 @@ _baseGlasses = [];
 _slRig = ["rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_digi_6sh92_headset_mapcase"];
 _engRig = ["rhs_6b23_digi_engineer"];
 _lightRig = ["rhs_6b23_digi_vydra_3m"];
-_mediumRig = ["rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio",""];
+_mediumRig = ["rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio"];
 _heavyRig = ["rhs_6b23_6sh116"];
 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać
@@ -2276,7 +2276,7 @@ _baseGlasses = [];
 _slRig = ["rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_digi_6sh92_headset_mapcase"];
 _engRig = ["rhs_6b23_digi_engineer"];
 _lightRig = ["rhs_6b23_digi_vydra_3m"];
-_mediumRig = ["rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio",""];
+_mediumRig = ["rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio"];
 _heavyRig = ["rhs_6b23_6sh116"];
 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać

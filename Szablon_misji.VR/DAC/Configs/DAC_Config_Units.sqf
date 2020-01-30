@@ -94,52 +94,31 @@ switch (_TypNumber) do
 // EAST EU/RUSSIA
   case 1:
   {
-    _Unit_Pool_S = ["CUP_C_R_Worker_01","CUP_C_R_Pilot_01","CUP_C_R_Citizen_02","CUP_C_R_Citizen_01","CUP_C_R_Citizen_04","CUP_C_R_Citizen_03","CUP_C_R_Functionary_01","CUP_C_R_Mechanic_01","CUP_C_R_Profiteer_02","CUP_C_R_Profiteer_01","CUP_C_R_Rocker_04","CUP_C_R_Rocker_02","CUP_C_R_Villager_01","CUP_C_R_Villager_03","CUP_C_R_Woodlander_03","CUP_C_R_Worker_03","CUP_C_R_Worker_04"];
-    _Unit_Pool_V = ["CUP_C_Skoda_Blue_CIV","CUP_C_Skoda_Green_CIV","CUP_C_Skoda_White_CIV","CUP_C_Datsun_Covered","CUP_C_Datsun_Plain","CUP_C_Golf4_red_Civ","CUP_C_Lada_White_CIV","CUP_C_Lada_Red_CIV","CUP_C_SUV_CIV","CUP_C_Ural_Open_Civ_03","CUP_C_TT650_CIV"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = ["CUP_C_Mi17_Civilian_RU"];
+    _Unit_Pool_S = ["UK3CB_CHC_C_PILOT","UK3CB_CHC_C_PILOT","UK3CB_CHC_C_COACH","UK3CB_CHC_C_ACT","UK3CB_CHC_C_CIT","UK3CB_CHC_C_HIKER","UK3CB_CHC_C_PROF","UK3CB_CHC_C_CIV","UK3CB_CHC_C_SPY","UK3CB_CHC_C_VILL","UK3CB_CHC_C_WOOD","UK3CB_CHC_C_WORKER","C_Man_6_enoch_F","C_Man_4_enoch_F","C_Man_3_enoch_F","C_Man_2_enoch_F","C_Man_1_enoch_F"];
+    _Unit_Pool_V = ["UK3CB_CHC_C_Golf","UK3CB_CHC_C_Gaz24","UK3CB_CHC_C_Tractor_Old","UK3CB_CHC_C_Tractor","UK3CB_CHC_C_S1203","UK3CB_CHC_C_Skoda","UK3CB_CHC_C_Sedan","UK3CB_CHC_C_Lada","UK3CB_CHC_C_Hilux_Civ_Open","UK3CB_CHC_C_Hatchback","UK3CB_CHC_C_Datsun_Civ_Closed"];
+    _Unit_Pool_T = ["UK3CB_CHC_C_Ikarus","UK3CB_CHC_C_Ural_Open","UK3CB_CHC_C_V3S_Open","UK3CB_CHC_C_Kamaz_Open"];
+    _Unit_Pool_A = ["UK3CB_CHC_C_Mi8AMT"];
   };
 //-------------------------------------------------------------------------------------------------
-// WEST EU/US
+// MIDDLE EAST
   case 2:
   {
-    _Unit_Pool_S = ["C_Man_casual_1_F","C_Man_casual_1_F","C_Man_casual_1_F","C_Man_casual_2_F","C_Man_casual_3_F","C_Man_casual_4_F","C_Man_casual_6_F","C_man_polo_2_F","C_man_polo_5_F","C_Man_Fisherman_01_F","C_man_hunter_1_F"];
-    _Unit_Pool_V = ["CUP_C_Golf4_kitty_Civ","CUP_C_Golf4_blue_Civ","C_Hatchback_01_F","C_Offroad_02_unarmed_F","C_Offroad_01_F","C_Van_01_transport_F","C_Van_01_box_F","C_Van_02_transport_F"];
+    _Unit_Pool_S = ["UK3CB_TKC_C_PILOT","UK3CB_TKC_C_PILOT","UK3CB_TKC_C_CIV","UK3CB_TKC_C_SPOT","UK3CB_TKC_C_WORKER"];
+    _Unit_Pool_V = ["UK3CB_TKC_C_Gaz24","UK3CB_TKC_C_UAZ_Open","UK3CB_TKC_C_Tractor_Old","UK3CB_TKC_C_S1203","UK3CB_TKC_C_Sedan","UK3CB_TKC_C_Lada_Taxi","UK3CB_TKC_C_Lada","UK3CB_TKC_C_Hilux_Civ_Open","UK3CB_TKC_C_Hatchback","UK3CB_TKC_C_Datsun_Civ_Open"];
+    _Unit_Pool_T = ["UK3CB_TKC_C_Ikarus","UK3CB_TKC_C_Open","UK3CB_TKC_C_V3S_Open","UK3CB_TKC_C_Kamaz_Open"];
+    _Unit_Pool_A = ["UK3CB_TKC_C_Mi8AMT"];
+  };
+//-------------------------------------------------------------------------------------------------
+// AFRICA
+  case 3:
+  {
+    _Unit_Pool_S = ["C_man_p_beggar_F_afro","C_man_p_beggar_F_afro","C_Man_casual_1_F_afro","C_Man_casual_2_F_afro","C_Man_casual_3_F_afro","C_Man_casual_4_F_afro","C_Man_casual_5_F_afro","C_Man_casual_6_F_afro","C_man_polo_1_F_afro","C_man_polo_2_F_afro","C_man_polo_3_F_afro","C_man_polo_4_F_afro","C_man_polo_5_F_afro","C_man_polo_6_F_afro"];
+    _Unit_Pool_V = ["UK3CB_C_Hilux_Open","C_Offroad_02_unarmed_F","UK3CB_C_LandRover_Closed","C_Offroad_01_F","UK3CB_C_Tractor"];
     _Unit_Pool_T = [];
     _Unit_Pool_A = ["C_Heli_Light_01_civil_F"];
   };
-//-------------------------------------------------------------------------------------------------
-
-// MIDDLE EAST
-  case 3:
-  {
-    _Unit_Pool_S = ["CFP_C_AFG_Civilian_02","CFP_C_AFG_Civilian_02","CFP_C_AFG_Civilian_01","CUP_C_TK_Man_04_Jack","CUP_C_TK_Man_07_Coat","CUP_C_TK_Man_08","CUP_C_TK_Man_05_Coat","CUP_C_TK_Man_05_Waist","CUP_C_TK_Man_06_Jack","CUP_C_TK_Man_02","CUP_C_TK_Man_01_Coat","CUP_C_TK_Man_03_Waist"];
-    _Unit_Pool_V = ["CUP_C_S1203_CIV","CUP_C_Lada_TK2_CIV","CUP_C_Ikarus_TKC","CUP_C_UAZ_Open_TK_CIV","CUP_C_Volha_Gray_TKCIV","CFP_C_AFG_Datsun_Pickup_01","CUP_C_TT650_TK_CIV"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = [];
-  };
   
 //-------------------------------------------------------------------------------------------------
-
-// AFRICA
-  case 4:
-  {
-    _Unit_Pool_S = ["CFP_C_AFRCHRISTIAN_Civ_8_01","CFP_C_AFRCHRISTIAN_Civ_8_01","CFP_C_AFRCHRISTIAN_Civ_8_01","CFP_C_AFRISLAMIC_Civ_3_01","CFP_C_AFRCHRISTIAN_Civ_3_01","CFP_C_AFRISLAMIC_Civ_5_01","CFP_C_AFRCHRISTIAN_Civ_5_01","CFP_C_AFRISLAMIC_Civ_6_01","CFP_C_AFRCHRISTIAN_Civ_11_01","CFP_C_AFRCHRISTIAN_Civ_9_01"];
-    _Unit_Pool_V = ["CFP_C_AFRCHRISTIAN_Pickup_Old_01","CFP_C_AFRCHRISTIAN_UAZ_Open_01","CFP_C_AFRCHRISTIAN_Zamak_01","CFP_C_AFRISLAMIC_Skoda_Blue_01"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = [];
-  };
-
-//-------------------------------------------------------------------------------------------------
-
-// ASIA
-  case 5:
-  {
-    _Unit_Pool_S = ["CFP_C_ASIA_Civilian_7_01","CFP_C_ASIA_Civilian_7_01","CFP_C_ASIA_Civilian_7_01","CFP_C_ASIA_Civilian_2_01","CFP_C_ASIA_Civilian_3_01","CFP_C_ASIA_Civilian_6_01","CFP_C_ASIA_Civilian_9_01","CFP_C_ASIA_Civilian_11_01","CFP_C_ASIA_Civilian_1_01","CFP_C_ASIA_Civilian_12_01"];
-    _Unit_Pool_V = ["CFP_C_ASIA_Land_Rover_01","CFP_C_ASIA_MB_4WD_01","CFP_C_ASIA_Skoda_Octavia_01","CFP_C_ASIA_SUV_01"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = [];
-  };
 
 //////////////////////////////////////////////////////////////////
 //////////////////////BLUFOR//////////////////////////////////////
