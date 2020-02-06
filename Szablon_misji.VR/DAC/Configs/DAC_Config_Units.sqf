@@ -19,58 +19,70 @@ _TypNumber = _this select 0;_TempArray = [];
 // [MD] - frakcje współczesne "modern"
 // [CW] - frokcje Cold War
 // [U] - frakcje uniwersalne
-//////////PRZYKŁAD////////
-	0 - NATO (A3)
 //////////CYWILE//////////
 	1 - EAST EU/RUSSIA [U]
-	2 - WEST EU/US
-	3 - MIDDLE EAST
-	4 - AFRICA
-	5 - ASIA
+	2 - MIDDLE EAST
+	3 - AFRICA
 //////////BLUFOR//////////
-	6 - ACR (DS) [MD]
-	7 - ACR (WD) [MD]
-	8 - UK MTP  [MD]
-	9 - UK DPM (DS) [U]
-	10 - UK DPM (WD) [MD]
-	11 - Bundeswehr (DS) [MD]
-	12 - Bundeswehr (WD) [MD]
-	13 - CDF (DS) [U]
-  14 - CDF (WD) [U]
-	15 - CDF (WINTER) [U]
-  16 - IDF [MD]
-  17 - US UCP (DS) [MD]
-  18 - US UCP (WD) [MD]
-  19 - USMC (DS) [MD]
-  20 - USMC (WD) [MD]
-	21 - USMC (DS) [CW]
-	22 - USMC (WD) [CW]
-  28 - BW [CW]
+	4 - AFGHAN NATIONAL ARMY
+  5 - CHERNARUS CIVILIAN MILITA
+  6 - AFGHAN NATIONAL POLICE
+  7 - CHERNARUS POLICE DEPARTAMENT
+  8 - CHERNARUS POLICE SWAT
+  9 - COLD WAR EARLY US
+  10 - COLD WAR LATE US
+  11 - TAKISTAN ARMY
+  12 - TAKISTAN POLICE
+  13 - TAKISTAN PROGOVERMENT MILITIA
+  14 - CHERNARUSSIAN DEFENCE FORCES
+  15 - BRITISH ARMY DESERT
+  16 - BRITISH ARMY MTP /MULTI-TERRAIN PATTERN/
+  17 - HORIZON ISLANDS DEFENCE FORCES
+  18 - REPUBLIQUE DU DAMUZ
+  19 - US ARMY OCP
+  20 - US ARMY UCP
+  21 - SOCOM Marine
+  22 - USMC MARPAT DESERT
+	23 - USMC MARPAT WOODLAND
+	24 - GM GERMANY WOODLAND 
+	25 - GM GERMANY WINTER
 //////////OPFOR///////////
-	23 - RU MSV (WD)
-	24 - RU VDV (WD)
-	25 - RU VDV (DS)
-	26 - ChDKZ
-	27 - ChDKZ (WINTER)
-	28 - KPA
-	29 - IRAN
-	30 - SLA (WD)
-	31 - SLA (DS)
-	32 - TAKISTAN ARMY
-	33 - SYRIA
-	34 - TUSKENI
-	35 - KOZOJEBCY	
-	36 - SOMALI PIRATES (MURZYNY)
+	26 - CHERNARUS CIVILIAN MILITIA
+	27 - COLD WAR USSR LATE
+	28 - COLD WAR USSR VDV EARLY
+	29 - TAKISTAN INSURGENTS
+	30 - TAKISTAN NATIONAL ARMY
+	31 - TAKISTAN MILITIA
+	32 - CHERNARUSSIAN MOVMENT OF THE RED STAR /ChDKZ/
+	33 - LIVONIA EAST GERMAN STR
+	34 - LIVONIA EAST GERMAN WINTER
+	35 - LIVONIAN ARMY CAMO02	
+	36 - LIVONIAN ARMY CAMO01
+  37 - LIVONIAN ARMY WINTER
+  38 - LIVONIAN ARMY EARLY (BLACK CAMO)
+  39 - POLISH ARMY CAMO
+  40 - POLISH ARMY WINTER
+  41 - RUSSIAN MOTOR RIFLE TROOPS (MSV)
+  42 - RUSSIAN VDV WOODLAND
+  43 - RUSSIAN VDV DESERT
+  44 - SERBIAN ARMED FORCES DIGITAL
+  45 - SERBIAN ARMED FORCES OAKLEAF SUMMER
+  46 - TAKISTAN LIBERATION ARMY
 //////////INDFOR//////////
-	20 - ChDKZ [CW/U]
-	21 - Partyzanci [CW/U]
-	22 - Komuniści [CW/U] (NAPA)
-	23 - UN Old [CW]
-	24 - UN Modern [MD]
-	25 - Murzyny [U] (African rebels)
-	26 - Ciapaci [U] (Takistan rebels)
-	27 - RACS [U]
-
+  47 - CHERNARUS NATIONAL MILITIA
+  48 - TAKISTAN NATIONAL ARMY
+  49 - TAKISTAN NATIONAL POLICE
+  50 - TAKISTAN TRIBAL FIGHTERS
+  51 - UNITED NATIONS PEACEKEEPERS
+  52 - ALTIS ARMED FORCES CAMO01
+  53 - ALTIS ARMED FORCES CAMO02
+  54 - ASIAN GUERILLA
+  55 - CHERNARUS DEFENCE FORCES
+  56 - CHERNARUSSIAN NATIONALIST MILITIA CAMO01
+  57 - CHERNARUSSIAN NATIONALIST MILITIA CAMO02
+  58 - UNITED NATIONS SERBIAN ARMED FORCES DIGITAL DESERT
+  59 - UNITED NATIONS SERBIAN ARMED FORCES DIGITAL WOODLAND
+  60 - SYNDIKAT
 *////////////////////////////////////////////
 
 switch (_TypNumber) do
@@ -127,7 +139,6 @@ switch (_TypNumber) do
 // AFGHAN NATIONAL ARMY (BLUFOR)
 	case 4:
 	{
-UK3CB_ANA_B_MG
     _Unit_Pool_S = ["UK3CB_ANA_B_CREW","UK3CB_ANA_B_HELI_PILOT","UK3CB_ANA_B_TL","UK3CB_ANA_B_RIF_2","UK3CB_ANA_B_RIF_1","UK3CB_ANA_B_MG","UK3CB_ANA_B_MD","UK3CB_ANA_B_LAT","UK3CB_ANA_B_GL","UK3CB_ANA_B_AR","UK3CB_ANA_B_AT","UK3CB_ANA_B_AA","UK3CB_ANA_B_MK"];
     _Unit_Pool_V = ["UK3CB_ANA_B_Hilux_Dshkm","UK3CB_ANA_B_Hilux_Spg9","UK3CB_ANA_B_M1025_M2","UK3CB_ANA_B_Offroad_M2","UK3CB_ANA_B_M113_M2","UK3CB_ANA_B_M113_M240"];
     _Unit_Pool_T = ["UK3CB_ANA_B_BMP1","UK3CB_ANA_B_BMP2K","UK3CB_ANA_B_ZsuTank","UK3CB_ANA_B_T55","UK3CB_ANA_B_T72A","UK3CB_ANA_B_T72B"];
@@ -286,7 +297,7 @@ UK3CB_ANA_B_MG
 //-------------------------------------------------------------------------------------------------
 
 
-// DAM (BLUFOR)
+// REPUBLIQUE DU DAMUZ (BLUFOR)
   case 18:
   {
     _Unit_Pool_S = ["CPC_ME_B_DAM_soldier_crew","CPC_ME_B_DAM_soldier_HeliPilot","CPC_ME_B_DAM_soldier_TL","CPC_ME_B_DAM_soldier_LAT","CPC_ME_B_DAM_soldier_Medic","CPC_ME_B_DAM_soldier_M","CPC_ME_B_DAM_soldier_MG","CPC_ME_B_DAM_soldier_GL","CPC_ME_B_DAM_soldier_AR","CPC_ME_B_DAM_soldier_AT","CPC_ME_B_DAM_soldier_AA"];
@@ -611,136 +622,158 @@ UK3CB_ANA_B_MG
 //////////////////////INDFOR//////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 
-// ISIS (INDFOR)
-  case 37:
+// CHERNARUS NATIONAL MILITIA (INDFOR)
+  case 47:
   {
-    _Unit_Pool_S = ["cfp_i_is_crewman","cfp_i_is_irregular","cfp_i_is_team_leader","cfp_i_is_autorifleman","cfp_i_is_machinegunner","cfp_i_is_militaman","cfp_i_is_at","cfp_i_is_medic","cfp_i_is_grenadier","cfp_i_is_sniper"];
-    _Unit_Pool_V = ["cfp_i_is_LR_SPG9","cfp_i_is_LR_M2","cfp_i_is_pickup_PK_flag","cfp_i_is_UAZ_METIS","cfp_i_is_offroad_M2","cfp_i_is_UAZ_AGS30","cfp_i_is_M113","cfp_i_is_BMP2_ZU","cfp_i_is_Ural_ZU23"];
-    _Unit_Pool_T = ["cfp_i_is_T72","cfp_i_is_T55","cfp_i_is_T34","cfp_i_is_ZSU","cfp_i_is_BMP1P","cfp_i_is_BMP2"];
+    _Unit_Pool_S = ["UK3CB_CCM_I_COM","UK3CB_CCM_I_COM","UK3CB_CCM_I_MD","UK3CB_CCM_I_SNI","UK3CB_CCM_I_RIF_BOLT","UK3CB_CCM_I_RIF_2","UK3CB_CCM_I_MD","UK3CB_CCM_I_AR","UK3CB_CCM_I_AT","UK3CB_CCM_I_AT_ASST"];
+    _Unit_Pool_V = ["UK3CB_CCM_I_Hilux_Dshkm","UK3CB_CCM_I_Hilux_Pkm"];
+    _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------
 
-// NAPA (INDFOR)
-  case 38:
+// TAKISTAN NATIONAL ARMY (INDFOR)
+  case 48:
   {
-    _Unit_Pool_S = ["CUP_I_GUE_Crew","CUP_I_GUE_Pilot","CUP_I_GUE_Officer","CUP_I_GUE_Soldier_AR","CUP_I_GUE_Soldier_MG","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AA2","CUP_I_GUE_Soldier_AA","CUP_I_GUE_Medic","CUP_I_GUE_Soldier_GL","CUP_I_GUE_Sniper"];
-    _Unit_Pool_V = ["CUP_I_Datsun_PK","CUP_I_Ural_ZU23_NAPA","CUP_I_MTLB_pk_NAPA","CUP_I_BRDM2_NAPA"];
-    _Unit_Pool_T = ["CUP_I_T72_NAPA","CUP_I_T55_NAPA","CUP_I_T34_NAPA","CUP_I_BMP2_NAPA","CUP_I_BRDM2_ATGM_NAPA"];
+    _Unit_Pool_S = ["UK3CB_TKA_I_CREW","UK3CB_TKA_I_JET_PILOT","UK3CB_TKA_I_SL","UK3CB_TKA_I_RIF_2","UK3CB_TKA_I_MD","UK3CB_TKA_I_MK","UK3CB_TKA_I_MG","UK3CB_TKA_I_LAT","UK3CB_TKA_I_GL","UK3CB_TKA_I_AR","UK3CB_TKA_I_AT","UK3CB_TKA_I_AA"];
+    _Unit_Pool_V = ["UK3CB_TKA_I_BRDM2","UK3CB_TKA_I_BRDM2_ATGM","UK3CB_TKA_I_GAZ_Vodnik_KVPT","UK3CB_TKA_I_GAZ_Vodnik_PKT","UK3CB_TKA_I_LR_M2","UK3CB_TKA_I_LR_SPG9","UK3CB_TKA_I_LR_SF_M2","UK3CB_TKA_I_BTR40_MG","UK3CB_TKA_I_BTR60","UK3CB_TKA_I_M113_M2","UK3CB_TKA_I_MTLB_PKT","UK3CB_TKA_I_V3S_Zu23"];
+    _Unit_Pool_T = ["UK3CB_TKA_I_ZsuTank","UK3CB_TKA_I_BMP1","UK3CB_TKA_I_BMP2","UK3CB_TKA_I_T34","UK3CB_TKA_I_T55","UK3CB_TKA_I_T72A"];
+    _Unit_Pool_A = ["UK3CB_TKA_I_Mi8AMTSh","UK3CB_TKA_I_UH1H_M240"];
+  }; 
+
+//-------------------------------------------------------------------------------------------------
+
+// TAKISTAN NATIONAL POLICE (INDFOR)
+  case 49:
+  {
+    _Unit_Pool_S = ["UK3CB_TKA_I_CREW","UK3CB_TKA_I_JET_PILOT","UK3CB_TKP_I_SL","UK3CB_TKP_I_RIF_2","UK3CB_TKP_I_MD","UK3CB_TKP_I_MK","UK3CB_TKP_I_MG","UK3CB_TKP_I_AR","UK3CB_TKP_I_AT"];
+    _Unit_Pool_V = ["UK3CB_TKP_I_Hilux_Dshkm","UK3CB_TKP_I_Hilux_PKM"];
+    _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------
 
-// RACS Pustynia (INDFOR)
-  case 39:
+// TAKISTAN TRIBAL FIGHTERS (INDFOR)
+  case 50:
   {
-    _Unit_Pool_S = ["CUP_I_RACS_Crew","CUP_I_RACS_Pilot","CUP_I_RACS_SL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_AA","CUP_I_RACS_Medic","CUP_I_RACS_GL","CUP_I_RACS_Sniper"];
-    _Unit_Pool_V = ["CUP_I_LR_MG_RACS","CUP_I_M113_RACS"];
-    _Unit_Pool_T = ["CUP_I_T72_RACS","CUP_I_M60A3_TTS_RACS","CUP_I_M163_RACS"];
-    _Unit_Pool_A = ["CUP_I_AH6J_RACS","CUP_I_CH47F_RACS","CUP_I_UH60L_FFV_RACS"];
+    _Unit_Pool_S = ["UK3CB_TKM_I_ENG","UK3CB_TKM_I_ENG","UK3CB_TKM_I_WAR","UK3CB_TKM_I_SPOT","UK3CB_TKM_I_MD","UK3CB_TKM_I_MG","UK3CB_TKM_I_LAT","UK3CB_TKM_I_GL","UK3CB_TKM_I_AR","UK3CB_TKM_I_AT","UK3CB_TKM_I_AA"];
+    _Unit_Pool_V = ["UK3CB_TKM_I_Hilux_Dshkm","UK3CB_TKM_I_Hilux_Spg9","UK3CB_TKM_I_Hilux_Zu23","UK3CB_TKM_I_Hilux_Rocket","UK3CB_TKM_I_BTR40_MG","UK3CB_TKM_I_BTR60","UK3CB_TKM_I_MTLB_PKT","UK3CB_TKM_I_V3S_Zu23"];
+    _Unit_Pool_T = ["UK3CB_TKM_I_BMP1","UK3CB_TKM_I_T34","UK3CB_TKM_I_T55"];
+    _Unit_Pool_A = [];
   }; 
 
 //-------------------------------------------------------------------------------------------------
 
-// RACS Las (INDFOR)
-  case 40:
+// UNITED NATIONS PEACEKEEPERS (INDFOR)
+  case 51:
   {
-    _Unit_Pool_S = ["CUP_I_RACS_Crew","CUP_I_RACS_Pilot","CUP_I_RACS_SL_wdl","CUP_I_RACS_MMG_wdl","CUP_I_RACS_Soldier_wdl","CUP_I_RACS_Soldier_MAT_wdl","CUP_I_RACS_Soldier_AA_wdl","CUP_I_RACS_Medic_wdl","CUP_I_RACS_GL_wdl","CUP_I_RACS_Sniper_wdl"];
-    _Unit_Pool_V = ["CUP_I_LR_MG_RACS","CUP_I_M113_RACS"];
-    _Unit_Pool_T = ["CUP_I_T72_RACS","CUP_I_M60A3_TTS_RACS","CUP_I_M163_RACS"];
-    _Unit_Pool_A = ["CUP_I_AH6J_RACS","CUP_I_CH47F_RACS","CUP_I_UH60L_FFV_RACS"];
+    _Unit_Pool_S = ["UK3CB_UN_I_CREW","UK3CB_UN_I_HELI_PILOT","UK3CB_UN_I_SL","UK3CB_UN_I_MD","UK3CB_UN_I_MK","UK3CB_UN_I_MG","UK3CB_UN_I_LAT","UK3CB_UN_I_GL","UK3CB_UN_I_AR","UK3CB_UN_I_AT","UK3CB_UN_I_AA"];
+    _Unit_Pool_V = ["UK3CB_UN_I_UAZ_MG","UK3CB_UN_I_UAZ_SPG9","UK3CB_UN_I_BRDM2","rhsgref_un_btr70","UK3CB_UN_I_M113_M2","UK3CB_UN_I_MTLB_PKT","UK3CB_UN_I_BTR40_MG","UK3CB_UN_I_Ural_Zu23"];
+    _Unit_Pool_T = ["UK3CB_UN_I_ZsuTank","UK3CB_UN_I_BMP1","UK3CB_UN_I_BMP2","UK3CB_UN_I_T34","UK3CB_UN_I_T55","UK3CB_UN_I_T72A"];
+    _Unit_Pool_A = ["UK3CB_UN_I_Mi8AMTSh","UK3CB_UN_I_UH1H_M240"];
   }; 
 
 //-------------------------------------------------------------------------------------------------
 
-// Sudan Murzyny (INDFOR)
-  case 41:
+// ALTIS ARMED FORCES CAMO01 (INDFOR)
+  case 52:
   {
-    _Unit_Pool_S = ["CFP_I_SSArmy_Soldier_06","CFP_I_SSArmy_Soldier_22","CFP_I_SSArmy_Soldier_13","CFP_I_SSArmy_Soldier_23","CFP_I_SSArmy_Soldier_02","CFP_I_SSArmy_Soldier_11","CFP_I_SSArmy_Soldier_03","CFP_I_SSArmy_Soldier_24","CFP_I_SSArmy_Soldier_05","CFP_I_SSArmy_Soldier_07","CFP_I_SDRebels_Soldier_02","CFP_I_SSArmy_Soldier_04"];
-    _Unit_Pool_V = ["CFP_I_SSArmy_Land_Rover_SPG_9_01","CFP_I_SSArmy_Pickup_PK_01","CFP_I_SSArmy_UAZ_DShKM_01","CFP_I_SSArmy_Ural_ZU_23_01"];
-    _Unit_Pool_T = ["CFP_I_SSArmy_T55_01","CFP_I_SSArmy_T72_01"];
-    _Unit_Pool_A = ["CFP_I_SSArmy_Mi_17_01"];
+    _Unit_Pool_S = ["ws_aaf_infantry_crew_tank","ws_aaf_aviation_pilot_heli","ws_aaf_infantry_sl","ws_aaf_infantry_lat","ws_aaf_infantry_dm","ws_aaf_infantry_mg","ws_aaf_infantry_med","ws_aaf_infantry_ar","ws_aaf_infantry_AT","ws_aaf_infantry_AA"];
+    _Unit_Pool_V = ["ws_aaf_car_iltis_milan","ws_aaf_apc_m113a1","ws_aaf_apc_m113a1_milan"];
+    _Unit_Pool_T = ["ws_aaf_apc_bmp1","ws_aaf_tank_leo1a3"];
+    _Unit_Pool_A = ["ws_aaf_air_uh1h_gunship"];
   }; 
-
+  
 //-------------------------------------------------------------------------------------------------
 
-// Takistan rebels (INDFOR)
-  case 42:
+// ALTIS ARMED FORCES CAMO02 (INDFOR)
+  case 53:
   {
-    _Unit_Pool_S = ["cfp_i_is_crewman","CUP_I_TK_GUE_Guerilla_Enfield","CUP_I_TK_GUE_Soldier_TL","CUP_I_TK_GUE_Soldier_AR","CUP_I_TK_GUE_Soldier_MG","CUP_I_TK_GUE_Soldier_AAT","CUP_I_TK_GUE_Soldier_AT","CUP_I_TK_GUE_Soldier_AA","CUP_I_TK_GUE_Demo","CUP_I_TK_GUE_Commander","CUP_I_TK_GUE_Soldier_GL","CUP_I_TK_GUE_Sniper"];
-    _Unit_Pool_V = ["CUP_I_Datsun_PK_TK_Random","CUP_I_BRDM2_TK_Gue","CUP_I_Ural_ZU23_TK_Gue","CUP_I_Datsun_PK_TK"];
-    _Unit_Pool_T = ["CUP_I_T34_TK_GUE","CUP_I_T55_TK_GUE","CUP_I_BRDM2_ATGM_TK_Gue"];
+    _Unit_Pool_S = ["ws_aaf_infantry_crew_tank","ws_aaf_aviation_pilot_heli","ws_aaf_conscript_officer","ws_aaf_conscript_lat","ws_aaf_conscript_dm","ws_aaf_conscript_mg","ws_aaf_conscript_med","ws_aaf_conscript_ar","ws_aaf_conscript_AT","ws_aaf_conscript_AA"];
+    _Unit_Pool_V = ["ws_aaf_car_iltis_milan","ws_aaf_apc_m113a1","ws_aaf_apc_m113a1_milan"];
+    _Unit_Pool_T = ["ws_aaf_apc_bmp1","ws_aaf_tank_leo1a3"];
+    _Unit_Pool_A = ["ws_aaf_air_uh1h_gunship"];
+  }; 
+  
+//-------------------------------------------------------------------------------------------------
+
+// ASIAN GUERILLA (INDFOR)
+  case 54:
+  {
+    _Unit_Pool_S = ["CPC_JUN_I_AGUE_soldier_6","CPC_JUN_I_AGUE_soldier_6","CPC_JUN_I_AGUE_soldier_TL","CPC_JUN_I_AGUE_soldier_LAT","CPC_JUN_I_AGUE_soldier_5","CPC_JUN_I_AGUE_soldier_2","CPC_JUN_I_AGUE_soldier_6","CPC_JUN_I_AGUE_soldier_Medic","CPC_JUN_I_AGUE_soldier_M","CPC_JUN_I_AGUE_soldier_MG","CPC_JUN_I_AGUE_soldier_GL_2","CPC_JUN_I_AGUE_soldier_AT"];
+    _Unit_Pool_V = ["CPC_JUN_I_AGUE_uaz_dshkm","CPC_JUN_I_AGUE_uaz_spg9"];
+    _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   }; 
   
 //-------------------------------------------------------------------------------------------------
-
-// UN Pustynia (INDFOR)
-  case 43:
+  
+// CHERNARUS DEFENCE FORCES (INDFOR)
+  case 55:
   {
-    _Unit_Pool_S = ["CUP_I_UN_CDF_Crew_DST","CUP_I_UN_CDF_Pilot_DST","CUP_I_UN_CDF_Soldier_SL_DST","CUP_I_UN_CDF_Soldier_MG_DST","CUP_I_UN_CDF_Soldier_AMG_DST","CUP_I_UN_CDF_Soldier_AT_DST","CUP_I_UN_CDF_Guard_DST","CUP_I_UN_CDF_Soldier_AAT_DST","CUP_I_UN_CDF_Soldier_Backpack_DST"];
-    _Unit_Pool_V = ["CUP_I_UAZ_AGS30_UN","CUP_I_UAZ_MG_UN","CUP_I_UAZ_SPG9_UN","CUP_I_BRDM2_UN","CUP_I_BTR60_UN","CUP_I_M113_UN"];
-    _Unit_Pool_T = ["CUP_I_BMP2_UN"];
-    _Unit_Pool_A = ["CUP_I_Mi17_UN"];
+    _Unit_Pool_S = ["rhsgref_cdf_para_crew","rhsgref_cdf_air_pilot","rhsgref_cdf_para_squadleader","rhsgref_cdf_para_rifleman","rhsgref_cdf_para_medic","rhsgref_cdf_para_machinegunner","rhsgref_cdf_para_grenadier","rhsgref_cdf_para_autorifleman","rhsgref_cdf_para_grenadier_rpg","rhsgref_cdf_para_specialist_aa"];
+    _Unit_Pool_V = ["UK3CB_I_LandRover_M2_CDF","UK3CB_I_LandRover_SPG9_CDF","UK3CB_I_LandRover_SF_M2_CDF","rhsgref_BRDM2","rhsgref_BRDM2_ATGM","rhsgref_cdf_gaz66_zu23","rhsgref_cdf_btr70"];
+    _Unit_Pool_T = ["rhsgref_cdf_zsu234","rhsgref_cdf_bmd1p","rhsgref_cdf_bmd2k","UK3CB_I_T55_CDF","rhsgref_cdf_t80b_tv"];
+    _Unit_Pool_A = ["rhsgref_cdf_reg_Mi17Sh"];
   }; 
   
 //-------------------------------------------------------------------------------------------------
   
-// UN Las (INDFOR)
-  case 44:
+// CHERNARUSSIAN NATIONALIST MILITIA CAMO01 (INDFOR)
+  case 56:
   {
-    _Unit_Pool_S = ["CUP_I_UN_CDF_Crew_FST","CUP_I_UN_CDF_Pilot_FST","CUP_I_UN_CDF_Soldier_SL_FST","CUP_I_UN_CDF_Soldier_MG_FST","CUP_I_UN_CDF_Soldier_AMG_FST","CUP_I_UN_CDF_Soldier_AT_FST","CUP_I_UN_CDF_Guard_FST","CUP_I_UN_CDF_Soldier_AAT_FST","CUP_I_UN_CDF_Soldier_Backpack_FST"];
-    _Unit_Pool_V = ["CUP_I_UAZ_AGS30_UN","CUP_I_UAZ_MG_UN","CUP_I_UAZ_SPG9_UN","CUP_I_BRDM2_UN","CUP_I_BTR60_UN","CUP_I_M113_UN"];
-    _Unit_Pool_T = ["CUP_I_BMP2_UN"];
-    _Unit_Pool_A = ["CUP_I_Mi17_UN"];
+    _Unit_Pool_S = ["rhsgref_nat_crew","rhsgref_nat_crew","rhsgref_nat_commander","rhsgref_nat_rifleman_mp44","rhsgref_nat_grenadier","rhsgref_nat_militiaman_kar98k","rhsgref_nat_medic","rhsgref_nat_machinegunner_mg42","rhsgref_nat_machinegunner","rhsgref_nat_hunter","rhsgref_nat_grenadier_rpg","rhsgref_nat_specialist_aa"];
+    _Unit_Pool_V = ["rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_spg9","rhsgref_nat_btr70","rhsgref_nat_ural_Zu23"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
   }; 
-  
+ 
 //-------------------------------------------------------------------------------------------------
   
-// UN Gorskie (INDFOR)
-  case 45:
+// CHERNARUSSIAN NATIONALIST MILITIA CAMO02 (INDFOR)
+  case 57:
   {
-    _Unit_Pool_S = ["CUP_I_UN_CDF_Crew_MNT","CUP_I_UN_CDF_Pilot_MNT","CUP_I_UN_CDF_Soldier_SL_MNT","CUP_I_UN_CDF_Soldier_MG_MNT","CUP_I_UN_CDF_Soldier_AMG_MNT","CUP_I_UN_CDF_Soldier_AT_MNT","CUP_I_UN_CDF_Guard_MNT","CUP_I_UN_CDF_Soldier_AAT_MNT","CUP_I_UN_CDF_Soldier_Backpack_MNT"];
-    _Unit_Pool_V = ["CUP_I_UAZ_AGS30_UN","CUP_I_UAZ_MG_UN","CUP_I_UAZ_SPG9_UN","CUP_I_BRDM2_UN","CUP_I_BTR60_UN","CUP_I_M113_UN"];
-    _Unit_Pool_T = ["CUP_I_BMP2_UN"];
-    _Unit_Pool_A = ["CUP_I_Mi17_UN"];
+    _Unit_Pool_S = ["rhsgref_nat_pmil_crew","rhsgref_nat_pmil_crew","rhsgref_nat_pmil_commander","rhsgref_nat_pmil_saboteur","rhsgref_nat_pmil_grenadier","rhsgref_nat_pmil_rifleman_aksu","rhsgref_nat_pmil_medic","rhsgref_nat_pmil_hunter","rhsgref_nat_pmil_machinegunner","rhsgref_nat_pmil_grenadier_rpg","rhsgref_nat_pmil_specialist_aa"];
+    _Unit_Pool_V = ["rhsgref_nat_uaz_dshkm","rhsgref_nat_uaz_spg9","rhsgref_nat_btr70","rhsgref_nat_ural_Zu23"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
   }; 
  
 //-------------------------------------------------------------------------------------------------
 
-// Syndykat bandycy (INDFOR)
-  case 46:
+// UNITED NATIONS SERBIAN ARMED FORCES DIGITAL DESERT (INDFOR)
+  case 58:
   {
-    _Unit_Pool_S = ["I_C_Soldier_Bandit_8_F","I_C_Pilot_F","I_C_Soldier_Bandit_7_F","I_C_Soldier_Bandit_3_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_Bandit_1_F"];
+    _Unit_Pool_S = ["rhssaf_un_m10_digital_desert_crew","rhssaf_airforce_pilot_transport_heli","rhssaf_un_m10_digital_desert_sq_lead","rhssaf_un_m10_digital_desert_rifleman_at","rhssaf_un_m10_digital_desert_spec_at","rhssaf_un_m10_digital_desert_spec_aa","rhssaf_un_m10_digital_desert_mgun_m84","rhssaf_un_m10_digital_desert_gl","rhssaf_un_m10_digital_desert_medic"];
+    _Unit_Pool_V = ["UK3CB_UN_I_M1025_M2","UK3CB_UN_I_M1025_TOW","UK3CB_UN_I_BRDM2","UK3CB_UN_I_M113_M2","UK3CB_UN_I_BTR70","UK3CB_UN_I_BMP2K"];
+    _Unit_Pool_T = ["UK3CB_UN_I_T72B","UK3CB_UN_I_Mi8AMTSh","UK3CB_UN_I_ZsuTank"];
+    _Unit_Pool_A = [];
+  }; 
+ 
+//-------------------------------------------------------------------------------------------------
+
+// UNITED NATIONS SERBIAN ARMED FORCES DIGITAL WOODLAND (INDFOR)
+  case 59:
+  {
+    _Unit_Pool_S = ["rhssaf_un_m10_digital_crew","rhssaf_airforce_pilot_transport_heli","rhssaf_un_m10_digital_sq_lead","rhssaf_un_m10_digital_rifleman_at","rhssaf_un_m10_digital_spec_at","rhssaf_un_m10_digital_spec_aa","rhssaf_un_m10_digital_mgun_m84","rhssaf_un_m10_digital_gl","rhssaf_un_m10_digital_medic"];
+    _Unit_Pool_V = ["UK3CB_UN_I_M1025_M2","UK3CB_UN_I_M1025_TOW","UK3CB_UN_I_BRDM2","UK3CB_UN_I_M113_M2","UK3CB_UN_I_BTR70","UK3CB_UN_I_BMP2K"];
+    _Unit_Pool_T = ["UK3CB_UN_I_T72B","UK3CB_UN_I_Mi8AMTSh","UK3CB_UN_I_ZsuTank"];
+    _Unit_Pool_A = [];
+  }; 
+ 
+//-------------------------------------------------------------------------------------------------
+
+// SYNDIKAT (INDFOR)
+  case 60:
+  {
+    _Unit_Pool_S = ["I_C_Helipilot_F","I_C_Pilot_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Para_5_F","I_C_Soldier_Para_8_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_7_F"];
     _Unit_Pool_V = ["I_C_Offroad_02_LMG_F","I_C_Offroad_02_AT_F"];
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   }; 
  
-//-------------------------------------------------------------------------------------------------
-
-// Syndykat paramilita (INDFOR)
-  case 47:
-  {
-    _Unit_Pool_S = ["I_C_Soldier_Para_2_F","I_C_Helipilot_F","I_C_Soldier_Para_6_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_5_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_1_F"];
-    _Unit_Pool_V = ["I_C_Offroad_02_LMG_F","I_C_Offroad_02_AT_F","CUP_I_MTLB_pk_SYNDIKAT"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = [];
-  }; 
- 
-//-------------------------------------------------------------------------------------------------
-  
-  // Syndykat paramilita (INDFOR)
-  case 48:
-  {
-    _Unit_Pool_S = ["CUP_I_PMC_Crew","CUP_I_PMC_Pilot","CUP_I_PMC_Soldier_TL","CUP_I_PMC_Soldier_MG_PKM","CUP_I_PMC_Soldier_AT","CUP_I_PMC_Soldier_GL_M16A2","CUP_I_PMC_Medic","CUP_I_PMC_Contractor2","CUP_I_PMC_Soldier_AA"];
-    _Unit_Pool_V = ["CUP_I_SUV_Armored_ION","CUP_I_LSV_02_Minigun_ION","CUP_I_LSV_02_AT_ION","CUP_I_4WD_LMG_ION","CUP_I_4WD_AT_ION"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = ["CUP_I_Ka60_GL_Blk_ION"];
-  }; 
-
 //-------------------------------------------------------------------------------------------------
 
 // XX (INDFOR)
