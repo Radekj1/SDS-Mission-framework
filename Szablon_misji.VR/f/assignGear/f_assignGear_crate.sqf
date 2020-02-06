@@ -105,6 +105,7 @@
 		_unit addItemCargoGlobal [_worek, 25];
 		_unit addItemCargoGlobal [_personalAidKit, 25];
 		_unit addItemCargoGlobal [_surgicalKit, 2];
+		_unit addItemCargoGlobal [_AED, 2];
 	};
 
 // CARGO: Heli - Przykład inicjalizacji: ["v_heli",this,"blu_f"] call f_fnc_assignGear
