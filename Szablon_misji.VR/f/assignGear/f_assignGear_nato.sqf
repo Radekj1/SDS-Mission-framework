@@ -40,6 +40,7 @@ _medkit = "Medikit";
 _personalAidKit = "ACE_personalAidKit";		// personal Aid Kit
 _surgicalKit = "ACE_surgicalKit";			// surgical Kit
 _worek = "ACE_bodyBag";						// body Bag
+_AED = "adv_aceCPR_AED";
 
 // Bandages
 _bandage = "ACE_fieldDressing";				// field Dressing

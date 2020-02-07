@@ -23,6 +23,7 @@ case "m":
 		(unitBackpack _unit) addItemCargoGlobal [_adenosine,6];
 		(unitBackpack _unit) addItemCargoGlobal [_splint,6];
 		(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 3];
 		(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 	};
 	
@@ -44,6 +45,7 @@ case "m":
 		(unitBackpack _unit) addItemCargoGlobal [_adenosine,10];
 		(unitBackpack _unit) addItemCargoGlobal [_splint,10];
 		(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 5];
 		(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 			
 	};
@@ -65,6 +67,7 @@ case "m":
 		(unitBackpack _unit) addItemCargoGlobal [_adenosine,15];
 		(unitBackpack _unit) addItemCargoGlobal [_splint,15];
 		(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+		(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 8];
 		(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 	
 	};
