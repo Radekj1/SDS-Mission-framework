@@ -151,8 +151,8 @@ switch (_TypNumber) do
 	{
     _Unit_Pool_S = ["UK3CB_CCM_B_ENG","UK3CB_CCM_B_COM","UK3CB_CCM_B_TL","UK3CB_CCM_B_SNI","UK3CB_CCM_B_RIF_BOLT","UK3CB_CCM_B_RIF_2","UK3CB_CCM_B_MD","UK3CB_CCM_B_AR","UK3CB_CCM_B_AT","UK3CB_CCM_B_AT_ASST"];
     _Unit_Pool_V = ["UK3CB_CCM_B_Hilux_Pkm","UK3CB_CCM_B_Hilux_Dshkm"];
-    _Unit_Pool_T = [""]; 
-    _Unit_Pool_A = [""];
+    _Unit_Pool_T = []; 
+    _Unit_Pool_A = [];
   };
 
 //-------------------------------------------------------------------------------------------------
@@ -162,8 +162,8 @@ switch (_TypNumber) do
 	{
     _Unit_Pool_S = ["UK3CB_ANA_B_CREW","UK3CB_ANA_B_HELI_PILOT","UK3CB_ANP_B_SL","UK3CB_ANP_B_RIF_2","UK3CB_ANP_B_MD","UK3CB_ANP_B_AR","UK3CB_ANP_B_AT"];
     _Unit_Pool_V = ["UK3CB_ANP_B_Offroad_M2","UK3CB_ANP_B_Hilux_Dshkm"];
-    _Unit_Pool_T = [""]; 
-    _Unit_Pool_A = [""];
+    _Unit_Pool_T = []; 
+    _Unit_Pool_A = [];
   };
  
 //-------------------------------------------------------------------------------------------------
@@ -322,7 +322,7 @@ switch (_TypNumber) do
 // US ARMY UCP (BLUFOR)
   case 20:
   {
-    _Unit_Pool_S = ["rhsusf_army_ucp_crewman","rhsusf_army_ucp_ah64_pilot","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_sniper_m24sws","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_machinegunner","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_medic","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_maaws","rhsusf_army_ucp_aa"]];
+    _Unit_Pool_S = ["rhsusf_army_ucp_crewman","rhsusf_army_ucp_ah64_pilot","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_sniper_m24sws","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_machinegunner","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_medic","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_maaws","rhsusf_army_ucp_aa"];
     _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC","CUP_B_HMMWV_M1114_USMC","CUP_B_HMMWV_MK19_USMC","CUP_B_HMMWV_Avenger_USMC","CUP_B_HMMWV_TOW_USMC"];
     _Unit_Pool_T = ["RHS_M2A3_BUSKI_wd","rhsusf_m1a1aimwd_usarmy"];
     _Unit_Pool_A = ["RHS_UH60M","RHS_MELB_AH6M"];
