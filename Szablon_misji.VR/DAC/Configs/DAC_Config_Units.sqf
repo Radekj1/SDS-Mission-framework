@@ -289,8 +289,8 @@ switch (_TypNumber) do
   case 17:
   {
     _Unit_Pool_S = ["rhsgref_hidf_crewman","rhsgref_hidf_helipilot","rhsgref_hidf_squadleader","rhsgref_hidf_rifleman_m72","rhsgref_hidf_marksman","rhsgref_hidf_machinegunner","rhsgref_hidf_grenadier","rhsgref_hidf_medic","rhsgref_hidf_autorifleman","rhsgref_hidf_boat_driver"];
-    _Unit_Pool_V = ["CUP_B_M1151_M2_DSRT_USMC","CUP_B_M1167_DSRT_USMC","CUP_B_RG31_M2_USMC","CUP_B_RG31_Mk19_USMC","CUP_B_LAV25M240_desert_USMC"];
-    _Unit_Pool_T = ["UK3CB_B_M151_Jeep_HMG_HIDF","UK3CB_B_M151_Jeep_TOW_HIDF","rhsgref_hidf_m1025_m2","UK3CB_B_M939_Guntruck_HIDF","rhsgref_hidf_m113a3_m2"];
+    _Unit_Pool_V = ["UK3CB_B_M151_Jeep_HMG_HIDF","UK3CB_B_M151_Jeep_TOW_HIDF","rhsgref_hidf_m1025_m2","UK3CB_B_M939_Guntruck_HIDF","rhsgref_hidf_m113a3_m2"];
+    _Unit_Pool_T = [];
     _Unit_Pool_A = ["rhs_uh1h_hidf_gunship"];
   };
   
@@ -323,7 +323,7 @@ switch (_TypNumber) do
   case 20:
   {
     _Unit_Pool_S = ["rhsusf_army_ucp_crewman","rhsusf_army_ucp_ah64_pilot","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_sniper_m24sws","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_machinegunner","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_medic","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_maaws","rhsusf_army_ucp_aa"];
-    _Unit_Pool_V = ["CUP_B_HMMWV_M2_USMC","CUP_B_HMMWV_M1114_USMC","CUP_B_HMMWV_MK19_USMC","CUP_B_HMMWV_Avenger_USMC","CUP_B_HMMWV_TOW_USMC"];
+    _Unit_Pool_V = [];
     _Unit_Pool_T = ["RHS_M2A3_BUSKI_wd","rhsusf_m1a1aimwd_usarmy"];
     _Unit_Pool_A = ["RHS_UH60M","RHS_MELB_AH6M"];
   };
@@ -775,16 +775,16 @@ switch (_TypNumber) do
   }; 
  
 //-------------------------------------------------------------------------------------------------
-
-// XX (INDFOR)
-  case 100:
+/*
+// NAME (SITE)
+  case No:
   {
     _Unit_Pool_S = [];
     _Unit_Pool_V = [];
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   }; 
-
+*/
 //-------------------------------------------------------------------------------------------------
 
 
