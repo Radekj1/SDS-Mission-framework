@@ -313,7 +313,7 @@ switch (_TypNumber) do
   {
     _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_ah64_pilot","rhsusf_army_ocp_arb_teamleader","rhsusf_army_ocp_arb_riflemanat","rhsusf_army_ocp_arb_marksman","rhsusf_army_ocp_arb_machinegunner","rhsusf_army_ocp_arb_grenadier","rhsusf_army_ocp_arb_medic","rhsusf_army_ocp_arb_autorifleman","rhsusf_army_ocp_arb_maaws","rhsusf_army_ocp_arb_rifleman_m590"];
     _Unit_Pool_V = ["rhsusf_m1240a1_m2_usarmy_d","rhsusf_m1240a1_m240_usarmy_d","rhsusf_stryker_m1126_m2_d"];
-    _Unit_Pool_T = ["RHS_M2A3_BUSKIII"];
+    _Unit_Pool_T = ["RHS_M2A3_BUSKIII","rhsusf_m1a2sep1tuskid_usarmy"];
     _Unit_Pool_A = ["RHS_UH60M_d","RHS_MELB_AH6M"];
   };
 
@@ -323,7 +323,7 @@ switch (_TypNumber) do
   case 20:
   {
     _Unit_Pool_S = ["rhsusf_army_ucp_crewman","rhsusf_army_ucp_ah64_pilot","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_sniper_m24sws","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_machinegunner","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_medic","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_maaws","rhsusf_army_ucp_aa"];
-    _Unit_Pool_V = [];
+    _Unit_Pool_V = ["rhsusf_m1043_w_m2","rhsusf_m966_w","rhsusf_m113_usarmy_M2_90","rhsusf_m113_usarmy_M240"];
     _Unit_Pool_T = ["RHS_M2A3_BUSKI_wd","rhsusf_m1a1aimwd_usarmy"];
     _Unit_Pool_A = ["RHS_UH60M","RHS_MELB_AH6M"];
   };
