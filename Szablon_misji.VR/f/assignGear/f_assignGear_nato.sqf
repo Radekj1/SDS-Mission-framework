@@ -2760,9 +2760,9 @@ _hg_attachments= [];
 // Weapons
 
 // Basic weapon (its for most of basic units, like rifleman etc.)
-_rifle = "UK3CB_M16A1";
-_riflemag = "UK3CB_BAF_556_30Rnd";
-_riflemag_tr = "UK3CB_BAF_556_30Rnd_T";
+_rifle = "UK3CB_M16";
+_riflemag = "UK3CB_M16_20Rnd_Mag";
+_riflemag_tr = "UK3CB_M16_20Rnd_Mag_T";
 
 // Light/short version (its for units with additional equipment, like medic etc.)
 _carbine = "UK3CB_M14";
