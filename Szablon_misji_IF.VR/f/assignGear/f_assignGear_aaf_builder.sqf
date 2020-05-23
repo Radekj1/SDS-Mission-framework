@@ -83,8 +83,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,3];
+		//_unit addmagazines [_glmag,6];
+		//_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -92,8 +92,8 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _radioMR;
-		_unit addItem _GPS;
+		//_unit addItem _radioMR;
+		//_unit addItem _GPS;
 		["ftl"] call _backpack;
 	};
 
@@ -102,8 +102,8 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,3];
+		//_unit addmagazines [_glmag,6];
+		//_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -111,9 +111,9 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _radioMR;
-		_unit addItem _GPS;
-		["ftl"] call _backpack;
+		//_unit addItem _radioMR;
+		//_unit addItem _GPS;
+		["g"] call _backpack;
 	};
 
 // LOADOUT: MEDIC
@@ -127,7 +127,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
-		_unit addItem _GPS;
+		//_unit addItem _GPS;
 		["m"] call _backpack;
 	};
 
@@ -136,15 +136,15 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,3];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,3];
+		//_unit addmagazines [_glmag,6];
+		//_unit addmagazines [_glsmokewhite,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _GPS;
+		//_unit addItem _GPS;
 		["g"] call _backpack;
 	};
 

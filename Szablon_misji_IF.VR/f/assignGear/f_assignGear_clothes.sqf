@@ -22,7 +22,14 @@ _glasses = _baseGlasses;
 
 // Flip through unit to assign specialized uniforms
 
-// CO/DC/SL/TL
+// CO
+if (_typeOfUnit in _CO) then {
+	_helmet = _CoHelmet;
+	_uniform = _CoUniform;
+	_rig = _CoRig;
+	_glasses = _CoGlasses;
+};	
+// DC/SL/TL
 if (_typeOfUnit in _slR) then {
 	_rig = _slRig;
 };

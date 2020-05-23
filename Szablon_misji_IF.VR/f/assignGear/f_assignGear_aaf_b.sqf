@@ -82,8 +82,6 @@ case "ftl":
 		_unit addBackpack _bagRadio;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
 	};
 
@@ -94,8 +92,6 @@ case "ftl":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,3];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,1];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];		
 		
 	};
@@ -107,8 +103,6 @@ case "ftl":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,8];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade,1];
 		
@@ -278,7 +272,6 @@ case "g":
 		_unit addBackpack _bagTL;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
 				
 	};
@@ -290,8 +283,6 @@ case "g":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
 		
 	};
@@ -301,8 +292,6 @@ case "g":
 		_unit addBackpack _bagTL;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag,8];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue,2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
 		
