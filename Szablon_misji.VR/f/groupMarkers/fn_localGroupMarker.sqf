@@ -100,12 +100,12 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-// Sniper Team
+// Recon
 	case 4:
 	{
 		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
 		_mkr setMarkerShapeLocal "ICON";
-		_mkrName setMarkerTypeLocal  "b_sf";
+		_mkrName setMarkerTypeLocal  "b_recon";
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
@@ -125,7 +125,7 @@ switch (_mkrType) do
 	{
 		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
 		_mkr setMarkerShapeLocal "ICON";
-		_mkrName setMarkerTypeLocal  "b_maint";
+		_mkrName setMarkerTypeLocal  "b_engineer";
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
@@ -140,7 +140,7 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-	// Mot
+// Mot
 	case 8:
 	{
 		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
@@ -196,6 +196,27 @@ switch (_mkrType) do
 		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_antiair";
+		_mkrName setMarkerColorLocal _mkrColor;
+		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerTextLocal _mkrText;
+	};
+// EOD
+	case 14:
+	{
+		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
+		_mkr setMarkerShapeLocal "ICON";
+		_mkrName setMarkerTypeLocal  "b_EOD";
+		_mkrName setMarkerColorLocal _mkrColor;
+		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerTextLocal _mkrText;
+	};
+
+// MC
+	case 15:
+	{
+		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
+		_mkr setMarkerShapeLocal "ICON";
+		_mkrName setMarkerTypeLocal  "b_med";
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;

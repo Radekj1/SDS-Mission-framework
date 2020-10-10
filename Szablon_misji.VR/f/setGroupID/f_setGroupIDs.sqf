@@ -45,14 +45,16 @@ _groups = [
 ["GrpNATO_HAT1","HAT"],
 ["GrpNATO_MTR1","MTR"],
 ["GrpNATO_MSAM1","SAM"],
-["GrpNATO_HSAM1","HSAM"],
+["GrpNATO_GMG1","GMG"],
+["GrpNATO_MC","MC"],
+["GrpNATO_EOD","EOD"],
 
 ["GrpNATO_ST1","ST1"],
 
-["GrpNATO_DT1","SF1"],
-["GrpNATO_DT2","SF2"],
+["GrpNATO_SF1","Cyclop 1"],
+["GrpNATO_SF2","Cyclop 2"],
 
-["GrpNATO_ENG1","ENG"],
+["GrpNATO_ENG1","Logistics"],
 
 ["GrpNATO_IFV1","Centaur 1-1"],
 ["GrpNATO_IFV2","Centaur 1-2"],
@@ -62,17 +64,12 @@ _groups = [
 ["GrpNATO_TNK2","Chimera 1-2"],
 ["GrpNATO_TNK3","Chimera 1-3"],
 
-["GrpNATO_TH1","Harpie 1"],
-["GrpNATO_TH2","Harpie 2"],
-["GrpNATO_TH3","Harpie 3"],
-["GrpNATO_TH4","Harpie 4"],
-["GrpNATO_TH5","Harpie 5"],
-["GrpNATO_TH6","Harpie 6"],
-["GrpNATO_TH7","Harpie 7"],
-["GrpNATO_TH8","Harpie 8"],
+["GrpNATO_TH1","Harpie 1-1"],
+["GrpNATO_TH2","Harpie 1-2"],
+["GrpNATO_TH3","Harpie 1-3"],
+["GrpNATO_TH4","Harpie 1-4"],
 
-["GrpNATO_AH1","Phoenix 1"],
-["GrpNATO_AH2","Phoenix 2"],
+["GrpNATO_AH1","Phoenix"],
 
 // ====================================================================================
 
