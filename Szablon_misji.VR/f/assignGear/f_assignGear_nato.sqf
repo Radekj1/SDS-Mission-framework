@@ -528,7 +528,7 @@ _pilot = ["pp","pcc","pc"];
 _JPilotR = ["ps"];
 _crew = ["vc","vg","vd"];
 _diver = ["divc","divr","divs","divm"];
-_sfR = ["sftl","sfm","sfat","sfs"];
+_specOp = ["sftl","sfm","sfat","sfs"];
 _ghillie = ["sn","sp"];
 
 // Officer

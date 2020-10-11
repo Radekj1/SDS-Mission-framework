@@ -449,7 +449,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _smg;
 		_unit addweapon _pistol;
-		["hatag"] call _backpack;
+		["hatab"] call _backpack;
 	};
 
 // LOADOUT: MORTAR GUNNER
@@ -570,7 +570,7 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_smgmag,3];
 		_unit addmagazines [_smgmag_tr,2];
-		_unit addweapon _carbi_smgne;
+		_unit addweapon _smg;
 		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
@@ -763,7 +763,7 @@ switch (_typeofUnit) do
 		_unit addItem _GPS; 
         _unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
-        ["ftl"] call _backpack;
+        ["tl"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
 
@@ -822,14 +822,14 @@ switch (_typeofUnit) do
 		_unit addItem _GPS;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
-		["divm"] call _backpack;
+		["sfm"] call _backpack;
 	};
 
 // LOADOUT: Strzelec AT sil specjalnych
 	case "sfat":
 	{
-		_unit addmagazines [_ARmagSF,3];
-		_unit addmagazines [_ARmag_trSF,2];
+		_unit addmagazines [_ARmagSF,2];
+		_unit addmagazines [_ARmag_trSF,1];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_SFpistolmag,2];
 		_unit addmagazines [_smokegrenadeblue,2];

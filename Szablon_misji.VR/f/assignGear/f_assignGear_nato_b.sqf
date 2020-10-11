@@ -28,7 +28,7 @@ case "m":
 };
 
 // BACKPACK: DOCTOR
-case "m":
+case "doc":
 {
 	_unit addBackpack _bagMed;
 	clearMagazineCargoGlobal (unitBackpack _unit);
@@ -195,9 +195,8 @@ case "hmgab":
 {
 	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_HmagRed, 2];
+	(unitBackpack _unit) addItemCargoGlobal [_HmagRed, 4];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr, 2];		
 };
 
 // BACKPACK: MAT GUNNER (MATG)
@@ -257,7 +256,6 @@ case "hatag":
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 	}else{
 		_unit addBackpack _baghatag;
 		clearMagazineCargoGlobal (unitBackpack _unit);
@@ -346,9 +344,9 @@ case "gmgag":
 // LOADOUT: GMG AMMO BEARER (HSAMAB)
 case "gmgab":
 {
-	_unit addBackpack _baglarge;
+	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_mk19GMG, 6];
+	(unitBackpack _unit) addItemCargoGlobal [_mk19GMG, 8];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
 };
 
@@ -444,7 +442,7 @@ case "sfat":
 	_unit addBackpack _bagSF;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_ARmagSF, 3];
+	(unitBackpack _unit) addMagazineCargoGlobal [_ARmagSF, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_ARmag_trSF, 1];
 };
 
