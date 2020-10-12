@@ -166,6 +166,13 @@ _ATmine = "ATMine_Range_Mag";
 _APmine1 = "APERSBoundingMine_Range_Mag";
 _APmine2 = "APERSMine_Range_Mag";
 
+_tripMine = "APERSTripMine_Wire_Mag";
+_tripFlare = "ACE_FlareTripMine_Mag";
+
+// IED
+_IED = "IEDLandSmall_Remote_Mag";
+_IEDurban = "IEDUrbanSmall_Remote_Mag";
+
 // Explosives
 _satche_small = "ClaymoreDirectionalMine_Remote_Mag";
 _satche_big = "DemoCharge_Remote_Mag";

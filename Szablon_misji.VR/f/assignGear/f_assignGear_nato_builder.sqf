@@ -896,6 +896,12 @@ switch (_typeofUnit) do
 		["v_med"] call _crate;	
 	};
 
+// CARGO: Med - Przykład inicjalizacji: ["v_med",this,"blu_f"] call f_fnc_assignGear
+	case "v_ammo":
+	{
+		["v_ammo"] call _crate;	
+	};
+
 // CARGO: Med - Przykład inicjalizacji: ["v_heli",this,"blu_f"] call f_fnc_assignGear
 	case "v_heli":
 	{
@@ -938,24 +944,48 @@ switch (_typeofUnit) do
 		["crate_mmg"] call _crate;
 	};
 
+// CRATE: Skrzynka, zasoby HMG
+	case "crate_hmg":
+	{
+		["crate_hmg"] call _crate;
+	};
+
 // CRATE: Skrzynka, zasoby MAT
 	case "crate_mat":
 	{
 		["crate_mat"] call _crate;
 	};	
 
-// CRATE: Skrzynka, zasoby SAM
-	case "crate_sam":
-	{
-		["crate_sam"] call _crate;
-	};
-	
 // CRATE: Skrzynka, zasoby HAT
 	case "crate_hat":
 	{
 		["crate_hat"] call _crate;
 	};
-	
+
+// CRATE: Skrzynka, zasoby HAT (STATYCZNY)
+	case "crate_hat_alt":
+	{
+		["crate_hat_alt"] call _crate;
+	};
+
+// CRATE: Skrzynka, zasoby SAM
+	case "crate_sam":
+	{
+		["crate_sam"] call _crate;
+	};
+
+// CRATE: Skrzynka, zasoby GMG
+	case "crate_gmg":
+	{
+		["crate_gmg"] call _crate;
+	};
+
+// CRATE: Skrzynka, zasoby SF
+	case "crate_SF":
+	{
+		["crate_SF"] call _crate;
+	};
+
 // CRATE: Skrzynka, zasoby Nocne
 	case "crate_night_small":
 	{
@@ -969,15 +999,15 @@ switch (_typeofUnit) do
 	};
 
 // CRATE: Skrzynka, ładunki
-	case "crate_small_explo":
+	case "crate_explo":
 	{
-		["crate_small_explo"] call _crate;
+		["crate_explo"] call _crate;
 	};
 
-// CRATE: Skrzynka, ładunki
-	case "crate_large_explo":
+// CRATE: Skrzynka, miny
+	case "crate_mines":
 	{
-		["crate_large_explo"] call _crate;
+		["crate_mines"] call _crate;
 	};
 
 // CRATE: Radios

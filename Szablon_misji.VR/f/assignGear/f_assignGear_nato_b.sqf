@@ -392,7 +392,7 @@ case "smg":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 4];
 	(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
-	(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_flashbang, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadeblue, 1];
 };
 
@@ -411,7 +411,7 @@ case "sftl":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemagSF, 4];
 	(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_flashbang, 2];
 };
 
 // BACKPACK: SF Medic
@@ -441,7 +441,7 @@ case "sfat":
 {
 	_unit addBackpack _bagSF;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_flashbang, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_ARmagSF, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_ARmag_trSF, 1];
 };
