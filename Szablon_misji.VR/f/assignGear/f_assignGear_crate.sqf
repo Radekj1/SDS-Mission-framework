@@ -413,7 +413,7 @@
 	};
 	
 // CRATE: Skrzynka, zasoby SF
-	case "crate_SF":
+	case "crate_spec":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;

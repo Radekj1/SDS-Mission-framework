@@ -23,7 +23,7 @@ switch (_typeofCrate) do
 	case "crate_hat_alt":		{ _mycrate = "Box_NATO_WpsLaunch_F"; };
 	case "crate_hmg":			{ _mycrate = "Box_NATO_Ammo_F"; };
 	case "crate_gmg":			{ _mycrate = "Box_NATO_Grenades_F"; };
-	case "crate_SF":			{ _mycrate = "Box_NATO_WpsSpecial_F"; };
+	case "crate_spec":			{ _mycrate = "Box_NATO_WpsSpecial_F"; };
 	case "crate_night_small":	{ _mycrate = "Box_NATO_Equip_F"; };
 	case "crate_night_big":		{ _mycrate = "Box_NATO_Equip_F"; };	
 	case "crate_explo":			{ _mycrate = "Box_NATO_AmmoOrd_F"; }; 
@@ -83,7 +83,7 @@ _null = this addAction ["Explosives", "f\assignGear\SpawnCrate.sqf", ["crate_exp
 _null = this addAction ["Mines", "f\assignGear\SpawnCrate.sqf", ["crate_mines",faction1] ];
 _null = this addAction ["Night equipment small", "f\assignGear\SpawnCrate.sqf", ["crate_night_small",faction1] ];
 _null = this addAction ["Night equipment big", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ];
-_null = this addAction ["SF ammo", "f\assignGear\SpawnCrate.sqf", ["crate_SF",faction1] ];
+_null = this addAction ["SF ammo", "f\assignGear\SpawnCrate.sqf", ["crate_spec",faction1] ];
 _null = this addAction ["Radios", "f\assignGear\SpawnCrate.sqf", ["crate_radio",faction1] ];
 _null = this addAction ["Miscellaneous", "f\assignGear\SpawnCrate.sqf", ["crate_misc",faction1] ];
 
