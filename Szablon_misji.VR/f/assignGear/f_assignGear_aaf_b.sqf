@@ -69,6 +69,17 @@ case "TL":
 	(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];	
 };
 
+// BACKPACK: RTO
+case "RTO":
+{
+	_unit addBackpack _bagRadio;
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
+	(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];	
+};
+
 // BACKPACK: Vehicle Comander
 case "vc":
 {

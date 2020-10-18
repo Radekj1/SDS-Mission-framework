@@ -31,7 +31,7 @@ _groups = [
 ["GrpNATO_D","Delta"],
 ["GrpNATO_IFVD","DV"],
 
-["GrpNATO_ESL","BSL"],
+["GrpNATO_ESL","ESL"],
 ["GrpNATO_E","Echo"],
 ["GrpNATO_IFVE","EV"],
 
@@ -100,42 +100,33 @@ _groups = [
 ["GrpCSAT_HAT1","HAT"],
 ["GrpCSAT_MTR1","MTR"],
 ["GrpCSAT_MSAM1","SAM"],
-["GrpCSAT_HSAM1","HSAM"],
+["GrpCSAT_GMG1","GMG"],
+
 ["GrpCSAT_ST1","ST1"],
 
-["GrpCSAT_DT1","SF1"],
-["GrpCSAT_DT2","SF2"],
-["GrpCSAT_DT3","SF3"],
-["GrpCSAT_DT4","SF4"],
-["GrpCSAT_DT5","SF4"],
+["GrpCSAT_DT1","Pawn 1"],
+["GrpCSAT_DT2","Pawn 2"],
 
-["GrpCSAT_ENG1","ENG"],
+["GrpCSAT_ENG1","Logistics"],
 
 ["GrpCSAT_IFV1","AV"],
 ["GrpCSAT_IFV2","BV"],
 ["GrpCSAT_IFV3","CV"],
 
-["GrpCSAT_IFV4","Knight 1-4"],
-["GrpCSAT_IFV5","Knight 2-1"],
-["GrpCSAT_IFV6","Knight 2-2"],
-["GrpCSAT_IFV7","Knight 2-3"],
-["GrpCSAT_IFV8","Knight 2-4"],
+["GrpCSAT_IFV4","Knight 1-1"],
+["GrpCSAT_IFV5","Knight 1-2"],
+["GrpCSAT_IFV6","Knight 1-3"],
 
 ["GrpCSAT_TNK1","Rook 1-1"],
 ["GrpCSAT_TNK2","Rook 1-2"],
 ["GrpCSAT_TNK3","Rook 1-3"],
 
-["GrpCSAT_TH1","Bishop 1"],
-["GrpCSAT_TH2","Bishop 2"],
-["GrpCSAT_TH3","Bishop 3"],
-["GrpCSAT_TH4","Bishop 4"],
-["GrpCSAT_TH5","Bishop 5"],
-["GrpCSAT_TH6","Bishop 6"],
-["GrpCSAT_TH7","Bishop 7"],
-["GrpCSAT_TH8","Bishop 8"],
+["GrpCSAT_TH1","Bishop 1-1"],
+["GrpCSAT_TH2","Bishop 1-2"],
+["GrpCSAT_TH3","Bishop 1-3"],
+["GrpCSAT_TH4","Bishop 1-4"],
 
-["GrpCSAT_AH1","King 1"],
-["GrpCSAT_AH2","King 2"],
+["GrpCSAT_AH1","King"],
 
 // ====================================================================================
 
@@ -144,21 +135,31 @@ _groups = [
 
 ["GrpAAF_CO","CO-HQ"],
 ["GrpAAF_DC","1Plt-HQ"],
+["GrpAAF_DC1","2Plt-HQ"],
 
 ["GrpAAF_ASL","ASL"],
 ["GrpAAF_A1","A1"],
 ["GrpAAF_A2","A2"],
-["GrpAAF_A3","Alpha"],
 
 ["GrpAAF_BSL","BSL"],
 ["GrpAAF_B1","B1"],
 ["GrpAAF_B2","B2"],
-["GrpAAF_B3","Bravo"],
 
 ["GrpAAF_CSL","CSL"],
 ["GrpAAF_C1","C1"],
 ["GrpAAF_C2","C2"],
-["GrpAAF_C3","Charlie"],
+
+["GrpAAF_DSL","DSL"],
+["GrpAAF_D","Delta"],
+["GrpAAF_IFVD","DV"],
+
+["GrpAAF_ESL","ESL"],
+["GrpAAF_E","Echo"],
+["GrpAAF_IFVE","EV"],
+
+["GrpAAF_FSL","FSL"],
+["GrpAAF_F","Foxtrot"],
+["GrpAAF_IFVF","FV"],
 
 ["GrpAAF_MMG1","MMG"],
 ["GrpAAF_HMG1","HMG"],
@@ -166,43 +167,31 @@ _groups = [
 ["GrpAAF_HAT1","HAT"],
 ["GrpAAF_MTR1","MTR"],
 ["GrpAAF_MSAM1","SAM"],
-["GrpAAF_HSAM1","HSAM"],
+["GrpAAF_GMG1","GMG"],
+["GrpAAF_MC","MC"],
+["GrpAAF_EOD","EOD"],
+
 ["GrpAAF_ST1","ST1"],
 
-["GrpAAF_DT1","SF1"],
-["GrpAAF_DT2","SF2"],
-["GrpAAF_DT3","SF3"],
-["GrpAAF_DT4","SF4"],
-["GrpAAF_DT5","SF5"],
+["GrpAAF_SF1","Cameleon 1"],
+["GrpAAF_SF2","Cameleon 2"],
 
-["GrpAAF_ENG1","ENG"],
+["GrpAAF_ENG1","Logistics"],
 
-["GrpAAF_IFV1","AV"],
-["GrpAAF_IFV2","BV"],
-["GrpAAF_IFV3","CV"],
-
-["GrpAAF_IFV4","Panther 1-4"],
-["GrpAAF_IFV5","Panther 2-1"],
-["GrpAAF_IFV6","Panther 2-2"],
-["GrpAAF_IFV7","Panther 2-3"],
-["GrpAAF_IFV8","Panther 2-4"],
+["GrpAAF_IFV1","Panther 1-1"],
+["GrpAAF_IFV2","Panther 1-2"],
+["GrpAAF_IFV3","Panther 1-3"],
 
 ["GrpAAF_TNK1","Lion 1-1"],
 ["GrpAAF_TNK2","Lion 1-2"],
 ["GrpAAF_TNK3","Lion 1-3"],
 
-["GrpAAF_TH1","Hornet 1"],
-["GrpAAF_TH2","Hornet 2"],
-["GrpAAF_TH3","Hornet 3"],
-["GrpAAF_TH4","Hornet 4"],
-["GrpAAF_TH5","Hornet 5"],
-["GrpAAF_TH6","Hornet 6"],
-["GrpAAF_TH7","Hornet 7"],
-["GrpAAF_TH8","Hornet 8"],
+["GrpAAF_TH1","Hornet 1-1"],
+["GrpAAF_TH2","Hornet 1-2"],
+["GrpAAF_TH3","Hornet 1-3"],
+["GrpAAF_TH4","Hornet 1-4"],
 
-["GrpAAF_AH1","Eagle 1"],
-["GrpAAF_AH2","Eagle 2"]
-
+["GrpAAF_AH1","Eagle"]
 
 // ====================================================================================
 

@@ -417,8 +417,8 @@ _specialSF = "arifle_SPAR_03_blk_F";
 _specialmagSF = "20Rnd_762x51_Mag";
 _specialmag_trSF = "ACE_20Rnd_762x51_Mag_Tracer";
 
-_SFpistol = "hgun_Pistol_heavy_01_F";
-_SFpistolmag = "11Rnd_45ACP_Mag";
+_SFpistol = "hgun_Pistol_heavy_02_F";
+_SFpistolmag = "6Rnd_45ACP_Cylinder";
 
 // ====================================================================================
 
@@ -443,18 +443,18 @@ _RAT = "launch_NLAW_F";
 _RATmag = "NLAW_F";
 
 // Medium anti tank launcher
-_MAT = "launch_MRAWS_sand_F";
+_MAT = "launch_MRAWS_green_rail_F";
 _MATmag1 = "MRAWS_HEAT_F";
 _MATmag2 = "MRAWS_HE_F";
 //_MAT_sight = "";
 //_MATsptr = "";
 
 // Surface-air launcher
-_SAM = "launch_B_Titan_F";
+_SAM = "launch_I_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Heavy anti tank launcher
-_HAT = "launch_B_Titan_short_F";		
+_HAT = "launch_I_Titan_short_F";		
 _HATmag1 = "Titan_AT";
 _HATmag2 = "Titan_AP";
 _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
