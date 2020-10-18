@@ -78,21 +78,31 @@ _groups = [
 
 ["GrpCSAT_CO","CO-HQ"],
 ["GrpCSAT_DC","1Plt-HQ"],
+["GrpCSAT_DC1","2Plt-HQ"],
 
 ["GrpCSAT_ASL","ASL"],
 ["GrpCSAT_A1","A1"],
 ["GrpCSAT_A2","A2"],
-["GrpCSAT_A3","Alpha"],
 
 ["GrpCSAT_BSL","BSL"],
 ["GrpCSAT_B1","B1"],
 ["GrpCSAT_B2","B2"],
-["GrpCSAT_B3","Bravo"],
 
 ["GrpCSAT_CSL","CSL"],
 ["GrpCSAT_C1","C1"],
 ["GrpCSAT_C2","C2"],
-["GrpCSAT_C3","Charlie"],
+
+["GrpCSAT_DSL","DSL"],
+["GrpCSAT_D","Delta"],
+["GrpCSAT_IFVD","DV"],
+
+["GrpCSAT_ESL","ESL"],
+["GrpCSAT_E","Echo"],
+["GrpCSAT_IFVE","EV"],
+
+["GrpCSAT_FSL","FSL"],
+["GrpCSAT_F","Foxtrot"],
+["GrpCSAT_IFVF","FV"],
 
 ["GrpCSAT_MMG1","MMG"],
 ["GrpCSAT_HMG1","HMG"],
@@ -101,6 +111,8 @@ _groups = [
 ["GrpCSAT_MTR1","MTR"],
 ["GrpCSAT_MSAM1","SAM"],
 ["GrpCSAT_GMG1","GMG"],
+["GrpCSAT_MC","MC"],
+["GrpCSAT_EOD","EOD"],
 
 ["GrpCSAT_ST1","ST1"],
 
@@ -109,13 +121,9 @@ _groups = [
 
 ["GrpCSAT_ENG1","Logistics"],
 
-["GrpCSAT_IFV1","AV"],
-["GrpCSAT_IFV2","BV"],
-["GrpCSAT_IFV3","CV"],
-
-["GrpCSAT_IFV4","Knight 1-1"],
-["GrpCSAT_IFV5","Knight 1-2"],
-["GrpCSAT_IFV6","Knight 1-3"],
+["GrpCSAT_IFV1","Knight 1-1"],
+["GrpCSAT_IFV2","Knight 1-2"],
+["GrpCSAT_IFV3","Knight 1-3"],
 
 ["GrpCSAT_TNK1","Rook 1-1"],
 ["GrpCSAT_TNK2","Rook 1-2"],
