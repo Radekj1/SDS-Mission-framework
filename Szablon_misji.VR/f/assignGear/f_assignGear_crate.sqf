@@ -17,6 +17,7 @@
 		_unit addMagazineCargoGlobal [_smgmag_tr, 5];
 		_unit addMagazineCargoGlobal [_glriflemag, 10];
 		_unit addMagazineCargoGlobal [_glriflemag_tr, 5];
+		_unit addMagazineCargoGlobal [_DMriflemag, 10];
 		_unit addMagazineCargoGlobal [_glmag, 30];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 15];
 		_unit addMagazineCargoGlobal [_glsmokegreen, 15];
@@ -48,6 +49,7 @@
 		_unit addMagazineCargoGlobal [_smgmag_tr, 10];
 		_unit addMagazineCargoGlobal [_glriflemag, 15];
 		_unit addMagazineCargoGlobal [_glriflemag_tr, 10];
+		_unit addMagazineCargoGlobal [_DMriflemag, 15];
 		_unit addMagazineCargoGlobal [_glmag, 30];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 15];
 		_unit addMagazineCargoGlobal [_glsmokegreen, 15];
@@ -79,6 +81,7 @@
 		_unit addMagazineCargoGlobal [_smgmag_tr, 5];
 		_unit addMagazineCargoGlobal [_glriflemag, 10];
 		_unit addMagazineCargoGlobal [_glriflemag_tr, 5];
+		_unit addMagazineCargoGlobal [_DMriflemag, 10];
 		_unit addMagazineCargoGlobal [_glmag, 30];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 15];
 		_unit addMagazineCargoGlobal [_glsmokegreen, 15];
@@ -164,6 +167,7 @@
 		_unit addMagazineCargoGlobal [_carbinemag_tr, 50];
 		_unit addMagazineCargoGlobal [_smgmag, 50];
 		_unit addMagazineCargoGlobal [_smgmag_tr, 20];
+		_unit addMagazineCargoGlobal [_DMriflemag, 60];
 		_unit addMagazineCargoGlobal [_glmag, 100];
 		_unit addMagazineCargoGlobal [_glsmokewhite,20];
 		_unit addMagazineCargoGlobal [_glsmokegreen,20];
@@ -208,6 +212,7 @@
 		_unit addMagazineCargoGlobal [_carbinemag_tr, 15];
 		_unit addMagazineCargoGlobal [_smgmag, 20];
 		_unit addMagazineCargoGlobal [_smgmag_tr, 10];
+		_unit addMagazineCargoGlobal [_DMriflemag, 20];
 		_unit addMagazineCargoGlobal [_glmag, 30];
 		_unit addMagazineCargoGlobal [_glsmokewhite,10];
 		_unit addMagazineCargoGlobal [_glsmokegreen,10];
@@ -240,6 +245,7 @@
 		_unit addMagazineCargoGlobal [_carbinemag_tr, 30];
 		_unit addMagazineCargoGlobal [_smgmag, 30];
 		_unit addMagazineCargoGlobal [_smgmag_tr, 15];
+		_unit addMagazineCargoGlobal [_DMriflemag, 30];
 		_unit addMagazineCargoGlobal [_glmag, 60];
 		_unit addMagazineCargoGlobal [_glsmokewhite,15];
 		_unit addMagazineCargoGlobal [_glsmokegreen,15];
@@ -272,6 +278,7 @@
 		_unit addMagazineCargoGlobal [_carbinemag_tr, 50];
 		_unit addMagazineCargoGlobal [_smgmag, 50];
 		_unit addMagazineCargoGlobal [_smgmag_tr, 20];
+		_unit addMagazineCargoGlobal [_DMriflemag, 50];
 		_unit addMagazineCargoGlobal [_glmag, 100];
 		_unit addMagazineCargoGlobal [_glsmokewhite,20];
 		_unit addMagazineCargoGlobal [_glsmokegreen,20];

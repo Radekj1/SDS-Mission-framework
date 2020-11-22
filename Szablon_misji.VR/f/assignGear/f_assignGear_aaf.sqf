@@ -69,7 +69,8 @@ _saline_b = "ACE_salineIV";					// Saline 1000 ml
 // Radios
 _radioSR = "ACRE_PRC343";
 _radioMR = "ACRE_PRC152";
-_radioLR = "ACRE_PRC77";
+_radioLR = "ACRE_PRC117F";
+//_radioLR = "ACRE_PRC77"; // early Cold War/WW2
 
 // Antenas
 _antena = "ACRE_VHF30108SPIKE";

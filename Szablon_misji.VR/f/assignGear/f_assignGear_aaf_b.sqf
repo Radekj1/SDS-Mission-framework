@@ -54,6 +54,7 @@ case "HQ":
 {
 	_unit addBackpack _bagRadio;
 	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addItemCargoGlobal [_radioLR, 1];
 	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag,3];
 	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr,1];	
 };
@@ -74,6 +75,7 @@ case "RTO":
 {
 	_unit addBackpack _bagRadio;
 	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addItemCargoGlobal [_radioLR, 1];
 	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];

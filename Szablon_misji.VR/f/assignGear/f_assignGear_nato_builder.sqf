@@ -106,7 +106,6 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _radioMR;
 		_unit addItem _GPS;
 		["HQ"] call _backpack;
 	};
@@ -125,7 +124,6 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _radioMR;
 		_unit addItem _GPS;
 		["HQ"] call _backpack;
 	};
@@ -776,7 +774,6 @@ switch (_typeofUnit) do
         _unit addweapon _pistol;
 		_unit addItem _GPS; 
         _unit addWeapon _lornetkaRTO;
-		_unit addItem _radioMR;
         ["RTO"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
