@@ -254,7 +254,7 @@ Builder = {
 		};
 	};
 // WYWOŁANIE BUILDERA
-		#include "f_assignGear_nato_builder.sqf";
+		#include "f_assignGear_aaf_builder.sqf";
 };	
 
 //Dodanie wyposażenia medycznego	
