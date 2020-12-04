@@ -147,8 +147,7 @@ case "dm":
 {
 	_unit addBackpack _bagsmall;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 3];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_DMriflemag, 5];
 };
 
 // BACKPACK: CARABINEER (CAR)
