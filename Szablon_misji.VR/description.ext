@@ -47,6 +47,18 @@ respawnTemplates[] = {"f_SpectatorRespawn"}; // Spectator z opcjÄ… respawnu ( uÅ
 
 // ============================================================================================
 
+// S.D.S - Channels disable 
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+disableChannels[] = {
+
+	{ 1, true, true },
+	{ 2, true, true },
+	{ 3, true, true },
+	{ 4, true, true }
+	
+};
+
 
 // F3 - Start of Notifications block.
 

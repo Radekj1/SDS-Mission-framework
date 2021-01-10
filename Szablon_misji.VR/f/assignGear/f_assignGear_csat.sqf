@@ -242,7 +242,7 @@ Builder = {
 		if (count _this > 1) then {_loadout = _this select 1;};
 		switch (_typeofBackPack) do
 		{
-			#include "f_assignGear_nato_b.sqf";
+			#include "f_assignGear_csat_b.sqf";
 		};
 	};
 // SETUP CRATE
