@@ -321,7 +321,7 @@ Night_Eq_No_NVG = {
 			_unit linkItem _nvg;			// Dodanie noktowizji	
 		};
 	};
-};	
+};
 
 // ====================================================================================
 
@@ -335,9 +335,7 @@ switch (_loadout_faction_player) do
 	//NATO
 	case 1: 
 	{
-
-// ====================================================================================
-// Primary wepon attachemnts
+// Main weapond attachments
 
 _attach1 = "acc_pointer_IR";	// Laser
 _attach2 = "acc_flashlight";	// Flashlight

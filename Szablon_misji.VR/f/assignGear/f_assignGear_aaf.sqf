@@ -12,11 +12,12 @@
 	_loadout_faction_player = f_param_player_faction_Indfor;
 // ====================================================================================
 
-//Items definitions
+//*************************************************************************************
+// Universal items definitions
+//*************************************************************************************
 
 // ====================================================================================
 // Medical items
-// ====================================================================================
 
 // Default Arma3 stuff
 _firstaid = "FirstAidKit";
@@ -64,7 +65,6 @@ _saline_b = "ACE_salineIV";					// Saline 1000 ml
 
 // ====================================================================================
 // Radios - ACRE2
-// ====================================================================================
 
 // Radios
 _radioSR = "ACRE_PRC343";
@@ -79,7 +79,6 @@ _AntenaAndMast = "ACRE_VHF30108";
 
 // ====================================================================================
 // Night equipemnt
-// ====================================================================================
 
 // Basic night equipment
 _nvg = "NVGogglesB_blk_F";
@@ -111,7 +110,6 @@ _chemblueHI = "ACE_Chemlight_HiBlue";
 
 // ====================================================================================
 // Grenades and GLs
-// ====================================================================================
 
 // Hand granade
 _grenade = "HandGrenade";	//basic frag granade
@@ -137,7 +135,6 @@ _glsmokeblue = "1Rnd_SmokeBlue_Grenade_shell";
 
 // ====================================================================================
 // Mines/Expolisved/Logi stuff
-// ====================================================================================
 
 // Basic equipment
 _mineDetector = "ACE_VMM3";
@@ -180,7 +177,6 @@ _satche_extra_big = "SatchelCharge_Remote_Mag";
 
 // ====================================================================================
 // Mortar Ammo and Static Gun Ammo
-// ====================================================================================
 
 // Basic ammo
 _mtrHE = "ACE_1Rnd_82mm_Mo_HE";
@@ -210,7 +206,6 @@ _AGS30GMG = "CUP_compats_29Rnd_30mm_AGS30_M";
 
 // ====================================================================================
 // Other items
-// ====================================================================================
 
 _earplugs = "ACE_EarPlugs";
 _lornetkaAM = "ACE_Vector";
@@ -232,9 +227,10 @@ _ATrag ="ACE_ATragMX";
 _spottingScope = "ACE_SpottingScope";
 _tripod = "ACE_Tripod";
 
-// ====================================================================================
-// Konstruktor BUILDERA
-// ====================================================================================
+//*************************************************************************************
+// Konstruktor BUILDERA (rather avoid this)
+//*************************************************************************************
+
 Builder = {	
 	_backpack = {
 		_typeofBackPack = _this select 0;
@@ -245,6 +241,8 @@ Builder = {
 			#include "f_assignGear_aaf_b.sqf";
 		};
 	};
+
+// ====================================================================================
 // SETUP CRATE
 	_crate = {
 		_typeofCrate = _this select 0;
@@ -253,32 +251,36 @@ Builder = {
 			#include "f_assignGear_crate.sqf";
 		};
 	};
+
+// ====================================================================================
 // WYWOŁANIE BUILDERA
 		#include "f_assignGear_aaf_builder.sqf";
 };	
 
-//Dodanie wyposażenia medycznego	
+// ====================================================================================
+// Add basic stuff for players	
 Medical = {
-	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Dodanie 8 sztuk bandaży
-	_unit addItem _painkiller;		// Dodanie tabletek przeciwbólowych
-	_unit addItem _epinephrine;		// Dodanie epinefryny	
-	_unit linkItem "ItemMap";		// Dodanie mapy
-	_unit linkItem "ItemCompass";	// Dodanie kompsu
-	_unit addItem _radioSR;			// Dodanie radia
-	_unit linkItem "ItemWatch";		// Dodanie zegarka
-	_unit addItem _earplugs;		// Dodaje zatyczki do uszy
-	_unit addItem _latarka;			// Latarka na mape
+	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Add 8 pieces of bandages
+	_unit addItem _painkiller;								// Add painkillers
+	_unit addItem _epinephrine;								// Add Epi
+	_unit linkItem "ItemMap";								// Add map - comment this out if You dont want units to have it
+	_unit linkItem "ItemCompass";							// Add compas - comment this out if You dont want units to have it
+	_unit addItem _radioSR;									// Add radio - comment this out if You dont want units to have it
+	_unit linkItem "ItemWatch";								// Add watch - comment this out if You dont want units to have it
+	_unit addItem _earplugs;								// Add earplugs
 };
 
-//Nocne wyposażenie oparte na noktowizji, laserach, flarach
+// ====================================================================================
+// Night equipment when players have NVGs
 Night_Eq_NVG = {
 	_loadout_night_day = f_param_night_day_wyp;
 		
 	if (_loadout_night_day == 0) then {
 		if(_typeofUnit != "ps") then {
-			_unit linkItem _nvg;			// Dodanie noktowizji
-			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
-			_unit addItem _IRstrobe;		
+			_unit linkItem _nvg;			// Adding NVG
+			_unit addItem _IRstrobe;		// Adding IR strobe
+			_unit addItem _IRstrobe;		// Adding IR strobe
+			_unit addItem _latarka;			// Adding map flashlight
 			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
@@ -289,20 +291,22 @@ Night_Eq_NVG = {
 		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
 		};
 		
-		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "sftl" || _typeofUnit == "sfm" || _typeofUnit == "sfat" || _typeofUnit == "sfs") then {
 			_unit linkItem _nvg;			// Dodanie noktowizji	
 		};
 	};
 };
 
-//Nocne wyposażenie oparte na latarkach, flarach, lightstick-ach
+// ====================================================================================
+// Night equipment when players dont have NVGs
 Night_Eq_No_NVG = {
 	_loadout_night_day = f_param_night_day_wyp;
 		
 	if (_loadout_night_day == 0) then {
 		if(_typeofUnit != "ps") then {
-			_unit addItem _IRstrobe;		// Znacznik IR (doczepiany)
-			_unit addItem _IRstrobe;		
+			_unit addItem _IRstrobe;		// Adding IR strobe
+			_unit addItem _IRstrobe;		// Adding IR strobe
+			_unit addItem _latarka;			// Adding map flashlight
 			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
@@ -313,21 +317,20 @@ Night_Eq_No_NVG = {
 		(unitBackpack _unit) addMagazineCargoGlobal [_glflarered,4];
 		};
 		
-		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "divc" || _typeofUnit == "divm" || _typeofUnit == "divs" || _typeofUnit == "divr") then {
+		if (_typeofUnit == "pp" || _typeofUnit == "ps" || _typeofUnit == "pcc" || _typeofUnit == "pc" || _typeofUnit == "sftl" || _typeofUnit == "sfm" || _typeofUnit == "sfat" || _typeofUnit == "sfs") then {
 			_unit linkItem _nvg;			// Dodanie noktowizji	
 		};
 	};
-};
-	
+};	
 
 // ====================================================================================
 
 switch (_loadout_faction_player) do
 {
 	
-//*****************************************************************************************************
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//*****************************************************************************************************
+//*************************************************************************************
+// Items definitions
+//*************************************************************************************
 
 	//AAF
 	case 1: 
@@ -365,107 +368,87 @@ false = will not change anything, so if weapon by default have scope it will sta
 */
 
 // ====================================================================================
-
 // Secondary weapon attachemnts
+
 _hg_silencer1 = "muzzle_snds_L";
 _hg_attach1 = "acc_flashlight_pistol";
 _hg_scope1 = "optic_MRD";
 _hg_attachments= [];
 
 // ====================================================================================
-
 // Weapons
 
-// Basic weapon (its for most of basic units, like rifleman etc.)
-_rifle = "arifle_Mk20_F";
+_rifle = "arifle_Mk20_F";	// Basic weapon (its for most of basic units, like rifleman etc.)
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
 
-// Light/short version (its for units with additional equipment, like medic etc.)
-_carbine = "arifle_Mk20C_F";
+_carbine = "arifle_Mk20C_F";	// Light/short version (its for units with additional equipment, like medic etc.)
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
 
-// PDW (its for crews, pilots - units that are not supposed to be fighting)
-_smg = "SMG_05_F";
+_smg = "SMG_05_F";	// PDW (its for crews, pilots - units that are not supposed to be fighting)
 _smgmag = "30Rnd_9x21_Mag_SMG_02";
 _smgmag_tr = "30Rnd_9x21_Mag_SMG_02_Tracer_Green";
 
-// GL version (mostly for commanders but also for grenadiers)
-_glrifle = "arifle_Mk20_GL_F";
+_glrifle = "arifle_Mk20_GL_F";	// GL version (mostly for commanders but also for grenadiers)
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
 _glmag = "1Rnd_HE_Grenade_shell";
 
-// Pistol (for everyone YAY!)
-_pistol = "hgun_ACPC2_F";
+_pistol = "hgun_ACPC2_F";	// Pistol (for everyone YAY!)
 _pistolmag = "9Rnd_45ACP_Mag";
 
-// Siły specjalne
-_glrifleSF = "arifle_SPAR_01_GL_blk_F";
+_glrifleSF = "arifle_SPAR_01_GL_blk_F";	// SF GL rifle
 _glriflemagSF = "30Rnd_556x45_Stanag";
 _glriflemag_trSF = "30Rnd_556x45_Stanag";
 
-_ARSF = "arifle_SPAR_02_blk_F";
+_ARSF = "arifle_SPAR_02_blk_F";	// SF automatic rifle
 _ARmagSF = "150Rnd_556x45_Drum_Mag_F";
 _ARmag_trSF = "150Rnd_556x45_Drum_Mag_Tracer_F";
 
-_rifleSF = "arifle_SPAR_01_blk_F";
+_rifleSF = "arifle_SPAR_01_blk_F";	// SF rifle
 _riflemagSF = "30Rnd_556x45_Stanag";
 _riflemag_trSF = "30Rnd_556x45_Stanag";
 
-_specialSF = "arifle_SPAR_03_blk_F";
+_specialSF = "arifle_SPAR_03_blk_F";	// SF special rigle - can be marksman, CQB whatever is needed
 _specialmagSF = "20Rnd_762x51_Mag";
 _specialmag_trSF = "ACE_20Rnd_762x51_Mag_Tracer";
 
-_SFpistol = "hgun_Pistol_heavy_02_F";
+_SFpistol = "hgun_Pistol_heavy_02_F";	// SF pistol
 _SFpistolmag = "6Rnd_45ACP_Cylinder";
 
-// ====================================================================================
-
-// Equipment for special clases
-
-// Light machinegun
-_AR = "LMG_03_F";
+_AR = "LMG_03_F";	// Light machinegun
 _ARmag = "200Rnd_556x45_Box_F";
 _ARmag_tr = "ACE_200Rnd_556x45_Box_tracer_green";
 
-// Medium machinegun
-_MMG = "MMG_02_black_F";
+_MMG = "MMG_02_black_F";	// Medium machinegun
 _MMGmag = "130Rnd_338_Mag";
 _MMGmag_tr = "ACE_130Rnd_338_Mag_green";
 
-// Marksman
-_DMrifle = "srifle_DMR_06_olive_F";
+_DMrifle = "srifle_DMR_06_olive_F";	// Marksman
 _DMriflemag = "20Rnd_762x51_Mag";
 
-// Light AT
-_RAT = "launch_NLAW_F";
+_RAT = "launch_NLAW_F";	// Light AT
 _RATmag = "NLAW_F";
 
-// Medium anti tank launcher
-_MAT = "launch_MRAWS_green_rail_F";
+_MAT = "launch_MRAWS_green_rail_F";	// Medium anti tank launcher
 _MATmag1 = "MRAWS_HEAT_F";
 _MATmag2 = "MRAWS_HE_F";
 //_MAT_sight = "";
 //_MATsptr = "";
 
-// Surface-air launcher
-_SAM = "launch_I_Titan_F";
+_SAM = "launch_I_Titan_F";	// Surface-air launcher
 _SAMmag = "Titan_AA";
 
-// Heavy anti tank launcher
-_HAT = "launch_I_Titan_short_F";		
+_HAT = "launch_I_Titan_short_F";	// Heavy anti tank launcher	
 _HATmag1 = "Titan_AT";
 _HATmag2 = "Titan_AP";
 _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
 
-// Sniper
-_SNrifle = "srifle_DMR_02_F";
+_SNrifle = "srifle_DMR_02_F";	// Sniper
 _SNrifleMag = "10Rnd_338_Mag";
 
 // ====================================================================================
-
 // Bagbacks
 
 _parachute = "B_Parachute";
@@ -516,11 +499,11 @@ _baseHelmet = ["H_HelmetIA"];
 _baseGlasses = [];
 
 // Kamizelki
-_slRig = ["V_PlateCarrierIAGL_dgtl"];
-_engRig = ["V_PlateCarrierIAGL_oli"];
-_lightRig = ["V_PlateCarrierIA1_dgtl"];
-_mediumRig = ["V_PlateCarrierIA2_dgtl"];
-_heavyRig = ["V_PlateCarrierIAGL_oli"];
+_slRig = ["V_PlateCarrierIAGL_dgtl"];	// vest for Team Leaders and Squad Leaders, shoud have GL/radio
+_engRig = ["V_PlateCarrierIAGL_oli"];	// vest for logi
+_lightRig = ["V_PlateCarrierIA1_dgtl"];	// vest given to heavy units - meaning they carry some heavy stuff on them
+_mediumRig = ["V_PlateCarrierIA2_dgtl"];	// general used vest for most inf
+_heavyRig = ["V_PlateCarrierIAGL_oli"];	// vest given to MG
 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
