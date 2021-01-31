@@ -29,11 +29,13 @@ _surgicalKit = "ACE_surgicalKit";			// surgical Kit
 _worek = "ACE_bodyBag";						// body Bag
 _AED = "kat_AED";
 _AEDX = "kat_X_AED";
+/*
 _accuvac = "kat_accuvac";
 _chestSeal ="kat_chestSeal";
 _Pulseoximeter = "kat_Pulseoximeter";
 _larynx = "kat_larynx";
 _guedel = "kat_guedel";
+*/
 
 // Bandages
 _bandage = "ACE_fieldDressing";				// field Dressing
@@ -278,7 +280,7 @@ Night_Eq_NVG = {
 			_unit addItem _IRstrobe;		// Adding IR strobe
 			_unit addItem _IRstrobe;		// Adding IR strobe
 			_unit addItem _latarka;			// Adding map flashlight
-			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
+			(unitBackpack _unit) addItemCargoGlobal [_chemred,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
 		};
@@ -301,10 +303,8 @@ Night_Eq_No_NVG = {
 		
 	if (_loadout_night_day == 0) then {
 		if(_typeofUnit != "ps") then {
-			_unit addItem _IRstrobe;		// Adding IR strobe
-			_unit addItem _IRstrobe;		// Adding IR strobe
 			_unit addItem _latarka;			// Adding map flashlight
-			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
+			(unitBackpack _unit) addItemCargoGlobal [_chemred,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarewhite,3];
 		};
@@ -497,10 +497,10 @@ _baseGlasses = [];
 
 // Kamizelki
 _slRig = ["V_HarnessOGL_brn"];	// vest for Team Leaders and Squad Leaders, shoud have GL/radio
-_engRig = ["V_HarnessO_brn"];	// vest for logi
 _lightRig = ["V_HarnessO_brn"];	// vest given to heavy units - meaning they carry some heavy stuff on them
 _mediumRig = ["V_HarnessO_brn"];	// general used vest for most inf
-_heavyRig = ["V_HarnessO_brn"];	// vest given to MG
+_mgRig = ["V_HarnessO_brn"];	// vest given to MG
+_dmRig = ["V_HarnessO_brn"];	// vest given to marksman
 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
@@ -510,7 +510,8 @@ _slR = ["ftl", "dc"];
 _medR = ["m"];
 _engR = ["eng","engm"];
 _light = ["aar","mmgag","matag","hmgg","hmgag","hatag","msamag"];
-_heavy =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
+_mg =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
+_dm = ["dm"];
 _pilot = ["pp","pcc","pc"];
 _JPilotR = ["ps"];
 _crew = ["vc","vg","vd"];
@@ -529,6 +530,12 @@ _medUniform = ["U_O_CombatUniform_ocamo"];
 _medHelmet = ["H_HelmetSpecO_blk"];
 _medRig = ["V_TacVest_blk"];
 _medGlasses = [];
+
+// Enginer/Logi
+_engUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
+_engHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
+_engRig = ["V_TacVest_blk"];
+_engGlasses = [];
 
 // Heli Pilot
 _pilotUniform = ["U_O_officer_noInsignia_hex_F"];

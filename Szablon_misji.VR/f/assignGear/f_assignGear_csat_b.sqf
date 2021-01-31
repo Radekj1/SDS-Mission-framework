@@ -8,7 +8,7 @@ case "m":
 {
 	_unit addBackpack _bagMed;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_blood_m, 6];
+	(unitBackpack _unit) addItemCargoGlobal [_plasma_m, 6];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage,15];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic,15];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_packing,10];
@@ -19,11 +19,11 @@ case "m":
 	(unitBackpack _unit) addItemCargoGlobal [_adenosine,5];
 	(unitBackpack _unit) addItemCargoGlobal [_painkiller,5];
 	(unitBackpack _unit) addItemCargoGlobal [_splint,10];
-	(unitBackpack _unit) addItemCargoGlobal [_larynx,10];
+	//(unitBackpack _unit) addItemCargoGlobal [_larynx,10];
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
-	(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_Pulseoximeter, 1];
+	//(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
+	//(unitBackpack _unit) addItemCargoGlobal [_Pulseoximeter, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 };
 
@@ -32,7 +32,7 @@ case "doc":
 {
 	_unit addBackpack _bagMed;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_blood_m, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_plasma_m, 4];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage,15];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic,15];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_packing,10];
@@ -41,11 +41,11 @@ case "doc":
 	(unitBackpack _unit) addItemCargoGlobal [_morphine,5];
 	(unitBackpack _unit) addItemCargoGlobal [_epinephrine,5];
 	(unitBackpack _unit) addItemCargoGlobal [_adenosine,5];
-	(unitBackpack _unit) addItemCargoGlobal [_larynx,10];
+	//(unitBackpack _unit) addItemCargoGlobal [_larynx,10];
 	(unitBackpack _unit) addItemCargoGlobal [_splint,10];
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
-	(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
+	//(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_AEDX, 1];
 };
 
@@ -156,7 +156,7 @@ case "car":
 	_unit addBackpack _bagsmall;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 3];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 };
 
 // BACKPACK: MMG GUNNER (MMG)

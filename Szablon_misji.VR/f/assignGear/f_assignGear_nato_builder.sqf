@@ -2,84 +2,78 @@
 // S.D.S Assign Gear Builder Script - [V-1.8 beta | 26.10.2017]
 // ====================================================================================
 
-// Dostępne klasy postaci
+// Avaliable class list
+// Defined loadouts(not in order):
+//		co			- COY HQ / PLT HQ
+//		m 			- MEDIC
+//		rto			- RTO/FAC
+//		uav			- UAV
+//		engm		- ENGINEER (HQ)
 
-// Poniżej wypisane są wszystkie aktualne klasy postaci
-// Defined loadouts:
-//		co			- dowódca kompanii/plutonu
-//		dc 			- dowódca składu
-//		m 			- medyk
-//		ftl			- dowódca drużyny
-//		ar 			- strzelec RKM
-//		aar			- amunicyjny RKM
-//		rat			- strzelec (AT)
-//		r 			- strzelec
-//		car			- strzelec (karabin krótki)
-//		smg			- strzelec smg
-//		gren		- grenadier
-//		dm			- strzelec wyborowy
+//		dc 			- SQUAD LEADER
 
-//		mmgg		- strzelec MMG
-//		mmgag		- amunicyjny MMG
+//		doc 		- DOCTOR
 
-//		matg		- strzelec MAT
-//		matag		- amunicyjny MAT
+//		ftl			- FIRE TEAM LEADER
 
-//		hmgg		- strzelec HMG
-//		hmgag		- amunicyjny HMG
+//		ar 			- AUTOMATIC RIFLEMAN
+//		aar			- ASSISTANT AUTOMATIC RIFLEMAN
+//		dm			- DESIGNATED MARKSMAN
 
-//		hatg		- strzelec HAT
-//		hatag		- amunicyjny HAT
+//		rat			- RIFLEMAN (AT)
+//		gren		- GRENADIER
 
-//		mtrg		- strzelec MTR
-//		mtrag		- amunicyjny MTR
+//		r 			- RIFLEMAN
+//		car			- CARABINEER
+//		smg			- SUBMACHINEGUNNER
 
-//		msamg		- strzelec AA
-//		msamag		- amunicyjny AA
+//		mmgg		- MEDIUM MG GUNNER
+//		mmgag		- MEDIUM MG ASSISTANT GUNNER
+//		mmgab		- MEDIUM MG AMMO BEARER
 
-//		hgmgg		- strzelec HAA - nieużywany
-//		hgmgag		- amunicyjny HAA - nieużywany
+//		matg		- MEDIUM AT GUNNER
+//		matag		- MEDIUM AT ASSISTANT GUNNER
+//		matab		- MEDIUM AT AMMO BEARER
 
-//		sn			- najper -nieuzywany
-//		sp			- obserwator - nieużywany
+//		hmgg		- HEAVY MG GUNNER
+//		hmgag		- HEAVY MG ASSISTANT GUNNER
+//		hmgab		- HEAVY MG AMMO BEARER
 
-//		vc			- dowódca pojazdu
-//		vg			- strzelec w pojeździe
-//		vd			- kierowca pojazdu (mechanik)
-//		pp			- pilot
-//		pcc			- co-pilot (mechanik)
-//		pc			- załoga śmigłowców - mało stosowane
+//		hatg		- HEAVY AT GUNNER
+//		hatag		- HEAVY AT ASSISTANT GUNNER
+//		hatab		- HEAVY AT AMMO BEARER
 
-//		eng			- mechanik
-//		engm		- saper
+//		mtrg		- MORTAR GUNNER
+//		mtrag		- MORTAR ASSISTANT GUNNER
+//		mtrab		- MORTAR AMMO BEARER
 
-//		uav			- RTO/FAC
+//		msamg		- MEDIUM SAM GUNNER
+//		msamag		- MEDIUM SAM ASSISTANT GUNNER
+//		msamab		- MEDIUM SAM AMMO BEARER
 
+//		gmgg		- GMG GUNNER
+//		gmgag		- GMG ASSISTANT GUNNER
+//		gmgab		- GMG AMMO BEARER
 
-//		divc    	- dowódca sił specjalnych
-//		divr    	- strzelec AT sił specjalnych
-//		divs    	- saper sił specjalnych
-//		divm    	- medyk sił specjalnych
-//		
-//		tr 			- wyposażenie ciężarówki
-//		v_car		- wyposażenie samochodu
-//		v_log		- wyposażenie pojazdu logistyki
-//		ifv			- wyposażenie pojazdu typu IFV/Czołg	
-//
-//		crate_small	- Mała skrzynka z amunicją (dla teamu)
-//		crate_med	- Średnia skrzynka z amunicją (dla sekcji)
-//		crate_large	- Duża skrzynka z amunicją (dla plutonu)
-//      crate_smallmedical - Mała skrzynka z medykamentami
-//      crate_bigmedical - Duża skrzynka z medykamentami
-//		crate_mmg - Skrzynka z amunicją dla teamu MMG
-//		crate_mat - Skrzynka z amunicją dla teamu MAT
-//		crate_hat - Skrzynka z amunicją dla teamu HAT
-//		crate_sam - Skrzynka z amunicją dla teamu SAM
-//		crate_night_small - Mała skrzynka z nocnym wyposażeniem
-//		crate_night_big - Duża skrzynka z nocnym wyposażeniem
-//		crate_small_explo - Mała skrzynka z ładunkami
-//		crate_large_explo - Duża skrzynka z ładunkami
-//
+//		sn			- SNIPER
+//		sp			- SPOTTER
+
+//		vc			- VEHICLE COMMANDER
+//		vg			- VEHICLE GUNNER
+//		vd			- VEHICLE DRIVER
+
+//		pp			- HELICOPTER PILOTS
+//		pcc			- HELICOPTER CO-PILOT
+//		pc			- HELICOPTER CREW - [NOT USED]
+
+//		eng			- ENGINEER (LOGI)
+//		enguav		- ENGINEER (UAV)
+
+//		sftl    	- SF TEAMLEADER
+//		sfm    		- SF MEDIC
+//		sfat    	- SF OPERATOR (AT)
+//		sfs    		- SF OPERATOR (SAPPER)
+
 // ====================================================================================
 // ====================================================================================
 

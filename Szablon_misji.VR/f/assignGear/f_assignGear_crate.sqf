@@ -140,13 +140,13 @@
 		_unit addItemCargoGlobal [_plasma_m, 50];
 		_unit addItemCargoGlobal [_splint, 30];
 		_unit addItemCargoGlobal [_tourniquet, 30];
-		_unit addItemCargoGlobal [_larynx, 50];
-		_unit addItemCargoGlobal [_chestSeal, 25];
+		//_unit addItemCargoGlobal [_larynx, 50];
+		//_unit addItemCargoGlobal [_chestSeal, 25];
 		_unit addItemCargoGlobal [_personalAidKit, 25];
 		_unit addItemCargoGlobal [_surgicalKit, 2];
 		_unit addItemCargoGlobal [_AEDX, 2];
-		_unit addItemCargoGlobal [_accuvac, 2];
-		_unit addItemCargoGlobal [_Pulseoximeter, 2];
+		//_unit addItemCargoGlobal [_accuvac, 2];
+		//_unit addItemCargoGlobal [_Pulseoximeter, 2];
 		_unit addItemCargoGlobal [_worek, 25];
 	};
 
@@ -311,8 +311,8 @@
 		_unit addItemCargoGlobal [_plasma_m, 25];
 		_unit addItemCargoGlobal [_splint, 15];
 		_unit addItemCargoGlobal [_tourniquet, 15];
-		_unit addItemCargoGlobal [_larynx, 20];
-		_unit addItemCargoGlobal [_chestSeal, 15];
+		//_unit addItemCargoGlobal [_larynx, 20];
+		//_unit addItemCargoGlobal [_chestSeal, 15];
 		_unit addItemCargoGlobal [_personalAidKit, 15];
 	};
 
@@ -334,8 +334,8 @@
 		_unit addItemCargoGlobal [_plasma_m, 50];
 		_unit addItemCargoGlobal [_splint, 30];
 		_unit addItemCargoGlobal [_tourniquet, 30];
-		_unit addItemCargoGlobal [_larynx, 50];
-		_unit addItemCargoGlobal [_chestSeal, 25];
+		//_unit addItemCargoGlobal [_larynx, 50];
+		//_unit addItemCargoGlobal [_chestSeal, 25];
 		_unit addItemCargoGlobal [_personalAidKit, 25];
 	};
 
@@ -462,8 +462,8 @@
 		_unit addItemCargoGlobal [_plasma_m, 15];
 		_unit addItemCargoGlobal [_splint, 10];
 		_unit addItemCargoGlobal [_tourniquet, 10];
-		_unit addItemCargoGlobal [_larynx, 15];
-		_unit addItemCargoGlobal [_chestSeal, 10];
+		//_unit addItemCargoGlobal [_larynx, 15];
+		//_unit addItemCargoGlobal [_chestSeal, 10];
 		_unit addItemCargoGlobal [_personalAidKit, 10];
 		_unit addMagazineCargoGlobal [_satche_small, 15];		
 		_unit addMagazineCargoGlobal [_satche_big, 10];		
@@ -567,9 +567,9 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_mtrHE,15];
-		_unit addMagazineCargoGlobal [_mtrSmoke,15];
-		_unit addMagazineCargoGlobal [_mtrFlare,15];
+		_unit addMagazineCargoGlobal [_mtrHE,20];
+		_unit addMagazineCargoGlobal [_mtrSmoke,10];
+		_unit addMagazineCargoGlobal [_mtrFlare,10];
 		_unit addItemCargoGlobal [_maptools,1];
 		_unit addItemCargoGlobal [_tableMTR,1];
 	};

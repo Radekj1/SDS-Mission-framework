@@ -44,7 +44,10 @@ if (_typeOfUnit in _medR) then {
 
 // Enginer
 if (_typeOfUnit in _engR) then {
+	_helmet = _engHelmet;
+	_uniform = _engUniform;
 	_rig = _engRig;
+	_glasses = _engGlasses;
 };
 
 // Light
@@ -52,9 +55,14 @@ if (_typeOfUnit in _light) then {
 	_rig = _lightRig;
 };
 
-// Heavy
-if (_typeOfUnit in _heavy) then {
-	_rig = _heavyRig;
+// MG
+if (_typeOfUnit in _mg) then {
+	_rig = _mgRig;
+};
+
+// DM
+if (_typeOfUnit in _dm) then {
+	_rig = _dmRig;
 };
 
 // Pilot
