@@ -95,7 +95,7 @@ if(isServer || isHC) then {if(local player) then {DAC_Code = 1} else {DAC_Code =
 	DAC_GunNotAllowed	= 	[];
 	DAC_VehNotAllowed	= 	[];
 	DAC_Locked_Veh		=	[];
-	DAC_SP_Soldiers		=	["B_soldier_AR_F","B_HeavyGunner_F","O_Soldier_AR_F","O_HeavyGunner_F","I_Soldier_AR_F",];
+	DAC_SP_Soldiers		=	["B_soldier_AR_F","B_HeavyGunner_F","O_Soldier_AR_F","O_HeavyGunner_F","I_Soldier_AR_F"];
 	DAC_Data_Array 		= 	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,[]];
 	DAC_Marker_Val		= 	[];
 	DAC_Zones			=	[];
