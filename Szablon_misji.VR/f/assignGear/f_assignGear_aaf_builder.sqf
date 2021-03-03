@@ -768,7 +768,7 @@ switch (_typeofUnit) do
         _unit addweapon _pistol;
 		_unit addItem _GPS; 
         _unit addWeapon _lornetkaRTO;
-        ["rto"] call _backpack;
+        ["RTO"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
 	};
 
