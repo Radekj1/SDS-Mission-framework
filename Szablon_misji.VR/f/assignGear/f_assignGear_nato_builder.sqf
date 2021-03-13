@@ -196,6 +196,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;
+		_unit addItem _saperka;
 		["aar"] call _backpack;
 	};
 
@@ -319,6 +320,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
+		_unit addItem _saperka;
 		["mmgab"] call _backpack;
 	};
 
@@ -361,6 +363,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit addItem _saperka;
 		["hmgab"] call _backpack;
 	};
 
@@ -451,6 +454,7 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
+		_unit addItem _saperka;
 		["hatab"] call _backpack;
 	};
 
@@ -498,6 +502,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit addItem _saperka;
 		["mtrab"] call _backpack;
 	};
 
