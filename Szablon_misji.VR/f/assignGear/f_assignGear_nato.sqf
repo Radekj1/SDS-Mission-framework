@@ -118,6 +118,7 @@ _grenade = "HandGrenade";	//basic frag granade
 _flashbang = "ACE_M84";		//flashbang
 _flashbang9 = "ACE_CTS9";	//flashbang 9-bangs
 _igrenade = "ACE_M14"; 		//incidenary
+_IRgrenade = "B_IR_Grenade";
 
 // Granaty dymne
 _smokegrenade = "SmokeShell";
@@ -128,6 +129,7 @@ _smokegrenadered = "SmokeShellRed";
 // GL Rounds
 //_glmag = "1Rnd_HE_Grenade_shell";
 _huntIR = "ACE_HuntIR_M203";
+_huntIR_tab = "ACE_HuntIR_monitor";
 
 // Granaty dymne do granatnika
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
@@ -208,26 +210,42 @@ _AGS30GMG = "CUP_compats_29Rnd_30mm_AGS30_M";
 
 // ====================================================================================
 // Other items
-
 _earplugs = "ACE_EarPlugs";
+_handcuffs = "ACE_CableTie";
+_Chemlight_Shield = "ACE_Chemlight_Shield";
+_heliRope = "ACE_rope36";
+_hCam = "ItemcTabHCam";
+_armorPlate = "diw_armor_plates_main_plate";
+
+// Binoculars
 _lornetkaAM = "ACE_Vector";
 _lornetkaFTL = "Binocular";
 _lornetkaRTO = "Laserdesignator";
-_GPS = "ACE_microDAGR";
-_handcuffs = "ACE_CableTie";
-_huntIR_tab = "ACE_HuntIR_monitor";
-_Chemlight_Shield = "ACE_Chemlight_Shield";
-_heliRope = "ACE_rope36";
-_sprayRED = "ACE_SpraypaintRed";
-_sprayBLUE = "ACE_SpraypaintBlue";
-_sprayGREEN = "ACE_SpraypaintGreen";
-_sprayBLACK	 = "ACE_SpraypaintBlack";
-_RangeCard = "ACE_RangeCard";
+
+//Navigation & sniper stuff
+_cTAB = "ItemcTab";
+_cPhone = "ItemAndroid";
+_GPS = "ItemMicroDAGR";
+_ACE_GPS = "ACE_microDAGR";
 _dagr ="ACE_DAGR";
 _kestrel = "ACE_Kestrel4500";
 _ATrag ="ACE_ATragMX";
 _spottingScope = "ACE_SpottingScope";
 _tripod = "ACE_Tripod";
+_RangeCard = "ACE_RangeCard";
+
+// Sprays
+_sprayRED = "ACE_SpraypaintRed";
+_sprayBLUE = "ACE_SpraypaintBlue";
+_sprayGREEN = "ACE_SpraypaintGreen";
+_sprayBLACK	 = "ACE_SpraypaintBlack";
+
+// ====================================================================================
+// Food etc.
+
+_Canteen = "ACE_Canteen";
+_waterBottle = "ACE_WaterBottle";
+_MRE1 = "ACE_MRE_BeefStew";
 
 //*************************************************************************************
 // Konstruktor BUILDERA (rather avoid this)
@@ -499,16 +517,18 @@ _baseHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
 _baseGlasses = [];
 
 // Vests
-_slRig = ["V_PlateCarrierGL_rgr"]; // vest for Team Leaders and Squad Leaders, shoud have GL/radio
+_leaderRig = ["V_PlateCarrierGL_rgr"]; // vest for Team Leaders and Squad Leaders, shoud have GL/radio
 _lightRig = ["V_Chestrig_rgr"];	// vest given to heavy units - meaning they carry some heavy stuff on them
 _mediumRig = ["V_PlateCarrier1_rgr"];	// general used vest for most inf
 _mgRig = ["V_PlateCarrier2_rgr"];	// vest given to MG
 _dmRig = ["V_Chestrig_rgr"];	// vest given to marksman
+_glRig = ["V_Chestrig_rgr"];	// vest given to grenadier
 
 // Some definitions
 
 _hq = ["co"];
-_slR = ["ftl", "dc"];
+_leader = ["ftl", "dc"];
+_gl = ["gren"];
 _medR = ["m"];
 _engR = ["eng","engm"];
 _light = ["aar","mmgag","matag","hmgg","hmgag","hatag","msamag"];

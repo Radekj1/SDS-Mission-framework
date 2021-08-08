@@ -100,7 +100,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _GPS;
+		_unit addItem _cTAB;
 		["HQ"] call _backpack;
 	};
 
@@ -118,7 +118,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _GPS;
+		_unit addItem _cTAB;
 		["HQ"] call _backpack;
 	};
 
@@ -137,7 +137,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaFTL;
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		["TL"] call _backpack;
 	};
 
@@ -600,7 +600,7 @@ switch (_typeofUnit) do
 		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_attach1,_scope3,_bipod1];
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_unit addItem _RangeCard;
 	};
 
@@ -615,7 +615,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_unit addItem _kestrel;
 		_unit addItem _ATrag;
 		_unit addItem _RangeCard;
@@ -629,7 +629,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaFTL;
 		_unit addItem _radioMR;
 		_attachments = [];
@@ -670,7 +670,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem _radioMR;
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_attachments = [];
 		["pp"] call _backpack;
 	};
@@ -694,7 +694,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _GPS;
+		_unit addItem _cTAB;
 		_unit addItem _radioMR;
 		["ps"] call _backpack;
 	};
@@ -720,7 +720,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _mineDetector;
 		_unit linkItem _uavterminal;
-		_unit addItem _GPS; 
+		_unit addItem _cTAB; 
 		_unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
         _unit addMagazines ["Laserbatteries",2];
@@ -736,7 +736,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _mineDetector;
-		_unit addItem _GPS; 
+		_unit addItem _cPhone; 
 		_unit addWeapon _lornetkaRTO;
         _unit addMagazines ["Laserbatteries",2];
 		_attachments = [];
@@ -771,7 +771,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
-		_unit addItem _GPS; 
+		_unit addItem _cTAB; 
         _unit addWeapon _lornetkaRTO;
         ["RTO"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
@@ -789,7 +789,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
 		_unit linkItem _uavterminal;
-		_unit addItem _GPS; 
+		_unit addItem _cTAB; 
         _unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
         ["uav"] call _backpack;
@@ -810,7 +810,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_silencer2,_scope2];
 		_unit addweapon _SFpistol;
 		_hg_attachments= [_hg_silencer1,_hg_attach1];
-		_unit addItem _GPS;
+		_unit addItem _cTAB;
 		_unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
 		_unit addItem _huntIR_tab;
@@ -830,7 +830,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_silencer2,_scope2,_bipod1];
 		_unit addweapon _SFpistol;
 		_hg_attachments= [_hg_silencer1,_hg_attah1];
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
 		["sfm"] call _backpack;
@@ -849,7 +849,7 @@ switch (_typeofUnit) do
 		_unit addweapon _SFpistol;
 		_hg_attachments= [_hg_silencer1,_hg_attah1];
 		_unit addweapon _RAT;
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
 		["sfat"] call _backpack;
@@ -867,7 +867,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_silencer1,_scope2];
 		_unit addweapon _SFpistol;
 		_hg_attachments= [_hg_silencer1,_hg_attah1];
-		_unit addItem _GPS;
+		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
 		["sfs"] call _backpack;

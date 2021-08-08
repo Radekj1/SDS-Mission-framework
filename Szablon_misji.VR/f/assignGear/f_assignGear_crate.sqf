@@ -225,6 +225,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
 		_unit addItemCargoGlobal [_bandage, 50];
+		_unit addItemCargoGlobal [_armorPlate, 10];
 	};
 
 // CRATE: Medium ammo crate = should be enough for one squad
@@ -258,6 +259,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 15];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 15];
 		_unit addItemCargoGlobal [_bandage, 100];
+		_unit addItemCargoGlobal [_armorPlate, 25];
 	};
 
 // CRATE: Big ammo crate = should be enoug for platoon to rearm
@@ -291,6 +293,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
+		_unit addItemCargoGlobal [_armorPlate, 80];
 	};
 
 // CRATE: Mała skrzynka, zasoby medyczne
@@ -371,6 +374,7 @@
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
 		_unit addMagazineCargoGlobal [_SAMmag, 15];
+		//_unit addWeaponCargoGlobal [_SAMmag, 15];	// If AA is one use only, use this in stead of above
 	};
 	
 // CRATE: Skrzynka, zasoby HAT
@@ -467,7 +471,8 @@
 		_unit addItemCargoGlobal [_personalAidKit, 10];
 		_unit addMagazineCargoGlobal [_satche_small, 15];		
 		_unit addMagazineCargoGlobal [_satche_big, 10];		
-		_unit addMagazineCargoGlobal [_satche_extra_big, 5];		
+		_unit addMagazineCargoGlobal [_satche_extra_big, 5];
+		_unit addItemCargoGlobal [_armorPlate, 10];		
 	};
 
 // CRATE: Skrzynka, zasoby NOCNE
@@ -488,7 +493,8 @@
 		_unit addMagazineCargoGlobal [_chemgreen,25];
 		_unit addMagazineCargoGlobal [_chemred,25];
 		_unit addMagazineCargoGlobal [_chemyellow,25];
-		_unit addMagazineCargoGlobal [_chemblue,25];		
+		_unit addMagazineCargoGlobal [_chemblue,25];
+		_unit addMagazineCargoGlobal [_IRgrenade,25];
 		_unit addItemCargoGlobal [_IRstrobe,25];		
 	};
 	
@@ -510,7 +516,8 @@
 		_unit addMagazineCargoGlobal [_chemgreen,80];
 		_unit addMagazineCargoGlobal [_chemred,80];
 		_unit addMagazineCargoGlobal [_chemyellow,80];
-		_unit addMagazineCargoGlobal [_chemblue,80];		
+		_unit addMagazineCargoGlobal [_chemblue,80];
+		_unit addMagazineCargoGlobal [_IRgrenade,80];		
 		_unit addItemCargoGlobal [_IRstrobe,80];		
 	};
 	
@@ -588,4 +595,7 @@
 		_unit addItemCargoGlobal [_sprayGREEN,15];
 		_unit addItemCargoGlobal [_sprayBLACK,15];
 		_unit addItemCargoGlobal [_UAVbattery,15];
+		_unit addItemCargoGlobal [_maptools,5];
+		_unit addItemCargoGlobal [_tableMTR,5];
+		_unit addItemCargoGlobal [_tableART,5];
 	};

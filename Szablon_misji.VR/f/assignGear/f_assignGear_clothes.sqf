@@ -22,7 +22,7 @@ _glasses = _baseGlasses;
 
 // Flip through unit to assign specialized uniforms
 
-// CO/DC/SL
+// COY Commander/PLT Commander
 if (_typeOfUnit in _hq) then {
 	_helmet = _hqHelmet;
 	_uniform = _hqUniform;
@@ -30,8 +30,8 @@ if (_typeOfUnit in _hq) then {
 	_glasses = _hqGlasses;
 };
 // TL
-if (_typeOfUnit in _slR) then {
-	_rig = _slRig;
+if (_typeOfUnit in _leader) then {
+	_rig = _leaderRig;
 };
 
 // Medic
@@ -63,6 +63,11 @@ if (_typeOfUnit in _mg) then {
 // DM
 if (_typeOfUnit in _dm) then {
 	_rig = _dmRig;
+};
+
+// GL
+if (_typeOfUnit in _gl) then {
+	_rig = _glRig;
 };
 
 // Pilot
