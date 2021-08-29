@@ -13,9 +13,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={4128.5293,119.3596,4738.293};
-		dir[]={0.044943944,-0.7867189,-0.6158728};
-		up[]={0.057258625,0.61719459,-0.7846294};
-		aside[]={-0.99742603,1.5884289e-006,-0.072791673};
+		dir[]={0.66934884,-0.7407847,-0.058793474};
+		up[]={0.73796278,0.67161083,-0.064820915};
+		aside[]={-0.087503731,1.8511491e-006,-0.99624425};
 	};
 };
 binarizationWanted=0;
@@ -272,6 +272,10 @@ class AddonsMetaData
 			url="http://ace3mod.com/";
 		};
 	};
+};
+dlcs[]=
+{
+	"Heli"
 };
 randomSeed=10203523;
 class ScenarioData
@@ -2695,7 +2699,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{_null = this addAction [""Small ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_small"",faction1] ];  " \n "_null = this addAction [""Medium ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_med"",faction1] ];  " \n "_null = this addAction [""Big ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_large"",faction1] ];  " \n "_null = this addAction [""Explosives"", ""f\assignGear\SpawnCrate.sqf"", [""crate_small_explo"",faction1] ];  " \n "_null = this addAction [""Small medical"", ""f\assignGear\SpawnCrate.sqf"", [""crate_smallmedical"",faction1] ];  " \n "_null = this addAction [""Big medcial"", ""f\assignGear\SpawnCrate.sqf"", [""crate_bigmedical"",faction1] ];  " \n "_null = this addAction [""Night equipment"", ""f\assignGear\SpawnCrate.sqf"", [""crate_night_big"",faction1] ];  " \n "_null = this addAction [""MMG ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mmg"",faction1] ];  " \n "_null = this addAction [""MAT ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mat"",faction1] ];  " \n "_null = this addAction [""SAM ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_sam"",faction1] ];  " \n "_null = this addAction [""HAT ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_hat"",faction1] ]; " \n "_null = this addAction [""Radios"", ""f\assignGear\SpawnCrate.sqf"", [""crate_radio"",faction1] ]; " \n "_null = this addAction [""Mortar ammo"", ""f\assignGear\SpawnCrate.sqf"", [""crate_MTR"",faction1] ]; " \n "_null = this addAction [""Miscellaneous"", ""f\assignGear\SpawnCrate.sqf"", [""crate_misc"",faction1] ];}";
+				init="_null = this addAction [""Small ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_small"",faction1] ]; " \n "_null = this addAction [""Medium ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_med"",faction1] ]; " \n "_null = this addAction [""Big ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_large"",faction1] ]; " \n "_null = this addAction [""Small medical"", ""f\assignGear\SpawnCrate.sqf"", [""crate_smallmedical"",faction1] ]; " \n "_null = this addAction [""Big medcial"", ""f\assignGear\SpawnCrate.sqf"", [""crate_bigmedical"",faction1] ]; " \n "_null = this addAction [""MMG ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mmg"",faction1] ]; " \n "_null = this addAction [""HMG ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_hmg"",faction1] ]; " \n "_null = this addAction [""MAT ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mat"",faction1] ]; " \n "_null = this addAction [""HAT ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_hat"",faction1] ]; " \n "_null = this addAction [""HAT(static) ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_hat_alt"",faction1] ]; " \n "_null = this addAction [""SAM ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_sam"",faction1] ]; " \n "_null = this addAction [""GMG ammo box"", ""f\assignGear\SpawnCrate.sqf"", [""crate_gmg"",faction1] ]; " \n "_null = this addAction [""Mortar ammo"", ""f\assignGear\SpawnCrate.sqf"", [""crate_MTR"",faction1] ]; " \n "_null = this addAction [""Explosives"", ""f\assignGear\SpawnCrate.sqf"", [""crate_explo"",faction1] ]; " \n "_null = this addAction [""Mines"", ""f\assignGear\SpawnCrate.sqf"", [""crate_mines"",faction1] ]; " \n "_null = this addAction [""Night equipment small"", ""f\assignGear\SpawnCrate.sqf"", [""crate_night_small"",faction1] ]; " \n "_null = this addAction [""Night equipment big"", ""f\assignGear\SpawnCrate.sqf"", [""crate_night_big"",faction1] ]; " \n "_null = this addAction [""SF ammo"", ""f\assignGear\SpawnCrate.sqf"", [""crate_spec"",faction1] ]; " \n "_null = this addAction [""Radios"", ""f\assignGear\SpawnCrate.sqf"", [""crate_radio"",faction1] ]; " \n "_null = this addAction [""Miscellaneous"", ""f\assignGear\SpawnCrate.sqf"", [""crate_misc"",faction1] ];";
 			};
 			id=592;
 			type="Land_InfoStand_V2_F";
