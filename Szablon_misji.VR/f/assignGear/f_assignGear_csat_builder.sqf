@@ -298,12 +298,12 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
 	case "mmgag":
 	{
-		_unit addmagazines [_riflemag,3];
-		_unit addmagazines [_riflemag_tr,2];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addweapon _rifle;
+		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;				
 		["mmgag"] call _backpack;
@@ -362,8 +362,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addItem _saperka;
 		_unit addmagazines [_smokegrenade,2];
+		_unit addItem _saperka;
 		["hmgab"] call _backpack;
 	};
 
@@ -413,12 +413,12 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit addmagazines [_smgmag,3];
-		_unit addmagazines [_smgmag_tr,2];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
-		_unit addweapon _smg;
+		_unit addweapon _carbine;
 		_attachments = [];
 		_unit addweapon _pistol;
 		["hatg"] call _backpack;
@@ -431,12 +431,12 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
 	case "hatag":
 	{
-		_unit addmagazines [_smgmag,3];
-		_unit addmagazines [_smgmag_tr,2];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
-		_unit addweapon _smg;
+		_unit addweapon _carbine;
 		_attachments = [];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;
@@ -1050,7 +1050,7 @@ switch (_typeofUnit) do
 
 		_unit selectweapon primaryweapon _unit;
 
-		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_csat.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
+		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_nato.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 
 // ====================================================================================

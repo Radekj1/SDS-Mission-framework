@@ -13,9 +13,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={4128.5293,119.3596,4738.293};
-		dir[]={0.66934884,-0.7407847,-0.058793474};
-		up[]={0.73796278,0.67161083,-0.064820915};
-		aside[]={-0.087503731,1.8511491e-006,-0.99624425};
+		dir[]={0.67768031,-0.6824162,-0.27441642};
+		up[]={0.63256705,0.73082066,-0.25614923};
+		aside[]={-0.37535763,2.1418091e-006,-0.92696565};
 	};
 };
 binarizationWanted=0;
@@ -5505,7 +5505,7 @@ class Mission
 						skill=0.60000002;
 						init="call{GrpNATO_A2 = group this; [""gren"",this] call f_fnc_assignGear;}";
 						name="UnitNATO_A2_R";
-						description="Greandier@Alpha 2";
+						description="Grenadier@Alpha 2";
 						isPlayable=1;
 					};
 					id=729;

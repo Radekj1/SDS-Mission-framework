@@ -175,8 +175,8 @@ case "mmgag":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MMGmag_tr, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 2];			
+	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];			
 };
 
 // BACKPACK: MMG AMMO BEARER (MMGAB)
@@ -186,8 +186,8 @@ case "mmgab":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MMGmag_tr, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr, 2];
 };
 
 // LOADOUT: HEAVY MG GUNNER (HMGG)
@@ -337,8 +337,8 @@ case "msamab":
 	_unit addBackpack _baglarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 1];
-	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 1];
+	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 1];
+	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr, 1];
 };
 
 // LOADOUT: GMG GUNNER (HSAMG)
