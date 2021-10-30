@@ -499,7 +499,7 @@ ace_vehicles_speedLimiterStep = 5;
 force ace_viewdistance_enabled = true;
 force ace_viewdistance_limitViewDistance = 10000;
 ace_viewdistance_objectViewDistanceCoeff = 0;
-ace_viewdistance_viewDistanceAirVehicle = 5000;
+ace_viewdistance_viewDistanceAirVehicle = 10000;
 ace_viewdistance_viewDistanceLandVehicle = 3500;
 ace_viewdistance_viewDistanceOnFoot = 3500;
 
@@ -593,9 +593,6 @@ acre_sys_zeus_zeusCanSpectate = true;
 acre_sys_zeus_zeusCommunicateViaCamera = true;
 acre_sys_zeus_zeusDefaultVoiceSource = false;
 
-// AI
-force cfp_autoEquipNVG = true;
-
 // Armor Plates System
 force diw_armor_plates_main_AIchancePlateInInventory = 0;
 force diw_armor_plates_main_AIchancePlateInInventoryMaxNo = 0;
@@ -664,7 +661,7 @@ force grad_trenches_functions_bigEnvelopeRemovalTime = -1;
 force grad_trenches_functions_buildFatigueFactor = 0.5;
 force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
 force grad_trenches_functions_createTrenchMarker = false;
-force grad_trenches_functions_decayTime = 300;
+force grad_trenches_functions_decayTime = 1200;
 force grad_trenches_functions_giantEnvelopeDamageMultiplier = 1;
 force grad_trenches_functions_giantEnvelopeDigTime = 90;
 force grad_trenches_functions_giantEnvelopeRemovalTime = -1;
@@ -678,7 +675,7 @@ force grad_trenches_functions_smallEnvelopeDamageMultiplier = 3;
 force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force grad_trenches_functions_smallEnvelopeRemovalTime = -1;
 force grad_trenches_functions_stopBuildingAtFatigueMax = true;
-force grad_trenches_functions_timeoutToDecay = 300;
+force grad_trenches_functions_timeoutToDecay = 600;
 force grad_trenches_functions_vehicleEnvelopeDamageMultiplier = 1;
 force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
 force grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
@@ -785,11 +782,11 @@ force lambs_main_radioShout = 100;
 force lambs_main_radioWest = 500;
 
 // LAxemann's Suppress
-force L_Suppress_buildup = 1;
+force L_Suppress_buildup = 0.6;
 force L_Suppress_enabled = true;
 force L_Suppress_flyByEffects = true;
-force L_Suppress_flyByIntensity = 1;
+force L_Suppress_flyByIntensity = 0.6;
 force L_Suppress_halting = true;
-force L_Suppress_intensity = 1;
+force L_Suppress_intensity = 0.6;
 force L_Suppress_playerSwabEnabled = false;
 force L_Suppress_recovery = 1;

@@ -31,10 +31,14 @@ _AED = "kat_AED";
 _AEDX = "kat_X_AED";
 /*
 _accuvac = "kat_accuvac";
+_AATKit = "kat_aatKit";
 _chestSeal ="kat_chestSeal";
 _Pulseoximeter = "kat_Pulseoximeter";
 _larynx = "kat_larynx";
 _guedel = "kat_guedel";
+_stethoscope = "kat_stethoscope";
+_transfuseKit = "KAT_Empty_bloodIV_500";
+_hstrecher = "Attachable_Helistretcher";
 */
 
 // Bandages
@@ -214,6 +218,8 @@ _earplugs = "ACE_EarPlugs";
 _handcuffs = "ACE_CableTie";
 _Chemlight_Shield = "ACE_Chemlight_Shield";
 _heliRope = "ACE_rope36";
+_towRope = "ACE_rope3";
+_sBarrel = "ACE_SpareBarrel";
 _hCam = "ItemcTabHCam";
 _armorPlate = "diw_armor_plates_main_plate";
 

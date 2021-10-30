@@ -32,6 +32,7 @@
 		_unit addItemCargoGlobal [_bandage, 30];
 		_unit addItemCargoGlobal [_personalAidKit, 2];
 		_unit addItemCargoGlobal [_wirecutter, 1];
+		_unit addItemCargoGlobal [_towRope, 1];
 	};
 
 // CARGO: TRUCK - Przykład inicjalizacji: ["v_tr",this,"blu_f"] call f_fnc_assignGear
@@ -64,6 +65,7 @@
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal [_personalAidKit, 10];
 		_unit addItemCargoGlobal [_wirecutter, 1];
+		_unit addItemCargoGlobal [_towRope, 1];
 	};
 
 // CARGO: IFV - Przykład inicjalizacji: ["v_ifv",this,"blu_f"] call f_fnc_assignGear
@@ -97,6 +99,7 @@
 		_unit addItemCargoGlobal [_personalAidKit, 2];
 		_unit addItemCargoGlobal [_wirecutter, 1];
 		_unit addItemCargoGlobal [_toolkit, 1];
+		_unit addItemCargoGlobal [_towRope, 1];
 	};
 	
 // CARGO: LOGISTYKA - Przykład inicjalizacji: ["v_log",this,"blu_f"] call f_fnc_assignGear
@@ -120,6 +123,7 @@
 		_unit addItemCargoGlobal [_n_rozbraja, 2];
 		_unit addItemCargoGlobal [_UAVbattery, 2];
 		_unit addItemCargoGlobal [_AntenaAndMast, 1];
+		_unit addItemCargoGlobal [_towRope, 2];
 	};
 
 // CARGO: LOGISTYKA - Przykład inicjalizacji: ["v_med",this,"blu_f"] call f_fnc_assignGear
@@ -148,6 +152,7 @@
 		//_unit addItemCargoGlobal [_accuvac, 2];
 		//_unit addItemCargoGlobal [_Pulseoximeter, 2];
 		_unit addItemCargoGlobal [_worek, 25];
+		_unit addItemCargoGlobal [_towRope, 1];
 	};
 
 // CARGO: LOGISTYKA - Przykład inicjalizacji: ["v_ammo",this,"blu_f"] call f_fnc_assignGear
@@ -180,6 +185,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
+		_unit addItemCargoGlobal [_towRope, 1];
 	};
 
 // CARGO: Heli - Przykład inicjalizacji: ["v_heli",this,"blu_f"] call f_fnc_assignGear
@@ -226,6 +232,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal [_armorPlate, 10];
+		_unit addItemCargoGlobal [_sBarrel, 10];
 	};
 
 // CRATE: Medium ammo crate = should be enough for one squad
@@ -260,6 +267,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadered, 15];
 		_unit addItemCargoGlobal [_bandage, 100];
 		_unit addItemCargoGlobal [_armorPlate, 25];
+		_unit addItemCargoGlobal [_sBarrel, 25;
 	};
 
 // CRATE: Big ammo crate = should be enoug for platoon to rearm
@@ -294,6 +302,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
 		_unit addItemCargoGlobal [_bandage, 150];
 		_unit addItemCargoGlobal [_armorPlate, 80];
+		_unit addItemCargoGlobal [_sBarrel, 80];
 	};
 
 // CRATE: Mała skrzynka, zasoby medyczne
