@@ -267,7 +267,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadered, 15];
 		_unit addItemCargoGlobal [_bandage, 100];
 		_unit addItemCargoGlobal [_armorPlate, 25];
-		_unit addItemCargoGlobal [_sBarrel, 25;
+		_unit addItemCargoGlobal [_sBarrel, 25];
 	};
 
 // CRATE: Big ammo crate = should be enoug for platoon to rearm
