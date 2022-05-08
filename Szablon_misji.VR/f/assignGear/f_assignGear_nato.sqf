@@ -29,7 +29,6 @@ _surgicalKit = "ACE_surgicalKit";			// surgical Kit
 _worek = "ACE_bodyBag";						// body Bag
 _AED = "kat_AED";
 _AEDX = "kat_X_AED";
-/*
 _accuvac = "kat_accuvac";
 _AATKit = "kat_aatKit";
 _chestSeal ="kat_chestSeal";
@@ -39,7 +38,8 @@ _guedel = "kat_guedel";
 _stethoscope = "kat_stethoscope";
 _transfuseKit = "KAT_Empty_bloodIV_500";
 _hstrecher = "Attachable_Helistretcher";
-*/
+_iv16 = "kat_IV_16";
+_ioFast = "kat_IO_FAST";
 
 // Bandages
 _bandage = "ACE_fieldDressing";				// field Dressing
@@ -55,6 +55,14 @@ _morphine = "ACE_morphine";					// morphine (niweluje ból, rozrzedza krew)
 _adenosine = "ACE_adenosine";				// adenosine (obniża tętno)
 //_atropine = "ACE_atropine";				// atropine (obniża tętno)
 _painkiller = "kat_Painkiller";
+_amiodarone = "kat_amiodarone";	//used to fight cardiac arrest
+_atropine = "kat_atropine";	//used to fight bradycardia
+_lidocaine = "kat_lidocaine";	//used to fight cardiac arrest
+_naloxone = "kat_naloxone";	//used to fight opium overdose
+_nitroglycerin = "kat_nitroglycerin";	//used to lower blood presure
+_norepinephrine = "kat_norepinephrine";	//used to rise blood presure
+_phenylephrine = "kat_phenylephrine";	//used to rise blood presure
+_TXA = "kat_TXA";	//used to increase blood clot
 
 // ACE Blood/fluids
 _blood_s = "ACE_bloodIV_250";				// Blood 200 ml

@@ -16,14 +16,10 @@ case "m":
 	(unitBackpack _unit) addItemCargoGlobal [_tourniquet,6];
 	(unitBackpack _unit) addItemCargoGlobal [_morphine,10];
 	(unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
-	(unitBackpack _unit) addItemCargoGlobal [_adenosine,5];
 	(unitBackpack _unit) addItemCargoGlobal [_painkiller,5];
 	(unitBackpack _unit) addItemCargoGlobal [_splint,10];
-	//(unitBackpack _unit) addItemCargoGlobal [_larynx,10];
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
-	//(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
-	//(unitBackpack _unit) addItemCargoGlobal [_Pulseoximeter, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 };
 
@@ -40,12 +36,9 @@ case "doc":
 	(unitBackpack _unit) addItemCargoGlobal [_tourniquet,4];
 	(unitBackpack _unit) addItemCargoGlobal [_morphine,5];
 	(unitBackpack _unit) addItemCargoGlobal [_epinephrine,5];
-	(unitBackpack _unit) addItemCargoGlobal [_adenosine,5];
-	//(unitBackpack _unit) addItemCargoGlobal [_larynx,10];
 	(unitBackpack _unit) addItemCargoGlobal [_splint,10];
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
-	//(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_AEDX, 1];
 };
 
@@ -431,7 +424,7 @@ case "sfm":
 {
 	_unit addBackpack _bagSF;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_blood_m, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_plasma_m, 4];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage,10];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic,10];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_packing,10];
@@ -439,12 +432,9 @@ case "sfm":
 	(unitBackpack _unit) addItemCargoGlobal [_tourniquet,4];
 	(unitBackpack _unit) addItemCargoGlobal [_morphine,5];
 	(unitBackpack _unit) addItemCargoGlobal [_epinephrine,5];
-	(unitBackpack _unit) addItemCargoGlobal [_adenosine,5];
-	(unitBackpack _unit) addItemCargoGlobal [_larynx,8];
 	(unitBackpack _unit) addItemCargoGlobal [_splint,5];
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
-	(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_AEDX, 1];
 };
 
