@@ -39,7 +39,7 @@ ace_arsenal_fontHeight = 4.5;
 
 // ACE Artillery
 force ace_artillerytables_advancedCorrections = false;
-force ace_artillerytables_disableArtilleryComputer = true;
+force ace_artillerytables_disableArtilleryComputer = false;
 force ace_mk6mortar_airResistanceEnabled = false;
 force ace_mk6mortar_allowCompass = true;
 force ace_mk6mortar_allowComputerRangefinder = false;
@@ -50,6 +50,10 @@ force ace_captives_allowHandcuffOwnSide = true;
 force ace_captives_allowSurrender = true;
 force ace_captives_requireSurrender = 0;
 force ace_captives_requireSurrenderAi = false;
+
+// ACE Casings
+ace_casings_enabled = true;
+ace_casings_maxCasings = 250;
 
 // ACE Common
 force ace_common_allowFadeMusic = true;
@@ -62,7 +66,6 @@ ace_common_epilepsyFriendlyMode = false;
 ace_common_progressBarInfo = 2;
 ace_common_settingFeedbackIcons = 1;
 ace_common_settingProgressBarLocation = 0;
-force ace_noradio_enabled = true;
 
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 1;
@@ -77,6 +80,7 @@ force ace_csw_ammoHandling = 1;
 force ace_csw_defaultAssemblyMode = true;
 ace_csw_dragAfterDeploy = false;
 force ace_csw_handleExtraMagazines = false;
+force ace_csw_handleExtraMagazinesType = 0;
 force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Dragging
@@ -230,6 +234,7 @@ ace_interact_menu_moveToRoot__ACE_Equipment__ace_interaction_weaponAttachments =
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_hide = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_show = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__ace_marker_flags = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_close = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_show = false;
@@ -269,6 +274,14 @@ ace_interact_menu_moveToRoot__ACE_Equipment__diw_armor_plates_main_addPlate = fa
 ace_interact_menu_moveToRoot__ACE_Equipment__openCrossPanel = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__placeAED = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__removeSound = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_Assemble_Javelin = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_Attach = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_Attach_Helmet = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_Detach = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_Detach_Helmet = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_Disassemble_Javelin = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_DropBackpack = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__UK3CB_PickupBackpack = false;
 ace_interact_menu_moveToRoot__ACE_Explosives__ACE_Cellphone = false;
 ace_interact_menu_moveToRoot__ACE_Explosives__ACE_Place = false;
 ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Advance = false;
@@ -335,6 +348,7 @@ force ace_repair_repairDamageThreshold_engineer = 0.4;
 force ace_repair_wheelRepairRequiredItems = [];
 
 // ACE Magazine Repack
+ace_magazinerepack_repackAnimation = true;
 ace_magazinerepack_repackLoadedMagazines = true;
 force ace_magazinerepack_timePerAmmo = 1.5;
 force ace_magazinerepack_timePerBeltLink = 8;
@@ -414,6 +428,7 @@ ace_medical_gui_enableSelfActions = true;
 ace_medical_gui_interactionMenuShowTriage = 1;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
+force ace_medical_gui_showBloodlossEntry = true;
 force ace_medical_ivFlowRate = 1;
 force ace_medical_limping = 2;
 force ace_medical_painCoefficient = 3;
@@ -511,6 +526,8 @@ force ace_finger_enabled = true;
 ace_finger_indicatorColor = [0.83,0.68,0.21,0.75];
 ace_finger_indicatorForSelf = true;
 force ace_finger_maxRange = 6;
+force ace_finger_proximityScaling = false;
+force ace_finger_sizeCoef = 1;
 
 // ACE Pylons
 force ace_pylons_enabledForZeus = true;
@@ -575,8 +592,11 @@ force ace_gunbag_swapGunbagEnabled = true;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
+force ace_laser_showLaserOnMap = 1;
+force ace_marker_flags_placeAnywhere = false;
 force ace_microdagr_mapDataAvailable = 2;
 force ace_microdagr_waypointPrecision = 2;
+force ace_noradio_enabled = true;
 ace_optionsmenu_showNewsOnMainMenu = true;
 force ace_overpressure_distanceCoefficient = 1;
 force ace_parachute_failureChance = 0.03;
@@ -601,6 +621,7 @@ ace_ui_gunnerWeaponLowerInfoBackground = true;
 ace_ui_gunnerWeaponName = true;
 ace_ui_gunnerWeaponNameBackground = true;
 ace_ui_gunnerZeroing = true;
+ace_ui_hideDefaultActionIcon = false;
 ace_ui_magCount = true;
 ace_ui_soldierVehicleWeaponInfo = true;
 ace_ui_staminaBar = true;
@@ -630,6 +651,7 @@ force ace_vehiclelock_vehicleStartingLockState = -1;
 ace_vehicles_hideEjectAction = true;
 force ace_vehicles_keepEngineRunning = false;
 ace_vehicles_speedLimiterStep = 5;
+force ace_viewports_enabled = true;
 
 // ACE View Distance Limiter
 force ace_viewdistance_enabled = true;
@@ -752,6 +774,7 @@ force diw_armor_plates_main_timeToAddPlate = 8;
 
 // Community Base Addons
 cba_diagnostic_ConsoleIndentType = -1;
+force cba_diagnostic_watchInfoRefreshRate = 0.2;
 cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
@@ -759,18 +782,6 @@ force cba_network_loadoutValidation = 2;
 cba_optics_usePipOptics = false;
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
-
-// CUP
-CUP_CheckCfgPatches = false;
-CUP_Vehicles_PreventBarrelClip = true;
-
-// CUP Static Weapons
-CUP_staticWeapons_allowMovement = false;
-CUP_staticWeapons_allowRotation = false;
-
-// CWR3
-cwr3_intro_customLogo = true;
-cwr3_intro_disableSpotlight = true;
 
 // GRAD CaptiveWalkingAnimation
 force grad_captiveWalking_functions_allowFreeing = true;
@@ -818,6 +829,7 @@ force grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
 
 // KAT - ADV Medical: Airway
 force kat_airway_Accuvac_time = 8;
+force kat_airway_CancelRecoveryPosition_Time = 6;
 force kat_airway_CheckAirway_time = 2;
 force kat_airway_checkbox_puking_sound = true;
 force kat_airway_Colored_logs = true;
@@ -831,19 +843,26 @@ force kat_airway_Overstretch_time = 3;
 force kat_airway_probability_headturning = 50;
 force kat_airway_probability_obstruction = 15;
 force kat_airway_probability_occluded = 10;
+force kat_airway_RecoveryPosition_Time = 6;
 force kat_airway_string_exit = "";
 force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
 force kat_breathing_enable = false;
 force kat_breathing_enable_selfChestseal = 0;
+force kat_breathing_enableCyanosis = true;
 force kat_breathing_hemopneumothoraxChance = 5;
 force kat_breathing_medLvl_Chestseal = 1;
+force kat_breathing_medLvl_Cyanosis = 1;
 force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
 force kat_breathing_medLvl_Pulseoximeter = 0;
+force kat_breathing_mildValue = 75;
 force kat_breathing_pneumothorax = 5;
 force kat_breathing_pneumothorax_hardcore = false;
 force kat_breathing_pneumothoraxDamageThreshold = 0.4;
+force kat_breathing_severeValue = 66;
+force kat_breathing_showPneumothorax_dupe = false;
+force kat_breathing_slightValue = 90;
 force kat_breathing_SpO2_dieActive = true;
 force kat_breathing_SpO2_dieValue = 65;
 force kat_breathing_SpO2_MultiplyNegative = 1;
@@ -859,7 +878,7 @@ force kat_circulation_AED_BeepsAndCharge = true;
 force kat_circulation_blood_draw_limit = 3.6;
 force kat_circulation_blood_drawTime_250ml = 25;
 force kat_circulation_blood_drawTime_500ml = 50;
-kat_circulation_bloodgroup = "O";
+kat_circulation_bloodgroup = "A-";
 force kat_circulation_bloodGroups = false;
 force kat_circulation_CPR_Chance_Default = 40;
 force kat_circulation_CPR_Chance_Doctor = 60;
@@ -950,19 +969,5 @@ force L_Suppress_intensity = 0.6;
 force L_Suppress_playerSwabEnabled = false;
 force L_Suppress_recovery = 1;
 
-// USAF
-force usaf_afterburner_setting_allow_ai = true;
-force USAF_allowNuke = true;
-force usaf_debug_setting_enabled_clients = false;
-force usaf_debug_setting_enabled_server = false;
-force usaf_serviceMenu_setting_allowHangarRearm = true;
-force usaf_serviceMenu_setting_allowHangarRefuel = true;
-force usaf_serviceMenu_setting_allowHangarRepair = true;
-force usaf_serviceMenu_setting_allowLoadoutModification = true;
-force usaf_serviceMenu_setting_enabled = true;
-force usaf_serviceMenu_setting_refuelTime = "100";
-force usaf_serviceMenu_setting_reloadTime = "2";
-force usaf_serviceMenu_setting_repairTime = "100";
-force usaf_serviceMenu_setting_replaceSources = false;
-force usaf_serviceMenu_setting_selectorSearchRadius = "15";
-force usaf_setting_allow_aiFormlights = true;
+// Simple Craters
+force simplecraters_setting_craterScale = 1.5;
