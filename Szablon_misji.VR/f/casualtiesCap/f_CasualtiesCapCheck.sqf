@@ -151,7 +151,7 @@ while {true} do
 
 // END CASCAP
 // Depending on input, either MPEnd or the parsed code itself is called
-
+/*
 if (typeName _end == typeName 0) exitWith {
 	[_end] call f_fnc_mpEnd;
 };
@@ -161,3 +161,4 @@ if (typeName _end == typeName {}) exitWith {
 };
 
 player GlobalChat format ["DEBUG (f\casualtiesCap\f_CasualtiesCapCheck.sqf): Ending didn't fire, should either be code or scalar. _end = %1, typeName _end: %2",_end,typeName _end];
+*/

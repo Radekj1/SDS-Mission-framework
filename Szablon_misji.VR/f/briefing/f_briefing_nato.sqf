@@ -2,18 +2,6 @@
 
 // ====================================================================================
 
-// NOTES: CREDITS
-// The code below creates the administration sub-section of notes.
-
-_cre = player createDiaryRecord ["diary", ["Autorzy misji","
-<br/>
-<font size='18'> Tu wpisz autorów misji</font>
-<br/><br/>
-"]];
-
-
-// ====================================================================================
-
 // NOTES: Misja
 // The code below creates the mission sub-section of notes.
 
