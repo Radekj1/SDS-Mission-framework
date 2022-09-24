@@ -7,14 +7,14 @@ force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
-force ace_advanced_fatigue_enabled = false;
+force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 ace_advanced_fatigue_fadeStaminaBar = true;
 force ace_advanced_fatigue_loadFactor = 1;
-force ace_advanced_fatigue_performanceFactor = 1;
-force ace_advanced_fatigue_recoveryFactor = 1;
-force ace_advanced_fatigue_swayFactor = 1;
-force ace_advanced_fatigue_terrainGradientFactor = 1;
+force ace_advanced_fatigue_performanceFactor = 5;
+force ace_advanced_fatigue_recoveryFactor = 5;
+force ace_advanced_fatigue_swayFactor = 0.5;
+force ace_advanced_fatigue_terrainGradientFactor = 0.5;
 
 // ACE Advanced Throwing
 ace_advanced_throwing_enabled = true;
@@ -132,14 +132,14 @@ force ace_explosives_requireSpecialist = true;
 
 // ACE Field Rations
 force acex_field_rations_affectAdvancedFatigue = true;
-force acex_field_rations_enabled = false;
-acex_field_rations_hudShowLevel = 0;
-acex_field_rations_hudTransparency = -1;
-acex_field_rations_hudType = 0;
+force acex_field_rations_enabled = true;
+force acex_field_rations_hudShowLevel = 0;
+force acex_field_rations_hudTransparency = -1;
+force acex_field_rations_hudType = 0;
 force acex_field_rations_hungerSatiated = 1;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
-force acex_field_rations_timeWithoutFood = 2;
+force acex_field_rations_timeWithoutFood = 3;
 force acex_field_rations_timeWithoutWater = 2;
 force acex_field_rations_waterSourceActions = 2;
 
@@ -298,7 +298,7 @@ force ace_medical_blood_maxBloodObjects = 500;
 force ace_medical_deathChance = 1;
 force ace_medical_enableVehicleCrashes = true;
 force ace_medical_fatalDamageSource = 2;
-force ace_medical_feedback_bloodVolumeEffectType = 0;
+force ace_medical_feedback_bloodVolumeEffectType = 2;
 ace_medical_feedback_enableHUDIndicators = true;
 force ace_medical_feedback_painEffectType = 1;
 force ace_medical_fractureChance = 0.8;
@@ -731,26 +731,26 @@ force grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
 
 // KAT - ADV Medical: Airway
 force kat_airway_Accuvac_time = 8;
-force kat_airway_CancelRecoveryPosition_Time = 6;
+force kat_airway_CancelRecoveryPosition_Time = 10;
 force kat_airway_CheckAirway_time = 2;
 force kat_airway_checkbox_puking_sound = true;
 force kat_airway_Colored_logs = true;
-force kat_airway_enable = false;
+force kat_airway_enable = true;
 force kat_airway_Guedeltubus_time = 6;
 force kat_airway_Larynxtubus_time = 3;
 force kat_airway_medLvl_Accuvac = 1;
 force kat_airway_medLvl_Guedeltubus = 1;
 force kat_airway_medLvl_Larynxtubus = 1;
 force kat_airway_Overstretch_time = 3;
-force kat_airway_probability_headturning = 50;
-force kat_airway_probability_obstruction = 15;
+force kat_airway_probability_headturning = 60;
+force kat_airway_probability_obstruction = 10;
 force kat_airway_probability_occluded = 10;
-force kat_airway_RecoveryPosition_Time = 6;
+force kat_airway_RecoveryPosition_Time = 10;
 force kat_airway_string_exit = "";
 force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
-force kat_breathing_enable = false;
+force kat_breathing_enable = true;
 force kat_breathing_enable_selfChestseal = 0;
 force kat_breathing_enableCyanosis = true;
 force kat_breathing_hemopneumothoraxChance = 5;
@@ -768,7 +768,7 @@ force kat_breathing_slightValue = 90;
 force kat_breathing_SpO2_dieActive = true;
 force kat_breathing_SpO2_dieValue = 65;
 force kat_breathing_SpO2_MultiplyNegative = 1;
-force kat_breathing_SpO2_MultiplyPositive = 1;
+force kat_breathing_SpO2_MultiplyPositive = 1.5;
 force kat_breathing_SpO2_perfusion = true;
 force kat_breathing_SpO2_unconscious = 75;
 force kat_breathing_Stable_spo2 = 80;
@@ -802,18 +802,18 @@ force kat_misc_enable = true;
 
 // KAT - ADV Medical: Pharmacy
 force kat_pharma_carbonateActive = true;
-force kat_pharma_IOestablish = 7;
+force kat_pharma_IOestablish = 5;
 force kat_pharma_IVdrop = 600;
 force kat_pharma_IVdropEnable = true;
-force kat_pharma_IVestablish = 7;
+force kat_pharma_IVestablish = 5;
 force kat_pharma_IVmedic = 1;
 force kat_pharma_IVreuse = false;
 force kat_pharma_medLvl_Reorientation = 0;
 force kat_pharma_naloxoneActive = true;
-force kat_pharma_PushTime = 7;
+force kat_pharma_PushTime = 5;
 force kat_pharma_Reorientation_Enable = true;
 force kat_pharma_Reorientation_Slap = true;
-force kat_pharma_RequireInsIV = false;
+force kat_pharma_RequireInsIV = true;
 force kat_pharma_txaActive = true;
 
 // LAMBS Danger
