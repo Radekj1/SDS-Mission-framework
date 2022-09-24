@@ -367,8 +367,8 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";			// Silencer for basic weapon
 _silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
 
-_scope1 = "optic_Holosight";			// Basic scope
-_scope2 = "optic_Arco";			// Additional scope (for SF etc.)
+_scope1 = "optic_Aco";			// Basic scope
+_scope2 = "optic_MRCO";			// Additional scope (for SF etc.)
 _scope3 = "optic_KHS_tan";					// Sniper scope
 
 _bipod1 = "bipod_03_F_blk";				// Bipod for basic weapon
@@ -401,26 +401,26 @@ _hg_attachments= [_hg_attach1];
 // ====================================================================================
 // Weapons
 
-_rifle = "arifle_Mk20_plain_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
+_rifle = "arifle_TRG21_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
 _riflemag = "30Rnd_556x45_Stanag_green";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
 
-_glrifle = "arifle_Mk20_GL_plain_F";									// GL version (mostly for commanders but also for grenadiers)
+_glrifle = "arifle_TRG21_GL_F";									// GL version (mostly for commanders but also for grenadiers)
 _glriflemag = "30Rnd_556x45_Stanag_green";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
 _glmag = "1Rnd_HE_Grenade_shell";
 
-_DMrifle = "srifle_DMR_05_tan_f";											// Semi-auto rifle, for marksman
+_DMrifle = "srifle_DMR_06_olive_F";											// Semi-auto rifle, for marksman
 _DMriflemag = "20Rnd_762x51_Mag";
-_DMriflemag_tr = "20Rnd_762x51_Mag";
+_DMriflemag_tr = "ACE_20Rnd_762x51_Mag_tracer_green";
 
-_carbine = "arifle_Mk20C_plain_F";									// Light/short version (its for units with additional equipment, like medic etc.)
+_carbine = "arifle_TRG20_F";									// Light/short version (its for units with additional equipment, like medic etc.)
 _carbinemag = "30Rnd_556x45_Stanag_green";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Green";
 
-_smg = "hgun_PDW2000_F";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
-_smgmag = "30Rnd_9x21_Mag";
-_smgmag_tr = "30Rnd_9x21_Green_Mag";
+_smg = "SMG_03C_camo";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smgmag = "50Rnd_570x28_SMG_03";
+_smgmag_tr = "50Rnd_570x28_SMG_03";
 
 _pistol = "hgun_ACPC2_F";												// Pistol (for everyone YAY!)
 _pistolmag = "9Rnd_45ACP_Mag";
@@ -440,13 +440,13 @@ _HMGmag = "ace_csw_100Rnd_127x99_mag_red";
 _RAT = "launch_NLAW_F";												// Light AT
 _RATmag = "NLAW_F";													// comment out if AT is one use only
 
-_MAT = "launch_MRAWS_sand_F";										// Medium anti tank launcher
+_MAT = "launch_MRAWS_olive_rail_F";										// Medium anti tank launcher
 _MATmag1 = "MRAWS_HEAT_F";											// Anit-tank round
 _MATmag2 = "MRAWS_HE_F";											// HE or DP round
 //_MAT_sight = "";
 //_MATsptr = "";
 
-_HAT = "launch_B_Titan_short_F";									// Heavy anti tank launcher	
+_HAT = "launch_I_Titan_short_F";									// Heavy anti tank launcher	
 _HATmag1 = "Titan_AT";												// Anit-tank round
 _HATmag2 = "Titan_AP";												// HE or DP round
 _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
@@ -457,7 +457,7 @@ _HATag = "ace_csw_m3CarryTripod";									// used by Heavy AT assistant gunner, 
 _HATaltMag1 = "Titan_AT";											// Anit-tank round
 _HATaltMag2 = "Titan_AP";											// HE or DP round
 
-_SAM = "launch_B_Titan_F";											// Surface-air launcher
+_SAM = "launch_I_Titan_F";											// Surface-air launcher
 _SAMmag = "Titan_AA";												// comment out if AA is one use only
 
 _MRTg = "ace_csw_staticMortarCarry";								// Mortar tube
@@ -511,13 +511,13 @@ _bagTL = "B_AssaultPack_sgg";
 _bagTLalt = "B_AssaultPack_khk";
 
 _bagENG = "B_TacticalPack_oli";
-_bagEODuav = "B_UGV_02_Demining_backpack_F";	// Contact DLC
+_bagEODuav = "I_UGV_02_Demining_backpack_F";	// Contact DLC
 
 _bagAT = "B_Bergen_dgtl_F";						// for dedicated AT bagpacks (like RPG)
 
 _bagSF = "B_Kitbag_sgg";
 
-_baguav = "B_UAV_01_backpack_F"; 
+_baguav = "I_UAV_01_backpack_F"; 
 //_bagSOFLAM = "B_Static_Designator_01_weapon_F";	// not used ATM
 
 // ====================================================================================
