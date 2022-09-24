@@ -369,12 +369,12 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_H";			// Silencer for basic weapon
 _silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
 
-_scope1 = "optic_Holosight";			// Basic scope
-_scope2 = "optic_MRCO";			// Additional scope (for SF etc.)
+_scope1 = "optic_Holosight_blk_F";			// Basic scope
+_scope2 = "optic_Hamr";			// Additional scope (for SF etc.)
 _scope3 = "optic_AMS";					// Sniper scope
 
 _bipod1 = "bipod_01_F_blk";				// Bipod for basic weapon
-_bipod2 = "bipod_01_F_snd";				// Bipod for additional weapon (for SF etc.)
+_bipod2 = "bipod_01_F_blk";				// Bipod for additional weapon (for SF etc.)
 
 // What addons should be added to eatch unit
 
@@ -403,37 +403,37 @@ _hg_attachments= [];
 // ====================================================================================
 // Weapons
 
-_rifle = "arifle_MX_Black_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
-_riflemag = "30Rnd_65x39_caseless_black_mag";
-_riflemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_rifle = "arifle_SPAR_02_blk_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
+_riflemag = "30Rnd_556x45_Stanag_red";
+_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
-_glrifle = "arifle_MX_GL_Black_F";									// GL version (mostly for commanders but also for grenadiers)
-_glriflemag = "30Rnd_65x39_caseless_black_mag";
-_glriflemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_glrifle = "arifle_SPAR_01_GL_blk_F";									// GL version (mostly for commanders but also for grenadiers)
+_glriflemag = "30Rnd_556x45_Stanag_red";
+_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
 
-_DMrifle = "srifle_EBR_F";											// Semi-auto rifle, for marksman
+_DMrifle = "arifle_SPAR_03_blk_F";											// Semi-auto rifle, for marksman
 _DMriflemag = "20Rnd_762x51_Mag";
-_DMriflemag_tr = "20Rnd_762x51_Mag";
+_DMriflemag_tr = "ACE_20Rnd_762x51_Mag_Tracer";
 
-_carbine = "arifle_MXC_Black_F";									// Light/short version (its for units with additional equipment, like medic etc.)
-_carbinemag = "30Rnd_65x39_caseless_black_mag";
-_carbinemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_carbine = "arifle_SPAR_01_blk_F";									// Light/short version (its for units with additional equipment, like medic etc.)
+_carbinemag = "30Rnd_556x45_Stanag_red";
+_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 _smg = "SMG_03C_black";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
 _smgmag = "50Rnd_570x28_SMG_03";
 _smgmag_tr = "50Rnd_570x28_SMG_03";
 
-_pistol = "hgun_P07_F";												// Pistol (for everyone YAY!)
+_pistol = "hgun_P07_blk_F";												// Pistol (for everyone YAY!)
 _pistolmag = "16Rnd_9x21_Mag";
 
-_AR = "arifle_MX_SW_Black_F";										// Light machinegun
-_ARmag = "100Rnd_65x39_caseless_black_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_black_mag_tracer";
+_AR = "LMG_03_F";										// Light machinegun
+_ARmag = "200Rnd_556x45_Box_Red_F";
+_ARmag_tr = "200Rnd_556x45_Box_Tracer_Red_F";
 
 _MMG = "MMG_02_black_F";											// Medium machinegun
 _MMGmag = "130Rnd_338_Mag";
-_MMGmag_tr = "ACE_130Rnd_338_Mag_green";
+_MMGmag_tr = "130Rnd_338_Mag";
 
 _HMGg = "ace_csw_staticM2ShieldCarry";											// Medium machinegun
 _HMGag = "ace_csw_m3CarryTripod";
@@ -472,21 +472,21 @@ _GMGammo = "ace_csw_20Rnd_20mm_G_belt";
 // ====================================================================================
 // Special forces
 
-_glrifleSF = "arifle_SPAR_01_GL_blk_F";								// SF GL rifle
-_glriflemagSF = "30Rnd_556x45_Stanag";
-_glriflemag_trSF = "30Rnd_556x45_Stanag";
+_glrifleSF = "arifle_MX_GL_Black_F";								// SF GL rifle
+_glriflemagSF = "30Rnd_65x39_caseless_black_mag";
+_glriflemag_trSF = "30Rnd_65x39_caseless_black_mag_Tracer";
 
-_ARSF = "arifle_SPAR_02_blk_F";										// SF automatic rifle
-_ARmagSF = "150Rnd_556x45_Drum_Mag_F";
-_ARmag_trSF = "150Rnd_556x45_Drum_Mag_Tracer_F";
+_ARSF = "arifle_MX_SW_Black_F";										// SF automatic rifle
+_ARmagSF = "100Rnd_65x39_caseless_black_mag";
+_ARmag_trSF = "100Rnd_65x39_caseless_black_mag_tracer";
 
-_rifleSF = "arifle_SPAR_01_blk_F";									// SF rifle
-_riflemagSF = "30Rnd_556x45_Stanag";
-_riflemag_trSF = "30Rnd_556x45_Stanag";
+_rifleSF = "arifle_MX_Black_F";									// SF rifle
+_riflemagSF = "30Rnd_65x39_caseless_black_mag";
+_riflemag_trSF = "30Rnd_65x39_caseless_black_mag_Tracer";
 
-_specialSF = "arifle_SPAR_03_blk_F";								// SF special rigle - can be marksman, CQB whatever is needed
-_specialmagSF = "20Rnd_762x51_Mag";
-_specialmag_trSF = "ACE_20Rnd_762x51_Mag_Tracer";
+_specialSF = "srifle_DMR_02_F";								// SF special rigle - can be marksman, CQB whatever is needed
+_specialmagSF = "10Rnd_338_Mag";
+_specialmag_trSF = "10Rnd_338_Mag";
 
 _SNrifle = "srifle_LRR_F";											// Sniper
 _SNrifleMag = "7Rnd_408_Mag";
