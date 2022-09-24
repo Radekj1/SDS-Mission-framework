@@ -28,9 +28,13 @@ switch (_typeofCrate) do
 	case "crate_night_big":		{ _mycrate = "Box_NATO_Equip_F"; };	
 	case "crate_explo":			{ _mycrate = "Box_NATO_AmmoOrd_F"; }; 
 	case "crate_mines":			{ _mycrate = "Box_NATO_AmmoOrd_F"; };
-	case "crate_radio":			{ _mycrate = "Land_PlasticCase_01_large_black_F"; };
+	case "crate_radio":			{ _mycrate = "ACRE_RadioSupplyCrate"; };
 	case "crate_MTR":			{ _mycrate = "Box_NATO_AmmoOrd_F"; };
 	case "crate_misc":			{ _mycrate = "Box_NATO_Support_F"; };
+	case "crate_food":			{ _mycrate = "CargoNet_01_box_F"; };
+	case "track":				{ _mycrate = "ACE_Track"; };
+	case "wheel":				{ _mycrate = "ACE_Wheel"; };
+	case "jerrycan":			{ _mycrate = "Land_CanisterFuel_F"; };
 };
 
 _respawnPos = getMarkerPos "Crate_mark";
@@ -46,7 +50,11 @@ _spCheck = nearestObjects[_respawnPos,
 "Box_NATO_WpsSpecial_F",
 "Box_NATO_Equip_F",
 "Box_NATO_AmmoOrd_F",
-"Land_PlasticCase_01_large_black_F",
+"ACRE_RadioSupplyCrate",
+"CargoNet_01_box_F",
+"ACE_Track",
+"ACE_Wheel",
+"Land_CanisterFuel_F",
 "Box_NATO_Support_F"],10] select 0;  //"landVehicle","Air","Ship"],10] select 0;  Object'	
 	if(!isNil "_spCheck") then {
 		
@@ -86,5 +94,8 @@ _null = this addAction ["Night equipment big", "f\assignGear\SpawnCrate.sqf", ["
 _null = this addAction ["SF ammo", "f\assignGear\SpawnCrate.sqf", ["crate_spec",faction1] ];
 _null = this addAction ["Radios", "f\assignGear\SpawnCrate.sqf", ["crate_radio",faction1] ];
 _null = this addAction ["Miscellaneous", "f\assignGear\SpawnCrate.sqf", ["crate_misc",faction1] ];
+_null = this addAction ["Wheel", "f\assignGear\SpawnCrate.sqf", ["wheel",faction1] ];
+_null = this addAction ["Track", "f\assignGear\SpawnCrate.sqf", ["track",faction1] ];
+_null = this addAction ["Fuel canister", "f\assignGear\SpawnCrate.sqf", ["jerrycan",faction1] ];
 
 /*

@@ -55,14 +55,14 @@ _morphine = "ACE_morphine";					// morphine (niweluje ból, rozrzedza krew)
 _adenosine = "ACE_adenosine";				// adenosine (obniża tętno)
 //_atropine = "ACE_atropine";				// atropine (obniża tętno)
 _painkiller = "kat_Painkiller";
-_amiodarone = "kat_amiodarone";	//used to fight cardiac arrest
-_atropine = "kat_atropine";	//used to fight bradycardia
-_lidocaine = "kat_lidocaine";	//used to fight cardiac arrest
-_naloxone = "kat_naloxone";	//used to fight opium overdose
-_nitroglycerin = "kat_nitroglycerin";	//used to lower blood presure
-_norepinephrine = "kat_norepinephrine";	//used to rise blood presure
-_phenylephrine = "kat_phenylephrine";	//used to rise blood presure
-_TXA = "kat_TXA";	//used to increase blood clot
+_amiodarone = "kat_amiodarone";				//used to fight cardiac arrest
+_atropine = "kat_atropine";					//used to fight bradycardia
+_lidocaine = "kat_lidocaine";				//used to fight cardiac arrest
+_naloxone = "kat_naloxone";					//used to fight opium overdose
+_nitroglycerin = "kat_nitroglycerin";		//used to lower blood presure
+_norepinephrine = "kat_norepinephrine";		//used to rise blood presure
+_phenylephrine = "kat_phenylephrine";		//used to rise blood presure
+_TXA = "kat_TXA";							//used to increase blood clot
 
 // ACE Blood/fluids
 _blood_s = "ACE_bloodIV_250";				// Blood 200 ml
@@ -171,7 +171,7 @@ _tableMTR = "ACE_RangeTable_82mm";
 _tableART = "ACE_artilleryTable";
 
 // Terminal UAV
-_uavterminal = "B_UavTerminal";
+_uavterminal = "O_UavTerminal";
 _UAVbattery = "ACE_UAVBattery";
 
 // Mines
@@ -192,7 +192,7 @@ _satche_big = "DemoCharge_Remote_Mag";
 _satche_extra_big = "SatchelCharge_Remote_Mag";
 
 // ====================================================================================
-// Mortar Ammo and Static Gun Ammo
+// Mortar Ammo
 
 // Basic ammo
 _mtrHE = "ACE_1Rnd_82mm_Mo_HE";
@@ -202,23 +202,6 @@ _mtrFlare = "ACE_1Rnd_82mm_Mo_Illum";
 // Adv ammo - not used
 _mtrHEg = "ACE_1Rnd_82mm_Mo_HE_Guided";
 _mtrHElg = "ACE_1Rnd_82mm_Mo_HE_LaserGuided";
-
-// .50 ammo
-_Hmag = "ace_csw_100Rnd_127x99_mag";
-_HmagRed = "ace_csw_100Rnd_127x99_mag_red";
-
-// SPG ammo
-_spgOG9 = "CUP_compats_OG9_M";
-_spgPG9 = "CUP_compats_PG9_M";
-
-// TOW ammo
-_towTube = "CUP_compats_TOW_M";
-_tow2Tube = "CUP_compats_TOW2_M";
-
-// GMG ammo
-_20mmGMG = "ace_csw_20Rnd_20mm_G_belt";
-_mk19GMG = "CUP_compats_48Rnd_40mm_MK19_M";
-_AGS30GMG = "CUP_compats_29Rnd_30mm_AGS30_M";
 
 // ====================================================================================
 // Other items
@@ -260,6 +243,13 @@ _sprayBLACK	 = "ACE_SpraypaintBlack";
 _Canteen = "ACE_Canteen";
 _waterBottle = "ACE_WaterBottle";
 _MRE1 = "ACE_MRE_BeefStew";
+_MRE2 = "ACE_MRE_ChickenTikkaMasala";
+_MRE3 = "ACE_MRE_ChickenHerbDumplings";
+_MRE4 = "ACE_MRE_CreamChickenSoup";
+_MRE5 = "ACE_MRE_CreamTomatoSoup";
+_MRE6 = "ACE_MRE_LambCurry";
+_MRE7 = "ACE_MRE_MeatballsPasta";
+_MRE8 = "ACE_MRE_SteakVegetables";
 
 //*************************************************************************************
 // Konstruktor BUILDERA (rather avoid this)
@@ -299,6 +289,7 @@ Medical = {
 	_unit addItem _radioSR;									// Add radio - comment this out if You dont want units to have it
 	_unit linkItem "ItemWatch";								// Add watch - comment this out if You dont want units to have it
 	_unit addItem _earplugs;								// Add earplugs
+	//_unit addItem _Canteen;								// Add canteen
 };
 
 // ====================================================================================
@@ -407,75 +398,96 @@ _hg_attachments= [];
 // ====================================================================================
 // Weapons
 
-_rifle = "arifle_AK12_F";	// Basic weapon (its for most of basic units, like rifleman etc.)
-_riflemag = "30Rnd_762x39_AK12_Mag_F";
-_riflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
+_rifle = "arifle_MX_Black_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
+_riflemag = "30Rnd_65x39_caseless_black_mag";
+_riflemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
 
-_carbine = "arifle_AK12U_F";	// Light/short version (its for units with additional equipment, like medic etc.)
-_carbinemag = "30Rnd_762x39_AK12_Mag_F";
-_carbinemag_tr = "30Rnd_762x39_Mag_Tracer_F";
+_glrifle = "arifle_MX_GL_Black_F";									// GL version (mostly for commanders but also for grenadiers)
+_glriflemag = "30Rnd_65x39_caseless_black_mag";
+_glriflemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_glmag = "1Rnd_HE_Grenade_shell";
 
-_smg = "SMG_03C_black";	// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_DMrifle = "srifle_EBR_F";											// Semi-auto rifle, for marksman
+_DMriflemag = "20Rnd_762x51_Mag";
+_DMriflemag_tr = "20Rnd_762x51_Mag";
+
+_carbine = "arifle_MXC_Black_F";									// Light/short version (its for units with additional equipment, like medic etc.)
+_carbinemag = "30Rnd_65x39_caseless_black_mag";
+_carbinemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+
+_smg = "SMG_03C_black";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
 _smgmag = "50Rnd_570x28_SMG_03";
 _smgmag_tr = "50Rnd_570x28_SMG_03";
 
-_glrifle = "arifle_AK12_GL_F";	// GL version (mostly for commanders but also for grenadiers)
-_glriflemag = "30Rnd_762x39_AK12_Mag_F";
-_glriflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
-_glmag = "1Rnd_HE_Grenade_shell";
+_pistol = "hgun_P07_F";												// Pistol (for everyone YAY!)
+_pistolmag = "16Rnd_9x21_Mag";
 
-_pistol = "hgun_Pistol_01_F";	// Pistol (for everyone YAY!)
-_pistolmag = "10Rnd_9x21_Mag";
+_AR = "arifle_MX_SW_Black_F";										// Light machinegun
+_ARmag = "100Rnd_65x39_caseless_black_mag";
+_ARmag_tr = "100Rnd_65x39_caseless_black_mag_tracer";
 
-_glrifleSF = "arifle_CTAR_GL_blk_F";	// SF GL rifle
-_glriflemagSF = "30Rnd_580x42_Mag_F";
-_glriflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
+_MMG = "MMG_02_black_F";											// Medium machinegun
+_MMGmag = "130Rnd_338_Mag";
+_MMGmag_tr = "ACE_130Rnd_338_Mag_green";
 
-_ARSF = "arifle_CTARS_blk_F";	// SF automatic rifle
-_ARmagSF = "100Rnd_580x42_Mag_F";
-_ARmag_trSF = "ACE_100Rnd_580x42_Drum_tracer_yellow";
+_HMGg = "ace_csw_staticM2ShieldCarry";											// Medium machinegun
+_HMGag = "ace_csw_m3CarryTripod";
+_HMGmag = "ace_csw_100Rnd_127x99_mag_red";
 
-_rifleSF = "arifle_CTAR_blk_F";	// SF rifle
-_riflemagSF = "30Rnd_580x42_Mag_F";
-_riflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
+_RAT = "launch_NLAW_F";												// Light AT
+_RATmag = "NLAW_F";													// comment out if AT is one use only
 
-_specialSF = "srifle_DMR_07_blk_F";	// SF special rigle - can be marksman, CQB whatever is needed
-_specialmagSF = "20Rnd_650x39_Cased_Mag_F";
-_specialmag_trSF = "20Rnd_650x39_Cased_Mag_F";
-
-_SFpistol = "hgun_Rook40_F";	// SF pistol
-_SFpistolmag = "16Rnd_9x21_Mag";
-
-_AR = "arifle_RPK12_F";	// Light machinegun
-_ARmag = "75rnd_762x39_AK12_Mag_F";
-_ARmag_tr = "75rnd_762x39_AK12_Mag_Tracer_F";
-
-_MMG = "MMG_01_tan_F";	// Medium machinegun
-_MMGmag = "150Rnd_93x64_Mag";
-_MMGmag_tr = "ACE_150Rnd_93x64_Mag_yellow";
-
-_DMrifle = "srifle_DMR_05_blk_F";	// Marksman
-_DMriflemag = "10Rnd_93x64_DMR_05_Mag";
-
-_RAT = "launch_RPG32_F";	// Light AT
-_RATmag = "RPG32_F";
-
-_MAT = "launch_O_Vorona_brown_F";	// Medium anti tank launcher
-_MATmag1 = "Vorona_HEAT";
-_MATmag2 = "Vorona_HE";
+_MAT = "launch_MRAWS_sand_F";										// Medium anti tank launcher
+_MATmag1 = "MRAWS_HEAT_F";											// Anit-tank round
+_MATmag2 = "MRAWS_HE_F";											// HE or DP round
 //_MAT_sight = "";
 //_MATsptr = "";
 
-_SAM = "launch_O_Titan_F";	// Surface-air launcher
-_SAMmag = "Titan_AA";
-
-_HAT = "launch_O_Titan_short_F";	// Heavy anti tank launcher		
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+_HAT = "launch_B_Titan_short_F";									// Heavy anti tank launcher	
+_HATmag1 = "Titan_AT";												// Anit-tank round
+_HATmag2 = "Titan_AP";												// HE or DP round
 _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
 
-_SNrifle = "srifle_GM6_F";	// Sniper
-_SNrifleMag = "5Rnd_127x108_Mag";
+//This is for ACE version of static weapons where parts of weapnon are in leuncher slot instead of backpack
+_HATg = "ace_csw_staticATCarry";									// used by Heavy AT gunner
+_HATag = "ace_csw_m3CarryTripod";									// used by Heavy AT assistant gunner, comment out if not used
+_HATaltMag1 = "Titan_AT";											// Anit-tank round
+_HATaltMag2 = "Titan_AP";											// HE or DP round
+
+_SAM = "launch_B_Titan_F";											// Surface-air launcher
+_SAMmag = "Titan_AA";												// comment out if AA is one use only
+
+_MRTg = "ace_csw_staticMortarCarry";								// Mortar tube
+_MRTag = "ace_csw_carryMortarBaseplate";							// Mortar stand
+
+_GMGg = "ace_csw_staticGMGCarry";									// GMG gun
+_GMGag = "ace_csw_m3CarryTripodLow";								// GMG tripod
+_GMGammo = "ace_csw_20Rnd_20mm_G_belt";
+
+// ====================================================================================
+// Special forces
+
+_glrifleSF = "arifle_SPAR_01_GL_blk_F";								// SF GL rifle
+_glriflemagSF = "30Rnd_556x45_Stanag";
+_glriflemag_trSF = "30Rnd_556x45_Stanag";
+
+_ARSF = "arifle_SPAR_02_blk_F";										// SF automatic rifle
+_ARmagSF = "150Rnd_556x45_Drum_Mag_F";
+_ARmag_trSF = "150Rnd_556x45_Drum_Mag_Tracer_F";
+
+_rifleSF = "arifle_SPAR_01_blk_F";									// SF rifle
+_riflemagSF = "30Rnd_556x45_Stanag";
+_riflemag_trSF = "30Rnd_556x45_Stanag";
+
+_specialSF = "arifle_SPAR_03_blk_F";								// SF special rigle - can be marksman, CQB whatever is needed
+_specialmagSF = "20Rnd_762x51_Mag";
+_specialmag_trSF = "ACE_20Rnd_762x51_Mag_Tracer";
+
+_SNrifle = "srifle_LRR_F";											// Sniper
+_SNrifleMag = "7Rnd_408_Mag";
+
+_SFpistol = "hgun_Pistol_heavy_01_F";								// SF pistol
+_SFpistolmag = "11Rnd_45ACP_Mag";
 
 // ====================================================================================
 // Bagbacks
@@ -483,51 +495,37 @@ _SNrifleMag = "5Rnd_127x108_Mag";
 _parachute = "B_Parachute";
 _bagmediumdiver =  "B_SCBA_01_F";				// Contact DLC
 
-_bagsmall = "B_AssaultPack_ocamo";
-_bagmedium = "B_TacticalPack_ocamo";
-_baglarge =  "B_Carryall_ocamo";
-_bagextralarge = "B_Bergen_hex_F";			//APEX DLC
+_bagsmall = "B_AssaultPack_mcamo";
+_bagmedium = "B_Kitbag_mcamo";
+_baglarge =  "B_Carryall_mcamo";
+_bagextralarge = "B_Bergen_mcamo_F";			//APEX DLC
 
-_bagMed = "B_Carryall_cbr";						//For dedicated medical bagpacks
+_bagMed = "B_Carryall_oli";						//For dedicated medical bagpacks
 
-_bagRadio = "B_RadioBag_01_hex_F";				//Contact DLC
+_bagRadio = "B_RadioBag_01_mtp_F";				//Contact DLC
 
-_bagTL = "B_Kitbag_cbr";
-_bagTLalt = "B_AssaultPack_cbr";
+_bagTL = "B_Kitbag_sgg";
+_bagTLalt = "B_AssaultPack_khk";
 
-_bagENG = "B_FieldPack_ocamo";
-_bagEODuav = "O_UGV_02_Demining_backpack_F";	//Contact DLC
+_bagENG = "B_TacticalPack_mcamo";
+_bagEODuav = "B_UGV_02_Demining_backpack_F";	//Contact DLC
 
-_bagMAT = "B_Carryall_cbr";					// Contact DLC, for dedicated AT bagpacks
+_bagMAT = "B_Bergen_mcamo_F";					// Contact DLC, for dedicated AT bagpacks
 
-_bagSF = "B_ViperHarness_hex_F";
+_bagSF = "B_Kitbag_sgg";
 
-_baguav = "O_UAV_01_backpack_F"; 
-_bagSOFLAM = "O_Static_Designator_02_weapon_F";
-
-_baghmgg = "O_HMG_01_weapon_F";					// used by Heavy MG gunner
-_baghmgag = "O_HMG_01_support_F";				// used by Heavy MG assistant gunner
-
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
-
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
-
-_baggmgg = "O_GMG_01_weapon_F";					// used by GMG gunner
-_baggmgag = "O_HMG_01_support_F";				// used by GMG assistant gunner
+_baguav = "B_UAV_01_backpack_F"; 
+_bagSOFLAM = "B_Static_Designator_01_weapon_F";
 
 // ====================================================================================
+// Clothes etc.
 
-// Mundury, kamizelki itp.
-
-// Podstawowe mundury
-// Elementy wyposażenia są losowo wybierane z listy
+// Basic uniform, helmet and glasses - random picked
 _baseUniform = ["U_O_CombatUniform_ocamo"];
 _baseHelmet = ["H_HelmetSpecO_ocamo", "H_HelmetLeaderO_ocamo", "H_HelmetO_ocamo"];
 _baseGlasses = [];
 
-// Kamizelki
+// Vests
 _leaderRig = ["V_HarnessOGL_brn"];	// vest for Team Leaders and Squad Leaders, shoud have GL/radio
 _lightRig = ["V_HarnessO_brn"];	// vest given to heavy units - meaning they carry some heavy stuff on them
 _mediumRig = ["V_HarnessO_brn"];	// general used vest for most inf

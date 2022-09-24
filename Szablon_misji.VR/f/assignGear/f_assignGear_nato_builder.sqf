@@ -90,16 +90,14 @@ switch (_typeofUnit) do
 	case "co":
 	{
 		_unit addmagazines [_riflemag,3];
-		_unit addmagazines [_riflemag_tr,2];;
+		_unit addmagazines [_riflemag_tr,1];;
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _rifle;
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
-		_unit addWeapon _lornetkaFTL;
+		_unit addWeapon _lornetka;
 		_unit addItem _cTAB;
 		["HQ"] call _backpack;
 	};
@@ -108,16 +106,14 @@ switch (_typeofUnit) do
 	case "dc":
 	{
 		_unit addmagazines [_riflemag,3];
-		_unit addmagazines [_riflemag_tr,2];
+		_unit addmagazines [_riflemag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _rifle;
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
-		_unit addWeapon _lornetkaFTL;
+		_unit addWeapon _lornetka;
 		_unit addItem _cTAB;
 		["HQ"] call _backpack;
 	};
@@ -126,17 +122,16 @@ switch (_typeofUnit) do
 	case "ftl":
 	{
 		_unit addmagazines [_glriflemag,3];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,6];
-		_unit addmagazines [_glsmokewhite,3];
+		_unit addmagazines [_glriflemag_tr,1];
+		_unit addmagazines [_glmag,4];
+		_unit addmagazines [_glsmokewhite,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_attachments = [_attach1,_scope2];
 		_unit addweapon _pistol;
-		_unit addWeapon _lornetkaFTL;
+		_unit addWeapon _lornetka;
 		_unit addItem _cPhone;
 		["TL"] call _backpack;
 	};
@@ -145,11 +140,10 @@ switch (_typeofUnit) do
 	case "m":
 	{
 		_unit addmagazines [_carbinemag,3];
-		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_carbinemag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addItem _GPS;
@@ -160,11 +154,10 @@ switch (_typeofUnit) do
 	case "doc":
 	{
 		_unit addmagazines [_smgmag,3];
-		_unit addmagazines [_smgmag_tr,2];
+		_unit addmagazines [_smgmag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
@@ -175,11 +168,9 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		_unit addmagazines [_ARmag,3];
+		_unit addmagazines [_ARmag,2];
 		_unit addmagazines [_ARmag_tr,1];
-		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _AR;
 		_unit addweapon _pistol;
 		["ar"] call _backpack;
@@ -189,10 +180,9 @@ switch (_typeofUnit) do
 	case "aar":
 	{
 		_unit addmagazines [_carbinemag,3];
-		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_carbinemag_tr,1];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;
@@ -204,7 +194,7 @@ switch (_typeofUnit) do
 	case "rat":
 	{
 		_unit addmagazines [_riflemag,3];
-		_unit addmagazines [_riflemag_tr,2];
+		_unit addmagazines [_riflemag_tr,1];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
@@ -218,7 +208,7 @@ switch (_typeofUnit) do
 	case "r":
 	{
 		_unit addmagazines [_riflemag,3];
-		_unit addmagazines [_riflemag_tr,2];
+		_unit addmagazines [_riflemag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -231,12 +221,11 @@ switch (_typeofUnit) do
 // LOADOUT: DESIGNATED MARKSMAN
 	case "dm":
 	{
-		_unit addmagazines [_DMriflemag,5];
-		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_DMriflemag,3];
+		_unit addmagazines [_DMriflemag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _DMrifle;
-		_attachments = [_attach1,_scope2,_bipod2];
+		_attachments = [_attach1,_scope3,_bipod1];
 		_unit addweapon _pistol;
 		["dm"] call _backpack;
 	};
@@ -270,14 +259,14 @@ switch (_typeofUnit) do
 	// LOADOUT: GRENADIER
 	case "gren":
 	{
-		_unit addmagazines [_glriflemag,5];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addweapon _glrifle;
-		_unit addmagazines [_glmag,6];
+		_unit addmagazines [_glriflemag,3];
+		_unit addmagazines [_glriflemag_tr,1];
+		_unit addmagazines [_glmag,4];
 		_unit addmagazines [_glsmokewhite,2];
-		_unit addmagazines [_grenade,3];
+		_unit addweapon _glrifle;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		["g"] call _backpack;
 	};
@@ -285,11 +274,9 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG GUNNER
 	case "mmgg":
 	{
-		_unit addmagazines [_MMGmag,1];
+		_unit addmagazines [_MMGmag,2];
 		_unit addmagazines [_MMGmag_tr,1];
-		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,2];		
+		_unit addmagazines [_pistolmag,3];		
 		_unit addweapon _pistol;
 		_unit addweapon _MMG;
 		["mmg"] call _backpack;
@@ -302,7 +289,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;				
@@ -316,54 +302,48 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag_tr,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
-		_unit addItem _saperka;
 		["mmgab"] call _backpack;
 	};
 
 // LOADOUT: HEAVY MG GUNNER
 	case "hmgg":
 	{
-		_unit addmagazines [_smgmag,5];
+		_unit addmagazines [_smgmag,3];
 		_unit addmagazines [_smgmag_tr,2];
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _HMGg;
 		["hmgg"] call _backpack;
 	};
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addmagazines [_smgmag_tr,2];
-		_unit addweapon _smg;
-		_attachments = [];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,1];
+		_unit addweapon _carbine;
 		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
 		["hmgag"] call _backpack;
 	};
 
 	// LOADOUT: HEAVY MG AMMO BEARER
 	case "hmgab":
 	{
-		_unit addmagazines [_smgmag,5];
+		_unit addmagazines [_smgmag,3];
 		_unit addmagazines [_smgmag_tr,2];
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _saperka;
 		["hmgab"] call _backpack;
 	};
 
@@ -372,13 +352,12 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
-		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_grenade,2];
 		_unit addweapon _carbine;
+		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addweapon _MAT;
 		_unit addSecondaryWeaponItem _MAT_sight;
+		_unit addmagazines [_grenade,2];
 		["matg"] call _backpack;
 	};
 
@@ -392,7 +371,6 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;
-		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
 	};
 
@@ -406,26 +384,27 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
 		["matab"] call _backpack;
 	};
 
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
-		_unit addmagazines [_carbinemag,3];
-		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_smgmag,3];
+		_unit addmagazines [_smgmag_tr,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
-		_unit addweapon _carbine;
+		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
 		["hatg"] call _backpack;
 		//Add this to another factions if needed
 		if(_HAT_Mobile) then {			
 		    _unit addWeapon _HAT;
+		}else{
+			_unit addweapon _HATg;
 		}
+		
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
@@ -434,13 +413,15 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _carbine;
-		_attachments = [];
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;
 		["hatag"] call _backpack;
+		if(_HAT_Mobile) then {
+		}else{
+			_unit addweapon _HATag;
+		}
 	};
 
 // LOADOUT: HEAVY AT AMMO BEARER
@@ -454,7 +435,6 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
-		_unit addItem _saperka;
 		["hatab"] call _backpack;
 	};
 
@@ -468,7 +448,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ACE_MapTools";
 		_unit addItem "ACE_RangeTable_82mm";
 		["mtrg"] call _backpack;
@@ -484,7 +463,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon _lornetkaAM;
 		_unit addItem "ACE_MapTools";
 		_unit addItem "ACE_RangeTable_82mm";
@@ -501,8 +479,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _saperka;
 		["mtrab"] call _backpack;
 	};
 
@@ -512,7 +488,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,3];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
@@ -528,7 +503,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetkaAM;
@@ -542,7 +516,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag_tr,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
-		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addweapon _pistol;
@@ -552,27 +525,28 @@ switch (_typeofUnit) do
 // LOADOUT: GMG GUNNER
 	case "gmgg":
 	{
-		_unit addmagazines [_carbinemag,5];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
+		_unit addmagazines [_smgmag,3];
+		_unit addmagazines [_smgmag_tr,1];
+		_unit addweapon _smg;
+		_attachments = [];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _GMGg;
 		["gmgg"] call _backpack;
 	};
 
 // LOADOUT: GMG ASSISTANT GUNNER
 	case "gmgag":
 	{
-		_unit addmagazines [_carbinemag,5];
-		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_carbinemag,3];
+		_unit addmagazines [_carbinemag_tr,1];
 		_unit addweapon _carbine;
 		_unit addWeapon _lornetkaAM;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _GMGag;
 		["gmgag"] call _backpack;
 	};
 
@@ -580,13 +554,12 @@ switch (_typeofUnit) do
 	case "gmgab":
 	{
 		_unit addmagazines [_smgmag,3];
-		_unit addmagazines [_smgmag_tr,2];
+		_unit addmagazines [_smgmag_tr,1];
 		_unit addweapon _smg;
 		_attachments = [];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addmagazines [_smokegrenade,2];
 		["gmgab"] call _backpack;
 	};
 
@@ -612,7 +585,6 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon _lornetkaAM;
-		_attachments = [_attach1,_scope1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addItem _cPhone;
@@ -630,7 +602,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem _cPhone;
-		_unit addWeapon _lornetkaFTL;
+		_unit addWeapon _lornetka;
 		_unit addItem _radioMR;
 		_attachments = [];
 		["vc"] call _backpack;
@@ -1039,7 +1011,29 @@ switch (_typeofUnit) do
 		["crate_misc"] call _crate;
 	};
 
-// ====================================================================================
+// CRATE: Food
+	case "crate_food":
+	{
+		["crate_food"] call _crate;
+	};
+
+// Track
+	case "track":
+	{
+		["track"] call _crate;
+	};
+
+// Wheel
+	case "wheel":
+	{
+		["wheel"] call _crate;
+	};
+
+// Fuel canister
+	case "jerrycan":
+	{
+		["jerrycan"] call _crate;
+	};
 // ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

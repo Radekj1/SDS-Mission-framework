@@ -360,8 +360,8 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_MMGmag, 30];
-		_unit addMagazineCargoGlobal [_MMGmag_tr, 15];
+		_unit addMagazineCargoGlobal [_MMGmag, 15];
+		_unit addMagazineCargoGlobal [_MMGmag_tr, 5];
 	};
 
 // CRATE: Skrzynka, zasoby MAT
@@ -371,8 +371,8 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_MATmag1, 15];
-		_unit addMagazineCargoGlobal [_MATmag1, 15];
+		_unit addMagazineCargoGlobal [_MATmag1, 10];
+		_unit addMagazineCargoGlobal [_MATmag1, 10];
 	};	
 
 // CRATE: Skrzynka, zasoby SAM
@@ -382,7 +382,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_SAMmag, 15];
+		_unit addMagazineCargoGlobal [_SAMmag, 5];
 		//_unit addWeaponCargoGlobal [_SAMmag, 15];	// If AA is one use only, use this in stead of above
 	};
 	
@@ -393,7 +393,8 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addMagazineCargoGlobal [_HATmag1, 15];
+		_unit addMagazineCargoGlobal [_HATmag1, 5];
+		_unit addMagazineCargoGlobal [_HATmag2, 5];
 	};
 
 // CRATE: Skrzynka, zasoby HAT statyczny
@@ -403,10 +404,8 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addItemCargoGlobal [_spgOG9,15];
-		_unit addItemCargoGlobal [_spgPG9,15];
-		_unit addItemCargoGlobal [_towTube,15];
-		_unit addItemCargoGlobal [_tow2Tube,15];
+		_unit addItemCargoGlobal [_HATaltMag1, 5];
+		_unit addItemCargoGlobal [_HATaltMag2, 5];
 	};
 
 // CRATE: Skrzynka, zasoby HMG
@@ -416,8 +415,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addItemCargoGlobal [_HmagRed,15];
-		_unit addItemCargoGlobal [_Hmag,15];
+		_unit addItemCargoGlobal [_HMGmag, 5];
 	};
 
 // CRATE: Skrzynka, zasoby HMG
@@ -427,9 +425,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addItemCargoGlobal [_20mmGMG,15];
-		_unit addItemCargoGlobal [_mk19GMG,15];
-		_unit addItemCargoGlobal [_AGS30GMG,15];
+		_unit addItemCargoGlobal [_GMGammo, 5];
 	};
 	
 // CRATE: Skrzynka, zasoby SF
@@ -607,4 +603,49 @@
 		_unit addItemCargoGlobal [_maptools,5];
 		_unit addItemCargoGlobal [_tableMTR,5];
 		_unit addItemCargoGlobal [_tableART,5];
+	};
+
+// CRATE: Food
+	case "crate_misc":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addItemCargoGlobal [_waterBottle,15];
+		_unit addItemCargoGlobal [_MRE1,15];
+		_unit addItemCargoGlobal [_MRE2,15];
+		_unit addItemCargoGlobal [_MRE3,15];
+		_unit addItemCargoGlobal [_MRE4,15];
+		_unit addItemCargoGlobal [_MRE5,15];
+		_unit addItemCargoGlobal [_MRE6,15];
+		_unit addItemCargoGlobal [_MRE7,15];
+		_unit addItemCargoGlobal [_MRE8,15];
+	};
+
+// Track
+	case "track":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+	};
+
+// Wheel
+	case "wheel":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+	};
+
+// Fuel canister
+	case "jerrycan":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
 	};
