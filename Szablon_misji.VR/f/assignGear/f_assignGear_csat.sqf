@@ -366,7 +366,7 @@ _silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF e
 
 _scope1 = "optic_ACO_grn";			// Basic scope
 _scope2 = "optic_ERCO_blk_F";			// Additional scope (for SF etc.)
-_scope3 = "optic_AMS";					// Sniper scope
+_scope3 = "optic_DMS_weathered_Kir_F";					// Sniper scope
 
 _bipod1 = "bipod_02_F_blk";				// Bipod for basic weapon
 _bipod2 = "bipod_02_F_blk";				// Bipod for additional weapon (for SF etc.)
@@ -398,54 +398,54 @@ _hg_attachments= [];
 // ====================================================================================
 // Weapons
 
-_rifle = "arifle_MX_Black_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
-_riflemag = "30Rnd_65x39_caseless_black_mag";
-_riflemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_rifle = "arifle_AK12_arid_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
+_riflemag = "30Rnd_762x39_AK12_Mag_F";
+_riflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
 
-_glrifle = "arifle_MX_GL_Black_F";									// GL version (mostly for commanders but also for grenadiers)
-_glriflemag = "30Rnd_65x39_caseless_black_mag";
-_glriflemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_glrifle = "arifle_AK12_GL_arid_F";									// GL version (mostly for commanders but also for grenadiers)
+_glriflemag = "30Rnd_762x39_AK12_Mag_F";
+_glriflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
 _glmag = "1Rnd_HE_Grenade_shell";
 
-_DMrifle = "srifle_EBR_F";											// Semi-auto rifle, for marksman
-_DMriflemag = "20Rnd_762x51_Mag";
-_DMriflemag_tr = "20Rnd_762x51_Mag";
+_DMrifle = "srifle_DMR_04_Tan_F";											// Semi-auto rifle, for marksman
+_DMriflemag = "10Rnd_127x54_Mag";
+_DMriflemag_tr = "10Rnd_127x54_Mag";
 
-_carbine = "arifle_MXC_Black_F";									// Light/short version (its for units with additional equipment, like medic etc.)
-_carbinemag = "30Rnd_65x39_caseless_black_mag";
-_carbinemag_tr = "30Rnd_65x39_caseless_black_mag_Tracer";
+_carbine = "arifle_AK12U_arid_F";									// Light/short version (its for units with additional equipment, like medic etc.)
+_carbinemag = "30Rnd_762x39_AK12_Mag_F";
+_carbinemag_tr = "30Rnd_762x39_Mag_Tracer_F";
 
-_smg = "SMG_03C_black";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
-_smgmag = "50Rnd_570x28_SMG_03";
-_smgmag_tr = "50Rnd_570x28_SMG_03";
+_smg = "arifle_AKS_F";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smgmag = "30Rnd_545x39_Mag_F";
+_smgmag_tr = "30Rnd_545x39_Mag_Tracer_F";
 
-_pistol = "hgun_P07_F";												// Pistol (for everyone YAY!)
-_pistolmag = "16Rnd_9x21_Mag";
+_pistol = "hgun_Pistol_01_F";												// Pistol (for everyone YAY!)
+_pistolmag = "10Rnd_9x21_Mag";
 
-_AR = "arifle_MX_SW_Black_F";										// Light machinegun
-_ARmag = "100Rnd_65x39_caseless_black_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_black_mag_tracer";
+_AR = "arifle_RPK12_arid_F";										// Light machinegun
+_ARmag = "75rnd_762x39_AK12_Mag_F";
+_ARmag_tr = "75rnd_762x39_AK12_Mag_Tracer_F";
 
-_MMG = "MMG_02_black_F";											// Medium machinegun
-_MMGmag = "130Rnd_338_Mag";
-_MMGmag_tr = "ACE_130Rnd_338_Mag_green";
+_MMG = "MMG_01_tan_F";											// Medium machinegun
+_MMGmag = "150Rnd_93x64_Mag";
+_MMGmag_tr = "ACE_150Rnd_93x64_Mag_yellow";
 
 _HMGg = "ace_csw_staticM2ShieldCarry";											// Medium machinegun
 _HMGag = "ace_csw_m3CarryTripod";
 _HMGmag = "ace_csw_100Rnd_127x99_mag_red";
 
-_RAT = "launch_NLAW_F";												// Light AT
-_RATmag = "NLAW_F";													// comment out if AT is one use only
+_RAT = "launch_RPG7_F";												// Light AT
+_RATmag = "RPG7_F";													// comment out if AT is one use only
 
-_MAT = "launch_MRAWS_sand_F";										// Medium anti tank launcher
-_MATmag1 = "MRAWS_HEAT_F";											// Anit-tank round
-_MATmag2 = "MRAWS_HE_F";											// HE or DP round
+_MAT = "launch_RPG32_F";										// Medium anti tank launcher
+_MATmag1 = "RPG32_F";											// Anit-tank round
+_MATmag2 = "RPG32_HE_F";											// HE or DP round
 //_MAT_sight = "";
 //_MATsptr = "";
 
-_HAT = "launch_B_Titan_short_F";									// Heavy anti tank launcher	
-_HATmag1 = "Titan_AT";												// Anit-tank round
-_HATmag2 = "Titan_AP";												// HE or DP round
+_HAT = "launch_O_Vorona_brown_F";									// Heavy anti tank launcher	
+_HATmag1 = "Vorona_HEAT";												// Anit-tank round
+_HATmag2 = "Vorona_HE";												// HE or DP round
 _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT have static launcher they need to deploy
 
 //This is for ACE version of static weapons where parts of weapnon are in leuncher slot instead of backpack
@@ -454,7 +454,7 @@ _HATag = "ace_csw_m3CarryTripod";									// used by Heavy AT assistant gunner, 
 _HATaltMag1 = "Titan_AT";											// Anit-tank round
 _HATaltMag2 = "Titan_AP";											// HE or DP round
 
-_SAM = "launch_B_Titan_F";											// Surface-air launcher
+_SAM = "launch_O_Titan_F";											// Surface-air launcher
 _SAMmag = "Titan_AA";												// comment out if AA is one use only
 
 _MRTg = "ace_csw_staticMortarCarry";								// Mortar tube
@@ -467,27 +467,27 @@ _GMGammo = "ace_csw_20Rnd_20mm_G_belt";
 // ====================================================================================
 // Special forces
 
-_glrifleSF = "arifle_SPAR_01_GL_blk_F";								// SF GL rifle
-_glriflemagSF = "30Rnd_556x45_Stanag";
-_glriflemag_trSF = "30Rnd_556x45_Stanag";
+_glrifleSF = "arifle_CTAR_GL_hex_F";								// SF GL rifle
+_glriflemagSF = "ACE_30Rnd_580x42_Mag_yellow";
+_glriflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
 
-_ARSF = "arifle_SPAR_02_blk_F";										// SF automatic rifle
-_ARmagSF = "150Rnd_556x45_Drum_Mag_F";
-_ARmag_trSF = "150Rnd_556x45_Drum_Mag_Tracer_F";
+_ARSF = "arifle_CTARS_hex_F";										// SF automatic rifle
+_ARmagSF = "ACE_100Rnd_580x42_Drum_yellow";
+_ARmag_trSF = "ACE_100Rnd_580x42_Drum_tracer_yellow";
 
-_rifleSF = "arifle_SPAR_01_blk_F";									// SF rifle
-_riflemagSF = "30Rnd_556x45_Stanag";
-_riflemag_trSF = "30Rnd_556x45_Stanag";
+_rifleSF = "arifle_CTAR_hex_F";									// SF rifle
+_riflemagSF = "ACE_30Rnd_580x42_Mag_yellow";
+_riflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
 
-_specialSF = "arifle_SPAR_03_blk_F";								// SF special rigle - can be marksman, CQB whatever is needed
-_specialmagSF = "20Rnd_762x51_Mag";
-_specialmag_trSF = "ACE_20Rnd_762x51_Mag_Tracer";
+_specialSF = "srifle_DMR_07_hex_F";								// SF special rigle - can be marksman, CQB whatever is needed
+_specialmagSF = "20Rnd_650x39_Cased_Mag_F";
+_specialmag_trSF = "20Rnd_650x39_Cased_Mag_F";
 
 _SNrifle = "srifle_LRR_F";											// Sniper
 _SNrifleMag = "7Rnd_408_Mag";
 
-_SFpistol = "hgun_Pistol_heavy_01_F";								// SF pistol
-_SFpistolmag = "11Rnd_45ACP_Mag";
+_SFpistol = "hgun_Rook40_F";								// SF pistol
+_SFpistolmag = "16Rnd_9x21_Mag";
 
 // ====================================================================================
 // Bagbacks
@@ -495,27 +495,27 @@ _SFpistolmag = "11Rnd_45ACP_Mag";
 _parachute = "B_Parachute";
 _bagmediumdiver =  "B_SCBA_01_F";				// Contact DLC
 
-_bagsmall = "B_AssaultPack_mcamo";
-_bagmedium = "B_Kitbag_mcamo";
-_baglarge =  "B_Carryall_mcamo";
-_bagextralarge = "B_Bergen_mcamo_F";			//APEX DLC
+_bagsmall = "B_AssaultPack_ocamo";
+_bagmedium = "B_TacticalPack_ocamo";
+_baglarge =  "B_Carryall_ocamo";
+_bagextralarge = "B_Bergen_hex_F";			//APEX DLC
 
-_bagMed = "B_Carryall_oli";						//For dedicated medical bagpacks
+_bagMed = "B_FieldPack_ocamo";						//For dedicated medical bagpacks
 
-_bagRadio = "B_RadioBag_01_mtp_F";				//Contact DLC
+_bagRadio = "B_RadioBag_01_hex_F";				//Contact DLC
 
-_bagTL = "B_Kitbag_sgg";
-_bagTLalt = "B_AssaultPack_khk";
+_bagTL = "B_ViperLightHarness_hex_F";
+_bagTLalt = "B_AssaultPack_cbr";
 
-_bagENG = "B_TacticalPack_mcamo";
-_bagEODuav = "B_UGV_02_Demining_backpack_F";	//Contact DLC
+_bagENG = "B_ViperLightHarness_hex_F";
+_bagEODuav = "O_UGV_02_Demining_backpack_F";	//Contact DLC
 
-_bagMAT = "B_Bergen_mcamo_F";					// Contact DLC, for dedicated AT bagpacks
+_bagMAT = "B_ViperLightHarness_hex_F";					// Contact DLC, for dedicated AT bagpacks
 
-_bagSF = "B_Kitbag_sgg";
+_bagSF = "B_ViperHarness_hex_F";
 
-_baguav = "B_UAV_01_backpack_F"; 
-_bagSOFLAM = "B_Static_Designator_01_weapon_F";
+_baguav = "O_UAV_01_backpack_F"; 
+_bagSOFLAM = "O_Static_Designator_02_weapon_F";
 
 // ====================================================================================
 // Clothes etc.
