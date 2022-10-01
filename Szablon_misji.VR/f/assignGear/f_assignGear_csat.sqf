@@ -357,28 +357,32 @@ switch (_loadout_faction_player) do
 	{
 // Main weapond attachments
 
-_attach1 = "acc_pointer_IR";	// Laser
-_attach2 = "acc_flashlight";	// Flashlight
-//_attach3 = "";				// Laser + Flashlight
+_attachIR = "acc_pointer_IR";	// Laser
+_attachFl = "acc_flashlight";	// Flashlight
+//_attachUni = "";				// Laser + Flashlight
 
-_silencer1 = "muzzle_snds_H";			// Silencer for basic weapon
-_silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
+_muzzle = "muzzle_snds_H";			// Silencer for basic weapon
+_silencer = "muzzle_snds_B";		// Silencer for additional weapon (for SF etc.)
+_silencerAlt = "muzzle_snds_338_black";
 
-_scope1 = "optic_ACO_grn";			// Basic scope
-_scope2 = "optic_ERCO_blk_F";			// Additional scope (for SF etc.)
-_scope3 = "optic_DMS_weathered_Kir_F";					// Sniper scope
+_scopeHolo = "optic_ACO_grn";			// Basic scope
+_scope4x = "optic_ERCO_blk_F";			// Additional scope (for SF etc.)
+_scopeDM = "optic_DMS_weathered_Kir_F";					// Sniper scope
+_scopeSN = "optic_LRPS";
 
-_bipod1 = "bipod_02_F_blk";				// Bipod for basic weapon
-_bipod2 = "bipod_02_F_blk";				// Bipod for additional weapon (for SF etc.)
+_grip = "bipod_02_F_blk";				// Bipod for basic weapon
+_bipodAR = "bipod_02_F_blk";				// Bipod for additional weapon (for SF etc.)
+_bipodDM = "bipod_02_F_blk";
+_bipodSN = "bipod_02_F_blk";
 
 // What addons should be added to eatch unit
 
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
-	_attachments = [_attach1,_scope1];		//For night
+	_attachments = [_attachIR,_scopeHolo];		//For night
 } 
 else {
-	_attachments = [_scope1];		//For day
+	_attachments = [_scopeHolo];		//For day
 };
 
 /*
@@ -398,20 +402,20 @@ _hg_attachments= [];
 // ====================================================================================
 // Weapons
 
-_rifle = "arifle_AK12_arid_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
+_rifle = "arifle_AK12_F"; 										// Basic weapon (its for most of basic units, like rifleman etc.)
 _riflemag = "30Rnd_762x39_AK12_Mag_F";
 _riflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
 
-_glrifle = "arifle_AK12_GL_arid_F";									// GL version (mostly for commanders but also for grenadiers)
+_glrifle = "arifle_AK12_GL_F";									// GL version (mostly for commanders but also for grenadiers)
 _glriflemag = "30Rnd_762x39_AK12_Mag_F";
 _glriflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
 _glmag = "1Rnd_HE_Grenade_shell";
 
-_DMrifle = "srifle_DMR_04_Tan_F";											// Semi-auto rifle, for marksman
+_DMrifle = "srifle_DMR_04_F";											// Semi-auto rifle, for marksman
 _DMriflemag = "10Rnd_127x54_Mag";
 _DMriflemag_tr = "10Rnd_127x54_Mag";
 
-_carbine = "arifle_AK12U_arid_F";									// Light/short version (its for units with additional equipment, like medic etc.)
+_carbine = "arifle_AK12U_F";									// Light/short version (its for units with additional equipment, like medic etc.)
 _carbinemag = "30Rnd_762x39_AK12_Mag_F";
 _carbinemag_tr = "30Rnd_762x39_Mag_Tracer_F";
 
@@ -422,7 +426,7 @@ _smgmag_tr = "30Rnd_545x39_Mag_Tracer_F";
 _pistol = "hgun_Pistol_01_F";												// Pistol (for everyone YAY!)
 _pistolmag = "10Rnd_9x21_Mag";
 
-_AR = "arifle_RPK12_arid_F";										// Light machinegun
+_AR = "arifle_RPK12_F";										// Light machinegun
 _ARmag = "75rnd_762x39_AK12_Mag_F";
 _ARmag_tr = "75rnd_762x39_AK12_Mag_Tracer_F";
 
@@ -467,24 +471,24 @@ _GMGammo = "ace_csw_20Rnd_20mm_G_belt";
 // ====================================================================================
 // Special forces
 
-_glrifleSF = "arifle_CTAR_GL_hex_F";								// SF GL rifle
+_glrifleSF = "arifle_CTAR_GL_blk_F";								// SF GL rifle
 _glriflemagSF = "ACE_30Rnd_580x42_Mag_yellow";
 _glriflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
 
-_ARSF = "arifle_CTARS_hex_F";										// SF automatic rifle
+_ARSF = "arifle_CTARS_blk_F";										// SF automatic rifle
 _ARmagSF = "ACE_100Rnd_580x42_Drum_yellow";
 _ARmag_trSF = "ACE_100Rnd_580x42_Drum_tracer_yellow";
 
-_rifleSF = "arifle_CTAR_hex_F";									// SF rifle
+_rifleSF = "arifle_CTAR_blk_F";									// SF rifle
 _riflemagSF = "ACE_30Rnd_580x42_Mag_yellow";
 _riflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
 
-_specialSF = "srifle_DMR_07_hex_F";								// SF special rigle - can be marksman, CQB whatever is needed
+_specialSF = "srifle_DMR_07_blk_F";								// SF special rigle - can be marksman, CQB whatever is needed
 _specialmagSF = "20Rnd_650x39_Cased_Mag_F";
 _specialmag_trSF = "20Rnd_650x39_Cased_Mag_F";
 
-_SNrifle = "srifle_LRR_F";											// Sniper
-_SNrifleMag = "7Rnd_408_Mag";
+_SNrifle = "srifle_GM6_F";											// Sniper
+_SNrifleMag = "5Rnd_127x108_Mag";
 
 _SFpistol = "hgun_Rook40_F";								// SF pistol
 _SFpistolmag = "16Rnd_9x21_Mag";
@@ -512,7 +516,7 @@ _bagEODuav = "O_UGV_02_Demining_backpack_F";	//Contact DLC
 
 _bagMAT = "B_ViperLightHarness_hex_F";					// Contact DLC, for dedicated AT bagpacks
 
-_bagSF = "B_ViperHarness_hex_F";
+_bagSF = "B_FieldPack_taiga_F";
 
 _baguav = "O_UAV_01_backpack_F"; 
 _bagSOFLAM = "O_Static_Designator_02_weapon_F";
@@ -548,8 +552,8 @@ _pilot = ["pp","pcc","pc"];
 _JPilotR = ["ps"];
 _crew = ["vc","vg","vd"];
 _diver = ["divc","divr","divs","divm"];
-_specOp = ["sftl","sfm","sfat","sfs"];
-_ghillie = ["sn","sp"];
+_specOp = ["sftl","sfm","sfat","sfs","sn","sp"];
+_ghillie = [];
 
 // Officer
 _hqUniform = ["U_O_OfficerUniform_ocamo"];
@@ -560,13 +564,13 @@ _hqGlasses = [];
 // Medic
 _medUniform = ["U_O_CombatUniform_ocamo"];
 _medHelmet = ["H_HelmetSpecO_blk"];
-_medRig = ["V_TacVest_blk"];
+_medRig = ["V_TacVest_khk"];
 _medGlasses = [];
 
 // Enginer/Logi
-_engUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
-_engHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
-_engRig = ["V_TacVest_blk"];
+_engUniform = ["U_O_CombatUniform_ocamo"];
+_engHelmet = ["H_HelmetSpecO_blk"];
+_engRig = ["V_TacVest_khk"];
 _engGlasses = [];
 
 // Heli Pilot
@@ -594,9 +598,9 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_B_Diving"];
 
 // Special forces
-_SFUniform =  ["U_O_V_Soldier_Viper_hex_F"];
-_SFHelmet = ["H_HelmetO_ViperSP_hex_F"];
-_SFRig = [];
+_SFUniform =  ["U_O_R_Gorka_01_camo_F"];
+_SFHelmet = ["H_HelmetAggressor_cover_taiga_F","H_HelmetAggressor_F"];
+_SFRig = ["V_SmershVest_01_radio_F","V_SmershVest_01_F"];
 _SFGlasses = [];
 
 // Ghillie (sniper/spotter)

@@ -14,6 +14,7 @@ _groups = [
 ["GrpNATO_CO","CO-HQ"],
 ["GrpNATO_DC","1Plt-HQ"],
 ["GrpNATO_DC_1","2Plt-HQ"],
+["GrpNATO_DC_2","3Plt-HQ"],
 
 ["GrpNATO_ASL","ASL"],
 ["GrpNATO_A1","A1"],
@@ -38,6 +39,10 @@ _groups = [
 ["GrpNATO_FSL","FSL"],
 ["GrpNATO_F","Foxtrot"],
 ["GrpNATO_IFVF","FV"],
+
+["GrpNATO_G","Golf"],
+["GrpNATO_H","Hotel"],
+["GrpNATO_I","India"],
 
 ["GrpNATO_MMG1","MMG"],
 ["GrpNATO_HMG1","HMG"],
@@ -79,6 +84,7 @@ _groups = [
 ["GrpCSAT_CO","CO-HQ"],
 ["GrpCSAT_DC","1Plt-HQ"],
 ["GrpCSAT_DC1","2Plt-HQ"],
+["GrpCSAT_DC2","3Plt-HQ"],
 
 ["GrpCSAT_ASL","ASL"],
 ["GrpCSAT_A1","A1"],
@@ -103,6 +109,10 @@ _groups = [
 ["GrpCSAT_FSL","FSL"],
 ["GrpCSAT_F","Foxtrot"],
 ["GrpCSAT_IFVF","FV"],
+
+["GrpCSAT_G","Golf"],
+["GrpCSAT_H","Hotel"],
+["GrpCSAT_I","India"],
 
 ["GrpCSAT_MMG1","MMG"],
 ["GrpCSAT_HMG1","HMG"],
@@ -144,6 +154,7 @@ _groups = [
 ["GrpAAF_CO","CO-HQ"],
 ["GrpAAF_DC","1Plt-HQ"],
 ["GrpAAF_DC1","2Plt-HQ"],
+["GrpAAF_DC2","3Plt-HQ"],
 
 ["GrpAAF_ASL","ASL"],
 ["GrpAAF_A1","A1"],
@@ -168,6 +179,10 @@ _groups = [
 ["GrpAAF_FSL","FSL"],
 ["GrpAAF_F","Foxtrot"],
 ["GrpAAF_IFVF","FV"],
+
+["GrpAAF_G","Golf"],
+["GrpAAF_H","Hotel"],
+["GrpAAF_I","India"],
 
 ["GrpAAF_MMG1","MMG"],
 ["GrpAAF_HMG1","HMG"],

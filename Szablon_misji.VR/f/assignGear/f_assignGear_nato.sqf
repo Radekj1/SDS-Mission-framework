@@ -362,28 +362,32 @@ switch (_loadout_faction_player) do
 	{
 // Main weapond attachments
 
-_attach1 = "acc_pointer_IR";	// Laser
-_attach2 = "acc_flashlight";	// Flashlight
-//_attach3 = "";				// Laser + Flashlight
+_attachIR = "acc_pointer_IR";	// Laser
+_attachFl = "acc_flashlight";	// Flashlight
+//_attachUni = "";				// Laser + Flashlight
 
-_silencer1 = "muzzle_snds_H";			// Silencer for basic weapon
-_silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
+_muzzle = "muzzle_snds_H";			// Silencer for basic weapon
+_silencer = "muzzle_snds_65_TI_blk_F";		// Silencer for additional weapon (for SF etc.)
+_silencerAlt = "muzzle_snds_338_black";
 
-_scope1 = "optic_Holosight_blk_F";			// Basic scope
-_scope2 = "optic_Hamr";			// Additional scope (for SF etc.)
-_scope3 = "optic_AMS";					// Sniper scope
+_scopeHolo = "optic_Holosight_blk_F";			// Basic scope
+_scope4x = "optic_Hamr";			// Additional scope (for SF etc.)
+_scopeDM = "optic_AMS";					// Sniper scope
+_scopeSN = "optic_LRPS";
 
-_bipod1 = "bipod_01_F_blk";				// Bipod for basic weapon
-_bipod2 = "bipod_01_F_blk";				// Bipod for additional weapon (for SF etc.)
+_grip = "bipod_01_F_blk";				// Bipod for basic weapon
+_bipodAR = "bipod_01_F_blk";				// Bipod for additional weapon (for SF etc.)
+_bipodDM = "bipod_01_F_blk";
+_bipodSN = "bipod_01_F_blk";
 
 // What addons should be added to eatch unit
 
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
-	_attachments = [_attach1,_scope1];		//For night
+	_attachments = [_attachIR,_scopeHolo];		//For night
 } 
 else {
-	_attachments = [_scope1];		//For day
+	_attachments = [_scopeHolo];		//For day
 };
 
 /*
@@ -420,9 +424,9 @@ _carbine = "arifle_SPAR_01_blk_F";									// Light/short version (its for units
 _carbinemag = "30Rnd_556x45_Stanag_red";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
-_smg = "SMG_03C_black";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
-_smgmag = "50Rnd_570x28_SMG_03";
-_smgmag_tr = "50Rnd_570x28_SMG_03";
+_smg = "SMG_05_F";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smgmag = "30Rnd_9x21_Mag_SMG_02_Tracer_Red";
+_smgmag_tr = "30Rnd_9x21_Mag_SMG_02_Tracer_Red";
 
 _pistol = "hgun_P07_blk_F";												// Pistol (for everyone YAY!)
 _pistolmag = "16Rnd_9x21_Mag";
@@ -484,14 +488,14 @@ _rifleSF = "arifle_MX_Black_F";									// SF rifle
 _riflemagSF = "30Rnd_65x39_caseless_black_mag";
 _riflemag_trSF = "30Rnd_65x39_caseless_black_mag_Tracer";
 
-_specialSF = "srifle_DMR_02_F";								// SF special rigle - can be marksman, CQB whatever is needed
-_specialmagSF = "10Rnd_338_Mag";
-_specialmag_trSF = "10Rnd_338_Mag";
+_specialSF = "arifle_MXM_Black_F";								// SF special rigle - can be marksman, CQB whatever is needed
+_specialmagSF = "30Rnd_65x39_caseless_black_mag";
+_specialmag_trSF = "30Rnd_65x39_caseless_black_mag_Tracer";
 
 _SNrifle = "srifle_LRR_F";											// Sniper
 _SNrifleMag = "7Rnd_408_Mag";
 
-_SFpistol = "hgun_Pistol_heavy_01_F";								// SF pistol
+_SFpistol = "hgun_Pistol_heavy_01_green_F";								// SF pistol
 _SFpistolmag = "11Rnd_45ACP_Mag";
 
 // ====================================================================================
@@ -505,11 +509,11 @@ _bagmedium = "B_Kitbag_mcamo";
 _baglarge =  "B_Carryall_mcamo";
 _bagextralarge = "B_Bergen_mcamo_F";			//APEX DLC
 
-_bagMed = "B_Carryall_oli";						//For dedicated medical bagpacks
+_bagMed = "B_AssaultPack_Kerry";						//For dedicated medical bagpacks
 
 _bagRadio = "B_RadioBag_01_mtp_F";				//Contact DLC
 
-_bagTL = "B_Kitbag_sgg";
+_bagTL = "B_Kitbag_rgr";
 _bagTLalt = "B_AssaultPack_khk";
 
 _bagENG = "B_TacticalPack_mcamo";
@@ -552,8 +556,8 @@ _pilot = ["pp","pcc","pc"];
 _JPilotR = ["ps"];
 _crew = ["vc","vg","vd"];
 _diver = ["divc","divr","divs","divm"];
-_specOp = ["sftl","sfm","sfat","sfs"];
-_ghillie = ["sn","sp"];
+_specOp = ["sftl","sfm","sfat","sfs","sn","sp"];
+_ghillie = [];
 
 // Officer
 _hqUniform = ["U_B_CombatUniform_mcam_vest"];
@@ -564,13 +568,13 @@ _hqGlasses = [];
 // Medic
 _medUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
 _medHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
-_medRig = ["V_TacVest_blk"];
+_medRig = ["V_PlateCarrier1_rgr"];
 _medGlasses = [];
 
 // Enginer/Logi
 _engUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
 _engHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
-_engRig = ["V_TacVest_blk"];
+_engRig = ["V_PlateCarrier1_rgr"];
 _engGlasses = [];
 
 // Heli Pilot

@@ -95,7 +95,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _rifle;
-		_attachments = [_attach1,_scope2];
+		if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+			_attachments = [_attachIR,_scope4x];		//For night
+			} 
+		else {
+			_attachments = [_scope4x];		//For day
+			};
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
 		_unit addItem _cTAB;
@@ -111,7 +116,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _rifle;
-		_attachments = [_attach1,_scope2];
+		if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+			_attachments = [_attachIR,_scope4x];		//For night
+			} 
+		else {
+			_attachments = [_scope4x];		//For day
+			};
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
 		_unit addItem _cTAB;
@@ -129,7 +139,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _glrifle;					//_FTLrifle
-		_attachments = [_attach1,_scope2];
+		if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+			_attachments = [_attachIR,_scope4x];		//For night
+			} 
+		else {
+			_attachments = [_scope4x];		//For day
+			};
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
 		_unit addItem _cPhone;
@@ -172,6 +187,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_ARmag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _AR;
+		if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+			_attachments = [_attachIR,_scopeHolo];		//For night
+			} 
+		else {
+			_attachments = [_scopeHolo];		//For day
+			};
 		_unit addweapon _pistol;
 		["ar"] call _backpack;
 	};
@@ -225,7 +246,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_DMriflemag_tr,1];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _DMrifle;
-		_attachments = [_attach1,_scope3,_bipod1];
+		if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
+			_attachments = [_scopeDM,_bipodDM];		//For night
+			} 
+		else {
+			_attachments = [_attachIR,_scopeDM,_bipodDM];		//For day
+			};
 		_unit addweapon _pistol;
 		["dm"] call _backpack;
 	};
@@ -563,36 +589,6 @@ switch (_typeofUnit) do
 		["gmgab"] call _backpack;
 	};
 
-// LOADOUT: SNIPER
-	case "sn":
-	{
-		_unit addmagazines [_SNrifleMag,9];
-		_unit addweapon _SNrifle;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_unit addWeapon _lornetkaAM;
-		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_attach1,_scope3,_bipod1];
-		_unit addItem _cPhone;
-		_unit addItem _RangeCard;
-	};
-
-// LOADOUT: SPOTTER
-	case "sp":
-	{
-		_unit addmagazines [_carbinemag,5];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon _lornetkaAM;
-		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _pistol;
-		_unit addItem _cPhone;
-		_unit addItem _kestrel;
-		_unit addItem _ATrag;
-		_unit addItem _RangeCard;
-	};
-
 // LOADOUT: VEHICLE COMMANDER
 	case "vc":
 	{
@@ -779,9 +775,9 @@ switch (_typeofUnit) do
 		_unit addmagazines [_SFpistolmag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _glrifleSF;
-		_attachments = [_attach1,_silencer2,_scope2];
+		_attachments = [_attachIR,_silencer,_scope4x];
 		_unit addweapon _SFpistol;
-		_hg_attachments= [_hg_silencer1,_hg_attach1];
+		_hg_attachments= [_hg_silencer,_hg_attachIR];
 		_unit addItem _cTAB;
 		_unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
@@ -799,9 +795,9 @@ switch (_typeofUnit) do
 		_unit addmagazines [_SFpistolmag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _specialSF;
-		_attachments = [_attach1,_silencer2,_scope2,_bipod1];
+		_attachments = [_attachIR,_silencer,_scope4x];
 		_unit addweapon _SFpistol;
-		_hg_attachments= [_hg_silencer1,_hg_attah1];
+		_hg_attachments= [_hg_silencer,_hg_attah1];
 		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
@@ -817,10 +813,11 @@ switch (_typeofUnit) do
 		_unit addmagazines [_SFpistolmag,2];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _ARSF;
-		_attachments = [_attach1,_silencer2,_scope2,_bipod1];
+		_attachments = [_attachIR,_silencer,_scope4x,_bipod1];
 		_unit addweapon _SFpistol;
-		_hg_attachments= [_hg_silencer1,_hg_attah1];
+		_hg_attachments= [_hg_silencer,_hg_attah1];
 		_unit addweapon _RAT;
+		_unit addmagazines [_RATmag,1];
 		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
@@ -836,13 +833,46 @@ switch (_typeofUnit) do
 		_unit addmagazines [_SFpistolmag,3];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _rifleSF;
-		_attachments = [_attach1,_silencer1,_scope2];
+		_attachments = [_attachIR,_silencer,_scope4x];
 		_unit addweapon _SFpistol;
-		_hg_attachments= [_hg_silencer1,_hg_attah1];
+		_hg_attachments= [_hg_silencer,_hg_attah1];
 		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
 		["sfs"] call _backpack;
+	};
+
+// LOADOUT: SNIPER
+	case "sn":
+	{
+		_unit addmagazines [_SNrifleMag,9];
+		_unit addweapon _SNrifle;
+		_attachments = [_attachIR,_scopeSN,_bipodSN];
+		_unit addmagazines [_SNrifleMag,3];
+		_unit addweapon _SFpistol;
+		_hg_attachments= [_hg_silencer,_hg_attah1];
+		_unit addWeapon _lornetkaAM;
+		_unit addmagazines [_smokegrenade,2];
+		_unit addItem _cPhone;
+		_unit addItem _RangeCard;
+	};
+
+// LOADOUT: SPOTTER
+	case "sp":
+	{
+		_unit addmagazines [_riflemagSF,3];
+		_unit addmagazines [_riflemag_trSF,2];
+		_unit addweapon _rifleSF;
+		_attachments = [_attachIR,_silencer,_scope4x];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addWeapon _lornetkaAM;
+		_unit addmagazines [_SNrifleMag,3];
+		_unit addweapon _SFpistol;
+		_hg_attachments= [_hg_silencer,_hg_attah1];
+		_unit addItem _cPhone;
+		_unit addItem _kestrel;
+		_unit addItem _ATrag;
+		_unit addItem _RangeCard;
 	};
 
 //////////////////////////////////////////////////////
