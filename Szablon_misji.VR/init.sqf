@@ -1,7 +1,7 @@
 //====================================================================================
 //====================================================================================
 //S.D.S - Kompatybilność z HC
-
+/*
 [true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";	//Zakomentować na PvP
 
 _spawnUnits = {
@@ -26,7 +26,7 @@ else{
 		[] call _spawnUnits;
 	};
 };
-
+*/
 // ====================================================================================
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)

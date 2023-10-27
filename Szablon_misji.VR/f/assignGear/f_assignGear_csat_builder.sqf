@@ -815,6 +815,7 @@ switch (_typeofUnit) do
 		_unit addweapon _SFpistol;
 		_hg_attachments= [_hg_silencer,_hg_attah1];
 		_unit addweapon _RAT;
+		_unit addmagazines [_RATmag,1];
 		_unit addItem _cPhone;
 		_unit addWeapon _lornetkaAM;
 		for "_p" from 1 to 2 do {_unit addItem _handcuffs;};
