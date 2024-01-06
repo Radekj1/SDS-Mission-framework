@@ -28,7 +28,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
-		_unit addMagazineCargoGlobal [_waterBottle, 10];
+		_unit addItemCargoGlobal [_waterBottle, 10];
 		_unit addWeaponCargoGlobal [_RAT, 2];
 		_unit addItemCargoGlobal [_bandage, 30];
 		_unit addItemCargoGlobal [_personalAidKit, 2];
@@ -62,7 +62,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
-		_unit addMagazineCargoGlobal [_waterBottle, 10];
+		_unit addItemCargoGlobal [_waterBottle, 10];
 		_unit addWeaponCargoGlobal [_RAT, 5];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal [_personalAidKit, 10];
@@ -96,7 +96,7 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
-		_unit addMagazineCargoGlobal [_waterBottle, 10];
+		_unit addItemCargoGlobal [_waterBottle, 10];
 		_unit addWeaponCargoGlobal [_RAT, 2];
 		_unit addItemCargoGlobal [_bandage, 30];
 		_unit addItemCargoGlobal [_personalAidKit, 2];
@@ -243,10 +243,9 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
-		_unit addMagazineCargoGlobal [_waterBottle, 10];
-		_unit addMagazineCargoGlobal [_MRE1, 10];
+		_unit addItemCargoGlobal [_waterBottle, 10];
+		_unit addItemCargoGlobal [_MRE1, 10];
 		_unit addItemCargoGlobal [_bandage, 50];
-		_unit addItemCargoGlobal [_armorPlate, 10];
 		_unit addItemCargoGlobal [_sBarrel, 10];
 		_unit addItemCargoGlobal [_painkiller, 10];
 		_unit addItemCargoGlobal [_tourniquet, 10];
@@ -283,10 +282,9 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 15];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 15];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 15];
-		_unit addMagazineCargoGlobal [_waterBottle, 20];
-		_unit addMagazineCargoGlobal [_MRE1, 20];
+		_unit addItemCargoGlobal [_waterBottle, 20];
+		_unit addItemCargoGlobal [_MRE1, 20];
 		_unit addItemCargoGlobal [_bandage, 100];
-		_unit addItemCargoGlobal [_armorPlate, 25];
 		_unit addItemCargoGlobal [_sBarrel, 25];
 		_unit addItemCargoGlobal [_painkiller, 30];
 		_unit addItemCargoGlobal [_tourniquet, 20];
@@ -323,10 +321,9 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 20];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 20];
-		_unit addMagazineCargoGlobal [_waterBottle, 30];
-		_unit addMagazineCargoGlobal [_MRE1, 30];
+		_unit addItemCargoGlobal [_waterBottle, 30];
+		_unit addItemCargoGlobal [_MRE1, 30];
 		_unit addItemCargoGlobal [_bandage, 150];
-		_unit addItemCargoGlobal [_armorPlate, 80];
 		_unit addItemCargoGlobal [_sBarrel, 80];
 		_unit addItemCargoGlobal [_painkiller, 50];
 		_unit addItemCargoGlobal [_tourniquet, 30];
@@ -542,7 +539,6 @@
 		_unit addMagazineCargoGlobal [_satche_small, 15];		
 		_unit addMagazineCargoGlobal [_satche_big, 10];		
 		_unit addMagazineCargoGlobal [_satche_extra_big, 5];
-		_unit addItemCargoGlobal [_armorPlate, 10];		
 	};
 
 // CRATE: Skrzynka, zasoby NOCNE
@@ -671,7 +667,7 @@
 	};
 
 // CRATE: Food
-	case "crate_misc":
+	case "crate_food":
 	{
 		clearWeaponCargoGlobal _unit;
 		clearMagazineCargoGlobal _unit;
