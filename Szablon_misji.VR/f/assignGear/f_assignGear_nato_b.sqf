@@ -150,7 +150,7 @@ case "rat":
 {
 	_unit addBackpack _bagsmall;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
+//	(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 3];
 	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 2];
 };
@@ -282,7 +282,7 @@ case "matg":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
-	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 3];
+//	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 3];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,2];
@@ -296,7 +296,7 @@ case "matag":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 3];
+//	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 3];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,2];
@@ -310,7 +310,7 @@ case "matab":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 3];
+//	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 3];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,2];
