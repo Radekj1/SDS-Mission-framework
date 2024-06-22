@@ -1,7 +1,7 @@
 MISSION README
 ==============
 
-Version: 1.6
+Version: 1.7
 Developer(s): S.D.S Polska
 
 README CONTENTS
