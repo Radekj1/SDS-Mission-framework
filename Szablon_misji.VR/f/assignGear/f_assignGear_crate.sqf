@@ -710,3 +710,58 @@
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
 	};
+	
+// british_landover
+	case "british_landover":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addBackpackCargoGlobal ["UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A", 1];
+		_unit addItemCargoGlobal ["UK3CB_BAF_127_100Rnd", 15];
+		_unit addItemCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd_T", 30];
+		_unit addItemCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box", 15];
+	};
+	
+// british_ifv
+	case "british_ifv":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addBackpackCargoGlobal ["UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A", 1];		
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd_T", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T", 4];
+	};
+// british_tank
+	case "british_static":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addItemCargoGlobal ["UK3CB_BAF_127_100Rnd", 15];
+		_unit addItemCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd_T", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Shells", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Smoke_Red", 10];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Flare_White", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_WPSmoke_White", 10];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White", 10];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Shells", 30];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Guided", 10];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_LG", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Smoke_Red", 10];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Flare_White", 15];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_WPSmoke_White", 10];
+		_unit addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White", 10];
+	};
+
