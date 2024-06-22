@@ -1064,6 +1064,23 @@ switch (_typeofUnit) do
 	{
 		["jerrycan"] call _crate;
 	};
+// british_landover
+	case "british_landover":
+	{
+		["british_landover"] call _crate;
+	};
+//  british_ifv
+	case "british_ifv":
+	{
+		["british_ifv"] call _crate;
+	};
+// british_tank
+	case "british_static":
+	{
+		["british_static"] call _crate;
+	};
+
+
 // ====================================================================================
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

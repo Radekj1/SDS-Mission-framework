@@ -8,18 +8,52 @@ case "m":
 {
 	_unit addBackpack _bagMed;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_plasma_m, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_plasma_s, 4];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage, 15];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic, 15];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_packing, 10];
 	(unitBackpack _unit) addItemCargoGlobal [_bandage_quikclot, 10];
 	(unitBackpack _unit) addItemCargoGlobal [_tourniquet, 6];
 	(unitBackpack _unit) addItemCargoGlobal [_nalbuphine, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_morphine, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_lidocaine, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_atropine, 5];
+	(unitBackpack _unit) addItemCargoGlobal [_naloxone, 2];
+	(unitBackpack _unit) addItemCargoGlobal [_splint, 6];
+	(unitBackpack _unit) addItemCargoGlobal [_iv16, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_larynx, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_TXA, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_Carbonate, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 2];
+	(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
+	(unitBackpack _unit) addItemCargoGlobal [_Pulseoximeter, 1];
+	(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
+};
+
+// BACKPACK: DOCTOR
+case "doc":
+{
+	_unit addBackpack _bagMed;
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addItemCargoGlobal [_plasma_m, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_saline_s, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_bandage, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_bandage_packing, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_bandage_quikclot, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_tourniquet, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_nalbuphine, 10];
+	(unitBackpack _unit) addItemCargoGlobal [_morphine, 4];
+	(unitBackpack _unit) addItemCargoGlobal [_fentanyl, 5];
 	(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 10];
 	(unitBackpack _unit) addItemCargoGlobal [_amiodarone, 5];
 	(unitBackpack _unit) addItemCargoGlobal [_lidocaine, 10];
 	(unitBackpack _unit) addItemCargoGlobal [_atropine, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_naloxone, 2];
+	(unitBackpack _unit) addItemCargoGlobal [_naloxone, 3];
+	(unitBackpack _unit) addItemCargoGlobal [_norepinephrine, 3];
+	(unitBackpack _unit) addItemCargoGlobal [_nitroglycerin, 3];
 	(unitBackpack _unit) addItemCargoGlobal [_splint, 6];
 	(unitBackpack _unit) addItemCargoGlobal [_iv16, 10];
 	(unitBackpack _unit) addItemCargoGlobal [_larynx, 4];
@@ -29,47 +63,11 @@ case "m":
 	(unitBackpack _unit) addItemCargoGlobal [_AATKit, 4];
 	(unitBackpack _unit) addItemCargoGlobal [_chestSeal, 4];
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 2];
+	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
 	(unitBackpack _unit) addItemCargoGlobal [_stethoscope, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
-};
-
-// BACKPACK: DOCTOR
-case "doc":
-{
-	_unit addBackpack _bagMed;
-	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_plasma_m, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_saline_s, 4];
-	(unitBackpack _unit) addItemCargoGlobal [_bandage, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_bandage_elastic, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_bandage_packing, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_bandage_quikclot, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_tourniquet, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_fentanyl, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_epinephrine, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_amiodarone, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_lidocaine, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_etomidate, 10];
-	(unitBackpack _unit) addItemCargoGlobal [_Carbonate, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_flumazenil, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_lorazepam, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_atropine, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_ioFast, 5];
-	(unitBackpack _unit) addItemCargoGlobal [_naloxone, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_AATKit, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_chestSeal, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_larynx, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_scalpel, 10];
-	(unitBackpack _unit) addItemCargoGlobal [_iv16, 10];
-	(unitBackpack _unit) addItemCargoGlobal [_EACA, 2];
-	(unitBackpack _unit) addItemCargoGlobal [_retractor, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_clamp, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_vacuum, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_stethoscope, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_AEDX, 1];
+	(unitBackpack _unit) addItemCargoGlobal [_Pulseoximeter, 1];
+	(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
 };
 
 // BACKPACK: Radio HQ (CO/DC/SL)

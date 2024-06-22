@@ -42,9 +42,9 @@ _bandage_quikclot = "ACE_quikclot";			// quikclot
 _tourniquet ="ACE_tourniquet";				// tourniquet
 
 // Airway
-_AATKit = "kat_aatKit";						// needle decompresion and fludi draining
+_AATKit = "kat_aatKit";						// needle decompresion and fluid draining
 _ncdKit = "kat_ncdKit";						// needle decompresion
-_chestSeal ="kat_chestSeal";				// dressing used to treat neumophorax
+_chestSeal ="kat_chestSeal";				// dressing used to treat pneumophorax
 _guedel = "kat_guedel";						// prevents obstrucions (no occlusions)
 _larynx = "kat_larynx";						// prevents obstrucions and occlusions
 _accuvac = "kat_accuvac";					// removes occlusions
@@ -63,24 +63,24 @@ _vacuum = "kat_vacuum";						// PAK for body part (used in surgery)
 
 // Drugs
 // Painkillers
-_morphine = "ACE_morphine";					// pain suppers 0.8 decrase hear rate, decrase blood presure (t30/4)
-_fentanyl = "kat_fentanyl";					// pain suppers 1.0 decrase hear rate, decrase blood presure (t15/2)
-_nalbuphine = "kat_nalbuphine";				// pain suppers 0.6 decrase hear rate, decrase blood presure (t15/4)
-_ketamine = "kat_ketamine";					// pain suppers 0.8 increase hear rate, increase blood presure (t15/4)
-_painkiller = "kat_Painkiller";				// pain suppers 0.3 increase hear rate, decrase blood presure (t10/10)
+_morphine = "ACE_morphine";					// pain suppers 0.8 decrease heart rate, decrease blood presure (t30/4)
+_fentanyl = "kat_fentanyl";					// pain suppers 1.0 decrease heart rate, decrease blood presure (t15/2)
+_nalbuphine = "kat_nalbuphine";				// pain suppers 0.6 decrease heart rate, decrease blood presure (t15/4)
+_ketamine = "kat_ketamine";					// pain suppers 0.8 increase heart rate, increase blood presure (t15/4)
+_painkiller = "kat_Painkiller";				// pain suppers 0.3 increase heart rate, decrease blood presure (t10/10)
 
 // Cardiac arrest
 _amiodarone = "kat_amiodarone";				//used to fight cardiac arrest
 _lidocaine = "kat_lidocaine";				//used to fight cardiac arrest
 
 _epinephrine = "ACE_epinephrine";			// boost wake up chance, increase hear rate, increase blood presure (t2/10)
-_adenosine = "ACE_adenosine";				// decrase hear rate, decrase blood presure (t2/6)
+_adenosine = "ACE_adenosine";				// decrease hear rate, decrease blood presure (t2/6)
 //_atropine = "ACE_atropine";				// increase hear rate, treat bradycardia (t2/4)
 _atropine = "kat_atropine";					// increase hear rate, treat bradycardia (t2/4)
 _naloxone = "kat_naloxone";					// fight opium overdose 1-1 ratio
 _nitroglycerin = "kat_nitroglycerin";		// speed up transfuion and bleeding, increase hear rate, decrase blood presure (t6/12)
 _norepinephrine = "kat_norepinephrine";		// slows down transfuion and bleeding, increase hear rate, increase blood presure (t6/12)
-_phenylephrine = "kat_phenylephrine";		// slows down transfuion and bleeding++, decrase hear rate, increase blood presure (t6/12)
+_phenylephrine = "kat_phenylephrine";		// slows down transfuion and bleeding++, decrease hear rate, increase blood presure (t6/12)
 _TXA = "kat_TXA";							// improve cloth quality (cloths happen on its own)
 _EACA = "kat_EACA";							// stiches wound eatch 6sec
 
@@ -274,6 +274,8 @@ _MRE5 = "ACE_MRE_CreamTomatoSoup";
 _MRE6 = "ACE_MRE_LambCurry";
 _MRE7 = "ACE_MRE_MeatballsPasta";
 _MRE8 = "ACE_MRE_SteakVegetables";
+_MRER = ["ACE_MRE_BeefStew", "ACE_MRE_ChickenTikkaMasala", "ACE_MRE_ChickenHerbDumplings", "ACE_MRE_CreamChickenSoup", 
+"ACE_MRE_CreamTomatoSoup", "ACE_MRE_LambCurry", "ACE_MRE_MeatballsPasta", "ACE_MRE_SteakVegetables"];
 
 //*************************************************************************************
 // Konstruktor BUILDERA (rather avoid this)
@@ -318,6 +320,12 @@ Medical = {
 	_unit linkItem "ItemWatch";								// Add watch - comment this out if You dont want units to have it
 	_unit addItem _earplugs;								// Add earplugs
 	_unit addItem _Canteen;									// Add canteen
+	for "_p" from 1 to 2 do 
+        {
+        _pmrer = _MRER select floor (random (count _MRER)); 
+        _MRER = _MRER - [_pmrer];
+        _unit addItem _pmrer;
+        };													// Add 2 pieces of MRE [change between 1-8]
 };
 
 // ====================================================================================
