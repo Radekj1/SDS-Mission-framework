@@ -97,7 +97,7 @@ _saline_s = "ACE_salineIV_250";				// Saline 200 ml
 _saline_m = "ACE_salineIV_500";				// Saline 500 ml
 _saline_b = "ACE_salineIV";					// Saline 1000 ml
 
-// Oher
+// Other
 _worek = "ACE_bodyBag";						// body Bag
 _hstrecher = "Attachable_Helistretcher";
 
@@ -362,8 +362,6 @@ Night_Eq_No_NVG = {
 		
 	if (_loadout_night_day == 0) then {
 		if(_typeofUnit != "ps") then {
-			_unit addItem _IRstrobe;		// Adding IR strobe
-			_unit addItem _IRstrobe;		// Adding IR strobe
 			_unit addItem _latarka;			// Adding map flashlight
 			(unitBackpack _unit) addItemCargoGlobal [_chemblue,2];
 			(unitBackpack _unit) addItemCargoGlobal [_flarered,2];
@@ -385,7 +383,7 @@ Night_Eq_No_NVG = {
 
 switch (_loadout_faction_player) do
 {
-	
+
 //*************************************************************************************
 // Items definitions
 //*************************************************************************************

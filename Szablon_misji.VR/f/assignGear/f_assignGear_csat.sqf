@@ -6,7 +6,7 @@
 /*
 
 	1. CSAT
-	
+
 */
 // ====================================================================================
 	_loadout_faction_player = f_param_player_faction_Opfor;
@@ -19,27 +19,20 @@
 // ====================================================================================
 // Medical items
 
-// Default Arma3 stuff
+// Default Arma3 stuff - not used
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Basic medical equipment
 _personalAidKit = "ACE_personalAidKit";		// personal Aid Kit
 _surgicalKit = "ACE_surgicalKit";			// surgical Kit
-_worek = "ACE_bodyBag";						// body Bag
 _AED = "kat_AED";
 _AEDX = "kat_X_AED";
-_accuvac = "kat_accuvac";
-_AATKit = "kat_aatKit";
-_chestSeal ="kat_chestSeal";
 _Pulseoximeter = "kat_Pulseoximeter";
-_larynx = "kat_larynx";
-_guedel = "kat_guedel";
-_stethoscope = "kat_stethoscope";
 _transfuseKit = "KAT_Empty_bloodIV_500";
-_hstrecher = "Attachable_Helistretcher";
 _iv16 = "kat_IV_16";
 _ioFast = "kat_IO_FAST";
+_splint = "ACE_splint";						// splint
 
 // Bandages
 _bandage = "ACE_fieldDressing";				// field Dressing
@@ -47,22 +40,49 @@ _bandage_elastic = "ACE_elasticBandage";	// elastic Bandage
 _bandage_packing = "ACE_packingBandage";	// packing Bandage
 _bandage_quikclot = "ACE_quikclot";			// quikclot
 _tourniquet ="ACE_tourniquet";				// tourniquet
-_splint = "ACE_splint";						// splint
+
+// Airway
+_AATKit = "kat_aatKit";						// needle decompresion and fluid draining
+_ncdKit = "kat_ncdKit";						// needle decompresion
+_chestSeal ="kat_chestSeal";				// dressing used to treat pneumophorax
+_guedel = "kat_guedel";						// prevents obstrucions (no occlusions)
+_larynx = "kat_larynx";						// prevents obstrucions and occlusions
+_accuvac = "kat_accuvac";					// removes occlusions
+_stethoscope = "kat_stethoscope";			// used for diagnosis
+
+// Surgery eq
+_lorazepam = "kat_lorazepam";				// sedates patient, decrase blood presure, 33% to cause bradycardia
+_etomidate = "kat_etomidate";				// pain suppers ? decrase hear rate (t45s/10)
+_scalpel = "kat_scalpel";
+_retractor = "kat_retractor";
+_clamp = "kat_clamp";
+_boneplate = "kat_plate";
+_flumazenil = "kat_flumazenil";				// remove sedatation (t1/3)
+_Carbonate = "kat_Carbonate";				// increase hear rate, wake up patient (t30s/10)
+_vacuum = "kat_vacuum";						// PAK for body part (used in surgery)
 
 // Drugs
-_epinephrine = "ACE_epinephrine";			// epinephrine (zwiększa tętno)
-_morphine = "ACE_morphine";					// morphine (niweluje ból, rozrzedza krew)
-_adenosine = "ACE_adenosine";				// adenosine (obniża tętno)
-//_atropine = "ACE_atropine";				// atropine (obniża tętno)
-_painkiller = "kat_Painkiller";
+// Painkillers
+_morphine = "ACE_morphine";					// pain suppers 0.8 decrease heart rate, decrease blood presure (t30/4)
+_fentanyl = "kat_fentanyl";					// pain suppers 1.0 decrease heart rate, decrease blood presure (t15/2)
+_nalbuphine = "kat_nalbuphine";				// pain suppers 0.6 decrease heart rate, decrease blood presure (t15/4)
+_ketamine = "kat_ketamine";					// pain suppers 0.8 increase heart rate, increase blood presure (t15/4)
+_painkiller = "kat_Painkiller";				// pain suppers 0.3 increase heart rate, decrease blood presure (t10/10)
+
+// Cardiac arrest
 _amiodarone = "kat_amiodarone";				//used to fight cardiac arrest
-_atropine = "kat_atropine";					//used to fight bradycardia
 _lidocaine = "kat_lidocaine";				//used to fight cardiac arrest
-_naloxone = "kat_naloxone";					//used to fight opium overdose
-_nitroglycerin = "kat_nitroglycerin";		//used to lower blood presure
-_norepinephrine = "kat_norepinephrine";		//used to rise blood presure
-_phenylephrine = "kat_phenylephrine";		//used to rise blood presure
-_TXA = "kat_TXA";							//used to increase blood clot
+
+_epinephrine = "ACE_epinephrine";			// boost wake up chance, increase hear rate, increase blood presure (t2/10)
+_adenosine = "ACE_adenosine";				// decrease hear rate, decrease blood presure (t2/6)
+//_atropine = "ACE_atropine";				// increase hear rate, treat bradycardia (t2/4)
+_atropine = "kat_atropine";					// increase hear rate, treat bradycardia (t2/4)
+_naloxone = "kat_naloxone";					// fight opium overdose 1-1 ratio
+_nitroglycerin = "kat_nitroglycerin";		// speed up transfuion and bleeding, increase hear rate, decrase blood presure (t6/12)
+_norepinephrine = "kat_norepinephrine";		// slows down transfuion and bleeding, increase hear rate, increase blood presure (t6/12)
+_phenylephrine = "kat_phenylephrine";		// slows down transfuion and bleeding++, decrease hear rate, increase blood presure (t6/12)
+_TXA = "kat_TXA";							// improve cloth quality (cloths happen on its own)
+_EACA = "kat_EACA";							// stiches wound eatch 6sec
 
 // ACE Blood/fluids
 _blood_s = "ACE_bloodIV_250";				// Blood 200 ml
@@ -76,6 +96,10 @@ _plasma_b = "ACE_plasmaIV";					// Plasma 1000 ml
 _saline_s = "ACE_salineIV_250";				// Saline 200 ml
 _saline_m = "ACE_salineIV_500";				// Saline 500 ml
 _saline_b = "ACE_salineIV";					// Saline 1000 ml
+
+// Other
+_worek = "ACE_bodyBag";						// body Bag
+_hstrecher = "Attachable_Helistretcher";
 
 // ====================================================================================
 // Radios - ACRE2
@@ -216,7 +240,7 @@ _armorPlate = "diw_armor_plates_main_plate";
 
 // Binoculars
 _lornetkaAM = "ACE_Vector";
-_lornetkaFTL = "Binocular";
+_lornetka = "Binocular";
 _lornetkaRTO = "Laserdesignator";
 
 //Navigation & sniper stuff
@@ -250,6 +274,8 @@ _MRE5 = "ACE_MRE_CreamTomatoSoup";
 _MRE6 = "ACE_MRE_LambCurry";
 _MRE7 = "ACE_MRE_MeatballsPasta";
 _MRE8 = "ACE_MRE_SteakVegetables";
+_MRER = ["ACE_MRE_BeefStew", "ACE_MRE_ChickenTikkaMasala", "ACE_MRE_ChickenHerbDumplings", "ACE_MRE_CreamChickenSoup", 
+"ACE_MRE_CreamTomatoSoup", "ACE_MRE_LambCurry", "ACE_MRE_MeatballsPasta", "ACE_MRE_SteakVegetables"];
 
 //*************************************************************************************
 // Konstruktor BUILDERA (rather avoid this)
@@ -281,7 +307,8 @@ Builder = {
 // ====================================================================================
 // Add basic stuff for players	
 Medical = {
-	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Add 8 pieces of bandages
+	for "_p" from 1 to 4 do {_unit addItem _bandage;};		// Add 4 pieces of bandages
+	for "_p" from 1 to 2 do {_unit addItem _tourniquet;};	// Add 2 pieces of bandages
 	_unit addItem _painkiller;								// Add painkillers
 	_unit addItem _epinephrine;								// Add Epi
 	_unit linkItem "ItemMap";								// Add map - comment this out if You dont want units to have it
@@ -289,7 +316,13 @@ Medical = {
 	_unit addItem _radioSR;									// Add radio - comment this out if You dont want units to have it
 	_unit linkItem "ItemWatch";								// Add watch - comment this out if You dont want units to have it
 	_unit addItem _earplugs;								// Add earplugs
-	//_unit addItem _Canteen;								// Add canteen
+	_unit addItem _Canteen;									// Add canteen
+	for "_p" from 1 to 2 do 
+        {
+        _pmrer = _MRER select floor (random (count _MRER)); 
+        _MRER = _MRER - [_pmrer];
+        _unit addItem _pmrer;
+        };													// Add 2 pieces of MRE [change between 1-8]
 };
 
 // ====================================================================================
@@ -341,7 +374,7 @@ Night_Eq_No_NVG = {
 			_unit linkItem _nvg;			// Dodanie noktowizji	
 		};
 	};
-};	
+};
 
 // ====================================================================================
 
