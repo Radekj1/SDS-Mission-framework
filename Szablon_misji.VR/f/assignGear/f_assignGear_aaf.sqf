@@ -237,6 +237,13 @@ _towRope = "ACE_rope3";
 _sBarrel = "ACE_SpareBarrel";
 _hCam = "ItemcTabHCam";
 _armorPlate = "diw_armor_plates_main_plate";
+_cigarette = "murshun_cigs_cigpack";
+_lolipop = "immersion_pops_poppack";
+_cigar = "immersion_cigs_cigar0";
+_lighter = "murshun_cigs_lighter";
+_matches = "murshun_cigs_matches";
+_cigr = ["murshun_cigs_cigpack","immersion_pops_poppack", "immersion_cigs_cigar0"];
+_lightr = ["murshun_cigs_lighter","murshun_cigs_matches"];
 
 // Binoculars
 _lornetkaAM = "ACE_Vector";
@@ -326,6 +333,15 @@ Medical = {
         _MRER = _MRER - [_pmrer];
         _unit addItem _pmrer;
         };													// Add 2 pieces of MRE [change between 1-8]
+			// smoke, or sugary treat
+	_pcigr = _cigr select floor (random (count _cigr));
+	_cigr = _cigr - [_pcigr];
+	_unit addItem _pcigr;
+			// fire
+	_plightr = _lightr select floor (random (count _lightr));
+	_lightr = _lightr - [_plightr];
+	_unit addItem _plightr;
+
 };
 
 // ====================================================================================
@@ -595,7 +611,7 @@ _ghillie = [];
 _hqUniform = ["U_I_OfficerUniform"];
 _hqHelmet = ["H_MilCap_dgtl"];
 _hqRig = ["V_TacVest_oli"];
-_hqGlasses = [];
+_hqGlasses = [immersion_cigs_cigar0];
 
 // Medic
 _medUniform = ["U_I_CombatUniform_shortsleeve"];
