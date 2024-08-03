@@ -224,3 +224,5 @@ publicvariable "al_flare_range";
 
 player addEventHandler ["Fired",{private ["_al_flare"]; _al_flare = _this select 6;[[[_al_flare],"f\flare_fix\al_flare_enhance.sqf"],"BIS_fnc_execVM",true,true] spawn BIS_fnc_MP;}];
 // ====================================================================================
+// Temp - do czasu przyszłej kompatybilności HWK i ACE
+AMS_ENGINE_STARTUP_OFF = 1;
