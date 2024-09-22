@@ -722,7 +722,7 @@ switch (_typeofUnit) do
 		_unit linkItem _uavterminal;
 		_unit addItem _GPS; 
 		_unit addWeapon _lornetkaRTO;
-        _unit addMagazines ["Laserbatteries",2];
+  		_unit addMagazines ["Laserbatteries",2];
 		_attachments = [];
 		["enguav"] call _backpack;
 	};
@@ -730,19 +730,19 @@ switch (_typeofUnit) do
 // LOADOUT: FAC/RTO
 	case "rto":
 	{
-        _unit addmagazines [_glriflemag,5];
-        _unit addmagazines [_glriflemag_tr,4];
-        _unit addmagazines [_glmag,7];
+        _unit addmagazines [_glriflemag,3];
+        _unit addmagazines [_glriflemag_tr,2];
+        _unit addmagazines [_glmag,3];
         _unit addmagazines [_glsmokewhite,2];
         _unit addweapon _glrifle;        
         _unit addmagazines [_smokegrenade,2];
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
-		_unit addItem _cTAB; 
+	_unit addItem _cTAB; 
         _unit addWeapon _lornetkaRTO;
-        ["RTO"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+        ["RTO"] call _backpack;
 	};
 
 // LOADOUT: UAV
@@ -751,17 +751,17 @@ switch (_typeofUnit) do
         _unit addmagazines [_smgmag,5];
         _unit addmagazines [_smgmag_tr,2];
         _unit addweapon _smg;
-		_attachments = [];     
+	_attachments = [];     
         _unit addmagazines [_smokegrenade,2];
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
-		_unit linkItem _uavterminal;
-		_unit addItem _cTAB; 
+	_unit linkItem _uavterminal;
+	_unit addItem _cTAB; 
         _unit addWeapon _lornetkaRTO;
-		_unit addItem _radioMR;
-        ["uav"] call _backpack;
+	_unit addItem _radioMR;
         _unit addMagazines ["Laserbatteries",2];
+        ["uav"] call _backpack;
 	};
 			
  // LOADOUT: Dowódca sil specjalnych
