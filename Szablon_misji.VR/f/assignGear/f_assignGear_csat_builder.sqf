@@ -739,8 +739,8 @@ switch (_typeofUnit) do
         _unit addweapon _pistol;
 		_unit addItem _cTAB; 
         _unit addWeapon _lornetkaRTO;
-        ["RTO"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+        ["RTO"] call _backpack;
 	};
 
 // LOADOUT: UAV
@@ -758,8 +758,8 @@ switch (_typeofUnit) do
 		_unit addItem _cTAB; 
         _unit addWeapon _lornetkaRTO;
 		_unit addItem _radioMR;
-        ["uav"] call _backpack;
         _unit addMagazines ["Laserbatteries",2];
+        ["uav"] call _backpack;
 	};
 			
  // LOADOUT: Dowódca sil specjalnych
