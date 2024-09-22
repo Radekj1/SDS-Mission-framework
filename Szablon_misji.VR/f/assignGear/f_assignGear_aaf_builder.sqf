@@ -730,9 +730,9 @@ switch (_typeofUnit) do
 // LOADOUT: FAC/RTO
 	case "rto":
 	{
-        _unit addmagazines [_glriflemag,5];
-        _unit addmagazines [_glriflemag_tr,4];
-        _unit addmagazines [_glmag,7];
+        _unit addmagazines [_glriflemag,3];
+        _unit addmagazines [_glriflemag_tr,2];
+        _unit addmagazines [_glmag,3];
         _unit addmagazines [_glsmokewhite,2];
         _unit addweapon _glrifle;        
         _unit addmagazines [_smokegrenade,2];
