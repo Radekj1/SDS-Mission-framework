@@ -608,7 +608,7 @@ _ghillie = [];
 _hqUniform = ["U_O_OfficerUniform_ocamo"];
 _hqHelmet = ["H_Beret_CSAT_01_F"];
 _hqRig = ["V_TacVest_khk"];
-_hqGlasses = [immersion_cigs_cigar0];
+_hqGlasses = ["immersion_cigs_cigar0"];
 
 // Medic
 _medUniform = ["U_O_CombatUniform_ocamo"];
